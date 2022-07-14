@@ -117,6 +117,100 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>SON KULLANICI LİSANS SÖZLEŞMESİ
+
+Lütfen programı kullanmadan önce işbu lisans sözleşmesini dikkatlice okuyun. İşbu sözleşmeyi kabul ederek, kullanıcı veya lisans sahibi olmayı onayladığınızı ve işbu lisans sözleşmesinin tüm şart ve koşullarını tam anlamıyla kabul ettiğinizi göstermiş olursunuz. İşbu sözleşme şartlarını kabul etmiyorsanız, programı yüklemeyin. Benzer şekilde, programın kullanımı, işbu lisans sözleşmesinin tüm şart ve koşullarının sizin için bağlayıcı olmasını kabul ettiğiniz anlamına gelir.
+
+İşbu lisans sözleşmesi, lisans sahibi ve @ENTEGREF Ticaret Limited  Şirketi (bundan böyle @ENTEGREF olarak anılacaktır) arasında, işbu Sözleşme’nin konusuna ilişkin tam mutabakatı temsil eder. Benzer şekilde ve geçerli mevzuata uygun olduğunda, işbu Lisans Sözleşmesi’nin şart ve koşulları, herhangi bir iletişim veya reklam materyalinin söz konusu şart ve koşulların herhangi biriyle çelişmesi ya da bu tür bir materyalin işbu Lisans Sözleşmesi’nden önceki bir tarihe ait olması halinde, bahsedilen her türlü iletişim veya reklam materyalinden önce gelecektir. 
+
+İşbu Sözleşme kayıt ve şartlarının kabul edilmesi @ENTEGREF veya kendisinin yazılım tedarikçilerine ait program ya da ürünler üzerinde herhangi mülkiyet hakkı bahşetmez. 
+
+1.- LİSANSIN VERİLMESİ.- @ENTEGREF, bu vesile ile kullanıcıya, sözleşme süresi boyunca geçerli olmak üzere, burada belirtilen şart ve koşullar uyarınca, bu programın sınırlı, münhasır olmayan ve devredilemez lisansı ile kullanım hakkını vermiş bulunmaktadır.
+
+Deneme sürümleri söz konusu olduğunda, lisans sahibi, bu sürümü sadece @ENTEGREF tarafından belirtilen süre boyunca kullanabilecektir. Bu sürenin uzatılabilmesi için, @ENTEGREF tarafından yazılı izin verilmiş olmalıdır. İşbu Lisans Sözleşmesi’nin içerdiği aksi yöndeki herhangi bir husus dikkate alınmaksızın, @ENTEGREF, programın burada öngörülen ölçüde salt “olduğu gibi” esasına göre sunulan herhangi bir deneme sürümüyle ilgili olarak her ne şekilde olursa olsun verilmiş bir garantiden mesul olmayacak veya bu tür bir garantinin @ENTEGREF üzerinde bağlayıcılığı olmayacaktır.
+
+Abonelik sürümleri söz konusu olduğunda, aylık veya periyodik abonelik ücretleri ödenmediği veya abonelik süresi sona erdiği takdirde, lisans sahibi programla ilişkili hizmetlere erişim hakkını kaybedecektir. 
+
+İşbu lisans sözleşmesi, lisans sahibine programı satın alınan lisans sayısı kadar bilgisayar ve/veya sunucuda kullanma hakkını vermektedir.
+
+Ağ ortamlarında, lisanslar, sunucuya bağlanan maksimum bilgisayar sayısı veya sunucuya bağlanan maksimum kullanıcı sayısına göre satın almalıdır. Sunucuya bağlanan kullanıcı veya bilgisayarların sayısı, sözleşmeyle verilen ve bu programın (varsa) Lisans Sertifikasında açıkça belirtilen lisans sayısını geçmemelidir.
+
+Ağa bağlanmayan bilgisayarlar söz konusu olduğunda, lisans sahibinin programı yükleyeceği her bir bilgisayar için lisans alınmalıdır. Programın yüklendiği bilgisayarların sayısı, bu programın (varsa) Lisans Sertifikasında açıkça belirtilen lisans sayısını geçmemelidir. 
+
+Yukarıdaki durumların her ikisinde de lisans, (programın bu sertifikayı içermesi halinde) Lisans Sertifikasında açıkça belirtildiği gibi sadece sözleşmeyle verilen program için geçerlidir. 
+
+2.- FİKRİ MÜLKİYET.- Bu program ve aynı zamanda her türlü ilgili belge ya da bilgi, @ENTEGREF ve/veya kendisinin yazılım tedarikçilerinin münhasır mülkiyetindedir. @ENTEGREF veya kendisinin yazılım tedarikçileri, işbu Sözleşme kapsamında @ENTEGREF tarafından lisans sahibine sağlanan programlar, belgeler veya başka her türlü eser, program veya ürün üzerindeki fikri mülkiyet ve telif haklarının sahibidir. 
+
+@ENTEGREF, program veya ürünlerinin, tarafsız olan ve hüsnüniyet içerisinde ve kabul edilmiş veya mutat sektörel uygulamalara uygun yapılan karşılaştırmalı incelemelerde kullanılmasına izin vermektedir. Bu incelemeler, ilgili program ya da ürünlerin sadece en son sürümleri kullanılarak yapılabilir.
+
+3.- YEDEK KOPYA. İşbu Lisans Sözleşmesi, CD-ROM içeriğinin veya İnternet’ten indirilen dosyaların sadece bir yedek kopyasının alınmasına izin vermektedir. Bu tür bir kopyanın tüm yazılım mülkiyet hakkı bildirimlerini içermesi şarttır.
+
+4.- ÜRÜN VE HİZMETLERDE DEĞİŞİKLİK.- Lisans sahibi, sözleşme süresi boyunca ve @ENTEGREF ürünlerinin teknolojik ilerlemelere uyum sağlaması ve uygun şekilde geliştirilmesi amacıyla, @ENTEGREF’nın lisans sahibi tarafından sözleşmeyle alınan program veya ürünü başkaları yararına geliştirmeyi durdurabileceğini kabul ve ikrar etmiştir.  Bu tür durumlarda, lisans sahibi, @ENTEGREF’nın ürün geçiş politikasına uygun olarak başka bir program veya ürün seçebilir. O halde, lisans sahibi, bu tür bir politikanın koşullarını kabul ettiğini ve bilgisayarını gerektiğinde buna göre uyarlayacağını onaylamıştır. Yeni program veya ürüne geçiş, @ENTEGREF’nın yeni program veya ürün araştırma ve geliştirme faaliyetlerine tahsis ettiği kaynaklara bağlı olarak ve bunların gösterebileceği farklılık ölçüsünde ücretsiz olabilir veya olmayabilir. 
+
+Lisans sahibi, ayrıca, sözleşme süresi boyunca, @ENTEGREF’nın yukarıda bahsedilen teknolojik ilerlemelere uyum için hizmetlerde değişiklik veya ayarlama yapabileceğini kabul etmiştir. 
+
+Lisans sahibi, bu değişiklikleri her ne türlü olursa olsun tazminat talep etmeksizin kabul edeceğini onaylamıştır. @ENTEGREF, bu tür herhangi bir değişiklikten lisans sahibini haberdar edecektir.
+
+Aynı şekilde, sözleşme süresi dolduğunda, program veya ürün ve hizmet yenilemesi durumlarında, lisans sahibi, hizmetlerin ve program özelliklerinin teknolojik ilerlemelere uyum amacıyla değiştirilmiş olabileceğinin ve bu nedenle kendisinin @ENTEGREF tarafından belirlenmiş politika uyarınca yeni bir program veya ürün veya bunların bir sürümüne geçiş yapmak durumunda olacağının bilincindedir.
+
+Lisans sahibinin bir @ENTEGREF program veya ürününün eski sürümünü güncellemek için yeni sürüm veya yeni @ENTEGREF program veya ürününe geçmesi durumunda, lisans sahibi yalnızca güncellenen sürüm veya program ya da ürünü kullanma hakkına sahip olacak ve yeni sürüm veya program ya da ürüne ilişkin tüm belge, materyal ve şartnamelerde yer alan şart ve koşulları münhasıran kabul edecektir.  Lisans sahibi, bu tür durumlarda, eski sürüme tekabül eden her türlü materyali silmekle yükümlü olacaktır.
+
+Lisans sahibi, işbu Lisans Sözleşmesi’ni kabul etmekle, hizmetler ve program özelliklerinde yapılacak bu tür bütün değişikliklere onay vermiş olacaktır. Lütfen işbu Lisans Sözleşmesi’ni kabul etmeden önce bu tür değişikliklerin hepsini kontrol edin.
+
+5.- VERİ TOPLAMA TEKNOLOJİSİ.- @ENTEGREF, (şüpheli dosyalar dâhil) teknik bilgi toplamak, program veya ürünleri geliştirmek, bağlantılı hizmetleri sunmak, bunları kullanıcı tercihlerine uyarlamak ve program veya ürünün lisanssız ya da yasadışı kullanımını önlemek amacıyla, belirli program veya ürünlerde veri toplama teknolojilerinden yararlanabileceğini bildirmektedir. Lisans sahibi, @ENTEGREF’nın bu tür bilgileri program veya ürünle ilgili olarak sunulan hizmetler kapsamında kullanabileceğini ve kendisine pazarlama bilgileri ulaştırılabileceğini kabul etmiştir.  Lisans sahibi, @ENTEGREF’nın program veya ürün için lisans sahibinin bilgisayarına otomatik olarak indirilen güncelleme veya eklentiler sağlayabileceğini kabul ve ikrar etmiştir. 
+
+Benzer şekilde, programın sözleşme kapsamına alınması ve kullanımı amacıyla, lisans sahibi, @ENTEGREF’ya belirli kişisel verileri vermek durumunda kalabilir. @ENTEGREF, lisans sahibine, bu tür kişisel verileri güncel geçerli mevzuata uygun olarak ve @ENTEGREF’nın Gizlilik Politikası’nda belirlenen şekilde kullanacağını bildirmektedir.  Lisans sahibi, bu Gizlilik Politikası’na şu adresten ulaşabilir: http://www.entegref.com.tr/gizlilik
+
+6.- SINIRLI GARANTİ VE ÇARE.  @ENTEGREF, geçerli herhangi bir tüketici koruma yasasına halel getirilmeksizin, programın, herhangi bir imalat veya işletim hatasına karşı temel tasarım işlevlerini program veya ürün beraberinde gelen yazılı belgeler ve/veya Yardım dosyasına uygun olarak programın lisans sahibine ulaştığı tarihten itibaren doksan (90) gün boyunca yerine getireceğini garanti etmektedir. Bu süre boyunca ve lisans sahibinin hizmetleri uygun olan yerde faaliyete sokmuş olması kaydıyla, @ENTEGREF, işbu Lisans Sözleşmesi’ne konu olan program veya ürün ya da basılı belgelerdeki herhangi bir hata için @ENTEGREF’nın tek mesuliyeti ve lisans sahibinin münhasır çaresini oluşturacak şekilde aşağıdaki sınırlı çareyi sunmaktadır: @ENTEGREF, programın çalışmasına imkan vermeyen herhangi bir hatalı optik medya ve aynı zamanda herhangi bir hatalı basılmış belgenin düzeltilmesini veya yenilenmesini sağlayacaktır. Bu sınırlı düzeltme veya yenileme çaresi, program İnternet’ten indirme yoluyla tedarik edilmişse İnternet’ten indirilen dosyalar için de geçerli olacaktır.  Hatalı optik medya veya basılı belgenin düzeltilmesi veya yenilenmesinin gerektiği durumlarda, lisans sahibi bunları @ENTEGREF’ya göndermelidir. Asıl basılı belge veya optik medya lisans sahibi tarafından iade edilmedikçe hiçbir suretle düzeltme ya da yenileme yapılmayacaktır. Programın İnternet üzerinden tedarik edildiği durumlarda, basılı belgelerin iadesi gerekmeyecektir.
+
+7.- YASAL UYARI.- Bu garanti, kaybedilen, çalınan veya kazayla hasar gören materyalleri veya @ENTEGREF’nın yazılı izni olmadan uygunsuz kullanılan veya değiştirilen materyalleri veya lisans sahibine ya da @ENTEGREF dışındaki üçüncü kişilere atfedilebilen nedenlerden hatalı olan materyalleri kapsamaz. @ENTEGREF, harici teknik ekipmanın lisanslı programın performansında yol açabileceği hatalardan sorumlu olmayacaktır.
+
+@ENTEGREF, herhangi bir kişi ya da kuruluş tarafından, iş aksaklıkları, iddia edilene göre, program veya ürünlerin doğrudan veya dolaylı olarak kullanımı ya da kullanılamamasının yol açtığı herhangi bir hasar veya zarardan, programın kullanılması sonucunda işte aksamalar yaşanması, parasal kayba uğranması veya beklenen gelirlerin kaybedilmesi dâhil (ancak bunlarla sınırlı olmamak üzere),  sorumlu tutulmayacaktır. 
+
+Program “olduğu gibi” sunulmuş olup yukarıda Madde 6’da açıkça belirtilen durum haricinde varsayılan işlevlerin veya başka işlevlerin yerine getirilememesine ilişkin hiçbir hak talebi kabul edilmeyecektir.  @ENTEGREF, programın hatasız olduğu veya kesintisiz işlev göreceği taahhüdünde bulunmamaktadır. Lisan sahibi, sorumluluk kendisinde olmak üzere, virüslerin bulaştıkları dosyalarda meydana getireceği değişikliklere bağlı olarak virüs temizleme işleminin bu dosyalarda öngörülemeyecek değişiklikler yapmasının ihtimal dâhilinde olduğunu bilmekte ve kabul etmektedir.
+
+Programın başkaları tarafından kullanılmasından lisans sahibi sorumludur. Lisans sahibi, bu program veya güncellemeleriyle lisans sahibinin bilgisayarına yüklediği herhangi bir üçüncü kişi yazılımı arasında oluşabilecek herhangi bir uyumsuzluktan kaynaklanan her türlü kayıp ve/veya zararın ve aynı zamanda iki program arasındaki etkileşi@ENTEGREFn kaynaklanabilecek başka her türlü sorunun veya çakışan kod dizilerinin sorumluluğunu üzerine almıştır.
+İşbu Sözleşme kapsamında veya başka bir yerde aksi yönde yer alabilecek herhangi bir husus dikkate alınmaksızın, @ENTEGREF, hiçbir durumda, lisans sahibinin program için ödediği ücretten fazla tazminat ödemekle yükümlü olmayacaktır. Bununla ilgili olarak, lisans sahibinin @ENTEGREF’yı bu tür tazminat olasılığından haberdar etmiş olması veya olmaması dikkate alınmayacaktır. 
+
+8.- RİSKİN YÜKSEK OLDUĞU ORTAMLAR.- Bu program, nükleer tesisler, hava taşıtı dolaşım veya haberleşme sistemleri, hava trafik kontrolü, silahlar veya savunma sistemlerinin işletiminde olduğu gibi arıza güvenlikli (aksaklıklara karşı korumalı) performans gerektiren tehlikeli ortamlarda veya herhangi bir yazılımın arızalanmasının doğrudan ölüm, kişisel yaralanma veya mala ya da çevreye ağır hasar getirebileceği başka herhangi bir bağlamda kullanılmak üzere tasarlanmamış ve kullanılması amaçlanmamıştır.  @ENTEGREF, programın bu tür faaliyetlere uygun olduğu yönündeki herhangi bir açık veya ima yollu garantiden özellikle feragat etmiştir.
+
+9- İHRACAT KISITLAMALARI. Kullanıcı, program veya programın herhangi bir kısmının Birleşik Devletler ihracat denetimi kanunlarına tabi olduğunu ve bu nedenle kullanıcının söz konusu mevzuata ve başka herhangi bir geçerli uluslararası ihraç düzenleme veya kısıtlamasına uymaya mecbur bulunduğunu kabul ve ikrar etmiştir.
+
+Kullanıcı, kullanıcının elinde ilgili geçerli ihracat lisansları bulunmadıkça programın, tamamen veya kısmen, Birleşik Devletler ihracat denetimi kanunları veya başka herhangi bir geçerli uluslararası ihracat düzenlemesine tabi herhangi bir ülke, kişi veya kuruluşa ihraç edilemeyeceğini veya yeniden ihraç edilemeyeceğini kabul ve ikrar etmiştir.
+
+Kullanıcı, kullanıcının ihracat düzenlemesine uymamasından kaynaklanan herhangi bir hak talebi karşısında @ENTEGREF’yı savunacak ve @ENTEGREF’nın olası zararını tazmin edecek ve @ENTEGREF’yı bunlardan masun tutacaktır.
+
+10.- DEVİR VE FESİHLE İLGİLİ KISITLAMALAR.  Son kullanıcı, @ENTEGREF’nın açık yazılı rızası olmadıkça programı başkalarına lisanslayamayacak, alt lisanslayamayacak, kiralayamayacak veya başka şekilde devredemeyecektir.   İşbu lisans sözleşmesinin herhangi bir şekilde feshedilmesi veya hitama ermesi üzerine, son kullanıcı, derhal programı kullanmayı bırakmalı ve tüm kopyaları imha etmeli ya da @ENTEGREF’ya iade etmelidir.
+
+11.- DİĞER KISITLAMALAR. Bu program CD-ROM üzerinde veya bazı durumlarda İnternet üzerinden sunulmaktadır.  Program yalnızca lisans sahibinin kendi bilgisayar(lar)ında kullanılabilir. Program, lisans sahibinin sahibi olmadığı bilgisayarlarda kullanılamaz veya başka bir kullanıcıya ödünç verilemez, kiralanamaz, hediye edilemez, hibe edilemez veya devredilemez.
+
+Lisans sahibi, işbu Lisans Sözleşmesi marifetiyle bahşedilmiş hakları devredemez. Bu programın bütünü veya bir kısmına, kaynak koda dönüştürme, tersine mühendislik veya parçalama işlemlerinin uygulanmasına izin verilmez.
+
+Lisans sahibi, ürüne dahil olan yazılım, hizmetler ve/veya başka herhangi bir belgenin bütünü veya bir kısmında hiçbir bir değişiklik yapılamaz.
+
+12.- YARGILAMA YETKİSİ VE YERİ.- İşbu Lisans Sözleşmesi, Türkiye Cumhuriyeti Devleti Kanunları’nın idaresinde olup işbu sözleşmenin tefsir veya tesirine ilişkin herhangi bir şüphe yahut anlaşmazlık durumunda Türkiye’nin İstanbul Mahkemeleri tek yetkili yargı mercii olacaktır. Her iki taraf da kendilerini ilgilendirebilecek başka herhangi bir yargılama yetkisi veya yerinden feragat etmişlerdir.
+
+13.- GENEL- Lisans sahibi, @ENTEGREF personelinin bu lisansın koşullarının yerine getirildiğini doğrulamak üzere kendisine ziyarette bulunmaları yetkisini vermiştir. 
+
+Lisans sahibi, işbu Lisans Sözleşmesi’ni ihlal ettiği takdirde, @ENTEGREF’nın hukuki işlem başlatabileceğini bilmekte ve kabul etmektedir. @ENTEGREF, lisans sahibinin işbu Lisans Sözleşmesi şart ve koşullarından herhangi birine uymaması halinde işbu Lisans Sözleşmesi’ni ihbarsız otomatik olarak feshetme hakkını saklı tutmaktadır.
+
+İşbu sözleşmenin herhangi bir hükmünün geçerli hukuka aykırı olması durumunda, ilgili hüküm geçersiz sayılacak ancak bu durum sözleşmenin bütünlüğünü etkilemeyecek veya sözleşmenin geçersiz olduğu anlamına gelmeyecektir. 
+
+@ENTEGREF, kendisinin sahip olabileceği ve burada lisans sahibine bahşedilmemiş diğer tüm hakları açıkça saklı tutmaktadır.
+
+ 
+
+ÜCRETSİZ YAZILIMLAR VE ÜÇÜNCÜ KİŞİ YAZILIMLARINA İLİŞKİN ÖZEL MADDELER
+Bu lisanslı yazılım, lisans sahibine ücretsiz yazılım lisansları veya başka türde lisanslar kapsamında lisanslanmış (veya alt lisanslanmış) yazılım programlar içerebilir.  İlgili koşulları içeren metinler, ürün yükleme dizininde lisans sahibine sunulmuştur.
+
+
+Tel:    +90 554 741 42 16
+
+E-posta: fatihkivric@aol.com
+Copyright© 2022 @ENTEGRE 
+</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="uncheck1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

@@ -47,8 +47,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnUrunKaydet = new Infragistics.Win.Misc.UltraButton();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.lblKavala = new System.Windows.Forms.Label();
+            this.lblBeden = new System.Windows.Forms.Label();
+            this.lblFiyattipi = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -72,9 +73,7 @@
             this.bunifuCustomTextbox4 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomTextbox3 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomTextbox2 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnbarkod = new System.Windows.Forms.Button();
             this.bunifuCustomTextbox1 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.ultraTabPageControl2 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.ultraTabPageControl3 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
@@ -95,7 +94,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.ultraButton1 = new Infragistics.Win.Misc.UltraButton();
             this.txtStokKodu = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnStokBul = new System.Windows.Forms.Button();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.ultraTabPageControl1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -116,9 +115,9 @@
             // 
             this.ultraTabPageControl1.Controls.Add(this.panel3);
             this.ultraTabPageControl1.Controls.Add(this.panel2);
-            this.ultraTabPageControl1.Location = new System.Drawing.Point(1, 23);
+            this.ultraTabPageControl1.Location = new System.Drawing.Point(1, 22);
             this.ultraTabPageControl1.Name = "ultraTabPageControl1";
-            this.ultraTabPageControl1.Size = new System.Drawing.Size(966, 510);
+            this.ultraTabPageControl1.Size = new System.Drawing.Size(965, 511);
             // 
             // panel3
             // 
@@ -127,7 +126,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 216);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(966, 294);
+            this.panel3.Size = new System.Drawing.Size(965, 295);
             this.panel3.TabIndex = 2;
             // 
             // label17
@@ -142,10 +141,10 @@
             // textBox2
             // 
             this.textBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.textBox2.Location = new System.Drawing.Point(0, 29);
+            this.textBox2.Location = new System.Drawing.Point(0, 30);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(966, 265);
+            this.textBox2.Size = new System.Drawing.Size(965, 265);
             this.textBox2.TabIndex = 1;
             // 
             // panel2
@@ -153,8 +152,9 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.btnUrunKaydet);
             this.panel2.Controls.Add(this.checkBox1);
-            this.panel2.Controls.Add(this.label16);
-            this.panel2.Controls.Add(this.label15);
+            this.panel2.Controls.Add(this.lblKavala);
+            this.panel2.Controls.Add(this.lblBeden);
+            this.panel2.Controls.Add(this.lblFiyattipi);
             this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.label12);
@@ -178,14 +178,12 @@
             this.panel2.Controls.Add(this.bunifuCustomTextbox4);
             this.panel2.Controls.Add(this.bunifuCustomTextbox3);
             this.panel2.Controls.Add(this.bunifuCustomTextbox2);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.btnbarkod);
             this.panel2.Controls.Add(this.bunifuCustomTextbox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(966, 216);
+            this.panel2.Size = new System.Drawing.Size(965, 216);
             this.panel2.TabIndex = 0;
             // 
             // btnUrunKaydet
@@ -207,39 +205,49 @@
             this.checkBox1.TabIndex = 6;
             this.checkBox1.Text = "Var";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // label16
+            // lblKavala
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
-            this.label16.Location = new System.Drawing.Point(660, 161);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(51, 14);
-            this.label16.TabIndex = 5;
-            this.label16.Text = "label11";
-            this.label16.Visible = false;
+            this.lblKavala.AutoSize = true;
+            this.lblKavala.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
+            this.lblKavala.Location = new System.Drawing.Point(660, 161);
+            this.lblKavala.Name = "lblKavala";
+            this.lblKavala.Size = new System.Drawing.Size(51, 14);
+            this.lblKavala.TabIndex = 5;
+            this.lblKavala.Text = "label11";
+            this.lblKavala.Visible = false;
             // 
-            // label15
+            // lblBeden
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
-            this.label15.Location = new System.Drawing.Point(660, 134);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(51, 14);
-            this.label15.TabIndex = 5;
-            this.label15.Text = "label11";
-            this.label15.Visible = false;
+            this.lblBeden.AutoSize = true;
+            this.lblBeden.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
+            this.lblBeden.Location = new System.Drawing.Point(660, 134);
+            this.lblBeden.Name = "lblBeden";
+            this.lblBeden.Size = new System.Drawing.Size(51, 14);
+            this.lblBeden.TabIndex = 5;
+            this.lblBeden.Text = "label11";
+            this.lblBeden.Visible = false;
+            // 
+            // lblFiyattipi
+            // 
+            this.lblFiyattipi.AutoSize = true;
+            this.lblFiyattipi.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
+            this.lblFiyattipi.Location = new System.Drawing.Point(660, 107);
+            this.lblFiyattipi.Name = "lblFiyattipi";
+            this.lblFiyattipi.Size = new System.Drawing.Size(51, 14);
+            this.lblFiyattipi.TabIndex = 5;
+            this.lblFiyattipi.Text = "label11";
+            this.lblFiyattipi.Visible = false;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
-            this.label14.Location = new System.Drawing.Point(660, 107);
+            this.label14.Location = new System.Drawing.Point(518, 185);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(51, 14);
+            this.label14.Size = new System.Drawing.Size(56, 13);
             this.label14.TabIndex = 5;
-            this.label14.Text = "label11";
-            this.label14.Visible = false;
+            this.label14.Text = "Barkod Gir";
             // 
             // label13
             // 
@@ -434,35 +442,15 @@
             this.bunifuCustomTextbox2.Size = new System.Drawing.Size(411, 21);
             this.bunifuCustomTextbox2.TabIndex = 1;
             // 
-            // button4
+            // btnbarkod
             // 
-            this.button4.Location = new System.Drawing.Point(400, 154);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(34, 21);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "...";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(400, 127);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(34, 21);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "...";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(400, 100);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(34, 21);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "...";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button1_Click);
+            this.btnbarkod.Image = global::Entegref.Properties.Resources.barcode_32x32;
+            this.btnbarkod.Location = new System.Drawing.Point(663, 181);
+            this.btnbarkod.Name = "btnbarkod";
+            this.btnbarkod.Size = new System.Drawing.Size(48, 21);
+            this.btnbarkod.TabIndex = 2;
+            this.btnbarkod.UseVisualStyleBackColor = true;
+            this.btnbarkod.Click += new System.EventHandler(this.btnbarkod_Click);
             // 
             // bunifuCustomTextbox1
             // 
@@ -476,13 +464,13 @@
             // 
             this.ultraTabPageControl2.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl2.Name = "ultraTabPageControl2";
-            this.ultraTabPageControl2.Size = new System.Drawing.Size(966, 510);
+            this.ultraTabPageControl2.Size = new System.Drawing.Size(965, 511);
             // 
             // ultraTabPageControl3
             // 
             this.ultraTabPageControl3.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl3.Name = "ultraTabPageControl3";
-            this.ultraTabPageControl3.Size = new System.Drawing.Size(966, 510);
+            this.ultraTabPageControl3.Size = new System.Drawing.Size(965, 511);
             // 
             // ultraTabPageControl4
             // 
@@ -491,14 +479,14 @@
             this.ultraTabPageControl4.Controls.Add(this.pnlUrunResimbtn);
             this.ultraTabPageControl4.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl4.Name = "ultraTabPageControl4";
-            this.ultraTabPageControl4.Size = new System.Drawing.Size(966, 510);
+            this.ultraTabPageControl4.Size = new System.Drawing.Size(965, 511);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(241, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(725, 463);
+            this.pictureBox1.Size = new System.Drawing.Size(724, 464);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -509,7 +497,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(0, 0);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(241, 463);
+            this.listBox1.Size = new System.Drawing.Size(241, 464);
             this.listBox1.TabIndex = 0;
             this.listBox1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBox1_MouseDoubleClick);
             // 
@@ -519,9 +507,9 @@
             this.pnlUrunResimbtn.Controls.Add(this.simpleButton2);
             this.pnlUrunResimbtn.Controls.Add(this.simpleButton1);
             this.pnlUrunResimbtn.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlUrunResimbtn.Location = new System.Drawing.Point(0, 463);
+            this.pnlUrunResimbtn.Location = new System.Drawing.Point(0, 464);
             this.pnlUrunResimbtn.Name = "pnlUrunResimbtn";
-            this.pnlUrunResimbtn.Size = new System.Drawing.Size(966, 47);
+            this.pnlUrunResimbtn.Size = new System.Drawing.Size(965, 47);
             this.pnlUrunResimbtn.TabIndex = 2;
             // 
             // txtFileAdress
@@ -564,7 +552,7 @@
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelControl3.Location = new System.Drawing.Point(0, 0);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(972, 579);
+            this.panelControl3.Size = new System.Drawing.Size(971, 579);
             this.panelControl3.TabIndex = 2;
             // 
             // ultraTabControl1
@@ -579,8 +567,10 @@
             this.ultraTabControl1.Location = new System.Drawing.Point(2, 43);
             this.ultraTabControl1.Name = "ultraTabControl1";
             this.ultraTabControl1.SharedControlsPage = this.ultraTabSharedControlsPage1;
-            this.ultraTabControl1.Size = new System.Drawing.Size(968, 534);
+            this.ultraTabControl1.Size = new System.Drawing.Size(967, 534);
             this.ultraTabControl1.Style = Infragistics.Win.UltraWinTabControl.UltraTabControlStyle.Office2007Ribbon;
+            this.ultraTabControl1.TabButtonStyle = Infragistics.Win.UIElementButtonStyle.Windows8Button;
+            this.ultraTabControl1.TabCloseButtonVisibility = Infragistics.Win.UltraWinTabs.TabCloseButtonVisibility.Never;
             this.ultraTabControl1.TabIndex = 0;
             this.ultraTabControl1.TabOrientation = Infragistics.Win.UltraWinTabs.TabOrientation.TopLeft;
             appearance1.Image = global::Entegref.Properties.Resources.definednamecreatefromselection_32x32;
@@ -619,7 +609,7 @@
             // 
             this.ultraTabSharedControlsPage1.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabSharedControlsPage1.Name = "ultraTabSharedControlsPage1";
-            this.ultraTabSharedControlsPage1.Size = new System.Drawing.Size(966, 510);
+            this.ultraTabSharedControlsPage1.Size = new System.Drawing.Size(965, 511);
             // 
             // panel1
             // 
@@ -628,11 +618,11 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.ultraButton1);
             this.panel1.Controls.Add(this.txtStokKodu);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnStokBul);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(968, 41);
+            this.panel1.Size = new System.Drawing.Size(967, 41);
             this.panel1.TabIndex = 1;
             // 
             // ultraButton3
@@ -682,15 +672,15 @@
             this.txtStokKodu.Size = new System.Drawing.Size(261, 21);
             this.txtStokKodu.TabIndex = 1;
             // 
-            // button1
+            // btnStokBul
             // 
-            this.button1.Location = new System.Drawing.Point(325, 11);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(34, 21);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "...";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnStokBul.Location = new System.Drawing.Point(325, 11);
+            this.btnStokBul.Name = "btnStokBul";
+            this.btnStokBul.Size = new System.Drawing.Size(34, 21);
+            this.btnStokBul.TabIndex = 2;
+            this.btnStokBul.Text = "...";
+            this.btnStokBul.UseVisualStyleBackColor = true;
+            this.btnStokBul.Click += new System.EventHandler(this.btnStokBul_Click);
             // 
             // panelControl4
             // 
@@ -738,7 +728,7 @@
         private DevExpress.XtraEditors.PanelControl panelControl3;
         private DevExpress.XtraEditors.PanelControl panelControl4;
         private Infragistics.Win.Misc.UltraButton ultraButton1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnStokBul;
         private System.Windows.Forms.TextBox txtStokKodu;
         private System.Windows.Forms.Label label1;
         private Infragistics.Win.UltraWinTabControl.UltraTabControl ultraTabControl1;
@@ -758,13 +748,11 @@
         private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox4;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox3;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnbarkod;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox1;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lblKavala;
+        private System.Windows.Forms.Label lblBeden;
+        private System.Windows.Forms.Label lblFiyattipi;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
@@ -791,5 +779,6 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private Infragistics.Win.Misc.UltraButton btnUrunKaydet;
+        private System.Windows.Forms.Label label14;
     }
 }

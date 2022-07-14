@@ -144,7 +144,7 @@ namespace Entegref
                     SqlDataAdapter adap = new SqlDataAdapter(cmd);
                     adap.Fill(returnType);
                 }
-                //conn.Close();
+                conn.Close();
             }
 
             return returnType;

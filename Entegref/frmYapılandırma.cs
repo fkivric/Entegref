@@ -29,6 +29,8 @@ namespace Entegref
             Properties.Settings.Default.connectionstring = connection.Rows[0][0].ToString();
             uncheck1.Visible = false;
             uncheck2.Visible = false;
+            simpleButton2.Enabled = false;
+            simpleButton1.Visible = false;
 
         }
 
@@ -99,6 +101,7 @@ namespace Entegref
         {
             if (navigationFrame1.SelectedPage == navigationPage1)
             {
+                simpleButton1.Visible = true;
                 navigationFrame1.SelectedPage = navigationPage2;
                 bunifuCheckbox1.Checked = true;
             }
@@ -115,6 +118,7 @@ namespace Entegref
                     bunifuCheckbox2.Checked = true;
                     IL();
                     simpleButton1.Visible = true;
+                    simpleButton2.Enabled = false;
                     uncheck2.Visible = true;
                 }
 
@@ -138,6 +142,7 @@ namespace Entegref
                 {
                     checkedListBoxControl1.SetItemChecked(index, true);
                 }
+                simpleButton2.Enabled = false;
             }
             else if (navigationFrame1.SelectedPage == navigationPage5)
             {
@@ -171,6 +176,15 @@ namespace Entegref
                 key.SetValue("ApplicationSetupComplate", "true");
                 key.SetValue("ApplicationGUID", id);
                 key.Close();
+            }
+            else
+            {
+                frmMain main = new frmMain();
+                this.WindowState = FormWindowState.Minimized;
+                main.ShowDialog();
+                this.Close();
+                this.Dispose();
+
             }
         }
 
@@ -213,7 +227,49 @@ namespace Entegref
 
             }
 
+            Dictionary<string, string> Prm = new Dictionary<string, string>();
+            Prm.Add("@sFirmaAdi", txtFirmaAdi.Text);
+            Prm.Add("@sVergiNumarasi", txtVKN.Text);
+            Prm.Add("@sVergiDairesi", txtVergiDairesi.Text);
+            Prm.Add("@sIl", comboIl.Text);
+            Prm.Add("@sSemt", combosemt.Text);
+            Prm.Add("@sFirmaAdresi", ultraTextEditor5.Text +" "+ ultraTextEditor6.Text+" " + ultraTextEditor7.Text);
+            Prm.Add("@sTelefon1", txtMobil1.Text);
+            Prm.Add("@sTelefon2", txtMobil2.Text);
+            Prm.Add("@sTelefon3", txtMobil2.Text);
+            Prm.Add("@sEmail", txtMail.Text);
+            if (checkBox1.Checked==true)
+            {
+                Prm.Add("@bHareketTipiVarmi", "1");
+            }
+            else
+            {
+                Prm.Add("@bHareketTipiVarmi", "0");
+            }
+
+            if (checkBox2.Checked == true)
+            {
+                Prm.Add("@bKurusKullanilacakmi", "1");
+            }
+            else
+            {
+                Prm.Add("@bKurusKullanilacakmi", "0");
+            }
+            if (checkBox3.Checked == true)
+            {
+                Prm.Add("@bBirimTldeKurusVarmi", "1");
+            }
+            else
+            {
+                Prm.Add("@bBirimTldeKurusVarmi", "0");
+            }
+            Prm.Add("@sFormatMiktar", comboBoxEdit1.SelectedText);
+            conn.Insert3("ParamGenelUpdate", Prm);
+
+
+
             simpleButton1.Enabled = false;
+            simpleButton2.Enabled = true;
             uncheck2.Visible = true;
             bunifuCheckbox4.Visible = false;
             bunifuCheckbox3.Checked = true;
@@ -263,8 +319,20 @@ namespace Entegref
             Properties.Settings.Default.TrendyolSecretkey = txttrendyolSecret.Text;
             simpleButton4.Enabled = false;
             simpleButton1.Enabled = false;
+            simpleButton2.Enabled = true;
 
         }
 
+        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox4.Checked==true)
+            {
+                simpleButton2.Enabled = true;
+            }
+            else
+            {
+                simpleButton2.Enabled = false;
+            }
+        }
     }
 }

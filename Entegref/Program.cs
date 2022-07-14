@@ -22,9 +22,8 @@ namespace Entegref
             //selam yunus naber
             RegistryKey key2 = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\Entegref");
 
-            var sonuc = key2.GetValue("AplicationSetupComplate");
-
-            if (sonuc.ToString() != "true")
+            var sonuc = key2.GetValue("ApplicationSetupComplate");
+            if (sonuc == null)
             {
                 bool acikmi = false;
                 Mutex mtex = new Mutex(true, "Program", out acikmi);
@@ -42,19 +41,38 @@ namespace Entegref
             }
             else
             {
-
-                bool acikmi = false;
-                Mutex mtex = new Mutex(true, "Program", out acikmi);
-                if (acikmi)
+                if (sonuc.ToString() != "true")
                 {
-                    Application.EnableVisualStyles();
-                    Application.SetCompatibleTextRenderingDefault(false);
-                    Application.Run(new frmMain());
+                    bool acikmi = false;
+                    Mutex mtex = new Mutex(true, "Program", out acikmi);
+                    if (acikmi)
+                    {
+                        Application.EnableVisualStyles();
+                        Application.SetCompatibleTextRenderingDefault(false);
+                        Application.Run(new frmYapılandırma());
 
+                    }
+                    else
+                    {
+                        MessageBox.Show("Program Çalışıyor", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Program Çalışıyor", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    bool acikmi = false;
+                    Mutex mtex = new Mutex(true, "Program", out acikmi);
+                    if (acikmi)
+                    {
+                        Application.EnableVisualStyles();
+                        Application.SetCompatibleTextRenderingDefault(false);
+                        Application.Run(new frmMain());
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Program Çalışıyor", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
         }

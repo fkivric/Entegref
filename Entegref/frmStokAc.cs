@@ -22,7 +22,7 @@ namespace Entegref
         DataTable birim1 = new DataTable();
         DataTable birim2 = new DataTable();
         DataTable Otv = new DataTable();
-
+        public static string sKodu = "";
         public frmStokAc()
         {
             InitializeComponent();
@@ -69,11 +69,29 @@ namespace Entegref
 
         private void button1_Click(object sender, EventArgs e)
         {
+            frmBarkod barkod = new frmBarkod(txtStokKodu.Text);
+            barkod.Show();
 
         }
 
         private void ultraButton3_Click(object sender, EventArgs e)
         {
+            if (connection.State == ConnectionState.Closed)
+            {
+                connection.Open();
+            }
+            string Queryable = "select * from tbstok where skodu = '"+ txtStokKodu.Text + "'";
+            SqlCommand cmd = new SqlCommand(Queryable, connection);
+            SqlDataAdapter ad = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            ad.Fill(dt);
+            connection.Close();
+            bunifuCustomTextbox1.Text = dt.Rows[0]["sAciklama"].ToString();
+            cmbBirim1.Text = dt.Rows[0]["sBirimCinsi1"].ToString();
+            cmbBirim2.Text = dt.Rows[0]["sBirimCinsi2"].ToString();
+            cmbKDV.Text = dt.Rows[0]["sKdvTipi"].ToString();
+            bunifuCustomTextbox1.Text = dt.Rows[0]["sAciklama"].ToString();
+
             XtraMessageBox.Show("Kaydetildi");
         }
 
@@ -182,6 +200,31 @@ namespace Entegref
             //Save the file in folder
             string fileLocation = txtFileAdress.Text;
             File.Copy(txtFileAdress.Text, Path.Combine(@"..\..\Pictures\", Path.GetFileName(filename)), true);
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
+            {
+                cmbOTV.Enabled = true;
+            }
+            else
+            {
+                cmbOTV.Enabled = false;
+            }
+        }
+
+        private void btnStokBul_Click(object sender, EventArgs e)
+        {
+            frmStokBul stokBul = new frmStokBul();
+            stokBul.Show();
+            txtStokKodu.Text = sKodu;
+        }
+
+        private void btnbarkod_Click(object sender, EventArgs e)
+        {
+            frmBarkod barkod = new frmBarkod(txtStokKodu.Text);
+            barkod.Show();
         }
     }
 }
