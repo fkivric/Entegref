@@ -1,7 +1,21 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Entegref.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="connectionstring" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Server=localhost;Database=39391097764; User Id=fatih; Password=05101981;</Value>
+    </Setting>
+    <Setting Name="connectionstring2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=.;Network Library=DBMSSOCN;Initial Catalog=Netbil_Connector; User ID=fatih;Password=05101981;</Value>
+    </Setting>
+    <Setting Name="TrendyolId" Type="System.String" Scope="User">
+      <Value Profile="(Default)">387607</Value>
+    </Setting>
+    <Setting Name="TrendyolApi" Type="System.String" Scope="User">
+      <Value Profile="(Default)">GOD4ohApME0Y1r5YBnmv</Value>
+    </Setting>
+    <Setting Name="TrendyolSecretkey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">lx6cAnNSJQjKBUaZ3Q9W</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>
