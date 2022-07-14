@@ -40,6 +40,8 @@
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.combosemt = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -83,11 +85,24 @@
             this.txttrendyolID = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.checkedListBoxControl1 = new DevExpress.XtraEditors.CheckedListBoxControl();
+            this.navigationPage6 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.navigationPage7 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.navigationPage8 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.navigationPage9 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.bunifuCheckbox6 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.bunifuCheckbox7 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCheckbox8 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCheckbox9 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.uncheck1 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.uncheck2 = new Bunifu.Framework.UI.BunifuCheckbox();
@@ -95,27 +110,12 @@
             this.bunifuCheckbox3 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifuCheckbox4 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCheckbox9 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.bunifuCheckbox8 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.bunifuCheckbox7 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.bunifuCheckbox6 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifuCheckbox5 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifuCheckbox2 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifuCheckbox1 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.navigationPage6 = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.navigationPage7 = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.navigationPage8 = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.navigationPage9 = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame1)).BeginInit();
             this.navigationFrame1.SuspendLayout();
             this.navigationPage1.SuspendLayout();
@@ -125,6 +125,7 @@
             this.navigationPage3.SuspendLayout();
             this.panel5.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor15)).BeginInit();
@@ -148,9 +149,8 @@
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // navigationFrame1
@@ -300,6 +300,35 @@
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Paremetreler";
+            // 
+            // label12
+            // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(422, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(129, 26);
+            this.label12.TabIndex = 4;
+            this.label12.Text = "Kuruş Hane Sayısı\r\nVirgülden Sonra Basamak";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // comboBoxEdit1
+            // 
+            this.comboBoxEdit1.Location = new System.Drawing.Point(446, 30);
+            this.comboBoxEdit1.Name = "comboBoxEdit1";
+            this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit1.Properties.DropDownRows = 4;
+            this.comboBoxEdit1.Properties.Items.AddRange(new object[] {
+            "#,##0",
+            "#,###.0",
+            "#,###.00",
+            "#,###.000",
+            "#,###.0000"});
+            this.comboBoxEdit1.Size = new System.Drawing.Size(99, 20);
+            this.comboBoxEdit1.TabIndex = 3;
             // 
             // checkBox3
             // 
@@ -680,6 +709,30 @@
             this.checkedListBoxControl1.ItemCheck += new DevExpress.XtraEditors.Controls.ItemCheckEventHandler(this.checkedListBoxControl1_ItemCheck);
             this.checkedListBoxControl1.SelectedIndexChanged += new System.EventHandler(this.checkedListBoxControl1_SelectedIndexChanged);
             // 
+            // navigationPage6
+            // 
+            this.navigationPage6.Caption = "navigationPage6";
+            this.navigationPage6.Name = "navigationPage6";
+            this.navigationPage6.Size = new System.Drawing.Size(600, 415);
+            // 
+            // navigationPage7
+            // 
+            this.navigationPage7.Caption = "navigationPage7";
+            this.navigationPage7.Name = "navigationPage7";
+            this.navigationPage7.Size = new System.Drawing.Size(600, 415);
+            // 
+            // navigationPage8
+            // 
+            this.navigationPage8.Caption = "navigationPage8";
+            this.navigationPage8.Name = "navigationPage8";
+            this.navigationPage8.Size = new System.Drawing.Size(600, 415);
+            // 
+            // navigationPage9
+            // 
+            this.navigationPage9.Caption = "navigationPage9";
+            this.navigationPage9.Name = "navigationPage9";
+            this.navigationPage9.Size = new System.Drawing.Size(600, 415);
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.navigationFrame1);
@@ -735,6 +788,106 @@
             this.panel3.Size = new System.Drawing.Size(200, 415);
             this.panel3.TabIndex = 2;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.bunifuCheckbox6);
+            this.groupBox3.Controls.Add(this.bunifuCheckbox7);
+            this.groupBox3.Controls.Add(this.bunifuCustomLabel9);
+            this.groupBox3.Controls.Add(this.bunifuCheckbox8);
+            this.groupBox3.Controls.Add(this.bunifuCustomLabel8);
+            this.groupBox3.Controls.Add(this.bunifuCheckbox9);
+            this.groupBox3.Controls.Add(this.bunifuCustomLabel7);
+            this.groupBox3.Controls.Add(this.bunifuCustomLabel6);
+            this.groupBox3.Location = new System.Drawing.Point(25, 180);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(159, 133);
+            this.groupBox3.TabIndex = 18;
+            this.groupBox3.TabStop = false;
+            // 
+            // bunifuCheckbox6
+            // 
+            this.bunifuCheckbox6.BackColor = System.Drawing.Color.Black;
+            this.bunifuCheckbox6.ChechedOffColor = System.Drawing.Color.Black;
+            this.bunifuCheckbox6.Checked = false;
+            this.bunifuCheckbox6.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.bunifuCheckbox6.ForeColor = System.Drawing.Color.White;
+            this.bunifuCheckbox6.Location = new System.Drawing.Point(6, 19);
+            this.bunifuCheckbox6.Name = "bunifuCheckbox6";
+            this.bunifuCheckbox6.Size = new System.Drawing.Size(20, 20);
+            this.bunifuCheckbox6.TabIndex = 5;
+            // 
+            // bunifuCheckbox7
+            // 
+            this.bunifuCheckbox7.BackColor = System.Drawing.Color.Black;
+            this.bunifuCheckbox7.ChechedOffColor = System.Drawing.Color.Black;
+            this.bunifuCheckbox7.Checked = false;
+            this.bunifuCheckbox7.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.bunifuCheckbox7.ForeColor = System.Drawing.Color.White;
+            this.bunifuCheckbox7.Location = new System.Drawing.Point(6, 47);
+            this.bunifuCheckbox7.Name = "bunifuCheckbox7";
+            this.bunifuCheckbox7.Size = new System.Drawing.Size(20, 20);
+            this.bunifuCheckbox7.TabIndex = 6;
+            // 
+            // bunifuCustomLabel9
+            // 
+            this.bunifuCustomLabel9.AutoSize = true;
+            this.bunifuCustomLabel9.Location = new System.Drawing.Point(35, 103);
+            this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
+            this.bunifuCustomLabel9.Size = new System.Drawing.Size(103, 13);
+            this.bunifuCustomLabel9.TabIndex = 16;
+            this.bunifuCustomLabel9.Text = "bunifuCustomLabel9";
+            // 
+            // bunifuCheckbox8
+            // 
+            this.bunifuCheckbox8.BackColor = System.Drawing.Color.Black;
+            this.bunifuCheckbox8.ChechedOffColor = System.Drawing.Color.Black;
+            this.bunifuCheckbox8.Checked = false;
+            this.bunifuCheckbox8.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.bunifuCheckbox8.ForeColor = System.Drawing.Color.White;
+            this.bunifuCheckbox8.Location = new System.Drawing.Point(6, 73);
+            this.bunifuCheckbox8.Name = "bunifuCheckbox8";
+            this.bunifuCheckbox8.Size = new System.Drawing.Size(20, 20);
+            this.bunifuCheckbox8.TabIndex = 7;
+            // 
+            // bunifuCustomLabel8
+            // 
+            this.bunifuCustomLabel8.AutoSize = true;
+            this.bunifuCustomLabel8.Location = new System.Drawing.Point(35, 77);
+            this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
+            this.bunifuCustomLabel8.Size = new System.Drawing.Size(125, 13);
+            this.bunifuCustomLabel8.TabIndex = 15;
+            this.bunifuCustomLabel8.Text = "Pazar Yeri Karlılık Ayarları";
+            // 
+            // bunifuCheckbox9
+            // 
+            this.bunifuCheckbox9.BackColor = System.Drawing.Color.Black;
+            this.bunifuCheckbox9.ChechedOffColor = System.Drawing.Color.Black;
+            this.bunifuCheckbox9.Checked = false;
+            this.bunifuCheckbox9.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.bunifuCheckbox9.ForeColor = System.Drawing.Color.White;
+            this.bunifuCheckbox9.Location = new System.Drawing.Point(6, 99);
+            this.bunifuCheckbox9.Name = "bunifuCheckbox9";
+            this.bunifuCheckbox9.Size = new System.Drawing.Size(20, 20);
+            this.bunifuCheckbox9.TabIndex = 8;
+            // 
+            // bunifuCustomLabel7
+            // 
+            this.bunifuCustomLabel7.AutoSize = true;
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(35, 51);
+            this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
+            this.bunifuCustomLabel7.Size = new System.Drawing.Size(110, 13);
+            this.bunifuCustomLabel7.TabIndex = 14;
+            this.bunifuCustomLabel7.Text = "Pazar Yeri Parametleri";
+            // 
+            // bunifuCustomLabel6
+            // 
+            this.bunifuCustomLabel6.AutoSize = true;
+            this.bunifuCustomLabel6.Location = new System.Drawing.Point(35, 23);
+            this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
+            this.bunifuCustomLabel6.Size = new System.Drawing.Size(92, 13);
+            this.bunifuCustomLabel6.TabIndex = 13;
+            this.bunifuCustomLabel6.Text = "Pazar Yeri Ayarları";
             // 
             // groupBox1
             // 
@@ -822,42 +975,6 @@
             this.bunifuCustomLabel4.TabIndex = 11;
             this.bunifuCustomLabel4.Text = "Harici ERP Ayaları";
             // 
-            // bunifuCustomLabel9
-            // 
-            this.bunifuCustomLabel9.AutoSize = true;
-            this.bunifuCustomLabel9.Location = new System.Drawing.Point(35, 103);
-            this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
-            this.bunifuCustomLabel9.Size = new System.Drawing.Size(103, 13);
-            this.bunifuCustomLabel9.TabIndex = 16;
-            this.bunifuCustomLabel9.Text = "bunifuCustomLabel9";
-            // 
-            // bunifuCustomLabel8
-            // 
-            this.bunifuCustomLabel8.AutoSize = true;
-            this.bunifuCustomLabel8.Location = new System.Drawing.Point(35, 77);
-            this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
-            this.bunifuCustomLabel8.Size = new System.Drawing.Size(125, 13);
-            this.bunifuCustomLabel8.TabIndex = 15;
-            this.bunifuCustomLabel8.Text = "Pazar Yeri Karlılık Ayarları";
-            // 
-            // bunifuCustomLabel7
-            // 
-            this.bunifuCustomLabel7.AutoSize = true;
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(35, 51);
-            this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
-            this.bunifuCustomLabel7.Size = new System.Drawing.Size(110, 13);
-            this.bunifuCustomLabel7.TabIndex = 14;
-            this.bunifuCustomLabel7.Text = "Pazar Yeri Parametleri";
-            // 
-            // bunifuCustomLabel6
-            // 
-            this.bunifuCustomLabel6.AutoSize = true;
-            this.bunifuCustomLabel6.Location = new System.Drawing.Point(35, 23);
-            this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
-            this.bunifuCustomLabel6.Size = new System.Drawing.Size(92, 13);
-            this.bunifuCustomLabel6.TabIndex = 13;
-            this.bunifuCustomLabel6.Text = "Pazar Yeri Ayarları";
-            // 
             // bunifuCustomLabel5
             // 
             this.bunifuCustomLabel5.AutoSize = true;
@@ -884,54 +1001,6 @@
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(116, 13);
             this.bunifuCustomLabel1.TabIndex = 0;
             this.bunifuCustomLabel1.Text = "Sistem Kurulum Ayarları";
-            // 
-            // bunifuCheckbox9
-            // 
-            this.bunifuCheckbox9.BackColor = System.Drawing.Color.Black;
-            this.bunifuCheckbox9.ChechedOffColor = System.Drawing.Color.Black;
-            this.bunifuCheckbox9.Checked = false;
-            this.bunifuCheckbox9.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox9.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox9.Location = new System.Drawing.Point(6, 99);
-            this.bunifuCheckbox9.Name = "bunifuCheckbox9";
-            this.bunifuCheckbox9.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox9.TabIndex = 8;
-            // 
-            // bunifuCheckbox8
-            // 
-            this.bunifuCheckbox8.BackColor = System.Drawing.Color.Black;
-            this.bunifuCheckbox8.ChechedOffColor = System.Drawing.Color.Black;
-            this.bunifuCheckbox8.Checked = false;
-            this.bunifuCheckbox8.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox8.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox8.Location = new System.Drawing.Point(6, 73);
-            this.bunifuCheckbox8.Name = "bunifuCheckbox8";
-            this.bunifuCheckbox8.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox8.TabIndex = 7;
-            // 
-            // bunifuCheckbox7
-            // 
-            this.bunifuCheckbox7.BackColor = System.Drawing.Color.Black;
-            this.bunifuCheckbox7.ChechedOffColor = System.Drawing.Color.Black;
-            this.bunifuCheckbox7.Checked = false;
-            this.bunifuCheckbox7.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox7.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox7.Location = new System.Drawing.Point(6, 47);
-            this.bunifuCheckbox7.Name = "bunifuCheckbox7";
-            this.bunifuCheckbox7.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox7.TabIndex = 6;
-            // 
-            // bunifuCheckbox6
-            // 
-            this.bunifuCheckbox6.BackColor = System.Drawing.Color.Black;
-            this.bunifuCheckbox6.ChechedOffColor = System.Drawing.Color.Black;
-            this.bunifuCheckbox6.Checked = false;
-            this.bunifuCheckbox6.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox6.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox6.Location = new System.Drawing.Point(6, 19);
-            this.bunifuCheckbox6.Name = "bunifuCheckbox6";
-            this.bunifuCheckbox6.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox6.TabIndex = 5;
             // 
             // bunifuCheckbox5
             // 
@@ -969,71 +1038,6 @@
             this.bunifuCheckbox1.Size = new System.Drawing.Size(20, 20);
             this.bunifuCheckbox1.TabIndex = 0;
             // 
-            // navigationPage6
-            // 
-            this.navigationPage6.Name = "navigationPage6";
-            this.navigationPage6.Size = new System.Drawing.Size(600, 415);
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.bunifuCheckbox6);
-            this.groupBox3.Controls.Add(this.bunifuCheckbox7);
-            this.groupBox3.Controls.Add(this.bunifuCustomLabel9);
-            this.groupBox3.Controls.Add(this.bunifuCheckbox8);
-            this.groupBox3.Controls.Add(this.bunifuCustomLabel8);
-            this.groupBox3.Controls.Add(this.bunifuCheckbox9);
-            this.groupBox3.Controls.Add(this.bunifuCustomLabel7);
-            this.groupBox3.Controls.Add(this.bunifuCustomLabel6);
-            this.groupBox3.Location = new System.Drawing.Point(25, 180);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(159, 133);
-            this.groupBox3.TabIndex = 18;
-            this.groupBox3.TabStop = false;
-            // 
-            // navigationPage7
-            // 
-            this.navigationPage7.Name = "navigationPage7";
-            this.navigationPage7.Size = new System.Drawing.Size(600, 415);
-            // 
-            // navigationPage8
-            // 
-            this.navigationPage8.Name = "navigationPage8";
-            this.navigationPage8.Size = new System.Drawing.Size(600, 415);
-            // 
-            // navigationPage9
-            // 
-            this.navigationPage9.Name = "navigationPage9";
-            this.navigationPage9.Size = new System.Drawing.Size(600, 415);
-            // 
-            // comboBoxEdit1
-            // 
-            this.comboBoxEdit1.Location = new System.Drawing.Point(446, 30);
-            this.comboBoxEdit1.Name = "comboBoxEdit1";
-            this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit1.Properties.DropDownRows = 4;
-            this.comboBoxEdit1.Properties.Items.AddRange(new object[] {
-            "#,##0",
-            "#,###.0",
-            "#,###.00",
-            "#,###.000",
-            "#,###.0000"});
-            this.comboBoxEdit1.Size = new System.Drawing.Size(99, 20);
-            this.comboBoxEdit1.TabIndex = 3;
-            // 
-            // label12
-            // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(422, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(129, 26);
-            this.label12.TabIndex = 4;
-            this.label12.Text = "Kuruş Hane Sayısı\r\nVirgülden Sonra Basamak";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // frmYapılandırma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1042,9 +1046,9 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
+            this.IsMdiContainer = true;
             this.Name = "frmYapılandırma";
             this.Text = "frmYapılandırma";
-            this.TransparencyKey = System.Drawing.Color.Transparent;
             this.Load += new System.EventHandler(this.frmYapılandırma_Load);
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame1)).EndInit();
             this.navigationFrame1.ResumeLayout(false);
@@ -1057,6 +1061,7 @@
             this.panel5.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor15)).EndInit();
@@ -1083,11 +1088,10 @@
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }

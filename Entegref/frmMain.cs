@@ -23,13 +23,13 @@ namespace Entegref
         {
             switch (e.Item.Key.ToString())
             {
-                case "1":
+                case "11":
                     frmStokAc stok = new frmStokAc();
                     stok.MdiParent = this;
                     stok.Show();
                     break;
 
-                case "2":
+                case "21":
                     frmYapılandırma yapılandırma = new frmYapılandırma();
                     yapılandırma.MdiParent = this;
                     yapılandırma.Show();
@@ -39,7 +39,6 @@ namespace Entegref
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-
 
         }
     }

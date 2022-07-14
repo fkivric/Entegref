@@ -1,9 +1,11 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -100,7 +102,7 @@ namespace Entegref
                 navigationFrame1.SelectedPage = navigationPage2;
                 bunifuCheckbox1.Checked = true;
             }
-            else if (navigationFrame1.SelectedPage==navigationPage2)
+            else if (navigationFrame1.SelectedPage == navigationPage2)
             {
                 if (grpErpSec.SelectedIndex.ToString() == "1")
                 {
@@ -145,12 +147,30 @@ namespace Entegref
             else if (navigationFrame1.SelectedPage == navigationPage6)
             {
                 navigationFrame1.SelectedPage = navigationPage7;
-                bunifuCheckbox3.Checked = true;
+                bunifuCheckbox6.Checked = true;
             }
             else if (navigationFrame1.SelectedPage == navigationPage7)
             {
                 navigationFrame1.SelectedPage = navigationPage8;
-                bunifuCheckbox3.Checked = true;
+                bunifuCheckbox7.Checked = true;
+
+            }
+            else if (navigationFrame1.SelectedPage == navigationPage8)
+            {
+                navigationFrame1.SelectedPage = navigationPage9;
+                bunifuCheckbox8.Checked = true;
+
+                var name = Properties.Settings.Default.ToString();
+                simpleButton2.Text = "Bitir";
+
+                var assembly = typeof(Program).Assembly;
+                var attribute = (GuidAttribute)assembly.GetCustomAttributes(typeof(GuidAttribute), true)[0];
+                var id = attribute.Value;
+
+                RegistryKey key = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\Entegref");
+                key.SetValue("ApplicationSetupComplate", "true");
+                key.SetValue("ApplicationGUID", id);
+                key.Close();
             }
         }
 
@@ -241,6 +261,8 @@ namespace Entegref
             Properties.Settings.Default.TrendyolApi = txttrendyolApi.Text;
             Properties.Settings.Default.TrendyolId = txttrendyolID.Text;
             Properties.Settings.Default.TrendyolSecretkey = txttrendyolSecret.Text;
+            simpleButton4.Enabled = false;
+            simpleButton1.Enabled = false;
 
         }
 

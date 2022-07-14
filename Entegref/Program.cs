@@ -5,6 +5,9 @@ using System.Windows.Forms;
 using DevExpress.UserSkins;
 using DevExpress.Skins;
 using DevExpress.LookAndFeel;
+using System.Threading;
+using Microsoft.Win32;
+using System.Runtime.InteropServices;
 
 namespace Entegref
 {
@@ -15,11 +18,45 @@ namespace Entegref
         /// </summary>
         [STAThread]
         static void Main()
-        { 
+        {
             //selam yunus naber
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            RegistryKey key2 = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\Entegref");
+
+            var sonuc = key2.GetValue("AplicationSetupComplate");
+
+            if (sonuc.ToString() != "true")
+            {
+                bool acikmi = false;
+                Mutex mtex = new Mutex(true, "Program", out acikmi);
+                if (acikmi)
+                {
+                    Application.EnableVisualStyles();
+                    Application.SetCompatibleTextRenderingDefault(false);
+                    Application.Run(new frmYapılandırma());
+
+                }
+                else
+                {
+                    MessageBox.Show("Program Çalışıyor", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+
+                bool acikmi = false;
+                Mutex mtex = new Mutex(true, "Program", out acikmi);
+                if (acikmi)
+                {
+                    Application.EnableVisualStyles();
+                    Application.SetCompatibleTextRenderingDefault(false);
+                    Application.Run(new frmMain());
+
+                }
+                else
+                {
+                    MessageBox.Show("Program Çalışıyor", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }
