@@ -14,7 +14,7 @@ using System.IO;
 
 namespace Entegref
 {
-    public partial class frmStokAc : Form
+    public partial class frmStokAc : XtraForm
     {
         SqlConnectionObject conn = new SqlConnectionObject();
         SqlConnection connection = new SqlConnection(Properties.Settings.Default.connectionstring);

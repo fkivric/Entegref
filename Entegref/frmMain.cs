@@ -36,9 +36,9 @@ namespace Entegref
                     break;
 
                 case "21":
-                    frmYapılandırma yapılandırma = new frmYapılandırma();
-                    yapılandırma.MdiParent = this;
-                    yapılandırma.Show();
+                    frmMusteri musteri = new frmMusteri();
+                    musteri.MdiParent = this;
+                    musteri.Show();
                     break;
             }
         }

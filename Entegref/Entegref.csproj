@@ -36,20 +36,24 @@
       <HintPath>..\..\Netbil_Connector\Netbil_Connector\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.BonusSkins.v20.1" />
+    <Reference Include="DevExpress.CodeParser.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v20.1" />
     <Reference Include="DevExpress.Data.Desktop.v20.1" />
+    <Reference Include="DevExpress.DataAccess.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v20.1" />
     <Reference Include="DevExpress.Sparkline.v20.1.Core" />
+    <Reference Include="DevExpress.Xpo.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v20.1" />
     <Reference Include="DevExpress.Printing.v20.1.Core" />
     <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraTreeList.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraWizard.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -124,6 +128,18 @@
     <Compile Include="frmFiyatTipi.Designer.cs">
       <DependentUpon>frmFiyatTipi.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmKargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKargo.Designer.cs">
+      <DependentUpon>frmKargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteri.Designer.cs">
+      <DependentUpon>frmMusteri.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmStokBul.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +203,12 @@
     <EmbeddedResource Include="frmFiyatTipi.resx">
       <DependentUpon>frmFiyatTipi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmKargo.resx">
+      <DependentUpon>frmKargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusteri.resx">
+      <DependentUpon>frmMusteri.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmStokBul.resx">
       <DependentUpon>frmStokBul.cs</DependentUpon>
     </EmbeddedResource>
@@ -237,6 +259,9 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="CircularProgressBar">
+      <Version>2.8.0.16</Version>
+    </PackageReference>
     <PackageReference Include="MetroModernUI">
       <Version>1.4.0</Version>
     </PackageReference>
@@ -272,6 +297,26 @@
     <Content Include="Pictures\logo_yon.png" />
     <Content Include="Pictures\logo_yon_new.png" />
     <Content Include="Pictures\logo_yon_new2.png" />
+    <None Include="Resources\sell_48px.png" />
+    <None Include="Resources\supplier_40px.png" />
+    <None Include="Resources\user_group_48px.png" />
+    <None Include="Resources\original_size_40px.png" />
+    <None Include="Resources\Color Wheel_48px.png" />
+    <None Include="Resources\kdv1.png" />
+    <None Include="Resources\kdv.png" />
+    <None Include="Resources\module_2.png" />
+    <None Include="Resources\module_64px1.png" />
+    <None Include="Resources\module_64px.png" />
+    <None Include="Resources\stack_of_money_48px1.png" />
+    <None Include="Resources\shop_64px1.png" />
+    <None Include="Resources\stack_of_money_48px.png" />
+    <None Include="Resources\shop_64px.png" />
+    <None Include="Resources\trendyol 32x32.png" />
+    <None Include="Resources\clearvalidationcircles_32x32.png" />
+    <None Include="Resources\version_16x16.png" />
+    <None Include="Resources\version_32x32.png" />
+    <None Include="Resources\technology_16x16.png" />
+    <None Include="Resources\technology_32x32.png" />
     <None Include="Resources\find_16x16.png" />
     <None Include="Resources\financial_32x32.png" />
     <None Include="Resources\financial_16x16.png" />

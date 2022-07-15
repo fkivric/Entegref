@@ -31,32 +31,46 @@
             this.components = new System.ComponentModel.Container();
             Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup1 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
             Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem1 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem3 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem4 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem9 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem10 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem5 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem6 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem7 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem8 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup9 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem11 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem12 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup7 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem20 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup2 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
+            Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem2 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup5 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem13 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem14 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem3 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup2 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem10 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.Appearance appearance5 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem11 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
             Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup3 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem15 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem16 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem12 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.Appearance appearance6 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup4 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem17 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem18 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem13 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.Appearance appearance7 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup5 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem14 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem15 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
             Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup6 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem16 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.Appearance appearance8 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem17 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup7 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem18 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
             Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem19 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup8 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem20 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem9 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.Appearance appearance9 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem8 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.Appearance appearance10 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem7 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem6 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.Appearance appearance11 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem5 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.Appearance appearance12 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem4 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.Appearance appearance13 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinDock.DockAreaPane dockAreaPane1 = new Infragistics.Win.UltraWinDock.DockAreaPane(Infragistics.Win.UltraWinDock.DockedLocation.DockedLeft, new System.Guid("3311653a-360d-4f74-a8c0-cfa3e31d3dd5"));
             Infragistics.Win.UltraWinDock.DockableControlPane dockableControlPane1 = new Infragistics.Win.UltraWinDock.DockableControlPane(new System.Guid("c76c27f6-f378-4268-8926-fd9a1fe93d1c"), new System.Guid("00000000-0000-0000-0000-000000000000"), -1, new System.Guid("3311653a-360d-4f74-a8c0-cfa3e31d3dd5"), -1);
             this.ultraExplorerBar1 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBar();
@@ -84,98 +98,125 @@
             this.ultraExplorerBar1.BorderStyle = Infragistics.Win.UIElementBorderStyle.WindowsVista;
             this.ultraExplorerBar1.Dock = System.Windows.Forms.DockStyle.Left;
             ultraExplorerBarItem1.Key = "11";
+            appearance1.Image = ((object)(resources.GetObject("appearance1.Image")));
+            ultraExplorerBarItem1.Settings.AppearancesLarge.Appearance = appearance1;
             ultraExplorerBarItem1.Text = "Ürün Ekleme";
-            ultraExplorerBarItem3.Key = "12";
-            ultraExplorerBarItem3.Text = "Fiyatlandırma";
-            ultraExplorerBarItem4.Key = "13";
-            ultraExplorerBarItem4.Text = "Depo Yönetimi";
-            ultraExplorerBarItem9.Key = "14";
-            ultraExplorerBarItem9.Text = "Fiyat Tipi  Ekle / Sil / Güncelle";
-            ultraExplorerBarItem10.Key = "15";
-            ultraExplorerBarItem10.Text = "Birim Cinsi Ekle / Sil / Güncelle";
-            ultraExplorerBarItem5.Key = "16";
-            ultraExplorerBarItem5.Text = "Kdv Oranı Ekle / Sil / Güncelle";
-            ultraExplorerBarItem6.Key = "17";
-            ultraExplorerBarItem6.Text = "Otv Oranı Ekle / Sil / Güncelle";
-            ultraExplorerBarItem7.Key = "18";
-            ultraExplorerBarItem7.Text = "Renk  Ekle / Sil / Güncelle";
-            ultraExplorerBarItem8.Key = "19";
-            ultraExplorerBarItem8.Text = "Beden Ekle / Sil / Güncelle";
+            ultraExplorerBarItem2.Key = "12";
+            appearance2.Image = ((object)(resources.GetObject("appearance2.Image")));
+            ultraExplorerBarItem2.Settings.AppearancesLarge.Appearance = appearance2;
+            ultraExplorerBarItem2.Text = "Fiyatlandırma";
+            ultraExplorerBarItem3.Key = "13";
+            appearance3.Image = global::Entegref.Properties.Resources.shop_64px1;
+            ultraExplorerBarItem3.Settings.AppearancesLarge.Appearance = appearance3;
+            ultraExplorerBarItem3.Text = "Depo Yönetimi";
             ultraExplorerBarGroup1.Items.AddRange(new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem[] {
             ultraExplorerBarItem1,
-            ultraExplorerBarItem3,
-            ultraExplorerBarItem4,
-            ultraExplorerBarItem9,
-            ultraExplorerBarItem10,
-            ultraExplorerBarItem5,
-            ultraExplorerBarItem6,
-            ultraExplorerBarItem7,
-            ultraExplorerBarItem8});
+            ultraExplorerBarItem2,
+            ultraExplorerBarItem3});
+            appearance4.Image = global::Entegref.Properties.Resources.loadpagesetup_32x32;
+            ultraExplorerBarGroup1.Settings.AppearancesLarge.Appearance = appearance4;
             ultraExplorerBarGroup1.Text = "Ürünler";
-            ultraExplorerBarItem11.Key = "21";
-            ultraExplorerBarItem11.Text = "Müşteri Ekle / Sil / Güncelle";
-            ultraExplorerBarItem12.Key = "22";
-            ultraExplorerBarItem12.Text = "New Item";
-            ultraExplorerBarGroup9.Items.AddRange(new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem[] {
-            ultraExplorerBarItem11,
-            ultraExplorerBarItem12});
-            ultraExplorerBarGroup9.Text = "Müşteri";
-            ultraExplorerBarItem20.Key = "81";
-            ultraExplorerBarItem20.Text = "New Item";
-            ultraExplorerBarGroup7.Items.AddRange(new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem[] {
-            ultraExplorerBarItem20});
-            ultraExplorerBarGroup7.Text = "Tedarici Firma";
-            ultraExplorerBarItem2.Key = "31";
-            ultraExplorerBarItem2.Text = "Satış Takibi";
+            ultraExplorerBarItem10.Key = "21";
+            appearance5.Image = global::Entegref.Properties.Resources.user_group_48px;
+            ultraExplorerBarItem10.Settings.AppearancesLarge.Appearance = appearance5;
+            ultraExplorerBarItem10.Text = "Müşteri Ekle / Sil / Güncelle";
+            ultraExplorerBarItem11.Key = "22";
+            ultraExplorerBarItem11.Text = "New Item";
             ultraExplorerBarGroup2.Items.AddRange(new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem[] {
-            ultraExplorerBarItem2});
-            ultraExplorerBarGroup2.Text = "Satışlar";
-            ultraExplorerBarItem13.Key = "41";
-            ultraExplorerBarItem13.Text = "New Item";
-            ultraExplorerBarItem14.Key = "42";
-            ultraExplorerBarItem14.Text = "New Item";
-            ultraExplorerBarGroup5.Items.AddRange(new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem[] {
-            ultraExplorerBarItem13,
-            ultraExplorerBarItem14});
-            ultraExplorerBarGroup5.Text = "E-İşlemler";
-            ultraExplorerBarItem15.Key = "51";
-            ultraExplorerBarItem15.Text = "New Item";
-            ultraExplorerBarItem16.Key = "52";
-            ultraExplorerBarItem16.Text = "New Item";
+            ultraExplorerBarItem10,
+            ultraExplorerBarItem11});
+            ultraExplorerBarGroup2.Text = "Müşteri";
+            ultraExplorerBarItem12.Key = "81";
+            appearance6.Image = global::Entegref.Properties.Resources.supplier_40px;
+            ultraExplorerBarItem12.Settings.AppearancesLarge.Appearance = appearance6;
+            ultraExplorerBarItem12.Text = "New Item";
             ultraExplorerBarGroup3.Items.AddRange(new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem[] {
-            ultraExplorerBarItem15,
-            ultraExplorerBarItem16});
-            ultraExplorerBarGroup3.Text = "Pazar Yeri";
-            ultraExplorerBarItem17.Key = "61";
-            ultraExplorerBarItem17.Text = "New Item";
-            ultraExplorerBarItem18.Key = "62";
-            ultraExplorerBarItem18.Text = "New Item";
+            ultraExplorerBarItem12});
+            ultraExplorerBarGroup3.Text = "Tedarici Firma";
+            ultraExplorerBarItem13.Key = "31";
+            appearance7.Image = global::Entegref.Properties.Resources.sell_48px;
+            ultraExplorerBarItem13.Settings.AppearancesLarge.Appearance = appearance7;
+            ultraExplorerBarItem13.Text = "Satış Takibi";
             ultraExplorerBarGroup4.Items.AddRange(new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem[] {
-            ultraExplorerBarItem17,
-            ultraExplorerBarItem18});
-            ultraExplorerBarGroup4.Text = "Kargo";
-            ultraExplorerBarItem19.Key = "0";
-            ultraExplorerBarItem19.Text = "New Item";
+            ultraExplorerBarItem13});
+            ultraExplorerBarGroup4.Text = "Satışlar";
+            ultraExplorerBarItem14.Key = "41";
+            ultraExplorerBarItem14.Text = "New Item";
+            ultraExplorerBarItem15.Key = "42";
+            ultraExplorerBarItem15.Text = "New Item";
+            ultraExplorerBarGroup5.Items.AddRange(new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem[] {
+            ultraExplorerBarItem14,
+            ultraExplorerBarItem15});
+            ultraExplorerBarGroup5.Text = "E-İşlemler";
+            ultraExplorerBarItem16.Key = "51";
+            appearance8.Image = ((object)(resources.GetObject("appearance8.Image")));
+            ultraExplorerBarItem16.Settings.AppearancesLarge.Appearance = appearance8;
+            ultraExplorerBarItem16.Text = "TrendYol";
+            ultraExplorerBarItem17.Key = "52";
+            ultraExplorerBarItem17.Text = "New Item";
             ultraExplorerBarGroup6.Items.AddRange(new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem[] {
+            ultraExplorerBarItem16,
+            ultraExplorerBarItem17});
+            ultraExplorerBarGroup6.Text = "Pazar Yeri";
+            ultraExplorerBarItem18.Key = "61";
+            ultraExplorerBarItem18.Text = "New Item";
+            ultraExplorerBarItem19.Key = "62";
+            ultraExplorerBarItem19.Text = "New Item";
+            ultraExplorerBarGroup7.Items.AddRange(new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem[] {
+            ultraExplorerBarItem18,
             ultraExplorerBarItem19});
-            ultraExplorerBarGroup6.Text = "Ayarlar";
+            ultraExplorerBarGroup7.Text = "Kargo";
+            ultraExplorerBarItem20.Key = "0";
+            ultraExplorerBarItem20.Text = "New Item";
+            ultraExplorerBarItem9.Key = "19";
+            appearance9.Image = global::Entegref.Properties.Resources.original_size_40px;
+            ultraExplorerBarItem9.Settings.AppearancesLarge.Appearance = appearance9;
+            ultraExplorerBarItem9.Text = "Beden Ekle / Sil / Güncelle";
+            ultraExplorerBarItem8.Key = "18";
+            appearance10.Image = global::Entegref.Properties.Resources.Color_Wheel_48px;
+            ultraExplorerBarItem8.Settings.AppearancesLarge.Appearance = appearance10;
+            ultraExplorerBarItem8.Text = "Renk  Ekle / Sil / Güncelle";
+            ultraExplorerBarItem7.Key = "17";
+            ultraExplorerBarItem7.Text = "Otv Oranı Ekle / Sil / Güncelle";
+            ultraExplorerBarItem6.Key = "16";
+            appearance11.Image = global::Entegref.Properties.Resources.kdv1;
+            ultraExplorerBarItem6.Settings.AppearancesLarge.Appearance = appearance11;
+            ultraExplorerBarItem6.Text = "Kdv Oranı Ekle / Sil / Güncelle";
+            ultraExplorerBarItem5.Key = "15";
+            appearance12.Image = global::Entegref.Properties.Resources.module_2;
+            ultraExplorerBarItem5.Settings.AppearancesLarge.Appearance = appearance12;
+            ultraExplorerBarItem5.Text = "Birim Cinsi Ekle / Sil / Güncelle";
+            ultraExplorerBarItem4.Key = "14";
+            appearance13.Image = global::Entegref.Properties.Resources.stack_of_money_48px1;
+            ultraExplorerBarItem4.Settings.AppearancesLarge.Appearance = appearance13;
+            ultraExplorerBarItem4.Text = "Fiyat Tipi  Ekle / Sil / Güncelle";
+            ultraExplorerBarGroup8.Items.AddRange(new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem[] {
+            ultraExplorerBarItem20,
+            ultraExplorerBarItem9,
+            ultraExplorerBarItem8,
+            ultraExplorerBarItem7,
+            ultraExplorerBarItem6,
+            ultraExplorerBarItem5,
+            ultraExplorerBarItem4});
+            ultraExplorerBarGroup8.Text = "Ayarlar";
             this.ultraExplorerBar1.Groups.AddRange(new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup[] {
             ultraExplorerBarGroup1,
-            ultraExplorerBarGroup9,
-            ultraExplorerBarGroup7,
             ultraExplorerBarGroup2,
-            ultraExplorerBarGroup5,
             ultraExplorerBarGroup3,
             ultraExplorerBarGroup4,
-            ultraExplorerBarGroup6});
-            this.ultraExplorerBar1.GroupSettings.Style = Infragistics.Win.UltraWinExplorerBar.GroupStyle.SmallImages;
-            this.ultraExplorerBar1.ItemSettings.Style = Infragistics.Win.UltraWinExplorerBar.ItemStyle.Label;
+            ultraExplorerBarGroup5,
+            ultraExplorerBarGroup6,
+            ultraExplorerBarGroup7,
+            ultraExplorerBarGroup8});
+            this.ultraExplorerBar1.GroupSettings.Style = Infragistics.Win.UltraWinExplorerBar.GroupStyle.LargeImagesWithTextBelow;
+            this.ultraExplorerBar1.ItemSettings.Style = Infragistics.Win.UltraWinExplorerBar.ItemStyle.Button;
             this.ultraExplorerBar1.Location = new System.Drawing.Point(0, 18);
             this.ultraExplorerBar1.Name = "ultraExplorerBar1";
+            this.ultraExplorerBar1.SettingsKey = "frmMain.ultraExplorerBar1";
             this.ultraExplorerBar1.Size = new System.Drawing.Size(336, 745);
             this.ultraExplorerBar1.Style = Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarStyle.OutlookNavigationPane;
             this.ultraExplorerBar1.TabIndex = 2;
-            this.ultraExplorerBar1.UseLargeGroupHeaderImages = Infragistics.Win.DefaultableBoolean.False;
+            this.ultraExplorerBar1.UseLargeGroupHeaderImages = Infragistics.Win.DefaultableBoolean.True;
             this.ultraExplorerBar1.UseOsThemes = Infragistics.Win.DefaultableBoolean.True;
             this.ultraExplorerBar1.ViewStyle = Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarViewStyle.Office2007;
             this.ultraExplorerBar1.ItemClick += new Infragistics.Win.UltraWinExplorerBar.ItemClickEventHandler(this.ultraExplorerBar1_ItemClick);
