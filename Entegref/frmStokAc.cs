@@ -226,5 +226,15 @@ namespace Entegref
             frmBarkod barkod = new frmBarkod(txtStokKodu.Text);
             barkod.Show();
         }
+
+        private void radioGroup1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioGroup1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

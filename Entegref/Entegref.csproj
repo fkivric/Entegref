@@ -262,6 +262,13 @@
     <Content Include="Pictures\logo_yon.png" />
     <Content Include="Pictures\logo_yon_new.png" />
     <Content Include="Pictures\logo_yon_new2.png" />
+    <None Include="Resources\find_16x16.png" />
+    <None Include="Resources\financial_32x32.png" />
+    <None Include="Resources\financial_16x16.png" />
+    <None Include="Resources\currency_32x321.png" />
+    <None Include="Resources\currency_16x161.png" />
+    <None Include="Resources\currency_16x16.png" />
+    <None Include="Resources\currency_32x32.png" />
     <None Include="Resources\apply_32x32.png" />
     <None Include="Resources\barcode_32x32.png" />
   </ItemGroup>

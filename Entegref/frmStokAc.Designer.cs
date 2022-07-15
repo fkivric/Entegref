@@ -78,6 +78,20 @@
             this.bunifuCustomTextbox1 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.ultraTabPageControl2 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.ultraTabPageControl3 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.gridFiyatlar = new DevExpress.XtraGrid.GridControl();
+            this.ViewFiyatlar = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
+            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pnlTekfiyat = new System.Windows.Forms.Panel();
+            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.radioGroup1 = new DevExpress.XtraEditors.RadioGroup();
             this.ultraTabPageControl4 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -99,16 +113,22 @@
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.dropDownButton1 = new DevExpress.XtraEditors.DropDownButton();
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
-            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.pnlTopluFiyat = new System.Windows.Forms.Panel();
             this.ultraTabPageControl1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.ultraTabPageControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridFiyatlar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ViewFiyatlar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.pnlTekfiyat.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).BeginInit();
             this.ultraTabPageControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlUrunResimbtn.SuspendLayout();
@@ -121,14 +141,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
             this.panelControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ultraTabPageControl1
             // 
             this.ultraTabPageControl1.Controls.Add(this.panel3);
             this.ultraTabPageControl1.Controls.Add(this.panel2);
-            this.ultraTabPageControl1.Location = new System.Drawing.Point(1, 22);
+            this.ultraTabPageControl1.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl1.Name = "ultraTabPageControl1";
             this.ultraTabPageControl1.Size = new System.Drawing.Size(965, 511);
             // 
@@ -481,9 +502,145 @@
             // 
             // ultraTabPageControl3
             // 
-            this.ultraTabPageControl3.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl3.Controls.Add(this.pnlTopluFiyat);
+            this.ultraTabPageControl3.Controls.Add(this.gridFiyatlar);
+            this.ultraTabPageControl3.Controls.Add(this.panel4);
+            this.ultraTabPageControl3.Location = new System.Drawing.Point(1, 22);
             this.ultraTabPageControl3.Name = "ultraTabPageControl3";
             this.ultraTabPageControl3.Size = new System.Drawing.Size(965, 511);
+            // 
+            // gridFiyatlar
+            // 
+            this.gridFiyatlar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridFiyatlar.Location = new System.Drawing.Point(0, 100);
+            this.gridFiyatlar.MainView = this.ViewFiyatlar;
+            this.gridFiyatlar.MenuManager = this.barManager1;
+            this.gridFiyatlar.Name = "gridFiyatlar";
+            this.gridFiyatlar.Size = new System.Drawing.Size(965, 411);
+            this.gridFiyatlar.TabIndex = 0;
+            this.gridFiyatlar.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.ViewFiyatlar});
+            // 
+            // ViewFiyatlar
+            // 
+            this.ViewFiyatlar.GridControl = this.gridFiyatlar;
+            this.ViewFiyatlar.Name = "ViewFiyatlar";
+            this.ViewFiyatlar.OptionsView.ShowGroupPanel = false;
+            // 
+            // barManager1
+            // 
+            this.barManager1.DockControls.Add(this.barDockControlTop);
+            this.barManager1.DockControls.Add(this.barDockControlBottom);
+            this.barManager1.DockControls.Add(this.barDockControlLeft);
+            this.barManager1.DockControls.Add(this.barDockControlRight);
+            this.barManager1.Form = this;
+            this.barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.barButtonItem1,
+            this.barButtonItem2});
+            this.barManager1.MaxItemId = 2;
+            // 
+            // barDockControlTop
+            // 
+            this.barDockControlTop.CausesValidation = false;
+            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlTop.Manager = this.barManager1;
+            this.barDockControlTop.Size = new System.Drawing.Size(1138, 0);
+            // 
+            // barDockControlBottom
+            // 
+            this.barDockControlBottom.CausesValidation = false;
+            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 638);
+            this.barDockControlBottom.Manager = this.barManager1;
+            this.barDockControlBottom.Size = new System.Drawing.Size(1138, 0);
+            // 
+            // barDockControlLeft
+            // 
+            this.barDockControlLeft.CausesValidation = false;
+            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlLeft.Manager = this.barManager1;
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 638);
+            // 
+            // barDockControlRight
+            // 
+            this.barDockControlRight.CausesValidation = false;
+            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.barDockControlRight.Location = new System.Drawing.Point(1138, 0);
+            this.barDockControlRight.Manager = this.barManager1;
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 638);
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Fiyat Gir";
+            this.barButtonItem1.Id = 0;
+            this.barButtonItem1.ImageOptions.Image = global::Entegref.Properties.Resources.currency_16x161;
+            this.barButtonItem1.ImageOptions.LargeImage = global::Entegref.Properties.Resources.currency_32x321;
+            this.barButtonItem1.Name = "barButtonItem1";
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "Fiyat Fipi Aç";
+            this.barButtonItem2.Id = 1;
+            this.barButtonItem2.ImageOptions.Image = global::Entegref.Properties.Resources.financial_16x16;
+            this.barButtonItem2.ImageOptions.LargeImage = global::Entegref.Properties.Resources.financial_32x32;
+            this.barButtonItem2.Name = "barButtonItem2";
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.pnlTekfiyat);
+            this.panel4.Controls.Add(this.radioGroup1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(965, 100);
+            this.panel4.TabIndex = 1;
+            // 
+            // pnlTekfiyat
+            // 
+            this.pnlTekfiyat.Controls.Add(this.label19);
+            this.pnlTekfiyat.Controls.Add(this.label16);
+            this.pnlTekfiyat.Controls.Add(this.label15);
+            this.pnlTekfiyat.Controls.Add(this.dateEdit1);
+            this.pnlTekfiyat.Controls.Add(this.simpleButton4);
+            this.pnlTekfiyat.Controls.Add(this.textBox3);
+            this.pnlTekfiyat.Controls.Add(this.textBox1);
+            this.pnlTekfiyat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlTekfiyat.Location = new System.Drawing.Point(161, 0);
+            this.pnlTekfiyat.Name = "pnlTekfiyat";
+            this.pnlTekfiyat.Size = new System.Drawing.Size(804, 100);
+            this.pnlTekfiyat.TabIndex = 1;
+            // 
+            // simpleButton4
+            // 
+            this.simpleButton4.ImageOptions.Image = global::Entegref.Properties.Resources.find_16x16;
+            this.simpleButton4.Location = new System.Drawing.Point(255, 14);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.Size = new System.Drawing.Size(27, 21);
+            this.simpleButton4.TabIndex = 1;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(105, 14);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(147, 21);
+            this.textBox1.TabIndex = 0;
+            // 
+            // radioGroup1
+            // 
+            this.radioGroup1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.radioGroup1.Location = new System.Drawing.Point(0, 0);
+            this.radioGroup1.MenuManager = this.barManager1;
+            this.radioGroup1.Name = "radioGroup1";
+            this.radioGroup1.Properties.Columns = 1;
+            this.radioGroup1.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Tek Fiyat Girişi"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Toplu Fiyat Girişi")});
+            this.radioGroup1.Size = new System.Drawing.Size(161, 100);
+            this.radioGroup1.TabIndex = 0;
+            this.radioGroup1.SelectedIndexChanged += new System.EventHandler(this.radioGroup1_SelectedIndexChanged);
+            this.radioGroup1.Click += new System.EventHandler(this.radioGroup1_Click);
             // 
             // ultraTabPageControl4
             // 
@@ -722,61 +879,60 @@
             this.popupMenu1.Manager = this.barManager1;
             this.popupMenu1.Name = "popupMenu1";
             // 
-            // barButtonItem1
+            // textBox3
             // 
-            this.barButtonItem1.Caption = "Fiyat Gir";
-            this.barButtonItem1.Id = 0;
-            this.barButtonItem1.Name = "barButtonItem1";
+            this.textBox3.Location = new System.Drawing.Point(105, 41);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(177, 21);
+            this.textBox3.TabIndex = 0;
             // 
-            // barButtonItem2
+            // dateEdit1
             // 
-            this.barButtonItem2.Caption = "Fiyat Fipi Aç";
-            this.barButtonItem2.Id = 1;
-            this.barButtonItem2.Name = "barButtonItem2";
+            this.dateEdit1.EditValue = null;
+            this.dateEdit1.Location = new System.Drawing.Point(105, 69);
+            this.dateEdit1.MenuManager = this.barManager1;
+            this.dateEdit1.Name = "dateEdit1";
+            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEdit1.Size = new System.Drawing.Size(177, 20);
+            this.dateEdit1.TabIndex = 2;
             // 
-            // barManager1
+            // label15
             // 
-            this.barManager1.DockControls.Add(this.barDockControlTop);
-            this.barManager1.DockControls.Add(this.barDockControlBottom);
-            this.barManager1.DockControls.Add(this.barDockControlLeft);
-            this.barManager1.DockControls.Add(this.barDockControlRight);
-            this.barManager1.Form = this;
-            this.barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.barButtonItem1,
-            this.barButtonItem2});
-            this.barManager1.MaxItemId = 2;
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(7, 21);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(50, 13);
+            this.label15.TabIndex = 3;
+            this.label15.Text = "Fiyat Tipi";
             // 
-            // barDockControlTop
+            // label16
             // 
-            this.barDockControlTop.CausesValidation = false;
-            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(1138, 0);
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(6, 49);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(31, 13);
+            this.label16.TabIndex = 3;
+            this.label16.Text = "Fiyat";
             // 
-            // barDockControlBottom
+            // label19
             // 
-            this.barDockControlBottom.CausesValidation = false;
-            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 638);
-            this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(1138, 0);
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(6, 76);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(77, 13);
+            this.label19.TabIndex = 3;
+            this.label19.Text = "Geçerlilik Tarihi";
             // 
-            // barDockControlLeft
+            // pnlTopluFiyat
             // 
-            this.barDockControlLeft.CausesValidation = false;
-            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 638);
-            // 
-            // barDockControlRight
-            // 
-            this.barDockControlRight.CausesValidation = false;
-            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1138, 0);
-            this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 638);
+            this.pnlTopluFiyat.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTopluFiyat.Location = new System.Drawing.Point(0, 100);
+            this.pnlTopluFiyat.Name = "pnlTopluFiyat";
+            this.pnlTopluFiyat.Size = new System.Drawing.Size(965, 156);
+            this.pnlTopluFiyat.TabIndex = 2;
             // 
             // frmStokAc
             // 
@@ -799,6 +955,14 @@
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.ultraTabPageControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridFiyatlar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ViewFiyatlar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.pnlTekfiyat.ResumeLayout(false);
+            this.pnlTekfiyat.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).EndInit();
             this.ultraTabPageControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlUrunResimbtn.ResumeLayout(false);
@@ -813,7 +977,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
             this.panelControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -885,6 +1050,19 @@
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
+        private DevExpress.XtraGrid.GridControl gridFiyatlar;
+        private DevExpress.XtraGrid.Views.Grid.GridView ViewFiyatlar;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel pnlTekfiyat;
+        private DevExpress.XtraEditors.SimpleButton simpleButton4;
+        private System.Windows.Forms.TextBox textBox1;
+        private DevExpress.XtraEditors.RadioGroup radioGroup1;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private DevExpress.XtraEditors.DateEdit dateEdit1;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Panel pnlTopluFiyat;
         //private GridControl gridStokFiyat;
         //private GridView ViewStokFiyat;
         //private GridColumn gridColumn1;
