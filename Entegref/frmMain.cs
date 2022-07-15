@@ -29,6 +29,12 @@ namespace Entegref
                     stok.Show();
                     break;
 
+                case "12":
+                    frmFiyat fiyat = new frmFiyat();
+                    fiyat.MdiParent = this;
+                    fiyat.Show();
+                    break;
+
                 case "21":
                     frmYapılandırma yapılandırma = new frmYapılandırma();
                     yapılandırma.MdiParent = this;

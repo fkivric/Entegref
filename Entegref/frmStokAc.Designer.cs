@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab1 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
@@ -89,13 +90,22 @@
             this.ultraTabControl1 = new Infragistics.Win.UltraWinTabControl.UltraTabControl();
             this.ultraTabSharedControlsPage1 = new Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.ultraButton3 = new Infragistics.Win.Misc.UltraButton();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.ultraButton2 = new Infragistics.Win.Misc.UltraButton();
             this.label1 = new System.Windows.Forms.Label();
             this.ultraButton1 = new Infragistics.Win.Misc.UltraButton();
             this.txtStokKodu = new System.Windows.Forms.TextBox();
             this.btnStokBul = new System.Windows.Forms.Button();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
+            this.dropDownButton1 = new DevExpress.XtraEditors.DropDownButton();
+            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
+            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.ultraTabPageControl1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -109,6 +119,9 @@
             this.ultraTabControl1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
+            this.panelControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // ultraTabPageControl1
@@ -613,7 +626,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.ultraButton3);
+            this.panel1.Controls.Add(this.simpleButton3);
             this.panel1.Controls.Add(this.ultraButton2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.ultraButton1);
@@ -625,15 +638,15 @@
             this.panel1.Size = new System.Drawing.Size(967, 41);
             this.panel1.TabIndex = 1;
             // 
-            // ultraButton3
+            // simpleButton3
             // 
-            this.ultraButton3.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Button3D;
-            this.ultraButton3.Location = new System.Drawing.Point(365, 11);
-            this.ultraButton3.Name = "ultraButton3";
-            this.ultraButton3.Size = new System.Drawing.Size(150, 21);
-            this.ultraButton3.TabIndex = 3;
-            this.ultraButton3.Text = "SEÇ";
-            this.ultraButton3.Click += new System.EventHandler(this.ultraButton3_Click);
+            this.simpleButton3.ImageOptions.Image = global::Entegref.Properties.Resources.apply_32x32;
+            this.simpleButton3.Location = new System.Drawing.Point(365, 3);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(122, 35);
+            this.simpleButton3.TabIndex = 4;
+            this.simpleButton3.Text = "SEÇ";
+            this.simpleButton3.Click += new System.EventHandler(this.ultraButton3_Click);
             // 
             // ultraButton2
             // 
@@ -684,11 +697,86 @@
             // 
             // panelControl4
             // 
+            this.panelControl4.Controls.Add(this.dropDownButton1);
             this.panelControl4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl4.Location = new System.Drawing.Point(0, 0);
             this.panelControl4.Name = "panelControl4";
             this.panelControl4.Size = new System.Drawing.Size(1138, 579);
             this.panelControl4.TabIndex = 3;
+            // 
+            // dropDownButton1
+            // 
+            this.dropDownButton1.DropDownControl = this.popupMenu1;
+            this.dropDownButton1.ImageOptions.Image = global::Entegref.Properties.Resources.bosale_32x32;
+            this.dropDownButton1.Location = new System.Drawing.Point(977, 13);
+            this.dropDownButton1.Name = "dropDownButton1";
+            this.dropDownButton1.Size = new System.Drawing.Size(156, 39);
+            this.dropDownButton1.TabIndex = 0;
+            this.dropDownButton1.Text = "Fiyatlandırma";
+            // 
+            // popupMenu1
+            // 
+            this.popupMenu1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem2)});
+            this.popupMenu1.Manager = this.barManager1;
+            this.popupMenu1.Name = "popupMenu1";
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Fiyat Gir";
+            this.barButtonItem1.Id = 0;
+            this.barButtonItem1.Name = "barButtonItem1";
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "Fiyat Fipi Aç";
+            this.barButtonItem2.Id = 1;
+            this.barButtonItem2.Name = "barButtonItem2";
+            // 
+            // barManager1
+            // 
+            this.barManager1.DockControls.Add(this.barDockControlTop);
+            this.barManager1.DockControls.Add(this.barDockControlBottom);
+            this.barManager1.DockControls.Add(this.barDockControlLeft);
+            this.barManager1.DockControls.Add(this.barDockControlRight);
+            this.barManager1.Form = this;
+            this.barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.barButtonItem1,
+            this.barButtonItem2});
+            this.barManager1.MaxItemId = 2;
+            // 
+            // barDockControlTop
+            // 
+            this.barDockControlTop.CausesValidation = false;
+            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlTop.Manager = this.barManager1;
+            this.barDockControlTop.Size = new System.Drawing.Size(1138, 0);
+            // 
+            // barDockControlBottom
+            // 
+            this.barDockControlBottom.CausesValidation = false;
+            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 638);
+            this.barDockControlBottom.Manager = this.barManager1;
+            this.barDockControlBottom.Size = new System.Drawing.Size(1138, 0);
+            // 
+            // barDockControlLeft
+            // 
+            this.barDockControlLeft.CausesValidation = false;
+            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlLeft.Manager = this.barManager1;
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 638);
+            // 
+            // barDockControlRight
+            // 
+            this.barDockControlRight.CausesValidation = false;
+            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.barDockControlRight.Location = new System.Drawing.Point(1138, 0);
+            this.barDockControlRight.Manager = this.barManager1;
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 638);
             // 
             // frmStokAc
             // 
@@ -698,6 +786,10 @@
             this.Controls.Add(this.panelControl3);
             this.Controls.Add(this.panelControl4);
             this.Controls.Add(this.panelControl2);
+            this.Controls.Add(this.barDockControlLeft);
+            this.Controls.Add(this.barDockControlRight);
+            this.Controls.Add(this.barDockControlBottom);
+            this.Controls.Add(this.barDockControlTop);
             this.Name = "frmStokAc";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Ürünler";
@@ -719,7 +811,11 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
+            this.panelControl4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -738,7 +834,6 @@
         private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private Infragistics.Win.Misc.UltraButton ultraButton3;
         private Infragistics.Win.Misc.UltraButton ultraButton2;
         private System.Windows.Forms.ComboBox cmbKDV;
         private System.Windows.Forms.ComboBox cmbBirim2;
@@ -780,5 +875,22 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private Infragistics.Win.Misc.UltraButton btnUrunKaydet;
         private System.Windows.Forms.Label label14;
+        private DevExpress.XtraEditors.DropDownButton dropDownButton1;
+        private DevExpress.XtraBars.PopupMenu popupMenu1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarManager barManager1;
+        private DevExpress.XtraBars.BarDockControl barDockControlTop;
+        private DevExpress.XtraBars.BarDockControl barDockControlBottom;
+        private DevExpress.XtraBars.BarDockControl barDockControlLeft;
+        private DevExpress.XtraBars.BarDockControl barDockControlRight;
+        //private GridControl gridStokFiyat;
+        //private GridView ViewStokFiyat;
+        //private GridColumn gridColumn1;
+        //private GridColumn gridColumn2;
+        //private GridColumn gridColumn3;
+        //private GridColumn gridColumn4;
+        //private DropDownButton dropDownButton1;
     }
 }
