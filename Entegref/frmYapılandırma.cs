@@ -237,7 +237,7 @@ namespace Entegref
             Prm.Add("@sTelefon1", txtMobil1.Text);
             Prm.Add("@sTelefon2", txtMobil2.Text);
             Prm.Add("@sTelefon3", txtMobil2.Text);
-            Prm.Add("@sEmail", txtMail.Text);
+            Prm.Add("@sEmail", txtMail1.Text);
             if (checkBox1.Checked==true)
             {
                 Prm.Add("@bHareketTipiVarmi", "1");

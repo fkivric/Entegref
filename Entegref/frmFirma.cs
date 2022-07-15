@@ -25,27 +25,27 @@ namespace Entegref
         private void comboIl_SelectedIndexChanged(object sender, EventArgs e)
         {
             ilce(comboIl.SelectedValue.ToString());
-            txtAdresFull.Text = txtAdresFull.Text + comboIl.Text;
+            txtAdresFull.Text = comboIl.Text;
         }
 
         private void combosemt_SelectedIndexChanged(object sender, EventArgs e)
         {
-            txtAdresFull.Text = combosemt.Text +"/"+ txtAdresFull.Text ;
+            txtAdresFull.Text = combosemt.Text +"/"+ comboIl.Text ;
         }
 
         private void ultraTextEditor5_KeyPress(object sender, KeyPressEventArgs e)
         {
-            txtAdresFull.Text = txtCadde.Text + " " + txtSokak.Text + " " + combosemt.Text + combosemt.Text + "/" + comboIl.Text;
+            txtAdresFull.Text = txtCadde.Text + " " + txtSokak.Text + " " + txtBina.Text + " " + combosemt.Text + "/" + comboIl.Text;
         }
 
         private void ultraTextEditor6_KeyPress(object sender, KeyPressEventArgs e)
         {
-            txtAdresFull.Text = txtCadde.Text + " " + txtSokak.Text + " " + txtBina.Text + " " + combosemt.Text + combosemt.Text + "/" + comboIl.Text;
+            txtAdresFull.Text = txtCadde.Text + " " + txtSokak.Text + " " + txtBina.Text + " " + combosemt.Text + "/" + comboIl.Text;
         }
 
         private void ultraTextEditor7_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            txtAdresFull.Text = txtCadde.Text + " " + txtSokak.Text + " " + txtBina.Text + " " + combosemt.Text + "/" + comboIl.Text;
         }
         void IL()
         {
