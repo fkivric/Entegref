@@ -31,9 +31,12 @@ namespace Entegref
 
         private void ViewFirma_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
         {
-            frmStokAc.sKodu = ViewStok.GetRowCellValue(ViewStok.FocusedRowHandle, "sKodu").ToString();
-            this.Close();
-            this.Dispose();
+            if (e.RowHandle >= 0 && e.Clicks == 2 && e.Button == MouseButtons.Left)
+            {
+                frmStokAc.sKodu = ViewStok.GetRowCellValue(ViewStok.FocusedRowHandle, "sKodu").ToString();
+                this.Close();
+                this.Dispose();
+            }
         }
     }
 }

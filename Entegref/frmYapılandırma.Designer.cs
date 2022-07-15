@@ -32,11 +32,15 @@
             this.navigationFrame1 = new DevExpress.XtraBars.Navigation.NavigationFrame();
             this.navigationPage1 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.navigationPage2 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.panel7 = new System.Windows.Forms.Panel();
             this.grpErpSec = new DevExpress.XtraEditors.RadioGroup();
             this.navigationPage3 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.txtMobil2 = new System.Windows.Forms.MaskedTextBox();
+            this.txtMobil1 = new System.Windows.Forms.MaskedTextBox();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.combosemt = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -46,6 +50,7 @@
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.comboIl = new System.Windows.Forms.ComboBox();
+            this.txtMail = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -113,11 +118,6 @@
             this.bunifuCheckbox5 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifuCheckbox2 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifuCheckbox1 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.txtMobil1 = new System.Windows.Forms.MaskedTextBox();
-            this.txtMobil2 = new System.Windows.Forms.MaskedTextBox();
-            this.txtMail = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame1)).BeginInit();
             this.navigationFrame1.SuspendLayout();
             this.navigationPage1.SuspendLayout();
@@ -129,6 +129,7 @@
             this.panel5.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor5)).BeginInit();
@@ -151,7 +152,6 @@
             this.panel3.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMail)).BeginInit();
             this.SuspendLayout();
             // 
             // navigationFrame1
@@ -200,6 +200,26 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(600, 415);
             this.panel4.TabIndex = 1;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(422, 381);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(175, 17);
+            this.checkBox4.TabIndex = 1;
+            this.checkBox4.Text = "Sözleşmeyi okudum Kabul Ettim";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(600, 375);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // navigationPage2
             // 
@@ -271,6 +291,22 @@
             this.panel5.Size = new System.Drawing.Size(600, 415);
             this.panel5.TabIndex = 5;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+            // 
+            // txtMobil2
+            // 
+            this.txtMobil2.Location = new System.Drawing.Point(354, 244);
+            this.txtMobil2.Mask = "(999) 000-0000";
+            this.txtMobil2.Name = "txtMobil2";
+            this.txtMobil2.Size = new System.Drawing.Size(159, 20);
+            this.txtMobil2.TabIndex = 16;
+            // 
+            // txtMobil1
+            // 
+            this.txtMobil1.Location = new System.Drawing.Point(118, 241);
+            this.txtMobil1.Mask = "(999) 000-0000";
+            this.txtMobil1.Name = "txtMobil1";
+            this.txtMobil1.Size = new System.Drawing.Size(159, 20);
+            this.txtMobil1.TabIndex = 16;
             // 
             // simpleButton3
             // 
@@ -376,6 +412,13 @@
             this.comboIl.Size = new System.Drawing.Size(158, 21);
             this.comboIl.TabIndex = 3;
             this.comboIl.SelectedIndexChanged += new System.EventHandler(this.comboIl_SelectedIndexChanged);
+            // 
+            // txtMail
+            // 
+            this.txtMail.Location = new System.Drawing.Point(118, 277);
+            this.txtMail.Name = "txtMail";
+            this.txtMail.Size = new System.Drawing.Size(329, 21);
+            this.txtMail.TabIndex = 10;
             // 
             // label11
             // 
@@ -1021,49 +1064,6 @@
             this.bunifuCheckbox1.Size = new System.Drawing.Size(20, 20);
             this.bunifuCheckbox1.TabIndex = 0;
             // 
-            // txtMobil1
-            // 
-            this.txtMobil1.Location = new System.Drawing.Point(118, 241);
-            this.txtMobil1.Mask = "(999) 000-0000";
-            this.txtMobil1.Name = "txtMobil1";
-            this.txtMobil1.Size = new System.Drawing.Size(159, 20);
-            this.txtMobil1.TabIndex = 16;
-            // 
-            // txtMobil2
-            // 
-            this.txtMobil2.Location = new System.Drawing.Point(354, 244);
-            this.txtMobil2.Mask = "(999) 000-0000";
-            this.txtMobil2.Name = "txtMobil2";
-            this.txtMobil2.Size = new System.Drawing.Size(159, 20);
-            this.txtMobil2.TabIndex = 16;
-            // 
-            // txtMail
-            // 
-            this.txtMail.Location = new System.Drawing.Point(118, 277);
-            this.txtMail.Name = "txtMail";
-            this.txtMail.Size = new System.Drawing.Size(329, 21);
-            this.txtMail.TabIndex = 10;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(600, 375);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(422, 381);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(175, 17);
-            this.checkBox4.TabIndex = 1;
-            this.checkBox4.Text = "Sözleşmeyi okudum Kabul Ettim";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
-            // 
             // frmYapılandırma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1090,6 +1090,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor5)).EndInit();
@@ -1117,7 +1118,6 @@
             this.groupBox3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMail)).EndInit();
             this.ResumeLayout(false);
 
         }

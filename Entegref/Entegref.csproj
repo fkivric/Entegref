@@ -51,6 +51,7 @@
     <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraWizard.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="Infragistics4.Documents.IO.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Infragistics4.Shared.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
@@ -117,6 +118,12 @@
     <Compile Include="frmFiyat.Designer.cs">
       <DependentUpon>frmFiyat.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmFiyatTipi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiyatTipi.Designer.cs">
+      <DependentUpon>frmFiyatTipi.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmStokBul.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmFiyat.resx">
       <DependentUpon>frmFiyat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFiyatTipi.resx">
+      <DependentUpon>frmFiyatTipi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmStokBul.resx">
       <DependentUpon>frmStokBul.cs</DependentUpon>

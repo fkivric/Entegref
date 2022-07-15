@@ -23,6 +23,7 @@ namespace Entegref
         DataTable birim2 = new DataTable();
         DataTable Otv = new DataTable();
         public static string sKodu = "";
+        public static string sFiyatTipi = "";
         public frmStokAc()
         {
             InitializeComponent();
@@ -163,23 +164,50 @@ namespace Entegref
                         pnlUrunResimbtn.Enabled = false;
                     }
                 }
+                else
+                {
+                    listBox1.DataSource = null;
+                    listBox1.DisplayMember = "Resim Adı";
+                    listBox1.ValueMember = "Resim Yolu";
+
+                    DataTable resim = new DataTable();
+                    resim.Clear();
+                    resim.Columns.Add("Resim Adı");
+                    resim.Columns.Add("Resim Yolu");
+                    DataRow _ravi = resim.NewRow();
+
+
+                    if (txtStokKodu.Text != "" || txtStokKodu.Text == null)
+                    {
+                        DirectoryInfo d = new DirectoryInfo(@"..\..\Pictures\");
+
+                        FileInfo[] Files = d.GetFiles("*.png");
+                        FileInfo[] Files2 = d.GetFiles("*.jpg");
+
+                        foreach (FileInfo file in Files)
+                        {
+                            resim.Rows.Add(new object[] { file.Name, file.FullName });
+                            //listBox1.Items.Add(file.FullName);
+                        }
+                        foreach (FileInfo file2 in Files2)
+                        {
+                            resim.Rows.Add(new object[] { file2.Name, file2.FullName });
+                            //listBox1.Items.Add(file2.FullName);
+                        }
+                        listBox1.DataSource = resim;
+                        label20.Text = "Toplam Resim : " + listBox1.Items.Count.ToString();
+                    }
+
+                    label20.Text = "Toplam Resim : ";
+                }
+            }
+            else if (e.Tab.Text == "Fiyatlandırma")
+            {
+
             }
             else
             {
-                if (txtStokKodu.Text != "")
-                {
-                    DirectoryInfo d = new DirectoryInfo(@"..\..\Pictures\"); 
-
-                    FileInfo[] Files = d.GetFiles("*.png"); 
-                    
-
-                    foreach (FileInfo file in Files)
-                    {
-                        
-                        listBox1.Items.Add(file.FullName);
-                    }
-                    
-                }
+                
             }
         }
         public string filename = "";
@@ -189,7 +217,7 @@ namespace Entegref
             var lst = listBox1.Items[index].ToString();
 
             string file = @"..\..\Pictures\"+ txtStokKodu.Text.ToString();
-            string dosya = listBox1.SelectedItem.ToString();
+            string dosya = listBox1.SelectedValue.ToString();
             int satirno = listBox1.SelectedIndex;
             pictureBox1.Image = Image.FromFile(dosya);
             txtFileAdress.Text = dosya;
@@ -200,6 +228,7 @@ namespace Entegref
             //Save the file in folder
             string fileLocation = txtFileAdress.Text;
             File.Copy(txtFileAdress.Text, Path.Combine(@"..\..\Pictures\", Path.GetFileName(filename)), true);
+            txtFileAdress.Text = null;
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -217,7 +246,7 @@ namespace Entegref
         private void btnStokBul_Click(object sender, EventArgs e)
         {
             frmStokBul stokBul = new frmStokBul();
-            stokBul.Show();
+            stokBul.ShowDialog();
             txtStokKodu.Text = sKodu;
         }
 
@@ -227,14 +256,93 @@ namespace Entegref
             barkod.Show();
         }
 
-        private void radioGroup1_SelectedIndexChanged(object sender, EventArgs e)
+        private void grpFTipiSec_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+            if (grpFTipiSec.SelectedIndex.ToString() == "0")
+            {
+                pnlTopluFiyat.Visible = false;
+                pnlTekfiyat.Visible = true;
+                txtTipi.Text = null;
+            }
+            if (grpFTipiSec.SelectedIndex.ToString() == "1")
+            {
+                pnlTopluFiyat.Visible = true;
+                pnlTekfiyat.Visible = false;
+                txtTipi.Text = null;
+
+
+                //DataTable fiyat_yeni = new DataTable();
+                //string Fiyatsql = "select ff.nStokID,t.sFiyatTipi, t.sAciklama,dteFiyatTespitTarihi,lFiyat,0 from tbFiyatTipi t ";
+                //Fiyatsql = Fiyatsql + " left join(select f.nStokID,f.lFiyat, f.dteFiyatTespitTarihi, f.sFiyatTipi from tbStokFiyati f ";
+                //Fiyatsql = Fiyatsql + "inner join tbstok s on s.nStokID= f.nStokID where s.sKodu = isnull('" + txtStokKodu.Text + "','')";
+                //Fiyatsql = Fiyatsql + ") ff on ff.sFiyatTipi = t.sFiyatTipi";
+                //SqlCommand cmd = new SqlCommand(Fiyatsql, connection);
+                //SqlDataAdapter da = new SqlDataAdapter(cmd);
+                //if (connection.State == ConnectionState.Closed)
+                //{
+                //    connection.Open();
+                //}
+                //da.Fill(fiyat_yeni);
+                //connection.Close();
+                //gridTopluFiyat.DataSource = fiyat_yeni;
+            }
         }
 
-        private void radioGroup1_Click(object sender, EventArgs e)
+        private void grpFTipiSec_Click(object sender, EventArgs e)
         {
 
+            if (grpFTipiSec.SelectedIndex.ToString() == "0")
+            {
+                pnlTopluFiyat.Visible = false;
+                pnlTekfiyat.Visible = true;
+                txtTipi.Text = null;
+            }
+            if (grpFTipiSec.SelectedIndex.ToString() == "1")
+            {
+                pnlTopluFiyat.Visible = true;
+                pnlTekfiyat.Visible = false;
+                txtTipi.Text = null;
+
+
+                DataTable fiyat_yeni = new DataTable();
+                string Fiyatsql = "select ff.nStokID,t.sFiyatTipi, t.sAciklama,dteFiyatTespitTarihi,lFiyat from tbFiyatTipi t ";
+                Fiyatsql = Fiyatsql + " left join(select f.nStokID,f.lFiyat, f.dteFiyatTespitTarihi, f.sFiyatTipi from tbStokFiyati f ";
+                Fiyatsql = Fiyatsql + "inner join tbstok s on s.nStokID= f.nStokID where s.sKodu = isnull('" + txtStokKodu.Text + "','')";
+                Fiyatsql = Fiyatsql + ") ff on ff.sFiyatTipi = t.sFiyatTipi";
+                SqlCommand cmd = new SqlCommand(Fiyatsql, connection);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                if (connection.State == ConnectionState.Closed)
+                {
+                    connection.Open();
+                }
+                da.Fill(fiyat_yeni);
+                connection.Close();
+                gridTopluFiyat.DataSource = fiyat_yeni;
+            }
+        }
+
+        private void btnFiyatTipiAc_Click(object sender, EventArgs e)
+        {
+            sFiyatTipi = "";
+            frmFiyatTipi fiyatTipi = new frmFiyatTipi();
+            fiyatTipi.ShowDialog();
+            txtTipi.Text = sFiyatTipi;
+        }
+
+        private void txtTipi_TextChanged(object sender, EventArgs e)
+        {
+            if (txtTipi.Text.Count() >= 2)
+            {
+                txtYeniFiyat.Enabled = true;
+                dteYeniFiyat.Enabled = true;
+            }
+            else
+            {
+                txtYeniFiyat.Enabled = false;
+                dteYeniFiyat.Enabled = false;
+
+            }
         }
     }
 }

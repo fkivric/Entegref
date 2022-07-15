@@ -115,6 +115,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel2);
             this.Name = "frmStokBul";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmStokbul";
             this.Load += new System.EventHandler(this.frmFirmaBul_Load);
             this.panel2.ResumeLayout(false);
