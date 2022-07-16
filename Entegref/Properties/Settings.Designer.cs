@@ -25,7 +25,7 @@ namespace Entegref.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Server=localhost;Database=39391097764; User Id=fatih; Password=05101981;")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Server=185.184.26.206;Database=39391097764; User Id=fatih; Password=05101981;")]
         public string connectionstring {
             get {
                 return ((string)(this["connectionstring"]));
@@ -37,8 +37,8 @@ namespace Entegref.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Network Library=DBMSSOCN;Initial Catalog=Netbil_Connector; User ID=" +
-            "fatih;Password=05101981;")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Server=185.184.26.206;Database=Netbil_Connector; User ID=fatih;Password=05101981;" +
+            "")]
         public string connectionstring2 {
             get {
                 return ((string)(this["connectionstring2"]));
