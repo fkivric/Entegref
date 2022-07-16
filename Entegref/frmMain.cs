@@ -24,43 +24,17 @@ namespace Entegref
         {
 
         }
-        frmStokAc FRMSTOKAC;
-        frmFiyat FRMFIYAT;
-        frmMusteri FRMMUSTERI;
-
 
         private void ultraExplorerBar1_ItemClick(object sender, Infragistics.Win.UltraWinExplorerBar.ItemEventArgs e)
         {
             switch (e.Item.Key.ToString())
             {
                 case "11":
-                    if (FRMSTOKAC != null)
-                    {
-                        FRMSTOKAC.Show();
-                    }
-                    else
-                    {
-                        FRMSTOKAC = new frmStokAc();
-                        FRMSTOKAC.MdiParent = this;
-                        FRMSTOKAC.Show();
-                    }
-
-                    //frmStokAc stok = new frmStokAc();
-                    //stok.MdiParent = this;
-                    //stok.Show();
+                    OpenForm(new frmStokAc);
                     break;
 
                 case "12":
-                    if (FRMFIYAT != null)
-                    {
-                        FRMFIYAT.Show();
-                    }
-                    else
-                    {
-                        FRMFIYAT = new frmFiyat();
-                        FRMFIYAT.MdiParent = this;
-                        FRMFIYAT.Show();
-                    }
+                    OpenForm(new frmFiyat);
                     break;
 
                 case "21":
