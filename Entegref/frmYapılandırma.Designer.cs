@@ -39,6 +39,7 @@
             this.grpErpSec = new DevExpress.XtraEditors.RadioGroup();
             this.navigationPage3 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.txtMail = new Infragistics.Win.UltraWinMaskedEdit.UltraMaskedEdit();
             this.txtMobil2 = new System.Windows.Forms.MaskedTextBox();
             this.txtMobil1 = new System.Windows.Forms.MaskedTextBox();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
@@ -118,7 +119,7 @@
             this.bunifuCheckbox5 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifuCheckbox2 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifuCheckbox1 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.txtMail = new Infragistics.Win.UltraWinMaskedEdit.UltraMaskedEdit();
+            this.radioGroup1 = new DevExpress.XtraEditors.RadioGroup();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame1)).BeginInit();
             this.navigationFrame1.SuspendLayout();
             this.navigationPage1.SuspendLayout();
@@ -153,6 +154,7 @@
             this.panel3.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // navigationFrame1
@@ -232,6 +234,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Transparent;
+            this.panel7.Controls.Add(this.radioGroup1);
             this.panel7.Controls.Add(this.grpErpSec);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(0, 0);
@@ -241,7 +244,7 @@
             // 
             // grpErpSec
             // 
-            this.grpErpSec.Location = new System.Drawing.Point(71, 101);
+            this.grpErpSec.Location = new System.Drawing.Point(80, 119);
             this.grpErpSec.Name = "grpErpSec";
             this.grpErpSec.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.grpErpSec.Properties.Appearance.Options.UseBackColor = true;
@@ -249,7 +252,7 @@
             this.grpErpSec.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Dahili ERP kurulacak"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Harici ERP programı var", false, null, "")});
-            this.grpErpSec.Size = new System.Drawing.Size(458, 194);
+            this.grpErpSec.Size = new System.Drawing.Size(158, 194);
             this.grpErpSec.TabIndex = 1;
             // 
             // navigationPage3
@@ -293,6 +296,19 @@
             this.panel5.Size = new System.Drawing.Size(600, 415);
             this.panel5.TabIndex = 5;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+            // 
+            // txtMail
+            // 
+            this.txtMail.DisplayMode = Infragistics.Win.UltraWinMaskedEdit.MaskMode.IncludeLiteralsWithPadding;
+            this.txtMail.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.Office2013;
+            this.txtMail.EditAs = Infragistics.Win.UltraWinMaskedEdit.EditAsType.UseSpecifiedMask;
+            this.txtMail.InputMask = "<Aaaaaaaaaa@Aaaaaaaaaaaa.AAa";
+            this.txtMail.Location = new System.Drawing.Point(118, 268);
+            this.txtMail.Name = "txtMail";
+            this.txtMail.NonAutoSizeHeight = 20;
+            this.txtMail.Size = new System.Drawing.Size(329, 20);
+            this.txtMail.TabIndex = 17;
+            this.txtMail.Text = "@.";
             // 
             // txtMobil2
             // 
@@ -1067,18 +1083,18 @@
             this.bunifuCheckbox1.Size = new System.Drawing.Size(20, 20);
             this.bunifuCheckbox1.TabIndex = 0;
             // 
-            // txtMail
+            // radioGroup1
             // 
-            this.txtMail.DisplayMode = Infragistics.Win.UltraWinMaskedEdit.MaskMode.IncludeLiteralsWithPadding;
-            this.txtMail.DisplayStyle = Infragistics.Win.EmbeddableElementDisplayStyle.Office2013;
-            this.txtMail.EditAs = Infragistics.Win.UltraWinMaskedEdit.EditAsType.UseSpecifiedMask;
-            this.txtMail.InputMask = "<Aaaaaaaaaa@Aaaaaaaaaaaa.AAa";
-            this.txtMail.Location = new System.Drawing.Point(118, 268);
-            this.txtMail.Name = "txtMail";
-            this.txtMail.NonAutoSizeHeight = 20;
-            this.txtMail.Size = new System.Drawing.Size(329, 20);
-            this.txtMail.TabIndex = 17;
-            this.txtMail.Text = "@.";
+            this.radioGroup1.Location = new System.Drawing.Point(313, 123);
+            this.radioGroup1.Name = "radioGroup1";
+            this.radioGroup1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.radioGroup1.Properties.Appearance.Options.UseBackColor = true;
+            this.radioGroup1.Properties.Columns = 1;
+            this.radioGroup1.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "ENtegref Web Sayfası Dahil"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "İnternet Sayfası Haric", true, null, "")});
+            this.radioGroup1.Size = new System.Drawing.Size(158, 194);
+            this.radioGroup1.TabIndex = 1;
             // 
             // frmYapılandırma
             // 
@@ -1134,6 +1150,7 @@
             this.groupBox3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1230,5 +1247,6 @@
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private Infragistics.Win.UltraWinMaskedEdit.UltraMaskedEdit txtMail;
+        private DevExpress.XtraEditors.RadioGroup radioGroup1;
     }
 }

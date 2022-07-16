@@ -207,7 +207,7 @@
             this.ultraNavigationBar1.Location = new System.Drawing.Point(0, 0);
             this.ultraNavigationBar1.Name = "ultraNavigationBar1";
             this.ultraNavigationBar1.NonAutoSizeHeight = 24;
-            this.ultraNavigationBar1.Size = new System.Drawing.Size(0, 24);
+            this.ultraNavigationBar1.Size = new System.Drawing.Size(0, 25);
             this.ultraNavigationBar1.TabIndex = 7;
             this.ultraNavigationBar1.Text = "ultraNavigationBar1";
             // 
@@ -234,7 +234,7 @@
             // _frmMainUnpinnedTabAreaLeft
             // 
             this._frmMainUnpinnedTabAreaLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this._frmMainUnpinnedTabAreaLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this._frmMainUnpinnedTabAreaLeft.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this._frmMainUnpinnedTabAreaLeft.Location = new System.Drawing.Point(0, 0);
             this._frmMainUnpinnedTabAreaLeft.Name = "_frmMainUnpinnedTabAreaLeft";
             this._frmMainUnpinnedTabAreaLeft.Owner = this.ultraDockManager1;
@@ -245,7 +245,7 @@
             // _frmMainUnpinnedTabAreaRight
             // 
             this._frmMainUnpinnedTabAreaRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this._frmMainUnpinnedTabAreaRight.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this._frmMainUnpinnedTabAreaRight.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this._frmMainUnpinnedTabAreaRight.Location = new System.Drawing.Point(1752, 0);
             this._frmMainUnpinnedTabAreaRight.Name = "_frmMainUnpinnedTabAreaRight";
             this._frmMainUnpinnedTabAreaRight.Owner = this.ultraDockManager1;
@@ -256,7 +256,7 @@
             // _frmMainUnpinnedTabAreaTop
             // 
             this._frmMainUnpinnedTabAreaTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this._frmMainUnpinnedTabAreaTop.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this._frmMainUnpinnedTabAreaTop.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this._frmMainUnpinnedTabAreaTop.Location = new System.Drawing.Point(0, 0);
             this._frmMainUnpinnedTabAreaTop.Name = "_frmMainUnpinnedTabAreaTop";
             this._frmMainUnpinnedTabAreaTop.Owner = this.ultraDockManager1;
@@ -267,7 +267,7 @@
             // _frmMainUnpinnedTabAreaBottom
             // 
             this._frmMainUnpinnedTabAreaBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this._frmMainUnpinnedTabAreaBottom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this._frmMainUnpinnedTabAreaBottom.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this._frmMainUnpinnedTabAreaBottom.Location = new System.Drawing.Point(0, 763);
             this._frmMainUnpinnedTabAreaBottom.Name = "_frmMainUnpinnedTabAreaBottom";
             this._frmMainUnpinnedTabAreaBottom.Owner = this.ultraDockManager1;
@@ -277,7 +277,7 @@
             // 
             // _frmMainAutoHideControl
             // 
-            this._frmMainAutoHideControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this._frmMainAutoHideControl.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this._frmMainAutoHideControl.Location = new System.Drawing.Point(0, 0);
             this._frmMainAutoHideControl.Name = "_frmMainAutoHideControl";
             this._frmMainAutoHideControl.Owner = this.ultraDockManager1;
@@ -289,7 +289,7 @@
             // 
             this.windowDockingArea1.Controls.Add(this.dockableWindow1);
             this.windowDockingArea1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.windowDockingArea1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.windowDockingArea1.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.windowDockingArea1.Location = new System.Drawing.Point(0, 0);
             this.windowDockingArea1.Name = "windowDockingArea1";
             this.windowDockingArea1.Owner = this.ultraDockManager1;
@@ -310,7 +310,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(1752, 808);
             this.Controls.Add(this._frmMainAutoHideControl);
             this.Controls.Add(this.ultraNavigationBar1);
