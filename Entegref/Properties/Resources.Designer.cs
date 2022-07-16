@@ -103,6 +103,36 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap box_50px {
+            get {
+                object obj = ResourceManager.GetObject("box_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Box_Settings_48px {
+            get {
+                object obj = ResourceManager.GetObject("Box Settings_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap box2 {
+            get {
+                object obj = ResourceManager.GetObject("box2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap cancel_16x16 {
             get {
                 object obj = ResourceManager.GetObject("cancel_16x16", resourceCulture);
@@ -293,9 +323,29 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap online_shop_setting_icon_vector {
+            get {
+                object obj = ResourceManager.GetObject("online-shop-setting-icon-vector", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap original_size_40px {
             get {
                 object obj = ResourceManager.GetObject("original_size_40px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap perakende_settings {
+            get {
+                object obj = ResourceManager.GetObject("perakende settings", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -343,6 +393,16 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap Settings_64px {
+            get {
+                object obj = ResourceManager.GetObject("Settings_64px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap shop_64px {
             get {
                 object obj = ResourceManager.GetObject("shop_64px", resourceCulture);
@@ -376,6 +436,16 @@ namespace Entegref.Properties {
         internal static System.Drawing.Bitmap stack_of_money_48px1 {
             get {
                 object obj = ResourceManager.GetObject("stack_of_money_48px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Store_Setting_48px {
+            get {
+                object obj = ResourceManager.GetObject("Store Setting_48px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
