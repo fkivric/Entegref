@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Entegref
 {
-    public partial class frmStokBul : Form
+    public partial class frmStokBul : DevExpress.XtraEditors.XtraForm
     {
         public frmStokBul()
         {

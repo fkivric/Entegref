@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
+            this.components = new System.ComponentModel.Container();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab5 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab6 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab7 = new Infragistics.Win.UltraWinTabControl.UltraTab();
@@ -36,31 +36,977 @@
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab9 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab10 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab11 = new Infragistics.Win.UltraWinTabControl.UltraTab();
-            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
-            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
-            this.dropDownButton1 = new DevExpress.XtraEditors.DropDownButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.dropDownButton2 = new DevExpress.XtraEditors.DropDownButton();
-            this.ultraTabControl1 = new Infragistics.Win.UltraWinTabControl.UltraTabControl();
-            this.ultraTabSharedControlsPage1 = new Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage();
             this.ultraTabPageControl5 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.ultraTabPageControl6 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.gridBedenTumu = new DevExpress.XtraGrid.GridControl();
+            this.ViewBedenTumu = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn32 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn31 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn16 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn18 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn19 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn20 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn21 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn22 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn23 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn24 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn25 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn26 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn27 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn28 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn29 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn30 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
+            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.gridBeden = new DevExpress.XtraGrid.GridControl();
+            this.ViewBeden = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn15 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnBedenYeni = new DevExpress.XtraEditors.SimpleButton();
+            this.btnBedenAc = new DevExpress.XtraEditors.SimpleButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtBedenAdı = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmbBedenTipi = new System.Windows.Forms.ComboBox();
             this.ultraTabPageControl7 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.gridControl4 = new DevExpress.XtraGrid.GridControl();
+            this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.ultraTabPageControl8 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.gridControl6 = new DevExpress.XtraGrid.GridControl();
+            this.gridView6 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.panel14 = new System.Windows.Forms.Panel();
             this.ultraTabPageControl9 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.ultraTabPageControl10 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.gridControl2 = new DevExpress.XtraGrid.GridControl();
+            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.ultraTabPageControl11 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.gridControl3 = new DevExpress.XtraGrid.GridControl();
+            this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.dropDownButton2 = new DevExpress.XtraEditors.DropDownButton();
+            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.ultraTabControl1 = new Infragistics.Win.UltraWinTabControl.UltraTabControl();
+            this.ultraTabSharedControlsPage1 = new Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
+            this.dropDownButton1 = new DevExpress.XtraEditors.DropDownButton();
+            this.ultraTabPageControl6.SuspendLayout();
+            this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridBedenTumu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ViewBedenTumu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridBeden)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ViewBeden)).BeginInit();
+            this.panel12.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.ultraTabPageControl7.SuspendLayout();
+            this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView4)).BeginInit();
+            this.ultraTabPageControl8.SuspendLayout();
+            this.panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView6)).BeginInit();
+            this.ultraTabPageControl9.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.ultraTabPageControl10.SuspendLayout();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
+            this.panel7.SuspendLayout();
+            this.ultraTabPageControl11.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
+            this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
-            this.panelControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl1)).BeginInit();
             this.ultraTabControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
+            this.panelControl4.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // ultraTabPageControl5
+            // 
+            this.ultraTabPageControl5.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl5.Name = "ultraTabPageControl5";
+            this.ultraTabPageControl5.Size = new System.Drawing.Size(965, 477);
+            // 
+            // ultraTabPageControl6
+            // 
+            this.ultraTabPageControl6.Controls.Add(this.panel11);
+            this.ultraTabPageControl6.Location = new System.Drawing.Point(1, 43);
+            this.ultraTabPageControl6.Name = "ultraTabPageControl6";
+            this.ultraTabPageControl6.Size = new System.Drawing.Size(965, 477);
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.gridBedenTumu);
+            this.panel11.Controls.Add(this.gridBeden);
+            this.panel11.Controls.Add(this.panel12);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel11.Location = new System.Drawing.Point(0, 0);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(965, 477);
+            this.panel11.TabIndex = 4;
+            // 
+            // gridBedenTumu
+            // 
+            this.gridBedenTumu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridBedenTumu.Location = new System.Drawing.Point(0, 173);
+            this.gridBedenTumu.MainView = this.ViewBedenTumu;
+            this.gridBedenTumu.MenuManager = this.barManager1;
+            this.gridBedenTumu.Name = "gridBedenTumu";
+            this.gridBedenTumu.Size = new System.Drawing.Size(965, 304);
+            this.gridBedenTumu.TabIndex = 0;
+            this.gridBedenTumu.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.ViewBedenTumu});
+            // 
+            // ViewBedenTumu
+            // 
+            this.ViewBedenTumu.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn32,
+            this.gridColumn31,
+            this.gridColumn16,
+            this.gridColumn17,
+            this.gridColumn18,
+            this.gridColumn19,
+            this.gridColumn20,
+            this.gridColumn21,
+            this.gridColumn22,
+            this.gridColumn23,
+            this.gridColumn24,
+            this.gridColumn25,
+            this.gridColumn26,
+            this.gridColumn27,
+            this.gridColumn28,
+            this.gridColumn29,
+            this.gridColumn30});
+            this.ViewBedenTumu.GridControl = this.gridBedenTumu;
+            this.ViewBedenTumu.Name = "ViewBedenTumu";
+            this.ViewBedenTumu.OptionsView.ShowFooter = true;
+            this.ViewBedenTumu.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridColumn32
+            // 
+            this.gridColumn32.FieldName = "sBedenTipi";
+            this.gridColumn32.Name = "gridColumn32";
+            this.gridColumn32.OptionsColumn.AllowEdit = false;
+            // 
+            // gridColumn31
+            // 
+            this.gridColumn31.Caption = "Beden Tipi Adı";
+            this.gridColumn31.FieldName = "sAciklama";
+            this.gridColumn31.Name = "gridColumn31";
+            this.gridColumn31.OptionsColumn.AllowEdit = false;
+            this.gridColumn31.OptionsColumn.AllowMove = false;
+            this.gridColumn31.OptionsColumn.FixedWidth = true;
+            this.gridColumn31.Visible = true;
+            this.gridColumn31.VisibleIndex = 0;
+            this.gridColumn31.Width = 190;
+            // 
+            // gridColumn16
+            // 
+            this.gridColumn16.Caption = "Beden";
+            this.gridColumn16.FieldName = "sBeden1";
+            this.gridColumn16.Name = "gridColumn16";
+            this.gridColumn16.OptionsColumn.AllowEdit = false;
+            this.gridColumn16.OptionsColumn.AllowMove = false;
+            this.gridColumn16.OptionsColumn.FixedWidth = true;
+            this.gridColumn16.Visible = true;
+            this.gridColumn16.VisibleIndex = 1;
+            // 
+            // gridColumn17
+            // 
+            this.gridColumn17.Caption = "Beden";
+            this.gridColumn17.FieldName = "sBeden2";
+            this.gridColumn17.Name = "gridColumn17";
+            this.gridColumn17.OptionsColumn.AllowEdit = false;
+            this.gridColumn17.OptionsColumn.AllowMove = false;
+            this.gridColumn17.OptionsColumn.FixedWidth = true;
+            this.gridColumn17.Visible = true;
+            this.gridColumn17.VisibleIndex = 2;
+            // 
+            // gridColumn18
+            // 
+            this.gridColumn18.Caption = "Beden";
+            this.gridColumn18.FieldName = "sBeden3";
+            this.gridColumn18.Name = "gridColumn18";
+            this.gridColumn18.OptionsColumn.AllowEdit = false;
+            this.gridColumn18.OptionsColumn.AllowMove = false;
+            this.gridColumn18.OptionsColumn.FixedWidth = true;
+            this.gridColumn18.Visible = true;
+            this.gridColumn18.VisibleIndex = 3;
+            // 
+            // gridColumn19
+            // 
+            this.gridColumn19.Caption = "Beden";
+            this.gridColumn19.FieldName = "sBeden4";
+            this.gridColumn19.Name = "gridColumn19";
+            this.gridColumn19.OptionsColumn.AllowEdit = false;
+            this.gridColumn19.OptionsColumn.AllowMove = false;
+            this.gridColumn19.OptionsColumn.FixedWidth = true;
+            this.gridColumn19.Visible = true;
+            this.gridColumn19.VisibleIndex = 4;
+            // 
+            // gridColumn20
+            // 
+            this.gridColumn20.Caption = "Beden";
+            this.gridColumn20.FieldName = "sBeden5";
+            this.gridColumn20.Name = "gridColumn20";
+            this.gridColumn20.OptionsColumn.AllowEdit = false;
+            this.gridColumn20.OptionsColumn.AllowMove = false;
+            this.gridColumn20.OptionsColumn.FixedWidth = true;
+            this.gridColumn20.Visible = true;
+            this.gridColumn20.VisibleIndex = 5;
+            // 
+            // gridColumn21
+            // 
+            this.gridColumn21.Caption = "Beden";
+            this.gridColumn21.FieldName = "sBeden6";
+            this.gridColumn21.Name = "gridColumn21";
+            this.gridColumn21.OptionsColumn.AllowEdit = false;
+            this.gridColumn21.OptionsColumn.AllowMove = false;
+            this.gridColumn21.OptionsColumn.FixedWidth = true;
+            this.gridColumn21.Visible = true;
+            this.gridColumn21.VisibleIndex = 6;
+            // 
+            // gridColumn22
+            // 
+            this.gridColumn22.Caption = "Beden";
+            this.gridColumn22.FieldName = "sBeden7";
+            this.gridColumn22.Name = "gridColumn22";
+            this.gridColumn22.OptionsColumn.AllowEdit = false;
+            this.gridColumn22.OptionsColumn.AllowMove = false;
+            this.gridColumn22.OptionsColumn.FixedWidth = true;
+            this.gridColumn22.Visible = true;
+            this.gridColumn22.VisibleIndex = 7;
+            // 
+            // gridColumn23
+            // 
+            this.gridColumn23.Caption = "Beden";
+            this.gridColumn23.FieldName = "sBeden8";
+            this.gridColumn23.Name = "gridColumn23";
+            this.gridColumn23.OptionsColumn.AllowEdit = false;
+            this.gridColumn23.OptionsColumn.AllowMove = false;
+            this.gridColumn23.OptionsColumn.FixedWidth = true;
+            this.gridColumn23.Visible = true;
+            this.gridColumn23.VisibleIndex = 8;
+            // 
+            // gridColumn24
+            // 
+            this.gridColumn24.Caption = "Beden";
+            this.gridColumn24.FieldName = "sBeden9";
+            this.gridColumn24.Name = "gridColumn24";
+            this.gridColumn24.OptionsColumn.AllowEdit = false;
+            this.gridColumn24.OptionsColumn.AllowMove = false;
+            this.gridColumn24.OptionsColumn.FixedWidth = true;
+            this.gridColumn24.Visible = true;
+            this.gridColumn24.VisibleIndex = 9;
+            // 
+            // gridColumn25
+            // 
+            this.gridColumn25.Caption = "Beden";
+            this.gridColumn25.FieldName = "sBeden10";
+            this.gridColumn25.Name = "gridColumn25";
+            this.gridColumn25.OptionsColumn.AllowEdit = false;
+            this.gridColumn25.OptionsColumn.AllowMove = false;
+            this.gridColumn25.OptionsColumn.FixedWidth = true;
+            this.gridColumn25.Visible = true;
+            this.gridColumn25.VisibleIndex = 10;
+            // 
+            // gridColumn26
+            // 
+            this.gridColumn26.Caption = "Beden";
+            this.gridColumn26.FieldName = "sBeden11";
+            this.gridColumn26.Name = "gridColumn26";
+            this.gridColumn26.OptionsColumn.AllowEdit = false;
+            this.gridColumn26.OptionsColumn.AllowMove = false;
+            this.gridColumn26.OptionsColumn.FixedWidth = true;
+            this.gridColumn26.Visible = true;
+            this.gridColumn26.VisibleIndex = 11;
+            // 
+            // gridColumn27
+            // 
+            this.gridColumn27.Caption = "Beden";
+            this.gridColumn27.FieldName = "sBeden12";
+            this.gridColumn27.Name = "gridColumn27";
+            this.gridColumn27.OptionsColumn.AllowEdit = false;
+            this.gridColumn27.OptionsColumn.AllowMove = false;
+            this.gridColumn27.OptionsColumn.FixedWidth = true;
+            this.gridColumn27.Visible = true;
+            this.gridColumn27.VisibleIndex = 12;
+            // 
+            // gridColumn28
+            // 
+            this.gridColumn28.Caption = "Beden";
+            this.gridColumn28.FieldName = "sBeden13";
+            this.gridColumn28.Name = "gridColumn28";
+            this.gridColumn28.OptionsColumn.AllowEdit = false;
+            this.gridColumn28.OptionsColumn.AllowMove = false;
+            this.gridColumn28.OptionsColumn.FixedWidth = true;
+            this.gridColumn28.Visible = true;
+            this.gridColumn28.VisibleIndex = 13;
+            // 
+            // gridColumn29
+            // 
+            this.gridColumn29.Caption = "Beden";
+            this.gridColumn29.FieldName = "sBeden14";
+            this.gridColumn29.Name = "gridColumn29";
+            this.gridColumn29.OptionsColumn.AllowEdit = false;
+            this.gridColumn29.OptionsColumn.AllowMove = false;
+            this.gridColumn29.OptionsColumn.FixedWidth = true;
+            this.gridColumn29.Visible = true;
+            this.gridColumn29.VisibleIndex = 14;
+            // 
+            // gridColumn30
+            // 
+            this.gridColumn30.Caption = "Beden";
+            this.gridColumn30.FieldName = "sBeden16";
+            this.gridColumn30.Name = "gridColumn30";
+            this.gridColumn30.OptionsColumn.AllowEdit = false;
+            this.gridColumn30.OptionsColumn.AllowMove = false;
+            this.gridColumn30.OptionsColumn.FixedWidth = true;
+            this.gridColumn30.Visible = true;
+            this.gridColumn30.VisibleIndex = 15;
+            // 
+            // barManager1
+            // 
+            this.barManager1.DockControls.Add(this.barDockControlTop);
+            this.barManager1.DockControls.Add(this.barDockControlBottom);
+            this.barManager1.DockControls.Add(this.barDockControlLeft);
+            this.barManager1.DockControls.Add(this.barDockControlRight);
+            this.barManager1.Form = this;
+            this.barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.barButtonItem1,
+            this.barButtonItem2});
+            this.barManager1.MaxItemId = 2;
+            // 
+            // barDockControlTop
+            // 
+            this.barDockControlTop.CausesValidation = false;
+            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlTop.Manager = this.barManager1;
+            this.barDockControlTop.Size = new System.Drawing.Size(1138, 0);
+            // 
+            // barDockControlBottom
+            // 
+            this.barDockControlBottom.CausesValidation = false;
+            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 638);
+            this.barDockControlBottom.Manager = this.barManager1;
+            this.barDockControlBottom.Size = new System.Drawing.Size(1138, 0);
+            // 
+            // barDockControlLeft
+            // 
+            this.barDockControlLeft.CausesValidation = false;
+            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlLeft.Manager = this.barManager1;
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 638);
+            // 
+            // barDockControlRight
+            // 
+            this.barDockControlRight.CausesValidation = false;
+            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.barDockControlRight.Location = new System.Drawing.Point(1138, 0);
+            this.barDockControlRight.Manager = this.barManager1;
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 638);
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Kaydet";
+            this.barButtonItem1.Id = 0;
+            this.barButtonItem1.Name = "barButtonItem1";
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "Yeni";
+            this.barButtonItem2.Id = 1;
+            this.barButtonItem2.Name = "barButtonItem2";
+            // 
+            // gridBeden
+            // 
+            this.gridBeden.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gridBeden.Location = new System.Drawing.Point(0, 94);
+            this.gridBeden.MainView = this.ViewBeden;
+            this.gridBeden.MenuManager = this.barManager1;
+            this.gridBeden.Name = "gridBeden";
+            this.gridBeden.Size = new System.Drawing.Size(965, 79);
+            this.gridBeden.TabIndex = 2;
+            this.gridBeden.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.ViewBeden});
+            // 
+            // ViewBeden
+            // 
+            this.ViewBeden.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn1,
+            this.gridColumn2,
+            this.gridColumn3,
+            this.gridColumn4,
+            this.gridColumn5,
+            this.gridColumn6,
+            this.gridColumn7,
+            this.gridColumn8,
+            this.gridColumn9,
+            this.gridColumn10,
+            this.gridColumn11,
+            this.gridColumn12,
+            this.gridColumn13,
+            this.gridColumn14,
+            this.gridColumn15});
+            this.ViewBeden.GridControl = this.gridBeden;
+            this.ViewBeden.Name = "ViewBeden";
+            this.ViewBeden.OptionsView.ShowFooter = true;
+            this.ViewBeden.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridColumn1
+            // 
+            this.gridColumn1.Caption = "Beden";
+            this.gridColumn1.FieldName = "sBeden1";
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.OptionsColumn.AllowMove = false;
+            this.gridColumn1.OptionsColumn.FixedWidth = true;
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 0;
+            // 
+            // gridColumn2
+            // 
+            this.gridColumn2.Caption = "Beden";
+            this.gridColumn2.FieldName = "sBeden2";
+            this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.OptionsColumn.AllowMove = false;
+            this.gridColumn2.OptionsColumn.FixedWidth = true;
+            this.gridColumn2.Visible = true;
+            this.gridColumn2.VisibleIndex = 1;
+            // 
+            // gridColumn3
+            // 
+            this.gridColumn3.Caption = "Beden";
+            this.gridColumn3.FieldName = "sBeden3";
+            this.gridColumn3.Name = "gridColumn3";
+            this.gridColumn3.OptionsColumn.AllowMove = false;
+            this.gridColumn3.OptionsColumn.FixedWidth = true;
+            this.gridColumn3.Visible = true;
+            this.gridColumn3.VisibleIndex = 2;
+            // 
+            // gridColumn4
+            // 
+            this.gridColumn4.Caption = "Beden";
+            this.gridColumn4.FieldName = "sBeden4";
+            this.gridColumn4.Name = "gridColumn4";
+            this.gridColumn4.OptionsColumn.AllowMove = false;
+            this.gridColumn4.OptionsColumn.FixedWidth = true;
+            this.gridColumn4.Visible = true;
+            this.gridColumn4.VisibleIndex = 3;
+            // 
+            // gridColumn5
+            // 
+            this.gridColumn5.Caption = "Beden";
+            this.gridColumn5.FieldName = "sBeden5";
+            this.gridColumn5.Name = "gridColumn5";
+            this.gridColumn5.OptionsColumn.AllowMove = false;
+            this.gridColumn5.OptionsColumn.FixedWidth = true;
+            this.gridColumn5.Visible = true;
+            this.gridColumn5.VisibleIndex = 4;
+            // 
+            // gridColumn6
+            // 
+            this.gridColumn6.Caption = "Beden";
+            this.gridColumn6.FieldName = "sBeden6";
+            this.gridColumn6.Name = "gridColumn6";
+            this.gridColumn6.OptionsColumn.AllowMove = false;
+            this.gridColumn6.OptionsColumn.FixedWidth = true;
+            this.gridColumn6.Visible = true;
+            this.gridColumn6.VisibleIndex = 5;
+            // 
+            // gridColumn7
+            // 
+            this.gridColumn7.Caption = "Beden";
+            this.gridColumn7.FieldName = "sBeden7";
+            this.gridColumn7.Name = "gridColumn7";
+            this.gridColumn7.OptionsColumn.AllowMove = false;
+            this.gridColumn7.OptionsColumn.FixedWidth = true;
+            this.gridColumn7.Visible = true;
+            this.gridColumn7.VisibleIndex = 6;
+            // 
+            // gridColumn8
+            // 
+            this.gridColumn8.Caption = "Beden";
+            this.gridColumn8.FieldName = "sBeden8";
+            this.gridColumn8.Name = "gridColumn8";
+            this.gridColumn8.OptionsColumn.AllowMove = false;
+            this.gridColumn8.OptionsColumn.FixedWidth = true;
+            this.gridColumn8.Visible = true;
+            this.gridColumn8.VisibleIndex = 7;
+            // 
+            // gridColumn9
+            // 
+            this.gridColumn9.Caption = "Beden";
+            this.gridColumn9.FieldName = "sBeden9";
+            this.gridColumn9.Name = "gridColumn9";
+            this.gridColumn9.OptionsColumn.AllowMove = false;
+            this.gridColumn9.OptionsColumn.FixedWidth = true;
+            this.gridColumn9.Visible = true;
+            this.gridColumn9.VisibleIndex = 8;
+            // 
+            // gridColumn10
+            // 
+            this.gridColumn10.Caption = "Beden";
+            this.gridColumn10.FieldName = "sBeden10";
+            this.gridColumn10.Name = "gridColumn10";
+            this.gridColumn10.OptionsColumn.AllowMove = false;
+            this.gridColumn10.OptionsColumn.FixedWidth = true;
+            this.gridColumn10.Visible = true;
+            this.gridColumn10.VisibleIndex = 9;
+            // 
+            // gridColumn11
+            // 
+            this.gridColumn11.Caption = "Beden";
+            this.gridColumn11.FieldName = "sBeden11";
+            this.gridColumn11.Name = "gridColumn11";
+            this.gridColumn11.OptionsColumn.AllowMove = false;
+            this.gridColumn11.OptionsColumn.FixedWidth = true;
+            this.gridColumn11.Visible = true;
+            this.gridColumn11.VisibleIndex = 10;
+            // 
+            // gridColumn12
+            // 
+            this.gridColumn12.Caption = "Beden";
+            this.gridColumn12.FieldName = "sBeden12";
+            this.gridColumn12.Name = "gridColumn12";
+            this.gridColumn12.OptionsColumn.AllowMove = false;
+            this.gridColumn12.OptionsColumn.FixedWidth = true;
+            this.gridColumn12.Visible = true;
+            this.gridColumn12.VisibleIndex = 11;
+            // 
+            // gridColumn13
+            // 
+            this.gridColumn13.Caption = "Beden";
+            this.gridColumn13.FieldName = "sBeden13";
+            this.gridColumn13.Name = "gridColumn13";
+            this.gridColumn13.OptionsColumn.AllowMove = false;
+            this.gridColumn13.OptionsColumn.FixedWidth = true;
+            this.gridColumn13.Visible = true;
+            this.gridColumn13.VisibleIndex = 12;
+            // 
+            // gridColumn14
+            // 
+            this.gridColumn14.Caption = "Beden";
+            this.gridColumn14.FieldName = "sBeden14";
+            this.gridColumn14.Name = "gridColumn14";
+            this.gridColumn14.OptionsColumn.AllowMove = false;
+            this.gridColumn14.OptionsColumn.FixedWidth = true;
+            this.gridColumn14.Visible = true;
+            this.gridColumn14.VisibleIndex = 13;
+            // 
+            // gridColumn15
+            // 
+            this.gridColumn15.Caption = "Beden";
+            this.gridColumn15.FieldName = "sBeden15";
+            this.gridColumn15.Name = "gridColumn15";
+            this.gridColumn15.OptionsColumn.AllowMove = false;
+            this.gridColumn15.OptionsColumn.FixedWidth = true;
+            this.gridColumn15.Visible = true;
+            this.gridColumn15.VisibleIndex = 14;
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.groupBox2);
+            this.panel12.Controls.Add(this.groupBox1);
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel12.Location = new System.Drawing.Point(0, 0);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(965, 94);
+            this.panel12.TabIndex = 1;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnBedenYeni);
+            this.groupBox2.Controls.Add(this.btnBedenAc);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.txtBedenAdı);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox2.Location = new System.Drawing.Point(254, 0);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(711, 94);
+            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Yeni Beden Aç";
+            // 
+            // btnBedenYeni
+            // 
+            this.btnBedenYeni.Location = new System.Drawing.Point(20, 37);
+            this.btnBedenYeni.Name = "btnBedenYeni";
+            this.btnBedenYeni.Size = new System.Drawing.Size(75, 23);
+            this.btnBedenYeni.TabIndex = 2;
+            this.btnBedenYeni.Text = "Yeni Oluştur";
+            this.btnBedenYeni.Click += new System.EventHandler(this.btnBedenYeni_Click);
+            // 
+            // btnBedenAc
+            // 
+            this.btnBedenAc.Enabled = false;
+            this.btnBedenAc.Location = new System.Drawing.Point(452, 65);
+            this.btnBedenAc.Name = "btnBedenAc";
+            this.btnBedenAc.Size = new System.Drawing.Size(75, 23);
+            this.btnBedenAc.TabIndex = 2;
+            this.btnBedenAc.Text = "Aç";
+            this.btnBedenAc.Click += new System.EventHandler(this.btnBedenAc_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(425, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(129, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Yeni Beden Ana Başlık Adı";
+            // 
+            // txtBedenAdı
+            // 
+            this.txtBedenAdı.Enabled = false;
+            this.txtBedenAdı.Location = new System.Drawing.Point(273, 34);
+            this.txtBedenAdı.Name = "txtBedenAdı";
+            this.txtBedenAdı.Size = new System.Drawing.Size(432, 21);
+            this.txtBedenAdı.TabIndex = 0;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.cmbBedenTipi);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(254, 94);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Beden Ana Başlık Türleri";
+            // 
+            // cmbBedenTipi
+            // 
+            this.cmbBedenTipi.FormattingEnabled = true;
+            this.cmbBedenTipi.Location = new System.Drawing.Point(10, 38);
+            this.cmbBedenTipi.Name = "cmbBedenTipi";
+            this.cmbBedenTipi.Size = new System.Drawing.Size(238, 21);
+            this.cmbBedenTipi.TabIndex = 0;
+            this.cmbBedenTipi.SelectedIndexChanged += new System.EventHandler(this.cmbBedenTipi_SelectedIndexChanged);
+            // 
+            // ultraTabPageControl7
+            // 
+            this.ultraTabPageControl7.Controls.Add(this.panel9);
+            this.ultraTabPageControl7.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl7.Name = "ultraTabPageControl7";
+            this.ultraTabPageControl7.Size = new System.Drawing.Size(965, 477);
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.gridControl4);
+            this.panel9.Controls.Add(this.panel10);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel9.Location = new System.Drawing.Point(0, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(965, 477);
+            this.panel9.TabIndex = 4;
+            // 
+            // gridControl4
+            // 
+            this.gridControl4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl4.Location = new System.Drawing.Point(0, 94);
+            this.gridControl4.MainView = this.gridView4;
+            this.gridControl4.MenuManager = this.barManager1;
+            this.gridControl4.Name = "gridControl4";
+            this.gridControl4.Size = new System.Drawing.Size(965, 383);
+            this.gridControl4.TabIndex = 0;
+            this.gridControl4.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView4});
+            // 
+            // gridView4
+            // 
+            this.gridView4.GridControl = this.gridControl4;
+            this.gridView4.Name = "gridView4";
+            this.gridView4.OptionsView.ShowFooter = true;
+            this.gridView4.OptionsView.ShowGroupPanel = false;
+            // 
+            // panel10
+            // 
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(965, 94);
+            this.panel10.TabIndex = 1;
+            // 
+            // ultraTabPageControl8
+            // 
+            this.ultraTabPageControl8.Controls.Add(this.panel13);
+            this.ultraTabPageControl8.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl8.Name = "ultraTabPageControl8";
+            this.ultraTabPageControl8.Size = new System.Drawing.Size(965, 477);
+            // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.gridControl6);
+            this.panel13.Controls.Add(this.panel14);
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel13.Location = new System.Drawing.Point(0, 0);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(965, 477);
+            this.panel13.TabIndex = 4;
+            // 
+            // gridControl6
+            // 
+            this.gridControl6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl6.Location = new System.Drawing.Point(0, 94);
+            this.gridControl6.MainView = this.gridView6;
+            this.gridControl6.MenuManager = this.barManager1;
+            this.gridControl6.Name = "gridControl6";
+            this.gridControl6.Size = new System.Drawing.Size(965, 383);
+            this.gridControl6.TabIndex = 0;
+            this.gridControl6.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView6});
+            // 
+            // gridView6
+            // 
+            this.gridView6.GridControl = this.gridControl6;
+            this.gridView6.Name = "gridView6";
+            this.gridView6.OptionsView.ShowFooter = true;
+            this.gridView6.OptionsView.ShowGroupPanel = false;
+            // 
+            // panel14
+            // 
+            this.panel14.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel14.Location = new System.Drawing.Point(0, 0);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(965, 94);
+            this.panel14.TabIndex = 1;
+            // 
+            // ultraTabPageControl9
+            // 
+            this.ultraTabPageControl9.Controls.Add(this.panel3);
+            this.ultraTabPageControl9.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl9.Name = "ultraTabPageControl9";
+            this.ultraTabPageControl9.Size = new System.Drawing.Size(965, 477);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.gridControl1);
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(965, 477);
+            this.panel3.TabIndex = 1;
+            // 
+            // gridControl1
+            // 
+            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl1.Location = new System.Drawing.Point(0, 94);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.MenuManager = this.barManager1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(965, 383);
+            this.gridControl1.TabIndex = 0;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowFooter = true;
+            this.gridView1.OptionsView.ShowGroupPanel = false;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.textBox2);
+            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(965, 94);
+            this.panel4.TabIndex = 1;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(406, 32);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 21);
+            this.textBox2.TabIndex = 0;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(45, 44);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 21);
+            this.textBox1.TabIndex = 0;
+            // 
+            // ultraTabPageControl10
+            // 
+            this.ultraTabPageControl10.Controls.Add(this.panel6);
+            this.ultraTabPageControl10.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl10.Name = "ultraTabPageControl10";
+            this.ultraTabPageControl10.Size = new System.Drawing.Size(965, 477);
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.gridControl2);
+            this.panel6.Controls.Add(this.panel7);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(965, 477);
+            this.panel6.TabIndex = 3;
+            // 
+            // gridControl2
+            // 
+            this.gridControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl2.Location = new System.Drawing.Point(0, 94);
+            this.gridControl2.MainView = this.gridView2;
+            this.gridControl2.MenuManager = this.barManager1;
+            this.gridControl2.Name = "gridControl2";
+            this.gridControl2.Size = new System.Drawing.Size(965, 383);
+            this.gridControl2.TabIndex = 0;
+            this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView2});
+            // 
+            // gridView2
+            // 
+            this.gridView2.GridControl = this.gridControl2;
+            this.gridView2.Name = "gridView2";
+            this.gridView2.OptionsView.ShowFooter = true;
+            this.gridView2.OptionsView.ShowGroupPanel = false;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.textBox5);
+            this.panel7.Controls.Add(this.textBox6);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(965, 94);
+            this.panel7.TabIndex = 1;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(406, 32);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 21);
+            this.textBox5.TabIndex = 0;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(45, 44);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 21);
+            this.textBox6.TabIndex = 0;
+            // 
+            // ultraTabPageControl11
+            // 
+            this.ultraTabPageControl11.Controls.Add(this.panel5);
+            this.ultraTabPageControl11.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl11.Name = "ultraTabPageControl11";
+            this.ultraTabPageControl11.Size = new System.Drawing.Size(965, 477);
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.gridControl3);
+            this.panel5.Controls.Add(this.panel8);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(965, 477);
+            this.panel5.TabIndex = 2;
+            // 
+            // gridControl3
+            // 
+            this.gridControl3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl3.Location = new System.Drawing.Point(0, 94);
+            this.gridControl3.MainView = this.gridView3;
+            this.gridControl3.MenuManager = this.barManager1;
+            this.gridControl3.Name = "gridControl3";
+            this.gridControl3.Size = new System.Drawing.Size(965, 383);
+            this.gridControl3.TabIndex = 0;
+            this.gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView3});
+            // 
+            // gridView3
+            // 
+            this.gridView3.GridControl = this.gridControl3;
+            this.gridView3.Name = "gridView3";
+            this.gridView3.OptionsView.ShowFooter = true;
+            this.gridView3.OptionsView.ShowGroupPanel = false;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.textBox3);
+            this.panel8.Controls.Add(this.textBox4);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(965, 94);
+            this.panel8.TabIndex = 1;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(406, 32);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 21);
+            this.textBox3.TabIndex = 0;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(45, 44);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 21);
+            this.textBox4.TabIndex = 0;
             // 
             // panelControl2
             // 
@@ -81,6 +1027,108 @@
             this.panelControl3.Size = new System.Drawing.Size(971, 599);
             this.panelControl3.TabIndex = 4;
             // 
+            // dropDownButton2
+            // 
+            this.dropDownButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dropDownButton2.DropDownControl = this.popupMenu1;
+            this.dropDownButton2.ImageOptions.Image = global::Entegref.Properties.Resources.about_32x32;
+            this.dropDownButton2.Location = new System.Drawing.Point(829, 569);
+            this.dropDownButton2.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Style3D;
+            this.dropDownButton2.Name = "dropDownButton2";
+            this.dropDownButton2.Size = new System.Drawing.Size(136, 29);
+            this.dropDownButton2.TabIndex = 33;
+            this.dropDownButton2.Text = "İşlem";
+            // 
+            // popupMenu1
+            // 
+            this.popupMenu1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem2)});
+            this.popupMenu1.Manager = this.barManager1;
+            this.popupMenu1.Name = "popupMenu1";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.ultraTabControl1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(2, 43);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(967, 521);
+            this.panel2.TabIndex = 3;
+            // 
+            // ultraTabControl1
+            // 
+            this.ultraTabControl1.CloseButtonLocation = Infragistics.Win.UltraWinTabs.TabCloseButtonLocation.None;
+            this.ultraTabControl1.Controls.Add(this.ultraTabSharedControlsPage1);
+            this.ultraTabControl1.Controls.Add(this.ultraTabPageControl5);
+            this.ultraTabControl1.Controls.Add(this.ultraTabPageControl6);
+            this.ultraTabControl1.Controls.Add(this.ultraTabPageControl7);
+            this.ultraTabControl1.Controls.Add(this.ultraTabPageControl8);
+            this.ultraTabControl1.Controls.Add(this.ultraTabPageControl9);
+            this.ultraTabControl1.Controls.Add(this.ultraTabPageControl10);
+            this.ultraTabControl1.Controls.Add(this.ultraTabPageControl11);
+            this.ultraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ultraTabControl1.Location = new System.Drawing.Point(0, 0);
+            this.ultraTabControl1.MaxVisibleTabRows = 6;
+            this.ultraTabControl1.MultiRowSelectionStyle = Infragistics.Win.UltraWinTabs.MultiRowSelectionStyle.ScrollRowWrap;
+            this.ultraTabControl1.Name = "ultraTabControl1";
+            this.ultraTabControl1.SharedControlsPage = this.ultraTabSharedControlsPage1;
+            this.ultraTabControl1.Size = new System.Drawing.Size(967, 521);
+            this.ultraTabControl1.Style = Infragistics.Win.UltraWinTabControl.UltraTabControlStyle.Office2007Ribbon;
+            this.ultraTabControl1.TabButtonStyle = Infragistics.Win.UIElementButtonStyle.Windows8Button;
+            this.ultraTabControl1.TabCloseButtonVisibility = Infragistics.Win.UltraWinTabs.TabCloseButtonVisibility.Never;
+            this.ultraTabControl1.TabIndex = 1;
+            this.ultraTabControl1.TabLayoutStyle = Infragistics.Win.UltraWinTabs.TabLayoutStyle.MultiRowTabsPerRow;
+            this.ultraTabControl1.TabOrientation = Infragistics.Win.UltraWinTabs.TabOrientation.TopLeft;
+            ultraTab5.Key = "0";
+            ultraTab5.TabPage = this.ultraTabPageControl5;
+            ultraTab5.Text = "Renk";
+            ultraTab6.Key = "1";
+            ultraTab6.TabPage = this.ultraTabPageControl6;
+            ultraTab6.Text = "Beden";
+            ultraTab7.Key = "2";
+            ultraTab7.TabPage = this.ultraTabPageControl7;
+            ultraTab7.Text = "Kavala";
+            ultraTab8.Key = "3";
+            ultraTab8.TabPage = this.ultraTabPageControl8;
+            ultraTab8.Text = "Birim Cinsi";
+            ultraTab9.Key = "4";
+            ultraTab9.TabPage = this.ultraTabPageControl9;
+            ultraTab9.Text = "Kdv";
+            ultraTab10.Key = "5";
+            ultraTab10.TabPage = this.ultraTabPageControl10;
+            ultraTab10.Text = "Ötv";
+            ultraTab11.Key = "6";
+            ultraTab11.TabPage = this.ultraTabPageControl11;
+            ultraTab11.Text = "Fiyat Tipi";
+            this.ultraTabControl1.Tabs.AddRange(new Infragistics.Win.UltraWinTabControl.UltraTab[] {
+            ultraTab5,
+            ultraTab6,
+            ultraTab7,
+            ultraTab8,
+            ultraTab9,
+            ultraTab10,
+            ultraTab11});
+            this.ultraTabControl1.TabsPerRow = 4;
+            this.ultraTabControl1.ViewStyle = Infragistics.Win.UltraWinTabControl.ViewStyle.Office2007;
+            this.ultraTabControl1.SelectedTabChanged += new Infragistics.Win.UltraWinTabControl.SelectedTabChangedEventHandler(this.ultraTabControl1_SelectedTabChanged);
+            // 
+            // ultraTabSharedControlsPage1
+            // 
+            this.ultraTabSharedControlsPage1.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabSharedControlsPage1.Name = "ultraTabSharedControlsPage1";
+            this.ultraTabSharedControlsPage1.Size = new System.Drawing.Size(965, 477);
+            // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(2, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(967, 41);
+            this.panel1.TabIndex = 1;
+            // 
             // panelControl4
             // 
             this.panelControl4.Controls.Add(this.dropDownButton1);
@@ -99,132 +1147,6 @@
             this.dropDownButton1.TabIndex = 0;
             this.dropDownButton1.Text = "Fiyatlandırma";
             // 
-            // panel1
-            // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(2, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(967, 41);
-            this.panel1.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.ultraTabControl1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(2, 43);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(967, 521);
-            this.panel2.TabIndex = 3;
-            // 
-            // dropDownButton2
-            // 
-            this.dropDownButton2.DropDownArrowStyle = DevExpress.XtraEditors.DropDownArrowStyle.SplitButton;
-            this.dropDownButton2.Location = new System.Drawing.Point(831, 570);
-            this.dropDownButton2.Name = "dropDownButton2";
-            this.dropDownButton2.Size = new System.Drawing.Size(135, 23);
-            this.dropDownButton2.TabIndex = 4;
-            this.dropDownButton2.Text = "İşlemler";
-            // 
-            // ultraTabControl1
-            // 
-            appearance1.TextHAlignAsString = "Center";
-            appearance1.TextVAlignAsString = "Middle";
-            this.ultraTabControl1.ClientAreaAppearance = appearance1;
-            this.ultraTabControl1.CloseButtonLocation = Infragistics.Win.UltraWinTabs.TabCloseButtonLocation.None;
-            this.ultraTabControl1.Controls.Add(this.ultraTabSharedControlsPage1);
-            this.ultraTabControl1.Controls.Add(this.ultraTabPageControl5);
-            this.ultraTabControl1.Controls.Add(this.ultraTabPageControl6);
-            this.ultraTabControl1.Controls.Add(this.ultraTabPageControl7);
-            this.ultraTabControl1.Controls.Add(this.ultraTabPageControl8);
-            this.ultraTabControl1.Controls.Add(this.ultraTabPageControl9);
-            this.ultraTabControl1.Controls.Add(this.ultraTabPageControl10);
-            this.ultraTabControl1.Controls.Add(this.ultraTabPageControl11);
-            this.ultraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ultraTabControl1.Location = new System.Drawing.Point(0, 0);
-            this.ultraTabControl1.MaxVisibleTabRows = 6;
-            this.ultraTabControl1.Name = "ultraTabControl1";
-            this.ultraTabControl1.SharedControlsPage = this.ultraTabSharedControlsPage1;
-            this.ultraTabControl1.ShowTabListButton = Infragistics.Win.DefaultableBoolean.False;
-            this.ultraTabControl1.Size = new System.Drawing.Size(967, 521);
-            this.ultraTabControl1.Style = Infragistics.Win.UltraWinTabControl.UltraTabControlStyle.Office2007Ribbon;
-            this.ultraTabControl1.TabButtonStyle = Infragistics.Win.UIElementButtonStyle.Office2007RibbonButton;
-            this.ultraTabControl1.TabCloseButtonVisibility = Infragistics.Win.UltraWinTabs.TabCloseButtonVisibility.Never;
-            this.ultraTabControl1.TabIndex = 1;
-            this.ultraTabControl1.TabLayoutStyle = Infragistics.Win.UltraWinTabs.TabLayoutStyle.MultiRowTabsPerRow;
-            this.ultraTabControl1.TabOrientation = Infragistics.Win.UltraWinTabs.TabOrientation.TopLeft;
-            ultraTab5.TabPage = this.ultraTabPageControl5;
-            ultraTab5.Text = "Renk";
-            ultraTab6.TabPage = this.ultraTabPageControl6;
-            ultraTab6.Text = "Beden";
-            ultraTab7.TabPage = this.ultraTabPageControl7;
-            ultraTab7.Text = "Kavala";
-            ultraTab8.TabPage = this.ultraTabPageControl8;
-            ultraTab8.Text = "Kdv";
-            ultraTab9.TabPage = this.ultraTabPageControl9;
-            ultraTab9.Text = "Ötv";
-            ultraTab10.TabPage = this.ultraTabPageControl10;
-            ultraTab10.Text = "Birim Cinsi";
-            ultraTab11.TabPage = this.ultraTabPageControl11;
-            ultraTab11.Text = "Fiyat Tipi";
-            this.ultraTabControl1.Tabs.AddRange(new Infragistics.Win.UltraWinTabControl.UltraTab[] {
-            ultraTab5,
-            ultraTab6,
-            ultraTab7,
-            ultraTab8,
-            ultraTab9,
-            ultraTab10,
-            ultraTab11});
-            this.ultraTabControl1.TabsPerRow = 4;
-            this.ultraTabControl1.ViewStyle = Infragistics.Win.UltraWinTabControl.ViewStyle.Office2007;
-            // 
-            // ultraTabSharedControlsPage1
-            // 
-            this.ultraTabSharedControlsPage1.Location = new System.Drawing.Point(-10000, -10000);
-            this.ultraTabSharedControlsPage1.Name = "ultraTabSharedControlsPage1";
-            this.ultraTabSharedControlsPage1.Size = new System.Drawing.Size(965, 477);
-            // 
-            // ultraTabPageControl5
-            // 
-            this.ultraTabPageControl5.Location = new System.Drawing.Point(-10000, -10000);
-            this.ultraTabPageControl5.Name = "ultraTabPageControl5";
-            this.ultraTabPageControl5.Size = new System.Drawing.Size(965, 477);
-            // 
-            // ultraTabPageControl6
-            // 
-            this.ultraTabPageControl6.Location = new System.Drawing.Point(-10000, -10000);
-            this.ultraTabPageControl6.Name = "ultraTabPageControl6";
-            this.ultraTabPageControl6.Size = new System.Drawing.Size(965, 477);
-            // 
-            // ultraTabPageControl7
-            // 
-            this.ultraTabPageControl7.Location = new System.Drawing.Point(-10000, -10000);
-            this.ultraTabPageControl7.Name = "ultraTabPageControl7";
-            this.ultraTabPageControl7.Size = new System.Drawing.Size(965, 477);
-            // 
-            // ultraTabPageControl8
-            // 
-            this.ultraTabPageControl8.Location = new System.Drawing.Point(-10000, -10000);
-            this.ultraTabPageControl8.Name = "ultraTabPageControl8";
-            this.ultraTabPageControl8.Size = new System.Drawing.Size(965, 477);
-            // 
-            // ultraTabPageControl9
-            // 
-            this.ultraTabPageControl9.Location = new System.Drawing.Point(-10000, -10000);
-            this.ultraTabPageControl9.Name = "ultraTabPageControl9";
-            this.ultraTabPageControl9.Size = new System.Drawing.Size(965, 477);
-            // 
-            // ultraTabPageControl10
-            // 
-            this.ultraTabPageControl10.Location = new System.Drawing.Point(1, 43);
-            this.ultraTabPageControl10.Name = "ultraTabPageControl10";
-            this.ultraTabPageControl10.Size = new System.Drawing.Size(965, 477);
-            // 
-            // ultraTabPageControl11
-            // 
-            this.ultraTabPageControl11.Location = new System.Drawing.Point(-10000, -10000);
-            this.ultraTabPageControl11.Name = "ultraTabPageControl11";
-            this.ultraTabPageControl11.Size = new System.Drawing.Size(965, 477);
-            // 
             // frmAyarlarUrun
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -233,19 +1155,62 @@
             this.Controls.Add(this.panelControl4);
             this.Controls.Add(this.panelControl3);
             this.Controls.Add(this.panelControl2);
+            this.Controls.Add(this.barDockControlLeft);
+            this.Controls.Add(this.barDockControlRight);
+            this.Controls.Add(this.barDockControlBottom);
+            this.Controls.Add(this.barDockControlTop);
             this.MaximizeBox = false;
             this.Name = "frmAyarlarUrun";
             this.Text = "frmUrunAyarları";
             this.Load += new System.EventHandler(this.frmUrunAyarları_Load);
+            this.ultraTabPageControl6.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridBedenTumu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ViewBedenTumu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridBeden)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ViewBeden)).EndInit();
+            this.panel12.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.ultraTabPageControl7.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView4)).EndInit();
+            this.ultraTabPageControl8.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView6)).EndInit();
+            this.ultraTabPageControl9.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.ultraTabPageControl10.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.ultraTabPageControl11.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
-            this.panelControl4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl1)).EndInit();
             this.ultraTabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
+            this.panelControl4.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -256,8 +1221,15 @@
         private System.Windows.Forms.Panel panel1;
         private DevExpress.XtraEditors.PanelControl panelControl4;
         private DevExpress.XtraEditors.DropDownButton dropDownButton1;
-        private DevExpress.XtraEditors.DropDownButton dropDownButton2;
         private System.Windows.Forms.Panel panel2;
+        private DevExpress.XtraBars.BarManager barManager1;
+        private DevExpress.XtraBars.BarDockControl barDockControlTop;
+        private DevExpress.XtraBars.BarDockControl barDockControlBottom;
+        private DevExpress.XtraBars.BarDockControl barDockControlLeft;
+        private DevExpress.XtraBars.BarDockControl barDockControlRight;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.PopupMenu popupMenu1;
         private Infragistics.Win.UltraWinTabControl.UltraTabControl ultraTabControl1;
         private Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage ultraTabSharedControlsPage1;
         private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl5;
@@ -267,5 +1239,77 @@
         private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl9;
         private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl10;
         private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl11;
+        private DevExpress.XtraEditors.DropDownButton dropDownButton2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private System.Windows.Forms.Panel panel11;
+        private DevExpress.XtraGrid.GridControl gridBedenTumu;
+        private DevExpress.XtraGrid.Views.Grid.GridView ViewBedenTumu;
+        private DevExpress.XtraGrid.GridControl gridBeden;
+        private DevExpress.XtraGrid.Views.Grid.GridView ViewBeden;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn14;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn15;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private DevExpress.XtraEditors.SimpleButton btnBedenYeni;
+        private DevExpress.XtraEditors.SimpleButton btnBedenAc;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtBedenAdı;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Panel panel9;
+        private DevExpress.XtraGrid.GridControl gridControl4;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView4;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel13;
+        private DevExpress.XtraGrid.GridControl gridControl6;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView6;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Panel panel6;
+        private DevExpress.XtraGrid.GridControl gridControl2;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Panel panel5;
+        private DevExpress.XtraGrid.GridControl gridControl3;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.ComboBox cmbBedenTipi;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn32;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn31;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn16;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn17;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn18;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn19;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn20;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn21;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn22;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn23;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn24;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn25;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn26;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn27;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn28;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn29;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn30;
     }
 }

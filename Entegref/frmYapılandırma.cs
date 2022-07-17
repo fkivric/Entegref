@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace Entegref
 {
-    public partial class frmYapılandırma : Form
+    public partial class frmYapılandırma : DevExpress.XtraEditors.XtraForm
     {
         SqlConnectionObject conn = new SqlConnectionObject();
         public frmYapılandırma()

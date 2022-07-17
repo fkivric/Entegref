@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Entegref
 {
-    public partial class frmStokSinifi : Form
+    public partial class frmStokSinifi : DevExpress.XtraEditors.XtraForm
     {
         SqlConnectionObject conn = new SqlConnectionObject();
         SqlConnection connection = new SqlConnection(Properties.Settings.Default.connectionstring);

@@ -208,7 +208,7 @@
             this.checkBox4.AutoSize = true;
             this.checkBox4.Location = new System.Drawing.Point(422, 381);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(175, 17);
+            this.checkBox4.Size = new System.Drawing.Size(174, 17);
             this.checkBox4.TabIndex = 1;
             this.checkBox4.Text = "Sözleşmeyi okudum Kabul Ettim";
             this.checkBox4.UseVisualStyleBackColor = true;
@@ -313,7 +313,7 @@
             this.txtMobil2.Location = new System.Drawing.Point(354, 244);
             this.txtMobil2.Mask = "(999) 000-0000";
             this.txtMobil2.Name = "txtMobil2";
-            this.txtMobil2.Size = new System.Drawing.Size(159, 20);
+            this.txtMobil2.Size = new System.Drawing.Size(159, 21);
             this.txtMobil2.TabIndex = 16;
             // 
             // txtMobil1
@@ -321,7 +321,7 @@
             this.txtMobil1.Location = new System.Drawing.Point(118, 241);
             this.txtMobil1.Mask = "(999) 000-0000";
             this.txtMobil1.Name = "txtMobil1";
-            this.txtMobil1.Size = new System.Drawing.Size(159, 20);
+            this.txtMobil1.Size = new System.Drawing.Size(159, 21);
             this.txtMobil1.TabIndex = 16;
             // 
             // simpleButton3
@@ -364,7 +364,7 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(422, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(129, 26);
+            this.label12.Size = new System.Drawing.Size(127, 26);
             this.label12.TabIndex = 4;
             this.label12.Text = "Kuruş Hane Sayısı\r\nVirgülden Sonra Basamak";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -391,7 +391,7 @@
             this.checkBox3.AutoSize = true;
             this.checkBox3.Location = new System.Drawing.Point(264, 24);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(181, 17);
+            this.checkBox3.Size = new System.Drawing.Size(175, 17);
             this.checkBox3.TabIndex = 2;
             this.checkBox3.Text = "Üründe Seri No Takibi Yapılacak";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -403,7 +403,7 @@
             this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox2.Location = new System.Drawing.Point(146, 24);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(113, 17);
+            this.checkBox2.Size = new System.Drawing.Size(110, 17);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Kuruş Kullanılacak";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -433,7 +433,7 @@
             // 
             this.txtMail1.Location = new System.Drawing.Point(118, 277);
             this.txtMail1.Name = "txtMail1";
-            this.txtMail1.Size = new System.Drawing.Size(329, 21);
+            this.txtMail1.Size = new System.Drawing.Size(329, 22);
             this.txtMail1.TabIndex = 10;
             // 
             // label11
@@ -468,7 +468,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(28, 207);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(48, 13);
+            this.label8.Size = new System.Drawing.Size(46, 13);
             this.label8.TabIndex = 15;
             this.label8.Text = "Bina No ";
             // 
@@ -477,7 +477,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(26, 170);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(38, 13);
+            this.label7.Size = new System.Drawing.Size(35, 13);
             this.label7.TabIndex = 14;
             this.label7.Text = "Sokak";
             // 
@@ -486,7 +486,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(26, 133);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(86, 13);
+            this.label6.Size = new System.Drawing.Size(84, 13);
             this.label6.TabIndex = 13;
             this.label6.Text = "Mahalle / Cadde";
             // 
@@ -504,7 +504,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(26, 96);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(12, 13);
+            this.label4.Size = new System.Drawing.Size(13, 13);
             this.label4.TabIndex = 11;
             this.label4.Text = "İl";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -523,7 +523,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(26, 59);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 13);
+            this.label2.Size = new System.Drawing.Size(58, 13);
             this.label2.TabIndex = 9;
             this.label2.Text = "Vergi Nosu";
             // 
@@ -532,7 +532,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(26, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 13);
+            this.label1.Size = new System.Drawing.Size(51, 13);
             this.label1.TabIndex = 8;
             this.label1.Text = "Firma Adı";
             // 
@@ -540,28 +540,28 @@
             // 
             this.ultraTextEditor7.Location = new System.Drawing.Point(118, 203);
             this.ultraTextEditor7.Name = "ultraTextEditor7";
-            this.ultraTextEditor7.Size = new System.Drawing.Size(329, 21);
+            this.ultraTextEditor7.Size = new System.Drawing.Size(329, 22);
             this.ultraTextEditor7.TabIndex = 7;
             // 
             // ultraTextEditor6
             // 
             this.ultraTextEditor6.Location = new System.Drawing.Point(118, 166);
             this.ultraTextEditor6.Name = "ultraTextEditor6";
-            this.ultraTextEditor6.Size = new System.Drawing.Size(329, 21);
+            this.ultraTextEditor6.Size = new System.Drawing.Size(329, 22);
             this.ultraTextEditor6.TabIndex = 6;
             // 
             // ultraTextEditor5
             // 
             this.ultraTextEditor5.Location = new System.Drawing.Point(118, 129);
             this.ultraTextEditor5.Name = "ultraTextEditor5";
-            this.ultraTextEditor5.Size = new System.Drawing.Size(329, 21);
+            this.ultraTextEditor5.Size = new System.Drawing.Size(329, 22);
             this.ultraTextEditor5.TabIndex = 5;
             // 
             // txtVergiDairesi
             // 
             this.txtVergiDairesi.Location = new System.Drawing.Point(354, 55);
             this.txtVergiDairesi.Name = "txtVergiDairesi";
-            this.txtVergiDairesi.Size = new System.Drawing.Size(219, 21);
+            this.txtVergiDairesi.Size = new System.Drawing.Size(219, 22);
             this.txtVergiDairesi.TabIndex = 2;
             // 
             // txtVKN
@@ -569,14 +569,14 @@
             this.txtVKN.Location = new System.Drawing.Point(118, 55);
             this.txtVKN.MaxLength = 11;
             this.txtVKN.Name = "txtVKN";
-            this.txtVKN.Size = new System.Drawing.Size(140, 21);
+            this.txtVKN.Size = new System.Drawing.Size(140, 22);
             this.txtVKN.TabIndex = 1;
             // 
             // txtFirmaAdi
             // 
             this.txtFirmaAdi.Location = new System.Drawing.Point(118, 18);
             this.txtFirmaAdi.Name = "txtFirmaAdi";
-            this.txtFirmaAdi.Size = new System.Drawing.Size(329, 21);
+            this.txtFirmaAdi.Size = new System.Drawing.Size(329, 22);
             this.txtFirmaAdi.TabIndex = 0;
             // 
             // navigationPage4
@@ -605,49 +605,49 @@
             // 
             this.ultraTextEditor8.Location = new System.Drawing.Point(247, 348);
             this.ultraTextEditor8.Name = "ultraTextEditor8";
-            this.ultraTextEditor8.Size = new System.Drawing.Size(329, 21);
+            this.ultraTextEditor8.Size = new System.Drawing.Size(329, 22);
             this.ultraTextEditor8.TabIndex = 10;
             // 
             // ultraTextEditor9
             // 
             this.ultraTextEditor9.Location = new System.Drawing.Point(247, 305);
             this.ultraTextEditor9.Name = "ultraTextEditor9";
-            this.ultraTextEditor9.Size = new System.Drawing.Size(329, 21);
+            this.ultraTextEditor9.Size = new System.Drawing.Size(329, 22);
             this.ultraTextEditor9.TabIndex = 11;
             // 
             // ultraTextEditor10
             // 
             this.ultraTextEditor10.Location = new System.Drawing.Point(247, 262);
             this.ultraTextEditor10.Name = "ultraTextEditor10";
-            this.ultraTextEditor10.Size = new System.Drawing.Size(329, 21);
+            this.ultraTextEditor10.Size = new System.Drawing.Size(329, 22);
             this.ultraTextEditor10.TabIndex = 12;
             // 
             // ultraTextEditor11
             // 
             this.ultraTextEditor11.Location = new System.Drawing.Point(247, 219);
             this.ultraTextEditor11.Name = "ultraTextEditor11";
-            this.ultraTextEditor11.Size = new System.Drawing.Size(329, 21);
+            this.ultraTextEditor11.Size = new System.Drawing.Size(329, 22);
             this.ultraTextEditor11.TabIndex = 13;
             // 
             // ultraTextEditor12
             // 
             this.ultraTextEditor12.Location = new System.Drawing.Point(247, 176);
             this.ultraTextEditor12.Name = "ultraTextEditor12";
-            this.ultraTextEditor12.Size = new System.Drawing.Size(329, 21);
+            this.ultraTextEditor12.Size = new System.Drawing.Size(329, 22);
             this.ultraTextEditor12.TabIndex = 14;
             // 
             // ultraTextEditor13
             // 
             this.ultraTextEditor13.Location = new System.Drawing.Point(247, 133);
             this.ultraTextEditor13.Name = "ultraTextEditor13";
-            this.ultraTextEditor13.Size = new System.Drawing.Size(329, 21);
+            this.ultraTextEditor13.Size = new System.Drawing.Size(329, 22);
             this.ultraTextEditor13.TabIndex = 15;
             // 
             // ultraTextEditor14
             // 
             this.ultraTextEditor14.Location = new System.Drawing.Point(247, 90);
             this.ultraTextEditor14.Name = "ultraTextEditor14";
-            this.ultraTextEditor14.Size = new System.Drawing.Size(329, 21);
+            this.ultraTextEditor14.Size = new System.Drawing.Size(329, 22);
             this.ultraTextEditor14.TabIndex = 16;
             // 
             // navigationPage5
@@ -686,7 +686,7 @@
             // 
             this.txttrendyolSecret.Location = new System.Drawing.Point(267, 169);
             this.txttrendyolSecret.Name = "txttrendyolSecret";
-            this.txttrendyolSecret.Size = new System.Drawing.Size(196, 20);
+            this.txttrendyolSecret.Size = new System.Drawing.Size(196, 21);
             this.txttrendyolSecret.TabIndex = 1;
             // 
             // label18
@@ -702,7 +702,7 @@
             // 
             this.txttrendyolApi.Location = new System.Drawing.Point(267, 97);
             this.txttrendyolApi.Name = "txttrendyolApi";
-            this.txttrendyolApi.Size = new System.Drawing.Size(196, 20);
+            this.txttrendyolApi.Size = new System.Drawing.Size(196, 21);
             this.txttrendyolApi.TabIndex = 1;
             // 
             // label17
@@ -718,7 +718,7 @@
             // 
             this.txttrendyolID.Location = new System.Drawing.Point(267, 25);
             this.txttrendyolID.Name = "txttrendyolID";
-            this.txttrendyolID.Size = new System.Drawing.Size(196, 20);
+            this.txttrendyolID.Size = new System.Drawing.Size(196, 21);
             this.txttrendyolID.TabIndex = 1;
             // 
             // label16
@@ -726,7 +726,7 @@
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(12, 29);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(101, 13);
+            this.label16.Size = new System.Drawing.Size(102, 13);
             this.label16.TabIndex = 0;
             this.label16.Text = "Trendyol Mağaza Id";
             // 
@@ -876,7 +876,7 @@
             this.bunifuCustomLabel9.AutoSize = true;
             this.bunifuCustomLabel9.Location = new System.Drawing.Point(35, 103);
             this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
-            this.bunifuCustomLabel9.Size = new System.Drawing.Size(103, 13);
+            this.bunifuCustomLabel9.Size = new System.Drawing.Size(104, 13);
             this.bunifuCustomLabel9.TabIndex = 16;
             this.bunifuCustomLabel9.Text = "bunifuCustomLabel9";
             // 
@@ -897,7 +897,7 @@
             this.bunifuCustomLabel8.AutoSize = true;
             this.bunifuCustomLabel8.Location = new System.Drawing.Point(35, 77);
             this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
-            this.bunifuCustomLabel8.Size = new System.Drawing.Size(125, 13);
+            this.bunifuCustomLabel8.Size = new System.Drawing.Size(127, 13);
             this.bunifuCustomLabel8.TabIndex = 15;
             this.bunifuCustomLabel8.Text = "Pazar Yeri Karlılık Ayarları";
             // 
@@ -918,7 +918,7 @@
             this.bunifuCustomLabel7.AutoSize = true;
             this.bunifuCustomLabel7.Location = new System.Drawing.Point(35, 51);
             this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
-            this.bunifuCustomLabel7.Size = new System.Drawing.Size(110, 13);
+            this.bunifuCustomLabel7.Size = new System.Drawing.Size(112, 13);
             this.bunifuCustomLabel7.TabIndex = 14;
             this.bunifuCustomLabel7.Text = "Pazar Yeri Parametleri";
             // 
@@ -927,7 +927,7 @@
             this.bunifuCustomLabel6.AutoSize = true;
             this.bunifuCustomLabel6.Location = new System.Drawing.Point(35, 23);
             this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
-            this.bunifuCustomLabel6.Size = new System.Drawing.Size(92, 13);
+            this.bunifuCustomLabel6.Size = new System.Drawing.Size(95, 13);
             this.bunifuCustomLabel6.TabIndex = 13;
             this.bunifuCustomLabel6.Text = "Pazar Yeri Ayarları";
             // 
@@ -980,7 +980,7 @@
             this.bunifuCustomLabel3.AutoSize = true;
             this.bunifuCustomLabel3.Location = new System.Drawing.Point(34, 22);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(89, 13);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(91, 13);
             this.bunifuCustomLabel3.TabIndex = 10;
             this.bunifuCustomLabel3.Text = "Dahili Erp Ayarları";
             // 
@@ -1013,7 +1013,7 @@
             this.bunifuCustomLabel4.AutoSize = true;
             this.bunifuCustomLabel4.Location = new System.Drawing.Point(34, 56);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(93, 13);
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(91, 13);
             this.bunifuCustomLabel4.TabIndex = 11;
             this.bunifuCustomLabel4.Text = "Harici ERP Ayaları";
             // 
@@ -1022,7 +1022,7 @@
             this.bunifuCustomLabel5.AutoSize = true;
             this.bunifuCustomLabel5.Location = new System.Drawing.Point(49, 167);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(89, 13);
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(87, 13);
             this.bunifuCustomLabel5.TabIndex = 12;
             this.bunifuCustomLabel5.Text = "Pazar Yeri Seçimi";
             // 
@@ -1040,7 +1040,7 @@
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(49, 19);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(116, 13);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(119, 13);
             this.bunifuCustomLabel1.TabIndex = 0;
             this.bunifuCustomLabel1.Text = "Sistem Kurulum Ayarları";
             // 
@@ -1085,10 +1085,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.IsMdiContainer = true;
+            this.MaximizeBox = false;
             this.Name = "frmYapılandırma";
             this.Text = "frmYapılandırma";
             this.Load += new System.EventHandler(this.frmYapılandırma_Load);

@@ -136,12 +136,15 @@
             ultraExplorerBarItem16});
             ultraExplorerBarGroup6.Text = "Pazar Yeri";
             ultraExplorerBarGroup7.Text = "Kargo";
+            ultraExplorerBarItem15.Key = "81";
             appearance9.Image = global::Entegref.Properties.Resources.perakende_settings;
             ultraExplorerBarItem15.Settings.AppearancesLarge.Appearance = appearance9;
             ultraExplorerBarItem15.Text = "Perakende Satış Ayarları";
+            ultraExplorerBarItem17.Key = "82";
             appearance10.Image = global::Entegref.Properties.Resources.Box_Settings_48px;
             ultraExplorerBarItem17.Settings.AppearancesLarge.Appearance = appearance10;
             ultraExplorerBarItem17.Text = "Urun Ayarları";
+            ultraExplorerBarItem18.Key = "83";
             appearance11.Image = global::Entegref.Properties.Resources.online_shop_setting_icon_vector;
             ultraExplorerBarItem18.Settings.AppearancesLarge.Appearance = appearance11;
             ultraExplorerBarItem18.Text = "Depo Ayarları";

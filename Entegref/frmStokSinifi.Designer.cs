@@ -41,7 +41,6 @@
             this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.comboBoxEdit1.Properties.Sorted = true;
-            this.comboBoxEdit1.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.comboBoxEdit1.Size = new System.Drawing.Size(302, 20);
             this.comboBoxEdit1.TabIndex = 0;
             // 
@@ -52,7 +51,7 @@
             this.ultraComboEditor1.DropDownStyle = Infragistics.Win.DropDownStyle.DropDownList;
             this.ultraComboEditor1.Location = new System.Drawing.Point(41, 103);
             this.ultraComboEditor1.Name = "ultraComboEditor1";
-            this.ultraComboEditor1.Size = new System.Drawing.Size(302, 21);
+            this.ultraComboEditor1.Size = new System.Drawing.Size(302, 22);
             this.ultraComboEditor1.TabIndex = 1;
             // 
             // frmStokSinifi
@@ -62,6 +61,9 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.ultraComboEditor1);
             this.Controls.Add(this.comboBoxEdit1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmStokSinifi";
             this.Text = "frmStokSinifi";
             this.Load += new System.EventHandler(this.frmStokSinifi_Load);

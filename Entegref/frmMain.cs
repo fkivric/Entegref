@@ -30,11 +30,11 @@ namespace Entegref
             switch (e.Item.Key.ToString())
             {
                 case "11":
-                    OpenForm(new frmStokAc);
+                    OpenForm(new frmStokAc());
                     break;
 
                 case "12":
-                    OpenForm(new frmFiyat);
+                    OpenForm(new frmFiyat());
                     break;
 
                 case "21":
@@ -43,6 +43,10 @@ namespace Entegref
 
                 case "31":
                     OpenForm(new frmFirma());
+                    break;
+
+                case "82":
+                    OpenForm(new frmAyarlarUrun());
                     break;
             }
         }
