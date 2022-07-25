@@ -18,12 +18,39 @@ namespace Entegref
     {
         SqlConnectionObject conn = new SqlConnectionObject();
         SqlConnection connection = new SqlConnection(Properties.Settings.Default.connectionstring);
+
+
+        string nStokID;
+
         DataTable kdv = new DataTable();
         DataTable birim1 = new DataTable();
         DataTable birim2 = new DataTable();
         DataTable Otv = new DataTable();
+
+
+        DataTable sinif1 = new DataTable();
+        DataTable sinif2 = new DataTable();
+        DataTable sinif3 = new DataTable();
+        DataTable sinif4 = new DataTable();
+        DataTable sinif5 = new DataTable();
+        DataTable sinif6 = new DataTable();
+
+
+
         public static string sKodu = "";
         public static string sFiyatTipi = "";
+
+        public static string sinifsira1;
+        public static string sinifsira2;
+        public static string sinifsira3;
+        public static string sinifsira4;
+        public static string sinifsira5;
+        public static string sinifsira6;
+
+
+        public static string Fiyatlandirma;
+        public static string Beden;
+        public static string Kavala;
         public frmStokAc()
         {
             InitializeComponent();
@@ -64,10 +91,55 @@ namespace Entegref
             cmbBirim2.DataSource = birim2;
             cmbKDV.DataSource = kdv;
 
-
-
+            if (nStokID == null)
+            {
+                ultraTabControl1.VisibleTabs[1].Visible = false;
+                ultraTabControl1.VisibleTabs[2].Visible =false;
+                ultraTabControl1.VisibleTabs[3].Visible = false;
+            }
         }
-
+        public void sinif_1()
+        {
+            Dictionary<string, string> Prm = new Dictionary<string, string>();
+            Prm.Add("@sira", "1");
+            Prm.Add("@parentid", "");
+            sinif1 = conn.DfQuery("Sinif", Prm);
+        }
+        public void sinif_2()
+        {
+            Dictionary<string, string> Prm = new Dictionary<string, string>();
+            Prm.Add("@sira", "2");
+            Prm.Add("@parentid", "");
+            sinif2 = conn.DfQuery("Sinif", Prm);
+        }
+        public void sinif_3()
+        {
+            Dictionary<string, string> Prm = new Dictionary<string, string>();
+            Prm.Add("@sira", "3");
+            Prm.Add("@parentid", "");
+            sinif3 = conn.DfQuery("Sinif", Prm);
+        }
+        public void sinif_4()
+        {
+            Dictionary<string, string> Prm = new Dictionary<string, string>();
+            Prm.Add("@sira", "4");
+            Prm.Add("@parentid", "");
+            sinif4 = conn.DfQuery("Sinif", Prm);
+        }
+        public void sinif_5()
+        {
+            Dictionary<string, string> Prm = new Dictionary<string, string>();
+            Prm.Add("@sira", "5");
+            Prm.Add("@parentid", "");
+            sinif5 = conn.DfQuery("Sinif", Prm);
+        }
+        public void sinif_6()
+        {
+            Dictionary<string, string> Prm = new Dictionary<string, string>();
+            Prm.Add("@sira", "6");
+            Prm.Add("@parentid", "");
+            sinif6 = conn.DfQuery("Sinif", Prm);
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             frmBarkod barkod = new frmBarkod(txtStokKodu.Text);
@@ -87,20 +159,49 @@ namespace Entegref
             DataTable dt = new DataTable();
             ad.Fill(dt);
             connection.Close();
+            nStokID = dt.Rows[0]["nStokID"].ToString();
             bunifuCustomTextbox1.Text = dt.Rows[0]["sAciklama"].ToString();
             cmbBirim1.Text = dt.Rows[0]["sBirimCinsi1"].ToString();
             cmbBirim2.Text = dt.Rows[0]["sBirimCinsi2"].ToString();
             cmbKDV.Text = dt.Rows[0]["sKdvTipi"].ToString();
             bunifuCustomTextbox1.Text = dt.Rows[0]["sAciklama"].ToString();
+            btnStokBul.Enabled = false;
+            ultraButton1.Enabled = false;
+            ultraButton2.Enabled = false;
+            if (nStokID != null)
+            {
+                ultraTabControl1.VisibleTabs[1].Visible = true;
+                ultraTabControl1.VisibleTabs[2].Visible = true;
+                ultraTabControl1.VisibleTabs[3].Visible = true;
+            }
 
-            XtraMessageBox.Show("Kaydetildi");
+            //XtraMessageBox.Show("Kaydetildi");
         }
 
         private void ultraButton1_Click(object sender, EventArgs e)
         {
             frmStokSinifi sinifi = new frmStokSinifi();
             sinifi.TopLevel = true;
-            sinifi.Show();
+            sinifi.ShowDialog();
+            cmbSinif1.SelectedValue = sinifsira1;
+            cmbSinif2.SelectedValue = sinifsira2;
+            cmbSinif3.SelectedValue = sinifsira3.Replace("00-0",null);
+            cmbSinif4.SelectedValue = sinifsira4.Replace("00-0",null);
+            cmbSinif5.SelectedValue = sinifsira5.Replace("00-0",null);
+            cmbSinif6.SelectedValue = sinifsira6.Replace("00-0", null);
+            lblFiyattipi.Visible = true;
+            lblFiyattipi.Text = Fiyatlandirma;
+            if (Beden != null)
+            {
+                lblBeden.Text = Beden;
+                lblBeden.Visible = true;
+            }
+            if (Kavala != null)
+            {
+                lblKavala.Text = Kavala;
+                lblKavala.Visible = true;
+            }
+            txtStokKodu.Text = sKodu;
         }
 
         private void ultraButton2_Click(object sender, EventArgs e)
@@ -203,24 +304,78 @@ namespace Entegref
             }
             else if (e.Tab.Text == "Fiyatlandırma")
             {
-
+                if (nStokID != null)
+                {
+                    string q = "select nStokID,sFiyatTipi,lFiyat,dteFiyatTespitTarihi,sKullaniciAdi from tbStokFiyati where nStokID = '" + nStokID + "'";
+                    SqlCommand cmd = new SqlCommand(q, connection);
+                    SqlDataAdapter ad = new SqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    if (connection.State == ConnectionState.Closed)
+                    {
+                        connection.Open();
+                    }
+                    ad.Fill(dt);
+                    gridFiyatlar.DataSource = dt;
+                    //gridTopluFiyat.DataSource = dt;
+                }
+            }
+            else if (e.Tab.Text== "Sınıflar")
+            {
+                if (cmbSinif1.SelectedValue == null)
+                {
+                    cmbSinif1.DisplayMember = "sAciklama";
+                    cmbSinif1.ValueMember = "sSinifKodu";
+                    Dictionary<string, string> Prm = new Dictionary<string, string>();
+                    Prm.Add("@sira", "1");
+                    Prm.Add("@parentid", "0");
+                    sinif1 = conn.DfQuery("Sinif", Prm);
+                    cmbSinif1.DataSource = sinif1;
+                }
+                //sinif_1();
+                //sinif_2();
+                //sinif_3();
+                //sinif_4();
+                //sinif_5();
+                //sinif_6();
+                //cmbSinif1.DisplayMember = "sAciklama";
+                //cmbSinif1.ValueMember = "sSinifKodu";
+                //cmbSinif1.DataSource = sinif1;
+                //cmbSinif2.DisplayMember = "sAciklama";
+                //cmbSinif2.ValueMember = "sSinifKodu";
+                //cmbSinif2.DataSource = sinif2;
+                //cmbSinif3.DisplayMember = "sAciklama";
+                //cmbSinif3.ValueMember = "sSinifKodu";
+                //cmbSinif3.DataSource = sinif3;
+                //cmbSinif4.DisplayMember = "sAciklama";
+                //cmbSinif4.ValueMember = "sSinifKodu";
+                //cmbSinif4.DataSource = sinif4;
+                //cmbSinif5.DisplayMember = "sAciklama";
+                //cmbSinif5.ValueMember = "sSinifKodu";
+                //cmbSinif5.DataSource = sinif5;
+                //cmbSinif6.DisplayMember = "sAciklama";
+                //cmbSinif6.ValueMember = "sSinifKodu";
+                //cmbSinif6.DataSource = sinif6;
             }
             else
             {
-                
+
             }
         }
         public string filename = "";
         private void listBox1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             int index = this.listBox1.IndexFromPoint(e.Location);
-            var lst = listBox1.Items[index].ToString();
+            if (index >= 0)
+            {
 
-            string file = @"..\..\Pictures\"+ txtStokKodu.Text.ToString();
-            string dosya = listBox1.SelectedValue.ToString();
-            int satirno = listBox1.SelectedIndex;
-            pictureBox1.Image = Image.FromFile(dosya);
-            txtFileAdress.Text = dosya;
+                var lst = listBox1.Items[index].ToString();
+
+                string file = @"..\..\Pictures\" + txtStokKodu.Text.ToString();
+                string dosya = listBox1.SelectedValue.ToString();
+                int satirno = listBox1.SelectedIndex;
+                pictureBox1.Image = Image.FromFile(dosya);
+                txtFileAdress.Text = dosya;
+            }
         }
 
         private void simpleButton2_Click(object sender, EventArgs e)
@@ -264,28 +419,32 @@ namespace Entegref
                 pnlTopluFiyat.Visible = false;
                 pnlTekfiyat.Visible = true;
                 txtTipi.Text = null;
+                gridFiyatlar.Visible = true;
+                gridFiyatlar.Dock = DockStyle.Fill;
             }
             if (grpFTipiSec.SelectedIndex.ToString() == "1")
             {
                 pnlTopluFiyat.Visible = true;
                 pnlTekfiyat.Visible = false;
                 txtTipi.Text = null;
+                pnlTopluFiyat.Dock = DockStyle.Fill;
+                gridFiyatlar.Visible = false;
 
 
-                //DataTable fiyat_yeni = new DataTable();
-                //string Fiyatsql = "select ff.nStokID,t.sFiyatTipi, t.sAciklama,dteFiyatTespitTarihi,lFiyat,0 from tbFiyatTipi t ";
-                //Fiyatsql = Fiyatsql + " left join(select f.nStokID,f.lFiyat, f.dteFiyatTespitTarihi, f.sFiyatTipi from tbStokFiyati f ";
-                //Fiyatsql = Fiyatsql + "inner join tbstok s on s.nStokID= f.nStokID where s.sKodu = isnull('" + txtStokKodu.Text + "','')";
-                //Fiyatsql = Fiyatsql + ") ff on ff.sFiyatTipi = t.sFiyatTipi";
-                //SqlCommand cmd = new SqlCommand(Fiyatsql, connection);
-                //SqlDataAdapter da = new SqlDataAdapter(cmd);
-                //if (connection.State == ConnectionState.Closed)
-                //{
-                //    connection.Open();
-                //}
-                //da.Fill(fiyat_yeni);
-                //connection.Close();
-                //gridTopluFiyat.DataSource = fiyat_yeni;
+                DataTable fiyat_yeni = new DataTable();
+                string Fiyatsql = "select ff.nStokID,t.sFiyatTipi, t.sAciklama,dteFiyatTespitTarihi,lFiyat,0 from tbFiyatTipi t ";
+                Fiyatsql = Fiyatsql + " left join(select f.nStokID,f.lFiyat, f.dteFiyatTespitTarihi, f.sFiyatTipi from tbStokFiyati f ";
+                Fiyatsql = Fiyatsql + "inner join tbstok s on s.nStokID= f.nStokID where s.sKodu = isnull('" + txtStokKodu.Text + "','')";
+                Fiyatsql = Fiyatsql + ") ff on ff.sFiyatTipi = t.sFiyatTipi";
+                SqlCommand cmd = new SqlCommand(Fiyatsql, connection);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                if (connection.State == ConnectionState.Closed)
+                {
+                    connection.Open();
+                }
+                da.Fill(fiyat_yeni);
+                connection.Close();
+                gridTopluFiyat.DataSource = fiyat_yeni;
             }
         }
 
@@ -343,6 +502,213 @@ namespace Entegref
                 dteYeniFiyat.Enabled = false;
 
             }
+        }
+
+        private void cmbSinif1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbSinif1.SelectedValue.ToString() != "00-0")
+            {
+                cmbSinif2.DisplayMember = "sAciklama";
+                cmbSinif2.ValueMember = "sSinifKodu";
+                Dictionary<string, string> Prm = new Dictionary<string, string>();
+                Prm.Add("@sira", "2");
+                Prm.Add("@parentid", cmbSinif1.SelectedValue.ToString().Substring(cmbSinif1.SelectedValue.ToString().IndexOf("-") + 1).Replace(" ", ""));
+                sinif2 = conn.DfQuery("Sinif", Prm);
+                cmbSinif2.DataSource = sinif2;
+                if (sinif2.Rows.Count > 1)
+                {
+                    cmbSinif2.Enabled = true;
+                }
+                else
+                {
+                    sinif2.Clear();
+                    cmbSinif2.Enabled = false;
+                    cmbSinif2.DataSource = null;
+                }
+
+            }
+            else
+            {
+                sinif2.Clear();
+                cmbSinif2.Enabled = false;
+                cmbSinif2.DataSource = null;
+                sinif3.Clear();
+                cmbSinif3.Enabled = false;
+                cmbSinif3.DataSource = null;
+                sinif4.Clear();
+                cmbSinif4.Enabled = false;
+                cmbSinif4.DataSource = null;
+                sinif5.Clear();
+                cmbSinif5.Enabled = false;
+                cmbSinif5.DataSource = null;
+                sinif6.Clear();
+                cmbSinif6.Enabled = false;
+                cmbSinif6.DataSource = null;
+            }
+
+        }
+
+        private void cmbSinif2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbSinif2.SelectedValue.ToString() != "00-0")
+            {
+                cmbSinif3.DisplayMember = "sAciklama";
+                cmbSinif3.ValueMember = "sSinifKodu";
+                Dictionary<string, string> Prm = new Dictionary<string, string>();
+                Prm.Add("@sira", "3");
+                Prm.Add("@parentid", cmbSinif2.SelectedValue.ToString().Substring(cmbSinif2.SelectedValue.ToString().IndexOf("-") + 1).Replace(" ", ""));
+                sinif3 = conn.DfQuery("Sinif", Prm);
+                cmbSinif3.DataSource = sinif3;
+                if (sinif3.Rows.Count > 1)
+                {
+                    cmbSinif3.Enabled = true;
+                }
+                else
+                {
+                    sinif3.Clear();
+                    cmbSinif3.Enabled = false;
+                    cmbSinif3.DataSource = null;
+                }
+
+            }
+            else
+            {
+                if (sinif3.Rows.Count > 1)
+                {
+                    cmbSinif3.Enabled = true;
+                }
+                else
+                {
+                    sinif3.Clear();
+                    cmbSinif3.Enabled = false;
+                    cmbSinif3.DataSource = null;
+                    sinif4.Clear();
+                    cmbSinif4.Enabled = false;
+                    cmbSinif4.DataSource = null;
+                    sinif5.Clear();
+                    cmbSinif5.Enabled = false;
+                    cmbSinif5.DataSource = null;
+                    sinif6.Clear();
+                    cmbSinif6.Enabled = false;
+                    cmbSinif6.DataSource = null;
+                }
+            }
+
+        }
+
+        private void cmbSinif3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbSinif3.SelectedValue.ToString() != "00-0")
+            {
+                cmbSinif4.DisplayMember = "sAciklama";
+                cmbSinif4.ValueMember = "sSinifKodu";
+                Dictionary<string, string> Prm = new Dictionary<string, string>();
+                Prm.Add("@sira", "4");
+                Prm.Add("@parentid", cmbSinif3.SelectedValue.ToString().Substring(cmbSinif3.SelectedValue.ToString().IndexOf("-") + 1).Replace(" ", ""));
+                sinif4 = conn.DfQuery("Sinif", Prm);
+                cmbSinif4.DataSource = sinif4;
+                if (sinif4.Rows.Count > 1)
+                {
+                    cmbSinif4.Enabled = true;
+                }
+                else
+                {
+                    sinif4.Clear();
+                    cmbSinif4.Enabled = false;
+                    cmbSinif4.DataSource = null;
+                }
+
+            }
+            else
+            {
+                sinif4.Clear();
+                cmbSinif4.Enabled = false;
+                cmbSinif4.DataSource = null;
+                sinif5.Clear();
+                cmbSinif5.Enabled = false;
+                cmbSinif5.DataSource = null;
+                sinif6.Clear();
+                cmbSinif6.Enabled = false;
+                cmbSinif6.DataSource = null;
+            }
+
+        }
+
+        private void cmbSinif4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbSinif4.SelectedValue.ToString() != "00-0")
+            {
+                cmbSinif5.DisplayMember = "sAciklama";
+                cmbSinif5.ValueMember = "sSinifKodu";
+                Dictionary<string, string> Prm = new Dictionary<string, string>();
+                Prm.Add("@sira", "5");
+                Prm.Add("@parentid", cmbSinif4.SelectedValue.ToString().Substring(cmbSinif4.SelectedValue.ToString().IndexOf("-") + 1).Replace(" ", ""));
+                sinif5 = conn.DfQuery("Sinif", Prm);
+                cmbSinif5.DataSource = sinif5;
+                if (sinif5.Rows.Count > 1)
+                {
+                    cmbSinif5.Enabled = true;
+                }
+                else
+                {
+                    cmbSinif5.Enabled = false;
+                    cmbSinif5.DataSource = null;
+                    sinif5.Clear();
+                }
+
+            }
+            else
+            {
+                sinif5.Clear();
+                cmbSinif5.Enabled = false;
+                cmbSinif5.DataSource = null;
+                sinif6.Clear();
+                cmbSinif6.Enabled = false;
+                cmbSinif6.DataSource = null;
+            }
+
+        }
+
+        private void cmbSinif5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbSinif5.SelectedValue.ToString() != "00-0")
+            {
+                cmbSinif6.DisplayMember = "sAciklama";
+                cmbSinif6.ValueMember = "sSinifKodu";
+                Dictionary<string, string> Prm = new Dictionary<string, string>();
+                Prm.Add("@sira", "6");
+                Prm.Add("@parentid", cmbSinif5.SelectedValue.ToString().Substring(cmbSinif5.SelectedValue.ToString().IndexOf("-") + 1).Replace(" ", ""));
+                sinif6 = conn.DfQuery("Sinif", Prm);
+                cmbSinif6.DataSource = sinif6;
+                cmbSinif6.Enabled = true;
+
+            }
+            else
+            {
+                sinif6.Clear();
+                cmbSinif6.Enabled = false;
+                cmbSinif6.DataSource = null;
+            }
+
+        }
+
+        private void simpleButton4_Click(object sender, EventArgs e)
+        {
+            //Dictionary<string, string> keys = new Dictionary<string, string>();
+            //keys.Add("",);
+            //keys.Add("",);
+            //keys.Add("",);
+
+        }
+
+        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
         }
     }
 }

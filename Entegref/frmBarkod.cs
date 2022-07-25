@@ -96,7 +96,7 @@ namespace Entegref
                 barkodekle.Add("@sKarsiStokKodu", txtFirmaStokKod.Text);
                 barkodekle.Add("@sKarsiStokAciklama", txtFirmaStokAd.Text);
                 barkodekle.Add("@ReturnDesc", "");
-                var sonuc = conn.Insert2("BarkodEkle", barkodekle);
+                var sonuc = conn.DfInsertBack("BarkodEkle", barkodekle);
                 MessageBox.Show(sonuc);
 
                 txtBarkod.Text = "";
@@ -117,7 +117,7 @@ namespace Entegref
                 barkodekle.Add("@sKarsiStokKodu", txtFirmaStokKod.Text);
                 barkodekle.Add("@sKarsiStokAciklama", txtFirmaStokAd.Text);
                 barkodekle.Add("@ReturnDesc", "");
-                var sonuc = conn.Insert2("BarkodEkle", barkodekle);
+                var sonuc = conn.DfInsertBack("BarkodEkle", barkodekle);
 
                 txtBarkod.Text = "";
                 txtFirma.Text = "";

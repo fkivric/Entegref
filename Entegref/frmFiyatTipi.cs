@@ -37,7 +37,7 @@ namespace Entegref
             repositoryItemLookUpEdit1.ValueMember = "sDovizCinsi";
             repositoryItemLookUpEdit1.DataSource = doviz;
 
-            fiyattipi = conn.Query3("FiyatTipi");
+            fiyattipi = conn.DfQuerySpOnly("FiyatTipi");
             gridFiyatTipi.DataSource = fiyattipi;
 
         }

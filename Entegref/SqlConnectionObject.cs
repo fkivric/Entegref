@@ -12,7 +12,7 @@ namespace Entegref
     {
 
 
-        public DataTable Query(string spName, Dictionary<string, string> param)
+        public DataTable NTBQuery(string spName, Dictionary<string, string> param)
         {
             DataTable returnType = new DataTable();
             using (SqlConnection conn = new SqlConnection(Properties.Settings.Default.connectionstring2))
@@ -38,7 +38,7 @@ namespace Entegref
             return returnType;
         }
 
-        public DataTable Query1(string spName)
+        public DataTable NTBQuerySpOnly(string spName)
         {
             DataTable returnType = new DataTable();
             using (SqlConnection conn = new SqlConnection(Properties.Settings.Default.connectionstring2))
@@ -56,7 +56,7 @@ namespace Entegref
             return returnType;
         }
 
-        public void Insert3(string spName, Dictionary<string, string> param)
+        public void NTBLInsert(string spName, Dictionary<string, string> param)
         {
             using (SqlConnection conn = new SqlConnection(Properties.Settings.Default.connectionstring2))
             {
@@ -78,7 +78,7 @@ namespace Entegref
 
         }
 
-        public string Insert4(string spName, Dictionary<string, string> param)
+        public string NTBLInsertBack(string spName, Dictionary<string, string> param)
         {
             using (SqlConnection conn = new SqlConnection(Properties.Settings.Default.connectionstring2))
             {
@@ -109,7 +109,32 @@ namespace Entegref
             }
 
         }
-        public DataTable Query2(string spName, Dictionary<string, string> param)
+        public DataTable DfQuery(string spName, Dictionary<string, string> param)
+        {
+            DataTable returnType = new DataTable();
+            using (SqlConnection conn = new SqlConnection(Properties.Settings.Default.connectionstring))
+            {
+                conn.Open();
+                using (SqlCommand cmd = new SqlCommand(spName, conn))
+                {
+                    cmd.CommandTimeout = 0;
+                    if (param != null)
+                    {
+                        foreach (var item in param)
+                        {
+                            cmd.Parameters.AddWithValue(item.Key, item.Value);
+                        }
+                    }
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    SqlDataAdapter adap = new SqlDataAdapter(cmd);
+                    adap.Fill(returnType);
+                    conn.Close();
+                }
+            }
+
+            return returnType;
+        }
+        public DataTable DfQuery2(string spName, Dictionary<string, string> param)
         {
             DataTable returnType = new DataTable();
             using (SqlConnection conn = new SqlConnection(Properties.Settings.Default.connectionstring))
@@ -132,7 +157,7 @@ namespace Entegref
 
             return returnType;
         }
-        public DataTable Query3(string spName)
+        public DataTable DfQuerySpOnly(string spName)
         {
             DataTable returnType = new DataTable();
             using (SqlConnection conn = new SqlConnection(Properties.Settings.Default.connectionstring))
@@ -153,7 +178,7 @@ namespace Entegref
 
 
 
-        public void Insert(string spName, Dictionary<string, string> param)
+        public void DfInsert(string spName, Dictionary<string, string> param)
         {
             using (SqlConnection conn = new SqlConnection(Properties.Settings.Default.connectionstring))
             {
@@ -175,7 +200,7 @@ namespace Entegref
 
         }
 
-        public string Insert2(string spName, Dictionary<string, string> param)
+        public string DfInsertBack(string spName, Dictionary<string, string> param)
         {
             using (SqlConnection conn = new SqlConnection(Properties.Settings.Default.connectionstring))
             {

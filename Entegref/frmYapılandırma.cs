@@ -25,7 +25,7 @@ namespace Entegref
         {
             Dictionary<string, string> PRM = new Dictionary<string, string>();
             PRM.Add("@VKN", "39391097764");
-            var connection = conn.Query("ConnectionString", PRM);
+            var connection = conn.NTBQuery("ConnectionString", PRM);
             Properties.Settings.Default.connectionstring = connection.Rows[0][0].ToString();
             uncheck1.Visible = false;
             uncheck2.Visible = false;
@@ -84,7 +84,7 @@ namespace Entegref
         {
             comboIl.DisplayMember = "İl";
             comboIl.ValueMember = "sira";
-            var dt = conn.Query1("İl");
+            var dt = conn.NTBQuerySpOnly("İl");
             comboIl.DataSource = dt;
         }
         void ilce(string _semt)
@@ -93,7 +93,7 @@ namespace Entegref
             combosemt.ValueMember = "sira";
             Dictionary<string, string> Semt = new Dictionary<string, string>();
             Semt.Add("@ilid", _semt);
-            var dt = conn.Query("semt", Semt);
+            var dt = conn.NTBQuery("semt", Semt);
             combosemt.DataSource = dt;
             
         }
@@ -217,13 +217,13 @@ namespace Entegref
         {
             Dictionary<string, string> keys = new Dictionary<string, string>();
             keys.Add("@VKN", txtVKN.Text.ToString());
-            var database = conn.Query("DbList", keys);
+            var database = conn.NTBQuery("DbList", keys);
 
             if (database.Rows[0][1].ToString() == "0")
             {
                 Dictionary<string, string> db = new Dictionary<string, string>();
                 db.Add("@name", "["+txtVKN.Text.ToString()+"]");
-                var sonuc = conn.Query("create_databas", db);
+                var sonuc = conn.NTBQuery("create_databas", db);
 
             }
 
@@ -264,7 +264,7 @@ namespace Entegref
                 Prm.Add("@bBirimTldeKurusVarmi", "0");
             }
             Prm.Add("@sFormatMiktar", comboBoxEdit1.SelectedText);
-            conn.Insert3("ParamGenelUpdate", Prm);
+            conn.NTBLInsert("ParamGenelUpdate", Prm);
 
 
 

@@ -53,7 +53,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dropDownButton1 = new DevExpress.XtraEditors.DropDownButton();
-            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.popupislem = new DevExpress.XtraBars.PopupMenu(this.components);
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
@@ -112,7 +112,7 @@
             this.ultraTabPageControl1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupislem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtVergiDairesi)).BeginInit();
@@ -137,7 +137,7 @@
             // 
             this.ultraTabPageControl1.Controls.Add(this.panel3);
             this.ultraTabPageControl1.Controls.Add(this.panel2);
-            this.ultraTabPageControl1.Location = new System.Drawing.Point(1, 22);
+            this.ultraTabPageControl1.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl1.Name = "ultraTabPageControl1";
             this.ultraTabPageControl1.Size = new System.Drawing.Size(965, 541);
             // 
@@ -289,27 +289,27 @@
             this.dropDownButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dropDownButton1.DropDownControl = this.popupMenu1;
+            this.dropDownButton1.DropDownControl = this.popupislem;
             this.dropDownButton1.ImageOptions.Image = global::Entegref.Properties.Resources.about_32x32;
-            this.dropDownButton1.Location = new System.Drawing.Point(746, 450);
+            this.dropDownButton1.Location = new System.Drawing.Point(797, 423);
             this.dropDownButton1.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Style3D;
             this.dropDownButton1.Name = "dropDownButton1";
-            this.dropDownButton1.Size = new System.Drawing.Size(136, 29);
+            this.dropDownButton1.Size = new System.Drawing.Size(156, 39);
             this.dropDownButton1.TabIndex = 32;
             this.dropDownButton1.Text = "İşlem";
             // 
-            // popupMenu1
+            // popupislem
             // 
-            this.popupMenu1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            this.popupislem.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem1),
             new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem2)});
-            this.popupMenu1.Manager = this.barManager1;
-            this.popupMenu1.Name = "popupMenu1";
+            this.popupislem.Manager = this.barManager1;
+            this.popupislem.Name = "popupislem";
             // 
             // barButtonItem1
             // 
             this.barButtonItem1.Caption = "Kaydet";
-            this.barButtonItem1.DropDownControl = this.popupMenu1;
+            this.barButtonItem1.DropDownControl = this.popupislem;
             this.barButtonItem1.Id = 0;
             this.barButtonItem1.ImageOptions.Image = global::Entegref.Properties.Resources.saveas_16x16;
             this.barButtonItem1.ImageOptions.LargeImage = global::Entegref.Properties.Resources.saveas_32x32;
@@ -319,7 +319,7 @@
             // barButtonItem2
             // 
             this.barButtonItem2.Caption = "Yeni";
-            this.barButtonItem2.DropDownControl = this.popupMenu1;
+            this.barButtonItem2.DropDownControl = this.popupislem;
             this.barButtonItem2.Id = 1;
             this.barButtonItem2.ImageOptions.Image = global::Entegref.Properties.Resources.cancel_16x16;
             this.barButtonItem2.ImageOptions.LargeImage = global::Entegref.Properties.Resources.cancel_32x32;
@@ -620,7 +620,7 @@
             // 
             // ultraTabPageControl2
             // 
-            this.ultraTabPageControl2.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl2.Location = new System.Drawing.Point(1, 22);
             this.ultraTabPageControl2.Name = "ultraTabPageControl2";
             this.ultraTabPageControl2.Size = new System.Drawing.Size(965, 541);
             // 
@@ -851,7 +851,7 @@
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupislem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtVergiDairesi)).EndInit();
@@ -936,7 +936,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private DevExpress.XtraEditors.DropDownButton dropDownButton1;
-        private DevExpress.XtraBars.PopupMenu popupMenu1;
+        private DevExpress.XtraBars.PopupMenu popupislem;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.BarManager barManager1;

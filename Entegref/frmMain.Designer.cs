@@ -215,6 +215,7 @@
             this.ultraDockManager1.DragWindowStyle = Infragistics.Win.UltraWinDock.DragWindowStyle.LayeredWindowWithIndicators;
             this.ultraDockManager1.HostControl = this;
             this.ultraDockManager1.LayoutStyle = Infragistics.Win.UltraWinDock.DockAreaLayoutStyle.FillContainer;
+            this.ultraDockManager1.ShowCloseButton = false;
             this.ultraDockManager1.UnpinnedTabStyle = Infragistics.Win.UltraWinTabs.TabStyle.Office2010Ribbon;
             this.ultraDockManager1.UseOsThemes = Infragistics.Win.DefaultableBoolean.True;
             this.ultraDockManager1.WindowStyle = Infragistics.Win.UltraWinDock.WindowStyle.Office2007;
@@ -270,7 +271,7 @@
             this._frmMainAutoHideControl.Name = "_frmMainAutoHideControl";
             this._frmMainAutoHideControl.Owner = this.ultraDockManager1;
             this._frmMainAutoHideControl.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this._frmMainAutoHideControl.Size = new System.Drawing.Size(0, 0);
+            this._frmMainAutoHideControl.Size = new System.Drawing.Size(0, 763);
             this._frmMainAutoHideControl.TabIndex = 12;
             // 
             // windowDockingArea1
@@ -301,11 +302,11 @@
             this.ClientSize = new System.Drawing.Size(1752, 808);
             this.Controls.Add(this._frmMainAutoHideControl);
             this.Controls.Add(this.ultraNavigationBar1);
-            this.Controls.Add(this.windowDockingArea1);
+            this.Controls.Add(this._frmMainUnpinnedTabAreaLeft);
             this.Controls.Add(this._frmMainUnpinnedTabAreaTop);
             this.Controls.Add(this._frmMainUnpinnedTabAreaBottom);
-            this.Controls.Add(this._frmMainUnpinnedTabAreaLeft);
             this.Controls.Add(this._frmMainUnpinnedTabAreaRight);
+            this.Controls.Add(this.windowDockingArea1);
             this.Controls.Add(this.ultraOfficeNavBar1);
             this.IsMdiContainer = true;
             this.Name = "frmMain";

@@ -51,7 +51,7 @@ namespace Entegref
         {
             comboIl.DisplayMember = "İl";
             comboIl.ValueMember = "sira";
-            var dt = conn.Query1("İl");
+            var dt = conn.NTBQuerySpOnly("İl");
             comboIl.DataSource = dt;
         }
         void ilce(string _semt)
@@ -60,7 +60,7 @@ namespace Entegref
             combosemt.ValueMember = "sira";
             Dictionary<string, string> Semt = new Dictionary<string, string>();
             Semt.Add("@ilid", _semt);
-            var dt = conn.Query("semt", Semt);
+            var dt = conn.NTBQuery("semt", Semt);
             combosemt.DataSource = dt;
 
         }

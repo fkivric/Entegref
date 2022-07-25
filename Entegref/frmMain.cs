@@ -59,6 +59,13 @@ namespace Entegref
                 {
                     //child.Close();
                     var = 1;
+                    XtraMessageBoxArgs args = new XtraMessageBoxArgs();
+                    args.AutoCloseOptions.Delay = 2000;
+                    args.Caption = "Uyarı";
+                    args.Text = toOpen.Text.ToString() + "Açık.";
+                    args.Buttons = new DialogResult[] { DialogResult.OK };
+                    args.AutoCloseOptions.ShowTimerOnDefaultButton = true;
+                    XtraMessageBox.Show(args).ToString();
                     toOpen.Focus();
                 }
             }
