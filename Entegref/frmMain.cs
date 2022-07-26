@@ -89,9 +89,25 @@ namespace Entegref
         {
             if (show == 0)
             {
-                Point p = this.Location;
-                p.Offset(this.Width / 2, this.Height / 2);
-                radialMenu1.ShowPopup(p);
+                Point MousePosition = this.Location;
+                MousePosition.Offset(this.Width / 2, this.Height / 2);
+                radialMenu1.ShowPopup(MousePosition);
+            }
+            else
+            {
+                radialMenu1.HidePopup();
+                show = 1;
+            }
+        }
+
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+            if (show == 0)
+            {
+                Point MousePosition = this.Location;
+                MousePosition.Offset(this.Width / 2, this.Height / 2);
+                radialMenu1.ShowPopup(MousePosition);
             }
             else
             {
