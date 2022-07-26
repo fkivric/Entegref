@@ -75,5 +75,29 @@ namespace Entegref
                 toOpen.Show();
             }
         }
+
+        int show = 0;
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+            
+
+            
+        }
+
+        private void barButtonItem1_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (show == 0)
+            {
+                Point p = this.Location;
+                p.Offset(this.Width / 2, this.Height / 2);
+                radialMenu1.ShowPopup(p);
+            }
+            else
+            {
+                radialMenu1.HidePopup();
+                show = 1;
+            }
+        }
     }
 }

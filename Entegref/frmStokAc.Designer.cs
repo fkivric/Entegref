@@ -48,6 +48,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.dropDownButton2 = new DevExpress.XtraEditors.DropDownButton();
             this.popupislem = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
@@ -55,8 +57,6 @@
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.imgButonResimleri_32 = new System.Windows.Forms.ImageList(this.components);
-            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.lblKavala = new System.Windows.Forms.Label();
             this.lblBeden = new System.Windows.Forms.Label();
@@ -150,6 +150,8 @@
             this.txtFileAdress = new System.Windows.Forms.TextBox();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.imgButonResimleri_32 = new System.Windows.Forms.ImageList(this.components);
+            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.ultraTabControl1 = new Infragistics.Win.UltraWinTabControl.UltraTabControl();
@@ -162,16 +164,15 @@
             this.txtStokKodu = new System.Windows.Forms.TextBox();
             this.btnStokBul = new System.Windows.Forms.Button();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
+            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.ultraPeekPopup1 = new Infragistics.Win.Misc.UltraPeekPopup(this.components);
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
             this.ultraTabPageControl1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.popupislem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             this.ultraTabPageControl2.SuspendLayout();
             this.panel7.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -194,14 +195,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel5.SuspendLayout();
             this.pnlUrunResimbtn.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
-            this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl1)).BeginInit();
             this.ultraTabControl1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
+            this.panelControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraPeekPopup1)).BeginInit();
             this.SuspendLayout();
@@ -210,9 +212,9 @@
             // 
             this.ultraTabPageControl1.Controls.Add(this.panel3);
             this.ultraTabPageControl1.Controls.Add(this.panel2);
-            this.ultraTabPageControl1.Location = new System.Drawing.Point(1, 22);
+            this.ultraTabPageControl1.Location = new System.Drawing.Point(1, 23);
             this.ultraTabPageControl1.Name = "ultraTabPageControl1";
-            this.ultraTabPageControl1.Size = new System.Drawing.Size(965, 531);
+            this.ultraTabPageControl1.Size = new System.Drawing.Size(965, 530);
             // 
             // panel3
             // 
@@ -221,7 +223,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 216);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(965, 315);
+            this.panel3.Size = new System.Drawing.Size(965, 314);
             this.panel3.TabIndex = 2;
             // 
             // label17
@@ -229,14 +231,14 @@
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(6, 7);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(75, 13);
+            this.label17.Size = new System.Drawing.Size(84, 13);
             this.label17.TabIndex = 2;
             this.label17.Text = "Ürün Özellikeri";
             // 
             // textBox2
             // 
             this.textBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.textBox2.Location = new System.Drawing.Point(0, 50);
+            this.textBox2.Location = new System.Drawing.Point(0, 49);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(965, 265);
@@ -245,6 +247,7 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.dropDownButton2);
             this.panel2.Controls.Add(this.checkBox1);
             this.panel2.Controls.Add(this.lblKavala);
             this.panel2.Controls.Add(this.lblBeden);
@@ -287,7 +290,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dropDownButton2.DropDownControl = this.popupislem;
             this.dropDownButton2.ImageOptions.Image = global::Entegref.Properties.Resources.about_32x32;
-            this.dropDownButton2.Location = new System.Drawing.Point(977, 0);
+            this.dropDownButton2.Location = new System.Drawing.Point(801, 169);
             this.dropDownButton2.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Style3D;
             this.dropDownButton2.Name = "dropDownButton2";
             this.dropDownButton2.Size = new System.Drawing.Size(156, 39);
@@ -301,6 +304,20 @@
             new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem4)});
             this.popupislem.Manager = this.barManager1;
             this.popupislem.Name = "popupislem";
+            // 
+            // barButtonItem3
+            // 
+            this.barButtonItem3.Caption = "Yeni";
+            this.barButtonItem3.Id = 2;
+            this.barButtonItem3.Name = "barButtonItem3";
+            this.barButtonItem3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem3_ItemClick);
+            // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "Kaydet";
+            this.barButtonItem4.Id = 3;
+            this.barButtonItem4.Name = "barButtonItem4";
+            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
             // 
             // barManager1
             // 
@@ -364,20 +381,6 @@
             this.barButtonItem2.ImageOptions.LargeImage = global::Entegref.Properties.Resources.financial_32x32;
             this.barButtonItem2.Name = "barButtonItem2";
             // 
-            // imgButonResimleri_32
-            // 
-            this.imgButonResimleri_32.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imgButonResimleri_32.ImageSize = new System.Drawing.Size(32, 32);
-            this.imgButonResimleri_32.TransparentColor = System.Drawing.Color.Transparent;
-            // 
-            // popupMenu1
-            // 
-            this.popupMenu1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem2)});
-            this.popupMenu1.Manager = this.barManager1;
-            this.popupMenu1.Name = "popupMenu1";
-            // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
@@ -427,7 +430,7 @@
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(518, 185);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(56, 13);
+            this.label14.Size = new System.Drawing.Size(61, 13);
             this.label14.TabIndex = 5;
             this.label14.Text = "Barkod Gir";
             // 
@@ -445,7 +448,7 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(518, 134);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(37, 13);
+            this.label12.Size = new System.Drawing.Size(39, 13);
             this.label12.TabIndex = 5;
             this.label12.Text = "Beden";
             // 
@@ -454,7 +457,7 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(518, 106);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(90, 13);
+            this.label11.Size = new System.Drawing.Size(98, 13);
             this.label11.TabIndex = 5;
             this.label11.Text = "Fiyatlandırma Tipi";
             // 
@@ -463,7 +466,7 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(518, 76);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(120, 13);
+            this.label10.Size = new System.Drawing.Size(127, 13);
             this.label10.TabIndex = 4;
             this.label10.Text = "Toptanda MAX. İskonto";
             // 
@@ -472,7 +475,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(518, 49);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(114, 13);
+            this.label9.Size = new System.Drawing.Size(121, 13);
             this.label9.TabIndex = 4;
             this.label9.Text = "Satıştaki MAX. İskonto";
             // 
@@ -481,7 +484,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(518, 22);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(84, 13);
+            this.label8.Size = new System.Drawing.Size(94, 13);
             this.label8.TabIndex = 4;
             this.label8.Text = "Kritik Sok Miktarı";
             // 
@@ -490,7 +493,7 @@
             this.label18.AutoSize = true;
             this.label18.Location = new System.Drawing.Point(7, 185);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(27, 13);
+            this.label18.Size = new System.Drawing.Size(29, 13);
             this.label18.TabIndex = 4;
             this.label18.Text = "ÖTV";
             // 
@@ -499,7 +502,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(7, 157);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 13);
+            this.label7.Size = new System.Drawing.Size(60, 13);
             this.label7.TabIndex = 4;
             this.label7.Text = "KDV Oranı";
             // 
@@ -508,7 +511,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(7, 130);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 13);
+            this.label6.Size = new System.Drawing.Size(69, 13);
             this.label6.TabIndex = 4;
             this.label6.Text = "Birim Cinsi 2";
             // 
@@ -517,7 +520,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(7, 103);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 13);
+            this.label5.Size = new System.Drawing.Size(69, 13);
             this.label5.TabIndex = 4;
             this.label5.Text = "Birim Cinsi 1";
             // 
@@ -526,7 +529,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(7, 76);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 13);
+            this.label4.Size = new System.Drawing.Size(47, 13);
             this.label4.TabIndex = 4;
             this.label4.Text = "Kısa Adı";
             // 
@@ -535,7 +538,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(7, 49);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 13);
+            this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Özel Not";
             // 
@@ -544,7 +547,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(7, 22);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 13);
+            this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Ürün Adı";
             // 
@@ -586,7 +589,7 @@
             this.bunifuCustomTextbox6.BorderColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomTextbox6.Location = new System.Drawing.Point(663, 72);
             this.bunifuCustomTextbox6.Name = "bunifuCustomTextbox6";
-            this.bunifuCustomTextbox6.Size = new System.Drawing.Size(294, 21);
+            this.bunifuCustomTextbox6.Size = new System.Drawing.Size(294, 22);
             this.bunifuCustomTextbox6.TabIndex = 1;
             this.bunifuCustomTextbox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -595,7 +598,7 @@
             this.bunifuCustomTextbox5.BorderColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomTextbox5.Location = new System.Drawing.Point(663, 45);
             this.bunifuCustomTextbox5.Name = "bunifuCustomTextbox5";
-            this.bunifuCustomTextbox5.Size = new System.Drawing.Size(294, 21);
+            this.bunifuCustomTextbox5.Size = new System.Drawing.Size(294, 22);
             this.bunifuCustomTextbox5.TabIndex = 1;
             this.bunifuCustomTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -604,7 +607,7 @@
             this.bunifuCustomTextbox4.BorderColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomTextbox4.Location = new System.Drawing.Point(663, 18);
             this.bunifuCustomTextbox4.Name = "bunifuCustomTextbox4";
-            this.bunifuCustomTextbox4.Size = new System.Drawing.Size(294, 21);
+            this.bunifuCustomTextbox4.Size = new System.Drawing.Size(294, 22);
             this.bunifuCustomTextbox4.TabIndex = 1;
             this.bunifuCustomTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -613,7 +616,7 @@
             this.bunifuCustomTextbox3.BorderColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomTextbox3.Location = new System.Drawing.Point(101, 72);
             this.bunifuCustomTextbox3.Name = "bunifuCustomTextbox3";
-            this.bunifuCustomTextbox3.Size = new System.Drawing.Size(411, 21);
+            this.bunifuCustomTextbox3.Size = new System.Drawing.Size(411, 22);
             this.bunifuCustomTextbox3.TabIndex = 1;
             // 
             // bunifuCustomTextbox2
@@ -621,7 +624,7 @@
             this.bunifuCustomTextbox2.BorderColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomTextbox2.Location = new System.Drawing.Point(101, 45);
             this.bunifuCustomTextbox2.Name = "bunifuCustomTextbox2";
-            this.bunifuCustomTextbox2.Size = new System.Drawing.Size(411, 21);
+            this.bunifuCustomTextbox2.Size = new System.Drawing.Size(411, 22);
             this.bunifuCustomTextbox2.TabIndex = 1;
             // 
             // btnbarkod
@@ -639,7 +642,7 @@
             this.bunifuCustomTextbox1.BorderColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomTextbox1.Location = new System.Drawing.Point(101, 18);
             this.bunifuCustomTextbox1.Name = "bunifuCustomTextbox1";
-            this.bunifuCustomTextbox1.Size = new System.Drawing.Size(411, 21);
+            this.bunifuCustomTextbox1.Size = new System.Drawing.Size(411, 22);
             this.bunifuCustomTextbox1.TabIndex = 1;
             // 
             // ultraTabPageControl2
@@ -648,7 +651,7 @@
             this.ultraTabPageControl2.Controls.Add(this.panel6);
             this.ultraTabPageControl2.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl2.Name = "ultraTabPageControl2";
-            this.ultraTabPageControl2.Size = new System.Drawing.Size(965, 541);
+            this.ultraTabPageControl2.Size = new System.Drawing.Size(965, 530);
             // 
             // panel7
             // 
@@ -657,7 +660,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(0, 279);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(965, 262);
+            this.panel7.Size = new System.Drawing.Size(965, 251);
             this.panel7.TabIndex = 7;
             // 
             // groupBox4
@@ -669,7 +672,7 @@
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox4.Location = new System.Drawing.Point(484, 0);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(481, 262);
+            this.groupBox4.Size = new System.Drawing.Size(481, 251);
             this.groupBox4.TabIndex = 4;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "N11";
@@ -716,7 +719,7 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(484, 262);
+            this.groupBox2.Size = new System.Drawing.Size(484, 251);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "HepsiBurada";
@@ -902,7 +905,7 @@
             this.ultraTabPageControl3.Controls.Add(this.panel4);
             this.ultraTabPageControl3.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl3.Name = "ultraTabPageControl3";
-            this.ultraTabPageControl3.Size = new System.Drawing.Size(965, 541);
+            this.ultraTabPageControl3.Size = new System.Drawing.Size(965, 530);
             // 
             // gridFiyatlar
             // 
@@ -911,7 +914,7 @@
             this.gridFiyatlar.MainView = this.ViewFiyatlar;
             this.gridFiyatlar.MenuManager = this.barManager1;
             this.gridFiyatlar.Name = "gridFiyatlar";
-            this.gridFiyatlar.Size = new System.Drawing.Size(965, 289);
+            this.gridFiyatlar.Size = new System.Drawing.Size(965, 278);
             this.gridFiyatlar.TabIndex = 0;
             this.gridFiyatlar.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.ViewFiyatlar});
@@ -1102,7 +1105,7 @@
             this.label19.AutoSize = true;
             this.label19.Location = new System.Drawing.Point(37, 73);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(77, 13);
+            this.label19.Size = new System.Drawing.Size(85, 13);
             this.label19.TabIndex = 3;
             this.label19.Text = "Geçerlilik Tarihi";
             // 
@@ -1120,7 +1123,7 @@
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(38, 18);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(50, 13);
+            this.label15.Size = new System.Drawing.Size(53, 13);
             this.label15.TabIndex = 3;
             this.label15.Text = "Fiyat Tipi";
             // 
@@ -1155,7 +1158,7 @@
             this.txtYeniFiyat.Enabled = false;
             this.txtYeniFiyat.Location = new System.Drawing.Point(136, 38);
             this.txtYeniFiyat.Name = "txtYeniFiyat";
-            this.txtYeniFiyat.Size = new System.Drawing.Size(177, 21);
+            this.txtYeniFiyat.Size = new System.Drawing.Size(177, 22);
             this.txtYeniFiyat.TabIndex = 0;
             // 
             // txtTipi
@@ -1164,7 +1167,7 @@
             this.txtTipi.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.txtTipi.Location = new System.Drawing.Point(136, 11);
             this.txtTipi.Name = "txtTipi";
-            this.txtTipi.Size = new System.Drawing.Size(147, 21);
+            this.txtTipi.Size = new System.Drawing.Size(147, 22);
             this.txtTipi.TabIndex = 0;
             this.txtTipi.TextChanged += new System.EventHandler(this.txtTipi_TextChanged);
             // 
@@ -1192,14 +1195,14 @@
             this.ultraTabPageControl4.Controls.Add(this.pnlUrunResimbtn);
             this.ultraTabPageControl4.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl4.Name = "ultraTabPageControl4";
-            this.ultraTabPageControl4.Size = new System.Drawing.Size(965, 541);
+            this.ultraTabPageControl4.Size = new System.Drawing.Size(965, 530);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(241, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(724, 476);
+            this.pictureBox1.Size = new System.Drawing.Size(724, 465);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -1210,7 +1213,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(0, 0);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(241, 476);
+            this.listBox1.Size = new System.Drawing.Size(241, 465);
             this.listBox1.TabIndex = 0;
             this.listBox1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBox1_MouseDoubleClick);
             // 
@@ -1218,7 +1221,7 @@
             // 
             this.panel5.Controls.Add(this.label20);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 476);
+            this.panel5.Location = new System.Drawing.Point(0, 465);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(965, 18);
             this.panel5.TabIndex = 3;
@@ -1228,7 +1231,7 @@
             this.label20.AutoSize = true;
             this.label20.Location = new System.Drawing.Point(4, 4);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(79, 13);
+            this.label20.Size = new System.Drawing.Size(83, 13);
             this.label20.TabIndex = 0;
             this.label20.Text = "Toplam Resim :";
             // 
@@ -1238,7 +1241,7 @@
             this.pnlUrunResimbtn.Controls.Add(this.simpleButton2);
             this.pnlUrunResimbtn.Controls.Add(this.simpleButton1);
             this.pnlUrunResimbtn.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlUrunResimbtn.Location = new System.Drawing.Point(0, 494);
+            this.pnlUrunResimbtn.Location = new System.Drawing.Point(0, 483);
             this.pnlUrunResimbtn.Name = "pnlUrunResimbtn";
             this.pnlUrunResimbtn.Size = new System.Drawing.Size(965, 47);
             this.pnlUrunResimbtn.TabIndex = 2;
@@ -1247,7 +1250,7 @@
             // 
             this.txtFileAdress.Location = new System.Drawing.Point(10, 17);
             this.txtFileAdress.Name = "txtFileAdress";
-            this.txtFileAdress.Size = new System.Drawing.Size(500, 21);
+            this.txtFileAdress.Size = new System.Drawing.Size(500, 22);
             this.txtFileAdress.TabIndex = 1;
             // 
             // simpleButton2
@@ -1268,9 +1271,22 @@
             this.simpleButton1.Text = "Resim Seç";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
+            // imgButonResimleri_32
+            // 
+            this.imgButonResimleri_32.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imgButonResimleri_32.ImageSize = new System.Drawing.Size(32, 32);
+            this.imgButonResimleri_32.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // popupMenu1
+            // 
+            this.popupMenu1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem2)});
+            this.popupMenu1.Manager = this.barManager1;
+            this.popupMenu1.Name = "popupMenu1";
+            // 
             // panelControl2
             // 
-            this.panelControl2.Controls.Add(this.dropDownButton2);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelControl2.Location = new System.Drawing.Point(0, 599);
             this.panelControl2.Name = "panelControl2";
@@ -1341,7 +1357,7 @@
             // 
             this.ultraTabSharedControlsPage1.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabSharedControlsPage1.Name = "ultraTabSharedControlsPage1";
-            this.ultraTabSharedControlsPage1.Size = new System.Drawing.Size(965, 531);
+            this.ultraTabSharedControlsPage1.Size = new System.Drawing.Size(965, 530);
             // 
             // panel1
             // 
@@ -1382,7 +1398,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(4, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
+            this.label1.Size = new System.Drawing.Size(60, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Stok Kodu";
             // 
@@ -1401,7 +1417,7 @@
             this.txtStokKodu.Location = new System.Drawing.Point(65, 11);
             this.txtStokKodu.MaxLength = 13;
             this.txtStokKodu.Name = "txtStokKodu";
-            this.txtStokKodu.Size = new System.Drawing.Size(261, 21);
+            this.txtStokKodu.Size = new System.Drawing.Size(261, 22);
             this.txtStokKodu.TabIndex = 1;
             // 
             // btnStokBul
@@ -1416,29 +1432,34 @@
             // 
             // panelControl4
             // 
+            this.panelControl4.Controls.Add(this.simpleButton6);
+            this.panelControl4.Controls.Add(this.simpleButton5);
             this.panelControl4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl4.Location = new System.Drawing.Point(0, 0);
             this.panelControl4.Name = "panelControl4";
             this.panelControl4.Size = new System.Drawing.Size(1138, 599);
             this.panelControl4.TabIndex = 3;
             // 
+            // simpleButton5
+            // 
+            this.simpleButton5.Location = new System.Drawing.Point(977, 43);
+            this.simpleButton5.Name = "simpleButton5";
+            this.simpleButton5.Size = new System.Drawing.Size(156, 28);
+            this.simpleButton5.TabIndex = 0;
+            this.simpleButton5.Text = "Renk";
+            this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
+            // 
             // ultraPeekPopup1
             // 
             this.ultraPeekPopup1.Caption = null;
             // 
-            // barButtonItem3
+            // simpleButton6
             // 
-            this.barButtonItem3.Caption = "Yeni";
-            this.barButtonItem3.Id = 2;
-            this.barButtonItem3.Name = "barButtonItem3";
-            this.barButtonItem3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem3_ItemClick);
-            // 
-            // barButtonItem4
-            // 
-            this.barButtonItem4.Caption = "Kaydet";
-            this.barButtonItem4.Id = 3;
-            this.barButtonItem4.Name = "barButtonItem4";
-            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
+            this.simpleButton6.Location = new System.Drawing.Point(977, 80);
+            this.simpleButton6.Name = "simpleButton6";
+            this.simpleButton6.Size = new System.Drawing.Size(156, 28);
+            this.simpleButton6.TabIndex = 0;
+            this.simpleButton6.Text = "Beden";
             // 
             // frmStokAc
             // 
@@ -1465,7 +1486,6 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.popupislem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
             this.ultraTabPageControl2.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
@@ -1491,8 +1511,8 @@
             this.panel5.PerformLayout();
             this.pnlUrunResimbtn.ResumeLayout(false);
             this.pnlUrunResimbtn.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
-            this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl1)).EndInit();
@@ -1500,6 +1520,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
+            this.panelControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraPeekPopup1)).EndInit();
             this.ResumeLayout(false);
@@ -1633,6 +1654,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraEditors.SimpleButton simpleButton5;
+        private DevExpress.XtraEditors.SimpleButton simpleButton6;
         //private GridControl gridStokFiyat;
         //private GridView ViewStokFiyat;
         //private GridColumn gridColumn1;

@@ -37,6 +37,30 @@
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab10 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab11 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             this.ultraTabPageControl5 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.GridRenk = new DevExpress.XtraGrid.GridControl();
+            this.ViewRenk = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn33 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn34 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn35 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
+            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this.btnKaydet = new DevExpress.XtraBars.BarLargeButtonItem();
+            this.btnYeni = new DevExpress.XtraBars.BarLargeButtonItem();
+            this.btnSil = new DevExpress.XtraBars.BarLargeButtonItem();
+            this.ultraPanel2 = new Infragistics.Win.Misc.UltraPanel();
+            this.ultraPanel3 = new Infragistics.Win.Misc.UltraPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnRenkResimAc = new DevExpress.XtraEditors.SimpleButton();
+            this.ultraColorPicker1 = new Infragistics.Win.UltraWinEditors.UltraColorPicker();
+            this.ultraTextEditor2 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.txtRenkAdi = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.ultraPanel1 = new Infragistics.Win.Misc.UltraPanel();
+            this.btnRenkSec = new DevExpress.XtraEditors.SimpleButton();
+            this.txtRenkKodu = new System.Windows.Forms.TextBox();
             this.ultraTabPageControl6 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.panel11 = new System.Windows.Forms.Panel();
             this.gridBedenTumu = new DevExpress.XtraGrid.GridControl();
@@ -58,13 +82,6 @@
             this.gridColumn28 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn29 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn30 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
-            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.gridBeden = new DevExpress.XtraGrid.GridControl();
             this.ViewBeden = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -105,6 +122,8 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.ultraTabPageControl10 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
@@ -112,8 +131,8 @@
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.textBox8 = new System.Windows.Forms.TextBox();
             this.ultraTabPageControl11 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.panel5 = new System.Windows.Forms.Panel();
             this.gridControl3 = new DevExpress.XtraGrid.GridControl();
@@ -131,11 +150,27 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.dropDownButton1 = new DevExpress.XtraEditors.DropDownButton();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.kısayolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ultraTabPageControl5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GridRenk)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ViewRenk)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
+            this.ultraPanel2.ClientArea.SuspendLayout();
+            this.ultraPanel2.SuspendLayout();
+            this.ultraPanel3.ClientArea.SuspendLayout();
+            this.ultraPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraColorPicker1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRenkAdi)).BeginInit();
+            this.ultraPanel1.ClientArea.SuspendLayout();
+            this.ultraPanel1.SuspendLayout();
             this.ultraTabPageControl6.SuspendLayout();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridBedenTumu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ViewBedenTumu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridBeden)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ViewBeden)).BeginInit();
             this.panel12.SuspendLayout();
@@ -173,20 +208,269 @@
             this.ultraTabControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
             this.panelControl4.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ultraTabPageControl5
             // 
-            this.ultraTabPageControl5.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl5.Controls.Add(this.GridRenk);
+            this.ultraTabPageControl5.Controls.Add(this.ultraPanel2);
+            this.ultraTabPageControl5.Controls.Add(this.ultraPanel1);
+            this.ultraTabPageControl5.Location = new System.Drawing.Point(1, 45);
             this.ultraTabPageControl5.Name = "ultraTabPageControl5";
-            this.ultraTabPageControl5.Size = new System.Drawing.Size(965, 477);
+            this.ultraTabPageControl5.Size = new System.Drawing.Size(965, 475);
+            // 
+            // GridRenk
+            // 
+            this.GridRenk.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GridRenk.Location = new System.Drawing.Point(0, 313);
+            this.GridRenk.MainView = this.ViewRenk;
+            this.GridRenk.MenuManager = this.barManager1;
+            this.GridRenk.Name = "GridRenk";
+            this.GridRenk.Size = new System.Drawing.Size(965, 162);
+            this.GridRenk.TabIndex = 0;
+            this.GridRenk.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.ViewRenk});
+            // 
+            // ViewRenk
+            // 
+            this.ViewRenk.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn33,
+            this.gridColumn34,
+            this.gridColumn35});
+            this.ViewRenk.GridControl = this.GridRenk;
+            this.ViewRenk.Name = "ViewRenk";
+            this.ViewRenk.OptionsView.ShowGroupPanel = false;
+            this.ViewRenk.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.ViewRenk_RowCellClick);
+            // 
+            // gridColumn33
+            // 
+            this.gridColumn33.Caption = "Renk Kodu";
+            this.gridColumn33.FieldName = "sRenk";
+            this.gridColumn33.Name = "gridColumn33";
+            this.gridColumn33.OptionsColumn.AllowEdit = false;
+            this.gridColumn33.OptionsColumn.FixedWidth = true;
+            this.gridColumn33.OptionsColumn.ReadOnly = true;
+            this.gridColumn33.Visible = true;
+            this.gridColumn33.VisibleIndex = 0;
+            // 
+            // gridColumn34
+            // 
+            this.gridColumn34.Caption = "Renk Adı";
+            this.gridColumn34.FieldName = "sRenkAdi";
+            this.gridColumn34.Name = "gridColumn34";
+            this.gridColumn34.OptionsColumn.AllowEdit = false;
+            this.gridColumn34.OptionsColumn.FixedWidth = true;
+            this.gridColumn34.OptionsColumn.ReadOnly = true;
+            this.gridColumn34.Visible = true;
+            this.gridColumn34.VisibleIndex = 1;
+            // 
+            // gridColumn35
+            // 
+            this.gridColumn35.Caption = "Renk";
+            this.gridColumn35.FieldName = "lRenkNo";
+            this.gridColumn35.Name = "gridColumn35";
+            this.gridColumn35.OptionsColumn.AllowEdit = false;
+            this.gridColumn35.OptionsColumn.FixedWidth = true;
+            this.gridColumn35.OptionsColumn.ReadOnly = true;
+            // 
+            // barManager1
+            // 
+            this.barManager1.DockControls.Add(this.barDockControlTop);
+            this.barManager1.DockControls.Add(this.barDockControlBottom);
+            this.barManager1.DockControls.Add(this.barDockControlLeft);
+            this.barManager1.DockControls.Add(this.barDockControlRight);
+            this.barManager1.Form = this;
+            this.barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.btnKaydet,
+            this.btnYeni,
+            this.btnSil});
+            this.barManager1.MaxItemId = 6;
+            // 
+            // barDockControlTop
+            // 
+            this.barDockControlTop.CausesValidation = false;
+            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlTop.Manager = this.barManager1;
+            this.barDockControlTop.Size = new System.Drawing.Size(1138, 0);
+            // 
+            // barDockControlBottom
+            // 
+            this.barDockControlBottom.CausesValidation = false;
+            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 638);
+            this.barDockControlBottom.Manager = this.barManager1;
+            this.barDockControlBottom.Size = new System.Drawing.Size(1138, 0);
+            // 
+            // barDockControlLeft
+            // 
+            this.barDockControlLeft.CausesValidation = false;
+            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlLeft.Manager = this.barManager1;
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 638);
+            // 
+            // barDockControlRight
+            // 
+            this.barDockControlRight.CausesValidation = false;
+            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.barDockControlRight.Location = new System.Drawing.Point(1138, 0);
+            this.barDockControlRight.Manager = this.barManager1;
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 638);
+            // 
+            // btnKaydet
+            // 
+            this.btnKaydet.Caption = "KAYDET";
+            this.btnKaydet.CaptionAlignment = DevExpress.XtraBars.BarItemCaptionAlignment.Right;
+            this.btnKaydet.Id = 3;
+            this.btnKaydet.ImageOptions.Image = global::Entegref.Properties.Resources.save_16x163;
+            this.btnKaydet.ImageOptions.LargeImage = global::Entegref.Properties.Resources.save_32x323;
+            this.btnKaydet.Name = "btnKaydet";
+            this.btnKaydet.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnKaydet_ItemClick);
+            // 
+            // btnYeni
+            // 
+            this.btnYeni.Caption = "YENİ";
+            this.btnYeni.CaptionAlignment = DevExpress.XtraBars.BarItemCaptionAlignment.Right;
+            this.btnYeni.Id = 4;
+            this.btnYeni.ImageOptions.Image = global::Entegref.Properties.Resources.new_16x165;
+            this.btnYeni.ImageOptions.LargeImage = global::Entegref.Properties.Resources.new_32x325;
+            this.btnYeni.Name = "btnYeni";
+            this.btnYeni.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnYeni_ItemClick);
+            // 
+            // btnSil
+            // 
+            this.btnSil.Caption = "SEÇİLENİ SİL";
+            this.btnSil.CaptionAlignment = DevExpress.XtraBars.BarItemCaptionAlignment.Right;
+            this.btnSil.Id = 5;
+            this.btnSil.ImageOptions.Image = global::Entegref.Properties.Resources.clear_16x162;
+            this.btnSil.ImageOptions.LargeImage = global::Entegref.Properties.Resources.clear_32x322;
+            this.btnSil.Name = "btnSil";
+            this.btnSil.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSil_ItemClick);
+            // 
+            // ultraPanel2
+            // 
+            // 
+            // ultraPanel2.ClientArea
+            // 
+            this.ultraPanel2.ClientArea.Controls.Add(this.ultraPanel3);
+            this.ultraPanel2.ClientArea.Controls.Add(this.groupBox3);
+            this.ultraPanel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ultraPanel2.Location = new System.Drawing.Point(0, 51);
+            this.ultraPanel2.Name = "ultraPanel2";
+            this.ultraPanel2.Size = new System.Drawing.Size(965, 262);
+            this.ultraPanel2.TabIndex = 3;
+            // 
+            // ultraPanel3
+            // 
+            // 
+            // ultraPanel3.ClientArea
+            // 
+            this.ultraPanel3.ClientArea.Controls.Add(this.pictureBox1);
+            this.ultraPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ultraPanel3.Location = new System.Drawing.Point(0, 98);
+            this.ultraPanel3.Name = "ultraPanel3";
+            this.ultraPanel3.Size = new System.Drawing.Size(965, 164);
+            this.ultraPanel3.TabIndex = 9;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(965, 164);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.btnRenkResimAc);
+            this.groupBox3.Controls.Add(this.ultraColorPicker1);
+            this.groupBox3.Controls.Add(this.ultraTextEditor2);
+            this.groupBox3.Controls.Add(this.txtRenkAdi);
+            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.groupBox3.Location = new System.Drawing.Point(0, 0);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(965, 98);
+            this.groupBox3.TabIndex = 1;
+            this.groupBox3.TabStop = false;
+            // 
+            // btnRenkResimAc
+            // 
+            this.btnRenkResimAc.ImageOptions.Image = global::Entegref.Properties.Resources.image_32x321;
+            this.btnRenkResimAc.Location = new System.Drawing.Point(758, 13);
+            this.btnRenkResimAc.Name = "btnRenkResimAc";
+            this.btnRenkResimAc.Size = new System.Drawing.Size(201, 24);
+            this.btnRenkResimAc.TabIndex = 6;
+            this.btnRenkResimAc.Text = "Ürün Resmi Aç";
+            this.btnRenkResimAc.Click += new System.EventHandler(this.btnRenkResimAc_Click);
+            // 
+            // ultraColorPicker1
+            // 
+            this.ultraColorPicker1.Color = System.Drawing.Color.Red;
+            this.ultraColorPicker1.Location = new System.Drawing.Point(566, 14);
+            this.ultraColorPicker1.Name = "ultraColorPicker1";
+            this.ultraColorPicker1.Size = new System.Drawing.Size(186, 24);
+            this.ultraColorPicker1.TabIndex = 3;
+            this.ultraColorPicker1.Text = "Red";
+            this.ultraColorPicker1.ColorChanged += new System.EventHandler(this.ultraColorPicker1_ColorChanged);
+            // 
+            // ultraTextEditor2
+            // 
+            this.ultraTextEditor2.Enabled = false;
+            this.ultraTextEditor2.Location = new System.Drawing.Point(12, 44);
+            this.ultraTextEditor2.Multiline = true;
+            this.ultraTextEditor2.Name = "ultraTextEditor2";
+            this.ultraTextEditor2.ReadOnly = true;
+            this.ultraTextEditor2.Size = new System.Drawing.Size(947, 48);
+            this.ultraTextEditor2.TabIndex = 0;
+            // 
+            // txtRenkAdi
+            // 
+            this.txtRenkAdi.Location = new System.Drawing.Point(12, 14);
+            this.txtRenkAdi.Name = "txtRenkAdi";
+            this.txtRenkAdi.Size = new System.Drawing.Size(415, 24);
+            this.txtRenkAdi.TabIndex = 0;
+            // 
+            // ultraPanel1
+            // 
+            // 
+            // ultraPanel1.ClientArea
+            // 
+            this.ultraPanel1.ClientArea.Controls.Add(this.btnRenkSec);
+            this.ultraPanel1.ClientArea.Controls.Add(this.txtRenkKodu);
+            this.ultraPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ultraPanel1.Location = new System.Drawing.Point(0, 0);
+            this.ultraPanel1.Name = "ultraPanel1";
+            this.ultraPanel1.Size = new System.Drawing.Size(965, 51);
+            this.ultraPanel1.TabIndex = 2;
+            // 
+            // btnRenkSec
+            // 
+            this.btnRenkSec.Location = new System.Drawing.Point(341, 15);
+            this.btnRenkSec.Name = "btnRenkSec";
+            this.btnRenkSec.Size = new System.Drawing.Size(86, 21);
+            this.btnRenkSec.TabIndex = 2;
+            this.btnRenkSec.Text = "Seç";
+            this.btnRenkSec.Click += new System.EventHandler(this.btnRenkSec_Click);
+            // 
+            // txtRenkKodu
+            // 
+            this.txtRenkKodu.Location = new System.Drawing.Point(12, 15);
+            this.txtRenkKodu.MaxLength = 3;
+            this.txtRenkKodu.Name = "txtRenkKodu";
+            this.txtRenkKodu.Size = new System.Drawing.Size(323, 22);
+            this.txtRenkKodu.TabIndex = 0;
             // 
             // ultraTabPageControl6
             // 
             this.ultraTabPageControl6.Controls.Add(this.panel11);
-            this.ultraTabPageControl6.Location = new System.Drawing.Point(1, 43);
+            this.ultraTabPageControl6.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl6.Name = "ultraTabPageControl6";
-            this.ultraTabPageControl6.Size = new System.Drawing.Size(965, 477);
+            this.ultraTabPageControl6.Size = new System.Drawing.Size(965, 475);
             // 
             // panel11
             // 
@@ -196,7 +480,7 @@
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel11.Location = new System.Drawing.Point(0, 0);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(965, 477);
+            this.panel11.Size = new System.Drawing.Size(965, 475);
             this.panel11.TabIndex = 4;
             // 
             // gridBedenTumu
@@ -206,7 +490,7 @@
             this.gridBedenTumu.MainView = this.ViewBedenTumu;
             this.gridBedenTumu.MenuManager = this.barManager1;
             this.gridBedenTumu.Name = "gridBedenTumu";
-            this.gridBedenTumu.Size = new System.Drawing.Size(965, 304);
+            this.gridBedenTumu.Size = new System.Drawing.Size(965, 302);
             this.gridBedenTumu.TabIndex = 0;
             this.gridBedenTumu.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.ViewBedenTumu});
@@ -418,62 +702,6 @@
             this.gridColumn30.OptionsColumn.FixedWidth = true;
             this.gridColumn30.Visible = true;
             this.gridColumn30.VisibleIndex = 15;
-            // 
-            // barManager1
-            // 
-            this.barManager1.DockControls.Add(this.barDockControlTop);
-            this.barManager1.DockControls.Add(this.barDockControlBottom);
-            this.barManager1.DockControls.Add(this.barDockControlLeft);
-            this.barManager1.DockControls.Add(this.barDockControlRight);
-            this.barManager1.Form = this;
-            this.barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.barButtonItem1,
-            this.barButtonItem2});
-            this.barManager1.MaxItemId = 2;
-            // 
-            // barDockControlTop
-            // 
-            this.barDockControlTop.CausesValidation = false;
-            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(1138, 0);
-            // 
-            // barDockControlBottom
-            // 
-            this.barDockControlBottom.CausesValidation = false;
-            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 638);
-            this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(1138, 0);
-            // 
-            // barDockControlLeft
-            // 
-            this.barDockControlLeft.CausesValidation = false;
-            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 638);
-            // 
-            // barDockControlRight
-            // 
-            this.barDockControlRight.CausesValidation = false;
-            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1138, 0);
-            this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 638);
-            // 
-            // barButtonItem1
-            // 
-            this.barButtonItem1.Caption = "Kaydet";
-            this.barButtonItem1.Id = 0;
-            this.barButtonItem1.Name = "barButtonItem1";
-            // 
-            // barButtonItem2
-            // 
-            this.barButtonItem2.Caption = "Yeni";
-            this.barButtonItem2.Id = 1;
-            this.barButtonItem2.Name = "barButtonItem2";
             // 
             // gridBeden
             // 
@@ -708,7 +936,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(425, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 13);
+            this.label1.Size = new System.Drawing.Size(137, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Yeni Beden Ana Başlık Adı";
             // 
@@ -717,7 +945,7 @@
             this.txtBedenAdı.Enabled = false;
             this.txtBedenAdı.Location = new System.Drawing.Point(273, 34);
             this.txtBedenAdı.Name = "txtBedenAdı";
-            this.txtBedenAdı.Size = new System.Drawing.Size(432, 21);
+            this.txtBedenAdı.Size = new System.Drawing.Size(432, 22);
             this.txtBedenAdı.TabIndex = 0;
             // 
             // groupBox1
@@ -745,7 +973,7 @@
             this.ultraTabPageControl7.Controls.Add(this.panel9);
             this.ultraTabPageControl7.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl7.Name = "ultraTabPageControl7";
-            this.ultraTabPageControl7.Size = new System.Drawing.Size(965, 477);
+            this.ultraTabPageControl7.Size = new System.Drawing.Size(965, 475);
             // 
             // panel9
             // 
@@ -754,7 +982,7 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(965, 477);
+            this.panel9.Size = new System.Drawing.Size(965, 475);
             this.panel9.TabIndex = 4;
             // 
             // gridControl4
@@ -764,7 +992,7 @@
             this.gridControl4.MainView = this.gridView4;
             this.gridControl4.MenuManager = this.barManager1;
             this.gridControl4.Name = "gridControl4";
-            this.gridControl4.Size = new System.Drawing.Size(965, 383);
+            this.gridControl4.Size = new System.Drawing.Size(965, 381);
             this.gridControl4.TabIndex = 0;
             this.gridControl4.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView4});
@@ -789,7 +1017,7 @@
             this.ultraTabPageControl8.Controls.Add(this.panel13);
             this.ultraTabPageControl8.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl8.Name = "ultraTabPageControl8";
-            this.ultraTabPageControl8.Size = new System.Drawing.Size(965, 477);
+            this.ultraTabPageControl8.Size = new System.Drawing.Size(965, 475);
             // 
             // panel13
             // 
@@ -798,7 +1026,7 @@
             this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel13.Location = new System.Drawing.Point(0, 0);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(965, 477);
+            this.panel13.Size = new System.Drawing.Size(965, 475);
             this.panel13.TabIndex = 4;
             // 
             // gridControl6
@@ -808,7 +1036,7 @@
             this.gridControl6.MainView = this.gridView6;
             this.gridControl6.MenuManager = this.barManager1;
             this.gridControl6.Name = "gridControl6";
-            this.gridControl6.Size = new System.Drawing.Size(965, 383);
+            this.gridControl6.Size = new System.Drawing.Size(965, 381);
             this.gridControl6.TabIndex = 0;
             this.gridControl6.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView6});
@@ -833,7 +1061,7 @@
             this.ultraTabPageControl9.Controls.Add(this.panel3);
             this.ultraTabPageControl9.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl9.Name = "ultraTabPageControl9";
-            this.ultraTabPageControl9.Size = new System.Drawing.Size(965, 477);
+            this.ultraTabPageControl9.Size = new System.Drawing.Size(965, 475);
             // 
             // panel3
             // 
@@ -842,7 +1070,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(965, 477);
+            this.panel3.Size = new System.Drawing.Size(965, 475);
             this.panel3.TabIndex = 1;
             // 
             // gridControl1
@@ -852,7 +1080,7 @@
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.MenuManager = this.barManager1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(965, 383);
+            this.gridControl1.Size = new System.Drawing.Size(965, 381);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -866,6 +1094,8 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.simpleButton1);
+            this.panel4.Controls.Add(this.textBox7);
             this.panel4.Controls.Add(this.textBox2);
             this.panel4.Controls.Add(this.textBox1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
@@ -874,18 +1104,33 @@
             this.panel4.Size = new System.Drawing.Size(965, 94);
             this.panel4.TabIndex = 1;
             // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(341, 15);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(86, 21);
+            this.simpleButton1.TabIndex = 5;
+            this.simpleButton1.Text = "Seç";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(12, 15);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(323, 22);
+            this.textBox7.TabIndex = 3;
+            // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(406, 32);
+            this.textBox2.Location = new System.Drawing.Point(23, 52);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 21);
+            this.textBox2.Size = new System.Drawing.Size(100, 22);
             this.textBox2.TabIndex = 0;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(45, 44);
+            this.textBox1.Location = new System.Drawing.Point(406, 66);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
             this.textBox1.TabIndex = 0;
             // 
             // ultraTabPageControl10
@@ -893,7 +1138,7 @@
             this.ultraTabPageControl10.Controls.Add(this.panel6);
             this.ultraTabPageControl10.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl10.Name = "ultraTabPageControl10";
-            this.ultraTabPageControl10.Size = new System.Drawing.Size(965, 477);
+            this.ultraTabPageControl10.Size = new System.Drawing.Size(965, 475);
             // 
             // panel6
             // 
@@ -902,7 +1147,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(965, 477);
+            this.panel6.Size = new System.Drawing.Size(965, 475);
             this.panel6.TabIndex = 3;
             // 
             // gridControl2
@@ -912,7 +1157,7 @@
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.MenuManager = this.barManager1;
             this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(965, 383);
+            this.gridControl2.Size = new System.Drawing.Size(965, 381);
             this.gridControl2.TabIndex = 0;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -926,34 +1171,35 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.textBox5);
-            this.panel7.Controls.Add(this.textBox6);
+            this.panel7.Controls.Add(this.simpleButton2);
+            this.panel7.Controls.Add(this.textBox8);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(965, 94);
             this.panel7.TabIndex = 1;
             // 
-            // textBox5
+            // simpleButton2
             // 
-            this.textBox5.Location = new System.Drawing.Point(406, 32);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 21);
-            this.textBox5.TabIndex = 0;
+            this.simpleButton2.Location = new System.Drawing.Point(341, 15);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(86, 21);
+            this.simpleButton2.TabIndex = 7;
+            this.simpleButton2.Text = "Seç";
             // 
-            // textBox6
+            // textBox8
             // 
-            this.textBox6.Location = new System.Drawing.Point(45, 44);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 21);
-            this.textBox6.TabIndex = 0;
+            this.textBox8.Location = new System.Drawing.Point(12, 15);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(323, 22);
+            this.textBox8.TabIndex = 6;
             // 
             // ultraTabPageControl11
             // 
             this.ultraTabPageControl11.Controls.Add(this.panel5);
             this.ultraTabPageControl11.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl11.Name = "ultraTabPageControl11";
-            this.ultraTabPageControl11.Size = new System.Drawing.Size(965, 477);
+            this.ultraTabPageControl11.Size = new System.Drawing.Size(965, 475);
             // 
             // panel5
             // 
@@ -962,7 +1208,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(965, 477);
+            this.panel5.Size = new System.Drawing.Size(965, 475);
             this.panel5.TabIndex = 2;
             // 
             // gridControl3
@@ -972,7 +1218,7 @@
             this.gridControl3.MainView = this.gridView3;
             this.gridControl3.MenuManager = this.barManager1;
             this.gridControl3.Name = "gridControl3";
-            this.gridControl3.Size = new System.Drawing.Size(965, 383);
+            this.gridControl3.Size = new System.Drawing.Size(965, 381);
             this.gridControl3.TabIndex = 0;
             this.gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView3});
@@ -998,14 +1244,14 @@
             // 
             this.textBox3.Location = new System.Drawing.Point(406, 32);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 21);
+            this.textBox3.Size = new System.Drawing.Size(100, 22);
             this.textBox3.TabIndex = 0;
             // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(45, 44);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 21);
+            this.textBox4.Size = new System.Drawing.Size(100, 22);
             this.textBox4.TabIndex = 0;
             // 
             // panelControl2
@@ -1044,8 +1290,9 @@
             // popupMenu1
             // 
             this.popupMenu1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem2)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnKaydet),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnYeni),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnSil)});
             this.popupMenu1.Manager = this.barManager1;
             this.popupMenu1.Name = "popupMenu1";
             // 
@@ -1119,7 +1366,7 @@
             // 
             this.ultraTabSharedControlsPage1.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabSharedControlsPage1.Name = "ultraTabSharedControlsPage1";
-            this.ultraTabSharedControlsPage1.Size = new System.Drawing.Size(965, 477);
+            this.ultraTabSharedControlsPage1.Size = new System.Drawing.Size(965, 475);
             // 
             // panel1
             // 
@@ -1147,6 +1394,24 @@
             this.dropDownButton1.TabIndex = 0;
             this.dropDownButton1.Text = "Fiyatlandırma";
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.kısayolToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(149, 26);
+            // 
+            // kısayolToolStripMenuItem
+            // 
+            this.kısayolToolStripMenuItem.Checked = true;
+            this.kısayolToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.kısayolToolStripMenuItem.Name = "kısayolToolStripMenuItem";
+            this.kısayolToolStripMenuItem.ShortcutKeyDisplayString = "";
+            this.kısayolToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.K)));
+            this.kısayolToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.kısayolToolStripMenuItem.Text = "Kısayol";
+            this.kısayolToolStripMenuItem.Click += new System.EventHandler(this.kısayolToolStripMenuItem_Click);
+            // 
             // frmAyarlarUrun
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1163,11 +1428,29 @@
             this.Name = "frmAyarlarUrun";
             this.Text = "frmUrunAyarları";
             this.Load += new System.EventHandler(this.frmUrunAyarları_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmAyarlarUrun_KeyDown);
+            this.ultraTabPageControl5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.GridRenk)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ViewRenk)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
+            this.ultraPanel2.ClientArea.ResumeLayout(false);
+            this.ultraPanel2.ResumeLayout(false);
+            this.ultraPanel3.ClientArea.ResumeLayout(false);
+            this.ultraPanel3.ClientArea.PerformLayout();
+            this.ultraPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraColorPicker1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRenkAdi)).EndInit();
+            this.ultraPanel1.ClientArea.ResumeLayout(false);
+            this.ultraPanel1.ClientArea.PerformLayout();
+            this.ultraPanel1.ResumeLayout(false);
             this.ultraTabPageControl6.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridBedenTumu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ViewBedenTumu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridBeden)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ViewBeden)).EndInit();
             this.panel12.ResumeLayout(false);
@@ -1209,6 +1492,7 @@
             this.ultraTabControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
             this.panelControl4.ResumeLayout(false);
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1227,8 +1511,6 @@
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.PopupMenu popupMenu1;
         private Infragistics.Win.UltraWinTabControl.UltraTabControl ultraTabControl1;
         private Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage ultraTabSharedControlsPage1;
@@ -1285,8 +1567,6 @@
         private DevExpress.XtraGrid.GridControl gridControl2;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Panel panel5;
         private DevExpress.XtraGrid.GridControl gridControl3;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
@@ -1311,5 +1591,30 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn28;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn29;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn30;
+        private Infragistics.Win.Misc.UltraPanel ultraPanel2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private Infragistics.Win.UltraWinEditors.UltraColorPicker ultraColorPicker1;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor ultraTextEditor2;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor txtRenkAdi;
+        private Infragistics.Win.Misc.UltraPanel ultraPanel1;
+        private DevExpress.XtraEditors.SimpleButton btnRenkSec;
+        private System.Windows.Forms.TextBox txtRenkKodu;
+        private DevExpress.XtraEditors.SimpleButton btnRenkResimAc;
+        private DevExpress.XtraGrid.GridControl GridRenk;
+        private DevExpress.XtraGrid.Views.Grid.GridView ViewRenk;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem kısayolToolStripMenuItem;
+        private DevExpress.XtraBars.BarLargeButtonItem btnKaydet;
+        private DevExpress.XtraBars.BarLargeButtonItem btnYeni;
+        private DevExpress.XtraBars.BarLargeButtonItem btnSil;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private System.Windows.Forms.TextBox textBox7;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private System.Windows.Forms.TextBox textBox8;
+        private Infragistics.Win.Misc.UltraPanel ultraPanel3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn33;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn34;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn35;
     }
 }

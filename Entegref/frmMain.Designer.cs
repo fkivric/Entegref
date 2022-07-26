@@ -61,10 +61,7 @@
             Infragistics.Win.Appearance appearance11 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem14 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
             Infragistics.Win.Appearance appearance12 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinDock.DockAreaPane dockAreaPane1 = new Infragistics.Win.UltraWinDock.DockAreaPane(Infragistics.Win.UltraWinDock.DockedLocation.DockedLeft, new System.Guid("3311653a-360d-4f74-a8c0-cfa3e31d3dd5"));
-            Infragistics.Win.UltraWinDock.DockableControlPane dockableControlPane1 = new Infragistics.Win.UltraWinDock.DockableControlPane(new System.Guid("c76c27f6-f378-4268-8926-fd9a1fe93d1c"), new System.Guid("00000000-0000-0000-0000-000000000000"), -1, new System.Guid("3311653a-360d-4f74-a8c0-cfa3e31d3dd5"), -1);
             this.ultraExplorerBar1 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBar();
-            this.ultraOfficeNavBar1 = new Infragistics.Win.UltraWinOfficeNavBar.UltraOfficeNavBar();
             this.ultraNavigationBar1 = new Infragistics.Win.Misc.UltraNavigationBar();
             this.ultraDockManager1 = new Infragistics.Win.UltraWinDock.UltraDockManager(this.components);
             this._frmMainUnpinnedTabAreaLeft = new Infragistics.Win.UltraWinDock.UnpinnedTabArea();
@@ -72,14 +69,29 @@
             this._frmMainUnpinnedTabAreaTop = new Infragistics.Win.UltraWinDock.UnpinnedTabArea();
             this._frmMainUnpinnedTabAreaBottom = new Infragistics.Win.UltraWinDock.UnpinnedTabArea();
             this._frmMainAutoHideControl = new Infragistics.Win.UltraWinDock.AutoHideControl();
-            this.windowDockingArea1 = new Infragistics.Win.UltraWinDock.WindowDockingArea();
-            this.dockableWindow1 = new Infragistics.Win.UltraWinDock.DockableWindow();
+            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
+            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.ımageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
+            this.radialMenu1 = new DevExpress.XtraBars.Ribbon.RadialMenu(this.components);
+            this.ultraRadialMenu1 = new Infragistics.Win.UltraWinRadialMenu.UltraRadialMenu(this.components);
+            this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
+            this.repositoryItemColorPickEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemColorPickEdit();
+            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             ((System.ComponentModel.ISupportInitialize)(this.ultraExplorerBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraOfficeNavBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraNavigationBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraDockManager1)).BeginInit();
-            this.windowDockingArea1.SuspendLayout();
-            this.dockableWindow1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ımageCollection1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radialMenu1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraRadialMenu1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemColorPickEdit1)).BeginInit();
             this.SuspendLayout();
             // 
             // ultraExplorerBar1
@@ -171,10 +183,10 @@
             this.ultraExplorerBar1.ItemSettings.AllowDragCopy = Infragistics.Win.UltraWinExplorerBar.ItemDragStyle.None;
             this.ultraExplorerBar1.ItemSettings.AllowDragMove = Infragistics.Win.UltraWinExplorerBar.ItemDragStyle.WithinGroupOnly;
             this.ultraExplorerBar1.ItemSettings.Style = Infragistics.Win.UltraWinExplorerBar.ItemStyle.Button;
-            this.ultraExplorerBar1.Location = new System.Drawing.Point(0, 18);
+            this.ultraExplorerBar1.Location = new System.Drawing.Point(0, 0);
             this.ultraExplorerBar1.Name = "ultraExplorerBar1";
             this.ultraExplorerBar1.SettingsKey = "frmMain.ultraExplorerBar1";
-            this.ultraExplorerBar1.Size = new System.Drawing.Size(336, 745);
+            this.ultraExplorerBar1.Size = new System.Drawing.Size(175, 808);
             this.ultraExplorerBar1.Style = Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarStyle.OutlookNavigationPane;
             this.ultraExplorerBar1.TabIndex = 2;
             this.ultraExplorerBar1.UseLargeGroupHeaderImages = Infragistics.Win.DefaultableBoolean.True;
@@ -182,20 +194,12 @@
             this.ultraExplorerBar1.ViewStyle = Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarViewStyle.Office2007;
             this.ultraExplorerBar1.ItemClick += new Infragistics.Win.UltraWinExplorerBar.ItemClickEventHandler(this.ultraExplorerBar1_ItemClick);
             // 
-            // ultraOfficeNavBar1
-            // 
-            this.ultraOfficeNavBar1.Location = new System.Drawing.Point(0, 763);
-            this.ultraOfficeNavBar1.Name = "ultraOfficeNavBar1";
-            this.ultraOfficeNavBar1.Size = new System.Drawing.Size(1752, 45);
-            this.ultraOfficeNavBar1.TabIndex = 1;
-            this.ultraOfficeNavBar1.Text = "ultraOfficeNavBar1";
-            // 
             // ultraNavigationBar1
             // 
             this.ultraNavigationBar1.Location = new System.Drawing.Point(0, 0);
             this.ultraNavigationBar1.Name = "ultraNavigationBar1";
             this.ultraNavigationBar1.NonAutoSizeHeight = 24;
-            this.ultraNavigationBar1.Size = new System.Drawing.Size(0, 25);
+            this.ultraNavigationBar1.Size = new System.Drawing.Size(0, 27);
             this.ultraNavigationBar1.TabIndex = 7;
             this.ultraNavigationBar1.Text = "ultraNavigationBar1";
             // 
@@ -203,15 +207,6 @@
             // 
             this.ultraDockManager1.CaptionStyle = Infragistics.Win.UltraWinDock.CaptionStyle.Office2007;
             this.ultraDockManager1.CompressUnpinnedTabs = false;
-            dockableControlPane1.Control = this.ultraExplorerBar1;
-            dockableControlPane1.OriginalControlBounds = new System.Drawing.Rectangle(0, 0, 175, 763);
-            dockableControlPane1.Size = new System.Drawing.Size(100, 100);
-            dockableControlPane1.Text = "ultraExplorerBar1";
-            dockAreaPane1.Panes.AddRange(new Infragistics.Win.UltraWinDock.DockablePaneBase[] {
-            dockableControlPane1});
-            dockAreaPane1.Size = new System.Drawing.Size(336, 763);
-            this.ultraDockManager1.DockAreas.AddRange(new Infragistics.Win.UltraWinDock.DockAreaPane[] {
-            dockAreaPane1});
             this.ultraDockManager1.DragWindowStyle = Infragistics.Win.UltraWinDock.DragWindowStyle.LayeredWindowWithIndicators;
             this.ultraDockManager1.HostControl = this;
             this.ultraDockManager1.LayoutStyle = Infragistics.Win.UltraWinDock.DockAreaLayoutStyle.FillContainer;
@@ -223,29 +218,29 @@
             // _frmMainUnpinnedTabAreaLeft
             // 
             this._frmMainUnpinnedTabAreaLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this._frmMainUnpinnedTabAreaLeft.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this._frmMainUnpinnedTabAreaLeft.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this._frmMainUnpinnedTabAreaLeft.Location = new System.Drawing.Point(0, 0);
             this._frmMainUnpinnedTabAreaLeft.Name = "_frmMainUnpinnedTabAreaLeft";
             this._frmMainUnpinnedTabAreaLeft.Owner = this.ultraDockManager1;
             this._frmMainUnpinnedTabAreaLeft.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this._frmMainUnpinnedTabAreaLeft.Size = new System.Drawing.Size(0, 763);
+            this._frmMainUnpinnedTabAreaLeft.Size = new System.Drawing.Size(0, 808);
             this._frmMainUnpinnedTabAreaLeft.TabIndex = 8;
             // 
             // _frmMainUnpinnedTabAreaRight
             // 
             this._frmMainUnpinnedTabAreaRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this._frmMainUnpinnedTabAreaRight.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this._frmMainUnpinnedTabAreaRight.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this._frmMainUnpinnedTabAreaRight.Location = new System.Drawing.Point(1752, 0);
             this._frmMainUnpinnedTabAreaRight.Name = "_frmMainUnpinnedTabAreaRight";
             this._frmMainUnpinnedTabAreaRight.Owner = this.ultraDockManager1;
             this._frmMainUnpinnedTabAreaRight.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this._frmMainUnpinnedTabAreaRight.Size = new System.Drawing.Size(0, 763);
+            this._frmMainUnpinnedTabAreaRight.Size = new System.Drawing.Size(0, 808);
             this._frmMainUnpinnedTabAreaRight.TabIndex = 9;
             // 
             // _frmMainUnpinnedTabAreaTop
             // 
             this._frmMainUnpinnedTabAreaTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this._frmMainUnpinnedTabAreaTop.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this._frmMainUnpinnedTabAreaTop.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this._frmMainUnpinnedTabAreaTop.Location = new System.Drawing.Point(0, 0);
             this._frmMainUnpinnedTabAreaTop.Name = "_frmMainUnpinnedTabAreaTop";
             this._frmMainUnpinnedTabAreaTop.Owner = this.ultraDockManager1;
@@ -256,8 +251,8 @@
             // _frmMainUnpinnedTabAreaBottom
             // 
             this._frmMainUnpinnedTabAreaBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this._frmMainUnpinnedTabAreaBottom.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this._frmMainUnpinnedTabAreaBottom.Location = new System.Drawing.Point(0, 763);
+            this._frmMainUnpinnedTabAreaBottom.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this._frmMainUnpinnedTabAreaBottom.Location = new System.Drawing.Point(0, 808);
             this._frmMainUnpinnedTabAreaBottom.Name = "_frmMainUnpinnedTabAreaBottom";
             this._frmMainUnpinnedTabAreaBottom.Owner = this.ultraDockManager1;
             this._frmMainUnpinnedTabAreaBottom.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -266,7 +261,7 @@
             // 
             // _frmMainAutoHideControl
             // 
-            this._frmMainAutoHideControl.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this._frmMainAutoHideControl.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this._frmMainAutoHideControl.Location = new System.Drawing.Point(0, 0);
             this._frmMainAutoHideControl.Name = "_frmMainAutoHideControl";
             this._frmMainAutoHideControl.Owner = this.ultraDockManager1;
@@ -274,26 +269,115 @@
             this._frmMainAutoHideControl.Size = new System.Drawing.Size(0, 763);
             this._frmMainAutoHideControl.TabIndex = 12;
             // 
-            // windowDockingArea1
+            // barManager1
             // 
-            this.windowDockingArea1.Controls.Add(this.dockableWindow1);
-            this.windowDockingArea1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.windowDockingArea1.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.windowDockingArea1.Location = new System.Drawing.Point(0, 0);
-            this.windowDockingArea1.Name = "windowDockingArea1";
-            this.windowDockingArea1.Owner = this.ultraDockManager1;
-            this.windowDockingArea1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.windowDockingArea1.Size = new System.Drawing.Size(341, 763);
-            this.windowDockingArea1.TabIndex = 13;
+            this.barManager1.DockControls.Add(this.barDockControlTop);
+            this.barManager1.DockControls.Add(this.barDockControlBottom);
+            this.barManager1.DockControls.Add(this.barDockControlLeft);
+            this.barManager1.DockControls.Add(this.barDockControlRight);
+            this.barManager1.Form = this;
+            this.barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.barButtonItem1});
+            this.barManager1.LargeImages = this.ımageCollection1;
+            this.barManager1.MaxItemId = 6;
             // 
-            // dockableWindow1
+            // barDockControlTop
             // 
-            this.dockableWindow1.Controls.Add(this.ultraExplorerBar1);
-            this.dockableWindow1.Location = new System.Drawing.Point(0, 0);
-            this.dockableWindow1.Name = "dockableWindow1";
-            this.dockableWindow1.Owner = this.ultraDockManager1;
-            this.dockableWindow1.Size = new System.Drawing.Size(336, 763);
-            this.dockableWindow1.TabIndex = 15;
+            this.barDockControlTop.CausesValidation = false;
+            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlTop.Manager = this.barManager1;
+            this.barDockControlTop.Size = new System.Drawing.Size(1752, 0);
+            // 
+            // barDockControlBottom
+            // 
+            this.barDockControlBottom.CausesValidation = false;
+            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 808);
+            this.barDockControlBottom.Manager = this.barManager1;
+            this.barDockControlBottom.Size = new System.Drawing.Size(1752, 0);
+            // 
+            // barDockControlLeft
+            // 
+            this.barDockControlLeft.CausesValidation = false;
+            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlLeft.Manager = this.barManager1;
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 808);
+            // 
+            // barDockControlRight
+            // 
+            this.barDockControlRight.CausesValidation = false;
+            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.barDockControlRight.Location = new System.Drawing.Point(1752, 0);
+            this.barDockControlRight.Manager = this.barManager1;
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 808);
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Menü";
+            this.barButtonItem1.Id = 5;
+            this.barButtonItem1.ImageOptions.Image = global::Entegref.Properties.Resources.new_16x16;
+            this.barButtonItem1.ImageOptions.LargeImage = global::Entegref.Properties.Resources.new_32x32;
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick_1);
+            // 
+            // ımageCollection1
+            // 
+            this.ımageCollection1.ImageSize = new System.Drawing.Size(32, 32);
+            this.ımageCollection1.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("ımageCollection1.ImageStream")));
+            // 
+            // radialMenu1
+            // 
+            this.radialMenu1.Manager = this.barManager1;
+            this.radialMenu1.Name = "radialMenu1";
+            // 
+            // ultraRadialMenu1
+            // 
+            this.ultraRadialMenu1.OwningControl = this;
+            // 
+            // ribbonControl1
+            // 
+            this.ribbonControl1.ExpandCollapseItem.Id = 0;
+            this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.ribbonControl1.ExpandCollapseItem,
+            this.ribbonControl1.SearchEditItem,
+            this.barEditItem1});
+            this.ribbonControl1.Location = new System.Drawing.Point(175, 0);
+            this.ribbonControl1.MaxItemId = 2;
+            this.ribbonControl1.Name = "ribbonControl1";
+            this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.ribbonPage1});
+            this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemColorPickEdit1});
+            this.ribbonControl1.Size = new System.Drawing.Size(1577, 130);
+            // 
+            // barEditItem1
+            // 
+            this.barEditItem1.Caption = "barEditItem1";
+            this.barEditItem1.Edit = this.repositoryItemColorPickEdit1;
+            this.barEditItem1.Id = 1;
+            this.barEditItem1.Name = "barEditItem1";
+            // 
+            // repositoryItemColorPickEdit1
+            // 
+            this.repositoryItemColorPickEdit1.AutoHeight = false;
+            this.repositoryItemColorPickEdit1.AutomaticColor = System.Drawing.Color.Black;
+            this.repositoryItemColorPickEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemColorPickEdit1.Name = "repositoryItemColorPickEdit1";
+            // 
+            // ribbonPage1
+            // 
+            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup1});
+            this.ribbonPage1.Name = "ribbonPage1";
+            this.ribbonPage1.Text = "ribbonPage1";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
             // 
             // frmMain
             // 
@@ -301,33 +385,40 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1752, 808);
             this.Controls.Add(this._frmMainAutoHideControl);
+            this.Controls.Add(this.ribbonControl1);
             this.Controls.Add(this.ultraNavigationBar1);
-            this.Controls.Add(this._frmMainUnpinnedTabAreaLeft);
+            this.Controls.Add(this.ultraExplorerBar1);
+            this.Controls.Add(this.barDockControlLeft);
+            this.Controls.Add(this.barDockControlRight);
+            this.Controls.Add(this.barDockControlBottom);
+            this.Controls.Add(this.barDockControlTop);
             this.Controls.Add(this._frmMainUnpinnedTabAreaTop);
             this.Controls.Add(this._frmMainUnpinnedTabAreaBottom);
+            this.Controls.Add(this._frmMainUnpinnedTabAreaLeft);
             this.Controls.Add(this._frmMainUnpinnedTabAreaRight);
-            this.Controls.Add(this.windowDockingArea1);
-            this.Controls.Add(this.ultraOfficeNavBar1);
+            this.IconOptions.LargeImage = global::Entegref.Properties.Resources.previewchart_32x32;
             this.IsMdiContainer = true;
             this.Name = "frmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EnteGreF";
             this.TransparencyKey = System.Drawing.SystemColors.ActiveBorder;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ultraExplorerBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraOfficeNavBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraNavigationBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraDockManager1)).EndInit();
-            this.windowDockingArea1.ResumeLayout(false);
-            this.dockableWindow1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ımageCollection1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radialMenu1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ultraRadialMenu1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemColorPickEdit1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private Infragistics.Win.UltraWinOfficeNavBar.UltraOfficeNavBar ultraOfficeNavBar1;
         private Infragistics.Win.UltraWinExplorerBar.UltraExplorerBar ultraExplorerBar1;
         private Infragistics.Win.Misc.UltraNavigationBar ultraNavigationBar1;
         private Infragistics.Win.UltraWinDock.AutoHideControl _frmMainAutoHideControl;
@@ -336,7 +427,19 @@
         private Infragistics.Win.UltraWinDock.UnpinnedTabArea _frmMainUnpinnedTabAreaTop;
         private Infragistics.Win.UltraWinDock.UnpinnedTabArea _frmMainUnpinnedTabAreaBottom;
         private Infragistics.Win.UltraWinDock.UnpinnedTabArea _frmMainUnpinnedTabAreaRight;
-        private Infragistics.Win.UltraWinDock.WindowDockingArea windowDockingArea1;
-        private Infragistics.Win.UltraWinDock.DockableWindow dockableWindow1;
+        private DevExpress.XtraBars.BarManager barManager1;
+        private DevExpress.XtraBars.BarDockControl barDockControlTop;
+        private DevExpress.XtraBars.BarDockControl barDockControlBottom;
+        private DevExpress.XtraBars.BarDockControl barDockControlLeft;
+        private DevExpress.XtraBars.BarDockControl barDockControlRight;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.Ribbon.RadialMenu radialMenu1;
+        private DevExpress.Utils.ImageCollection ımageCollection1;
+        private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private Infragistics.Win.UltraWinRadialMenu.UltraRadialMenu ultraRadialMenu1;
+        private DevExpress.XtraBars.BarEditItem barEditItem1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemColorPickEdit repositoryItemColorPickEdit1;
     }
 }

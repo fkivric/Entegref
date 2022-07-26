@@ -168,6 +168,7 @@ namespace Entegref
             btnStokBul.Enabled = false;
             ultraButton1.Enabled = false;
             ultraButton2.Enabled = false;
+            simpleButton3.Enabled = false;
             if (nStokID != null)
             {
                 ultraTabControl1.VisibleTabs[1].Visible = true;
@@ -183,14 +184,30 @@ namespace Entegref
             frmStokSinifi sinifi = new frmStokSinifi();
             sinifi.TopLevel = true;
             sinifi.ShowDialog();
+
             cmbSinif1.SelectedValue = sinifsira1;
             cmbSinif2.SelectedValue = sinifsira2;
-            cmbSinif3.SelectedValue = sinifsira3.Replace("00-0",null);
-            cmbSinif4.SelectedValue = sinifsira4.Replace("00-0",null);
-            cmbSinif5.SelectedValue = sinifsira5.Replace("00-0",null);
-            cmbSinif6.SelectedValue = sinifsira6.Replace("00-0", null);
-            lblFiyattipi.Visible = true;
-            lblFiyattipi.Text = Fiyatlandirma;
+            if (sinifsira3 != null)
+            {
+                cmbSinif3.SelectedValue = sinifsira3.Replace("00-0", null);
+            }
+            if (sinifsira4 != null)
+            {
+                cmbSinif4.SelectedValue = sinifsira4.Replace("00-0", null);
+            }
+            if (sinifsira5 != null)
+            {
+                cmbSinif5.SelectedValue = sinifsira5.Replace("00-0", null);
+            }
+            if (sinifsira6 != null)
+            {
+                cmbSinif6.SelectedValue = sinifsira6.Replace("00-0", null);
+            }
+            if (Fiyatlandirma != null)
+            {
+                lblFiyattipi.Visible = true;
+                lblFiyattipi.Text = Fiyatlandirma;
+            }
             if (Beden != null)
             {
                 lblBeden.Text = Beden;
@@ -708,7 +725,45 @@ namespace Entegref
 
         private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            txtStokKodu.Text = null;
+            sKodu = null;
+            bunifuCustomTextbox1.Text = null;
+            bunifuCustomTextbox2.Text = null;
+            bunifuCustomTextbox3.Text = null;
+            lblFiyattipi.Visible = false;
+            nStokID = null;
+            ultraTabControl1.VisibleTabs[1].Visible = false;
+            ultraTabControl1.VisibleTabs[2].Visible = false;
+            ultraTabControl1.VisibleTabs[3].Visible = false;
+            btnStokBul.Enabled = true;
+            ultraButton1.Enabled = true;
+            ultraButton2.Enabled = true;
+            simpleButton3.Enabled = true;
+            frmStokAc_Load(null, null);
+            sKodu = null;
+            sFiyatTipi = null;
+            sinifsira1 = null;
+            sinifsira2 = null;
+            sinifsira3 = null;
+            sinifsira4 = null;
+            sinifsira5 = null;
+            sinifsira6 = null;
+            Fiyatlandirma = null;
+            Beden = null;
+            Kavala = null;
 
+            sinif1.Clear();
+            sinif2.Clear();
+            sinif3.Clear();
+            sinif4.Clear();
+            sinif5.Clear();
+            sinif6.Clear();
+        }
+
+        private void simpleButton5_Click(object sender, EventArgs e)
+        {
+            frmRenk frm = new frmRenk();
+            frm.ShowDialog();
         }
     }
 }

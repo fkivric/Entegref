@@ -255,7 +255,9 @@
             this.ClientSize = new System.Drawing.Size(878, 450);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmBarkod";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fmBarkod";
             this.Load += new System.EventHandler(this.fmBarkod_Load);
             this.panel1.ResumeLayout(false);

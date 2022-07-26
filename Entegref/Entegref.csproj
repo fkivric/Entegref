@@ -55,6 +55,9 @@
     <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraNavBar.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Charts.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraTreeList.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraWizard.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="Infragistics4.Documents.IO.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
@@ -68,6 +71,7 @@
     <Reference Include="Infragistics4.Win.UltraWinGrid.WordWriter.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
     <Reference Include="Infragistics4.Win.UltraWinMaskedEdit.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
     <Reference Include="Infragistics4.Win.UltraWinOfficeNavBar.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinRadialMenu.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
     <Reference Include="Infragistics4.Win.UltraWinStatusBar.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Infragistics4.Win.UltraWinTabbedMdi.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
     <Reference Include="Infragistics4.Win.UltraWinTabControl.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
@@ -153,6 +157,12 @@
     <Compile Include="frmAyarlaPerakende.Designer.cs">
       <DependentUpon>frmAyarlaPerakende.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRenk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRenk.Designer.cs">
+      <DependentUpon>frmRenk.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmStokBul.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,6 +243,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAyarlaPerakende.resx">
       <DependentUpon>frmAyarlaPerakende.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRenk.resx">
+      <DependentUpon>frmRenk.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmStokBul.resx">
       <DependentUpon>frmStokBul.cs</DependentUpon>
@@ -328,6 +341,31 @@
     <Content Include="Pictures\logo_yon.png" />
     <Content Include="Pictures\logo_yon_new.png" />
     <Content Include="Pictures\logo_yon_new2.png" />
+    <None Include="Resources\clear_16x162.png" />
+    <None Include="Resources\clear_32x322.png" />
+    <None Include="Resources\save_16x163.png" />
+    <None Include="Resources\save_32x323.png" />
+    <None Include="Resources\new_16x165.png" />
+    <None Include="Resources\new_32x325.png" />
+    <None Include="Resources\new_16x164.png" />
+    <None Include="Resources\new_32x324.png" />
+    <None Include="Resources\clear_16x161.png" />
+    <None Include="Resources\clear_32x321.png" />
+    <None Include="Resources\new_16x163.png" />
+    <None Include="Resources\new_32x323.png" />
+    <None Include="Resources\save_16x162.png" />
+    <None Include="Resources\save_32x322.png" />
+    <None Include="Resources\clear_16x16.png" />
+    <None Include="Resources\clear_32x32.png" />
+    <None Include="Resources\image_32x321.png" />
+    <None Include="Resources\add_32x32.png" />
+    <None Include="Resources\save_16x161.png" />
+    <None Include="Resources\save_32x321.png" />
+    <None Include="Resources\new_16x162.png" />
+    <None Include="Resources\new_32x322.png" />
+    <None Include="Resources\previewchart_32x32.png" />
+    <None Include="Resources\new_16x16.png" />
+    <None Include="Resources\new_32x32.png" />
     <None Include="Resources\Settings_64px.png" />
     <None Include="Resources\perakende settings.png" />
     <None Include="Resources\online-shop-setting-icon-vector.jpg" />

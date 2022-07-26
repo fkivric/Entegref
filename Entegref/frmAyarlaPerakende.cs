@@ -11,11 +11,16 @@ using DevExpress.XtraEditors;
 
 namespace Entegref
 {
-    public partial class frmPerakendeAyarlar : DevExpress.XtraEditors.XtraForm
+    public partial class frmPerakendeAyarlar : XtraForm
     {
         public frmPerakendeAyarlar()
         {
             InitializeComponent();
+        }
+
+        private void frmPerakendeAyarlar_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
