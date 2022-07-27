@@ -243,16 +243,6 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap Color_Wheel_48px {
-            get {
-                object obj = ResourceManager.GetObject("Color Wheel_48px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
         internal static System.Drawing.Bitmap currency_16x16 {
             get {
                 object obj = ResourceManager.GetObject("currency_16x16", resourceCulture);
@@ -306,6 +296,16 @@ namespace Entegref.Properties {
         internal static System.Drawing.Bitmap Entegref {
             get {
                 object obj = ResourceManager.GetObject("Entegref", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Entegref__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Entegref__2_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

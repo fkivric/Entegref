@@ -52,6 +52,9 @@
             Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem16 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
             Infragistics.Win.Appearance appearance8 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup7 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup9 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem4 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem5 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
             Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup8 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
             Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem15 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
             Infragistics.Win.Appearance appearance9 = new Infragistics.Win.Appearance();
@@ -81,11 +84,11 @@
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemColorPickEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemColorPickEdit();
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.barEditItem2 = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemSearchControl1 = new DevExpress.XtraEditors.Repository.RepositoryItemSearchControl();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             ((System.ComponentModel.ISupportInitialize)(this.ultraExplorerBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraNavigationBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraDockManager1)).BeginInit();
@@ -152,12 +155,18 @@
             ultraExplorerBarItem16});
             ultraExplorerBarGroup6.Text = "Pazar Yeri";
             ultraExplorerBarGroup7.Text = "Kargo";
+            ultraExplorerBarItem4.Text = "Satış Raporları";
+            ultraExplorerBarItem5.Text = "Stok Raporu";
+            ultraExplorerBarGroup9.Items.AddRange(new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem[] {
+            ultraExplorerBarItem4,
+            ultraExplorerBarItem5});
+            ultraExplorerBarGroup9.Text = "Raporlar";
             ultraExplorerBarItem15.Key = "81";
             appearance9.Image = global::Entegref.Properties.Resources.perakende_settings;
             ultraExplorerBarItem15.Settings.AppearancesLarge.Appearance = appearance9;
             ultraExplorerBarItem15.Text = "Perakende Satış Ayarları";
             ultraExplorerBarItem17.Key = "82";
-            appearance10.Image = global::Entegref.Properties.Resources.Box_Settings_48px;
+            appearance10.Image = ((object)(resources.GetObject("appearance10.Image")));
             ultraExplorerBarItem17.Settings.AppearancesLarge.Appearance = appearance10;
             ultraExplorerBarItem17.Text = "Urun Ayarları";
             ultraExplorerBarItem18.Key = "83";
@@ -181,6 +190,7 @@
             ultraExplorerBarGroup5,
             ultraExplorerBarGroup6,
             ultraExplorerBarGroup7,
+            ultraExplorerBarGroup9,
             ultraExplorerBarGroup8});
             this.ultraExplorerBar1.GroupSettings.AllowDrag = Infragistics.Win.DefaultableBoolean.False;
             this.ultraExplorerBar1.GroupSettings.Style = Infragistics.Win.UltraWinExplorerBar.GroupStyle.LargeImagesWithTextBelow;
@@ -374,19 +384,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemColorPickEdit1.Name = "repositoryItemColorPickEdit1";
             // 
-            // ribbonPage1
-            // 
-            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1});
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "ribbonPage1";
-            // 
-            // ribbonPageGroup1
-            // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem2);
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.State = DevExpress.XtraBars.Ribbon.RibbonPageGroupState.Expanded;
-            // 
             // barEditItem2
             // 
             this.barEditItem2.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Left;
@@ -410,6 +407,19 @@
             this.barButtonItem2.Name = "barButtonItem2";
             this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
             // 
+            // ribbonPage1
+            // 
+            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup1});
+            this.ribbonPage1.Name = "ribbonPage1";
+            this.ribbonPage1.Text = "ribbonPage1";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem2);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.State = DevExpress.XtraBars.Ribbon.RibbonPageGroupState.Expanded;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -419,14 +429,14 @@
             this.Controls.Add(this.ribbonControl1);
             this.Controls.Add(this.ultraNavigationBar1);
             this.Controls.Add(this.ultraExplorerBar1);
-            this.Controls.Add(this._frmMainUnpinnedTabAreaTop);
-            this.Controls.Add(this._frmMainUnpinnedTabAreaBottom);
-            this.Controls.Add(this._frmMainUnpinnedTabAreaLeft);
-            this.Controls.Add(this._frmMainUnpinnedTabAreaRight);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
+            this.Controls.Add(this._frmMainUnpinnedTabAreaTop);
+            this.Controls.Add(this._frmMainUnpinnedTabAreaBottom);
+            this.Controls.Add(this._frmMainUnpinnedTabAreaLeft);
+            this.Controls.Add(this._frmMainUnpinnedTabAreaRight);
             this.IconOptions.LargeImage = global::Entegref.Properties.Resources.previewchart_32x32;
             this.IsMdiContainer = true;
             this.Name = "frmMain";

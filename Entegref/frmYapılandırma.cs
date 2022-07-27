@@ -263,6 +263,22 @@ namespace Entegref
             {
                 Prm.Add("@bBirimTldeKurusVarmi", "0");
             }
+            if (checkBox5.Checked == true)
+            {
+
+            }
+            else
+            {
+
+            }
+            if (checkBox6.Checked == true)
+            {
+
+            }
+            else
+            {
+
+            }
             Prm.Add("@sFormatMiktar", comboBoxEdit1.SelectedText);
             conn.NTBLInsert("ParamGenelUpdate", Prm);
 
@@ -333,6 +349,16 @@ namespace Entegref
             {
                 simpleButton2.Enabled = false;
             }
+        }
+
+        private void label22_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.Show("Merkez & Depo veya Çoklu Sevk ve Stok tutulması durumunda seçiniz", label22);
+        }
+
+        private void label27_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.Show("", checkBox6);
         }
     }
 }
