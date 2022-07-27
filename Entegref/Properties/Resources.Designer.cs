@@ -93,6 +93,16 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap apply_32x321 {
+            get {
+                object obj = ResourceManager.GetObject("apply_32x321", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap barcode_32x32 {
             get {
                 object obj = ResourceManager.GetObject("barcode_32x32", resourceCulture);
@@ -125,7 +135,7 @@ namespace Entegref.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Box_Settings_48px {
             get {
-                object obj = ResourceManager.GetObject("Box Settings_48px", resourceCulture);
+                object obj = ResourceManager.GetObject("Box_Settings_48px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -286,6 +296,36 @@ namespace Entegref.Properties {
         internal static System.Drawing.Bitmap definednamecreatefromselection_32x32 {
             get {
                 object obj = ResourceManager.GetObject("definednamecreatefromselection_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Entegref {
+            get {
+                object obj = ResourceManager.GetObject("Entegref", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Entegref1 {
+            get {
+                object obj = ResourceManager.GetObject("Entegref1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Entegref2 {
+            get {
+                object obj = ResourceManager.GetObject("Entegref2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -523,6 +563,16 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap next_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("next_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap online_shop_setting_icon_vector {
             get {
                 object obj = ResourceManager.GetObject("online-shop-setting-icon-vector", resourceCulture);
@@ -556,6 +606,16 @@ namespace Entegref.Properties {
         internal static System.Drawing.Bitmap picturebox_32x32 {
             get {
                 object obj = ResourceManager.GetObject("picturebox_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap prev_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("prev_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

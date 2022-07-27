@@ -83,5 +83,30 @@ namespace Entegref.Properties {
                 this["TrendyolSecretkey"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Server=185.184.26.245;Database=Netbil_Connector; User ID=fatih;Password=05101981;" +
+            "")]
+        public string CloudServerNetbil {
+            get {
+                return ((string)(this["CloudServerNetbil"]));
+            }
+            set {
+                this["CloudServerNetbil"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Server=185.184.26.245;Database={1}; User ID=fatih;Password=05101981;")]
+        public string CoudServerLocal {
+            get {
+                return ((string)(this["CoudServerLocal"]));
+            }
+            set {
+                this["CoudServerLocal"] = value;
+            }
+        }
     }
 }

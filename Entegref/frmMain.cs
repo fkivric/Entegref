@@ -79,9 +79,6 @@ namespace Entegref
         int show = 0;
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
-            
-
             
         }
 

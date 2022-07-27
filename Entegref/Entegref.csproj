@@ -341,6 +341,13 @@
     <Content Include="Pictures\logo_yon.png" />
     <Content Include="Pictures\logo_yon_new.png" />
     <Content Include="Pictures\logo_yon_new2.png" />
+    <None Include="Resources\prev_32x32.png" />
+    <None Include="Resources\next_32x32.png" />
+    <None Include="Resources\apply_32x321.png" />
+    <None Include="Resources\Box Settings_48px.png" />
+    <None Include="Resources\Entegref.jpg" />
+    <None Include="Resources\Entegref.png" />
+    <None Include="Resources\Entegref.gif" />
     <None Include="Resources\clear_16x162.png" />
     <None Include="Resources\clear_32x322.png" />
     <None Include="Resources\save_16x163.png" />
@@ -370,7 +377,6 @@
     <None Include="Resources\perakende settings.png" />
     <None Include="Resources\online-shop-setting-icon-vector.jpg" />
     <None Include="Resources\Store Setting_48px.png" />
-    <None Include="Resources\Box Settings_48px.png" />
     <None Include="Resources\box2.png" />
     <None Include="Resources\box_50px.png" />
     <None Include="Resources\about_32x32.png" />

@@ -17,5 +17,11 @@
     <Setting Name="TrendyolSecretkey" Type="System.String" Scope="User">
       <Value Profile="(Default)">lx6cAnNSJQjKBUaZ3Q9W</Value>
     </Setting>
+    <Setting Name="CloudServerNetbil" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Server=185.184.26.245;Database=Netbil_Connector; User ID=fatih;Password=05101981;</Value>
+    </Setting>
+    <Setting Name="CoudServerLocal" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Server=185.184.26.245;Database={1}; User ID=fatih;Password=05101981;</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -66,8 +66,8 @@ namespace Entegref
                     {
                         Application.EnableVisualStyles();
                         Application.SetCompatibleTextRenderingDefault(false);
-                        Application.Run(new frmMain());
-                        //Application.Run(new frmRenk());
+                        //Application.Run(new frmMain());
+                        Application.Run(new frmLogin());
 
                     }
                     else

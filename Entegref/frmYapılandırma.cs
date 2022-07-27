@@ -26,7 +26,7 @@ namespace Entegref
             Dictionary<string, string> PRM = new Dictionary<string, string>();
             PRM.Add("@VKN", "39391097764");
             var connection = conn.NTBQuery("ConnectionString", PRM);
-            Properties.Settings.Default.connectionstring = connection.Rows[0][0].ToString();
+            Properties.Settings.Default.CoudServerLocal = connection.Rows[0][0].ToString();
             uncheck1.Visible = false;
             uncheck2.Visible = false;
             simpleButton2.Enabled = false;
