@@ -22,7 +22,13 @@ namespace Entegref
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-
+           if (frmLogin.loginok != true)
+            {
+                frmLogin frmLogin = new frmLogin(Properties.Settings.Default.VKN);
+                frmLogin.ShowDialog();
+                this.Close();
+                this.Dispose();
+            }
         }
 
         private void ultraExplorerBar1_ItemClick(object sender, Infragistics.Win.UltraWinExplorerBar.ItemEventArgs e)

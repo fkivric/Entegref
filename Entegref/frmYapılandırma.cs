@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -16,6 +17,7 @@ namespace Entegref
     public partial class frmYapılandırma : DevExpress.XtraEditors.XtraForm
     {
         SqlConnectionObject conn = new SqlConnectionObject();
+        public static string Key;
         public frmYapılandırma()
         {
             InitializeComponent();
@@ -176,6 +178,15 @@ namespace Entegref
                 key.SetValue("ApplicationSetupComplate", "true");
                 key.SetValue("ApplicationGUID", id);
                 key.Close();
+
+                RegistryKey odbc = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\ODBC\ODBC.INI\Entegref");
+                key.SetValue("Driver", "C:\\WINDOWS\\system32\\SQLSRV32.dll");
+                key.SetValue("Description", "Entegref");
+                key.SetValue("Server", "185.184.26.206");
+                key.SetValue("Database", txtVKN.Text);
+                key.SetValue("Language" , "Türkçe");
+                key.SetValue("LastUser", "fatih");
+
             }
             else
             {
@@ -218,6 +229,8 @@ namespace Entegref
             Dictionary<string, string> keys = new Dictionary<string, string>();
             keys.Add("@VKN", txtVKN.Text.ToString());
             var database = conn.NTBQuery("DbList", keys);
+
+            Properties.Settings.Default.VKN = txtVKN.Text;
 
             if (database.Rows[0][1].ToString() == "0")
             {
@@ -265,22 +278,27 @@ namespace Entegref
             }
             if (checkBox5.Checked == true)
             {
-
+                Prm.Add("@bDepoVarmi", "1");
             }
             else
             {
-
+                Prm.Add("@bDepoVarmi", "0");
             }
             if (checkBox6.Checked == true)
             {
-
+                Prm.Add("@bEksiyeDusulebilirmi", "1");
             }
             else
             {
-
+                Prm.Add("@bEksiyeDusulebilirmi", "0");
             }
             Prm.Add("@sFormatMiktar", comboBoxEdit1.SelectedText);
             conn.NTBLInsert("ParamGenelUpdate", Prm);
+
+            SKGL.Generate generate = new SKGL.Generate();
+            generate.secretPhase = txtVKN.Text;
+            Properties.Settings.Default.SecretPhase = generate.doKey(Convert.ToInt32("365"));
+
 
 
 
@@ -353,12 +371,38 @@ namespace Entegref
 
         private void label22_MouseHover(object sender, EventArgs e)
         {
-            toolTip1.Show("Merkez & Depo veya Çoklu Sevk ve Stok tutulması durumunda seçiniz", label22);
+            toolTip1 = new ToolTip();
+            //The below are optional, of course,
+
+            toolTip1.ToolTipIcon = ToolTipIcon.Info;
+            toolTip1.IsBalloon = true;
+
+            toolTip1.SetToolTip(label22, "Merkez & Depo veya Çoklu Sevk ve Stok tutulması durumunda seçiniz!");
+
         }
 
         private void label27_MouseHover(object sender, EventArgs e)
         {
-            toolTip1.Show("", checkBox6);
+            toolTip1 = new ToolTip();
+            //The below are optional, of course,
+
+            toolTip1.ToolTipIcon = ToolTipIcon.Info;
+            toolTip1.IsBalloon = true;
+            toolTip1.SetToolTip(label27, "Elinizde Olmayan Ürünün Satışına İzin Verir");
+        }
+
+        private void simpleButton5_Click(object sender, EventArgs e)
+        {
+            SqlConnection sql = new System.Data.SqlClient.SqlConnection("Server=185.184.26.206;Database=Netbil_Connector; User ID=fatih;Password=05101981;");
+            sql.Open();
+            SqlCommand cmd = new SqlCommand("insert into "+txtVKN.Text+ ".dbo.tbWinnerKullanici(sKullaniciKodu, sAdi, sSoyadi, sEMail,parola) values(@sKullaniciKodu, @sAdi, @sSoyadi, @sEMail,@parola)");
+            cmd.Parameters.AddWithValue("@sKullaniciKodu", txtsKullaniciKodu.Text);
+            cmd.Parameters.AddWithValue("@parola", txtParola.Text);
+            cmd.Parameters.AddWithValue("@sAdi", txtsKullaniciKodu.Text);
+            cmd.Parameters.AddWithValue("@sSoyadi", txtsKullaniciKodu.Text);
+            cmd.Parameters.AddWithValue("@sEMail", txtsKullaniciKodu.Text);
+            cmd.ExecuteScalar();
+
         }
     }
 }

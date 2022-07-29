@@ -1,0 +1,405 @@
+{
+	"info": {
+		"_postman_id": "b66fa448-9b78-48de-871c-e64ab3477e5c",
+		"name": "Catalog Integration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Categories",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "****_dev",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mpop-sit.hepsiburada.com/product/api/categories/get-all-categories?page=0&size=20&version=1",
+					"protocol": "https",
+					"host": [
+						"mpop-sit",
+						"hepsiburada",
+						"com"
+					],
+					"path": [
+						"product",
+						"api",
+						"categories",
+						"get-all-categories"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "20"
+						},
+						{
+							"key": "version",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Attribute Fields Categories ",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "****_dev",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mpop-sit.hepsiburada.com/product/api/categories/{categories}/attributes",
+					"protocol": "https",
+					"host": [
+						"mpop-sit",
+						"hepsiburada",
+						"com"
+					],
+					"path": [
+						"product",
+						"api",
+						"categories",
+						"{categories}",
+						"attributes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Attribbute Value ",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "****_dev",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mpop-sit.hepsiburada.com/product/api/categories/{categories}/attribute/{attribute}",
+					"protocol": "https",
+					"host": [
+						"mpop-sit",
+						"hepsiburada",
+						"com"
+					],
+					"path": [
+						"product",
+						"api",
+						"categories",
+						"{categories}",
+						"attribute",
+						"{attribute}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Integrator Import Products",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "****_dev",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "https://mpop-sit.hepsiburada.com/product/api/products/import",
+					"protocol": "https",
+					"host": [
+						"mpop-sit",
+						"hepsiburada",
+						"com"
+					],
+					"path": [
+						"product",
+						"api",
+						"products",
+						"import"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product Status",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "****_dev",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mpop-sit.hepsiburada.com/product/api/products/status/{trackingId}?page=0&size=20&version=1",
+					"protocol": "https",
+					"host": [
+						"mpop-sit",
+						"hepsiburada",
+						"com"
+					],
+					"path": [
+						"product",
+						"api",
+						"products",
+						"status",
+						"{trackingId}"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "20"
+						},
+						{
+							"key": "version",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Trackıng Id History",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "****_dev",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mpop-sit.hepsiburada.com/product/api/products/trackingId-history",
+					"protocol": "https",
+					"host": [
+						"mpop-sit",
+						"hepsiburada",
+						"com"
+					],
+					"path": [
+						"product",
+						"api",
+						"products",
+						"trackingId-history"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Product Status",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "****_dev",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n[\n    {\n        \"merchant\": \"00d0e72c-9b77-43e8-a795-4e51c6abe1a9\",\n        \"merchantSkuList\": [\n            \"TEST21\",\n            \"SONTEST\"\n        ]\n    },\n    {\n        \"merchant\": \"ac2a8cdd-5608-433e-8922-14c8a3db9de3\",\n        \"merchantSkuList\": [\n            \"CAN-SKU-1\"\n        ]\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mpop-sit.hepsiburada.com/product/api/products/check-product-status?version=1",
+					"protocol": "https",
+					"host": [
+						"mpop-sit",
+						"hepsiburada",
+						"com"
+					],
+					"path": [
+						"product",
+						"api",
+						"products",
+						"check-product-status"
+					],
+					"query": [
+						{
+							"key": "version",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Statü Bazlı Ürün Bilgisi Çekme",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "****_dev",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mpop-sit.hepsiburada.com/product/api/products/products-by-merchant-and-status?page=0&size=1000&version=1&merchantId=6fc6d90d-ee1d-4372-b3a6-264b1275e9ff&productStatus=WAITING&taskStatus=false",
+					"protocol": "https",
+					"host": [
+						"mpop-sit",
+						"hepsiburada",
+						"com"
+					],
+					"path": [
+						"product",
+						"api",
+						"products",
+						"products-by-merchant-and-status"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "1000"
+						},
+						{
+							"key": "version",
+							"value": "1"
+						},
+						{
+							"key": "merchantId",
+							"value": "6fc6d90d-ee1d-4372-b3a6-264b1275e9ff"
+						},
+						{
+							"key": "productStatus",
+							"value": "WAITING"
+						},
+						{
+							"key": "taskStatus",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -213,6 +213,7 @@
     <Compile Include="frmYapılandırma.Designer.cs">
       <DependentUpon>frmYapılandırma.cs</DependentUpon>
     </Compile>
+    <Compile Include="ID\SystemGuid.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlConnectionObject.cs" />
@@ -314,6 +315,9 @@
     <PackageReference Include="Newtonsoft.Json">
       <Version>13.0.1</Version>
     </PackageReference>
+    <PackageReference Include="SoftwareProtector">
+      <Version>1.0.5.1</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\picturebox_32x32.png" />
@@ -343,6 +347,10 @@
     <Content Include="Pictures\logo_yon.png" />
     <Content Include="Pictures\logo_yon_new.png" />
     <Content Include="Pictures\logo_yon_new2.png" />
+    <None Include="Resources\Entegref %281%29.gif" />
+    <None Include="Resources\perakende settings.png" />
+    <None Include="Resources\online-shop-setting-icon-vector.jpg" />
+    <None Include="Resources\Catalog-Integration.txt" />
     <None Include="Resources\Entegref %282%29.gif" />
     <None Include="Resources\Entegref.gif" />
     <None Include="Resources\prev_32x32.png" />
@@ -377,8 +385,6 @@
     <None Include="Resources\new_16x16.png" />
     <None Include="Resources\new_32x32.png" />
     <None Include="Resources\Settings_64px.png" />
-    <None Include="Resources\perakende settings.png" />
-    <None Include="Resources\online-shop-setting-icon-vector.jpg" />
     <None Include="Resources\Store Setting_48px.png" />
     <None Include="Resources\box2.png" />
     <None Include="Resources\box_50px.png" />

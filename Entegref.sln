@@ -5,6 +5,11 @@ VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entegref", "Entegref\Entegref.csproj", "{86DDA461-B150-4201-BF79-28397530BC3E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lisansing", "Lisansing\Lisansing.csproj", "{B3E9203A-E53C-47ED-BFDB-D976990D709F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{86DDA461-B150-4201-BF79-28397530BC3E} = {86DDA461-B150-4201-BF79-28397530BC3E}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +20,10 @@ Global
 		{86DDA461-B150-4201-BF79-28397530BC3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86DDA461-B150-4201-BF79-28397530BC3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86DDA461-B150-4201-BF79-28397530BC3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3E9203A-E53C-47ED-BFDB-D976990D709F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3E9203A-E53C-47ED-BFDB-D976990D709F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3E9203A-E53C-47ED-BFDB-D976990D709F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3E9203A-E53C-47ED-BFDB-D976990D709F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

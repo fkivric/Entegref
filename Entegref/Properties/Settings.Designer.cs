@@ -132,5 +132,29 @@ namespace Entegref.Properties {
                 this["Remember"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string VKN {
+            get {
+                return ((string)(this["VKN"]));
+            }
+            set {
+                this["VKN"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string SecretPhase {
+            get {
+                return ((string)(this["SecretPhase"]));
+            }
+            set {
+                this["SecretPhase"] = value;
+            }
+        }
     }
 }

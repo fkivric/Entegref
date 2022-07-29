@@ -36,46 +36,52 @@
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.navigationFrame1 = new DevExpress.XtraBars.Navigation.NavigationFrame();
             this.navigationPage1 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.button3 = new System.Windows.Forms.Button();
             this.ultraLabel4 = new Infragistics.Win.Misc.UltraLabel();
             this.ultraLabel3 = new Infragistics.Win.Misc.UltraLabel();
             this.ultraLabel2 = new Infragistics.Win.Misc.UltraLabel();
             this.ultraLabel1 = new Infragistics.Win.Misc.UltraLabel();
             this.txtGUID = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
-            this.txtUserGroup = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.txtSecretPhease = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
             this.txtDatabase = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
             this.SQLComboBox = new System.Windows.Forms.ComboBox();
             this.navigationPage2 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
+            this.txtLisansing = new System.Windows.Forms.TextBox();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.label1 = new System.Windows.Forms.Label();
-            this.bunifuUserName = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.label7 = new System.Windows.Forms.Label();
+            this.bunifuCheckbox1 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifupassword = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.bunifuUserName = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.label2 = new System.Windows.Forms.Label();
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
             this.label3 = new System.Windows.Forms.Label();
+            this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
+            this.lblversion = new System.Windows.Forms.Label();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
-            this.bunifuCheckbox1 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.lblversion = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame1)).BeginInit();
             this.navigationFrame1.SuspendLayout();
             this.navigationPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtGUID)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtUserGroup)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSecretPhease)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDatabase)).BeginInit();
             this.navigationPage2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuUserName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifupassword)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuUserName)).BeginInit();
             this.metroPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // ımageList1
@@ -122,16 +128,27 @@
             // navigationPage1
             // 
             this.navigationPage1.Caption = "navigationPage1";
+            this.navigationPage1.Controls.Add(this.button3);
             this.navigationPage1.Controls.Add(this.ultraLabel4);
             this.navigationPage1.Controls.Add(this.ultraLabel3);
             this.navigationPage1.Controls.Add(this.ultraLabel2);
             this.navigationPage1.Controls.Add(this.ultraLabel1);
             this.navigationPage1.Controls.Add(this.txtGUID);
-            this.navigationPage1.Controls.Add(this.txtUserGroup);
+            this.navigationPage1.Controls.Add(this.txtSecretPhease);
             this.navigationPage1.Controls.Add(this.txtDatabase);
             this.navigationPage1.Controls.Add(this.SQLComboBox);
             this.navigationPage1.Name = "navigationPage1";
             this.navigationPage1.Size = new System.Drawing.Size(983, 422);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(614, 25);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(128, 23);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Database Değiştir";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // ultraLabel4
             // 
@@ -147,7 +164,7 @@
             this.ultraLabel3.Name = "ultraLabel3";
             this.ultraLabel3.Size = new System.Drawing.Size(160, 23);
             this.ultraLabel3.TabIndex = 2;
-            this.ultraLabel3.Text = "User Group";
+            this.ultraLabel3.Text = "Lisans Key";
             // 
             // ultraLabel2
             // 
@@ -155,7 +172,7 @@
             this.ultraLabel2.Name = "ultraLabel2";
             this.ultraLabel2.Size = new System.Drawing.Size(160, 23);
             this.ultraLabel2.TabIndex = 2;
-            this.ultraLabel2.Text = "Database Name";
+            this.ultraLabel2.Text = "Vergi No";
             // 
             // ultraLabel1
             // 
@@ -176,12 +193,14 @@
             this.txtGUID.Size = new System.Drawing.Size(362, 21);
             this.txtGUID.TabIndex = 1;
             // 
-            // txtUserGroup
+            // txtSecretPhease
             // 
-            this.txtUserGroup.Location = new System.Drawing.Point(233, 162);
-            this.txtUserGroup.Name = "txtUserGroup";
-            this.txtUserGroup.Size = new System.Drawing.Size(362, 21);
-            this.txtUserGroup.TabIndex = 1;
+            this.txtSecretPhease.Enabled = false;
+            this.txtSecretPhease.Location = new System.Drawing.Point(233, 162);
+            this.txtSecretPhease.Name = "txtSecretPhease";
+            this.txtSecretPhease.ReadOnly = true;
+            this.txtSecretPhease.Size = new System.Drawing.Size(362, 21);
+            this.txtSecretPhease.TabIndex = 1;
             // 
             // txtDatabase
             // 
@@ -197,6 +216,7 @@
             this.SQLComboBox.Name = "SQLComboBox";
             this.SQLComboBox.Size = new System.Drawing.Size(362, 21);
             this.SQLComboBox.TabIndex = 0;
+            this.SQLComboBox.SelectedIndexChanged += new System.EventHandler(this.SQLComboBox_SelectedIndexChanged);
             // 
             // navigationPage2
             // 
@@ -220,12 +240,8 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.bunifuCheckbox1);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.simpleButton1);
-            this.tabPage1.Controls.Add(this.bunifuUserName);
-            this.tabPage1.Controls.Add(this.bunifupassword);
+            this.tabPage1.Controls.Add(this.txtLisansing);
+            this.tabPage1.Controls.Add(this.groupControl1);
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
@@ -235,42 +251,93 @@
             this.tabPage1.Text = "Giriş";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // txtLisansing
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(209, 173);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 20);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Parola";
+            this.txtLisansing.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtLisansing.Location = new System.Drawing.Point(3, 3);
+            this.txtLisansing.Multiline = true;
+            this.txtLisansing.Name = "txtLisansing";
+            this.txtLisansing.ReadOnly = true;
+            this.txtLisansing.Size = new System.Drawing.Size(481, 111);
+            this.txtLisansing.TabIndex = 1;
+            this.txtLisansing.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // groupControl1
+            // 
+            this.groupControl1.Controls.Add(this.label1);
+            this.groupControl1.Controls.Add(this.simpleButton1);
+            this.groupControl1.Controls.Add(this.label7);
+            this.groupControl1.Controls.Add(this.bunifuCheckbox1);
+            this.groupControl1.Controls.Add(this.bunifupassword);
+            this.groupControl1.Controls.Add(this.bunifuUserName);
+            this.groupControl1.Controls.Add(this.label2);
+            this.groupControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupControl1.GroupStyle = DevExpress.Utils.GroupStyle.Card;
+            this.groupControl1.Location = new System.Drawing.Point(3, 114);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(481, 272);
+            this.groupControl1.TabIndex = 0;
+            this.groupControl1.Text = "Giriş";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(190, 53);
+            this.label1.Location = new System.Drawing.Point(199, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 20);
+            this.label1.Size = new System.Drawing.Size(70, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "Kullanıcı Adı";
             // 
-            // bunifuUserName
+            // label7
             // 
-            this.bunifuUserName.Location = new System.Drawing.Point(78, 86);
-            this.bunifuUserName.Name = "bunifuUserName";
-            this.bunifuUserName.NullText = "Kullanıcı";
-            this.bunifuUserName.Size = new System.Drawing.Size(316, 28);
-            this.bunifuUserName.TabIndex = 0;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.label7.Location = new System.Drawing.Point(306, 144);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(97, 21);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Beni Hatırla";
+            // 
+            // bunifuCheckbox1
+            // 
+            this.bunifuCheckbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.bunifuCheckbox1.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.bunifuCheckbox1.Checked = true;
+            this.bunifuCheckbox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.bunifuCheckbox1.ForeColor = System.Drawing.Color.White;
+            this.bunifuCheckbox1.Location = new System.Drawing.Point(285, 146);
+            this.bunifuCheckbox1.Name = "bunifuCheckbox1";
+            this.bunifuCheckbox1.Size = new System.Drawing.Size(20, 20);
+            this.bunifuCheckbox1.TabIndex = 2;
             // 
             // bunifupassword
             // 
-            this.bunifupassword.Location = new System.Drawing.Point(78, 205);
+            this.bunifupassword.Location = new System.Drawing.Point(87, 117);
             this.bunifupassword.Name = "bunifupassword";
             this.bunifupassword.NullText = "Parola";
             this.bunifupassword.PasswordChar = '*';
-            this.bunifupassword.Size = new System.Drawing.Size(316, 28);
+            this.bunifupassword.Size = new System.Drawing.Size(316, 24);
             this.bunifupassword.TabIndex = 1;
             this.bunifupassword.Enter += new System.EventHandler(this.ultraTextEditor1_Enter);
             this.bunifupassword.Leave += new System.EventHandler(this.ultraTextEditor1_Leave);
+            // 
+            // bunifuUserName
+            // 
+            this.bunifuUserName.Location = new System.Drawing.Point(87, 54);
+            this.bunifuUserName.Name = "bunifuUserName";
+            this.bunifuUserName.NullText = "Kullanıcı";
+            this.bunifuUserName.Size = new System.Drawing.Size(316, 24);
+            this.bunifuUserName.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(218, 85);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(39, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Parola";
             // 
             // metroPanel2
             // 
@@ -298,10 +365,23 @@
             this.label3.Text = "X";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // metroStyleManager1
+            // 
+            this.metroStyleManager1.Owner = null;
+            // 
+            // lblversion
+            // 
+            this.lblversion.AutoSize = true;
+            this.lblversion.Location = new System.Drawing.Point(24, 41);
+            this.lblversion.Name = "lblversion";
+            this.lblversion.Size = new System.Drawing.Size(35, 13);
+            this.lblversion.TabIndex = 6;
+            this.lblversion.Text = "label4";
+            // 
             // simpleButton1
             // 
             this.simpleButton1.ImageOptions.Image = global::Entegref.Properties.Resources.apply_32x32;
-            this.simpleButton1.Location = new System.Drawing.Point(320, 277);
+            this.simpleButton1.Location = new System.Drawing.Point(269, 182);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(134, 54);
             this.simpleButton1.TabIndex = 3;
@@ -311,7 +391,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::Entegref.Properties.Resources.Entegref__2_;
+            this.pictureBox1.Image = global::Entegref.Properties.Resources.Entegref__1_;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(488, 422);
@@ -356,32 +436,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // metroStyleManager1
-            // 
-            this.metroStyleManager1.Owner = null;
-            // 
-            // bunifuCheckbox1
-            // 
-            this.bunifuCheckbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox1.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox1.Checked = true;
-            this.bunifuCheckbox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox1.Location = new System.Drawing.Point(293, 277);
-            this.bunifuCheckbox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuCheckbox1.Name = "bunifuCheckbox1";
-            this.bunifuCheckbox1.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox1.TabIndex = 2;
-            // 
-            // lblversion
-            // 
-            this.lblversion.AutoSize = true;
-            this.lblversion.Location = new System.Drawing.Point(24, 41);
-            this.lblversion.Name = "lblversion";
-            this.lblversion.Size = new System.Drawing.Size(35, 13);
-            this.lblversion.TabIndex = 6;
-            this.lblversion.Text = "label4";
-            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -406,18 +460,21 @@
             this.navigationPage1.ResumeLayout(false);
             this.navigationPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtGUID)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtUserGroup)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSecretPhease)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDatabase)).EndInit();
             this.navigationPage2.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuUserName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
+            this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifupassword)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuUserName)).EndInit();
             this.metroPanel2.ResumeLayout(false);
             this.metroPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -436,7 +493,7 @@
         private Infragistics.Win.Misc.UltraLabel ultraLabel2;
         private Infragistics.Win.Misc.UltraLabel ultraLabel1;
         private Infragistics.Win.UltraWinEditors.UltraTextEditor txtGUID;
-        private Infragistics.Win.UltraWinEditors.UltraTextEditor txtUserGroup;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor txtSecretPhease;
         private Infragistics.Win.UltraWinEditors.UltraTextEditor txtDatabase;
         private System.Windows.Forms.ComboBox SQLComboBox;
         private DevExpress.XtraBars.Navigation.NavigationPage navigationPage2;
@@ -453,5 +510,9 @@
         private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox1;
         private MetroFramework.Components.MetroStyleManager metroStyleManager1;
         private System.Windows.Forms.Label lblversion;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox txtLisansing;
+        private DevExpress.XtraEditors.GroupControl groupControl1;
     }
 }

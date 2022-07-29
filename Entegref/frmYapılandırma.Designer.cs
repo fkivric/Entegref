@@ -37,6 +37,8 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.navigationPage2 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.radioGroup1 = new DevExpress.XtraEditors.RadioGroup();
+            this.grpErpSec = new DevExpress.XtraEditors.RadioGroup();
             this.navigationPage3 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.panel5 = new System.Windows.Forms.Panel();
             this.txtMobil2 = new System.Windows.Forms.MaskedTextBox();
@@ -44,7 +46,12 @@
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.combosemt = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -77,38 +84,17 @@
             this.ultraTextEditor13 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
             this.ultraTextEditor14 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
             this.navigationPage5 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.label13 = new System.Windows.Forms.Label();
+            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
+            this.txtsEmail = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.txtsSoyadi = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.txtsAdi = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.txtsKullaniciKodu = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
             this.navigationPage6 = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.navigationPage7 = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.navigationPage8 = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.navigationPage9 = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.bunifuCheckbox6 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.bunifuCheckbox7 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCheckbox8 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCheckbox9 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCheckbox3 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.bunifuCheckbox4 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCheckbox5 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.bunifuCheckbox2 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.bunifuCheckbox1 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCheckbox10 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.checkedListBoxControl1 = new DevExpress.XtraEditors.CheckedListBoxControl();
             this.pnlTrendyol = new System.Windows.Forms.Panel();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.txttrendyolSecret = new System.Windows.Forms.TextBox();
@@ -117,35 +103,54 @@
             this.label17 = new System.Windows.Forms.Label();
             this.txttrendyolID = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.ultraTextEditor1 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.ultraTextEditor15 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
-            this.ultraTextEditor16 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
-            this.ultraTextEditor17 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
-            this.label13 = new System.Windows.Forms.Label();
-            this.radioGroup1 = new DevExpress.XtraEditors.RadioGroup();
-            this.grpErpSec = new DevExpress.XtraEditors.RadioGroup();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.checkedListBoxControl1 = new DevExpress.XtraEditors.CheckedListBoxControl();
+            this.navigationPage7 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.navigationPage8 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.navigationPage9 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.bunifuCheckbox6 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.bunifuCheckbox7 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCheckbox8 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCheckbox10 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.bunifuCheckbox9 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.uncheck1 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.bunifuCheckbox4 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.uncheck2 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCheckbox3 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.bunifuCheckbox5 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCheckbox2 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.bunifuCheckbox1 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtParola = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame1)).BeginInit();
             this.navigationFrame1.SuspendLayout();
             this.navigationPage1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.navigationPage2.SuspendLayout();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grpErpSec.Properties)).BeginInit();
             this.navigationPage3.SuspendLayout();
             this.panel5.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMail1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor6)).BeginInit();
@@ -162,21 +167,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor14)).BeginInit();
             this.navigationPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtsEmail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtsSoyadi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtsAdi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtsKullaniciKodu)).BeginInit();
             this.navigationPage6.SuspendLayout();
+            this.pnlTrendyol.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkedListBoxControl1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.checkedListBoxControl1)).BeginInit();
-            this.pnlTrendyol.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grpErpSec.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtParola)).BeginInit();
             this.SuspendLayout();
             // 
             // navigationFrame1
@@ -261,6 +264,32 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(597, 415);
             this.panel7.TabIndex = 3;
+            // 
+            // radioGroup1
+            // 
+            this.radioGroup1.Location = new System.Drawing.Point(313, 119);
+            this.radioGroup1.Name = "radioGroup1";
+            this.radioGroup1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.radioGroup1.Properties.Appearance.Options.UseBackColor = true;
+            this.radioGroup1.Properties.Columns = 1;
+            this.radioGroup1.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "ENtegref Web Sayfası Dahil", false),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "İnternet Sayfası Haric", true, null, "")});
+            this.radioGroup1.Size = new System.Drawing.Size(245, 194);
+            this.radioGroup1.TabIndex = 1;
+            // 
+            // grpErpSec
+            // 
+            this.grpErpSec.Location = new System.Drawing.Point(80, 119);
+            this.grpErpSec.Name = "grpErpSec";
+            this.grpErpSec.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.grpErpSec.Properties.Appearance.Options.UseBackColor = true;
+            this.grpErpSec.Properties.Columns = 1;
+            this.grpErpSec.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Dahili ERP kurulacak"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Harici ERP programı var", false, null, "")});
+            this.grpErpSec.Size = new System.Drawing.Size(158, 194);
+            this.grpErpSec.TabIndex = 1;
             // 
             // navigationPage3
             // 
@@ -354,6 +383,30 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Paremetreler";
             // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Image = global::Entegref.Properties.Resources.about_32x32;
+            this.label27.Location = new System.Drawing.Point(392, 71);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(10, 13);
+            this.label27.TabIndex = 5;
+            this.label27.Text = " ";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label27.MouseHover += new System.EventHandler(this.label27_MouseHover);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Image = global::Entegref.Properties.Resources.about_32x32;
+            this.label22.Location = new System.Drawing.Point(153, 71);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(10, 13);
+            this.label22.TabIndex = 5;
+            this.label22.Text = " ";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label22.MouseHover += new System.EventHandler(this.label22_MouseHover);
+            // 
             // label12
             // 
             this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -366,6 +419,43 @@
             this.label12.TabIndex = 4;
             this.label12.Text = "Kuruş Hane Sayısı\r\nVirgülden Sonra Basamak";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // comboBoxEdit1
+            // 
+            this.comboBoxEdit1.EditValue = "Seçiniz";
+            this.comboBoxEdit1.Location = new System.Drawing.Point(435, 47);
+            this.comboBoxEdit1.Name = "comboBoxEdit1";
+            this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit1.Properties.DropDownRows = 6;
+            this.comboBoxEdit1.Properties.Items.AddRange(new object[] {
+            "#,###.0",
+            "#,###.00",
+            "#,###.000",
+            "#,###.0000",
+            "#,##0"});
+            this.comboBoxEdit1.Size = new System.Drawing.Size(99, 20);
+            this.comboBoxEdit1.TabIndex = 3;
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Location = new System.Drawing.Point(188, 69);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(206, 17);
+            this.checkBox6.TabIndex = 2;
+            this.checkBox6.Text = "Satışlarda Stoklar Eksiye Düşebilsin";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(5, 69);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(151, 17);
+            this.checkBox5.TabIndex = 2;
+            this.checkBox5.Text = "Çoklu Depo Kullanılacak";
+            this.checkBox5.UseVisualStyleBackColor = true;
             // 
             // checkBox3
             // 
@@ -634,16 +724,104 @@
             // 
             this.navigationPage5.Controls.Add(this.label13);
             this.navigationPage5.Controls.Add(this.simpleButton5);
-            this.navigationPage5.Controls.Add(this.ultraTextEditor1);
+            this.navigationPage5.Controls.Add(this.txtParola);
+            this.navigationPage5.Controls.Add(this.label15);
+            this.navigationPage5.Controls.Add(this.txtsEmail);
             this.navigationPage5.Controls.Add(this.label14);
             this.navigationPage5.Controls.Add(this.label24);
             this.navigationPage5.Controls.Add(this.label25);
             this.navigationPage5.Controls.Add(this.label26);
-            this.navigationPage5.Controls.Add(this.ultraTextEditor15);
-            this.navigationPage5.Controls.Add(this.ultraTextEditor16);
-            this.navigationPage5.Controls.Add(this.ultraTextEditor17);
+            this.navigationPage5.Controls.Add(this.txtsSoyadi);
+            this.navigationPage5.Controls.Add(this.txtsAdi);
+            this.navigationPage5.Controls.Add(this.txtsKullaniciKodu);
             this.navigationPage5.Name = "navigationPage5";
             this.navigationPage5.Size = new System.Drawing.Size(597, 415);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(230, 79);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(145, 13);
+            this.label13.TabIndex = 37;
+            this.label13.Text = "İşlem Yapacak Ana Kullanıcı";
+            // 
+            // simpleButton5
+            // 
+            this.simpleButton5.Location = new System.Drawing.Point(387, 327);
+            this.simpleButton5.Name = "simpleButton5";
+            this.simpleButton5.Size = new System.Drawing.Size(117, 34);
+            this.simpleButton5.TabIndex = 36;
+            this.simpleButton5.Text = "Kullanıcı Aç";
+            this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
+            // 
+            // txtsEmail
+            // 
+            this.txtsEmail.Location = new System.Drawing.Point(175, 282);
+            this.txtsEmail.MaxLength = 60;
+            this.txtsEmail.Name = "txtsEmail";
+            this.txtsEmail.Size = new System.Drawing.Size(329, 24);
+            this.txtsEmail.TabIndex = 27;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(65, 288);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(105, 13);
+            this.label14.TabIndex = 35;
+            this.label14.Text = "e-Mail                     :";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(65, 244);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(104, 13);
+            this.label24.TabIndex = 28;
+            this.label24.Text = "Soyadı                    :";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(65, 200);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(105, 13);
+            this.label25.TabIndex = 26;
+            this.label25.Text = "Adı                          :";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(65, 112);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(104, 13);
+            this.label26.TabIndex = 25;
+            this.label26.Text = "Kullanıcı Rumuzu  :";
+            // 
+            // txtsSoyadi
+            // 
+            this.txtsSoyadi.Location = new System.Drawing.Point(175, 238);
+            this.txtsSoyadi.MaxLength = 20;
+            this.txtsSoyadi.Name = "txtsSoyadi";
+            this.txtsSoyadi.Size = new System.Drawing.Size(329, 24);
+            this.txtsSoyadi.TabIndex = 19;
+            // 
+            // txtsAdi
+            // 
+            this.txtsAdi.Location = new System.Drawing.Point(175, 194);
+            this.txtsAdi.MaxLength = 20;
+            this.txtsAdi.Name = "txtsAdi";
+            this.txtsAdi.Size = new System.Drawing.Size(329, 24);
+            this.txtsAdi.TabIndex = 18;
+            // 
+            // txtsKullaniciKodu
+            // 
+            this.txtsKullaniciKodu.Location = new System.Drawing.Point(175, 106);
+            this.txtsKullaniciKodu.MaxLength = 60;
+            this.txtsKullaniciKodu.Name = "txtsKullaniciKodu";
+            this.txtsKullaniciKodu.Size = new System.Drawing.Size(329, 24);
+            this.txtsKullaniciKodu.TabIndex = 17;
             // 
             // navigationPage6
             // 
@@ -651,6 +829,99 @@
             this.navigationPage6.Controls.Add(this.checkedListBoxControl1);
             this.navigationPage6.Name = "navigationPage6";
             this.navigationPage6.Size = new System.Drawing.Size(597, 415);
+            // 
+            // pnlTrendyol
+            // 
+            this.pnlTrendyol.Controls.Add(this.simpleButton4);
+            this.pnlTrendyol.Controls.Add(this.txttrendyolSecret);
+            this.pnlTrendyol.Controls.Add(this.label18);
+            this.pnlTrendyol.Controls.Add(this.txttrendyolApi);
+            this.pnlTrendyol.Controls.Add(this.label17);
+            this.pnlTrendyol.Controls.Add(this.txttrendyolID);
+            this.pnlTrendyol.Controls.Add(this.label16);
+            this.pnlTrendyol.Location = new System.Drawing.Point(42, 128);
+            this.pnlTrendyol.Name = "pnlTrendyol";
+            this.pnlTrendyol.Size = new System.Drawing.Size(523, 247);
+            this.pnlTrendyol.TabIndex = 2;
+            this.pnlTrendyol.Visible = false;
+            // 
+            // simpleButton4
+            // 
+            this.simpleButton4.Location = new System.Drawing.Point(416, 199);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.Size = new System.Drawing.Size(104, 41);
+            this.simpleButton4.TabIndex = 2;
+            this.simpleButton4.Text = "Baglantı Ayarlarını \r\nKaydet";
+            this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
+            // 
+            // txttrendyolSecret
+            // 
+            this.txttrendyolSecret.Location = new System.Drawing.Point(267, 169);
+            this.txttrendyolSecret.Name = "txttrendyolSecret";
+            this.txttrendyolSecret.Size = new System.Drawing.Size(196, 22);
+            this.txttrendyolSecret.TabIndex = 1;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(12, 173);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(58, 13);
+            this.label18.TabIndex = 0;
+            this.label18.Text = "Secret Key";
+            // 
+            // txttrendyolApi
+            // 
+            this.txttrendyolApi.Location = new System.Drawing.Point(267, 97);
+            this.txttrendyolApi.Name = "txttrendyolApi";
+            this.txttrendyolApi.Size = new System.Drawing.Size(196, 22);
+            this.txttrendyolApi.TabIndex = 1;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(12, 101);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(44, 13);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Api Key";
+            // 
+            // txttrendyolID
+            // 
+            this.txttrendyolID.Location = new System.Drawing.Point(267, 25);
+            this.txttrendyolID.Name = "txttrendyolID";
+            this.txttrendyolID.Size = new System.Drawing.Size(196, 22);
+            this.txttrendyolID.TabIndex = 1;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(12, 29);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(107, 13);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Trendyol Mağaza Id";
+            // 
+            // checkedListBoxControl1
+            // 
+            this.checkedListBoxControl1.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.checkedListBoxControl1.Appearance.Options.UseBackColor = true;
+            this.checkedListBoxControl1.CheckMode = DevExpress.XtraEditors.CheckMode.Single;
+            this.checkedListBoxControl1.CheckOnClick = true;
+            this.checkedListBoxControl1.ColumnWidth = 50;
+            this.checkedListBoxControl1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.checkedListBoxControl1.Items.AddRange(new DevExpress.XtraEditors.Controls.CheckedListBoxItem[] {
+            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "TRENDYOL"),
+            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "HAPSİBURADA"),
+            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "N11"),
+            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "ÇİÇEKSEPETİ"),
+            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "AMAZON.COM.TR")});
+            this.checkedListBoxControl1.Location = new System.Drawing.Point(0, 0);
+            this.checkedListBoxControl1.Name = "checkedListBoxControl1";
+            this.checkedListBoxControl1.Size = new System.Drawing.Size(597, 99);
+            this.checkedListBoxControl1.TabIndex = 1;
+            this.checkedListBoxControl1.ItemCheck += new DevExpress.XtraEditors.Controls.ItemCheckEventHandler(this.checkedListBoxControl1_ItemCheck);
+            this.checkedListBoxControl1.SelectedIndexChanged += new System.EventHandler(this.checkedListBoxControl1_SelectedIndexChanged);
             // 
             // navigationPage7
             // 
@@ -723,6 +994,18 @@
             this.panel3.TabIndex = 2;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
+            // bunifuCheckbox6
+            // 
+            this.bunifuCheckbox6.BackColor = System.Drawing.Color.Black;
+            this.bunifuCheckbox6.ChechedOffColor = System.Drawing.Color.Black;
+            this.bunifuCheckbox6.Checked = false;
+            this.bunifuCheckbox6.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.bunifuCheckbox6.ForeColor = System.Drawing.Color.White;
+            this.bunifuCheckbox6.Location = new System.Drawing.Point(12, 215);
+            this.bunifuCheckbox6.Name = "bunifuCheckbox6";
+            this.bunifuCheckbox6.Size = new System.Drawing.Size(20, 20);
+            this.bunifuCheckbox6.TabIndex = 5;
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.bunifuCheckbox7);
@@ -739,21 +1022,9 @@
             this.groupBox3.TabIndex = 18;
             this.groupBox3.TabStop = false;
             // 
-            // bunifuCheckbox6
-            // 
-            this.bunifuCheckbox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox6.ChechedOffColor = System.Drawing.Color.Black;
-            this.bunifuCheckbox6.Checked = false;
-            this.bunifuCheckbox6.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox6.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox6.Location = new System.Drawing.Point(12, 215);
-            this.bunifuCheckbox6.Name = "bunifuCheckbox6";
-            this.bunifuCheckbox6.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox6.TabIndex = 5;
-            // 
             // bunifuCheckbox7
             // 
-            this.bunifuCheckbox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.bunifuCheckbox7.BackColor = System.Drawing.Color.Black;
             this.bunifuCheckbox7.ChechedOffColor = System.Drawing.Color.Black;
             this.bunifuCheckbox7.Checked = false;
             this.bunifuCheckbox7.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
@@ -774,7 +1045,7 @@
             // 
             // bunifuCheckbox8
             // 
-            this.bunifuCheckbox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.bunifuCheckbox8.BackColor = System.Drawing.Color.Black;
             this.bunifuCheckbox8.ChechedOffColor = System.Drawing.Color.Black;
             this.bunifuCheckbox8.Checked = false;
             this.bunifuCheckbox8.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
@@ -793,9 +1064,21 @@
             this.bunifuCustomLabel8.TabIndex = 15;
             this.bunifuCustomLabel8.Text = "Pazar Yeri Karlılık Ayarları";
             // 
+            // bunifuCheckbox10
+            // 
+            this.bunifuCheckbox10.BackColor = System.Drawing.Color.Black;
+            this.bunifuCheckbox10.ChechedOffColor = System.Drawing.Color.Black;
+            this.bunifuCheckbox10.Checked = false;
+            this.bunifuCheckbox10.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.bunifuCheckbox10.ForeColor = System.Drawing.Color.White;
+            this.bunifuCheckbox10.Location = new System.Drawing.Point(5, 99);
+            this.bunifuCheckbox10.Name = "bunifuCheckbox10";
+            this.bunifuCheckbox10.Size = new System.Drawing.Size(20, 20);
+            this.bunifuCheckbox10.TabIndex = 8;
+            // 
             // bunifuCheckbox9
             // 
-            this.bunifuCheckbox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.bunifuCheckbox9.BackColor = System.Drawing.Color.Black;
             this.bunifuCheckbox9.ChechedOffColor = System.Drawing.Color.Black;
             this.bunifuCheckbox9.Checked = false;
             this.bunifuCheckbox9.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
@@ -826,10 +1109,10 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.uncheck1);
+            this.groupBox1.Controls.Add(this.bunifuCheckbox4);
             this.groupBox1.Controls.Add(this.uncheck2);
             this.groupBox1.Controls.Add(this.bunifuCustomLabel3);
             this.groupBox1.Controls.Add(this.bunifuCheckbox3);
-            this.groupBox1.Controls.Add(this.bunifuCheckbox4);
             this.groupBox1.Controls.Add(this.bunifuCheckbox5);
             this.groupBox1.Controls.Add(this.bunifuCustomLabel10);
             this.groupBox1.Controls.Add(this.bunifuCustomLabel4);
@@ -838,6 +1121,48 @@
             this.groupBox1.Size = new System.Drawing.Size(159, 121);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
+            // 
+            // uncheck1
+            // 
+            this.uncheck1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.uncheck1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("uncheck1.BackgroundImage")));
+            this.uncheck1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.uncheck1.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.uncheck1.Checked = false;
+            this.uncheck1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.uncheck1.ForeColor = System.Drawing.Color.White;
+            this.uncheck1.Location = new System.Drawing.Point(5, 56);
+            this.uncheck1.Name = "uncheck1";
+            this.uncheck1.Size = new System.Drawing.Size(20, 20);
+            this.uncheck1.TabIndex = 18;
+            this.uncheck1.Visible = false;
+            // 
+            // bunifuCheckbox4
+            // 
+            this.bunifuCheckbox4.BackColor = System.Drawing.Color.Black;
+            this.bunifuCheckbox4.ChechedOffColor = System.Drawing.Color.Black;
+            this.bunifuCheckbox4.Checked = false;
+            this.bunifuCheckbox4.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.bunifuCheckbox4.ForeColor = System.Drawing.Color.White;
+            this.bunifuCheckbox4.Location = new System.Drawing.Point(5, 56);
+            this.bunifuCheckbox4.Name = "bunifuCheckbox4";
+            this.bunifuCheckbox4.Size = new System.Drawing.Size(20, 20);
+            this.bunifuCheckbox4.TabIndex = 3;
+            // 
+            // uncheck2
+            // 
+            this.uncheck2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.uncheck2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("uncheck2.BackgroundImage")));
+            this.uncheck2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.uncheck2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.uncheck2.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.uncheck2.Checked = false;
+            this.uncheck2.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.uncheck2.ForeColor = System.Drawing.Color.White;
+            this.uncheck2.Location = new System.Drawing.Point(5, 19);
+            this.uncheck2.Name = "uncheck2";
+            this.uncheck2.Size = new System.Drawing.Size(20, 20);
+            this.uncheck2.TabIndex = 18;
             // 
             // bunifuCustomLabel3
             // 
@@ -850,7 +1175,7 @@
             // 
             // bunifuCheckbox3
             // 
-            this.bunifuCheckbox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.bunifuCheckbox3.BackColor = System.Drawing.Color.Black;
             this.bunifuCheckbox3.ChechedOffColor = System.Drawing.Color.Black;
             this.bunifuCheckbox3.Checked = false;
             this.bunifuCheckbox3.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
@@ -860,17 +1185,26 @@
             this.bunifuCheckbox3.Size = new System.Drawing.Size(20, 20);
             this.bunifuCheckbox3.TabIndex = 2;
             // 
-            // bunifuCheckbox4
+            // bunifuCheckbox5
             // 
-            this.bunifuCheckbox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox4.ChechedOffColor = System.Drawing.Color.Black;
-            this.bunifuCheckbox4.Checked = false;
-            this.bunifuCheckbox4.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox4.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox4.Location = new System.Drawing.Point(5, 49);
-            this.bunifuCheckbox4.Name = "bunifuCheckbox4";
-            this.bunifuCheckbox4.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox4.TabIndex = 3;
+            this.bunifuCheckbox5.BackColor = System.Drawing.Color.Black;
+            this.bunifuCheckbox5.ChechedOffColor = System.Drawing.Color.Black;
+            this.bunifuCheckbox5.Checked = false;
+            this.bunifuCheckbox5.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.bunifuCheckbox5.ForeColor = System.Drawing.Color.White;
+            this.bunifuCheckbox5.Location = new System.Drawing.Point(5, 84);
+            this.bunifuCheckbox5.Name = "bunifuCheckbox5";
+            this.bunifuCheckbox5.Size = new System.Drawing.Size(20, 20);
+            this.bunifuCheckbox5.TabIndex = 4;
+            // 
+            // bunifuCustomLabel10
+            // 
+            this.bunifuCustomLabel10.AutoSize = true;
+            this.bunifuCustomLabel10.Location = new System.Drawing.Point(34, 91);
+            this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
+            this.bunifuCustomLabel10.Size = new System.Drawing.Size(113, 13);
+            this.bunifuCustomLabel10.TabIndex = 11;
+            this.bunifuCustomLabel10.Text = "ERP Kullanıcı Ayarları";
             // 
             // bunifuCustomLabel4
             // 
@@ -908,21 +1242,9 @@
             this.bunifuCustomLabel1.TabIndex = 0;
             this.bunifuCustomLabel1.Text = "Sistem Kurulum Ayarları";
             // 
-            // bunifuCheckbox5
-            // 
-            this.bunifuCheckbox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox5.ChechedOffColor = System.Drawing.Color.Black;
-            this.bunifuCheckbox5.Checked = false;
-            this.bunifuCheckbox5.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox5.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox5.Location = new System.Drawing.Point(5, 84);
-            this.bunifuCheckbox5.Name = "bunifuCheckbox5";
-            this.bunifuCheckbox5.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox5.TabIndex = 4;
-            // 
             // bunifuCheckbox2
             // 
-            this.bunifuCheckbox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.bunifuCheckbox2.BackColor = System.Drawing.Color.Black;
             this.bunifuCheckbox2.ChechedOffColor = System.Drawing.Color.Black;
             this.bunifuCheckbox2.Checked = false;
             this.bunifuCheckbox2.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
@@ -934,7 +1256,7 @@
             // 
             // bunifuCheckbox1
             // 
-            this.bunifuCheckbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.bunifuCheckbox1.BackColor = System.Drawing.Color.Black;
             this.bunifuCheckbox1.ChechedOffColor = System.Drawing.Color.Black;
             this.bunifuCheckbox1.Checked = false;
             this.bunifuCheckbox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
@@ -944,317 +1266,22 @@
             this.bunifuCheckbox1.Size = new System.Drawing.Size(20, 20);
             this.bunifuCheckbox1.TabIndex = 0;
             // 
-            // bunifuCustomLabel10
+            // label15
             // 
-            this.bunifuCustomLabel10.AutoSize = true;
-            this.bunifuCustomLabel10.Location = new System.Drawing.Point(34, 91);
-            this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
-            this.bunifuCustomLabel10.Size = new System.Drawing.Size(113, 13);
-            this.bunifuCustomLabel10.TabIndex = 11;
-            this.bunifuCustomLabel10.Text = "ERP Kullanıcı Ayarları";
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(65, 156);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(105, 13);
+            this.label15.TabIndex = 35;
+            this.label15.Text = "Parola                     :";
             // 
-            // bunifuCheckbox10
+            // txtParola
             // 
-            this.bunifuCheckbox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox10.ChechedOffColor = System.Drawing.Color.Black;
-            this.bunifuCheckbox10.Checked = false;
-            this.bunifuCheckbox10.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox10.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox10.Location = new System.Drawing.Point(5, 99);
-            this.bunifuCheckbox10.Name = "bunifuCheckbox10";
-            this.bunifuCheckbox10.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox10.TabIndex = 8;
-            // 
-            // checkedListBoxControl1
-            // 
-            this.checkedListBoxControl1.Appearance.BackColor = System.Drawing.SystemColors.Control;
-            this.checkedListBoxControl1.Appearance.Options.UseBackColor = true;
-            this.checkedListBoxControl1.CheckMode = DevExpress.XtraEditors.CheckMode.Single;
-            this.checkedListBoxControl1.CheckOnClick = true;
-            this.checkedListBoxControl1.ColumnWidth = 50;
-            this.checkedListBoxControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.checkedListBoxControl1.Items.AddRange(new DevExpress.XtraEditors.Controls.CheckedListBoxItem[] {
-            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "TRENDYOL"),
-            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "HAPSİBURADA"),
-            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "N11"),
-            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "ÇİÇEKSEPETİ"),
-            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "AMAZON.COM.TR")});
-            this.checkedListBoxControl1.Location = new System.Drawing.Point(0, 0);
-            this.checkedListBoxControl1.Name = "checkedListBoxControl1";
-            this.checkedListBoxControl1.Size = new System.Drawing.Size(597, 99);
-            this.checkedListBoxControl1.TabIndex = 1;
-            // 
-            // pnlTrendyol
-            // 
-            this.pnlTrendyol.Controls.Add(this.simpleButton4);
-            this.pnlTrendyol.Controls.Add(this.txttrendyolSecret);
-            this.pnlTrendyol.Controls.Add(this.label18);
-            this.pnlTrendyol.Controls.Add(this.txttrendyolApi);
-            this.pnlTrendyol.Controls.Add(this.label17);
-            this.pnlTrendyol.Controls.Add(this.txttrendyolID);
-            this.pnlTrendyol.Controls.Add(this.label16);
-            this.pnlTrendyol.Location = new System.Drawing.Point(40, 128);
-            this.pnlTrendyol.Name = "pnlTrendyol";
-            this.pnlTrendyol.Size = new System.Drawing.Size(523, 247);
-            this.pnlTrendyol.TabIndex = 2;
-            this.pnlTrendyol.Visible = false;
-            // 
-            // simpleButton4
-            // 
-            this.simpleButton4.Location = new System.Drawing.Point(416, 199);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(104, 41);
-            this.simpleButton4.TabIndex = 2;
-            this.simpleButton4.Text = "Baglantı Ayarlarını \r\nKaydet";
-            this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
-            // 
-            // txttrendyolSecret
-            // 
-            this.txttrendyolSecret.Location = new System.Drawing.Point(267, 169);
-            this.txttrendyolSecret.Name = "txttrendyolSecret";
-            this.txttrendyolSecret.Size = new System.Drawing.Size(196, 22);
-            this.txttrendyolSecret.TabIndex = 1;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(12, 173);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(58, 13);
-            this.label18.TabIndex = 0;
-            this.label18.Text = "Secret Key";
-            // 
-            // txttrendyolApi
-            // 
-            this.txttrendyolApi.Location = new System.Drawing.Point(267, 97);
-            this.txttrendyolApi.Name = "txttrendyolApi";
-            this.txttrendyolApi.Size = new System.Drawing.Size(196, 22);
-            this.txttrendyolApi.TabIndex = 1;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(12, 101);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(44, 13);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "Api Key";
-            // 
-            // txttrendyolID
-            // 
-            this.txttrendyolID.Location = new System.Drawing.Point(267, 25);
-            this.txttrendyolID.Name = "txttrendyolID";
-            this.txttrendyolID.Size = new System.Drawing.Size(196, 22);
-            this.txttrendyolID.TabIndex = 1;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(12, 29);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(107, 13);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Trendyol Mağaza Id";
-            // 
-            // ultraTextEditor1
-            // 
-            this.ultraTextEditor1.Location = new System.Drawing.Point(175, 232);
-            this.ultraTextEditor1.Name = "ultraTextEditor1";
-            this.ultraTextEditor1.Size = new System.Drawing.Size(329, 24);
-            this.ultraTextEditor1.TabIndex = 27;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(65, 238);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(105, 13);
-            this.label14.TabIndex = 35;
-            this.label14.Text = "e-Mail                     :";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(65, 196);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(104, 13);
-            this.label24.TabIndex = 28;
-            this.label24.Text = "Soyadı                    :";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(65, 154);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(105, 13);
-            this.label25.TabIndex = 26;
-            this.label25.Text = "Adı                          :";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(65, 112);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(104, 13);
-            this.label26.TabIndex = 25;
-            this.label26.Text = "Kullanıcı Rumuzu  :";
-            // 
-            // ultraTextEditor15
-            // 
-            this.ultraTextEditor15.Location = new System.Drawing.Point(175, 190);
-            this.ultraTextEditor15.Name = "ultraTextEditor15";
-            this.ultraTextEditor15.Size = new System.Drawing.Size(329, 24);
-            this.ultraTextEditor15.TabIndex = 19;
-            // 
-            // ultraTextEditor16
-            // 
-            this.ultraTextEditor16.Location = new System.Drawing.Point(175, 148);
-            this.ultraTextEditor16.MaxLength = 11;
-            this.ultraTextEditor16.Name = "ultraTextEditor16";
-            this.ultraTextEditor16.Size = new System.Drawing.Size(329, 24);
-            this.ultraTextEditor16.TabIndex = 18;
-            // 
-            // ultraTextEditor17
-            // 
-            this.ultraTextEditor17.Location = new System.Drawing.Point(175, 106);
-            this.ultraTextEditor17.MaxLength = 6;
-            this.ultraTextEditor17.Name = "ultraTextEditor17";
-            this.ultraTextEditor17.Size = new System.Drawing.Size(329, 24);
-            this.ultraTextEditor17.TabIndex = 17;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(5, 69);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(151, 17);
-            this.checkBox5.TabIndex = 2;
-            this.checkBox5.Text = "Çoklu Depo Kullanılacak";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(188, 69);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(206, 17);
-            this.checkBox6.TabIndex = 2;
-            this.checkBox6.Text = "Satışlarda Stoklar Eksiye Düşebilsin";
-            this.checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // simpleButton5
-            // 
-            this.simpleButton5.Location = new System.Drawing.Point(387, 276);
-            this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.Size = new System.Drawing.Size(117, 34);
-            this.simpleButton5.TabIndex = 36;
-            this.simpleButton5.Text = "Kullanıcı Aç";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(230, 79);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(145, 13);
-            this.label13.TabIndex = 37;
-            this.label13.Text = "İşlem Yapacak Ana Kullanıcı";
-            // 
-            // radioGroup1
-            // 
-            this.radioGroup1.Location = new System.Drawing.Point(313, 119);
-            this.radioGroup1.Name = "radioGroup1";
-            this.radioGroup1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.radioGroup1.Properties.Appearance.Options.UseBackColor = true;
-            this.radioGroup1.Properties.Columns = 1;
-            this.radioGroup1.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "ENtegref Web Sayfası Dahil", false),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "İnternet Sayfası Haric", true, null, "")});
-            this.radioGroup1.Size = new System.Drawing.Size(245, 194);
-            this.radioGroup1.TabIndex = 1;
-            // 
-            // grpErpSec
-            // 
-            this.grpErpSec.Location = new System.Drawing.Point(80, 119);
-            this.grpErpSec.Name = "grpErpSec";
-            this.grpErpSec.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.grpErpSec.Properties.Appearance.Options.UseBackColor = true;
-            this.grpErpSec.Properties.Columns = 1;
-            this.grpErpSec.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Dahili ERP kurulacak"),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Harici ERP programı var", false, null, "")});
-            this.grpErpSec.Size = new System.Drawing.Size(158, 194);
-            this.grpErpSec.TabIndex = 1;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Image = global::Entegref.Properties.Resources.about_32x32;
-            this.label27.Location = new System.Drawing.Point(392, 71);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(10, 13);
-            this.label27.TabIndex = 5;
-            this.label27.Text = " ";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label27.MouseHover += new System.EventHandler(this.label27_MouseHover);
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Image = global::Entegref.Properties.Resources.about_32x32;
-            this.label22.Location = new System.Drawing.Point(153, 71);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(10, 13);
-            this.label22.TabIndex = 5;
-            this.label22.Text = " ";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label22.MouseHover += new System.EventHandler(this.label22_MouseHover);
-            // 
-            // comboBoxEdit1
-            // 
-            this.comboBoxEdit1.EditValue = "Seçiniz";
-            this.comboBoxEdit1.Location = new System.Drawing.Point(435, 47);
-            this.comboBoxEdit1.Name = "comboBoxEdit1";
-            this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit1.Properties.DropDownRows = 6;
-            this.comboBoxEdit1.Properties.Items.AddRange(new object[] {
-            "#,###.0",
-            "#,###.00",
-            "#,###.000",
-            "#,###.0000",
-            "#,##0"});
-            this.comboBoxEdit1.Size = new System.Drawing.Size(99, 20);
-            this.comboBoxEdit1.TabIndex = 3;
-            // 
-            // uncheck1
-            // 
-            this.uncheck1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.uncheck1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("uncheck1.BackgroundImage")));
-            this.uncheck1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.uncheck1.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.uncheck1.Checked = false;
-            this.uncheck1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.uncheck1.ForeColor = System.Drawing.Color.White;
-            this.uncheck1.Location = new System.Drawing.Point(5, 49);
-            this.uncheck1.Name = "uncheck1";
-            this.uncheck1.Size = new System.Drawing.Size(20, 20);
-            this.uncheck1.TabIndex = 18;
-            this.uncheck1.Visible = false;
-            // 
-            // uncheck2
-            // 
-            this.uncheck2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.uncheck2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("uncheck2.BackgroundImage")));
-            this.uncheck2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.uncheck2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.uncheck2.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.uncheck2.Checked = false;
-            this.uncheck2.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.uncheck2.ForeColor = System.Drawing.Color.White;
-            this.uncheck2.Location = new System.Drawing.Point(5, 19);
-            this.uncheck2.Name = "uncheck2";
-            this.uncheck2.Size = new System.Drawing.Size(20, 20);
-            this.uncheck2.TabIndex = 18;
+            this.txtParola.Location = new System.Drawing.Point(175, 150);
+            this.txtParola.MaxLength = 60;
+            this.txtParola.Name = "txtParola";
+            this.txtParola.Size = new System.Drawing.Size(329, 24);
+            this.txtParola.TabIndex = 27;
             // 
             // frmYapılandırma
             // 
@@ -1277,11 +1304,14 @@
             this.panel4.PerformLayout();
             this.navigationPage2.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grpErpSec.Properties)).EndInit();
             this.navigationPage3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMail1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor6)).EndInit();
@@ -1300,7 +1330,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor14)).EndInit();
             this.navigationPage5.ResumeLayout(false);
             this.navigationPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtsEmail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtsSoyadi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtsAdi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtsKullaniciKodu)).EndInit();
             this.navigationPage6.ResumeLayout(false);
+            this.pnlTrendyol.ResumeLayout(false);
+            this.pnlTrendyol.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkedListBoxControl1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -1309,16 +1346,7 @@
             this.groupBox3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.checkedListBoxControl1)).EndInit();
-            this.pnlTrendyol.ResumeLayout(false);
-            this.pnlTrendyol.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grpErpSec.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtParola)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1408,14 +1436,14 @@
         private DevExpress.XtraEditors.RadioGroup radioGroup1;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.CheckBox checkBox5;
-        private Infragistics.Win.UltraWinEditors.UltraTextEditor ultraTextEditor1;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor txtsEmail;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
-        private Infragistics.Win.UltraWinEditors.UltraTextEditor ultraTextEditor15;
-        private Infragistics.Win.UltraWinEditors.UltraTextEditor ultraTextEditor16;
-        private Infragistics.Win.UltraWinEditors.UltraTextEditor ultraTextEditor17;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor txtsSoyadi;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor txtsAdi;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor txtsKullaniciKodu;
         private System.Windows.Forms.Panel pnlTrendyol;
         private DevExpress.XtraEditors.SimpleButton simpleButton4;
         private System.Windows.Forms.TextBox txttrendyolSecret;
@@ -1432,5 +1460,7 @@
         private System.Windows.Forms.CheckBox checkBox6;
         private System.Windows.Forms.Label label13;
         private DevExpress.XtraEditors.SimpleButton simpleButton5;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor txtParola;
+        private System.Windows.Forms.Label label15;
     }
 }

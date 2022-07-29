@@ -17,18 +17,34 @@ using MetroFramework.Forms;
 using Microsoft.Win32;
 using System.Net.NetworkInformation;
 using System.Text.RegularExpressions;
+using System.Reflection;
+using System.Data.Sql;
 
 namespace Entegref
 {
     public partial class frmLogin : MetroFramework.Forms.MetroForm
     {
-        public frmLogin()
+        string VKN = null;
+        public frmLogin(string _VKN)
         {
             InitializeComponent();
             Init_Data();
+            if (VKN == null)
+            {
+                VKN = "39391097764";
+
+                SKGL.Generate generate = new SKGL.Generate();
+                generate.secretPhase = VKN;
+                Properties.Settings.Default.SecretPhase = generate.doKey(Convert.ToInt32("365"));
+            }
+            else
+            {
+                VKN = _VKN;
+            }
         }
 
         SqlConnectionObject conn = new SqlConnectionObject();
+        SystemGuid SystemGuid= new SystemGuid();
         public string id;
         public string MachineName;
         public string UserName;
@@ -37,7 +53,7 @@ namespace Entegref
 
 
         string version;
-        bool loginok = false;
+        public static bool loginok = false;
         private string pcModeli;
         private string pcİsmi;
         private string ipAdresi;
@@ -45,6 +61,29 @@ namespace Entegref
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
+
+            SKGL.Validate validate = new SKGL.Validate();
+            validate.secretPhase = VKN;
+            validate.Key = Properties.Settings.Default.SecretPhase;
+            txtLisansing.Text = "Başlanğıç Tarihi:" + validate.CreationDate + "\r\n" + "Sona Erme Tarihi:" + validate.ExpireDate + "\r\n" + "Kalan Gün:" + validate.DaysLeft;
+            
+
+            if (System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed)
+            {
+                System.Deployment.Application.ApplicationDeployment ad = System.Deployment.Application.ApplicationDeployment.CurrentDeployment;
+                lblversion.Text = "Version : " + ad.CurrentVersion.Major + "." + ad.CurrentVersion.Minor + "." + ad.CurrentVersion.Build + "." + ad.CurrentVersion.Revision;
+                version = ad.CurrentVersion.Revision.ToString();
+            }
+            else
+            {
+                string _s1 = Application.ProductVersion; // versiyon
+                lblversion.Text = "Version : " + _s1;
+            }
+
+            txtSecretPhease.Text = Properties.Settings.Default.SecretPhase;
+
+
+            SystemGuid.ToString();
             var assembly = typeof(Program).Assembly;
             var attribute = (GuidAttribute)assembly.GetCustomAttributes(typeof(GuidAttribute), true)[0];
             id = attribute.Value;
@@ -64,11 +103,19 @@ namespace Entegref
                 }
             }
 
-            if (sonuc.ToString() == id)
+            if (VKN != null)
             {
-                //Datasource();
+                txtDatabase.Text = VKN;
+                txtDatabase.Enabled = false;
             }
             else
+            {
+                txtDatabase.Enabled = true;
+            }
+            SQLComboBox.Text = "Entegref Server";
+            SQLComboBox.Enabled = false;
+
+            if (sonuc.ToString() != id)
             {
                 RegistryKey key = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\Entegref");
                 key.SetValue("ApplicationSetupComplate", "true");
@@ -76,13 +123,12 @@ namespace Entegref
                 key.SetValue("MachineUNIQUEID", pcname);
                 key.Close();
             }
-            SQLComboBox.Text = "Seçiniz.....!";
-            if (System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed)
-            {
-                System.Deployment.Application.ApplicationDeployment ad = System.Deployment.Application.ApplicationDeployment.CurrentDeployment;
-                lblversion.Text = "Version : " + ad.CurrentVersion.Major + "." + ad.CurrentVersion.Minor + "." + ad.CurrentVersion.Build + "." + ad.CurrentVersion.Revision;
-                version = ad.CurrentVersion.Revision.ToString();
-            }
+
+            string _s4 = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString(); // versiyon
+            string _s5 = System.Reflection.Assembly.GetExecutingAssembly().GetName().CultureInfo.ToString(); // kültür bilgisi
+            string _s6 = System.Reflection.Assembly.GetEntryAssembly().GetName().Name.ToString(); // proje adı
+            string _s7 = ((AssemblyCompanyAttribute)Attribute.GetCustomAttribute(Assembly.GetExecutingAssembly(), typeof(AssemblyCompanyAttribute), false)).Company; // şirket
+            string _s8 = ((AssemblyCopyrightAttribute)Attribute.GetCustomAttribute(Assembly.GetExecutingAssembly(), typeof(AssemblyCopyrightAttribute), false)).Copyright; // Copyright
             ManagementObjectSearcher query = new ManagementObjectSearcher("select * from Win32_ComputerSystem");
             ManagementObjectCollection queryCollection = query.Get();
             foreach (var item in queryCollection)
@@ -91,14 +137,13 @@ namespace Entegref
                 pcİsmi = item["name"].ToString();
             }
             ipAdresi = GetLocalIPAddress();
+            GetMachineNameFromIPAddress(ipAdresi);
+            //var webClient = new WebClient();
 
-            var webClient = new WebClient();
+            ////dnsString = webClient.DownloadString("http://checkip.dyndns.org");
+            ////dnsString = (new Regex(@"\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b")).Match(dnsString).Value;
 
-            //dnsString = webClient.DownloadString("http://checkip.dyndns.org");
-            //dnsString = (new Regex(@"\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b")).Match(dnsString).Value;
-
-            webClient.Dispose();
-
+            //webClient.Dispose();
             bunifupassword.ForeColor = SystemColors.GrayText;
             bunifupassword.Text = "Parola";
             this.bunifupassword.Leave += new System.EventHandler(this.ultraTextEditor1_Leave);
@@ -119,22 +164,53 @@ namespace Entegref
             }
             return machineName;
         }
+        DataTable database;
         void Datasource()
         {
+            //RegistryKey reg = (Registry.CurrentUser).OpenSubKey("Software");
+            //reg = reg.OpenSubKey("ODBC");
+            //reg = reg.OpenSubKey("ODBC.INI");
+            //reg = reg.OpenSubKey("ODBC Data Sources");
 
-            RegistryKey reg = (Registry.LocalMachine).OpenSubKey("Software");
-            reg = reg.OpenSubKey("ODBC");
-            reg = reg.OpenSubKey("ODBC.INI");
-            reg = reg.OpenSubKey("ODBC Data Sources");
-            if (reg != null)
+            //RegistryKey key2 = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources");
+            //if (reg != null)
+            //{
+
+            //    foreach (string name in reg.GetValueNames())
+            //    {
+
+            //        string registrykey = reg.GetValue(name, "").ToString();
+            //        if (registrykey == "SQL Server")
+            //        {
+            //            SQLComboBox.Items.Add(name);
+            //        }
+
+            //    }
+            //}
+            if (database != null)
             {
-                foreach (string name in reg.GetValueNames())
+                if (database.Rows.Count > 0)
                 {
-                    string registrykey = reg.GetValue(name, "").ToString();
-                    SQLComboBox.Items.Add(name);
+
                 }
             }
-
+            else
+            {
+                database = SqlDataSourceEnumerator.Instance.GetDataSources();
+                foreach (DataRow serverRow in database.Rows)
+                {
+                    if (serverRow[database.Columns["InstanceName"]].ToString() == "")
+                    {
+                        SQLComboBox.Items.Add(serverRow[database.Columns["ServerName"]].ToString());
+                    }
+                    else
+                    {
+                        SQLComboBox.Items.Add(serverRow[database.Columns["ServerName"]].ToString() + "\\" +
+                                            (serverRow[database.Columns["InstanceName"]].ToString()));
+                    }
+                }
+            }
+            
         }
         private void label3_Click(object sender, EventArgs e)
         {
@@ -161,24 +237,28 @@ namespace Entegref
         {
             Save_data();
 
-            //var dt = conn.DfQuery("Portal_login_new", param);
 
-            //if (dt.Rows.Count == 0)
-            //{
-            //    XtraMessageBox.Show("Kullanıcı bilgilerini kontrol edip tekar deneyiniz.");
-            //    return;
-            //}
-            //else
-            //{
-                
-            //    if (loginok == true)
-            //    {
-            //        this.Hide();
-            //    }
+            Dictionary<string, string> param = new Dictionary<string, string>();
+            param.Add("@user", bunifuUserName.Text);
+            param.Add("@Parola", bunifupassword.Text);
+            var dt = conn.DfQuery("Login", param);
+            loginok = true;
+            if (dt.Rows.Count == 0)
+            {
+                XtraMessageBox.Show("Kullanıcı bilgilerini kontrol edip tekar deneyiniz.");
+                return;
+            }
+            else
+            {
 
-            //    frmMain form = new frmMain();
-            //    form.ShowDialog();
-            //}
+                //if (loginok == true)
+                //{
+                //    this.Hide();
+                //}
+                this.Hide();
+                frmMain form = new frmMain();
+                form.ShowDialog();
+            }
 
         }
 
@@ -255,6 +335,30 @@ namespace Entegref
             {
                 bunifupassword.Text = "";
                 bunifupassword.ForeColor = SystemColors.WindowText;
+            }
+        }
+
+        private void SQLComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        }
+        bool dbchange = false;
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (dbchange == false)
+            {
+                SQLComboBox.Enabled = true;
+                dbchange = true;
+                SQLComboBox.Text = "Seciniz.......!";
+                Datasource();
+                button3.Text = "Entegreg'e Ayarla";
+            }
+            else
+            {
+                SQLComboBox.Text = "Entegref Server";
+                SQLComboBox.Enabled = false;
+                dbchange = false;
+                button3.Text = "Database Değiştir";
+
             }
         }
     }
