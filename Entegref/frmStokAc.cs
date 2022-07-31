@@ -58,6 +58,7 @@ namespace Entegref
 
         private void frmStokAc_Load(object sender, EventArgs e)
         {
+            panel2.Enabled = false;
             cmbBirim1.DisplayMember = "sAciklama";
             cmbBirim1.ValueMember = "sBirimCinsi";
             cmbBirim2.DisplayMember = "sAciklama";
@@ -94,7 +95,7 @@ namespace Entegref
             if (nStokID == null)
             {
                 ultraTabControl1.VisibleTabs[1].Visible = false;
-                ultraTabControl1.VisibleTabs[2].Visible =false;
+                ultraTabControl1.VisibleTabs[2].Visible = false;
                 ultraTabControl1.VisibleTabs[3].Visible = false;
             }
         }
@@ -149,6 +150,7 @@ namespace Entegref
 
         private void ultraButton3_Click(object sender, EventArgs e)
         {
+            panel2.Enabled = true;
             if (connection.State == ConnectionState.Closed)
             {
                 connection.Open();
@@ -159,22 +161,23 @@ namespace Entegref
             DataTable dt = new DataTable();
             ad.Fill(dt);
             connection.Close();
-            nStokID = dt.Rows[0]["nStokID"].ToString();
-            bunifuCustomTextbox1.Text = dt.Rows[0]["sAciklama"].ToString();
-            cmbBirim1.Text = dt.Rows[0]["sBirimCinsi1"].ToString();
-            cmbBirim2.Text = dt.Rows[0]["sBirimCinsi2"].ToString();
-            cmbKDV.Text = dt.Rows[0]["sKdvTipi"].ToString();
-            bunifuCustomTextbox1.Text = dt.Rows[0]["sAciklama"].ToString();
+            if (dt.Rows.Count > 0)
+            {
+                nStokID = dt.Rows[0]["nStokID"].ToString();
+                bunifuCustomTextbox1.Text = dt.Rows[0]["sAciklama"].ToString();
+                cmbBirim1.Text = dt.Rows[0]["sBirimCinsi1"].ToString();
+                cmbBirim2.Text = dt.Rows[0]["sBirimCinsi2"].ToString();
+                cmbKDV.Text = dt.Rows[0]["sKdvTipi"].ToString();
+                bunifuCustomTextbox1.Text = dt.Rows[0]["sAciklama"].ToString();
+            }
             btnStokBul.Enabled = false;
             ultraButton1.Enabled = false;
             ultraButton2.Enabled = false;
             simpleButton3.Enabled = false;
-            if (nStokID != null)
-            {
-                ultraTabControl1.VisibleTabs[1].Visible = true;
-                ultraTabControl1.VisibleTabs[2].Visible = true;
-                ultraTabControl1.VisibleTabs[3].Visible = true;
-            }
+            ultraTabControl1.VisibleTabs[1].Visible = true;
+            ultraTabControl1.VisibleTabs[2].Visible = true;
+            ultraTabControl1.VisibleTabs[3].Visible = true;
+            
 
             //XtraMessageBox.Show("Kaydetildi");
         }
@@ -764,6 +767,43 @@ namespace Entegref
         {
             frmRenk frm = new frmRenk();
             frm.ShowDialog();
+        }
+
+        private void btnYeni_Click(object sender, EventArgs e)
+        {
+            txtStokKodu.Text = null;
+            sKodu = null;
+            bunifuCustomTextbox1.Text = null;
+            bunifuCustomTextbox2.Text = null;
+            bunifuCustomTextbox3.Text = null;
+            lblFiyattipi.Visible = false;
+            nStokID = null;
+            ultraTabControl1.VisibleTabs[1].Visible = false;
+            ultraTabControl1.VisibleTabs[2].Visible = false;
+            ultraTabControl1.VisibleTabs[3].Visible = false;
+            btnStokBul.Enabled = true;
+            ultraButton1.Enabled = true;
+            ultraButton2.Enabled = true;
+            simpleButton3.Enabled = true;
+            frmStokAc_Load(null, null);
+            sKodu = null;
+            sFiyatTipi = null;
+            sinifsira1 = null;
+            sinifsira2 = null;
+            sinifsira3 = null;
+            sinifsira4 = null;
+            sinifsira5 = null;
+            sinifsira6 = null;
+            Fiyatlandirma = null;
+            Beden = null;
+            Kavala = null;
+
+            sinif1.Clear();
+            sinif2.Clear();
+            sinif3.Clear();
+            sinif4.Clear();
+            sinif5.Clear();
+            sinif6.Clear();
         }
     }
 }

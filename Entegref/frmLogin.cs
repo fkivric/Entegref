@@ -58,15 +58,13 @@ namespace Entegref
         private string pcİsmi;
         private string ipAdresi;
 
-
         private void frmLogin_Load(object sender, EventArgs e)
         {
-
+            timer1.Start();
             SKGL.Validate validate = new SKGL.Validate();
             validate.secretPhase = VKN;
             validate.Key = Properties.Settings.Default.SecretPhase;
-            txtLisansing.Text = "Başlanğıç Tarihi:" + validate.CreationDate + "\r\n" + "Sona Erme Tarihi:" + validate.ExpireDate + "\r\n" + "Kalan Gün:" + validate.DaysLeft;
-            
+            txtLisansing.Text = "Başlanğıç Tarihi:" + validate.CreationDate.ToShortDateString() + "\r\n" + "Sona Erme Tarihi:" + validate.ExpireDate.ToShortDateString() + "\r\n" + "Kalan Gün:" + validate.DaysLeft;
 
             if (System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed)
             {
@@ -242,7 +240,6 @@ namespace Entegref
             param.Add("@user", bunifuUserName.Text);
             param.Add("@Parola", bunifupassword.Text);
             var dt = conn.DfQuery("Login", param);
-            loginok = true;
             if (dt.Rows.Count == 0)
             {
                 XtraMessageBox.Show("Kullanıcı bilgilerini kontrol edip tekar deneyiniz.");
@@ -250,14 +247,15 @@ namespace Entegref
             }
             else
             {
-
-                //if (loginok == true)
-                //{
-                //    this.Hide();
-                //}
-                this.Hide();
-                frmMain form = new frmMain();
-                form.ShowDialog();
+                loginok = true;
+                if (loginok == true)
+                {
+                    this.Hide();
+                    frmMain form = new frmMain();
+                    form.ShowDialog();
+                }
+                this.Close();
+                this.Dispose();
             }
 
         }
@@ -360,6 +358,12 @@ namespace Entegref
                 button3.Text = "Database Değiştir";
 
             }
+        }
+        int saniye = 0;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            saniye++;
+            lblSaniye.Text = DateTime.Now.ToLongTimeString();
         }
     }
 }

@@ -46,6 +46,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.lblKavala = new System.Windows.Forms.Label();
             this.lblBeden = new System.Windows.Forms.Label();
@@ -110,15 +111,6 @@
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
-            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.pnlTopluFiyat = new System.Windows.Forms.Panel();
             this.gridTopluFiyat = new DevExpress.XtraGrid.GridControl();
             this.ViewTopluFiyat = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -148,10 +140,6 @@
             this.txtFileAdress = new System.Windows.Forms.TextBox();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.dropDownButton2 = new DevExpress.XtraEditors.DropDownButton();
-            this.popupislem = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.imgButonResimleri_32 = new System.Windows.Forms.ImageList(this.components);
-            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.ultraTabControl1 = new Infragistics.Win.UltraWinTabControl.UltraTabControl();
@@ -166,9 +154,12 @@
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
-            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
-            this.ultraPeekPopup1 = new Infragistics.Win.Misc.UltraPeekPopup(this.components);
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.btnSil = new DevExpress.XtraEditors.SimpleButton();
+            this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
+            this.btnKaydet = new DevExpress.XtraEditors.SimpleButton();
+            this.panelControl6 = new DevExpress.XtraEditors.PanelControl();
+            this.btnYeni = new DevExpress.XtraEditors.SimpleButton();
             this.ultraTabPageControl1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -182,7 +173,6 @@
             this.ultraTabPageControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridFiyatlar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ViewFiyatlar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             this.pnlTopluFiyat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridTopluFiyat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ViewTopluFiyat)).BeginInit();
@@ -195,8 +185,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel5.SuspendLayout();
             this.pnlUrunResimbtn.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.popupislem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
@@ -206,8 +194,12 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
             this.panelControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraPeekPopup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+            this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).BeginInit();
+            this.panelControl5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).BeginInit();
+            this.panelControl6.SuspendLayout();
             this.SuspendLayout();
             // 
             // ultraTabPageControl1
@@ -284,6 +276,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(965, 236);
             this.panel2.TabIndex = 0;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(101, 206);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(180, 17);
+            this.checkBox2.TabIndex = 6;
+            this.checkBox2.Text = "Ürün Satışta Eksiye Düşebilsin";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // checkBox1
             // 
@@ -816,7 +819,6 @@
             this.gridFiyatlar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridFiyatlar.Location = new System.Drawing.Point(0, 252);
             this.gridFiyatlar.MainView = this.ViewFiyatlar;
-            this.gridFiyatlar.MenuManager = this.barManager1;
             this.gridFiyatlar.Name = "gridFiyatlar";
             this.gridFiyatlar.Size = new System.Drawing.Size(965, 278);
             this.gridFiyatlar.TabIndex = 0;
@@ -883,82 +885,6 @@
             this.gridColumn5.Visible = true;
             this.gridColumn5.VisibleIndex = 3;
             // 
-            // barManager1
-            // 
-            this.barManager1.DockControls.Add(this.barDockControlTop);
-            this.barManager1.DockControls.Add(this.barDockControlBottom);
-            this.barManager1.DockControls.Add(this.barDockControlLeft);
-            this.barManager1.DockControls.Add(this.barDockControlRight);
-            this.barManager1.Form = this;
-            this.barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.barButtonItem1,
-            this.barButtonItem2,
-            this.barButtonItem3,
-            this.barButtonItem4});
-            this.barManager1.MaxItemId = 4;
-            // 
-            // barDockControlTop
-            // 
-            this.barDockControlTop.CausesValidation = false;
-            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(1138, 0);
-            // 
-            // barDockControlBottom
-            // 
-            this.barDockControlBottom.CausesValidation = false;
-            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 638);
-            this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(1138, 0);
-            // 
-            // barDockControlLeft
-            // 
-            this.barDockControlLeft.CausesValidation = false;
-            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 638);
-            // 
-            // barDockControlRight
-            // 
-            this.barDockControlRight.CausesValidation = false;
-            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1138, 0);
-            this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 638);
-            // 
-            // barButtonItem1
-            // 
-            this.barButtonItem1.Caption = "Fiyat Gir";
-            this.barButtonItem1.Id = 0;
-            this.barButtonItem1.ImageOptions.Image = global::Entegref.Properties.Resources.currency_16x161;
-            this.barButtonItem1.ImageOptions.LargeImage = global::Entegref.Properties.Resources.currency_32x321;
-            this.barButtonItem1.Name = "barButtonItem1";
-            // 
-            // barButtonItem2
-            // 
-            this.barButtonItem2.Caption = "Fiyat Fipi Aç";
-            this.barButtonItem2.Id = 1;
-            this.barButtonItem2.ImageOptions.Image = global::Entegref.Properties.Resources.financial_16x16;
-            this.barButtonItem2.ImageOptions.LargeImage = global::Entegref.Properties.Resources.financial_32x32;
-            this.barButtonItem2.Name = "barButtonItem2";
-            // 
-            // barButtonItem3
-            // 
-            this.barButtonItem3.Caption = "Yeni";
-            this.barButtonItem3.Id = 2;
-            this.barButtonItem3.Name = "barButtonItem3";
-            this.barButtonItem3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem3_ItemClick);
-            // 
-            // barButtonItem4
-            // 
-            this.barButtonItem4.Caption = "Kaydet";
-            this.barButtonItem4.Id = 3;
-            this.barButtonItem4.Name = "barButtonItem4";
-            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
-            // 
             // pnlTopluFiyat
             // 
             this.pnlTopluFiyat.Controls.Add(this.gridTopluFiyat);
@@ -974,7 +900,6 @@
             this.gridTopluFiyat.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridTopluFiyat.Location = new System.Drawing.Point(0, 0);
             this.gridTopluFiyat.MainView = this.ViewTopluFiyat;
-            this.gridTopluFiyat.MenuManager = this.barManager1;
             this.gridTopluFiyat.Name = "gridTopluFiyat";
             this.gridTopluFiyat.Size = new System.Drawing.Size(965, 152);
             this.gridTopluFiyat.TabIndex = 0;
@@ -1112,7 +1037,6 @@
             this.dteYeniFiyat.EditValue = null;
             this.dteYeniFiyat.Enabled = false;
             this.dteYeniFiyat.Location = new System.Drawing.Point(136, 66);
-            this.dteYeniFiyat.MenuManager = this.barManager1;
             this.dteYeniFiyat.Name = "dteYeniFiyat";
             this.dteYeniFiyat.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -1251,45 +1175,11 @@
             this.simpleButton1.Text = "Resim Seç";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
-            // dropDownButton2
-            // 
-            this.dropDownButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dropDownButton2.DropDownControl = this.popupislem;
-            this.dropDownButton2.ImageOptions.Image = global::Entegref.Properties.Resources.about_32x32;
-            this.dropDownButton2.Location = new System.Drawing.Point(806, 0);
-            this.dropDownButton2.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Style3D;
-            this.dropDownButton2.Name = "dropDownButton2";
-            this.dropDownButton2.Size = new System.Drawing.Size(156, 39);
-            this.dropDownButton2.TabIndex = 33;
-            this.dropDownButton2.Text = "İşlem";
-            // 
-            // popupislem
-            // 
-            this.popupislem.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem3),
-            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem4)});
-            this.popupislem.Manager = this.barManager1;
-            this.popupislem.Name = "popupislem";
-            // 
-            // imgButonResimleri_32
-            // 
-            this.imgButonResimleri_32.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imgButonResimleri_32.ImageSize = new System.Drawing.Size(32, 32);
-            this.imgButonResimleri_32.TransparentColor = System.Drawing.Color.Transparent;
-            // 
-            // popupMenu1
-            // 
-            this.popupMenu1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem2)});
-            this.popupMenu1.Manager = this.barManager1;
-            this.popupMenu1.Name = "popupMenu1";
-            // 
             // panelControl2
             // 
-            this.panelControl2.Controls.Add(this.dropDownButton2);
+            this.panelControl2.Controls.Add(this.panelControl1);
+            this.panelControl2.Controls.Add(this.panelControl5);
+            this.panelControl2.Controls.Add(this.panelControl6);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelControl2.Location = new System.Drawing.Point(0, 599);
             this.panelControl2.Name = "panelControl2";
@@ -1460,20 +1350,68 @@
             this.simpleButton5.Text = "Renk";
             this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
             // 
-            // ultraPeekPopup1
+            // panelControl1
             // 
-            this.ultraPeekPopup1.Caption = null;
+            this.panelControl1.Controls.Add(this.btnSil);
+            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelControl1.Location = new System.Drawing.Point(735, 2);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(401, 35);
+            this.panelControl1.TabIndex = 2;
             // 
-            // checkBox2
+            // btnSil
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(101, 206);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(180, 17);
-            this.checkBox2.TabIndex = 6;
-            this.checkBox2.Text = "Ürün Satışta Eksiye Düşebilsin";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.btnSil.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
+            this.btnSil.Appearance.Options.UseBackColor = true;
+            this.btnSil.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnSil.ImageOptions.Image = global::Entegref.Properties.Resources.clear_32x32;
+            this.btnSil.Location = new System.Drawing.Point(2, 2);
+            this.btnSil.Name = "btnSil";
+            this.btnSil.Size = new System.Drawing.Size(124, 31);
+            this.btnSil.TabIndex = 0;
+            this.btnSil.Text = "Sil";
+            // 
+            // panelControl5
+            // 
+            this.panelControl5.Controls.Add(this.btnKaydet);
+            this.panelControl5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelControl5.Location = new System.Drawing.Point(462, 2);
+            this.panelControl5.Name = "panelControl5";
+            this.panelControl5.Size = new System.Drawing.Size(674, 35);
+            this.panelControl5.TabIndex = 3;
+            // 
+            // btnKaydet
+            // 
+            this.btnKaydet.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
+            this.btnKaydet.Appearance.Options.UseBackColor = true;
+            this.btnKaydet.ImageOptions.Image = global::Entegref.Properties.Resources.save_32x32;
+            this.btnKaydet.Location = new System.Drawing.Point(73, 3);
+            this.btnKaydet.Name = "btnKaydet";
+            this.btnKaydet.Size = new System.Drawing.Size(124, 35);
+            this.btnKaydet.TabIndex = 0;
+            this.btnKaydet.Text = "Kaydet";
+            // 
+            // panelControl6
+            // 
+            this.panelControl6.Controls.Add(this.btnYeni);
+            this.panelControl6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelControl6.Location = new System.Drawing.Point(2, 2);
+            this.panelControl6.Name = "panelControl6";
+            this.panelControl6.Size = new System.Drawing.Size(460, 35);
+            this.panelControl6.TabIndex = 4;
+            // 
+            // btnYeni
+            // 
+            this.btnYeni.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Primary;
+            this.btnYeni.Appearance.Options.UseBackColor = true;
+            this.btnYeni.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnYeni.ImageOptions.Image = global::Entegref.Properties.Resources.new_32x325;
+            this.btnYeni.Location = new System.Drawing.Point(334, 2);
+            this.btnYeni.Name = "btnYeni";
+            this.btnYeni.Size = new System.Drawing.Size(124, 31);
+            this.btnYeni.TabIndex = 0;
+            this.btnYeni.Text = "Yeni";
+            this.btnYeni.Click += new System.EventHandler(this.btnYeni_Click);
             // 
             // frmStokAc
             // 
@@ -1483,10 +1421,6 @@
             this.Controls.Add(this.panelControl3);
             this.Controls.Add(this.panelControl4);
             this.Controls.Add(this.panelControl2);
-            this.Controls.Add(this.barDockControlLeft);
-            this.Controls.Add(this.barDockControlRight);
-            this.Controls.Add(this.barDockControlBottom);
-            this.Controls.Add(this.barDockControlTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "frmStokAc";
@@ -1508,7 +1442,6 @@
             this.ultraTabPageControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridFiyatlar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ViewFiyatlar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             this.pnlTopluFiyat.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridTopluFiyat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ViewTopluFiyat)).EndInit();
@@ -1524,8 +1457,6 @@
             this.panel5.PerformLayout();
             this.pnlUrunResimbtn.ResumeLayout(false);
             this.pnlUrunResimbtn.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.popupislem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
@@ -1536,10 +1467,13 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
             this.panelControl4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraPeekPopup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
+            this.panelControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).EndInit();
+            this.panelControl5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).EndInit();
+            this.panelControl6.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -1598,15 +1532,7 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private System.Windows.Forms.Label label14;
-        private DevExpress.XtraBars.PopupMenu popupMenu1;
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
-        private DevExpress.XtraBars.BarManager barManager1;
-        private DevExpress.XtraBars.BarDockControl barDockControlTop;
-        private DevExpress.XtraBars.BarDockControl barDockControlBottom;
-        private DevExpress.XtraBars.BarDockControl barDockControlLeft;
-        private DevExpress.XtraBars.BarDockControl barDockControlRight;
         private DevExpress.XtraGrid.GridControl gridFiyatlar;
         private DevExpress.XtraGrid.Views.Grid.GridView ViewFiyatlar;
         private System.Windows.Forms.Panel panel4;
@@ -1627,14 +1553,9 @@
         private DevExpress.XtraGrid.Columns.GridColumn TopluFiyatldteFiyatTespitTarihi;
         private DevExpress.XtraGrid.Columns.GridColumn TopluFiyatlFiyat;
         private DevExpress.XtraGrid.Columns.GridColumn TopluFiyatYeniFiyat;
-        private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
         private DevExpress.XtraEditors.RadioGroup grpFTipiSec;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.ImageList imgButonResimleri_32;
-        private Infragistics.Win.Misc.UltraPeekPopup ultraPeekPopup1;
-        private DevExpress.XtraBars.PopupMenu popupislem;
-        private DevExpress.XtraEditors.DropDownButton dropDownButton2;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ComboBox comboBox17;
@@ -1667,11 +1588,15 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
         private DevExpress.XtraEditors.SimpleButton simpleButton5;
         private DevExpress.XtraEditors.SimpleButton simpleButton6;
         private System.Windows.Forms.CheckBox checkBox2;
+        private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.XtraEditors.SimpleButton btnSil;
+        private DevExpress.XtraEditors.PanelControl panelControl5;
+        private DevExpress.XtraEditors.SimpleButton btnKaydet;
+        private DevExpress.XtraEditors.PanelControl panelControl6;
+        private DevExpress.XtraEditors.SimpleButton btnYeni;
         //private GridControl gridStokFiyat;
         //private GridView ViewStokFiyat;
         //private GridColumn gridColumn1;

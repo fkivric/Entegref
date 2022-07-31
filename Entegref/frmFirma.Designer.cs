@@ -137,9 +137,9 @@
             // 
             this.ultraTabPageControl1.Controls.Add(this.panel3);
             this.ultraTabPageControl1.Controls.Add(this.panel2);
-            this.ultraTabPageControl1.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl1.Location = new System.Drawing.Point(1, 23);
             this.ultraTabPageControl1.Name = "ultraTabPageControl1";
-            this.ultraTabPageControl1.Size = new System.Drawing.Size(965, 541);
+            this.ultraTabPageControl1.Size = new System.Drawing.Size(965, 540);
             // 
             // panel3
             // 
@@ -154,7 +154,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 487);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(965, 54);
+            this.panel3.Size = new System.Drawing.Size(965, 53);
             this.panel3.TabIndex = 1;
             // 
             // label11
@@ -162,7 +162,7 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(770, 7);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(149, 13);
+            this.label11.Size = new System.Drawing.Size(157, 13);
             this.label11.TabIndex = 1;
             this.label11.Text = "Risk (Teminat Mektubu Varsa)";
             // 
@@ -171,7 +171,7 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(591, 7);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(26, 13);
+            this.label10.Size = new System.Drawing.Size(28, 13);
             this.label10.TabIndex = 1;
             this.label10.Text = "Risk";
             // 
@@ -180,7 +180,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(327, 7);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(75, 13);
+            this.label9.Size = new System.Drawing.Size(80, 13);
             this.label9.TabIndex = 1;
             this.label9.Text = "Toplam Alacak";
             // 
@@ -189,7 +189,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(92, 7);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 13);
+            this.label8.Size = new System.Drawing.Size(69, 13);
             this.label8.TabIndex = 1;
             this.label8.Text = "Toplam Borç";
             // 
@@ -203,7 +203,7 @@
             this.textBox4.Location = new System.Drawing.Point(734, 23);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(221, 21);
+            this.textBox4.Size = new System.Drawing.Size(221, 22);
             this.textBox4.TabIndex = 0;
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -217,7 +217,7 @@
             this.textBox3.Location = new System.Drawing.Point(494, 23);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(221, 21);
+            this.textBox3.Size = new System.Drawing.Size(221, 22);
             this.textBox3.TabIndex = 0;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -231,7 +231,7 @@
             this.textBox2.Location = new System.Drawing.Point(254, 23);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(221, 21);
+            this.textBox2.Size = new System.Drawing.Size(221, 22);
             this.textBox2.TabIndex = 0;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -245,7 +245,7 @@
             this.textBox1.Location = new System.Drawing.Point(14, 23);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(221, 21);
+            this.textBox1.Size = new System.Drawing.Size(221, 22);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -402,7 +402,7 @@
             this.maskedTextBox1.Location = new System.Drawing.Point(663, 116);
             this.maskedTextBox1.Mask = "000%";
             this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(34, 21);
+            this.maskedTextBox1.Size = new System.Drawing.Size(34, 22);
             this.maskedTextBox1.TabIndex = 31;
             this.maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -411,7 +411,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(7, 115);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.Size = new System.Drawing.Size(38, 13);
             this.label7.TabIndex = 30;
             this.label7.Text = "Sokak";
             // 
@@ -420,7 +420,7 @@
             this.label21.AutoSize = true;
             this.label21.Location = new System.Drawing.Point(521, 22);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(66, 13);
+            this.label21.Size = new System.Drawing.Size(71, 13);
             this.label21.TabIndex = 29;
             this.label21.Text = "Vergi Dairesi";
             // 
@@ -429,7 +429,7 @@
             this.label22.AutoSize = true;
             this.label22.Location = new System.Drawing.Point(521, 54);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(58, 13);
+            this.label22.Size = new System.Drawing.Size(63, 13);
             this.label22.TabIndex = 28;
             this.label22.Text = "Vergi Nosu";
             // 
@@ -437,7 +437,7 @@
             // 
             this.txtVergiDairesi.Location = new System.Drawing.Point(663, 17);
             this.txtVergiDairesi.Name = "txtVergiDairesi";
-            this.txtVergiDairesi.Size = new System.Drawing.Size(219, 22);
+            this.txtVergiDairesi.Size = new System.Drawing.Size(219, 24);
             this.txtVergiDairesi.TabIndex = 27;
             // 
             // ultraTextEditor1
@@ -445,7 +445,7 @@
             this.ultraTextEditor1.Location = new System.Drawing.Point(663, 82);
             this.ultraTextEditor1.MaxLength = 11;
             this.ultraTextEditor1.Name = "ultraTextEditor1";
-            this.ultraTextEditor1.Size = new System.Drawing.Size(218, 22);
+            this.ultraTextEditor1.Size = new System.Drawing.Size(218, 24);
             this.ultraTextEditor1.TabIndex = 26;
             // 
             // txtVKN
@@ -453,7 +453,7 @@
             this.txtVKN.Location = new System.Drawing.Point(664, 49);
             this.txtVKN.MaxLength = 11;
             this.txtVKN.Name = "txtVKN";
-            this.txtVKN.Size = new System.Drawing.Size(218, 22);
+            this.txtVKN.Size = new System.Drawing.Size(218, 24);
             this.txtVKN.TabIndex = 26;
             // 
             // comboBox1
@@ -490,7 +490,7 @@
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(7, 152);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(71, 13);
+            this.label15.Size = new System.Drawing.Size(77, 13);
             this.label15.TabIndex = 25;
             this.label15.Text = "Bina No  / Adı";
             // 
@@ -499,7 +499,7 @@
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(9, 154);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(35, 13);
+            this.label16.Size = new System.Drawing.Size(38, 13);
             this.label16.TabIndex = 24;
             this.label16.Text = "Sokak";
             // 
@@ -508,7 +508,7 @@
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(7, 78);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(84, 13);
+            this.label17.Size = new System.Drawing.Size(91, 13);
             this.label17.TabIndex = 23;
             this.label17.Text = "Mahalle / Cadde";
             // 
@@ -534,7 +534,7 @@
             // 
             this.txtBina.Location = new System.Drawing.Point(101, 148);
             this.txtBina.Name = "txtBina";
-            this.txtBina.Size = new System.Drawing.Size(329, 22);
+            this.txtBina.Size = new System.Drawing.Size(329, 24);
             this.txtBina.TabIndex = 20;
             this.txtBina.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ultraTextEditor7_KeyPress);
             // 
@@ -542,7 +542,7 @@
             // 
             this.txtSokak.Location = new System.Drawing.Point(101, 115);
             this.txtSokak.Name = "txtSokak";
-            this.txtSokak.Size = new System.Drawing.Size(329, 22);
+            this.txtSokak.Size = new System.Drawing.Size(329, 24);
             this.txtSokak.TabIndex = 19;
             this.txtSokak.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ultraTextEditor6_KeyPress);
             // 
@@ -550,7 +550,7 @@
             // 
             this.txtCadde.Location = new System.Drawing.Point(101, 82);
             this.txtCadde.Name = "txtCadde";
-            this.txtCadde.Size = new System.Drawing.Size(329, 22);
+            this.txtCadde.Size = new System.Drawing.Size(329, 24);
             this.txtCadde.TabIndex = 18;
             this.txtCadde.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ultraTextEditor5_KeyPress);
             // 
@@ -559,7 +559,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(7, 182);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 13);
+            this.label4.Size = new System.Drawing.Size(39, 13);
             this.label4.TabIndex = 4;
             this.label4.Text = "Adres ";
             // 
@@ -568,7 +568,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(521, 153);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(103, 13);
+            this.label6.Size = new System.Drawing.Size(110, 13);
             this.label6.TabIndex = 4;
             this.label6.Text = "Firma Özel Fiyat Tipi";
             // 
@@ -577,7 +577,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(521, 120);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 13);
+            this.label5.Size = new System.Drawing.Size(113, 13);
             this.label5.TabIndex = 4;
             this.label5.Text = "Özel İskonto Yüzdesi";
             // 
@@ -586,7 +586,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(522, 87);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 13);
+            this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Özel Not";
             // 
@@ -595,7 +595,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(7, 22);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 13);
+            this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Ürün Adı";
             // 
@@ -615,20 +615,20 @@
             this.bunifuCustomTextbox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.bunifuCustomTextbox1.Location = new System.Drawing.Point(101, 18);
             this.bunifuCustomTextbox1.Name = "bunifuCustomTextbox1";
-            this.bunifuCustomTextbox1.Size = new System.Drawing.Size(411, 21);
+            this.bunifuCustomTextbox1.Size = new System.Drawing.Size(411, 22);
             this.bunifuCustomTextbox1.TabIndex = 1;
             // 
             // ultraTabPageControl2
             // 
-            this.ultraTabPageControl2.Location = new System.Drawing.Point(1, 22);
+            this.ultraTabPageControl2.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl2.Name = "ultraTabPageControl2";
-            this.ultraTabPageControl2.Size = new System.Drawing.Size(965, 541);
+            this.ultraTabPageControl2.Size = new System.Drawing.Size(965, 540);
             // 
             // ultraTabPageControl3
             // 
             this.ultraTabPageControl3.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl3.Name = "ultraTabPageControl3";
-            this.ultraTabPageControl3.Size = new System.Drawing.Size(965, 541);
+            this.ultraTabPageControl3.Size = new System.Drawing.Size(965, 540);
             // 
             // ultraTabPageControl4
             // 
@@ -637,14 +637,14 @@
             this.ultraTabPageControl4.Controls.Add(this.pnlUrunResimbtn);
             this.ultraTabPageControl4.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl4.Name = "ultraTabPageControl4";
-            this.ultraTabPageControl4.Size = new System.Drawing.Size(965, 541);
+            this.ultraTabPageControl4.Size = new System.Drawing.Size(965, 540);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(241, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(724, 494);
+            this.pictureBox1.Size = new System.Drawing.Size(724, 493);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -655,7 +655,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(0, 0);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(241, 494);
+            this.listBox1.Size = new System.Drawing.Size(241, 493);
             this.listBox1.TabIndex = 0;
             // 
             // pnlUrunResimbtn
@@ -664,7 +664,7 @@
             this.pnlUrunResimbtn.Controls.Add(this.simpleButton2);
             this.pnlUrunResimbtn.Controls.Add(this.simpleButton1);
             this.pnlUrunResimbtn.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlUrunResimbtn.Location = new System.Drawing.Point(0, 494);
+            this.pnlUrunResimbtn.Location = new System.Drawing.Point(0, 493);
             this.pnlUrunResimbtn.Name = "pnlUrunResimbtn";
             this.pnlUrunResimbtn.Size = new System.Drawing.Size(965, 47);
             this.pnlUrunResimbtn.TabIndex = 2;
@@ -673,7 +673,7 @@
             // 
             this.txtFileAdress.Location = new System.Drawing.Point(10, 17);
             this.txtFileAdress.Name = "txtFileAdress";
-            this.txtFileAdress.Size = new System.Drawing.Size(500, 21);
+            this.txtFileAdress.Size = new System.Drawing.Size(500, 22);
             this.txtFileAdress.TabIndex = 1;
             // 
             // simpleButton2
@@ -763,7 +763,7 @@
             // 
             this.ultraTabSharedControlsPage1.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabSharedControlsPage1.Name = "ultraTabSharedControlsPage1";
-            this.ultraTabSharedControlsPage1.Size = new System.Drawing.Size(965, 541);
+            this.ultraTabSharedControlsPage1.Size = new System.Drawing.Size(965, 540);
             // 
             // panel1
             // 
@@ -801,7 +801,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(4, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 13);
+            this.label1.Size = new System.Drawing.Size(65, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Firma Kodu";
             // 
@@ -810,7 +810,7 @@
             this.txtStokKodu.Location = new System.Drawing.Point(65, 11);
             this.txtStokKodu.MaxLength = 13;
             this.txtStokKodu.Name = "txtStokKodu";
-            this.txtStokKodu.Size = new System.Drawing.Size(261, 21);
+            this.txtStokKodu.Size = new System.Drawing.Size(261, 22);
             this.txtStokKodu.TabIndex = 1;
             // 
             // button1

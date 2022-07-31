@@ -42,6 +42,7 @@
     <Reference Include="DevExpress.Data.Desktop.v20.1" />
     <Reference Include="DevExpress.DataAccess.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v20.1" />
@@ -99,17 +100,17 @@
     <Reference Include="UIAutomationTypes" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAyarlarUrunGenel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAyarlarUrunGenel.Designer.cs">
+      <DependentUpon>frmAyarlarUrunGenel.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBarkod.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmBarkod.Designer.cs">
       <DependentUpon>frmBarkod.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="frmConfig.cs">
       <SubType>Form</SubType>
@@ -117,11 +118,11 @@
     <Compile Include="frmConfig.Designer.cs">
       <DependentUpon>frmConfig.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAyarlarDepo.cs">
+    <Compile Include="frmAyarlarMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAyarlarDepo.Designer.cs">
-      <DependentUpon>frmAyarlarDepo.cs</DependentUpon>
+    <Compile Include="frmAyarlarMain.Designer.cs">
+      <DependentUpon>frmAyarlarMain.cs</DependentUpon>
     </Compile>
     <Compile Include="frmFirma.cs">
       <SubType>Form</SubType>
@@ -217,17 +218,17 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlConnectionObject.cs" />
+    <EmbeddedResource Include="frmAyarlarUrunGenel.resx">
+      <DependentUpon>frmAyarlarUrunGenel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBarkod.resx">
       <DependentUpon>frmBarkod.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmConfig.resx">
       <DependentUpon>frmConfig.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAyarlarDepo.resx">
-      <DependentUpon>frmAyarlarDepo.cs</DependentUpon>
+    <EmbeddedResource Include="frmAyarlarMain.resx">
+      <DependentUpon>frmAyarlarMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFirma.resx">
       <DependentUpon>frmFirma.cs</DependentUpon>
@@ -336,6 +337,8 @@
     <None Include="Resources\loadpagesetup_32x32.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ID\RegistryKey.txt" />
+    <Content Include="ID\RegistryPath.txt" />
     <Content Include="Pictures\logo 150 tüm.png" />
     <Content Include="Pictures\logo bütün.png" />
     <Content Include="Pictures\logo yon transparan.png" />
@@ -347,6 +350,7 @@
     <Content Include="Pictures\logo_yon.png" />
     <Content Include="Pictures\logo_yon_new.png" />
     <Content Include="Pictures\logo_yon_new2.png" />
+    <None Include="Resources\find_32x32.png" />
     <None Include="Resources\Entegref %281%29.gif" />
     <None Include="Resources\perakende settings.png" />
     <None Include="Resources\online-shop-setting-icon-vector.jpg" />

@@ -52,7 +52,7 @@ namespace Entegref
                     break;
 
                 case "82":
-                    OpenForm(new frmAyarlarUrun());
+                    OpenForm(new frmDepoAyarları());
                     break;
             }
         }
@@ -72,6 +72,8 @@ namespace Entegref
                     args.Buttons = new DialogResult[] { DialogResult.OK };
                     args.AutoCloseOptions.ShowTimerOnDefaultButton = true;
                     XtraMessageBox.Show(args).ToString();
+                    toOpen.Close();
+                    toOpen.Dispose();
                     toOpen.Focus();
                 }
             }
