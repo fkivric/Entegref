@@ -667,7 +667,16 @@ namespace Entegref
             frmStokAc.sinifsira6 = sira6;
             frmStokAc.Fiyatlandirma = lblFiyat;
             frmStokAc.Beden = lblbeden;
-            frmStokAc.Kavala = lblkavala;
+            frmStokAc.BedenTipi = cmbBeden.SelectedValue.ToString();
+            if (chkRenk.Checked == true)
+            {
+                frmStokAc.Renk = true;
+            }
+            else
+            {
+                frmStokAc.Renk = false;
+            }
+            frmStokAc.Kavala = cmbKavala.SelectedValue.ToString();
             this.Close();
             this.Dispose();
         }

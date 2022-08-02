@@ -350,6 +350,9 @@
     <Content Include="Pictures\logo_yon.png" />
     <Content Include="Pictures\logo_yon_new.png" />
     <Content Include="Pictures\logo_yon_new2.png" />
+    <None Include="Resources\cancel_32x322.png" />
+    <None Include="Resources\redo_32x32.png" />
+    <None Include="Resources\cancel_32x321.png" />
     <None Include="Resources\find_32x32.png" />
     <None Include="Resources\Entegref %281%29.gif" />
     <None Include="Resources\perakende settings.png" />

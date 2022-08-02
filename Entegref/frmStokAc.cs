@@ -51,6 +51,8 @@ namespace Entegref
         public static string Fiyatlandirma;
         public static string Beden;
         public static string Kavala;
+        public static string BedenTipi;
+        public static bool Renk = false;
         public frmStokAc()
         {
             InitializeComponent();
@@ -222,6 +224,12 @@ namespace Entegref
                 lblKavala.Visible = true;
             }
             txtStokKodu.Text = sKodu;
+            if (Renk == true)
+            {
+                frmRenk renk = new frmRenk(Kavala, BedenTipi);
+                renk.TopLevel = true;
+                renk.ShowDialog();
+            }
         }
 
         private void ultraButton2_Click(object sender, EventArgs e)
@@ -765,7 +773,7 @@ namespace Entegref
 
         private void simpleButton5_Click(object sender, EventArgs e)
         {
-            frmRenk frm = new frmRenk();
+            frmRenk frm = new frmRenk(Kavala, BedenTipi);
             frm.ShowDialog();
         }
 

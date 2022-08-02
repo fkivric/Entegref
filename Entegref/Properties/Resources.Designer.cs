@@ -173,6 +173,26 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap cancel_32x321 {
+            get {
+                object obj = ResourceManager.GetObject("cancel_32x321", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap cancel_32x322 {
+            get {
+                object obj = ResourceManager.GetObject("cancel_32x322", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap clear_16x16 {
             get {
                 object obj = ResourceManager.GetObject("clear_16x16", resourceCulture);
@@ -486,6 +506,16 @@ namespace Entegref.Properties {
         internal static System.Drawing.Bitmap previewchart_32x32 {
             get {
                 object obj = ResourceManager.GetObject("previewchart_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap redo_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("redo_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
