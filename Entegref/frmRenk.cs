@@ -16,16 +16,17 @@ namespace Entegref
 {
     public partial class frmRenk : DevExpress.XtraEditors.XtraForm
     {
-        public string kavala;
-        public string beden;
+        public string kavalaTipi;
+        public string bedenTipi;
 
         private string hexValue;
         private int decValue;
+        renkbeden rnb;
 
         public frmRenk(string _kavala,string _beden)
         {
-            kavala = _kavala;
-            beden = _beden;
+            kavalaTipi = _kavala;
+            bedenTipi = _beden;
             InitializeComponent();
         }
         class Nebular
@@ -43,9 +44,12 @@ namespace Entegref
         private void frmRenk_Load(object sender, EventArgs e)
         {
             this.Width = 600;
-            GraphicsPath p = new GraphicsPath();
-            p.AddEllipse(1, 1, btnOk.Width - 4, btnOk.Height - 4);
-            btnOk.Region = new Region(p);
+            //GraphicsPath p = new GraphicsPath();
+            //GraphicsPath gp = new GraphicsPath();
+            //p.AddEllipse(1, 1, btnOk.Width - 4, btnOk.Height - 4);
+            //gp.AddEllipse(1, 1, btnCancel.Width - 4, btnCancel.Height - 4);
+            //btnOk.Region = new Region(p);
+            //btnCancel.Region = new Region(gp);
             Ekle();
             setUpEventHandlers();
         }
@@ -229,20 +233,20 @@ namespace Entegref
                 ultraPanel1.Enabled = false;
                 ultraPanel2.Enabled = false;
                 ultraPanel5.Visible = true;
-                ultraPanel6.Visible = true;
+                btnOk.Enabled = false;
 
                 Dictionary<string, string> Values = new Dictionary<string, string>();
-                if (kavala != null)
+                if (kavalaTipi != null)
                 {
-                    Values.Add("@sKavalaTipi", kavala);
+                    Values.Add("@sKavalaTipi", kavalaTipi);
                 }
                 else
                 {
                     Values.Add("@sKavalaTipi", "");
                 }
-                if (beden != null)
+                if (bedenTipi != null)
                 {
-                    Values.Add("@sBedenTipi", beden);
+                    Values.Add("@sBedenTipi", bedenTipi);
                 }
                 else
                 {
@@ -250,200 +254,53 @@ namespace Entegref
                 }
                 Values.Add("@sRenkKodu", secilirenkler);
                 var tablo = conn.DfQuery("UrunRenkBedenKavalaSec", Values);
-                int stun = 20-tablo.Columns.Count;
-                for (int i = 0; i < tablo.Columns.Count; i++)
-                {
-                    if (i == 5)
-                    {
-                        gridColumn5.Caption = tablo.Columns[i].ToString();
-                        gridColumn5.FieldName = tablo.Columns[i].ToString();
-                        repositoryItemCheckEdit1.ValueChecked = false;
-                    }
-                    if (i == 6)
-                    {
-                        gridColumn6.Caption = tablo.Columns[i].ToString();
-                        gridColumn6.FieldName = tablo.Columns[i].ToString();
-                        repositoryItemCheckEdit2.ValueChecked = false;
-                    }
-                    if (i == 7)
-                    {
-                        gridColumn7.Caption = tablo.Columns[i].ToString();
-                        gridColumn7.FieldName = tablo.Columns[i].ToString();
-                        repositoryItemCheckEdit3.ValueChecked = false;
-                    }
-                    if (i == 8)
-                    {
-                        if (tablo.Columns[i].ColumnName.ToString() == "")
-                        {
-                            gridColumn8.Visible = false;
-                        }
-                        else
-                        {
-                            gridColumn8.Caption = tablo.Columns[i].ToString();
-                            gridColumn8.FieldName = tablo.Columns[i].ToString();
-                        }
-                    }
-                    if (i == 9)
-                    {
-                        if (tablo.Columns[i].ColumnName.ToString() == "")
-                        {
-                            gridColumn9.Visible = false;
-                        }
-                        else
-                        {
-                            gridColumn9.Caption = tablo.Columns[i].ToString();
-                            gridColumn9.FieldName = tablo.Columns[i].ToString();
-                        }
-                    }
-                    if (i == 10)
-                    {
-                        if (tablo.Columns[i].ColumnName.ToString() == "")
-                        {
-                            gridColumn10.Visible = false;
-                        }
-                        else
-                        {
-                            gridColumn10.Caption = tablo.Columns[i].ToString();
-                            gridColumn10.FieldName = tablo.Columns[i].ToString();
-                        }
-                    }
-                    if (i == 11)
-                    {
-                        if (tablo.Columns[i].ColumnName.ToString() == "")
-                        {
-                            gridColumn11.Visible = false;
-                        }
-                        else
-                        {
-                            gridColumn11.Caption = tablo.Columns[i].ToString();
-                            gridColumn11.FieldName = tablo.Columns[i].ToString();
-                        }
-                    }
-                    if (i == 12)
-                    {
-                        if (tablo.Columns[i].ColumnName.ToString() == "")
-                        {
-                            gridColumn12.Visible = false;
-                        }
-                        else
-                        {
-                            gridColumn12.Caption = tablo.Columns[i].ToString();
-                            gridColumn12.FieldName = tablo.Columns[i].ToString();
-                        }
-                    }
-                    if (i == 13)
-                    {
-                        if (tablo.Columns[i].ColumnName.ToString() == "")
-                        {
-                            gridColumn13.Visible = false;
-                        }
-                        else
-                        {
-                            gridColumn13.Caption = tablo.Columns[i].ToString();
-                            gridColumn13.FieldName = tablo.Columns[i].ToString();
-                        }
-                    }
-                    if (i == 14)
-                    {
-                        if (tablo.Columns[i].ColumnName.ToString() == "")
-                        {
-                            gridColumn14.Visible = false;
-                        }
-                        else
-                        {
-                            gridColumn14.Caption = tablo.Columns[i].ToString();
-                            gridColumn14.FieldName = tablo.Columns[i].ToString();
-                        }
-                    }
-                    if (i == 15)
-                    {
-                        if (tablo.Columns[i].ColumnName.ToString() == "")
-                        {
-                            gridColumn15.Visible = false;
-                        }
-                        else
-                        {
-                            gridColumn15.Caption = tablo.Columns[i].ToString();
-                            gridColumn15.FieldName = tablo.Columns[i].ToString();
-                        }
-                    }
-                    if (i == 16)
-                    {
-                        if (tablo.Columns[i].ColumnName.ToString() == "")
-                        {
-                            gridColumn16.Visible = false;
-                        }
-                        else
-                        {
-                            gridColumn16.Caption = tablo.Columns[i].ToString();
-                            gridColumn16.FieldName = tablo.Columns[i].ToString();
-                        }
-                    }
-                    if (i == 17)
-                    {
-                        if (tablo.Columns[i].ColumnName.ToString() == "")
-                        {
-                            gridColumn17.Visible = false;
-                        }
-                        else
-                        {
-                            gridColumn17.Caption = tablo.Columns[i].ToString();
-                            gridColumn17.FieldName = tablo.Columns[i].ToString();
-                        }
-                    }
-                    if (i == 18)
-                    {
-                        if (tablo.Columns[i].ColumnName.ToString() == "")
-                        {
-                            gridColumn18.Visible = false;
-                        }
-                        else
-                        {
-                            gridColumn18.Caption = tablo.Columns[i].ToString();
-                            gridColumn18.FieldName = tablo.Columns[i].ToString();
-                        }
-                    }
-                    if (i == 19)
-                    {
-                        if (tablo.Columns[i].ColumnName.ToString() == "")
-                        {
-                            gridColumn19.Visible = false;
-                        }
-                        else
-                        {
-                            gridColumn19.Caption = tablo.Columns[i].ToString();
-                            gridColumn19.FieldName = tablo.Columns[i].ToString();
-                        }
-                    }
-                }
-                if (stun > 0)
-                {
-                    for (int i = 0; i < stun; i++)
-                    {
-                        if (i == 0)
-                        {
-                            gridColumn19.Visible = false;
-                        }
-                        if (i == 1)
-                        {
-                            gridColumn18.Visible = false;
-                        }
-                        if (i == 2)
-                        {
-                            gridColumn17.Visible = false;
-                        }
-                        if (i == 3)
-                        {
-                            gridColumn16.Visible = false;
-                        }
-                        if (i == 4)
-                        {
-                            gridColumn15.Visible = false;
-                        }
-                    }
-                }
-                gridControl1.DataSource = tablo;
+                dataGridView1.DataSource = tablo;
+                dataGridView1.AutoResizeColumns();
             }
+        }
+
+        private void simpleButton5_Click(object sender, EventArgs e)
+        {
+            for (int r = 0; r < dataGridView1.Rows.Count; r++)
+            {
+                var dd = frmStokAc.sinifsira1.IndexOf("-");
+                string bedensira;
+                int stoksayi=0;
+                var srenk = dataGridView1.Rows[r].Cells[0].Value.ToString();
+                var skavala = dataGridView1.Rows[r].Cells[3].Value.ToString().Replace(" ", "");
+                for (int c = 4; c < dataGridView1.ColumnCount; c++)
+                {
+                    var bedenvar = dataGridView1.Rows[r].Cells[c].Value.ToString();
+                    Dictionary<string, string> Renkler = new Dictionary<string, string>();
+                    if (bedenvar.ToString() == "True")
+                    {
+                        bedensira = dataGridView1.Columns[c].HeaderText.ToString();
+                        Renkler.Add("@sBeden" + (c - 3).ToString(), bedensira);
+                        stoksayi++;
+                    }
+                    else
+                    {
+                        Renkler.Add("@sBeden" + (c - 3).ToString(), "");
+                    }
+
+                    Renkler.Add("@sKodu", frmStokAc.sKodu.ToString());
+                    Renkler.Add("@bedenTipi", frmStokAc.BedenTipi);
+                    Renkler.Add("@sRenkKodu", srenk);
+                    Renkler.Add("@KavalaTipi", frmStokAc.Kavala);
+                    Renkler.Add("@Kavala", skavala);
+                    Renkler.Add("@sinif1", frmStokAc.sinifsira1.ToString().Substring(0, frmStokAc.sinifsira1.IndexOf("-")).Replace("00", ""));
+                    Renkler.Add("@sinif2", frmStokAc.sinifsira2.ToString().Substring(0, frmStokAc.sinifsira1.IndexOf("-")).Replace("00", ""));
+                    Renkler.Add("@sinif3", frmStokAc.sinifsira3.ToString().Substring(0, frmStokAc.sinifsira1.IndexOf("-")).Replace("00", ""));
+                    Renkler.Add("@sinif4", frmStokAc.sinifsira4.ToString().Substring(0, frmStokAc.sinifsira1.IndexOf("-")).Replace("00", ""));
+                    Renkler.Add("@sinif5", frmStokAc.sinifsira5.ToString().Substring(0, frmStokAc.sinifsira1.IndexOf("-")).Replace("00", ""));
+                    Renkler.Add("@sinif6", frmStokAc.sinifsira6.ToString().Substring(0, frmStokAc.sinifsira1.IndexOf("-")).Replace("00", ""));
+                    conn.DfInsert("", Renkler);
+                }
+                //Renkler.Add("", stoksayi.ToString());
+                //conn.DfInsert("", Renkler);
+
+            }
+
         }
     }
 }

@@ -8,6 +8,7 @@ using DevExpress.LookAndFeel;
 using System.Threading;
 using Microsoft.Win32;
 using System.Runtime.InteropServices;
+using System.Globalization;
 
 namespace Entegref
 {
@@ -20,6 +21,9 @@ namespace Entegref
         static void Main()
         {
             //selam yunus naber
+            DevExpress.Skins.SkinManager.EnableFormSkins();
+            //DevExpress.XtraEditors.WindowsFormsSettings.AllowDefaultSvgImages = DevExpress.Utils.DefaultBoolean.False;
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture("tr");
             RegistryKey key2 = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\Entegref");
 
             var sonuc = key2.GetValue("ApplicationSetupComplate");

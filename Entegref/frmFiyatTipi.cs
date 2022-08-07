@@ -13,9 +13,11 @@ namespace Entegref
 {
     public partial class frmFiyatTipi : Form
     {
-        public frmFiyatTipi()
+        string formname;
+        public frmFiyatTipi(string _formname)
         {
             InitializeComponent();
+            formname = _formname;
         }
         SqlConnection sql = new SqlConnection(Properties.Settings.Default.connectionstring);
         SqlConnectionObject conn = new SqlConnectionObject();
@@ -44,10 +46,12 @@ namespace Entegref
 
         private void ViewFiyatTipi_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
         {
-
             if (e.RowHandle >= 0 && e.Clicks == 2 && e.Button == MouseButtons.Left)
             {
-                frmStokAc.sFiyatTipi = ViewFiyatTipi.GetRowCellValue(e.RowHandle, "Fiyat Tipi").ToString();
+                if (formname == "frmStokAc")
+                {
+                    frmStokAc.sFiyatTipi = ViewFiyatTipi.GetRowCellValue(e.RowHandle, "Fiyat Tipi").ToString();
+                }
                 this.Close();
                 this.Dispose();
             }

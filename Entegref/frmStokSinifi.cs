@@ -666,6 +666,7 @@ namespace Entegref
             frmStokAc.sinifsira5 = sira5;
             frmStokAc.sinifsira6 = sira6;
             frmStokAc.Fiyatlandirma = lblFiyat;
+            frmStokAc.KavalaTipi = cmbKavala.SelectedValue.ToString();
             frmStokAc.Beden = lblbeden;
             frmStokAc.BedenTipi = cmbBeden.SelectedValue.ToString();
             if (chkRenk.Checked == true)
@@ -676,7 +677,14 @@ namespace Entegref
             {
                 frmStokAc.Renk = false;
             }
-            frmStokAc.Kavala = cmbKavala.SelectedValue.ToString();
+            if (cmbKavala.SelectedValue != null)
+            {
+                frmStokAc.Kavala = cmbKavala.SelectedValue.ToString();
+            }
+            else
+            {
+                frmStokAc.Kavala = "";
+            }
             this.Close();
             this.Dispose();
         }

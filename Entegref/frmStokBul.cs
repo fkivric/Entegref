@@ -22,7 +22,7 @@ namespace Entegref
         private void frmFirmaBul_Load(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            string query = "select nStokID, sKodu, sAciklama from tbstok where skodu != ''";
+            string query = "select distinct smodel, sAciklama from tbstok where skodu != ''";
             SqlCommand cmd = new SqlCommand(query, sql);
             SqlDataAdapter ad = new SqlDataAdapter(cmd);
             ad.Fill(dt);
@@ -33,7 +33,7 @@ namespace Entegref
         {
             if (e.RowHandle >= 0 && e.Clicks == 2 && e.Button == MouseButtons.Left)
             {
-                frmStokAc.sKodu = ViewStok.GetRowCellValue(ViewStok.FocusedRowHandle, "sKodu").ToString();
+                frmStokAc.sKodu = ViewStok.GetRowCellValue(ViewStok.FocusedRowHandle, "smodel").ToString();
                 this.Close();
                 this.Dispose();
             }

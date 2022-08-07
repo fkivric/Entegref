@@ -52,12 +52,12 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.txtLisansing = new System.Windows.Forms.TextBox();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.bunifuUserName = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
             this.label1 = new System.Windows.Forms.Label();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.label7 = new System.Windows.Forms.Label();
             this.bunifuCheckbox1 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifupassword = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
-            this.bunifuUserName = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
             this.label2 = new System.Windows.Forms.Label();
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -79,8 +79,8 @@
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifupassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuUserName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifupassword)).BeginInit();
             this.metroPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).BeginInit();
@@ -318,6 +318,15 @@
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Giriş";
             // 
+            // bunifuUserName
+            // 
+            this.bunifuUserName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.bunifuUserName.Location = new System.Drawing.Point(87, 54);
+            this.bunifuUserName.Name = "bunifuUserName";
+            this.bunifuUserName.NullText = "Kullanıcı";
+            this.bunifuUserName.Size = new System.Drawing.Size(316, 31);
+            this.bunifuUserName.TabIndex = 0;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -350,7 +359,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.label7.Location = new System.Drawing.Point(306, 169);
+            this.label7.Location = new System.Drawing.Point(306, 151);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(97, 21);
             this.label7.TabIndex = 6;
@@ -358,12 +367,12 @@
             // 
             // bunifuCheckbox1
             // 
-            this.bunifuCheckbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox1.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox1.Checked = true;
+            this.bunifuCheckbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.bunifuCheckbox1.ChechedOffColor = System.Drawing.Color.Transparent;
+            this.bunifuCheckbox1.Checked = false;
             this.bunifuCheckbox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.bunifuCheckbox1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox1.Location = new System.Drawing.Point(285, 170);
+            this.bunifuCheckbox1.Location = new System.Drawing.Point(285, 152);
             this.bunifuCheckbox1.Name = "bunifuCheckbox1";
             this.bunifuCheckbox1.Size = new System.Drawing.Size(20, 20);
             this.bunifuCheckbox1.TabIndex = 2;
@@ -379,15 +388,6 @@
             this.bunifupassword.TabIndex = 1;
             this.bunifupassword.Enter += new System.EventHandler(this.ultraTextEditor1_Enter);
             this.bunifupassword.Leave += new System.EventHandler(this.ultraTextEditor1_Leave);
-            // 
-            // bunifuUserName
-            // 
-            this.bunifuUserName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.bunifuUserName.Location = new System.Drawing.Point(87, 54);
-            this.bunifuUserName.Name = "bunifuUserName";
-            this.bunifuUserName.NullText = "Kullanıcı";
-            this.bunifuUserName.Size = new System.Drawing.Size(316, 31);
-            this.bunifuUserName.TabIndex = 0;
             // 
             // label2
             // 
@@ -443,9 +443,10 @@
             // lblversion
             // 
             this.lblversion.AutoSize = true;
+            this.lblversion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblversion.Location = new System.Drawing.Point(24, 41);
             this.lblversion.Name = "lblversion";
-            this.lblversion.Size = new System.Drawing.Size(37, 13);
+            this.lblversion.Size = new System.Drawing.Size(42, 13);
             this.lblversion.TabIndex = 6;
             this.lblversion.Text = "Sürüm";
             // 
@@ -497,8 +498,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifupassword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuUserName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifupassword)).EndInit();
             this.metroPanel2.ResumeLayout(false);
             this.metroPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

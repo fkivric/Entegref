@@ -28,23 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab1 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab5 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab2 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab3 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.Appearance appearance5 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance6 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab6 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab4 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.Appearance appearance7 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance8 = new Infragistics.Win.Appearance();
             this.ultraTabPageControl1 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.txtCikisiade = new System.Windows.Forms.TextBox();
+            this.txtKalan = new System.Windows.Forms.TextBox();
+            this.txtCikis = new System.Windows.Forms.TextBox();
+            this.txtGirisiade = new System.Windows.Forms.TextBox();
+            this.txtGiris = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -76,6 +87,8 @@
             this.bunifuCustomTextbox2 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.btnbarkod = new System.Windows.Forms.Button();
             this.bunifuCustomTextbox1 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.ultraTabPageControl5 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.miniHTMLTextBox1 = new DG.MiniHTMLTextBox.MiniHTMLTextBox();
             this.ultraTabPageControl2 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.panel7 = new System.Windows.Forms.Panel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -106,7 +119,6 @@
             this.ultraTabPageControl3 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.gridFiyatlar = new DevExpress.XtraGrid.GridControl();
             this.ViewFiyatlar = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -114,15 +126,14 @@
             this.pnlTopluFiyat = new System.Windows.Forms.Panel();
             this.gridTopluFiyat = new DevExpress.XtraGrid.GridControl();
             this.ViewTopluFiyat = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.TopluFiyatnSokID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TopluFiyatsFiyatTipi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TopluFiyatsAciklama = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TopluFiyatldteFiyatTespitTarihi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TopluFiyatlFiyat = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TopluFiyatYeniFiyat = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pnlTekfiyat = new System.Windows.Forms.Panel();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
+            this.pnlTekfiyat = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -131,6 +142,10 @@
             this.txtYeniFiyat = new System.Windows.Forms.TextBox();
             this.txtTipi = new System.Windows.Forms.TextBox();
             this.grpFTipiSec = new DevExpress.XtraEditors.RadioGroup();
+            this.ultraTabPageControl6 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.pnlRenkBedenOlan = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.pnlRenkBeden = new System.Windows.Forms.Panel();
             this.ultraTabPageControl4 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -141,6 +156,12 @@
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.btnSil = new DevExpress.XtraEditors.SimpleButton();
+            this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
+            this.btnKaydet = new DevExpress.XtraEditors.SimpleButton();
+            this.panelControl6 = new DevExpress.XtraEditors.PanelControl();
+            this.btnYeni = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.ultraTabControl1 = new Infragistics.Win.UltraWinTabControl.UltraTabControl();
             this.ultraTabSharedControlsPage1 = new Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage();
@@ -154,15 +175,11 @@
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
-            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.btnSil = new DevExpress.XtraEditors.SimpleButton();
-            this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
-            this.btnKaydet = new DevExpress.XtraEditors.SimpleButton();
-            this.panelControl6 = new DevExpress.XtraEditors.PanelControl();
-            this.btnYeni = new DevExpress.XtraEditors.SimpleButton();
             this.ultraTabPageControl1.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.ultraTabPageControl5.SuspendLayout();
             this.ultraTabPageControl2.SuspendLayout();
             this.panel7.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -181,12 +198,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.dteYeniFiyat.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dteYeniFiyat.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grpFTipiSec.Properties)).BeginInit();
+            this.ultraTabPageControl6.SuspendLayout();
+            this.pnlRenkBedenOlan.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.ultraTabPageControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel5.SuspendLayout();
             this.pnlUrunResimbtn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+            this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).BeginInit();
+            this.panelControl5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).BeginInit();
+            this.panelControl6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl1)).BeginInit();
@@ -194,26 +220,20 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
             this.panelControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
-            this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).BeginInit();
-            this.panelControl5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).BeginInit();
-            this.panelControl6.SuspendLayout();
             this.SuspendLayout();
             // 
             // ultraTabPageControl1
             // 
             this.ultraTabPageControl1.Controls.Add(this.panel3);
             this.ultraTabPageControl1.Controls.Add(this.panel2);
-            this.ultraTabPageControl1.Location = new System.Drawing.Point(1, 23);
+            this.ultraTabPageControl1.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl1.Name = "ultraTabPageControl1";
             this.ultraTabPageControl1.Size = new System.Drawing.Size(965, 530);
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.label17);
-            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.panel8);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 236);
             this.panel3.Name = "panel3";
@@ -223,20 +243,145 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(6, 7);
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label17.Location = new System.Drawing.Point(6, 5);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(84, 13);
+            this.label17.Size = new System.Drawing.Size(99, 19);
             this.label17.TabIndex = 2;
             this.label17.Text = "Ürün Özellikeri";
             // 
-            // textBox2
+            // panel8
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.textBox2.Location = new System.Drawing.Point(0, 29);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(965, 265);
-            this.textBox2.TabIndex = 1;
+            this.panel8.Controls.Add(this.label25);
+            this.panel8.Controls.Add(this.label21);
+            this.panel8.Controls.Add(this.label22);
+            this.panel8.Controls.Add(this.label23);
+            this.panel8.Controls.Add(this.label24);
+            this.panel8.Controls.Add(this.txtCikisiade);
+            this.panel8.Controls.Add(this.txtKalan);
+            this.panel8.Controls.Add(this.txtCikis);
+            this.panel8.Controls.Add(this.txtGirisiade);
+            this.panel8.Controls.Add(this.txtGiris);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel8.Location = new System.Drawing.Point(0, 241);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(965, 53);
+            this.panel8.TabIndex = 3;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(878, 7);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(35, 13);
+            this.label25.TabIndex = 1;
+            this.label25.Text = "Kalan";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(735, 7);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(56, 13);
+            this.label21.TabIndex = 1;
+            this.label21.Text = "Çıkış İade";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(616, 7);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(31, 13);
+            this.label22.TabIndex = 1;
+            this.label22.Text = "Çıkış";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(472, 7);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(55, 13);
+            this.label23.TabIndex = 1;
+            this.label23.Text = "Giriş İade";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(352, 7);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(30, 13);
+            this.label24.TabIndex = 1;
+            this.label24.Text = "Giriş";
+            // 
+            // txtCikisiade
+            // 
+            this.txtCikisiade.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCikisiade.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.txtCikisiade.Enabled = false;
+            this.txtCikisiade.Location = new System.Drawing.Point(704, 23);
+            this.txtCikisiade.Name = "txtCikisiade";
+            this.txtCikisiade.ReadOnly = true;
+            this.txtCikisiade.Size = new System.Drawing.Size(118, 22);
+            this.txtCikisiade.TabIndex = 0;
+            this.txtCikisiade.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtKalan
+            // 
+            this.txtKalan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtKalan.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.txtKalan.Enabled = false;
+            this.txtKalan.Location = new System.Drawing.Point(836, 23);
+            this.txtKalan.Name = "txtKalan";
+            this.txtKalan.ReadOnly = true;
+            this.txtKalan.Size = new System.Drawing.Size(118, 22);
+            this.txtKalan.TabIndex = 0;
+            this.txtKalan.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtCikis
+            // 
+            this.txtCikis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCikis.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.txtCikis.Enabled = false;
+            this.txtCikis.Location = new System.Drawing.Point(572, 23);
+            this.txtCikis.Name = "txtCikis";
+            this.txtCikis.ReadOnly = true;
+            this.txtCikis.Size = new System.Drawing.Size(118, 22);
+            this.txtCikis.TabIndex = 0;
+            this.txtCikis.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtGirisiade
+            // 
+            this.txtGirisiade.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtGirisiade.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.txtGirisiade.Enabled = false;
+            this.txtGirisiade.Location = new System.Drawing.Point(440, 23);
+            this.txtGirisiade.Name = "txtGirisiade";
+            this.txtGirisiade.ReadOnly = true;
+            this.txtGirisiade.Size = new System.Drawing.Size(118, 22);
+            this.txtGirisiade.TabIndex = 0;
+            this.txtGirisiade.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtGiris
+            // 
+            this.txtGiris.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtGiris.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.txtGiris.Enabled = false;
+            this.txtGiris.Location = new System.Drawing.Point(308, 23);
+            this.txtGiris.Name = "txtGiris";
+            this.txtGiris.ReadOnly = true;
+            this.txtGiris.Size = new System.Drawing.Size(118, 22);
+            this.txtGiris.TabIndex = 0;
+            this.txtGiris.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel2
             // 
@@ -552,6 +697,28 @@
             this.bunifuCustomTextbox1.Size = new System.Drawing.Size(411, 22);
             this.bunifuCustomTextbox1.TabIndex = 1;
             // 
+            // ultraTabPageControl5
+            // 
+            this.ultraTabPageControl5.Controls.Add(this.miniHTMLTextBox1);
+            this.ultraTabPageControl5.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl5.Name = "ultraTabPageControl5";
+            this.ultraTabPageControl5.Size = new System.Drawing.Size(965, 530);
+            // 
+            // miniHTMLTextBox1
+            // 
+            this.miniHTMLTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.miniHTMLTextBox1.IllegalPatterns = new string[] {
+        "<script.*?>",
+        "<\\w+\\s+.*?(j|java|vb|ecma)script:.*?>",
+        "<\\w+(\\s+|\\s+.*?\\s+)on\\w+\\s*=.+?>",
+        "</?input.*?>"};
+            this.miniHTMLTextBox1.Location = new System.Drawing.Point(0, 0);
+            this.miniHTMLTextBox1.Name = "miniHTMLTextBox1";
+            this.miniHTMLTextBox1.Padding = new System.Windows.Forms.Padding(1);
+            this.miniHTMLTextBox1.Size = new System.Drawing.Size(965, 530);
+            this.miniHTMLTextBox1.TabIndex = 0;
+            this.miniHTMLTextBox1.Text = null;
+            // 
             // ultraTabPageControl2
             // 
             this.ultraTabPageControl2.Controls.Add(this.panel7);
@@ -810,7 +977,7 @@
             this.ultraTabPageControl3.Controls.Add(this.gridFiyatlar);
             this.ultraTabPageControl3.Controls.Add(this.pnlTopluFiyat);
             this.ultraTabPageControl3.Controls.Add(this.panel4);
-            this.ultraTabPageControl3.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl3.Location = new System.Drawing.Point(1, 23);
             this.ultraTabPageControl3.Name = "ultraTabPageControl3";
             this.ultraTabPageControl3.Size = new System.Drawing.Size(965, 530);
             // 
@@ -828,7 +995,6 @@
             // ViewFiyatlar
             // 
             this.ViewFiyatlar.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
             this.gridColumn2,
             this.gridColumn3,
             this.gridColumn4,
@@ -836,14 +1002,6 @@
             this.ViewFiyatlar.GridControl = this.gridFiyatlar;
             this.ViewFiyatlar.Name = "ViewFiyatlar";
             this.ViewFiyatlar.OptionsView.ShowGroupPanel = false;
-            // 
-            // gridColumn1
-            // 
-            this.gridColumn1.Caption = "gridColumn1";
-            this.gridColumn1.FieldName = "nStokID";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.OptionsColumn.AllowEdit = false;
-            this.gridColumn1.OptionsColumn.FixedWidth = true;
             // 
             // gridColumn2
             // 
@@ -909,7 +1067,6 @@
             // ViewTopluFiyat
             // 
             this.ViewTopluFiyat.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.TopluFiyatnSokID,
             this.TopluFiyatsFiyatTipi,
             this.TopluFiyatsAciklama,
             this.TopluFiyatldteFiyatTespitTarihi,
@@ -918,13 +1075,6 @@
             this.ViewTopluFiyat.GridControl = this.gridTopluFiyat;
             this.ViewTopluFiyat.Name = "ViewTopluFiyat";
             this.ViewTopluFiyat.OptionsView.ShowGroupPanel = false;
-            // 
-            // TopluFiyatnSokID
-            // 
-            this.TopluFiyatnSokID.Caption = "gridColumn1";
-            this.TopluFiyatnSokID.FieldName = "nStokID";
-            this.TopluFiyatnSokID.Name = "TopluFiyatnSokID";
-            this.TopluFiyatnSokID.OptionsColumn.AllowEdit = false;
             // 
             // TopluFiyatsFiyatTipi
             // 
@@ -972,6 +1122,7 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.simpleButton4);
             this.panel4.Controls.Add(this.pnlTekfiyat);
             this.panel4.Controls.Add(this.grpFTipiSec);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
@@ -980,9 +1131,20 @@
             this.panel4.Size = new System.Drawing.Size(965, 100);
             this.panel4.TabIndex = 1;
             // 
+            // simpleButton4
+            // 
+            this.simpleButton4.Appearance.BorderColor = System.Drawing.Color.Black;
+            this.simpleButton4.Appearance.Options.UseBorderColor = true;
+            this.simpleButton4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton4.Location = new System.Drawing.Point(765, 0);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.Size = new System.Drawing.Size(200, 100);
+            this.simpleButton4.TabIndex = 4;
+            this.simpleButton4.Text = "Fiyat Gir";
+            this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
+            // 
             // pnlTekfiyat
             // 
-            this.pnlTekfiyat.Controls.Add(this.simpleButton4);
             this.pnlTekfiyat.Controls.Add(this.label19);
             this.pnlTekfiyat.Controls.Add(this.label16);
             this.pnlTekfiyat.Controls.Add(this.label15);
@@ -990,20 +1152,11 @@
             this.pnlTekfiyat.Controls.Add(this.btnFiyatTipiAc);
             this.pnlTekfiyat.Controls.Add(this.txtYeniFiyat);
             this.pnlTekfiyat.Controls.Add(this.txtTipi);
-            this.pnlTekfiyat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlTekfiyat.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlTekfiyat.Location = new System.Drawing.Point(437, 0);
             this.pnlTekfiyat.Name = "pnlTekfiyat";
-            this.pnlTekfiyat.Size = new System.Drawing.Size(528, 100);
+            this.pnlTekfiyat.Size = new System.Drawing.Size(328, 100);
             this.pnlTekfiyat.TabIndex = 1;
-            // 
-            // simpleButton4
-            // 
-            this.simpleButton4.Location = new System.Drawing.Point(438, 71);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton4.TabIndex = 4;
-            this.simpleButton4.Text = "Fiyat Gir";
-            this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
             // 
             // label19
             // 
@@ -1090,6 +1243,42 @@
             this.grpFTipiSec.TabIndex = 3;
             this.grpFTipiSec.SelectedIndexChanged += new System.EventHandler(this.grpFTipiSec_SelectedIndexChanged);
             this.grpFTipiSec.Click += new System.EventHandler(this.grpFTipiSec_Click);
+            // 
+            // ultraTabPageControl6
+            // 
+            this.ultraTabPageControl6.Controls.Add(this.pnlRenkBedenOlan);
+            this.ultraTabPageControl6.Controls.Add(this.pnlRenkBeden);
+            this.ultraTabPageControl6.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl6.Name = "ultraTabPageControl6";
+            this.ultraTabPageControl6.Size = new System.Drawing.Size(965, 530);
+            // 
+            // pnlRenkBedenOlan
+            // 
+            this.pnlRenkBedenOlan.Controls.Add(this.dataGridView1);
+            this.pnlRenkBedenOlan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlRenkBedenOlan.Location = new System.Drawing.Point(0, 0);
+            this.pnlRenkBedenOlan.Name = "pnlRenkBedenOlan";
+            this.pnlRenkBedenOlan.Size = new System.Drawing.Size(965, 430);
+            this.pnlRenkBedenOlan.TabIndex = 1;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(965, 430);
+            this.dataGridView1.TabIndex = 1;
+            // 
+            // pnlRenkBeden
+            // 
+            this.pnlRenkBeden.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlRenkBeden.Location = new System.Drawing.Point(0, 430);
+            this.pnlRenkBeden.Name = "pnlRenkBeden";
+            this.pnlRenkBeden.Size = new System.Drawing.Size(965, 100);
+            this.pnlRenkBeden.TabIndex = 0;
             // 
             // ultraTabPageControl4
             // 
@@ -1186,6 +1375,71 @@
             this.panelControl2.Size = new System.Drawing.Size(1138, 39);
             this.panelControl2.TabIndex = 1;
             // 
+            // panelControl1
+            // 
+            this.panelControl1.Controls.Add(this.btnSil);
+            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelControl1.Location = new System.Drawing.Point(735, 2);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(401, 35);
+            this.panelControl1.TabIndex = 2;
+            // 
+            // btnSil
+            // 
+            this.btnSil.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
+            this.btnSil.Appearance.Options.UseBackColor = true;
+            this.btnSil.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnSil.ImageOptions.Image = global::Entegref.Properties.Resources.clear_32x32;
+            this.btnSil.Location = new System.Drawing.Point(2, 2);
+            this.btnSil.Name = "btnSil";
+            this.btnSil.Size = new System.Drawing.Size(124, 31);
+            this.btnSil.TabIndex = 0;
+            this.btnSil.Text = "Sil";
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
+            // 
+            // panelControl5
+            // 
+            this.panelControl5.Controls.Add(this.btnKaydet);
+            this.panelControl5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelControl5.Location = new System.Drawing.Point(462, 2);
+            this.panelControl5.Name = "panelControl5";
+            this.panelControl5.Size = new System.Drawing.Size(674, 35);
+            this.panelControl5.TabIndex = 3;
+            // 
+            // btnKaydet
+            // 
+            this.btnKaydet.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
+            this.btnKaydet.Appearance.Options.UseBackColor = true;
+            this.btnKaydet.ImageOptions.Image = global::Entegref.Properties.Resources.save_32x32;
+            this.btnKaydet.Location = new System.Drawing.Point(73, 0);
+            this.btnKaydet.Name = "btnKaydet";
+            this.btnKaydet.Size = new System.Drawing.Size(124, 35);
+            this.btnKaydet.TabIndex = 0;
+            this.btnKaydet.Text = "Kaydet";
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
+            // 
+            // panelControl6
+            // 
+            this.panelControl6.Controls.Add(this.btnYeni);
+            this.panelControl6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelControl6.Location = new System.Drawing.Point(2, 2);
+            this.panelControl6.Name = "panelControl6";
+            this.panelControl6.Size = new System.Drawing.Size(460, 35);
+            this.panelControl6.TabIndex = 4;
+            // 
+            // btnYeni
+            // 
+            this.btnYeni.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Primary;
+            this.btnYeni.Appearance.Options.UseBackColor = true;
+            this.btnYeni.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnYeni.ImageOptions.Image = global::Entegref.Properties.Resources.new_32x325;
+            this.btnYeni.Location = new System.Drawing.Point(334, 2);
+            this.btnYeni.Name = "btnYeni";
+            this.btnYeni.Size = new System.Drawing.Size(124, 31);
+            this.btnYeni.TabIndex = 0;
+            this.btnYeni.Text = "Yeni";
+            this.btnYeni.Click += new System.EventHandler(this.btnYeni_Click);
+            // 
             // panelControl3
             // 
             this.panelControl3.Controls.Add(this.ultraTabControl1);
@@ -1204,6 +1458,8 @@
             this.ultraTabControl1.Controls.Add(this.ultraTabPageControl3);
             this.ultraTabControl1.Controls.Add(this.ultraTabPageControl1);
             this.ultraTabControl1.Controls.Add(this.ultraTabPageControl4);
+            this.ultraTabControl1.Controls.Add(this.ultraTabPageControl5);
+            this.ultraTabControl1.Controls.Add(this.ultraTabPageControl6);
             this.ultraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ultraTabControl1.Location = new System.Drawing.Point(2, 43);
             this.ultraTabControl1.Name = "ultraTabControl1";
@@ -1220,6 +1476,8 @@
             ultraTab1.SelectedAppearance = appearance2;
             ultraTab1.TabPage = this.ultraTabPageControl1;
             ultraTab1.Text = "Genel Bilgiler";
+            ultraTab5.TabPage = this.ultraTabPageControl5;
+            ultraTab5.Text = "Ürün Özellikleri";
             appearance3.Image = global::Entegref.Properties.Resources.loadpagesetup_32x32;
             ultraTab2.Appearance = appearance3;
             appearance4.Image = global::Entegref.Properties.Resources.loadpagesetup_32x32;
@@ -1232,6 +1490,8 @@
             ultraTab3.SelectedAppearance = appearance6;
             ultraTab3.TabPage = this.ultraTabPageControl3;
             ultraTab3.Text = "Fiyatlandırma";
+            ultraTab6.TabPage = this.ultraTabPageControl6;
+            ultraTab6.Text = "Renk Beden Kavala";
             appearance7.Image = global::Entegref.Properties.Resources.picturebox_32x32;
             ultraTab4.Appearance = appearance7;
             appearance8.Image = global::Entegref.Properties.Resources.picturebox_32x32;
@@ -1240,8 +1500,10 @@
             ultraTab4.Text = "Resimler";
             this.ultraTabControl1.Tabs.AddRange(new Infragistics.Win.UltraWinTabControl.UltraTab[] {
             ultraTab1,
+            ultraTab5,
             ultraTab2,
             ultraTab3,
+            ultraTab6,
             ultraTab4});
             this.ultraTabControl1.ViewStyle = Infragistics.Win.UltraWinTabControl.ViewStyle.Office2007;
             this.ultraTabControl1.SelectedTabChanged += new Infragistics.Win.UltraWinTabControl.SelectedTabChangedEventHandler(this.ultraTabControl1_SelectedTabChanged);
@@ -1350,69 +1612,6 @@
             this.simpleButton5.Text = "Renk";
             this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
             // 
-            // panelControl1
-            // 
-            this.panelControl1.Controls.Add(this.btnSil);
-            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelControl1.Location = new System.Drawing.Point(735, 2);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(401, 35);
-            this.panelControl1.TabIndex = 2;
-            // 
-            // btnSil
-            // 
-            this.btnSil.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
-            this.btnSil.Appearance.Options.UseBackColor = true;
-            this.btnSil.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnSil.ImageOptions.Image = global::Entegref.Properties.Resources.clear_32x32;
-            this.btnSil.Location = new System.Drawing.Point(2, 2);
-            this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(124, 31);
-            this.btnSil.TabIndex = 0;
-            this.btnSil.Text = "Sil";
-            // 
-            // panelControl5
-            // 
-            this.panelControl5.Controls.Add(this.btnKaydet);
-            this.panelControl5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl5.Location = new System.Drawing.Point(462, 2);
-            this.panelControl5.Name = "panelControl5";
-            this.panelControl5.Size = new System.Drawing.Size(674, 35);
-            this.panelControl5.TabIndex = 3;
-            // 
-            // btnKaydet
-            // 
-            this.btnKaydet.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
-            this.btnKaydet.Appearance.Options.UseBackColor = true;
-            this.btnKaydet.ImageOptions.Image = global::Entegref.Properties.Resources.save_32x32;
-            this.btnKaydet.Location = new System.Drawing.Point(73, 3);
-            this.btnKaydet.Name = "btnKaydet";
-            this.btnKaydet.Size = new System.Drawing.Size(124, 35);
-            this.btnKaydet.TabIndex = 0;
-            this.btnKaydet.Text = "Kaydet";
-            // 
-            // panelControl6
-            // 
-            this.panelControl6.Controls.Add(this.btnYeni);
-            this.panelControl6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelControl6.Location = new System.Drawing.Point(2, 2);
-            this.panelControl6.Name = "panelControl6";
-            this.panelControl6.Size = new System.Drawing.Size(460, 35);
-            this.panelControl6.TabIndex = 4;
-            // 
-            // btnYeni
-            // 
-            this.btnYeni.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Primary;
-            this.btnYeni.Appearance.Options.UseBackColor = true;
-            this.btnYeni.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnYeni.ImageOptions.Image = global::Entegref.Properties.Resources.new_32x325;
-            this.btnYeni.Location = new System.Drawing.Point(334, 2);
-            this.btnYeni.Name = "btnYeni";
-            this.btnYeni.Size = new System.Drawing.Size(124, 31);
-            this.btnYeni.TabIndex = 0;
-            this.btnYeni.Text = "Yeni";
-            this.btnYeni.Click += new System.EventHandler(this.btnYeni_Click);
-            // 
             // frmStokAc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1421,17 +1620,20 @@
             this.Controls.Add(this.panelControl3);
             this.Controls.Add(this.panelControl4);
             this.Controls.Add(this.panelControl2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.MaximizeBox = false;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "frmStokAc";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ürünler";
             this.Load += new System.EventHandler(this.frmStokAc_Load);
             this.ultraTabPageControl1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.ultraTabPageControl5.ResumeLayout(false);
             this.ultraTabPageControl2.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
@@ -1451,6 +1653,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dteYeniFiyat.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dteYeniFiyat.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grpFTipiSec.Properties)).EndInit();
+            this.ultraTabPageControl6.ResumeLayout(false);
+            this.pnlRenkBedenOlan.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ultraTabPageControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel5.ResumeLayout(false);
@@ -1459,6 +1664,12 @@
             this.pnlUrunResimbtn.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
+            this.panelControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).EndInit();
+            this.panelControl5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).EndInit();
+            this.panelControl6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl1)).EndInit();
@@ -1467,12 +1678,6 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
             this.panelControl4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
-            this.panelControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).EndInit();
-            this.panelControl5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).EndInit();
-            this.panelControl6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1518,7 +1723,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
         private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label17;
@@ -1547,7 +1751,6 @@
         private System.Windows.Forms.Panel pnlTopluFiyat;
         private DevExpress.XtraGrid.GridControl gridTopluFiyat;
         private DevExpress.XtraGrid.Views.Grid.GridView ViewTopluFiyat;
-        private DevExpress.XtraGrid.Columns.GridColumn TopluFiyatnSokID;
         private DevExpress.XtraGrid.Columns.GridColumn TopluFiyatsFiyatTipi;
         private DevExpress.XtraGrid.Columns.GridColumn TopluFiyatsAciklama;
         private DevExpress.XtraGrid.Columns.GridColumn TopluFiyatldteFiyatTespitTarihi;
@@ -1583,7 +1786,6 @@
         private System.Windows.Forms.ComboBox comboBox9;
         private System.Windows.Forms.ComboBox comboBox8;
         private DevExpress.XtraEditors.SimpleButton simpleButton4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
@@ -1597,6 +1799,23 @@
         private DevExpress.XtraEditors.SimpleButton btnKaydet;
         private DevExpress.XtraEditors.PanelControl panelControl6;
         private DevExpress.XtraEditors.SimpleButton btnYeni;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox txtCikisiade;
+        private System.Windows.Forms.TextBox txtCikis;
+        private System.Windows.Forms.TextBox txtGirisiade;
+        private System.Windows.Forms.TextBox txtGiris;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox txtKalan;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl5;
+        private DG.MiniHTMLTextBox.MiniHTMLTextBox miniHTMLTextBox1;
+        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl6;
+        private System.Windows.Forms.Panel pnlRenkBeden;
+        private System.Windows.Forms.Panel pnlRenkBedenOlan;
+        private System.Windows.Forms.DataGridView dataGridView1;
         //private GridControl gridStokFiyat;
         //private GridView ViewStokFiyat;
         //private GridColumn gridColumn1;

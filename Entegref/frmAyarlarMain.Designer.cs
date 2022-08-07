@@ -31,19 +31,22 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.ürünAyarlarıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ürünGenelParametreAyarlarıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.urunozellik = new System.Windows.Forms.ToolStripMenuItem();
             this.depoAyarlarıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.satışAyarlarıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tedarikciAyarlarıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pazarYeriAyarlarıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlForm = new System.Windows.Forms.Panel();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.eRPGenelAyarlarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.genelParametrelerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.eRPGenelAyarlarToolStripMenuItem,
             this.ürünAyarlarıToolStripMenuItem,
             this.depoAyarlarıToolStripMenuItem,
             this.satışAyarlarıToolStripMenuItem,
@@ -51,7 +54,7 @@
             this.pazarYeriAyarlarıToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1461, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1460, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -71,11 +74,6 @@
             this.ürünGenelParametreAyarlarıToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
             this.ürünGenelParametreAyarlarıToolStripMenuItem.Text = "Ürün Genel Parametre Ayarları";
             this.ürünGenelParametreAyarlarıToolStripMenuItem.Click += new System.EventHandler(this.ürünGenelParametreAyarlarıToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(230, 6);
             // 
             // urunozellik
             // 
@@ -113,19 +111,37 @@
             this.pnlForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlForm.Location = new System.Drawing.Point(0, 24);
             this.pnlForm.Name = "pnlForm";
-            this.pnlForm.Size = new System.Drawing.Size(1461, 710);
+            this.pnlForm.Size = new System.Drawing.Size(1460, 721);
             this.pnlForm.TabIndex = 1;
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(230, 6);
+            // 
+            // eRPGenelAyarlarToolStripMenuItem
+            // 
+            this.eRPGenelAyarlarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.genelParametrelerToolStripMenuItem});
+            this.eRPGenelAyarlarToolStripMenuItem.Name = "eRPGenelAyarlarToolStripMenuItem";
+            this.eRPGenelAyarlarToolStripMenuItem.Size = new System.Drawing.Size(112, 20);
+            this.eRPGenelAyarlarToolStripMenuItem.Text = "ERP Genel Ayarlar";
+            // 
+            // genelParametrelerToolStripMenuItem
+            // 
+            this.genelParametrelerToolStripMenuItem.Name = "genelParametrelerToolStripMenuItem";
+            this.genelParametrelerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.genelParametrelerToolStripMenuItem.Text = "Genel Parametreler";
             // 
             // frmDepoAyarları
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1461, 734);
+            this.ClientSize = new System.Drawing.Size(1460, 745);
             this.Controls.Add(this.pnlForm);
             this.Controls.Add(this.menuStrip1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MainMenuStrip = this.menuStrip1;
-            this.MaximizeBox = false;
             this.Name = "frmDepoAyarları";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EntegreF Ayarlar";
@@ -143,11 +159,13 @@
         private System.Windows.Forms.ToolStripMenuItem ürünAyarlarıToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ürünGenelParametreAyarlarıToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem urunozellik;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.Panel pnlForm;
         private System.Windows.Forms.ToolStripMenuItem satışAyarlarıToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tedarikciAyarlarıToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pazarYeriAyarlarıToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem depoAyarlarıToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem eRPGenelAyarlarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem genelParametrelerToolStripMenuItem;
     }
 }

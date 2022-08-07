@@ -21,10 +21,19 @@ namespace Entegref
         {
             InitializeComponent();
         }
-
+        
         private void frmAyarlarUrunGenel_Load(object sender, EventArgs e)
         {
-            string q = "select bDepoVarmi [Çoklu Depo Kullanılacak], bEanVarmi [Ean Kodu Kullanılacak], sResimDosyalariPath,bOTVVar [Ötv'li Ürün var],sDefaultKdvTipi,sDefaultBirimCinsi,sDefaultOtvTipi,sDefaultHareketTipi, sAciklamaBaslik1, sAciklamaBaslik2, sAciklamaBaslik3, sAciklamaBaslik4, sAciklamaBaslik5, sAciklamaBaslik6, sAciklamaBaslik7, sAciklamaBaslik8, sAciklamaBaslik9, sAciklamaBaslik10,bDovizliGirisVar from tbParamStok";
+            dteUrunTarih1.DateTime = DateTime.Now;
+            dteUrunTarih2.DateTime = DateTime.Now;
+            int sira = 0;
+            string q = "select bRenkVarmi[Renk Var], bBedenVarmi[Beden Var], bKavalaVarmi[Kavala Var], bDepoVarmi[Çoklu Depo Kullanılacak], bEanVarmi[Ean Kodu Kullanılacak], bOTVVar[Ötv'li Ürün var], "+
+                "bDovizliGirisVar[Fiyatlarda Döviz Kuru Var], bEksiyeDusulebilirmi[Stok Eksiye Düşebilir], bFiyatSifirGirilsin[Fiyat Girişinde 0 Girilebilir], bIkinciMiktarVar [İşlemlerde 2.nci Miktar Girişi Var], "+
+                "sResimDosyalariPath, sDefaultKdvTipi, sDefaultBirimCinsi, sDefaultOtvTipi, sDefaultHareketTipi, "+
+                "sAciklamaBaslik1, sAciklamaBaslik2, sAciklamaBaslik3, sAciklamaBaslik4, sAciklamaBaslik5, sAciklamaBaslik6," +
+                "sAciklamaBaslik7, sAciklamaBaslik8, sAciklamaBaslik9, sAciklamaBaslik10, bHareketTipiVarmi, sMatbuFormlarPath," +
+                " sRaporlarPath,sTasimaDosyalariPath,dteBaslangicTarih,dteBitisTarih from tbParamStok stk Cross Apply(select bHareketTipiVarmi, sMatbuFormlarPath," +
+                "sRaporlarPath, sTasimaDosyalariPath from tbParamGenel) gnl";
             SqlCommand cmd = new SqlCommand(q, sql);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             if (sql.State == ConnectionState.Closed)
@@ -39,7 +48,7 @@ namespace Entegref
                 string d = dt.Rows[0][i].ToString();
                 if (dt.Columns[i].ToString() == "sResimDosyalariPath")
                 {
-                    textEdit1.Text = dt.Rows[0][i].ToString();
+                    textResimYolu.Text = dt.Rows[0][i].ToString();
                 }
                 else if (dt.Columns[i].ToString() == "sDefaultKdvTipi")
                 {
@@ -111,18 +120,71 @@ namespace Entegref
                 {
                     txtsAciklamaBaslik10.Text = dt.Rows[0][i].ToString();
                 }
+                else if (dt.Columns[i].ToString() == "bHareketTipiVarmi")
+                {
+                    if (dt.Rows[0][i].ToString() == "False")
+                    {
+                        checkHarekettipiVar.Checked = false;
+                    }
+                    else
+                    {
+                        checkHarekettipiVar.Checked = true;
+                    }
+                }
+                else if (dt.Columns[i].ToString() == "sMatbuFormlarPath")
+                {
+                    txtFormYolu.Text = dt.Rows[0][i].ToString();
+                }
+                else if (dt.Columns[i].ToString() == "sRaporlarPath")
+                {
+                    txtRaporYolu.Text = dt.Rows[0][i].ToString();
+                }
+                else if (dt.Columns[i].ToString() == "sTasimaDosyalariPath")
+                {
+                    txtDisVeriYolu.Text = dt.Rows[0][i].ToString();
+                }
+                else if (dt.Columns[i].ToString() == "dteBaslangicTarih") 
+                {
+
+                    dteUrunTarih1.DateTime = Convert.ToDateTime(dt.Rows[0]["dteBaslangicTarih"].ToString());
+                }
+                else if (dt.Columns[i].ToString() == "dteBitisTarih") 
+                {
+                    dteUrunTarih2.DateTime = Convert.ToDateTime(dt.Rows[0]["dteBitisTarih"].ToString());
+                }
                 else
                 {
+                    //checkUrunParemetre.Items.Capacity = 20;
                     checkUrunParemetre.Items.Add(dt.Columns[i]);
+                    sira++;
                     if (dt.Rows[0][i].ToString() == "True")
                     {
-                        checkUrunParemetre.SetItemChecked(i, true);
+                        checkUrunParemetre.SetItemChecked(sira-1, true);
                     }
                 }
             }
 
         }
-        private void simpleButton1_Click(object sender, EventArgs e)
+        private void btnResimYoluAc_Click(object sender, EventArgs e)
+        {
+            textResimYolu.Text = DosyaYoluAc("");
+        }
+
+        private void btnFormYoluAc_Click(object sender, EventArgs e)
+        {
+            txtFormYolu.Text = DosyaYoluAc("");
+        }
+
+        private void btnRaporYoluAc_Click(object sender, EventArgs e)
+        {
+            txtRaporYolu.Text = DosyaYoluAc("");
+        }
+
+        private void btnDisveriYoluAc_Click(object sender, EventArgs e)
+        {
+            txtDisVeriYolu.Text = DosyaYoluAc("");
+        }
+        public string DosyaYoluAc(string _dosyayolu)
         {
             string workingDirectory = Environment.CurrentDirectory;
             OpenFileDialog folderBrowser = new OpenFileDialog();
@@ -142,8 +204,9 @@ namespace Entegref
             if (folderBrowser.ShowDialog() == DialogResult.OK)
             {
                 string folderPath = Path.GetDirectoryName(folderBrowser.FileName);
-                textEdit1.Text = folderPath;
+                _dosyayolu = folderPath;
             }
+            return _dosyayolu;
         }
 
         private void txtKDV_MouseClick(object sender, MouseEventArgs e)
@@ -238,6 +301,34 @@ namespace Entegref
                 da.Fill(dt);
                 UpdateGrid(dt);
             }
+        }
+
+        private void btnKaydet_Click(object sender, EventArgs e)
+        {
+            Dictionary<string, string> PG = new Dictionary<string, string>();
+            for (int i = 0; i < checkUrunParemetre.Items.Count; i++)
+            {
+                string tt = "@b"+checkUrunParemetre.Items[i].Value.ToString().Replace(" ","");
+                string durum = checkUrunParemetre.Items[i].CheckState.ToString();
+                if (durum == "Unchecked")
+                {
+                    PG.Add(tt, "0");
+                }
+                else
+                {
+                    PG.Add(tt, "1");
+                }
+            }
+        }
+
+        private void checkOTVVar_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkHarekettipiVar_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

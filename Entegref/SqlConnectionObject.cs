@@ -11,7 +11,6 @@ namespace Entegref
     class SqlConnectionObject
     {
 
-
         public DataTable NTBQuery(string spName, Dictionary<string, string> param)
         {
             DataTable returnType = new DataTable();

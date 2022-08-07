@@ -259,7 +259,7 @@
             this.ultraTabPageControl5.Controls.Add(this.GridRenk);
             this.ultraTabPageControl5.Controls.Add(this.ultraPanel2);
             this.ultraTabPageControl5.Controls.Add(this.ultraPanel1);
-            this.ultraTabPageControl5.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl5.Location = new System.Drawing.Point(1, 45);
             this.ultraTabPageControl5.Name = "ultraTabPageControl5";
             this.ultraTabPageControl5.Size = new System.Drawing.Size(1132, 549);
             // 
@@ -445,7 +445,7 @@
             // ultraTabPageControl6
             // 
             this.ultraTabPageControl6.Controls.Add(this.panel11);
-            this.ultraTabPageControl6.Location = new System.Drawing.Point(1, 45);
+            this.ultraTabPageControl6.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl6.Name = "ultraTabPageControl6";
             this.ultraTabPageControl6.Size = new System.Drawing.Size(1132, 549);
             // 
@@ -1767,7 +1767,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1138, 638);
             this.Controls.Add(this.panelControl3);
-            this.MaximizeBox = false;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "frmAyarlarUrun";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmUrunAyarları";

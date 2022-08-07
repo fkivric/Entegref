@@ -25,6 +25,8 @@ namespace Entegref
     public partial class frmLogin : MetroFramework.Forms.MetroForm
     {
         string VKN = null;
+        public static string username;
+        public static string usergroup;
         public frmLogin(string _VKN)
         {
             InitializeComponent();
@@ -247,7 +249,10 @@ namespace Entegref
             }
             else
             {
+                username = dt.Rows[0][0].ToString();
+
                 loginok = true;
+
                 if (loginok == true)
                 {
                     this.Hide();
@@ -348,7 +353,7 @@ namespace Entegref
                 dbchange = true;
                 SQLComboBox.Text = "Seciniz.......!";
                 Datasource();
-                button3.Text = "Entegreg'e Ayarla";
+                button3.Text = "Entegref'e Ayarla";
             }
             else
             {

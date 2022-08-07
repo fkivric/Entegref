@@ -190,7 +190,7 @@ namespace Entegref
             }
             else
             {
-                frmMain main = new frmMain();
+                frmLogin main = new frmLogin(txtVKN.Text);
                 this.WindowState = FormWindowState.Minimized;
                 main.ShowDialog();
                 this.Close();

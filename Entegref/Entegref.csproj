@@ -41,17 +41,23 @@
     <Reference Include="DevExpress.Data.v20.1" />
     <Reference Include="DevExpress.Data.Desktop.v20.1" />
     <Reference Include="DevExpress.DataAccess.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Sparkline.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Export, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v20.1" />
     <Reference Include="DevExpress.Sparkline.v20.1.Core" />
+    <Reference Include="DevExpress.Utils.v20.1.UI, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Xpo.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v20.1" />
     <Reference Include="DevExpress.Printing.v20.1.Core" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraNavBar.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -59,11 +65,14 @@
     <Reference Include="DevExpress.Charts.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraCharts.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraReports.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v20.1.Extensions, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraTreeList.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraWizard.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="Infragistics4.Documents.IO.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Infragistics4.Shared.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Infragistics4.Win.Misc.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.SupportDialogs.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinCalcManager.v19.2.FormulaBuilder, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Infragistics4.Win.UltraWinDock.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
     <Reference Include="Infragistics4.Win.UltraWinEditors.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Infragistics4.Win.UltraWinExplorerBar.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
@@ -79,15 +88,24 @@
     <Reference Include="Infragistics4.Win.UltraWinTabbedMdi.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
     <Reference Include="Infragistics4.Win.UltraWinTabControl.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Infragistics4.Win.UltraWinToolbars.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTree.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Infragistics4.Win.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -96,10 +114,22 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
     <Reference Include="UIAutomationProvider" />
     <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WinFormHtmlEditor, Version=7.4.32.0, Culture=neutral, PublicKeyToken=8cd3285c24067f7f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\WinFormHtmlEditor.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAyarlarGenel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAyarlarGenel.Designer.cs">
+      <DependentUpon>frmAyarlarGenel.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAyarlarUrunGenel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +154,12 @@
     <Compile Include="frmAyarlarMain.Designer.cs">
       <DependentUpon>frmAyarlarMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDoviz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoviz.Designer.cs">
+      <DependentUpon>frmDoviz.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmFirma.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,11 +172,35 @@
     <Compile Include="frmFiyat.Designer.cs">
       <DependentUpon>frmFiyat.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmFiyatArttırAzalt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiyatArttırAzalt.Designer.cs">
+      <DependentUpon>frmFiyatArttırAzalt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFiyatOtomatik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiyatOtomatik.Designer.cs">
+      <DependentUpon>frmFiyatOtomatik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFiyatTek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiyatTek.Designer.cs">
+      <DependentUpon>frmFiyatTek.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmFiyatTipi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmFiyatTipi.Designer.cs">
       <DependentUpon>frmFiyatTipi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFiyatToplu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiyatToplu.Designer.cs">
+      <DependentUpon>frmFiyatToplu.cs</DependentUpon>
     </Compile>
     <Compile Include="frmKargo.cs">
       <SubType>Form</SubType>
@@ -165,6 +225,12 @@
     </Compile>
     <Compile Include="frmRenk.Designer.cs">
       <DependentUpon>frmRenk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportView.Designer.cs">
+      <DependentUpon>frmReportView.cs</DependentUpon>
     </Compile>
     <Compile Include="frmStokBul.cs">
       <SubType>Form</SubType>
@@ -196,6 +262,12 @@
     <Compile Include="frmStokAc.Designer.cs">
       <DependentUpon>frmStokAc.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmStokMuhasebeHesaplari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStokMuhasebeHesaplari.Designer.cs">
+      <DependentUpon>frmStokMuhasebeHesaplari.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmStokSinifi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,6 +280,12 @@
     <Compile Include="frmAyarlarUrun.Designer.cs">
       <DependentUpon>frmAyarlarUrun.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTopluFiyat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTopluFiyat.Designer.cs">
+      <DependentUpon>frmTopluFiyat.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmYapılandırma.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -217,7 +295,23 @@
     <Compile Include="ID\SystemGuid.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="renkbeden.cs" />
+    <Compile Include="Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
     <Compile Include="SqlConnectionObject.cs" />
+    <Compile Include="XtraReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XtraReport1.Designer.cs">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmAyarlarGenel.resx">
+      <DependentUpon>frmAyarlarGenel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAyarlarUrunGenel.resx">
       <DependentUpon>frmAyarlarUrunGenel.cs</DependentUpon>
     </EmbeddedResource>
@@ -230,14 +324,23 @@
     <EmbeddedResource Include="frmAyarlarMain.resx">
       <DependentUpon>frmAyarlarMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDoviz.resx">
+      <DependentUpon>frmDoviz.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmFirma.resx">
       <DependentUpon>frmFirma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFiyat.resx">
       <DependentUpon>frmFiyat.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmFiyatTek.resx">
+      <DependentUpon>frmFiyatTek.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmFiyatTipi.resx">
       <DependentUpon>frmFiyatTipi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFiyatToplu.resx">
+      <DependentUpon>frmFiyatToplu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmKargo.resx">
       <DependentUpon>frmKargo.cs</DependentUpon>
@@ -250,6 +353,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmRenk.resx">
       <DependentUpon>frmRenk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportView.resx">
+      <DependentUpon>frmReportView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmStokBul.resx">
       <DependentUpon>frmStokBul.cs</DependentUpon>
@@ -286,6 +392,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReport1.resx">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -306,6 +418,9 @@
   <ItemGroup>
     <PackageReference Include="CircularProgressBar">
       <Version>2.8.0.16</Version>
+    </PackageReference>
+    <PackageReference Include="DG.MiniHTMLTextBox">
+      <Version>1.0.25907.4</Version>
     </PackageReference>
     <PackageReference Include="MetroModernUI">
       <Version>1.4.0</Version>
@@ -350,6 +465,12 @@
     <Content Include="Pictures\logo_yon.png" />
     <Content Include="Pictures\logo_yon_new.png" />
     <Content Include="Pictures\logo_yon_new2.png" />
+    <None Include="Resources\save_close_40px.png" />
+    <None Include="Resources\converttorange_16x16.png" />
+    <None Include="Resources\converttorange_32x32.png" />
+    <None Include="Resources\Entegref %281%29.png" />
+    <None Include="Resources\undo_32x32.png" />
+    <None Include="Resources\designreport_32x32.png" />
     <None Include="Resources\cancel_32x322.png" />
     <None Include="Resources\redo_32x32.png" />
     <None Include="Resources\cancel_32x321.png" />
