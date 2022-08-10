@@ -37,7 +37,8 @@ namespace Entegref
 
 
 
-        public static string sKodu = "";
+        public static string sRenkKodu = "";
+        public static string sModel = "";
         public static string sFiyatTipi = "";
 
         public static string sinifsira1;
@@ -49,6 +50,8 @@ namespace Entegref
 
 
         public static string Fiyatlandirma;
+        public static string nFiyatlandirma;
+        public static string nStokTipi;
         public static string Beden;
         public static string Kavala;
         public static string BedenTipi;
@@ -171,20 +174,30 @@ namespace Entegref
             DataTable dt = new DataTable();
             ad.Fill(dt);
             connection.Close();
-
+            renkolanlar.Clear();
+            renkolanlar.Columns.Clear();
             renkolanlar.Columns.Add("sBedenTipi");
             renkolanlar.Columns.Add("sKavalaTipi");
             renkolanlar.Columns.Add("sRenk");
             renkolanlar.Columns.Add("sBeden");
             renkolanlar.Columns.Add("sKavala");
             DataRow _ravi = renkolanlar.NewRow();
-            if (dt.Rows.Count > 0)
+
+            if (dt.Rows.Count > 1)
             {
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
+                    if (nStokID != null)
+                    {
+                        nStokID = nStokID + "-" + dt.Rows[i]["nStokID"].ToString();
+                    }
+                    else
+                    {
+                        nStokID = dt.Rows[i]["nStokID"].ToString();
+                    }
                     renkolanlar.Rows.Add(new object[] { dt.Rows[i]["sBedenTipi"].ToString(), dt.Rows[i]["sKavalaTipi"].ToString(), dt.Rows[i]["sRenk"].ToString(), dt.Rows[i]["sBeden"].ToString(), dt.Rows[i]["sKavala"].ToString() });
                 }
-                nStokID = dt.Rows[0]["nStokID"].ToString();
+
                 KavalaTipi = dt.Rows[0]["sKavalaTipi"].ToString();
                 BedenTipi = dt.Rows[0]["sBedenTipi"].ToString();
                 bunifuCustomTextbox1.Text = dt.Rows[0]["sAciklama"].ToString();
@@ -199,32 +212,27 @@ namespace Entegref
                 sinifsira5 = dt.Rows[0]["sSinifKodu24"].ToString();
                 sinifsira6 = dt.Rows[0]["sSinifKodu25"].ToString();
             }
+            else if (dt.Rows.Count == 1)
+            {
+                nStokID = dt.Rows[0]["nStokID"].ToString();
+            }
             btnStokBul.Enabled = false;
             ultraButton1.Enabled = false;
             ultraButton2.Enabled = false;
-
             simpleButton3.Enabled = false;
             ultraTabControl1.VisibleTabs[1].Visible = true;
             ultraTabControl1.VisibleTabs[2].Visible = true;
             ultraTabControl1.VisibleTabs[3].Visible = true;
             ultraTabControl1.VisibleTabs[4].Visible = true;
-            ultraTabControl1.VisibleTabs[5].Visible = true;
-            cmbSinif();
 
-            cmbSinif1.SelectedValue = sinifsira1.ToString().Substring(sinifsira1.ToString().IndexOf("-") + 1, 4).Replace("    ", "!").Replace("!","00-0");
-            cmbSinif2.SelectedValue = sinifsira2.ToString().Substring(sinifsira1.ToString().IndexOf("-") + 1, 4).Replace("    ", "!").Replace("!","00-0");
-            cmbSinif3.SelectedValue = sinifsira3.ToString().Substring(sinifsira1.ToString().IndexOf("-") + 1, 4).Replace("    ", "!").Replace("!","00-0");
-            cmbSinif4.SelectedValue = sinifsira4.ToString().Substring(sinifsira1.ToString().IndexOf("-") + 1, 4).Replace("    ", "!").Replace("!","00-0");
-            cmbSinif5.SelectedValue = sinifsira5.ToString().Substring(sinifsira1.ToString().IndexOf("-") + 1, 4).Replace("    ", "!").Replace("!","00-0");
-            cmbSinif6.SelectedValue = sinifsira6.ToString().Substring(sinifsira1.ToString().IndexOf("-") + 1, 4).Replace("    ", "!").Replace("!","00-0");
-            
             if (nStokID != null || nStokID != "")
             {
+                ultraTabControl1.VisibleTabs[5].Visible = true;
                 btnKaydet.Text = "Güncelle";
             }
 
 
-            //XtraMessageBox.Show("Kaydetildi");
+            txtStokKodu.Enabled = false;
         }
 
         private void ultraButton1_Click(object sender, EventArgs e)
@@ -232,48 +240,86 @@ namespace Entegref
             frmStokSinifi sinifi = new frmStokSinifi();
             sinifi.TopLevel = true;
             sinifi.ShowDialog();
+            sinif1.Clear();
+            sinif2.Clear();
+            sinif3.Clear();
+            sinif4.Clear();
+            sinif5.Clear();
+            sinif6.Clear();
+
+            if (cmbSinif1.SelectedValue == null)
+            {
+                cmbSinif1.DisplayMember = "sAciklama";
+                cmbSinif1.ValueMember = "sSinifKodu";
+                Dictionary<string, string> Prm = new Dictionary<string, string>();
+                Prm.Add("@sira", "1");
+                Prm.Add("@parentid", "0");
+                sinif1 = conn.DfQuery("Sinif", Prm);
+                cmbSinif1.DataSource = sinif1;
+
+            }
 
             cmbSinif1.SelectedValue = sinifsira1;
+
+
+            if (cmbSinif1.SelectedValue != null)
+            {
+                cmbSinif2.DisplayMember = "sAciklama";
+                cmbSinif2.ValueMember = "sSinifKodu";
+                Dictionary<string, string> Prm = new Dictionary<string, string>();
+                Prm.Add("@sira", "2");
+                Prm.Add("@parentid", cmbSinif1.SelectedValue.ToString().Substring(cmbSinif1.SelectedValue.ToString().IndexOf("-")+1,4));
+                sinif2 = conn.DfQuery("Sinif", Prm);
+                cmbSinif2.DataSource = sinif2;
+
+            }
             cmbSinif2.SelectedValue = sinifsira2;
             if (sinifsira3 != null)
             {
+                if (cmbSinif2.SelectedValue != null)
+                {
+                    cmbSinif3.DisplayMember = "sAciklama";
+                    cmbSinif3.ValueMember = "sSinifKodu";
+                    Dictionary<string, string> Prm = new Dictionary<string, string>();
+                    Prm.Add("@sira", "3");
+                    Prm.Add("@parentid", cmbSinif2.SelectedValue.ToString().Substring(cmbSinif2.SelectedValue.ToString().IndexOf("-") + 1, 4));
+                    sinif3 = conn.DfQuery("Sinif", Prm);
+                    cmbSinif3.DataSource = sinif3;
+
+                }
+
                 cmbSinif3.SelectedValue = sinifsira3.Replace("00-0", null);
             }
-            if (sinifsira4 != null)
+            if (sinifsira4 != null && sinifsira4 != "00-0")
             {
                 cmbSinif4.SelectedValue = sinifsira4.Replace("00-0", null);
             }
-            if (sinifsira5 != null)
+            if (sinifsira5 != null && sinifsira5 != "00-0")
             {
                 cmbSinif5.SelectedValue = sinifsira5.Replace("00-0", null);
             }
-            if (sinifsira6 != null)
+            if (sinifsira6 != null && sinifsira6 != "00-0")
             {
                 cmbSinif6.SelectedValue = sinifsira6.Replace("00-0", null);
             }
-            if (Fiyatlandirma != null)
+            if (nFiyatlandirma != null )
             {
                 lblFiyattipi.Visible = true;
                 lblFiyattipi.Text = Fiyatlandirma;
             }
-            if (Beden != null)
+            if (BedenTipi != null && BedenTipi != "")
             {
                 lblBeden.Text = Beden;
                 lblBeden.Visible = true;
             }
-            if (Kavala != null)
+            if (KavalaTipi != null && KavalaTipi != "")
             {
                 lblKavala.Text = Kavala;
                 lblKavala.Visible = true;
             }
-            txtStokKodu.Text = sKodu;
+            txtStokKodu.Text = sModel;
             if (Renk == true)
             {
-                ultraButton3_Click(null, null);
-                //ultraTabControl1_SelectedTabChanged(null, null);
-                //frmRenk renk = new frmRenk(Kavala, BedenTipi);
-                //renk.TopLevel = true;
-                //renk.ShowDialog();
             }
         }
 
@@ -284,7 +330,6 @@ namespace Entegref
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
-            // Configure open file dialog box 
             OpenFileDialog dlg = new OpenFileDialog();
             dlg.Filter = "";
 
@@ -300,24 +345,10 @@ namespace Entegref
 
             dlg.Filter = String.Format("{0}{1}{2} ({3})|{3}", dlg.Filter, sep, "All Files", "*.*");
 
-            dlg.DefaultExt = ".png"; // Default file extension 
-
-            // Show open file dialog box 
-            //Nullable<bool> result = 
-                dlg.ShowDialog();
-
-            // Process open file dialog box results 
-                // Open document 
+            dlg.DefaultExt = ".png";
+            dlg.ShowDialog();
             txtFileAdress.Text = dlg.FileName;
             filename = dlg.SafeFileName.ToString();
-                // Do something with fileName  
-
-            //OpenFileDialog open = new OpenFileDialog();
-            //open.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            //open.Filter = "Resim Dosyası |*.PNG,*.png,*.jpg,*.JPG";
-            //open.FilterIndex = 2;
-            //open.ShowDialog();
-            //txtFileAdress.Text = open.FileName;
 
         }
         public void cmbSinif()
@@ -334,98 +365,72 @@ namespace Entegref
             }
         }
         DataTable fiyatlar = new DataTable();
-        public void FiyatCek(string _skodu, string _tipi)
+        public void FiyatCek(string _sModel, string _tipi)
         {
             Dictionary<string, string> fiyat = new Dictionary<string, string>();
-            fiyat.Add("@sModel", _skodu);
+            fiyat.Add("@sModel", _sModel);
             fiyat.Add("@sFiyatTipi",_tipi);
             fiyatlar = conn.DfQuery("entegre_Fiyat_Cek", fiyat);
             gridFiyatlar.DataSource = fiyatlar;
+        }
+        public void Resimler()
+        {
+            listBox1.DataSource = null;
+            listBox1.DisplayMember = "Resim Adı";
+            listBox1.ValueMember = "Resim Yolu";
 
-            //gridFiyatlar.DataSource = null;
-            //string q = "select f.nStokID,sFiyatTipi,lFiyat,dteFiyatTespitTarihi,f.sKullaniciAdi from tbStokFiyati f " +
-            //           "inner join tbstok s on s.nstokID = f.nStokID " +
-            //           "where sModel = '" + _skodu + "'";
-            //SqlCommand cmd = new SqlCommand(q, connection);
-            //SqlDataAdapter ad = new SqlDataAdapter(cmd);
-            //DataTable dt = new DataTable();
-            //if (connection.State == ConnectionState.Closed)
-            //{
-            //    connection.Open();
-            //}
-            //ad.Fill(dt);
-            //gridFiyatlar.DataSource = dt;
+            DataTable resim = new DataTable();
+            resim.Clear();
+            resim.Columns.Add("Resim Adı");
+            resim.Columns.Add("Resim Yolu");
+            DataRow _ravi = resim.NewRow();
+
+
+            if (txtStokKodu.Text != "" || txtStokKodu.Text == null)
+            {
+
+                DirectoryInfo d = new DirectoryInfo(@"..\..\Pictures\");
+
+                FileInfo[] Files = d.GetFiles(txtStokKodu.Text.Replace(" ", "") + "*.png");
+                FileInfo[] Files2 = d.GetFiles(txtStokKodu.Text.Replace(" ", "") + "*.jpg");
+                FileInfo[] Files3 = d.GetFiles(txtStokKodu.Text.Replace(" ", "") + "*.gif");
+                FileInfo[] Files4 = d.GetFiles(txtStokKodu.Text.Replace(" ", "") + "*.jpeg");
+
+                foreach (FileInfo file in Files)
+                {
+                    resim.Rows.Add(new object[] { file.Name, file.FullName });
+                }
+                foreach (FileInfo file2 in Files2)
+                {
+                    resim.Rows.Add(new object[] { file2.Name, file2.FullName });
+                }
+                foreach (FileInfo file3 in Files3)
+                {
+                    resim.Rows.Add(new object[] { file3.Name, file3.FullName });
+                }
+                foreach (FileInfo file4 in Files4)
+                {
+                    resim.Rows.Add(new object[] { file4.Name, file4.FullName });
+                }
+                listBox1.DataSource = resim;
+                label20.Text = "Toplam Resim : " + listBox1.Items.Count.ToString();
+            }
+            else
+            {
+                label20.Text = "Toplam Resim : 0";
+            }
         }
         private void ultraTabControl1_SelectedTabChanged(object sender, Infragistics.Win.UltraWinTabControl.SelectedTabChangedEventArgs e)
         {
             if (e.Tab.Text == "Resimler")
             {
-                if (txtStokKodu.Text == null || txtStokKodu.Text == "")
-                {
-                    XtraMessageBox.AllowCustomLookAndFeel = true;
-                    DialogResult dialogResult = XtraMessageBox.Show("Ürün Kaydedilmemiş! Şimdi Kaydedilsin mi?", "Confirmation", MessageBoxButtons.YesNo);
-                    if (dialogResult == System.Windows.Forms.DialogResult.Yes)
-                    {
-                        ultraButton3_Click(null, null);
-                    }
-                    else
-                    {
-                        pnlUrunResimbtn.Enabled = false;
-                    }
-                }
-                else
-                {
-                    listBox1.DataSource = null;
-                    listBox1.DisplayMember = "Resim Adı";
-                    listBox1.ValueMember = "Resim Yolu";
-
-                    DataTable resim = new DataTable();
-                    resim.Clear();
-                    resim.Columns.Add("Resim Adı");
-                    resim.Columns.Add("Resim Yolu");
-                    DataRow _ravi = resim.NewRow();
-
-
-                    if (txtStokKodu.Text != "" || txtStokKodu.Text == null)
-                    {
-                        DirectoryInfo d = new DirectoryInfo(@"..\..\Pictures\");
-
-                        FileInfo[] Files = d.GetFiles("*.png");
-                        FileInfo[] Files2 = d.GetFiles("*.jpg");
-
-                        foreach (FileInfo file in Files)
-                        {
-                            resim.Rows.Add(new object[] { file.Name, file.FullName });
-                            //listBox1.Items.Add(file.FullName);
-                        }
-                        foreach (FileInfo file2 in Files2)
-                        {
-                            resim.Rows.Add(new object[] { file2.Name, file2.FullName });
-                            //listBox1.Items.Add(file2.FullName);
-                        }
-                        listBox1.DataSource = resim;
-                        label20.Text = "Toplam Resim : " + listBox1.Items.Count.ToString();
-                    }
-
-                    label20.Text = "Toplam Resim : ";
-                }
+                Resimler();
             }
             else if (e.Tab.Text == "Fiyatlandırma")
             {
                 if (nStokID != null)
                 {
-                    FiyatCek(txtStokKodu.Text,"");
-                    //string q = "select nStokID,sFiyatTipi,lFiyat,dteFiyatTespitTarihi,sKullaniciAdi from tbStokFiyati where nStokID = '" + nStokID + "'";
-                    //SqlCommand cmd = new SqlCommand(q, connection);
-                    //SqlDataAdapter ad = new SqlDataAdapter(cmd);
-                    //DataTable dt = new DataTable();
-                    //if (connection.State == ConnectionState.Closed)
-                    //{
-                    //    connection.Open();
-                    //}
-                    //ad.Fill(dt);
-                    //gridFiyatlar.DataSource = dt;
-                    //gridTopluFiyat.DataSource = dt;
+                    FiyatCek(txtStokKodu.Text, "");
                 }
             }
             else if (e.Tab.Text == "Sınıflar")
@@ -439,32 +444,7 @@ namespace Entegref
                     Prm.Add("@parentid", "0");
                     sinif1 = conn.DfQuery("Sinif", Prm);
                     cmbSinif1.DataSource = sinif1;
-
                 }
-                //sinif_1();
-                //sinif_2();
-                //sinif_3();
-                //sinif_4();
-                //sinif_5();
-                //sinif_6();
-                //cmbSinif1.DisplayMember = "sAciklama";
-                //cmbSinif1.ValueMember = "sSinifKodu";
-                //cmbSinif1.DataSource = sinif1;
-                //cmbSinif2.DisplayMember = "sAciklama";
-                //cmbSinif2.ValueMember = "sSinifKodu";
-                //cmbSinif2.DataSource = sinif2;
-                //cmbSinif3.DisplayMember = "sAciklama";
-                //cmbSinif3.ValueMember = "sSinifKodu";
-                //cmbSinif3.DataSource = sinif3;
-                //cmbSinif4.DisplayMember = "sAciklama";
-                //cmbSinif4.ValueMember = "sSinifKodu";
-                //cmbSinif4.DataSource = sinif4;
-                //cmbSinif5.DisplayMember = "sAciklama";
-                //cmbSinif5.ValueMember = "sSinifKodu";
-                //cmbSinif5.DataSource = sinif5;
-                //cmbSinif6.DisplayMember = "sAciklama";
-                //cmbSinif6.ValueMember = "sSinifKodu";
-                //cmbSinif6.DataSource = sinif6;
             }
             else if (e.Tab.Text == "Renk Beden Kavala")
             {
@@ -473,7 +453,7 @@ namespace Entegref
                     dataGridView1.DataSource = null;
                     pnlRenkBedenOlan.Dock = DockStyle.Fill;
                     pnlRenkBeden.Visible = false;
-                    string renk="";
+                    string renk = "";
                     for (int i = 0; i < renkolanlar.Rows.Count; i++)
                     {
                         if (renk == "")
@@ -511,15 +491,15 @@ namespace Entegref
                 }
                 else
                 {
-                    dataGridView1.DataSource = null;
-                    dataGridView1.Visible = false;
-                    pnlRenkBedenOlan.Visible = false;
-                    pnlRenkBeden.Controls.Clear();
-                    pnlRenkBeden.Dock = DockStyle.Fill;
-                    frmRenk frmRenk = new frmRenk(Kavala, BedenTipi);
-                    frmRenk.TopLevel = false;
-                    pnlRenkBeden.Controls.Add(frmRenk);
-                    frmRenk.Show();
+                    //dataGridView1.DataSource = null;
+                    //dataGridView1.Visible = false;
+                    //pnlRenkBedenOlan.Visible = false;
+                    //pnlRenkBeden.Controls.Clear();
+                    //pnlRenkBeden.Dock = DockStyle.Fill;
+                    //frmRenk frmRenk = new frmRenk(Kavala, BedenTipi);
+                    //frmRenk.TopLevel = false;
+                    //pnlRenkBeden.Controls.Add(frmRenk);
+                    //frmRenk.Show();
                 }
             }
             else
@@ -540,16 +520,73 @@ namespace Entegref
                 string dosya = listBox1.SelectedValue.ToString();
                 int satirno = listBox1.SelectedIndex;
                 pictureBox1.Image = Image.FromFile(dosya);
-                txtFileAdress.Text = dosya;
             }
         }
 
         private void simpleButton2_Click(object sender, EventArgs e)
         {
-            //Save the file in folder
-            string fileLocation = txtFileAdress.Text;
-            File.Copy(txtFileAdress.Text, Path.Combine(@"..\..\Pictures\", Path.GetFileName(filename)), true);
-            txtFileAdress.Text = null;
+
+            if (txtFileAdress.Text != "")
+            {
+                //frmResim frmResim = new frmResim(sModel);
+                //frmResim.ShowDialog();
+
+                string fileLocation = txtFileAdress.Text;
+
+                Dictionary<string, string> Rsm = new Dictionary<string, string>();
+                Rsm.Add("@sModel", txtStokKodu.Text.Replace(" ", ""));
+                var fileCount = conn.DfQuery("Entegref_Resim", Rsm);
+
+                string sira = fileCount.Rows.Count.ToString();
+                int sub1 = filename.IndexOf(@".");
+                int sub2 = filename.Length - filename.IndexOf(@".");
+
+
+                string pictureName = txtStokKodu.Text.Replace(" ", "") + "_" + sira + filename.Substring(sub1, sub2);
+                string fileLocation2 = Path.Combine(@"..\..\Pictures\", Path.GetFileName(pictureName));
+
+                DirectoryInfo d = new DirectoryInfo(@"..\..\Pictures\");
+                var sonuc = d.GetFiles("*.*");
+                bool var = false;
+                for (int i = 0; i < sonuc.Length; i++)
+                {
+                    if (sonuc[i].Name.ToString() == pictureName)
+                    {
+                        var = true;
+                    }
+                }
+                if (var == false)
+                {
+                    File.Copy(txtFileAdress.Text, Path.Combine(@"..\..\Pictures\", Path.GetFileName(pictureName)), true);
+                }
+                var = false;
+                DirectoryInfo d2 = new DirectoryInfo(@"..\..\Pictures\");
+                var sonuc2 = d2.GetFiles("*.*");
+
+                for (int i = 0; i < sonuc2.Length; i++)
+                {
+                    if (sonuc2[i].Name.ToString() == pictureName)
+                    {
+                        var = true;
+                    }
+                }
+
+                if (var == true)
+                {
+                    Dictionary<string, string> Rsm2 = new Dictionary<string, string>();
+                    Rsm2.Add("@sModel", txtStokKodu.Text.Replace(" ", ""));
+                    Rsm2.Add("sLocation", fileLocation2);
+                    Rsm2.Add("@sResimAdi", pictureName);
+                    Rsm2.Add("@sKullaniciAdi", frmLogin.username);
+                    conn.DfInsert("Entegref_Resim_insert", Rsm2);
+                }
+                else
+                {
+                }
+
+                txtFileAdress.Text = null;
+            }
+            Resimler();
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -568,7 +605,7 @@ namespace Entegref
         {
             frmStokBul stokBul = new frmStokBul();
             stokBul.ShowDialog();
-            txtStokKodu.Text = sKodu;
+            txtStokKodu.Text = sModel;
         }
 
         private void btnbarkod_Click(object sender, EventArgs e)
@@ -639,7 +676,7 @@ namespace Entegref
                 DataTable fiyat_yeni = new DataTable();
                 string Fiyatsql = "select ff.nStokID,t.sFiyatTipi, t.sAciklama,dteFiyatTespitTarihi,lFiyat from tbFiyatTipi t ";
                 Fiyatsql = Fiyatsql + " left join(select f.nStokID,f.lFiyat, f.dteFiyatTespitTarihi, f.sFiyatTipi from tbStokFiyati f ";
-                Fiyatsql = Fiyatsql + "inner join tbstok s on s.nStokID= f.nStokID where s.sKodu = isnull('" + txtStokKodu.Text + "','')";
+                Fiyatsql = Fiyatsql + "inner join tbstok s on s.nStokID= f.nStokID where s.sModel = isnull('" + txtStokKodu.Text + "','')";
                 Fiyatsql = Fiyatsql + ") ff on ff.sFiyatTipi = t.sFiyatTipi";
                 SqlCommand cmd = new SqlCommand(Fiyatsql, connection);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -663,7 +700,7 @@ namespace Entegref
 
         }
         string lfiyat = "";
-        public void Fiyatbul(string skodu)
+        public void Fiyatbul(string _sModel)
         {
             string q =  "select tbFiyatTipi.sFiyatTipi ,  isnull(lFiyat,0) , isnull(convert(char(10), dteFiyatTespitTarihi, 103), '01/01/1900') "+
                         "from tbFiyatTipi "+
@@ -671,7 +708,7 @@ namespace Entegref
                         "( select distinct(sFiyatTipi) as sFiyatTipi, lFiyat, dteFiyatTespitTarihi "+
                         "from tbStokFiyati,tbStok "+
                         "Where tbStokFiyati.nStokID = tbStok.nStokID "+
-                        "and tbStok.sModel = '"+skodu+"' ) as Fiyat on tbFiyatTipi.sFiyatTipi = Fiyat.sFiyatTipi "+
+                        "and tbStok.sModel = '"+ _sModel + "' ) as Fiyat on tbFiyatTipi.sFiyatTipi = Fiyat.sFiyatTipi "+
                         "order by tbFiyatTipi.sFiyatTipi";
             SqlCommand cmd = new SqlCommand(q, connection);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -706,17 +743,17 @@ namespace Entegref
 
         private void cmbSinif1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbSinif1.SelectedValue.ToString() != "00-0" || cmbSinif1.SelectedValue != null)
+            if (cmbSinif1.SelectedValue != null || cmbSinif1.SelectedValue.ToString() == "00-0")
             {
                 cmbSinif2.DisplayMember = "sAciklama";
                 cmbSinif2.ValueMember = "sSinifKodu";
                 Dictionary<string, string> Prm = new Dictionary<string, string>();
                 Prm.Add("@sira", "2");
                 Prm.Add("@parentid", cmbSinif1.SelectedValue.ToString().Substring(cmbSinif1.SelectedValue.ToString().IndexOf("-") + 1).Replace(" ", ""));
-                sinif2 = conn.DfQuery("Sinif", Prm);
-                cmbSinif2.DataSource = sinif2;
+                sinif2 = conn.DfQuery("Sinif", Prm);                
                 if (sinif2.Rows.Count > 1)
                 {
+                    cmbSinif2.DataSource = sinif2;
                     cmbSinif2.Enabled = true;
                 }
                 else
@@ -940,8 +977,10 @@ namespace Entegref
 
         private void btnYeni_Click(object sender, EventArgs e)
         {
+            renkolanlar.Clear();
+            renkolanlar.Columns.Clear();
             txtStokKodu.Text = null;
-            sKodu = null;
+            sRenkKodu = null;
             bunifuCustomTextbox1.Text = null;
             bunifuCustomTextbox2.Text = null;
             bunifuCustomTextbox3.Text = null;
@@ -955,7 +994,7 @@ namespace Entegref
             ultraButton2.Enabled = true;
             simpleButton3.Enabled = true;
             frmStokAc_Load(null, null);
-            sKodu = null;
+            sModel = null;
             sFiyatTipi = null;
             sinifsira1 = null;
             sinifsira2 = null;
@@ -966,13 +1005,17 @@ namespace Entegref
             Fiyatlandirma = null;
             Beden = null;
             Kavala = null;
-
             sinif1.Clear();
             sinif2.Clear();
             sinif3.Clear();
             sinif4.Clear();
             sinif5.Clear();
             sinif6.Clear();
+            txtFileAdress.Text = null;
+            txtStokKodu.Enabled = true;
+            pictureBox1.InitialImage = null;
+            pictureBox1.Image = null;
+
         }
 
         private void btnKaydet_Click(object sender, EventArgs e)

@@ -43,7 +43,7 @@ namespace Entegref
 
         private void frmRenk_Load(object sender, EventArgs e)
         {
-            this.Width = 600;
+            this.Width = 486;
             //GraphicsPath p = new GraphicsPath();
             //GraphicsPath gp = new GraphicsPath();
             //p.AddEllipse(1, 1, btnOk.Width - 4, btnOk.Height - 4);
@@ -52,6 +52,10 @@ namespace Entegref
             //btnCancel.Region = new Region(gp);
             Ekle();
             setUpEventHandlers();
+            if (bedenTipi == null)
+            {
+                btnOk.Text = "Renk Ekle";
+            }
         }
         private void Ekle()
         {
@@ -229,78 +233,87 @@ namespace Entegref
                     secilen = ListSecili.Items[i].SubItems[0].Text;
                     secilirenkler = secilirenkler.ToString() +","+ secilen.ToString();
                 }
-                this.Width = 1450;
-                ultraPanel1.Enabled = false;
-                ultraPanel2.Enabled = false;
-                ultraPanel5.Visible = true;
-                btnOk.Enabled = false;
-
-                Dictionary<string, string> Values = new Dictionary<string, string>();
-                if (kavalaTipi != null)
-                {
-                    Values.Add("@sKavalaTipi", kavalaTipi);
-                }
-                else
-                {
-                    Values.Add("@sKavalaTipi", "");
-                }
                 if (bedenTipi != null)
                 {
-                    Values.Add("@sBedenTipi", bedenTipi);
+
+                    this.Width = 1450;
+                    ultraPanel1.Enabled = false;
+                    ultraPanel2.Enabled = false;
+                    ultraPanel5.Visible = true;
+                    btnOk.Enabled = false;
+
+                    Dictionary<string, string> Values = new Dictionary<string, string>();
+                    if (kavalaTipi != null)
+                    {
+                        Values.Add("@sKavalaTipi", kavalaTipi);
+                    }
+                    else
+                    {
+                        Values.Add("@sKavalaTipi", "");
+                    }
+                    if (bedenTipi != null)
+                    {
+                        Values.Add("@sBedenTipi", bedenTipi);
+                    }
+                    else
+                    {
+                        Values.Add("@sBedenTipi", "");
+                    }
+                    Values.Add("@sRenkKodu", secilirenkler);
+                    var tablo = conn.DfQuery("UrunRenkBedenKavalaSec", Values);
+                    dataGridView1.DataSource = tablo;
+                    dataGridView1.AutoResizeColumns();
                 }
-                else
-                {
-                    Values.Add("@sBedenTipi", "");
-                }
-                Values.Add("@sRenkKodu", secilirenkler);
-                var tablo = conn.DfQuery("UrunRenkBedenKavalaSec", Values);
-                dataGridView1.DataSource = tablo;
-                dataGridView1.AutoResizeColumns();
+                frmStokAc.sKodu = secilirenkler;
             }
         }
 
         private void simpleButton5_Click(object sender, EventArgs e)
         {
-            for (int r = 0; r < dataGridView1.Rows.Count; r++)
+            if (bedenTipi != null)
             {
-                var dd = frmStokAc.sinifsira1.IndexOf("-");
-                string bedensira;
-                int stoksayi=0;
-                var srenk = dataGridView1.Rows[r].Cells[0].Value.ToString();
-                var skavala = dataGridView1.Rows[r].Cells[3].Value.ToString().Replace(" ", "");
-                for (int c = 4; c < dataGridView1.ColumnCount; c++)
+
+
+                for (int r = 0; r < dataGridView1.Rows.Count; r++)
                 {
-                    var bedenvar = dataGridView1.Rows[r].Cells[c].Value.ToString();
-                    Dictionary<string, string> Renkler = new Dictionary<string, string>();
-                    if (bedenvar.ToString() == "True")
+                    var dd = frmStokAc.sinifsira1.IndexOf("-");
+                    string bedensira;
+                    int stoksayi = 0;
+                    var srenk = dataGridView1.Rows[r].Cells[0].Value.ToString();
+                    var skavala = dataGridView1.Rows[r].Cells[3].Value.ToString().Replace(" ", "");
+                    for (int c = 4; c < dataGridView1.ColumnCount; c++)
                     {
-                        bedensira = dataGridView1.Columns[c].HeaderText.ToString();
-                        Renkler.Add("@sBeden" + (c - 3).ToString(), bedensira);
-                        stoksayi++;
-                    }
-                    else
-                    {
-                        Renkler.Add("@sBeden" + (c - 3).ToString(), "");
-                    }
+                        var bedenvar = dataGridView1.Rows[r].Cells[c].Value.ToString();
+                        Dictionary<string, string> Renkler = new Dictionary<string, string>();
+                        if (bedenvar.ToString() == "True")
+                        {
+                            bedensira = dataGridView1.Columns[c].HeaderText.ToString();
+                            Renkler.Add("@sBeden" + (c - 3).ToString(), bedensira);
+                            stoksayi++;
+                        }
+                        else
+                        {
+                            Renkler.Add("@sBeden" + (c - 3).ToString(), "");
+                        }
 
-                    Renkler.Add("@sKodu", frmStokAc.sKodu.ToString());
-                    Renkler.Add("@bedenTipi", frmStokAc.BedenTipi);
-                    Renkler.Add("@sRenkKodu", srenk);
-                    Renkler.Add("@KavalaTipi", frmStokAc.Kavala);
-                    Renkler.Add("@Kavala", skavala);
-                    Renkler.Add("@sinif1", frmStokAc.sinifsira1.ToString().Substring(0, frmStokAc.sinifsira1.IndexOf("-")).Replace("00", ""));
-                    Renkler.Add("@sinif2", frmStokAc.sinifsira2.ToString().Substring(0, frmStokAc.sinifsira1.IndexOf("-")).Replace("00", ""));
-                    Renkler.Add("@sinif3", frmStokAc.sinifsira3.ToString().Substring(0, frmStokAc.sinifsira1.IndexOf("-")).Replace("00", ""));
-                    Renkler.Add("@sinif4", frmStokAc.sinifsira4.ToString().Substring(0, frmStokAc.sinifsira1.IndexOf("-")).Replace("00", ""));
-                    Renkler.Add("@sinif5", frmStokAc.sinifsira5.ToString().Substring(0, frmStokAc.sinifsira1.IndexOf("-")).Replace("00", ""));
-                    Renkler.Add("@sinif6", frmStokAc.sinifsira6.ToString().Substring(0, frmStokAc.sinifsira1.IndexOf("-")).Replace("00", ""));
-                    conn.DfInsert("", Renkler);
+                        Renkler.Add("@sKodu", frmStokAc.sKodu.ToString());
+                        Renkler.Add("@bedenTipi", frmStokAc.BedenTipi);
+                        Renkler.Add("@sRenkKodu", srenk);
+                        Renkler.Add("@KavalaTipi", frmStokAc.Kavala);
+                        Renkler.Add("@Kavala", skavala);
+                        Renkler.Add("@sinif1", frmStokAc.sinifsira1.ToString().Substring(0, frmStokAc.sinifsira1.IndexOf("-")).Replace("00", ""));
+                        Renkler.Add("@sinif2", frmStokAc.sinifsira2.ToString().Substring(0, frmStokAc.sinifsira1.IndexOf("-")).Replace("00", ""));
+                        Renkler.Add("@sinif3", frmStokAc.sinifsira3.ToString().Substring(0, frmStokAc.sinifsira1.IndexOf("-")).Replace("00", ""));
+                        Renkler.Add("@sinif4", frmStokAc.sinifsira4.ToString().Substring(0, frmStokAc.sinifsira1.IndexOf("-")).Replace("00", ""));
+                        Renkler.Add("@sinif5", frmStokAc.sinifsira5.ToString().Substring(0, frmStokAc.sinifsira1.IndexOf("-")).Replace("00", ""));
+                        Renkler.Add("@sinif6", frmStokAc.sinifsira6.ToString().Substring(0, frmStokAc.sinifsira1.IndexOf("-")).Replace("00", ""));
+                        conn.DfInsert("", Renkler);
+                    }
+                    //Renkler.Add("", stoksayi.ToString());
+                    //conn.DfInsert("", Renkler);
+
                 }
-                //Renkler.Add("", stoksayi.ToString());
-                //conn.DfInsert("", Renkler);
-
             }
-
         }
     }
 }

@@ -33,7 +33,6 @@
             // 
             // simpleButton1
             // 
-            this.simpleButton1.ImageOptions.Image = global::Entegref.Properties.Resources.clearvalidationcircles_32x32;
             this.simpleButton1.Location = new System.Drawing.Point(237, 102);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(471, 259);

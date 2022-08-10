@@ -499,7 +499,6 @@
             // 
             // btnFiyatTipiAc
             // 
-            this.btnFiyatTipiAc.ImageOptions.Image = global::Entegref.Properties.Resources.find_16x16;
             this.btnFiyatTipiAc.Location = new System.Drawing.Point(286, 10);
             this.btnFiyatTipiAc.Name = "btnFiyatTipiAc";
             this.btnFiyatTipiAc.Size = new System.Drawing.Size(27, 21);
@@ -653,27 +652,19 @@
             this.ultraTabControl1.TabCloseButtonVisibility = Infragistics.Win.UltraWinTabs.TabCloseButtonVisibility.Never;
             this.ultraTabControl1.TabIndex = 0;
             this.ultraTabControl1.TabOrientation = Infragistics.Win.UltraWinTabs.TabOrientation.TopLeft;
-            appearance1.Image = global::Entegref.Properties.Resources.definednamecreatefromselection_32x32;
             ultraTab1.Appearance = appearance1;
-            appearance2.Image = global::Entegref.Properties.Resources.definednamecreatefromselection_32x32;
             ultraTab1.SelectedAppearance = appearance2;
             ultraTab1.TabPage = this.ultraTabPageControl1;
             ultraTab1.Text = "Genel Bilgiler";
-            appearance3.Image = global::Entegref.Properties.Resources.loadpagesetup_32x32;
             ultraTab2.Appearance = appearance3;
-            appearance4.Image = global::Entegref.Properties.Resources.loadpagesetup_32x32;
             ultraTab2.SelectedAppearance = appearance4;
             ultraTab2.TabPage = this.ultraTabPageControl2;
             ultraTab2.Text = "Sınıflar";
-            appearance5.Image = global::Entegref.Properties.Resources.bosale_32x32;
             ultraTab3.Appearance = appearance5;
-            appearance6.Image = global::Entegref.Properties.Resources.bosale_32x32;
             ultraTab3.SelectedAppearance = appearance6;
             ultraTab3.TabPage = this.ultraTabPageControl3;
             ultraTab3.Text = "Fiyatlandırma";
-            appearance7.Image = global::Entegref.Properties.Resources.picturebox_32x32;
             ultraTab4.Appearance = appearance7;
-            appearance8.Image = global::Entegref.Properties.Resources.picturebox_32x32;
             ultraTab4.SelectedAppearance = appearance8;
             ultraTab4.TabPage = this.ultraTabPageControl4;
             ultraTab4.Text = "Resimler";
@@ -706,7 +697,6 @@
             // 
             // simpleButton3
             // 
-            this.simpleButton3.ImageOptions.Image = global::Entegref.Properties.Resources.apply_32x32;
             this.simpleButton3.Location = new System.Drawing.Point(365, 3);
             this.simpleButton3.Name = "simpleButton3";
             this.simpleButton3.Size = new System.Drawing.Size(122, 35);
@@ -768,7 +758,6 @@
             // 
             // dropDownButton1
             // 
-            this.dropDownButton1.ImageOptions.Image = global::Entegref.Properties.Resources.bosale_32x32;
             this.dropDownButton1.Location = new System.Drawing.Point(977, 13);
             this.dropDownButton1.Name = "dropDownButton1";
             this.dropDownButton1.Size = new System.Drawing.Size(156, 39);

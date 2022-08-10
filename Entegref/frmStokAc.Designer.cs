@@ -29,34 +29,26 @@
         private void InitializeComponent()
         {
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab1 = new Infragistics.Win.UltraWinTabControl.UltraTab();
-            Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab5 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab2 = new Infragistics.Win.UltraWinTabControl.UltraTab();
-            Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab3 = new Infragistics.Win.UltraWinTabControl.UltraTab();
-            Infragistics.Win.Appearance appearance5 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance6 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab6 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab4 = new Infragistics.Win.UltraWinTabControl.UltraTab();
-            Infragistics.Win.Appearance appearance7 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance8 = new Infragistics.Win.Appearance();
             this.ultraTabPageControl1 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.txtCikisiade = new System.Windows.Forms.TextBox();
-            this.txtKalan = new System.Windows.Forms.TextBox();
-            this.txtCikis = new System.Windows.Forms.TextBox();
-            this.txtGirisiade = new System.Windows.Forms.TextBox();
-            this.txtGiris = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.lblKavala = new System.Windows.Forms.Label();
@@ -149,12 +141,11 @@
             this.ultraTabPageControl4 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label20 = new System.Windows.Forms.Label();
             this.pnlUrunResimbtn = new System.Windows.Forms.Panel();
             this.txtFileAdress = new System.Windows.Forms.TextBox();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.label20 = new System.Windows.Forms.Label();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btnSil = new DevExpress.XtraEditors.SimpleButton();
@@ -173,12 +164,13 @@
             this.txtStokKodu = new System.Windows.Forms.TextBox();
             this.btnStokBul = new System.Windows.Forms.Button();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
-            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.ultraTabPageControl1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.ultraTabPageControl5.SuspendLayout();
             this.ultraTabPageControl2.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -203,7 +195,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.ultraTabPageControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel5.SuspendLayout();
             this.pnlUrunResimbtn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
@@ -220,172 +211,21 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
             this.panelControl4.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // ultraTabPageControl1
             // 
-            this.ultraTabPageControl1.Controls.Add(this.panel3);
             this.ultraTabPageControl1.Controls.Add(this.panel2);
             this.ultraTabPageControl1.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl1.Name = "ultraTabPageControl1";
-            this.ultraTabPageControl1.Size = new System.Drawing.Size(965, 530);
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.label17);
-            this.panel3.Controls.Add(this.panel8);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 236);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(965, 294);
-            this.panel3.TabIndex = 2;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label17.Location = new System.Drawing.Point(6, 5);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(99, 19);
-            this.label17.TabIndex = 2;
-            this.label17.Text = "Ürün Özellikeri";
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.label25);
-            this.panel8.Controls.Add(this.label21);
-            this.panel8.Controls.Add(this.label22);
-            this.panel8.Controls.Add(this.label23);
-            this.panel8.Controls.Add(this.label24);
-            this.panel8.Controls.Add(this.txtCikisiade);
-            this.panel8.Controls.Add(this.txtKalan);
-            this.panel8.Controls.Add(this.txtCikis);
-            this.panel8.Controls.Add(this.txtGirisiade);
-            this.panel8.Controls.Add(this.txtGiris);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel8.Location = new System.Drawing.Point(0, 241);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(965, 53);
-            this.panel8.TabIndex = 3;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(878, 7);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(35, 13);
-            this.label25.TabIndex = 1;
-            this.label25.Text = "Kalan";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(735, 7);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(56, 13);
-            this.label21.TabIndex = 1;
-            this.label21.Text = "Çıkış İade";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(616, 7);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(31, 13);
-            this.label22.TabIndex = 1;
-            this.label22.Text = "Çıkış";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(472, 7);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(55, 13);
-            this.label23.TabIndex = 1;
-            this.label23.Text = "Giriş İade";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(352, 7);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(30, 13);
-            this.label24.TabIndex = 1;
-            this.label24.Text = "Giriş";
-            // 
-            // txtCikisiade
-            // 
-            this.txtCikisiade.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCikisiade.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.txtCikisiade.Enabled = false;
-            this.txtCikisiade.Location = new System.Drawing.Point(704, 23);
-            this.txtCikisiade.Name = "txtCikisiade";
-            this.txtCikisiade.ReadOnly = true;
-            this.txtCikisiade.Size = new System.Drawing.Size(118, 22);
-            this.txtCikisiade.TabIndex = 0;
-            this.txtCikisiade.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtKalan
-            // 
-            this.txtKalan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtKalan.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.txtKalan.Enabled = false;
-            this.txtKalan.Location = new System.Drawing.Point(836, 23);
-            this.txtKalan.Name = "txtKalan";
-            this.txtKalan.ReadOnly = true;
-            this.txtKalan.Size = new System.Drawing.Size(118, 22);
-            this.txtKalan.TabIndex = 0;
-            this.txtKalan.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtCikis
-            // 
-            this.txtCikis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCikis.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.txtCikis.Enabled = false;
-            this.txtCikis.Location = new System.Drawing.Point(572, 23);
-            this.txtCikis.Name = "txtCikis";
-            this.txtCikis.ReadOnly = true;
-            this.txtCikis.Size = new System.Drawing.Size(118, 22);
-            this.txtCikis.TabIndex = 0;
-            this.txtCikis.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtGirisiade
-            // 
-            this.txtGirisiade.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtGirisiade.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.txtGirisiade.Enabled = false;
-            this.txtGirisiade.Location = new System.Drawing.Point(440, 23);
-            this.txtGirisiade.Name = "txtGirisiade";
-            this.txtGirisiade.ReadOnly = true;
-            this.txtGirisiade.Size = new System.Drawing.Size(118, 22);
-            this.txtGirisiade.TabIndex = 0;
-            this.txtGirisiade.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtGiris
-            // 
-            this.txtGiris.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtGiris.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.txtGiris.Enabled = false;
-            this.txtGiris.Location = new System.Drawing.Point(308, 23);
-            this.txtGiris.Name = "txtGiris";
-            this.txtGiris.ReadOnly = true;
-            this.txtGiris.Size = new System.Drawing.Size(118, 22);
-            this.txtGiris.TabIndex = 0;
-            this.txtGiris.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ultraTabPageControl1.Size = new System.Drawing.Size(991, 530);
             // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.panel8);
             this.panel2.Controls.Add(this.checkBox2);
             this.panel2.Controls.Add(this.checkBox1);
             this.panel2.Controls.Add(this.lblKavala);
@@ -419,8 +259,125 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(965, 236);
+            this.panel2.Size = new System.Drawing.Size(991, 529);
             this.panel2.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.label17);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 379);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(987, 95);
+            this.panel3.TabIndex = 2;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label17.Location = new System.Drawing.Point(6, 5);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(99, 19);
+            this.label17.TabIndex = 2;
+            this.label17.Text = "Ürün Özellikeri";
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.textBox5);
+            this.panel8.Controls.Add(this.textBox4);
+            this.panel8.Controls.Add(this.textBox3);
+            this.panel8.Controls.Add(this.textBox2);
+            this.panel8.Controls.Add(this.textBox1);
+            this.panel8.Controls.Add(this.label25);
+            this.panel8.Controls.Add(this.label21);
+            this.panel8.Controls.Add(this.label22);
+            this.panel8.Controls.Add(this.label23);
+            this.panel8.Controls.Add(this.label24);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel8.Location = new System.Drawing.Point(0, 474);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(987, 51);
+            this.panel8.TabIndex = 3;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(879, 26);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 22);
+            this.textBox5.TabIndex = 6;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(771, 26);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 22);
+            this.textBox4.TabIndex = 5;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(663, 26);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 22);
+            this.textBox3.TabIndex = 4;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(555, 26);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 22);
+            this.textBox2.TabIndex = 3;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(447, 26);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 2;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(912, 4);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(35, 13);
+            this.label25.TabIndex = 1;
+            this.label25.Text = "Kalan";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(792, 4);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(56, 13);
+            this.label21.TabIndex = 1;
+            this.label21.Text = "Çıkış İade";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(697, 4);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(31, 13);
+            this.label22.TabIndex = 1;
+            this.label22.Text = "Çıkış";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(578, 4);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(55, 13);
+            this.label23.TabIndex = 1;
+            this.label23.Text = "Giriş İade";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(484, 4);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(30, 13);
+            this.label24.TabIndex = 1;
+            this.label24.Text = "Giriş";
             // 
             // checkBox2
             // 
@@ -681,7 +638,6 @@
             // 
             // btnbarkod
             // 
-            this.btnbarkod.Image = global::Entegref.Properties.Resources.barcode_32x32;
             this.btnbarkod.Location = new System.Drawing.Point(663, 181);
             this.btnbarkod.Name = "btnbarkod";
             this.btnbarkod.Size = new System.Drawing.Size(51, 21);
@@ -702,7 +658,7 @@
             this.ultraTabPageControl5.Controls.Add(this.miniHTMLTextBox1);
             this.ultraTabPageControl5.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl5.Name = "ultraTabPageControl5";
-            this.ultraTabPageControl5.Size = new System.Drawing.Size(965, 530);
+            this.ultraTabPageControl5.Size = new System.Drawing.Size(991, 530);
             // 
             // miniHTMLTextBox1
             // 
@@ -715,7 +671,7 @@
             this.miniHTMLTextBox1.Location = new System.Drawing.Point(0, 0);
             this.miniHTMLTextBox1.Name = "miniHTMLTextBox1";
             this.miniHTMLTextBox1.Padding = new System.Windows.Forms.Padding(1);
-            this.miniHTMLTextBox1.Size = new System.Drawing.Size(965, 530);
+            this.miniHTMLTextBox1.Size = new System.Drawing.Size(991, 530);
             this.miniHTMLTextBox1.TabIndex = 0;
             this.miniHTMLTextBox1.Text = null;
             // 
@@ -725,7 +681,7 @@
             this.ultraTabPageControl2.Controls.Add(this.panel6);
             this.ultraTabPageControl2.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl2.Name = "ultraTabPageControl2";
-            this.ultraTabPageControl2.Size = new System.Drawing.Size(965, 530);
+            this.ultraTabPageControl2.Size = new System.Drawing.Size(991, 530);
             // 
             // panel7
             // 
@@ -734,7 +690,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(0, 279);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(965, 251);
+            this.panel7.Size = new System.Drawing.Size(991, 251);
             this.panel7.TabIndex = 7;
             // 
             // groupBox4
@@ -746,7 +702,7 @@
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox4.Location = new System.Drawing.Point(484, 0);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(481, 251);
+            this.groupBox4.Size = new System.Drawing.Size(507, 251);
             this.groupBox4.TabIndex = 4;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "N11";
@@ -845,7 +801,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(965, 279);
+            this.panel6.Size = new System.Drawing.Size(991, 279);
             this.panel6.TabIndex = 6;
             // 
             // groupBox3
@@ -858,7 +814,7 @@
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox3.Location = new System.Drawing.Point(484, 0);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(481, 279);
+            this.groupBox3.Size = new System.Drawing.Size(507, 279);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "ÇiçekSepeti";
@@ -977,9 +933,9 @@
             this.ultraTabPageControl3.Controls.Add(this.gridFiyatlar);
             this.ultraTabPageControl3.Controls.Add(this.pnlTopluFiyat);
             this.ultraTabPageControl3.Controls.Add(this.panel4);
-            this.ultraTabPageControl3.Location = new System.Drawing.Point(1, 23);
+            this.ultraTabPageControl3.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl3.Name = "ultraTabPageControl3";
-            this.ultraTabPageControl3.Size = new System.Drawing.Size(965, 530);
+            this.ultraTabPageControl3.Size = new System.Drawing.Size(991, 530);
             // 
             // gridFiyatlar
             // 
@@ -987,7 +943,7 @@
             this.gridFiyatlar.Location = new System.Drawing.Point(0, 252);
             this.gridFiyatlar.MainView = this.ViewFiyatlar;
             this.gridFiyatlar.Name = "gridFiyatlar";
-            this.gridFiyatlar.Size = new System.Drawing.Size(965, 278);
+            this.gridFiyatlar.Size = new System.Drawing.Size(991, 278);
             this.gridFiyatlar.TabIndex = 0;
             this.gridFiyatlar.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.ViewFiyatlar});
@@ -1049,7 +1005,7 @@
             this.pnlTopluFiyat.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTopluFiyat.Location = new System.Drawing.Point(0, 100);
             this.pnlTopluFiyat.Name = "pnlTopluFiyat";
-            this.pnlTopluFiyat.Size = new System.Drawing.Size(965, 152);
+            this.pnlTopluFiyat.Size = new System.Drawing.Size(991, 152);
             this.pnlTopluFiyat.TabIndex = 2;
             this.pnlTopluFiyat.Visible = false;
             // 
@@ -1059,7 +1015,7 @@
             this.gridTopluFiyat.Location = new System.Drawing.Point(0, 0);
             this.gridTopluFiyat.MainView = this.ViewTopluFiyat;
             this.gridTopluFiyat.Name = "gridTopluFiyat";
-            this.gridTopluFiyat.Size = new System.Drawing.Size(965, 152);
+            this.gridTopluFiyat.Size = new System.Drawing.Size(991, 152);
             this.gridTopluFiyat.TabIndex = 0;
             this.gridTopluFiyat.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.ViewTopluFiyat});
@@ -1128,7 +1084,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(965, 100);
+            this.panel4.Size = new System.Drawing.Size(991, 100);
             this.panel4.TabIndex = 1;
             // 
             // simpleButton4
@@ -1138,7 +1094,7 @@
             this.simpleButton4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton4.Location = new System.Drawing.Point(765, 0);
             this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(200, 100);
+            this.simpleButton4.Size = new System.Drawing.Size(226, 100);
             this.simpleButton4.TabIndex = 4;
             this.simpleButton4.Text = "Fiyat Gir";
             this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
@@ -1203,7 +1159,6 @@
             // 
             // btnFiyatTipiAc
             // 
-            this.btnFiyatTipiAc.ImageOptions.Image = global::Entegref.Properties.Resources.find_16x16;
             this.btnFiyatTipiAc.Location = new System.Drawing.Point(286, 10);
             this.btnFiyatTipiAc.Name = "btnFiyatTipiAc";
             this.btnFiyatTipiAc.Size = new System.Drawing.Size(27, 21);
@@ -1250,7 +1205,7 @@
             this.ultraTabPageControl6.Controls.Add(this.pnlRenkBeden);
             this.ultraTabPageControl6.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl6.Name = "ultraTabPageControl6";
-            this.ultraTabPageControl6.Size = new System.Drawing.Size(965, 530);
+            this.ultraTabPageControl6.Size = new System.Drawing.Size(991, 530);
             // 
             // pnlRenkBedenOlan
             // 
@@ -1258,7 +1213,7 @@
             this.pnlRenkBedenOlan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlRenkBedenOlan.Location = new System.Drawing.Point(0, 0);
             this.pnlRenkBedenOlan.Name = "pnlRenkBedenOlan";
-            this.pnlRenkBedenOlan.Size = new System.Drawing.Size(965, 430);
+            this.pnlRenkBedenOlan.Size = new System.Drawing.Size(991, 430);
             this.pnlRenkBedenOlan.TabIndex = 1;
             // 
             // dataGridView1
@@ -1269,7 +1224,7 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(965, 430);
+            this.dataGridView1.Size = new System.Drawing.Size(991, 430);
             this.dataGridView1.TabIndex = 1;
             // 
             // pnlRenkBeden
@@ -1277,26 +1232,25 @@
             this.pnlRenkBeden.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlRenkBeden.Location = new System.Drawing.Point(0, 430);
             this.pnlRenkBeden.Name = "pnlRenkBeden";
-            this.pnlRenkBeden.Size = new System.Drawing.Size(965, 100);
+            this.pnlRenkBeden.Size = new System.Drawing.Size(991, 100);
             this.pnlRenkBeden.TabIndex = 0;
             // 
             // ultraTabPageControl4
             // 
-            this.ultraTabPageControl4.Controls.Add(this.pictureBox1);
-            this.ultraTabPageControl4.Controls.Add(this.listBox1);
             this.ultraTabPageControl4.Controls.Add(this.panel5);
+            this.ultraTabPageControl4.Controls.Add(this.listBox1);
             this.ultraTabPageControl4.Controls.Add(this.pnlUrunResimbtn);
-            this.ultraTabPageControl4.Location = new System.Drawing.Point(-10000, -10000);
+            this.ultraTabPageControl4.Location = new System.Drawing.Point(1, 23);
             this.ultraTabPageControl4.Name = "ultraTabPageControl4";
-            this.ultraTabPageControl4.Size = new System.Drawing.Size(965, 530);
+            this.ultraTabPageControl4.Size = new System.Drawing.Size(991, 530);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(241, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(724, 465);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.Size = new System.Drawing.Size(750, 495);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -1306,27 +1260,9 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(0, 0);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(241, 465);
+            this.listBox1.Size = new System.Drawing.Size(241, 495);
             this.listBox1.TabIndex = 0;
             this.listBox1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBox1_MouseDoubleClick);
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.label20);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 465);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(965, 18);
-            this.panel5.TabIndex = 3;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(4, 4);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(83, 13);
-            this.label20.TabIndex = 0;
-            this.label20.Text = "Toplam Resim :";
             // 
             // pnlUrunResimbtn
             // 
@@ -1334,21 +1270,21 @@
             this.pnlUrunResimbtn.Controls.Add(this.simpleButton2);
             this.pnlUrunResimbtn.Controls.Add(this.simpleButton1);
             this.pnlUrunResimbtn.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlUrunResimbtn.Location = new System.Drawing.Point(0, 483);
+            this.pnlUrunResimbtn.Location = new System.Drawing.Point(0, 495);
             this.pnlUrunResimbtn.Name = "pnlUrunResimbtn";
-            this.pnlUrunResimbtn.Size = new System.Drawing.Size(965, 47);
+            this.pnlUrunResimbtn.Size = new System.Drawing.Size(991, 35);
             this.pnlUrunResimbtn.TabIndex = 2;
             // 
             // txtFileAdress
             // 
-            this.txtFileAdress.Location = new System.Drawing.Point(10, 17);
+            this.txtFileAdress.Location = new System.Drawing.Point(10, 5);
             this.txtFileAdress.Name = "txtFileAdress";
             this.txtFileAdress.Size = new System.Drawing.Size(500, 22);
             this.txtFileAdress.TabIndex = 1;
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Location = new System.Drawing.Point(597, 17);
+            this.simpleButton2.Location = new System.Drawing.Point(597, 5);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(75, 23);
             this.simpleButton2.TabIndex = 0;
@@ -1357,12 +1293,21 @@
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(516, 17);
+            this.simpleButton1.Location = new System.Drawing.Point(516, 5);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(75, 23);
             this.simpleButton1.TabIndex = 0;
             this.simpleButton1.Text = "Resim Seç";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(10, 11);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(83, 13);
+            this.label20.TabIndex = 0;
+            this.label20.Text = "Toplam Resim :";
             // 
             // panelControl2
             // 
@@ -1389,7 +1334,6 @@
             this.btnSil.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
             this.btnSil.Appearance.Options.UseBackColor = true;
             this.btnSil.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnSil.ImageOptions.Image = global::Entegref.Properties.Resources.clear_32x32;
             this.btnSil.Location = new System.Drawing.Point(2, 2);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(124, 31);
@@ -1410,7 +1354,6 @@
             // 
             this.btnKaydet.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
             this.btnKaydet.Appearance.Options.UseBackColor = true;
-            this.btnKaydet.ImageOptions.Image = global::Entegref.Properties.Resources.save_32x32;
             this.btnKaydet.Location = new System.Drawing.Point(73, 0);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(124, 35);
@@ -1420,6 +1363,7 @@
             // 
             // panelControl6
             // 
+            this.panelControl6.Controls.Add(this.label20);
             this.panelControl6.Controls.Add(this.btnYeni);
             this.panelControl6.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelControl6.Location = new System.Drawing.Point(2, 2);
@@ -1432,7 +1376,6 @@
             this.btnYeni.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Primary;
             this.btnYeni.Appearance.Options.UseBackColor = true;
             this.btnYeni.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnYeni.ImageOptions.Image = global::Entegref.Properties.Resources.new_32x325;
             this.btnYeni.Location = new System.Drawing.Point(334, 2);
             this.btnYeni.Name = "btnYeni";
             this.btnYeni.Size = new System.Drawing.Size(124, 31);
@@ -1444,10 +1387,10 @@
             // 
             this.panelControl3.Controls.Add(this.ultraTabControl1);
             this.panelControl3.Controls.Add(this.panel1);
-            this.panelControl3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl3.Location = new System.Drawing.Point(0, 0);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(971, 599);
+            this.panelControl3.Size = new System.Drawing.Size(997, 599);
             this.panelControl3.TabIndex = 2;
             // 
             // ultraTabControl1
@@ -1464,38 +1407,22 @@
             this.ultraTabControl1.Location = new System.Drawing.Point(2, 43);
             this.ultraTabControl1.Name = "ultraTabControl1";
             this.ultraTabControl1.SharedControlsPage = this.ultraTabSharedControlsPage1;
-            this.ultraTabControl1.Size = new System.Drawing.Size(967, 554);
+            this.ultraTabControl1.Size = new System.Drawing.Size(993, 554);
             this.ultraTabControl1.Style = Infragistics.Win.UltraWinTabControl.UltraTabControlStyle.Office2007Ribbon;
             this.ultraTabControl1.TabButtonStyle = Infragistics.Win.UIElementButtonStyle.Windows8Button;
             this.ultraTabControl1.TabCloseButtonVisibility = Infragistics.Win.UltraWinTabs.TabCloseButtonVisibility.Never;
             this.ultraTabControl1.TabIndex = 0;
             this.ultraTabControl1.TabOrientation = Infragistics.Win.UltraWinTabs.TabOrientation.TopLeft;
-            appearance1.Image = global::Entegref.Properties.Resources.definednamecreatefromselection_32x32;
-            ultraTab1.Appearance = appearance1;
-            appearance2.Image = global::Entegref.Properties.Resources.definednamecreatefromselection_32x32;
-            ultraTab1.SelectedAppearance = appearance2;
             ultraTab1.TabPage = this.ultraTabPageControl1;
             ultraTab1.Text = "Genel Bilgiler";
             ultraTab5.TabPage = this.ultraTabPageControl5;
             ultraTab5.Text = "Ürün Özellikleri";
-            appearance3.Image = global::Entegref.Properties.Resources.loadpagesetup_32x32;
-            ultraTab2.Appearance = appearance3;
-            appearance4.Image = global::Entegref.Properties.Resources.loadpagesetup_32x32;
-            ultraTab2.SelectedAppearance = appearance4;
             ultraTab2.TabPage = this.ultraTabPageControl2;
             ultraTab2.Text = "Sınıflar";
-            appearance5.Image = global::Entegref.Properties.Resources.bosale_32x32;
-            ultraTab3.Appearance = appearance5;
-            appearance6.Image = global::Entegref.Properties.Resources.bosale_32x32;
-            ultraTab3.SelectedAppearance = appearance6;
             ultraTab3.TabPage = this.ultraTabPageControl3;
             ultraTab3.Text = "Fiyatlandırma";
             ultraTab6.TabPage = this.ultraTabPageControl6;
             ultraTab6.Text = "Renk Beden Kavala";
-            appearance7.Image = global::Entegref.Properties.Resources.picturebox_32x32;
-            ultraTab4.Appearance = appearance7;
-            appearance8.Image = global::Entegref.Properties.Resources.picturebox_32x32;
-            ultraTab4.SelectedAppearance = appearance8;
             ultraTab4.TabPage = this.ultraTabPageControl4;
             ultraTab4.Text = "Resimler";
             this.ultraTabControl1.Tabs.AddRange(new Infragistics.Win.UltraWinTabControl.UltraTab[] {
@@ -1512,7 +1439,7 @@
             // 
             this.ultraTabSharedControlsPage1.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabSharedControlsPage1.Name = "ultraTabSharedControlsPage1";
-            this.ultraTabSharedControlsPage1.Size = new System.Drawing.Size(965, 530);
+            this.ultraTabSharedControlsPage1.Size = new System.Drawing.Size(991, 530);
             // 
             // panel1
             // 
@@ -1525,12 +1452,11 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(967, 41);
+            this.panel1.Size = new System.Drawing.Size(993, 41);
             this.panel1.TabIndex = 1;
             // 
             // simpleButton3
             // 
-            this.simpleButton3.ImageOptions.Image = global::Entegref.Properties.Resources.apply_32x32;
             this.simpleButton3.Location = new System.Drawing.Point(365, 3);
             this.simpleButton3.Name = "simpleButton3";
             this.simpleButton3.Size = new System.Drawing.Size(122, 35);
@@ -1587,30 +1513,40 @@
             // 
             // panelControl4
             // 
-            this.panelControl4.Controls.Add(this.simpleButton6);
             this.panelControl4.Controls.Add(this.simpleButton5);
-            this.panelControl4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl4.Location = new System.Drawing.Point(0, 0);
+            this.panelControl4.Controls.Add(this.simpleButton6);
+            this.panelControl4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelControl4.Location = new System.Drawing.Point(997, 0);
             this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(1138, 599);
+            this.panelControl4.Size = new System.Drawing.Size(141, 599);
             this.panelControl4.TabIndex = 3;
-            // 
-            // simpleButton6
-            // 
-            this.simpleButton6.Location = new System.Drawing.Point(977, 80);
-            this.simpleButton6.Name = "simpleButton6";
-            this.simpleButton6.Size = new System.Drawing.Size(156, 28);
-            this.simpleButton6.TabIndex = 0;
-            this.simpleButton6.Text = "Beden";
             // 
             // simpleButton5
             // 
-            this.simpleButton5.Location = new System.Drawing.Point(977, 43);
+            this.simpleButton5.Location = new System.Drawing.Point(0, 2);
             this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.Size = new System.Drawing.Size(156, 28);
+            this.simpleButton5.Size = new System.Drawing.Size(139, 28);
             this.simpleButton5.TabIndex = 0;
             this.simpleButton5.Text = "Renk";
             this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
+            // 
+            // simpleButton6
+            // 
+            this.simpleButton6.Location = new System.Drawing.Point(0, 32);
+            this.simpleButton6.Name = "simpleButton6";
+            this.simpleButton6.Size = new System.Drawing.Size(141, 28);
+            this.simpleButton6.TabIndex = 0;
+            this.simpleButton6.Text = "Beden";
+            // 
+            // panel5
+            // 
+            this.panel5.AutoScroll = true;
+            this.panel5.Controls.Add(this.pictureBox1);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(241, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(750, 495);
+            this.panel5.TabIndex = 3;
             // 
             // frmStokAc
             // 
@@ -1627,12 +1563,12 @@
             this.Text = "Ürünler";
             this.Load += new System.EventHandler(this.frmStokAc_Load);
             this.ultraTabPageControl1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ultraTabPageControl5.ResumeLayout(false);
             this.ultraTabPageControl2.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
@@ -1658,8 +1594,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ultraTabPageControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             this.pnlUrunResimbtn.ResumeLayout(false);
             this.pnlUrunResimbtn.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
@@ -1670,6 +1604,7 @@
             this.panelControl5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).EndInit();
             this.panelControl6.ResumeLayout(false);
+            this.panelControl6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl1)).EndInit();
@@ -1678,6 +1613,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
             this.panelControl4.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1757,7 +1693,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn TopluFiyatlFiyat;
         private DevExpress.XtraGrid.Columns.GridColumn TopluFiyatYeniFiyat;
         private DevExpress.XtraEditors.RadioGroup grpFTipiSec;
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -1804,18 +1739,19 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox txtCikisiade;
-        private System.Windows.Forms.TextBox txtCikis;
-        private System.Windows.Forms.TextBox txtGirisiade;
-        private System.Windows.Forms.TextBox txtGiris;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox txtKalan;
         private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl5;
         private DG.MiniHTMLTextBox.MiniHTMLTextBox miniHTMLTextBox1;
         private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl6;
         private System.Windows.Forms.Panel pnlRenkBeden;
         private System.Windows.Forms.Panel pnlRenkBedenOlan;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel panel5;
         //private GridControl gridStokFiyat;
         //private GridView ViewStokFiyat;
         //private GridColumn gridColumn1;

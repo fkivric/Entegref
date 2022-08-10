@@ -374,7 +374,7 @@
             this.printPreviewStaticItem2,
             this.zoomTrackBarEditItem1});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 60;
+            this.ribbonControl1.MaxItemId = 61;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -1471,10 +1471,10 @@
             this.Controls.Add(this.documentViewer1);
             this.Controls.Add(this.ribbonControl1);
             this.Controls.Add(this.ribbonStatusBar1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "frmReportView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmReportView";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmReportView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.documentViewerRibbonController1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();

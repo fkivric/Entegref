@@ -246,7 +246,6 @@
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Image = global::Entegref.Properties.Resources.cancel_32x322;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Name = "button1";

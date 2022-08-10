@@ -119,7 +119,6 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Image = global::Entegref.Properties.Resources.next_32x32;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.Location = new System.Drawing.Point(858, 0);
             this.button2.Name = "button2";
@@ -138,7 +137,6 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Image = global::Entegref.Properties.Resources.prev_32x32;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Name = "button1";
@@ -303,11 +301,11 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.bunifuCheckbox1);
             this.groupControl1.Controls.Add(this.bunifuUserName);
             this.groupControl1.Controls.Add(this.label1);
             this.groupControl1.Controls.Add(this.simpleButton1);
             this.groupControl1.Controls.Add(this.label7);
-            this.groupControl1.Controls.Add(this.bunifuCheckbox1);
             this.groupControl1.Controls.Add(this.bunifupassword);
             this.groupControl1.Controls.Add(this.label2);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -345,7 +343,6 @@
             this.simpleButton1.Appearance.Options.UseTextOptions = true;
             this.simpleButton1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.simpleButton1.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.simpleButton1.ImageOptions.Image = global::Entegref.Properties.Resources.apply_32x32;
             this.simpleButton1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.simpleButton1.Location = new System.Drawing.Point(87, 191);
             this.simpleButton1.Name = "simpleButton1";
@@ -367,7 +364,7 @@
             // 
             // bunifuCheckbox1
             // 
-            this.bunifuCheckbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.bunifuCheckbox1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCheckbox1.ChechedOffColor = System.Drawing.Color.Transparent;
             this.bunifuCheckbox1.Checked = false;
             this.bunifuCheckbox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
@@ -417,7 +414,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::Entegref.Properties.Resources.Entegref__1_;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(488, 422);

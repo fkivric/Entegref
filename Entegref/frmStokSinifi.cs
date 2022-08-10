@@ -44,6 +44,11 @@ namespace Entegref
         string lblbeden;
         string lblkavala;
         string lblFiyat;
+        string nFiyatlandırma="";
+        string sKavalaTipi="";
+        string sBedenTipi="";
+        string sRenkKodu="";
+        bool nRenk=false;
 
         public class tbBedenTipi
         {
@@ -165,9 +170,9 @@ namespace Entegref
                 }
                 else
                 {
+                    sf3.Clear();
                     cmbsinif3.Enabled = false;
                     cmbsinif3.DataSource = null;
-                    sf3.Clear();
                 }
 
             }
@@ -242,9 +247,9 @@ namespace Entegref
                 }
                 else
                 {
+                    sf5.Clear();
                     cmbsinif5.Enabled = false;
                     cmbsinif5.DataSource = null;
-                    sf5.Clear();
                 }
 
             }
@@ -271,16 +276,6 @@ namespace Entegref
                 sf6 = conn.DfQuery("Sinif", Prm);
                 cmbsinif6.DataSource = sf6;
                 cmbsinif6.Enabled = true;
-                //if (sf6.Rows.Count > 1)
-                //{
-                //    cmbsinif6.Enabled = true;
-                //}
-                //else
-                //{
-                //    sf6.Clear();
-                //    cmbsinif6.Enabled = false;
-                //    cmbsinif6.DataSource = null;
-                //}
 
             }
             else
@@ -315,7 +310,6 @@ namespace Entegref
             }
             else if (cmbsinif3.SelectedValue != null)
             {
-
                 if (cmbsinif3.SelectedValue.ToString() == "00-0")
                 {
                     XtraMessageBoxArgs args = new XtraMessageBoxArgs();
@@ -484,11 +478,13 @@ namespace Entegref
             if (chkRenk.Checked == true)
             {
                 grpBeden.Enabled = true;
+                nRenk = true;
             }
             else
             {
                 grpBeden.Enabled = false;
                 chkBeden.Checked = false;
+                nRenk = false;
             }
         }
 
@@ -496,19 +492,6 @@ namespace Entegref
         {
             if (chkBeden.Checked == true)
             {
-                //beden.Clear();
-                //cmbBeden.Enabled = true;
-                //cmbBeden.ValueMember = "sBedenTipi";
-                //cmbBeden.DisplayMember = "sAciklama";
-                //string query = "select * from tbBedenTipi where sBedenTipi != ''";
-                //SqlCommand cmd = new SqlCommand(query, connection);
-                //SqlDataAdapter ad = new SqlDataAdapter(cmd);
-                //if (connection.State == ConnectionState.Closed)
-                //{
-                //    connection.Open();
-                //}
-                //ad.Fill(beden);
-
                 var persons = new List<tbBedenTipi>();
 
                 using (var connection = new SqlConnection(Properties.Settings.Default.connectionstring))
@@ -549,8 +532,6 @@ namespace Entegref
                 cmbBeden.ValueMember = "sBedenTipi";
                 cmbBeden.DisplayMember = "Name";
                 cmbBeden.DataSource = persons;
-                //connection.Close();
-                //cmbBeden.DataSource = beden;
             }
             else
             {
@@ -580,6 +561,7 @@ namespace Entegref
                 connection.Close();
 
                 lblbeden = dt.Rows[0][1].ToString();
+                sBedenTipi = dt.Rows[0][0].ToString();
             }
         }
         private void chkKavala_CheckedChanged(object sender, EventArgs e)
@@ -647,43 +629,64 @@ namespace Entegref
             }
             ad.Fill(dt);
             connection.Close();
-
+            
             lblkavala = dt.Rows[0][1].ToString();
+            sKavalaTipi = dt.Rows[0][0].ToString();
 
         }
 
         private void cmbFiyatlandırma_SelectedIndexChanged(object sender, EventArgs e)
         {
             lblFiyat = cmbFiyatlandırma.SelectedText;
+            nFiyatlandırma = cmbFiyatlandırma.SelectedValue.ToString();
         }
         private void simpleButton2_Click(object sender, EventArgs e)
         {
-            frmStokAc.sKodu = newidson;
+            frmStokAc.sModel = newidson;
             frmStokAc.sinifsira1 = sira1;
             frmStokAc.sinifsira2 = sira2;
             frmStokAc.sinifsira3 = sira3;
             frmStokAc.sinifsira4 = sira4;
             frmStokAc.sinifsira5 = sira5;
             frmStokAc.sinifsira6 = sira6;
+            frmStokAc.nFiyatlandirma = nFiyatlandırma;
             frmStokAc.Fiyatlandirma = lblFiyat;
-            frmStokAc.KavalaTipi = cmbKavala.SelectedValue.ToString();
-            frmStokAc.Beden = lblbeden;
-            frmStokAc.BedenTipi = cmbBeden.SelectedValue.ToString();
+
             if (chkRenk.Checked == true)
             {
-                frmStokAc.Renk = true;
+                frmStokAc.Renk = nRenk;
+                frmStokAc.nStokTipi = "1";
+                if (chkBeden.Checked == true)
+                {
+                    frmStokAc.BedenTipi = sBedenTipi;
+                    frmStokAc.Beden = lblbeden;
+                    frmStokAc.nStokTipi = "2";
+                    if (chkKavala.Checked==true)
+                    {
+                        frmStokAc.KavalaTipi = sKavalaTipi;
+                        frmStokAc.Kavala = lblkavala;
+                        frmStokAc.nStokTipi = "3";
+                    }
+                    else
+                    {
+                        frmStokAc.KavalaTipi = "";
+                    }
+                    frmRenk frmRenk = new frmRenk(sKavalaTipi, sBedenTipi);
+                    frmRenk.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    frmStokAc.BedenTipi = null;
+                    frmStokAc.KavalaTipi = null;
+                }
             }
             else
             {
                 frmStokAc.Renk = false;
-            }
-            if (cmbKavala.SelectedValue != null)
-            {
-                frmStokAc.Kavala = cmbKavala.SelectedValue.ToString();
-            }
-            else
-            {
-                frmStokAc.Kavala = "";
+                frmStokAc.BedenTipi = "";
+                frmStokAc.KavalaTipi = "";
+                frmStokAc.nStokTipi = "0";
             }
             this.Close();
             this.Dispose();

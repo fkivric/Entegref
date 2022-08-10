@@ -22,7 +22,7 @@ namespace Entegref
         {
             //selam yunus naber
             DevExpress.Skins.SkinManager.EnableFormSkins();
-            //DevExpress.XtraEditors.WindowsFormsSettings.AllowDefaultSvgImages = DevExpress.Utils.DefaultBoolean.False;
+            DevExpress.XtraEditors.WindowsFormsSettings.AllowDefaultSvgImages = DevExpress.Utils.DefaultBoolean.False;
             Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture("tr");
             RegistryKey key2 = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\Entegref");
 

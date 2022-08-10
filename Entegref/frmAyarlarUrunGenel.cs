@@ -27,7 +27,7 @@ namespace Entegref
             dteUrunTarih1.DateTime = DateTime.Now;
             dteUrunTarih2.DateTime = DateTime.Now;
             int sira = 0;
-            string q = "select bRenkVarmi[Renk Var], bBedenVarmi[Beden Var], bKavalaVarmi[Kavala Var], bDepoVarmi[Çoklu Depo Kullanılacak], bEanVarmi[Ean Kodu Kullanılacak], bOTVVar[Ötv'li Ürün var], "+
+            string q = "select bRenkVarmi[Renk Var], bBedenVarmi[Beden Var], bKavalaVarmi[Kavala Var], bDepoVarmi[Çoklu Depo Kullanılacak], bEanVarmi[Ean Kodu Kullanılacak], "+
                 "bDovizliGirisVar[Fiyatlarda Döviz Kuru Var], bEksiyeDusulebilirmi[Stok Eksiye Düşebilir], bFiyatSifirGirilsin[Fiyat Girişinde 0 Girilebilir], bIkinciMiktarVar [İşlemlerde 2.nci Miktar Girişi Var], "+
                 "sResimDosyalariPath, sDefaultKdvTipi, sDefaultBirimCinsi, sDefaultOtvTipi, sDefaultHareketTipi, "+
                 "sAciklamaBaslik1, sAciklamaBaslik2, sAciklamaBaslik3, sAciklamaBaslik4, sAciklamaBaslik5, sAciklamaBaslik6," +
@@ -303,6 +303,31 @@ namespace Entegref
             }
         }
 
+        private void checkOTVVar_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkOTVVar.Checked == true)
+            {
+                txtOTV.Enabled = true;
+            }
+            else
+            {
+                txtOTV.Enabled = false;
+            }
+
+        }
+
+        private void checkHarekettipiVar_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkHarekettipiVar.Checked == true)
+            {
+                txtHareketTipi.Enabled = true;
+            }
+            else
+            {
+                txtHareketTipi.Enabled = false;
+            }
+
+        }
         private void btnKaydet_Click(object sender, EventArgs e)
         {
             Dictionary<string, string> PG = new Dictionary<string, string>();
@@ -319,14 +344,51 @@ namespace Entegref
                     PG.Add(tt, "1");
                 }
             }
+            if (checkOTVVar.Checked == true)
+            {
+                PG.Add("@bOTVVar", "1");
+            }
+            else
+            {
+                PG.Add("@bOTVVar", "0");
+            }
+            PG.Add("@sDefaultOtvTipi", txtOTV.Text);
+            PG.Add("@sDefaultKdvTipi", txtKDV.Text);
+            PG.Add("@sDefaultBirimCinsi", txtBirim.Text);
+            if (checkHarekettipiVar.Checked == true)
+            {
+                PG.Add("@bHareketTipiVar","1");
+            }
+            else
+            {
+                PG.Add("@bHareketTipiVar", "0");
+            }
+            PG.Add("@sDefaultHareketTipi", txtHareketTipi.Text);
+            PG.Add("@sResimDosyalariPath", textResimYolu.Text);
+            PG.Add("@sMatbuFormlarPath", txtFormYolu.Text);
+            PG.Add("@sRaporlarPath", txtRaporYolu.Text);
+            PG.Add("@sTasimaDosyalariPath", txtDisVeriYolu.Text);
+            PG.Add("@sAciklamaBaslik1", txtsAciklamaBaslik1.Text);
+            PG.Add("@sAciklamaBaslik2", txtsAciklamaBaslik2.Text);
+            PG.Add("@sAciklamaBaslik3", txtsAciklamaBaslik3.Text);
+            PG.Add("@sAciklamaBaslik4", txtsAciklamaBaslik4.Text);
+            PG.Add("@sAciklamaBaslik5", txtsAciklamaBaslik5.Text);
+            PG.Add("@sAciklamaBaslik6", txtsAciklamaBaslik6.Text);
+            PG.Add("@sAciklamaBaslik7", txtsAciklamaBaslik7.Text);
+            PG.Add("@sAciklamaBaslik8", txtsAciklamaBaslik8.Text);
+            PG.Add("@sAciklamaBaslik9", txtsAciklamaBaslik9.Text);
+            PG.Add("@sAciklamaBaslik10", txtsAciklamaBaslik10.Text);
+            PG.Add("@dteBaslangicTarih", dteUrunTarih1.Text);
+            PG.Add("@dteBitisTarih", dteUrunTarih2.Text);
+
         }
 
-        private void checkOTVVar_CheckedChanged(object sender, EventArgs e)
+        private void btnYeni_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void checkHarekettipiVar_CheckedChanged(object sender, EventArgs e)
+        private void btnSil_Click(object sender, EventArgs e)
         {
 
         }

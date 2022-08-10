@@ -119,6 +119,8 @@
             this.Name = "frmStokBul";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmStokbul";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmStokBul_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmStokBul_FormClosed);
             this.Load += new System.EventHandler(this.frmFirmaBul_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridStok)).EndInit();

@@ -5,9 +5,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
@@ -15,7 +17,7 @@ using System.Xml;
 namespace Entegref
 {
 
-    public partial class frmMain : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class frmMain : XtraForm
     {
         public frmMain()
         {
@@ -24,21 +26,91 @@ namespace Entegref
 
         SqlConnectionObject conn = new SqlConnectionObject();
         SqlConnection sql = new SqlConnection(Properties.Settings.Default.connectionstring);
-        decimal lMerkezBankasiAlisKuru;
-        decimal lMerkezBankasiSatisKuru;
-        decimal lAlis;
-        decimal lSatis;
-        string  DovizCinsi;
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            //timer1.Start();
            if (frmLogin.loginok != true)
             {
                 frmLogin frmLogin = new frmLogin(Properties.Settings.Default.VKN);
                 frmLogin.ShowDialog();
                 this.Close();
                 this.Dispose();
+            }
+        }
+        private BackgroundWorker _backgroundWorker;
+        private ManualResetEvent _workerCompletedEvent = new ManualResetEvent(false);
+        private const string READY_TEXT = "Hazır";
+        private void executeBackground(Action doWorkAction, Action progressAction = null, Action completedAction = null)
+        {
+            try
+            {
+                if (_backgroundWorker != null)
+                {
+
+
+                    if (_backgroundWorker.IsBusy)
+                    {
+                        //XtraMessageBox.Show("Her oturum açıldığında 1 işlem yapacak. Eğer bu girişteki ilk işlemse uygulama çalışmaktadır. Lütfen Bekleyiniz");
+                        return;
+                    }
+                }
+                _backgroundWorker = new BackgroundWorker
+                {
+                    WorkerSupportsCancellation = true
+                };
+                _backgroundWorker.DoWork += (x, y) =>
+                {
+                    try
+                    {
+                        doWorkAction.Invoke();
+                    }
+                    catch (Exception ex)
+                    {
+                        y.Cancel = true;
+                        XtraMessageBox.Show("Bilinmeyen Hata. Detay : " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        // throw;
+                    }
+                };
+                if (progressAction != null)
+                {
+                    _backgroundWorker.ProgressChanged += (x, y) =>
+                    {
+                        progressAction.Invoke();
+                    };
+                }
+                if (completedAction != null)
+                {
+                    _backgroundWorker.RunWorkerCompleted += (x, y) =>
+                    {
+                        completedAction.Invoke();
+                    };
+                }
+                _backgroundWorker.RunWorkerAsync();
+            }
+            catch (Exception)
+            {
+
+            }
+
+        }
+
+        private void completeProgress()
+        {
+            try
+            {
+                _backgroundWorker.Dispose();
+                _backgroundWorker = null;
+                if (!this.Enabled)
+                {
+                    this.Enabled = true;
+                }
+
+            }
+            finally
+            {
+                //this.Cursor = Cursors.Default;
+                _workerCompletedEvent.Set();
+
             }
         }
         private void ultraExplorerBar1_ItemClick(object sender, Infragistics.Win.UltraWinExplorerBar.ItemEventArgs e)
@@ -48,17 +120,12 @@ namespace Entegref
                 case "11":
                     OpenForm(new frmStokAc());
                     break;
-
                 case "12":
-                    //pnlfiyat.Dock = DockStyle.Fill;
-                    //frmFiyat fyt = new frmFiyat();
-                    //fyt.TopLevel = true;
-
-                    //pnlfiyat.Controls.Add(fyt);
-                    //fyt.Show();
                     OpenForm(new frmFiyat());
                     break;
-
+                case "13":
+                    OpenForm(new frmStokToplu());
+                    break;
                 case "21":
                     OpenForm(new frmMusteri());
                     break;
@@ -111,10 +178,6 @@ namespace Entegref
         }
 
         int show = 0;
-        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            
-        }
 
         private void barButtonItem1_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -131,91 +194,32 @@ namespace Entegref
             }
         }
 
-        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-
-            if (show == 0)
-            {
-                Point MousePosition = this.Location;
-                MousePosition.Offset(this.Width / 2, this.Height / 2);
-                radialMenu1.ShowPopup(MousePosition);
-            }
-            else
-            {
-                radialMenu1.HidePopup();
-                show = 1;
-            }
-        }
-        public void Kurlar(string doviz)
-        {
-            try
-            {
-                XmlDocument xmlVerisi = new XmlDocument();
-                xmlVerisi.Load("http://www.tcmb.gov.tr/kurlar/today.xml");
-                lMerkezBankasiSatisKuru = Convert.ToDecimal(xmlVerisi.SelectSingleNode(string.Format("Tarih_Date/Currency[@Kod='{0}']/ForexSelling", doviz)).InnerText);
-                lMerkezBankasiAlisKuru = Convert.ToDecimal(xmlVerisi.SelectSingleNode(string.Format("Tarih_Date/Currency[@Kod='{0}']/ForexBuying", doviz)).InnerText);
-                lSatis = Convert.ToDecimal(xmlVerisi.SelectSingleNode(string.Format("Tarih_Date/Currency[@Kod='{0}']/ForexSelling", doviz)).InnerText);
-                lAlis = Convert.ToDecimal(xmlVerisi.SelectSingleNode(string.Format("Tarih_Date/Currency[@Kod='{0}']/ForexBuying", doviz)).InnerText);
-                return;
-            }
-            catch (XmlException xml)
-            {
-                MessageBox.Show(xml.ToString());
-            }
-        }
         private void timer1_Tick(object sender, EventArgs e)
         {
             string Kurzamanı;
             Kurzamanı = DateTime.Now.ToShortTimeString();
             if (Kurzamanı == "17:30")
             {
-                string q = "select sDovizCinsi,lMerkezBankasiAlisKuru,lMerkezBankasiSatisKuru,lAlisKuru,lSatisKuru from tbDovizKuru ";
-                SqlCommand cmd = new SqlCommand(q, sql);
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                for (int i = 0; i < dt.Rows.Count; i++)
-                {
-                    lMerkezBankasiAlisKuru=0;
-                    lMerkezBankasiSatisKuru=0;
-                    lAlis=0;
-                    lSatis=0;
-                    DovizCinsi = dt.Rows[i]["sDovizCinsi"].ToString();
-                    Kurlar(DovizCinsi);
-
-                    //Dictionary<string, string> Kurupdate = new Dictionary<string, string>();
-                    //Kurupdate.Add("@DovizCinsi", DovizCinsi);
-                    //Kurupdate.Add("@lMerkezBankasiAlisKuru", lMerkezBankasiAlisKuru.ToString());
-                    //Kurupdate.Add("@lMerkezBankasiSatisKuru", lMerkezBankasiSatisKuru.ToString());
-                    //Kurupdate.Add("@lAlis", lAlis.ToString());
-                    //Kurupdate.Add("@lSatis", lSatis.ToString());
-                    //conn.DfInsert("DovizUpdateMerkez", Kurupdate);
-                }
+                
             }
             else
             {
                 timer1.Stop();
             }
         }
-
-        private void barButtonItem2_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void barButtonItem18_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            OpenForm(new frmDoviz()); 
+            OpenForm(new frmDoviz());
         }
 
-        private void barSubItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void barWorkspaceMenuItem1_ListItemClick(object sender, DevExpress.XtraBars.ListItemClickEventArgs e)
         {
-            if (show == 0)
-            {
-                Point MousePosition = this.Location;
-                MousePosition.Offset(this.Width / 2, this.Height / 2);
-                radialMenu1.ShowPopup(MousePosition);
-            }
-            else
-            {
-                radialMenu1.HidePopup();
-                show = 1;
-            }
+
+        }
+
+        private void ribbonControl1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

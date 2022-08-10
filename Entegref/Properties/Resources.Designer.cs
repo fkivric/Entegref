@@ -63,9 +63,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap about_32x32 {
+        internal static System.Drawing.Bitmap addfile_16x16 {
             get {
-                object obj = ResourceManager.GetObject("about_32x32", resourceCulture);
+                object obj = ResourceManager.GetObject("addfile_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap add_32x32 {
+        internal static System.Drawing.Bitmap addfile_32x32 {
             get {
-                object obj = ResourceManager.GetObject("add_32x32", resourceCulture);
+                object obj = ResourceManager.GetObject("addfile_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap apply_32x32 {
+        internal static System.Drawing.Bitmap bosaleitem_16x16 {
             get {
-                object obj = ResourceManager.GetObject("apply_32x32", resourceCulture);
+                object obj = ResourceManager.GetObject("bosaleitem_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,189 +93,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap apply_32x321 {
+        internal static System.Drawing.Bitmap bosaleitem_32x32 {
             get {
-                object obj = ResourceManager.GetObject("apply_32x321", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap barcode_32x32 {
-            get {
-                object obj = ResourceManager.GetObject("barcode_32x32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap bosale_32x32 {
-            get {
-                object obj = ResourceManager.GetObject("bosale_32x32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap box_50px {
-            get {
-                object obj = ResourceManager.GetObject("box_50px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap Box_Settings_48px {
-            get {
-                object obj = ResourceManager.GetObject("Box_Settings_48px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap box2 {
-            get {
-                object obj = ResourceManager.GetObject("box2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap cancel_16x16 {
-            get {
-                object obj = ResourceManager.GetObject("cancel_16x16", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap cancel_32x32 {
-            get {
-                object obj = ResourceManager.GetObject("cancel_32x32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap cancel_32x321 {
-            get {
-                object obj = ResourceManager.GetObject("cancel_32x321", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap cancel_32x322 {
-            get {
-                object obj = ResourceManager.GetObject("cancel_32x322", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap clear_16x16 {
-            get {
-                object obj = ResourceManager.GetObject("clear_16x16", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap clear_16x161 {
-            get {
-                object obj = ResourceManager.GetObject("clear_16x161", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap clear_16x162 {
-            get {
-                object obj = ResourceManager.GetObject("clear_16x162", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap clear_32x32 {
-            get {
-                object obj = ResourceManager.GetObject("clear_32x32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap clear_32x321 {
-            get {
-                object obj = ResourceManager.GetObject("clear_32x321", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap clear_32x322 {
-            get {
-                object obj = ResourceManager.GetObject("clear_32x322", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap clearvalidationcircles_32x32 {
-            get {
-                object obj = ResourceManager.GetObject("clearvalidationcircles_32x32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap converttorange_16x16 {
-            get {
-                object obj = ResourceManager.GetObject("converttorange_16x16", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap converttorange_32x32 {
-            get {
-                object obj = ResourceManager.GetObject("converttorange_32x32", resourceCulture);
+                object obj = ResourceManager.GetObject("bosaleitem_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -293,16 +113,6 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap currency_16x161 {
-            get {
-                object obj = ResourceManager.GetObject("currency_16x161", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
         internal static System.Drawing.Bitmap currency_32x32 {
             get {
                 object obj = ResourceManager.GetObject("currency_32x32", resourceCulture);
@@ -313,9 +123,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap currency_32x321 {
+        internal static System.Drawing.Bitmap hideproduct_16x16 {
             get {
-                object obj = ResourceManager.GetObject("currency_32x321", resourceCulture);
+                object obj = ResourceManager.GetObject("hideproduct_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -323,9 +133,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap definednamecreatefromselection_32x32 {
+        internal static System.Drawing.Bitmap hideproduct_32x32 {
             get {
-                object obj = ResourceManager.GetObject("definednamecreatefromselection_32x32", resourceCulture);
+                object obj = ResourceManager.GetObject("hideproduct_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -333,9 +143,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap designreport_32x32 {
+        internal static System.Drawing.Bitmap hideproduct_32x321 {
             get {
-                object obj = ResourceManager.GetObject("designreport_32x32", resourceCulture);
+                object obj = ResourceManager.GetObject("hideproduct_32x321", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -343,9 +153,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap Entegref__1_ {
+        internal static System.Drawing.Bitmap material_ui_32 {
             get {
-                object obj = ResourceManager.GetObject("Entegref__1_", resourceCulture);
+                object obj = ResourceManager.GetObject("material_ui_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -353,9 +163,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap Entegref__2_ {
+        internal static System.Drawing.Bitmap pagesetup_16x16 {
             get {
-                object obj = ResourceManager.GetObject("Entegref__2_", resourceCulture);
+                object obj = ResourceManager.GetObject("pagesetup_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -363,9 +173,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap financial_16x16 {
+        internal static System.Drawing.Bitmap pagesetup_32x32 {
             get {
-                object obj = ResourceManager.GetObject("financial_16x16", resourceCulture);
+                object obj = ResourceManager.GetObject("pagesetup_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -373,9 +183,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap financial_32x32 {
+        internal static System.Drawing.Bitmap product_16x16 {
             get {
-                object obj = ResourceManager.GetObject("financial_32x32", resourceCulture);
+                object obj = ResourceManager.GetObject("product_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -383,9 +193,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap find_16x16 {
+        internal static System.Drawing.Bitmap product_32x32 {
             get {
-                object obj = ResourceManager.GetObject("find_16x16", resourceCulture);
+                object obj = ResourceManager.GetObject("product_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -393,9 +203,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap find_32x32 {
+        internal static System.Drawing.Bitmap product_32x321 {
             get {
-                object obj = ResourceManager.GetObject("find_32x32", resourceCulture);
+                object obj = ResourceManager.GetObject("product_32x321", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -403,9 +213,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap image_32x32 {
+        internal static System.Drawing.Bitmap properties_32x32 {
             get {
-                object obj = ResourceManager.GetObject("image_32x32", resourceCulture);
+                object obj = ResourceManager.GetObject("properties_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -413,9 +223,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap image_32x321 {
+        internal static System.Drawing.Bitmap reading_16x16 {
             get {
-                object obj = ResourceManager.GetObject("image_32x321", resourceCulture);
+                object obj = ResourceManager.GetObject("reading_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -423,9 +233,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap kdv {
+        internal static System.Drawing.Bitmap reading_32x32 {
             get {
-                object obj = ResourceManager.GetObject("kdv", resourceCulture);
+                object obj = ResourceManager.GetObject("reading_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -433,9 +243,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap kdv1 {
+        internal static System.Drawing.Bitmap sales_16x16 {
             get {
-                object obj = ResourceManager.GetObject("kdv1", resourceCulture);
+                object obj = ResourceManager.GetObject("sales_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -443,9 +253,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap loadpagesetup_32x32 {
+        internal static System.Drawing.Bitmap sales_16x161 {
             get {
-                object obj = ResourceManager.GetObject("loadpagesetup_32x32", resourceCulture);
+                object obj = ResourceManager.GetObject("sales_16x161", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -453,9 +263,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap module_2 {
+        internal static System.Drawing.Bitmap sales_32x32 {
             get {
-                object obj = ResourceManager.GetObject("module_2", resourceCulture);
+                object obj = ResourceManager.GetObject("sales_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -463,9 +273,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap new_32x325 {
+        internal static System.Drawing.Bitmap sales_32x321 {
             get {
-                object obj = ResourceManager.GetObject("new_32x325", resourceCulture);
+                object obj = ResourceManager.GetObject("sales_32x321", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -473,9 +283,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap next_32x32 {
+        internal static System.Drawing.Bitmap salesperiodlifetime_16x16 {
             get {
-                object obj = ResourceManager.GetObject("next_32x32", resourceCulture);
+                object obj = ResourceManager.GetObject("salesperiodlifetime_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -483,9 +293,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap online_shop_setting_icon_vector {
+        internal static System.Drawing.Bitmap salesperiodlifetime_16x161 {
             get {
-                object obj = ResourceManager.GetObject("online_shop_setting_icon_vector", resourceCulture);
+                object obj = ResourceManager.GetObject("salesperiodlifetime_16x161", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -493,9 +303,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap original_size_40px {
+        internal static System.Drawing.Bitmap salesperiodlifetime_16x162 {
             get {
-                object obj = ResourceManager.GetObject("original_size_40px", resourceCulture);
+                object obj = ResourceManager.GetObject("salesperiodlifetime_16x162", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -503,9 +313,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap perakende_settings {
+        internal static System.Drawing.Bitmap salesperiodlifetime_32x32 {
             get {
-                object obj = ResourceManager.GetObject("perakende_settings", resourceCulture);
+                object obj = ResourceManager.GetObject("salesperiodlifetime_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -513,9 +323,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap picturebox_32x32 {
+        internal static System.Drawing.Bitmap salesperiodlifetime_32x321 {
             get {
-                object obj = ResourceManager.GetObject("picturebox_32x32", resourceCulture);
+                object obj = ResourceManager.GetObject("salesperiodlifetime_32x321", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -523,9 +333,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap prev_32x32 {
+        internal static System.Drawing.Bitmap salesperiodlifetime_32x322 {
             get {
-                object obj = ResourceManager.GetObject("prev_32x32", resourceCulture);
+                object obj = ResourceManager.GetObject("salesperiodlifetime_32x322", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -533,9 +343,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap previewchart_32x32 {
+        internal static System.Drawing.Bitmap show_16x16 {
             get {
-                object obj = ResourceManager.GetObject("previewchart_32x32", resourceCulture);
+                object obj = ResourceManager.GetObject("show_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -543,199 +353,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap redo_32x32 {
+        internal static System.Drawing.Bitmap show_32x32 {
             get {
-                object obj = ResourceManager.GetObject("redo_32x32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap save_16x16 {
-            get {
-                object obj = ResourceManager.GetObject("save_16x16", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap save_16x161 {
-            get {
-                object obj = ResourceManager.GetObject("save_16x161", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap save_16x162 {
-            get {
-                object obj = ResourceManager.GetObject("save_16x162", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap save_16x163 {
-            get {
-                object obj = ResourceManager.GetObject("save_16x163", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap save_32x32 {
-            get {
-                object obj = ResourceManager.GetObject("save_32x32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap save_32x321 {
-            get {
-                object obj = ResourceManager.GetObject("save_32x321", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap save_32x322 {
-            get {
-                object obj = ResourceManager.GetObject("save_32x322", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap save_32x323 {
-            get {
-                object obj = ResourceManager.GetObject("save_32x323", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap save_close_40px {
-            get {
-                object obj = ResourceManager.GetObject("save_close_40px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap saveas_16x16 {
-            get {
-                object obj = ResourceManager.GetObject("saveas_16x16", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap saveas_32x32 {
-            get {
-                object obj = ResourceManager.GetObject("saveas_32x32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap sell_48px {
-            get {
-                object obj = ResourceManager.GetObject("sell_48px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap Settings_64px {
-            get {
-                object obj = ResourceManager.GetObject("Settings_64px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap shop_64px {
-            get {
-                object obj = ResourceManager.GetObject("shop_64px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap shop_64px1 {
-            get {
-                object obj = ResourceManager.GetObject("shop_64px1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap stack_of_money_48px {
-            get {
-                object obj = ResourceManager.GetObject("stack_of_money_48px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap stack_of_money_48px1 {
-            get {
-                object obj = ResourceManager.GetObject("stack_of_money_48px1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap supplier_40px {
-            get {
-                object obj = ResourceManager.GetObject("supplier_40px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap technology_16x16 {
-            get {
-                object obj = ResourceManager.GetObject("technology_16x16", resourceCulture);
+                object obj = ResourceManager.GetObject("show_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -753,9 +373,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap undo_32x32 {
+        internal static System.Drawing.Bitmap usergroup_16x16 {
             get {
-                object obj = ResourceManager.GetObject("undo_32x32", resourceCulture);
+                object obj = ResourceManager.GetObject("usergroup_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -763,9 +383,9 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap user_group_48px {
+        internal static System.Drawing.Bitmap usergroup_32x32 {
             get {
-                object obj = ResourceManager.GetObject("user_group_48px", resourceCulture);
+                object obj = ResourceManager.GetObject("usergroup_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

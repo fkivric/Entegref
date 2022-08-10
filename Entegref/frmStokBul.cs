@@ -33,10 +33,20 @@ namespace Entegref
         {
             if (e.RowHandle >= 0 && e.Clicks == 2 && e.Button == MouseButtons.Left)
             {
-                frmStokAc.sKodu = ViewStok.GetRowCellValue(ViewStok.FocusedRowHandle, "smodel").ToString();
+                frmStokAc.sModel = ViewStok.GetRowCellValue(ViewStok.FocusedRowHandle, "smodel").ToString();
                 this.Close();
                 this.Dispose();
             }
+        }
+
+        private void frmStokBul_FormClosed(object sender, FormClosedEventArgs e)
+        {
+
+        }
+
+        private void frmStokBul_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
         }
     }
 }

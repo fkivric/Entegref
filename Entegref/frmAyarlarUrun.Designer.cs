@@ -363,10 +363,6 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.btnRenkResimAc);
-            this.groupBox3.Controls.Add(this.ultraColorPicker1);
-            this.groupBox3.Controls.Add(this.ultraTextEditor2);
-            this.groupBox3.Controls.Add(this.txtRenkAdi);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.groupBox3.Location = new System.Drawing.Point(0, 0);
@@ -377,7 +373,6 @@
             // 
             // btnRenkResimAc
             // 
-            this.btnRenkResimAc.ImageOptions.Image = global::Entegref.Properties.Resources.image_32x321;
             this.btnRenkResimAc.Location = new System.Drawing.Point(758, 13);
             this.btnRenkResimAc.Name = "btnRenkResimAc";
             this.btnRenkResimAc.Size = new System.Drawing.Size(201, 24);
@@ -424,6 +419,7 @@
             this.ultraPanel1.Name = "ultraPanel1";
             this.ultraPanel1.Size = new System.Drawing.Size(1132, 51);
             this.ultraPanel1.TabIndex = 2;
+            this.ultraPanel1.PaintClient += new System.Windows.Forms.PaintEventHandler(this.ultraPanel1_PaintClient);
             // 
             // btnRenkSec
             // 
@@ -1704,7 +1700,6 @@
             this.btnSil.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
             this.btnSil.Appearance.Options.UseBackColor = true;
             this.btnSil.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnSil.ImageOptions.Image = global::Entegref.Properties.Resources.clear_32x32;
             this.btnSil.Location = new System.Drawing.Point(2, 2);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(124, 35);
@@ -1725,7 +1720,6 @@
             // 
             this.btnKaydet.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
             this.btnKaydet.Appearance.Options.UseBackColor = true;
-            this.btnKaydet.ImageOptions.Image = global::Entegref.Properties.Resources.save_32x32;
             this.btnKaydet.Location = new System.Drawing.Point(73, 3);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(124, 35);
@@ -1747,7 +1741,6 @@
             this.btnYeni.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Primary;
             this.btnYeni.Appearance.Options.UseBackColor = true;
             this.btnYeni.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnYeni.ImageOptions.Image = global::Entegref.Properties.Resources.new_32x325;
             this.btnYeni.Location = new System.Drawing.Point(334, 2);
             this.btnYeni.Name = "btnYeni";
             this.btnYeni.Size = new System.Drawing.Size(124, 35);

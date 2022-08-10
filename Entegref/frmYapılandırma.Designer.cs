@@ -386,7 +386,6 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Image = global::Entegref.Properties.Resources.about_32x32;
             this.label27.Location = new System.Drawing.Point(392, 71);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(10, 13);
@@ -398,7 +397,6 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Image = global::Entegref.Properties.Resources.about_32x32;
             this.label22.Location = new System.Drawing.Point(153, 71);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(10, 13);

@@ -728,5 +728,10 @@ namespace Entegref
                 txtDovizKuru.Text = dolar.ToString();
             }
         }
+
+        private void ultraPanel1_PaintClient(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

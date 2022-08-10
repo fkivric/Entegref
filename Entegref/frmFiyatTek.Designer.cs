@@ -112,7 +112,6 @@
             // 
             // btnFiyatTekSec
             // 
-            this.btnFiyatTekSec.ImageOptions.Image = global::Entegref.Properties.Resources.apply_32x32;
             this.btnFiyatTekSec.Location = new System.Drawing.Point(367, 19);
             this.btnFiyatTekSec.Name = "btnFiyatTekSec";
             this.btnFiyatTekSec.Size = new System.Drawing.Size(122, 35);
@@ -217,7 +216,6 @@
             // 
             // btnFiyatTipiAc
             // 
-            this.btnFiyatTipiAc.ImageOptions.Image = global::Entegref.Properties.Resources.find_16x16;
             this.btnFiyatTipiAc.Location = new System.Drawing.Point(286, 10);
             this.btnFiyatTipiAc.Name = "btnFiyatTipiAc";
             this.btnFiyatTipiAc.Size = new System.Drawing.Size(27, 21);
