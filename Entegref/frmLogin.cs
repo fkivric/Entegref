@@ -62,7 +62,7 @@ namespace Entegref
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-            timer1.Start();
+            //timer1.Start();
             SKGL.Validate validate = new SKGL.Validate();
             validate.secretPhase = VKN;
             validate.Key = Properties.Settings.Default.SecretPhase;
@@ -167,26 +167,6 @@ namespace Entegref
         DataTable database;
         void Datasource()
         {
-            //RegistryKey reg = (Registry.CurrentUser).OpenSubKey("Software");
-            //reg = reg.OpenSubKey("ODBC");
-            //reg = reg.OpenSubKey("ODBC.INI");
-            //reg = reg.OpenSubKey("ODBC Data Sources");
-
-            //RegistryKey key2 = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources");
-            //if (reg != null)
-            //{
-
-            //    foreach (string name in reg.GetValueNames())
-            //    {
-
-            //        string registrykey = reg.GetValue(name, "").ToString();
-            //        if (registrykey == "SQL Server")
-            //        {
-            //            SQLComboBox.Items.Add(name);
-            //        }
-
-            //    }
-            //}
             if (database != null)
             {
                 if (database.Rows.Count > 0)

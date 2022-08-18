@@ -18,7 +18,6 @@ namespace Entegref
     {
         public string kavalaTipi;
         public string bedenTipi;
-
         private string hexValue;
         private int decValue;
         renkbeden rnb;
@@ -44,12 +43,6 @@ namespace Entegref
         private void frmRenk_Load(object sender, EventArgs e)
         {
             this.Width = 486;
-            //GraphicsPath p = new GraphicsPath();
-            //GraphicsPath gp = new GraphicsPath();
-            //p.AddEllipse(1, 1, btnOk.Width - 4, btnOk.Height - 4);
-            //gp.AddEllipse(1, 1, btnCancel.Width - 4, btnCancel.Height - 4);
-            //btnOk.Region = new Region(p);
-            //btnCancel.Region = new Region(gp);
             Ekle();
             setUpEventHandlers();
             if (bedenTipi == null)
@@ -220,6 +213,7 @@ namespace Entegref
 
         private void btnOk_Click(object sender, EventArgs e)
         {
+            btnOk.Enabled = false;
             string secilirenkler = "";
             string secilen = "";
             if (ListSecili.Items.Count < 0)
@@ -231,11 +225,17 @@ namespace Entegref
                 for (int i = 0; i < ListSecili.Items.Count; i++)
                 {
                     secilen = ListSecili.Items[i].SubItems[0].Text;
-                    secilirenkler = secilirenkler.ToString() +","+ secilen.ToString();
+                    if (secilirenkler!="")
+                    {
+                        secilirenkler = secilirenkler.ToString() + "," + secilen.ToString();
+                    }
+                    else
+                    {
+                        secilirenkler = secilen.ToString();
+                    }
                 }
-                if (bedenTipi != null)
+                if (bedenTipi != null && bedenTipi != "")
                 {
-
                     this.Width = 1450;
                     ultraPanel1.Enabled = false;
                     ultraPanel2.Enabled = false;
@@ -264,16 +264,14 @@ namespace Entegref
                     dataGridView1.DataSource = tablo;
                     dataGridView1.AutoResizeColumns();
                 }
-                frmStokAc.sKodu = secilirenkler;
+                frmStokAc.sRenkKodu = secilirenkler;
             }
         }
 
         private void simpleButton5_Click(object sender, EventArgs e)
         {
-            if (bedenTipi != null)
+            if (bedenTipi != null && bedenTipi != "")
             {
-
-
                 for (int r = 0; r < dataGridView1.Rows.Count; r++)
                 {
                     var dd = frmStokAc.sinifsira1.IndexOf("-");
@@ -295,8 +293,7 @@ namespace Entegref
                         {
                             Renkler.Add("@sBeden" + (c - 3).ToString(), "");
                         }
-
-                        Renkler.Add("@sKodu", frmStokAc.sKodu.ToString());
+                        Renkler.Add("@sKodu", frmStokAc.sModel.ToString());
                         Renkler.Add("@bedenTipi", frmStokAc.BedenTipi);
                         Renkler.Add("@sRenkKodu", srenk);
                         Renkler.Add("@KavalaTipi", frmStokAc.Kavala);
@@ -309,11 +306,10 @@ namespace Entegref
                         Renkler.Add("@sinif6", frmStokAc.sinifsira6.ToString().Substring(0, frmStokAc.sinifsira1.IndexOf("-")).Replace("00", ""));
                         conn.DfInsert("", Renkler);
                     }
-                    //Renkler.Add("", stoksayi.ToString());
-                    //conn.DfInsert("", Renkler);
-
                 }
             }
+            this.Close();
+            this.Dispose();
         }
     }
 }

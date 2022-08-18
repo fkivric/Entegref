@@ -11,7 +11,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace Entegref
 {
     public partial class frmYapılandırma : DevExpress.XtraEditors.XtraForm

@@ -33,8 +33,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
-    <Reference Include="Bunifu_UI_v1.52">
-      <HintPath>..\..\Netbil_Connector\Netbil_Connector\Bunifu_UI_v1.52.dll</HintPath>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
@@ -333,6 +333,36 @@
     <Compile Include="frmTopluFiyat.Designer.cs">
       <DependentUpon>frmTopluFiyat.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTrendyol_Attributes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrendyol_Attributes.Designer.cs">
+      <DependentUpon>frmTrendyol_Attributes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrendyol_catogory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrendyol_catogory.Designer.cs">
+      <DependentUpon>frmTrendyol_catogory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrendyol_FirmaAdresBilgisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrendyol_FirmaAdresBilgisi.Designer.cs">
+      <DependentUpon>frmTrendyol_FirmaAdresBilgisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrendyol_MusteriSorları.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrendyol_MusteriSorları.Designer.cs">
+      <DependentUpon>frmTrendyol_MusteriSorları.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrendyol_Ürün_Aktif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrendyol_Ürün_Aktif.Designer.cs">
+      <DependentUpon>frmTrendyol_Ürün_Aktif.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmYapılandırma.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -445,6 +475,21 @@
     <EmbeddedResource Include="frmStokToplu.resx">
       <DependentUpon>frmStokToplu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmTrendyol_Attributes.resx">
+      <DependentUpon>frmTrendyol_Attributes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrendyol_catogory.resx">
+      <DependentUpon>frmTrendyol_catogory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrendyol_FirmaAdresBilgisi.resx">
+      <DependentUpon>frmTrendyol_FirmaAdresBilgisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrendyol_MusteriSorları.resx">
+      <DependentUpon>frmTrendyol_MusteriSorları.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrendyol_Ürün_Aktif.resx">
+      <DependentUpon>frmTrendyol_Ürün_Aktif.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmYapılandırma.resx">
       <DependentUpon>frmYapılandırma.cs</DependentUpon>
     </EmbeddedResource>
@@ -524,6 +569,15 @@
     <Content Include="CrsPictures\logo_yon.png" />
     <Content Include="CrsPictures\logo_yon_new.png" />
     <Content Include="CrsPictures\logo_yon_new2.png" />
+    <None Include="Resources\boproductgroup_16x16.png" />
+    <None Include="Resources\boproductgroup_32x32.png" />
+    <None Include="Resources\knowledgebasearticle_16x161.png" />
+    <None Include="Resources\knowledgebasearticle_32x321.png" />
+    <None Include="Resources\knowledgebasearticle_16x16.png" />
+    <None Include="Resources\knowledgebasearticle_32x32.png" />
+    <None Include="Resources\bocustomer_16x16.png" />
+    <None Include="Resources\bocustomer_32x32.png" />
+    <None Include="Resources\barcode2_32x32.png" />
     <None Include="Resources\show_16x16.png" />
     <None Include="Resources\show_32x32.png" />
     <None Include="Resources\hideproduct_32x321.png" />

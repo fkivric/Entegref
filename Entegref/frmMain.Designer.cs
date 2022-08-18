@@ -57,55 +57,62 @@
             Infragistics.Win.Appearance appearance21 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance22 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance23 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance24 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup2 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
             Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem10 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
-            Infragistics.Win.Appearance appearance24 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance25 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance26 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup3 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem12 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
             Infragistics.Win.Appearance appearance27 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance28 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup3 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem12 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
             Infragistics.Win.Appearance appearance29 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup4 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem13 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
             Infragistics.Win.Appearance appearance30 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance31 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance32 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup5 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem11 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem19 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem20 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup4 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem13 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
             Infragistics.Win.Appearance appearance33 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance34 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance35 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance36 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup5 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem11 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.Appearance appearance37 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem19 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.Appearance appearance38 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem20 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.Appearance appearance39 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance40 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance41 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup7 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
             Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem21 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.Appearance appearance42 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem22 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
             Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem23 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
             Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem24 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
             Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem25 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
-            Infragistics.Win.Appearance appearance36 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance37 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance38 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance39 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup9 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem4 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem5 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
-            Infragistics.Win.Appearance appearance40 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance41 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance42 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup8 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem15 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem17 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
             Infragistics.Win.Appearance appearance43 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem18 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
-            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem14 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
             Infragistics.Win.Appearance appearance44 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance45 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance46 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup9 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem4 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem5 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
             Infragistics.Win.Appearance appearance47 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance48 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance49 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup ultraExplorerBarGroup8 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem15 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem17 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.Appearance appearance50 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem18 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem ultraExplorerBarItem14 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem();
+            Infragistics.Win.Appearance appearance51 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance52 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance53 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance54 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance55 = new Infragistics.Win.Appearance();
             DevExpress.Utils.Animation.PushTransition pushTransition1 = new DevExpress.Utils.Animation.PushTransition();
             this.ultraExplorerBar1 = new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBar();
             this.UltraExplorerBarimage = new System.Windows.Forms.ImageList(this.components);
@@ -164,10 +171,13 @@
             this.workspaceManager1 = new DevExpress.Utils.WorkspaceManager(this.components);
             this.barSubItem3 = new DevExpress.XtraBars.BarSubItem();
             this.barDockingMenuItem3 = new DevExpress.XtraBars.BarDockingMenuItem();
+            this.barButtonItem20 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem22 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageCategory1 = new DevExpress.XtraBars.Ribbon.RibbonPageCategory();
             this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup13 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage6 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage7 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -192,6 +202,9 @@
             this.radialMenu1 = new DevExpress.XtraBars.Ribbon.RadialMenu(this.components);
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
             this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem21 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem23 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem24 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ultraExplorerBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraNavigationBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraDockManager1)).BeginInit();
@@ -222,101 +235,116 @@
             ultraExplorerBarItem2.Settings.AppearancesLarge.Appearance = appearance3;
             ultraExplorerBarItem2.Text = "Fiyatlandırma";
             ultraExplorerBarItem3.Key = "13";
+            appearance4.Image = "microsoft_excel_32px.png";
+            ultraExplorerBarItem3.Settings.AppearancesLarge.Appearance = appearance4;
             ultraExplorerBarItem3.Text = "Toplu Ürün Ekleme";
             ultraExplorerBarGroup1.Items.AddRange(new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem[] {
             ultraExplorerBarItem1,
             ultraExplorerBarItem2,
             ultraExplorerBarItem3});
-            appearance4.Image = "product_32x32.png";
-            ultraExplorerBarGroup1.Settings.AppearancesLarge.ActiveAppearance = appearance4;
             appearance5.Image = "product_32x32.png";
-            ultraExplorerBarGroup1.Settings.AppearancesLarge.ActiveHeaderAppearance = appearance5;
+            ultraExplorerBarGroup1.Settings.AppearancesLarge.ActiveAppearance = appearance5;
             appearance6.Image = "product_32x32.png";
-            ultraExplorerBarGroup1.Settings.AppearancesLarge.Appearance = appearance6;
+            ultraExplorerBarGroup1.Settings.AppearancesLarge.ActiveHeaderAppearance = appearance6;
             appearance7.Image = "product_32x32.png";
-            ultraExplorerBarGroup1.Settings.AppearancesLarge.EditAppearance = appearance7;
+            ultraExplorerBarGroup1.Settings.AppearancesLarge.Appearance = appearance7;
             appearance8.Image = "product_32x32.png";
-            ultraExplorerBarGroup1.Settings.AppearancesLarge.HeaderAppearance = appearance8;
+            ultraExplorerBarGroup1.Settings.AppearancesLarge.EditAppearance = appearance8;
             appearance9.Image = "product_32x32.png";
-            ultraExplorerBarGroup1.Settings.AppearancesLarge.HeaderHotTrackAppearance = appearance9;
+            ultraExplorerBarGroup1.Settings.AppearancesLarge.HeaderAppearance = appearance9;
             appearance10.Image = "product_32x32.png";
-            ultraExplorerBarGroup1.Settings.AppearancesLarge.HotTrackAppearance = appearance10;
+            ultraExplorerBarGroup1.Settings.AppearancesLarge.HeaderHotTrackAppearance = appearance10;
             appearance11.Image = "product_32x32.png";
-            ultraExplorerBarGroup1.Settings.AppearancesLarge.ItemAreaAppearance = appearance11;
+            ultraExplorerBarGroup1.Settings.AppearancesLarge.HotTrackAppearance = appearance11;
             appearance12.Image = "product_32x32.png";
-            ultraExplorerBarGroup1.Settings.AppearancesLarge.NavigationOverflowButtonAppearance = appearance12;
+            ultraExplorerBarGroup1.Settings.AppearancesLarge.ItemAreaAppearance = appearance12;
             appearance13.Image = "product_32x32.png";
-            ultraExplorerBarGroup1.Settings.AppearancesLarge.NavigationOverflowButtonHotTrackAppearance = appearance13;
+            ultraExplorerBarGroup1.Settings.AppearancesLarge.NavigationOverflowButtonAppearance = appearance13;
             appearance14.Image = "product_32x32.png";
-            ultraExplorerBarGroup1.Settings.AppearancesLarge.NavigationOverflowButtonSelectedAppearance = appearance14;
+            ultraExplorerBarGroup1.Settings.AppearancesLarge.NavigationOverflowButtonHotTrackAppearance = appearance14;
             appearance15.Image = "product_32x32.png";
-            ultraExplorerBarGroup1.Settings.AppearancesLarge.NavigationPaneCollapsedGroupAreaAppearance = appearance15;
+            ultraExplorerBarGroup1.Settings.AppearancesLarge.NavigationOverflowButtonSelectedAppearance = appearance15;
             appearance16.Image = "product_32x32.png";
-            ultraExplorerBarGroup1.Settings.AppearancesLarge.NavigationPaneCollapsedGroupAreaHotTrackAppearance = appearance16;
+            ultraExplorerBarGroup1.Settings.AppearancesLarge.NavigationPaneCollapsedGroupAreaAppearance = appearance16;
             appearance17.Image = "product_32x32.png";
-            ultraExplorerBarGroup1.Settings.AppearancesLarge.NavigationPaneExpansionButtonAppearance = appearance17;
+            ultraExplorerBarGroup1.Settings.AppearancesLarge.NavigationPaneCollapsedGroupAreaHotTrackAppearance = appearance17;
             appearance18.Image = "product_32x32.png";
-            ultraExplorerBarGroup1.Settings.AppearancesLarge.NavigationPaneExpansionButtonHotTrackAppearance = appearance18;
+            ultraExplorerBarGroup1.Settings.AppearancesLarge.NavigationPaneExpansionButtonAppearance = appearance18;
             appearance19.Image = "product_32x32.png";
-            ultraExplorerBarGroup1.Settings.AppearancesLarge.NavigationPaneHeaderAppearance = appearance19;
+            ultraExplorerBarGroup1.Settings.AppearancesLarge.NavigationPaneExpansionButtonHotTrackAppearance = appearance19;
             appearance20.Image = "product_32x32.png";
-            ultraExplorerBarGroup1.Settings.AppearancesLarge.ScrollButtonAppearance = appearance20;
+            ultraExplorerBarGroup1.Settings.AppearancesLarge.NavigationPaneHeaderAppearance = appearance20;
             appearance21.Image = "product_32x32.png";
-            ultraExplorerBarGroup1.Settings.AppearancesLarge.ScrollButtonHotTrackAppearance = appearance21;
+            ultraExplorerBarGroup1.Settings.AppearancesLarge.ScrollButtonAppearance = appearance21;
             appearance22.Image = "product_32x32.png";
-            ultraExplorerBarGroup1.Settings.AppearancesLarge.SelectedAppearance = appearance22;
+            ultraExplorerBarGroup1.Settings.AppearancesLarge.ScrollButtonHotTrackAppearance = appearance22;
             appearance23.Image = "product_32x32.png";
-            ultraExplorerBarGroup1.Settings.AppearancesLarge.SelectedHeaderAppearance = appearance23;
+            ultraExplorerBarGroup1.Settings.AppearancesLarge.SelectedAppearance = appearance23;
+            appearance24.Image = "product_32x32.png";
+            ultraExplorerBarGroup1.Settings.AppearancesLarge.SelectedHeaderAppearance = appearance24;
             ultraExplorerBarGroup1.Settings.HeaderButtonStyle = Infragistics.Win.UIElementButtonStyle.Button3D;
             ultraExplorerBarGroup1.Text = "Ürünler";
             ultraExplorerBarItem10.Key = "21";
+            appearance25.Image = global::Entegref.Properties.Resources.bocustomer_32x32;
+            ultraExplorerBarItem10.Settings.AppearancesLarge.Appearance = appearance25;
             ultraExplorerBarItem10.Text = "Müşteri Ekle / Sil / Güncelle";
             ultraExplorerBarGroup2.Items.AddRange(new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem[] {
             ultraExplorerBarItem10});
-            appearance24.Image = "user_group_32.png";
-            ultraExplorerBarGroup2.Settings.AppearancesLarge.Appearance = appearance24;
-            appearance25.Image = "user_group_32.png";
-            ultraExplorerBarGroup2.Settings.AppearancesLarge.HeaderAppearance = appearance25;
             appearance26.Image = "user_group_32.png";
-            ultraExplorerBarGroup2.Settings.AppearancesLarge.NavigationPaneHeaderAppearance = appearance26;
+            ultraExplorerBarGroup2.Settings.AppearancesLarge.Appearance = appearance26;
+            appearance27.Image = "user_group_32.png";
+            ultraExplorerBarGroup2.Settings.AppearancesLarge.HeaderAppearance = appearance27;
+            appearance28.Image = "user_group_32.png";
+            ultraExplorerBarGroup2.Settings.AppearancesLarge.NavigationPaneHeaderAppearance = appearance28;
             ultraExplorerBarGroup2.Text = "Müşteri";
             ultraExplorerBarItem12.Key = "31";
+            appearance29.Image = "supplier_40px.png";
+            ultraExplorerBarItem12.Settings.AppearancesLarge.Appearance = appearance29;
             ultraExplorerBarItem12.Text = "Tedariçi Firma İşlemleri";
             ultraExplorerBarGroup3.Items.AddRange(new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem[] {
             ultraExplorerBarItem12});
-            appearance27.Image = "Store Setting_32.png";
-            ultraExplorerBarGroup3.Settings.AppearancesLarge.Appearance = appearance27;
-            appearance28.Image = "Store Setting_32.png";
-            ultraExplorerBarGroup3.Settings.AppearancesLarge.HeaderAppearance = appearance28;
-            appearance29.Image = "Store Setting_32.png";
-            ultraExplorerBarGroup3.Settings.AppearancesLarge.NavigationPaneHeaderAppearance = appearance29;
+            appearance30.Image = "Store Setting_32.png";
+            ultraExplorerBarGroup3.Settings.AppearancesLarge.Appearance = appearance30;
+            appearance31.Image = "Store Setting_32.png";
+            ultraExplorerBarGroup3.Settings.AppearancesLarge.HeaderAppearance = appearance31;
+            appearance32.Image = "Store Setting_32.png";
+            ultraExplorerBarGroup3.Settings.AppearancesLarge.NavigationPaneHeaderAppearance = appearance32;
             ultraExplorerBarGroup3.Text = "Cari İşlemler";
             ultraExplorerBarItem13.Key = "41";
+            appearance33.Image = global::Entegref.Properties.Resources.sales_32x32;
+            ultraExplorerBarItem13.Settings.AppearancesLarge.Appearance = appearance33;
             ultraExplorerBarItem13.Text = "Satış Takibi";
             ultraExplorerBarGroup4.Items.AddRange(new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem[] {
             ultraExplorerBarItem13});
-            appearance30.Image = "perakende_32.png";
-            ultraExplorerBarGroup4.Settings.AppearancesLarge.Appearance = appearance30;
-            appearance31.Image = "perakende_32.png";
-            ultraExplorerBarGroup4.Settings.AppearancesLarge.HeaderAppearance = appearance31;
-            appearance32.Image = "perakende_32.png";
-            ultraExplorerBarGroup4.Settings.AppearancesLarge.NavigationPaneHeaderAppearance = appearance32;
+            appearance34.Image = "perakende_32.png";
+            ultraExplorerBarGroup4.Settings.AppearancesLarge.Appearance = appearance34;
+            appearance35.Image = "perakende_32.png";
+            ultraExplorerBarGroup4.Settings.AppearancesLarge.HeaderAppearance = appearance35;
+            appearance36.Image = "perakende_32.png";
+            ultraExplorerBarGroup4.Settings.AppearancesLarge.NavigationPaneHeaderAppearance = appearance36;
             ultraExplorerBarGroup4.Text = "Satışlar";
+            appearance37.Image = "e-fatura32x.png";
+            ultraExplorerBarItem11.Settings.AppearancesLarge.Appearance = appearance37;
             ultraExplorerBarItem11.Text = "E-Fatura";
+            appearance38.Image = "e-arşiv32x.png";
+            ultraExplorerBarItem19.Settings.AppearancesLarge.Appearance = appearance38;
             ultraExplorerBarItem19.Text = "E-Arşiv Fatura";
             ultraExplorerBarItem20.Text = "E-Irsaliye";
             ultraExplorerBarGroup5.Items.AddRange(new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem[] {
             ultraExplorerBarItem11,
             ultraExplorerBarItem19,
             ultraExplorerBarItem20});
-            appearance33.Image = "VKN 32.png";
-            ultraExplorerBarGroup5.Settings.AppearancesLarge.Appearance = appearance33;
-            appearance34.Image = "VKN 32.png";
-            ultraExplorerBarGroup5.Settings.AppearancesLarge.HeaderAppearance = appearance34;
-            appearance35.Image = "VKN 32.png";
-            ultraExplorerBarGroup5.Settings.AppearancesLarge.NavigationPaneHeaderAppearance = appearance35;
+            appearance39.Image = "VKN 32.png";
+            ultraExplorerBarGroup5.Settings.AppearancesLarge.Appearance = appearance39;
+            appearance40.Image = "VKN 32.png";
+            ultraExplorerBarGroup5.Settings.AppearancesLarge.HeaderAppearance = appearance40;
+            appearance41.Image = "VKN 32.png";
+            ultraExplorerBarGroup5.Settings.AppearancesLarge.NavigationPaneHeaderAppearance = appearance41;
             ultraExplorerBarGroup5.Text = "E-İşlemler";
-            ultraExplorerBarItem21.Text = "New Item";
+            ultraExplorerBarItem21.Key = "61";
+            appearance42.Image = "Truck_100px.png";
+            ultraExplorerBarItem21.Settings.AppearancesLarge.Appearance = appearance42;
+            ultraExplorerBarItem21.Text = "Kargo Seçimi";
             ultraExplorerBarItem22.Text = "New Item";
             ultraExplorerBarItem23.Text = "New Item";
             ultraExplorerBarItem24.Text = "New Item";
@@ -327,14 +355,14 @@
             ultraExplorerBarItem23,
             ultraExplorerBarItem24,
             ultraExplorerBarItem25});
-            appearance36.Image = "Truck_100px.png";
-            ultraExplorerBarGroup7.Settings.AppearancesLarge.Appearance = appearance36;
-            appearance37.Image = "Truck_100px.png";
-            ultraExplorerBarGroup7.Settings.AppearancesLarge.HeaderAppearance = appearance37;
-            appearance38.Image = "Truck_100px.png";
-            ultraExplorerBarGroup7.Settings.AppearancesLarge.ItemAreaAppearance = appearance38;
-            appearance39.Image = "Truck_100px.png";
-            ultraExplorerBarGroup7.Settings.AppearancesLarge.NavigationPaneHeaderAppearance = appearance39;
+            appearance43.Image = "Truck_100px.png";
+            ultraExplorerBarGroup7.Settings.AppearancesLarge.Appearance = appearance43;
+            appearance44.Image = "Truck_100px.png";
+            ultraExplorerBarGroup7.Settings.AppearancesLarge.HeaderAppearance = appearance44;
+            appearance45.Image = "Truck_100px.png";
+            ultraExplorerBarGroup7.Settings.AppearancesLarge.ItemAreaAppearance = appearance45;
+            appearance46.Image = "Truck_100px.png";
+            ultraExplorerBarGroup7.Settings.AppearancesLarge.NavigationPaneHeaderAppearance = appearance46;
             ultraExplorerBarGroup7.Text = "Kargo";
             ultraExplorerBarItem4.Key = "81";
             ultraExplorerBarItem4.Text = "Rapor";
@@ -343,18 +371,18 @@
             ultraExplorerBarGroup9.Items.AddRange(new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarItem[] {
             ultraExplorerBarItem4,
             ultraExplorerBarItem5});
-            appearance40.Image = "designreport_32x32.png";
-            ultraExplorerBarGroup9.Settings.AppearancesLarge.Appearance = appearance40;
-            appearance41.Image = "designreport_32x32.png";
-            ultraExplorerBarGroup9.Settings.AppearancesLarge.HeaderAppearance = appearance41;
-            appearance42.Image = "designreport_32x32.png";
-            ultraExplorerBarGroup9.Settings.AppearancesLarge.NavigationPaneHeaderAppearance = appearance42;
+            appearance47.Image = "designreport_32x32.png";
+            ultraExplorerBarGroup9.Settings.AppearancesLarge.Appearance = appearance47;
+            appearance48.Image = "designreport_32x32.png";
+            ultraExplorerBarGroup9.Settings.AppearancesLarge.HeaderAppearance = appearance48;
+            appearance49.Image = "designreport_32x32.png";
+            ultraExplorerBarGroup9.Settings.AppearancesLarge.NavigationPaneHeaderAppearance = appearance49;
             ultraExplorerBarGroup9.Text = "Raporlar";
             ultraExplorerBarItem15.Key = "91";
             ultraExplorerBarItem15.Text = "Perakende Satış Ayarları";
             ultraExplorerBarItem17.Key = "92";
-            appearance43.Image = ((object)(resources.GetObject("appearance43.Image")));
-            ultraExplorerBarItem17.Settings.AppearancesLarge.Appearance = appearance43;
+            appearance50.Image = ((object)(resources.GetObject("appearance50.Image")));
+            ultraExplorerBarItem17.Settings.AppearancesLarge.Appearance = appearance50;
             ultraExplorerBarItem17.Text = "Urun Ayarları";
             ultraExplorerBarItem18.Key = "93";
             ultraExplorerBarItem18.Text = "Depo Ayarları";
@@ -364,12 +392,12 @@
             ultraExplorerBarItem17,
             ultraExplorerBarItem18,
             ultraExplorerBarItem14});
-            appearance44.Image = "Settings_32x32.png";
-            ultraExplorerBarGroup8.Settings.AppearancesLarge.Appearance = appearance44;
-            appearance45.Image = "Settings_32x32.png";
-            ultraExplorerBarGroup8.Settings.AppearancesLarge.HeaderAppearance = appearance45;
-            appearance46.Image = "Settings_32x32.png";
-            ultraExplorerBarGroup8.Settings.AppearancesLarge.NavigationPaneHeaderAppearance = appearance46;
+            appearance51.Image = "Settings_32x32.png";
+            ultraExplorerBarGroup8.Settings.AppearancesLarge.Appearance = appearance51;
+            appearance52.Image = "Settings_32x32.png";
+            ultraExplorerBarGroup8.Settings.AppearancesLarge.HeaderAppearance = appearance52;
+            appearance53.Image = "Settings_32x32.png";
+            ultraExplorerBarGroup8.Settings.AppearancesLarge.NavigationPaneHeaderAppearance = appearance53;
             ultraExplorerBarGroup8.Text = "Ayarlar";
             this.ultraExplorerBar1.Groups.AddRange(new Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarGroup[] {
             ultraExplorerBarGroup1,
@@ -380,10 +408,10 @@
             ultraExplorerBarGroup7,
             ultraExplorerBarGroup9,
             ultraExplorerBarGroup8});
-            appearance47.Image = global::Entegref.Properties.Resources.material_ui_32;
-            this.ultraExplorerBar1.GroupSettings.AppearancesLarge.Appearance = appearance47;
-            appearance48.Image = global::Entegref.Properties.Resources.material_ui_32;
-            this.ultraExplorerBar1.GroupSettings.AppearancesLarge.HeaderAppearance = appearance48;
+            appearance54.Image = global::Entegref.Properties.Resources.material_ui_32;
+            this.ultraExplorerBar1.GroupSettings.AppearancesLarge.Appearance = appearance54;
+            appearance55.Image = global::Entegref.Properties.Resources.material_ui_32;
+            this.ultraExplorerBar1.GroupSettings.AppearancesLarge.HeaderAppearance = appearance55;
             this.ultraExplorerBar1.GroupSettings.Style = Infragistics.Win.UltraWinExplorerBar.GroupStyle.LargeImagesWithTextBelow;
             this.ultraExplorerBar1.GroupSpacing = 0;
             this.ultraExplorerBar1.ImageListLarge = this.UltraExplorerBarimage;
@@ -392,9 +420,9 @@
             this.ultraExplorerBar1.ItemSettings.Style = Infragistics.Win.UltraWinExplorerBar.ItemStyle.Button;
             this.ultraExplorerBar1.Location = new System.Drawing.Point(0, 148);
             this.ultraExplorerBar1.Name = "ultraExplorerBar1";
-            this.ultraExplorerBar1.NavigationMaxGroupHeaders = 7;
+            this.ultraExplorerBar1.NavigationMaxGroupHeaders = 5;
             this.ultraExplorerBar1.SettingsKey = "frmMain.ultraExplorerBar1";
-            this.ultraExplorerBar1.Size = new System.Drawing.Size(181, 630);
+            this.ultraExplorerBar1.Size = new System.Drawing.Size(234, 630);
             this.ultraExplorerBar1.Style = Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarStyle.OutlookNavigationPane;
             this.ultraExplorerBar1.TabIndex = 2;
             this.ultraExplorerBar1.UseLargeGroupHeaderImages = Infragistics.Win.DefaultableBoolean.True;
@@ -437,6 +465,10 @@
             this.UltraExplorerBarimage.Images.SetKeyName(27, "version_32x32.png");
             this.UltraExplorerBarimage.Images.SetKeyName(28, "Truck_100px.png");
             this.UltraExplorerBarimage.Images.SetKeyName(29, "VKN 32.png");
+            this.UltraExplorerBarimage.Images.SetKeyName(30, "microsoft_excel_32px.png");
+            this.UltraExplorerBarimage.Images.SetKeyName(31, "supplier_40px.png");
+            this.UltraExplorerBarimage.Images.SetKeyName(32, "e-fatura32x.png");
+            this.UltraExplorerBarimage.Images.SetKeyName(33, "e-arşiv32x.png");
             // 
             // ultraNavigationBar1
             // 
@@ -618,9 +650,11 @@
             this.barWorkspaceMenuItem1,
             this.barSubItem3,
             this.barDockingMenuItem3,
-            this.barButtonItem19});
+            this.barButtonItem19,
+            this.barButtonItem20,
+            this.barButtonItem22});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 38;
+            this.ribbonControl1.MaxItemId = 41;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.OptionsAnimation.PageCategoryShowAnimation = DevExpress.Utils.DefaultBoolean.True;
             this.ribbonControl1.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
@@ -706,10 +740,13 @@
             // 
             // barButtonItem7
             // 
-            this.barButtonItem7.Caption = "Toplu Ürün İşlermleri";
+            this.barButtonItem7.Caption = "Yayında Olan Ürünler";
             this.barButtonItem7.Id = 7;
+            this.barButtonItem7.ImageOptions.Image = global::Entegref.Properties.Resources.boproductgroup_16x16;
+            this.barButtonItem7.ImageOptions.LargeImage = global::Entegref.Properties.Resources.boproductgroup_32x32;
             this.barButtonItem7.Name = "barButtonItem7";
             this.barButtonItem7.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem7.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem7_ItemClick);
             // 
             // barButtonItem8
             // 
@@ -794,6 +831,7 @@
             this.barButtonItem16.ImageOptions.LargeImage = global::Entegref.Properties.Resources.salesperiodlifetime_32x322;
             this.barButtonItem16.Name = "barButtonItem16";
             this.barButtonItem16.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem16.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem16_ItemClick);
             // 
             // barButtonItem17
             // 
@@ -911,6 +949,24 @@
             this.barDockingMenuItem3.Name = "barDockingMenuItem3";
             this.barDockingMenuItem3.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
+            // barButtonItem20
+            // 
+            this.barButtonItem20.Caption = "barButtonItem20";
+            this.barButtonItem20.Id = 38;
+            this.barButtonItem20.ImageOptions.Image = global::Entegref.Properties.Resources.bocustomer_16x16;
+            this.barButtonItem20.ImageOptions.LargeImage = global::Entegref.Properties.Resources.bocustomer_32x32;
+            this.barButtonItem20.Name = "barButtonItem20";
+            // 
+            // barButtonItem22
+            // 
+            this.barButtonItem22.Caption = "Müşteri Soruları";
+            this.barButtonItem22.Id = 40;
+            this.barButtonItem22.ImageOptions.Image = global::Entegref.Properties.Resources.knowledgebasearticle_16x161;
+            this.barButtonItem22.ImageOptions.LargeImage = global::Entegref.Properties.Resources.knowledgebasearticle_32x321;
+            this.barButtonItem22.Name = "barButtonItem22";
+            this.barButtonItem22.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem22.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem22_ItemClick);
+            // 
             // ribbonPageCategory1
             // 
             this.ribbonPageCategory1.Appearance.BackColor = System.Drawing.Color.DarkSlateBlue;
@@ -939,7 +995,8 @@
             // 
             this.ribbonPage5.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup5,
-            this.ribbonPageGroup15});
+            this.ribbonPageGroup15,
+            this.ribbonPageGroup13});
             this.ribbonPage5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage5.ImageOptions.Image")));
             this.ribbonPage5.Name = "ribbonPage5";
             this.ribbonPage5.Text = "Trendyol";
@@ -962,6 +1019,12 @@
             this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem17);
             this.ribbonPageGroup15.Name = "ribbonPageGroup15";
             this.ribbonPageGroup15.Text = "Sipariş ve Kargo";
+            // 
+            // ribbonPageGroup13
+            // 
+            this.ribbonPageGroup13.ItemLinks.Add(this.barButtonItem22);
+            this.ribbonPageGroup13.Name = "ribbonPageGroup13";
+            this.ribbonPageGroup13.Text = "ribbonPageGroup13";
             // 
             // ribbonPage6
             // 
@@ -1049,6 +1112,7 @@
             // ribbonPageGroup1
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem11);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem20);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "Kurulum Ayarları";
             // 
@@ -1106,6 +1170,36 @@
             this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem8);
             this.ribbonPageGroup12.Name = "ribbonPageGroup12";
             this.ribbonPageGroup12.Text = "Pazar Ayarları";
+            // 
+            // barButtonItem21
+            // 
+            this.barButtonItem21.Caption = "barButtonItem21";
+            this.barButtonItem21.Hint = "Müşteri Sorları";
+            this.barButtonItem21.Id = 39;
+            this.barButtonItem21.ImageOptions.Image = global::Entegref.Properties.Resources.knowledgebasearticle_16x16;
+            this.barButtonItem21.ImageOptions.LargeImage = global::Entegref.Properties.Resources.knowledgebasearticle_32x32;
+            this.barButtonItem21.Name = "barButtonItem21";
+            this.barButtonItem21.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem23
+            // 
+            this.barButtonItem23.Caption = "barButtonItem21";
+            this.barButtonItem23.Hint = "Müşteri Sorları";
+            this.barButtonItem23.Id = 39;
+            this.barButtonItem23.ImageOptions.Image = global::Entegref.Properties.Resources.knowledgebasearticle_16x16;
+            this.barButtonItem23.ImageOptions.LargeImage = global::Entegref.Properties.Resources.knowledgebasearticle_32x32;
+            this.barButtonItem23.Name = "barButtonItem23";
+            this.barButtonItem23.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem24
+            // 
+            this.barButtonItem24.Caption = "barButtonItem21";
+            this.barButtonItem24.Hint = "Müşteri Sorları";
+            this.barButtonItem24.Id = 39;
+            this.barButtonItem24.ImageOptions.Image = global::Entegref.Properties.Resources.knowledgebasearticle_16x16;
+            this.barButtonItem24.ImageOptions.LargeImage = global::Entegref.Properties.Resources.knowledgebasearticle_32x32;
+            this.barButtonItem24.Name = "barButtonItem24";
+            this.barButtonItem24.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
             // frmMain
             // 
@@ -1234,5 +1328,11 @@
         private DevExpress.XtraBars.BarDockingMenuItem barDockingMenuItem3;
         private DevExpress.XtraBars.Ribbon.ApplicationMenu applicationMenu1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem19;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem20;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup13;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem22;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem21;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem23;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem24;
     }
 }

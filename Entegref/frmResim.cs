@@ -42,7 +42,7 @@ namespace Entegref
         {
             if (e.RowHandle >=0 && e.Button == MouseButtons.Left && e.Clicks >= 2)
             {
-                frmStokAc.sKodu = viewResimler.GetRowCellValue(viewResimler.FocusedRowHandle, "Ürün Adı").ToString();
+                //frmStokAc.sKodu = viewResimler.GetRowCellValue(viewResimler.FocusedRowHandle, "Ürün Adı").ToString();
                 this.Close();
                 this.Dispose();
             }

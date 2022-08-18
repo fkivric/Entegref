@@ -25,6 +25,7 @@ namespace Entegref
         DataTable sf6 = new DataTable();
         DataTable beden = new DataTable();
         DataTable fiyatlar = new DataTable();
+        string newid;
         string newidson;
         string newid1 = "00";
         string newid2 = "00";
@@ -373,7 +374,12 @@ namespace Entegref
                         }
                     }
 
-                    newidson = newid1 + newid2 + newid3 + newid4 + newid5 + newid6;
+                    newid = newid1 + newid2.Replace("00", "") + newid3.Replace("00", ""); //+ newid4.Replace("00","") + newid5.Replace("00", "") + newid6.Replace("00", "");
+                    Dictionary<string, string> ID = new Dictionary<string, string>();
+                    ID.Add("@temporaryID", newid);
+                    var dt = conn.DfQuery("Entegref_New_sModel", ID);
+                    newidson = dt.Rows[0]["sModel"].ToString();
+
                     grpSinif.Enabled = false;
                     grpOzellik.Enabled = true;
 
@@ -419,6 +425,7 @@ namespace Entegref
                         newid3 = cmbsinif3.SelectedValue.ToString().Substring(0, cmbsinif3.SelectedValue.ToString().IndexOf("-")).Replace(" ", "");
                         sira3 = cmbsinif3.SelectedValue.ToString();
                     }
+                    
                 }
 
                 if (cmbsinif4.SelectedValue != null)
@@ -447,8 +454,12 @@ namespace Entegref
                         sira6 = cmbsinif6.SelectedValue.ToString();
                     }
                 }
+                newid = newid1 + newid2.Replace("00", "") + newid3.Replace("00", ""); //+ newid4.Replace("00","") + newid5.Replace("00", "") + newid6.Replace("00", "");
+                Dictionary<string, string> ID = new Dictionary<string, string>();
+                ID.Add("@temporaryID", newid);
+                var dt = conn.DfQuery("Entegref_New_sModel", ID);
+                newidson = dt.Rows[0]["sModel"].ToString();
 
-                newidson = newid1 + newid2 + newid3 + newid4 + newid5 + newid6;
                 grpSinif.Enabled = false;
                 grpOzellik.Enabled = true;
 
@@ -492,6 +503,7 @@ namespace Entegref
         {
             if (chkBeden.Checked == true)
             {
+                cmbBeden.Enabled = true;
                 var persons = new List<tbBedenTipi>();
 
                 using (var connection = new SqlConnection(Properties.Settings.Default.connectionstring))
@@ -536,6 +548,7 @@ namespace Entegref
             else
             {
                 cmbBeden.DataSource = null;
+                cmbBeden.Enabled = false;
                 tbBedenTipi tbBedenTipi = new tbBedenTipi();
             }
 
@@ -671,15 +684,18 @@ namespace Entegref
                     {
                         frmStokAc.KavalaTipi = "";
                     }
-                    frmRenk frmRenk = new frmRenk(sKavalaTipi, sBedenTipi);
-                    frmRenk.Show();
-                    this.Hide();
                 }
                 else
                 {
                     frmStokAc.BedenTipi = null;
                     frmStokAc.KavalaTipi = null;
+                    frmStokAc.Beden = "Beden Yok";
+                    frmStokAc.Kavala = "Kavala Yok";
                 }
+
+                frmRenk frmRenk = new frmRenk(sKavalaTipi, sBedenTipi);
+                frmRenk.ShowDialog();
+                this.Hide();
             }
             else
             {

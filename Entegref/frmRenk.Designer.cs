@@ -246,7 +246,7 @@
             // 
             this.simpleButton5.Appearance.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.simpleButton5.Appearance.Options.UseFont = true;
-            this.simpleButton5.Location = new System.Drawing.Point(920, 3);
+            this.simpleButton5.Location = new System.Drawing.Point(383, 1);
             this.simpleButton5.Name = "simpleButton5";
             this.simpleButton5.Size = new System.Drawing.Size(103, 75);
             this.simpleButton5.TabIndex = 0;

@@ -28,31 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.gridKargo = new DevExpress.XtraGrid.GridControl();
+            this.viewKargo = new DevExpress.XtraGrid.Views.Grid.GridView();
+            ((System.ComponentModel.ISupportInitialize)(this.gridKargo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewKargo)).BeginInit();
             this.SuspendLayout();
             // 
-            // simpleButton1
+            // panel1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(237, 102);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(471, 259);
-            this.simpleButton1.TabIndex = 0;
-            this.simpleButton1.Text = "simpleButton1";
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(800, 46);
+            this.panel1.TabIndex = 0;
+            // 
+            // gridKargo
+            // 
+            this.gridKargo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridKargo.Location = new System.Drawing.Point(0, 46);
+            this.gridKargo.MainView = this.viewKargo;
+            this.gridKargo.Name = "gridKargo";
+            this.gridKargo.Size = new System.Drawing.Size(800, 404);
+            this.gridKargo.TabIndex = 1;
+            this.gridKargo.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.viewKargo});
+            // 
+            // viewKargo
+            // 
+            this.viewKargo.GridControl = this.gridKargo;
+            this.viewKargo.Name = "viewKargo";
+            this.viewKargo.OptionsFind.AlwaysVisible = true;
+            this.viewKargo.OptionsView.ShowGroupPanel = false;
             // 
             // frmKargo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.simpleButton1);
+            this.Controls.Add(this.gridKargo);
+            this.Controls.Add(this.panel1);
             this.Name = "frmKargo";
             this.Text = "frmKargo";
+            this.Load += new System.EventHandler(this.frmKargo_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gridKargo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewKargo)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private System.Windows.Forms.Panel panel1;
+        private DevExpress.XtraGrid.GridControl gridKargo;
+        private DevExpress.XtraGrid.Views.Grid.GridView viewKargo;
     }
 }

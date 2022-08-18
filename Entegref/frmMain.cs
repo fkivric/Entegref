@@ -133,7 +133,9 @@ namespace Entegref
                 case "31":
                     OpenForm(new frmFirma());
                     break;
-
+                case "61":
+                    OpenForm(new frmKargo());
+                    break;
                 case "81":
                     OpenForm(new frmReportView());
                     break;
@@ -220,6 +222,20 @@ namespace Entegref
         private void ribbonControl1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void barButtonItem22_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            OpenForm(new frmTrendyol_MusteriSorları());
+        }
+
+        private void barButtonItem16_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+        }
+
+        private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            OpenForm(new frmTrendyol_Ürün_Aktif());
         }
     }
 }

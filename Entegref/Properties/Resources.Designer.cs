@@ -83,6 +83,56 @@ namespace Entegref.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap barcode2_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("barcode2_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap bocustomer_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("bocustomer_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap bocustomer_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("bocustomer_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap boproductgroup_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("boproductgroup_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap boproductgroup_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("boproductgroup_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap bosaleitem_16x16 {
             get {
                 object obj = ResourceManager.GetObject("bosaleitem_16x16", resourceCulture);
@@ -146,6 +196,46 @@ namespace Entegref.Properties {
         internal static System.Drawing.Bitmap hideproduct_32x321 {
             get {
                 object obj = ResourceManager.GetObject("hideproduct_32x321", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap knowledgebasearticle_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("knowledgebasearticle_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap knowledgebasearticle_16x161 {
+            get {
+                object obj = ResourceManager.GetObject("knowledgebasearticle_16x161", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap knowledgebasearticle_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("knowledgebasearticle_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap knowledgebasearticle_32x321 {
+            get {
+                object obj = ResourceManager.GetObject("knowledgebasearticle_32x321", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

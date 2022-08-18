@@ -71,7 +71,7 @@
             this.chkRenk.AutoSize = true;
             this.chkRenk.Location = new System.Drawing.Point(5, 21);
             this.chkRenk.Name = "chkRenk";
-            this.chkRenk.Size = new System.Drawing.Size(107, 17);
+            this.chkRenk.Size = new System.Drawing.Size(113, 17);
             this.chkRenk.TabIndex = 0;
             this.chkRenk.Text = "Üründe Renk Var";
             this.chkRenk.UseVisualStyleBackColor = true;
@@ -82,7 +82,7 @@
             this.chkBeden.AutoSize = true;
             this.chkBeden.Location = new System.Drawing.Point(2, 15);
             this.chkBeden.Name = "chkBeden";
-            this.chkBeden.Size = new System.Drawing.Size(113, 17);
+            this.chkBeden.Size = new System.Drawing.Size(119, 17);
             this.chkBeden.TabIndex = 0;
             this.chkBeden.Text = "Üründe Beden Var";
             this.chkBeden.UseVisualStyleBackColor = true;
@@ -191,7 +191,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(11, 166);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 13);
+            this.label3.Size = new System.Drawing.Size(76, 13);
             this.label3.TabIndex = 1;
             this.label3.Text = "Fiyatlandırma";
             // 
@@ -230,7 +230,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(6, 35);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 13);
+            this.label2.Size = new System.Drawing.Size(59, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Kavala Adı";
             // 
@@ -239,7 +239,7 @@
             this.chkKavala.AutoSize = true;
             this.chkKavala.Location = new System.Drawing.Point(2, 15);
             this.chkKavala.Name = "chkKavala";
-            this.chkKavala.Size = new System.Drawing.Size(115, 17);
+            this.chkKavala.Size = new System.Drawing.Size(119, 17);
             this.chkKavala.TabIndex = 0;
             this.chkKavala.Text = "Üründe Kavala Var";
             this.chkKavala.UseVisualStyleBackColor = true;
@@ -271,7 +271,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
+            this.label1.Size = new System.Drawing.Size(59, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Beden Adı";
             // 
