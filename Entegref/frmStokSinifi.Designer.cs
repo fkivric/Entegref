@@ -49,12 +49,23 @@
             this.grpBeden = new System.Windows.Forms.GroupBox();
             this.cmbBeden = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnBulAc = new DevExpress.XtraEditors.SimpleButton();
+            this.lblKategori = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtSinif = new System.Windows.Forms.TextBox();
+            this.datagridYol = new DevExpress.XtraGrid.GridControl();
+            this.viewdYol = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grpSinif)).BeginInit();
             this.grpSinif.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grpOzellik)).BeginInit();
             this.grpOzellik.SuspendLayout();
             this.grpKavala.SuspendLayout();
             this.grpBeden.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.datagridYol)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewdYol)).BeginInit();
             this.SuspendLayout();
             // 
             // simpleButton1
@@ -97,9 +108,11 @@
             this.grpSinif.Controls.Add(this.cmbsinif2);
             this.grpSinif.Controls.Add(this.cmbsinif1);
             this.grpSinif.Controls.Add(this.simpleButton1);
-            this.grpSinif.Location = new System.Drawing.Point(11, 8);
+            this.grpSinif.Dock = System.Windows.Forms.DockStyle.Left;
+            this.grpSinif.Location = new System.Drawing.Point(0, 189);
+            this.grpSinif.MaximumSize = new System.Drawing.Size(348, 245);
             this.grpSinif.Name = "grpSinif";
-            this.grpSinif.Size = new System.Drawing.Size(348, 245);
+            this.grpSinif.Size = new System.Drawing.Size(348, 239);
             this.grpSinif.TabIndex = 1;
             this.grpSinif.Text = "Ürün Belirle";
             // 
@@ -169,8 +182,10 @@
             this.grpOzellik.Controls.Add(this.grpKavala);
             this.grpOzellik.Controls.Add(this.grpBeden);
             this.grpOzellik.Controls.Add(this.chkRenk);
+            this.grpOzellik.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grpOzellik.Enabled = false;
-            this.grpOzellik.Location = new System.Drawing.Point(367, 8);
+            this.grpOzellik.Location = new System.Drawing.Point(348, 189);
+            this.grpOzellik.MinimumSize = new System.Drawing.Size(348, 245);
             this.grpOzellik.Name = "grpOzellik";
             this.grpOzellik.Size = new System.Drawing.Size(348, 245);
             this.grpOzellik.TabIndex = 4;
@@ -275,18 +290,96 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Beden Adı";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnBulAc);
+            this.panel1.Controls.Add(this.lblKategori);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.txtSinif);
+            this.panel1.Controls.Add(this.datagridYol);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(693, 189);
+            this.panel1.TabIndex = 5;
+            // 
+            // btnBulAc
+            // 
+            this.btnBulAc.Location = new System.Drawing.Point(591, 0);
+            this.btnBulAc.Name = "btnBulAc";
+            this.btnBulAc.Size = new System.Drawing.Size(103, 23);
+            this.btnBulAc.TabIndex = 4;
+            this.btnBulAc.Text = "Kategori Bul";
+            this.btnBulAc.Click += new System.EventHandler(this.btnBulAc_Click);
+            // 
+            // lblKategori
+            // 
+            this.lblKategori.AutoSize = true;
+            this.lblKategori.Location = new System.Drawing.Point(367, 31);
+            this.lblKategori.Name = "lblKategori";
+            this.lblKategori.Size = new System.Drawing.Size(10, 13);
+            this.lblKategori.TabIndex = 2;
+            this.lblKategori.Text = " ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(21, 7);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(99, 13);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Ürün Kategori Ara";
+            this.label4.Visible = false;
+            // 
+            // txtSinif
+            // 
+            this.txtSinif.Location = new System.Drawing.Point(19, 25);
+            this.txtSinif.Name = "txtSinif";
+            this.txtSinif.Size = new System.Drawing.Size(340, 22);
+            this.txtSinif.TabIndex = 0;
+            this.txtSinif.Visible = false;
+            this.txtSinif.TextChanged += new System.EventHandler(this.txtSinif_TextChanged);
+            // 
+            // datagridYol
+            // 
+            this.datagridYol.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.datagridYol.Location = new System.Drawing.Point(0, 48);
+            this.datagridYol.MainView = this.viewdYol;
+            this.datagridYol.Name = "datagridYol";
+            this.datagridYol.Size = new System.Drawing.Size(693, 141);
+            this.datagridYol.TabIndex = 5;
+            this.datagridYol.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.viewdYol});
+            // 
+            // viewdYol
+            // 
+            this.viewdYol.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn1});
+            this.viewdYol.GridControl = this.datagridYol;
+            this.viewdYol.Name = "viewdYol";
+            this.viewdYol.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridColumn1
+            // 
+            this.gridColumn1.Caption = "Yol Haritası";
+            this.gridColumn1.FieldName = "Yol";
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.OptionsColumn.AllowEdit = false;
+            this.gridColumn1.OptionsColumn.FixedWidth = true;
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 0;
+            // 
             // frmStokSinifi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(723, 262);
+            this.ClientSize = new System.Drawing.Size(693, 428);
             this.Controls.Add(this.grpOzellik);
             this.Controls.Add(this.grpSinif);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(731, 285);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(731, 285);
             this.Name = "frmStokSinifi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmStokSinifi";
@@ -300,6 +393,10 @@
             this.grpKavala.PerformLayout();
             this.grpBeden.ResumeLayout(false);
             this.grpBeden.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.datagridYol)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewdYol)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -326,5 +423,13 @@
         private System.Windows.Forms.ComboBox cmbKavala;
         private System.Windows.Forms.ComboBox cmbBeden;
         private System.Windows.Forms.ComboBox cmbFiyatlandırma;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblKategori;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtSinif;
+        private DevExpress.XtraEditors.SimpleButton btnBulAc;
+        private DevExpress.XtraGrid.GridControl datagridYol;
+        private DevExpress.XtraGrid.Views.Grid.GridView viewdYol;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
     }
 }

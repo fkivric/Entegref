@@ -35,5 +35,14 @@
     <Setting Name="SecretPhase" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="CicekSepetiApi_key" Type="System.String" Scope="User">
+      <Value Profile="(Default)">XTsrN5elDpbvRhnjacYmRoFRG5FFBsu4IYPacw8u</Value>
+    </Setting>
+    <Setting Name="ParkKullaniciAdi" Type="System.String" Scope="User">
+      <Value Profile="(Default)">park-entegrasyon</Value>
+    </Setting>
+    <Setting Name="ParkParola" Type="System.String" Scope="User">
+      <Value Profile="(Default)">cmc2017*!Park</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

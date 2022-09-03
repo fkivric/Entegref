@@ -37,7 +37,6 @@ namespace Entegref
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab3 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab6 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab4 = new Infragistics.Win.UltraWinTabControl.UltraTab();
-            Infragistics.Win.UltraWinTabControl.UltraTab ultraTab8 = new Infragistics.Win.UltraWinTabControl.UltraTab();
             Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
             this.ultraTabPageControl1 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -83,15 +82,63 @@ namespace Entegref
             this.cmbBirim2 = new System.Windows.Forms.ComboBox();
             this.cmbBirim1 = new System.Windows.Forms.ComboBox();
             this.bunifuCustomTextbox6 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.bunifuCustomTextbox4 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomTextbox5 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomTextbox3 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.txtMarka = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuCustomTextbox2 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomTextbox1 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.txtsAciklama = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.ultraTabPageControl5 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.miniHTMLTextBox1 = new DG.MiniHTMLTextBox.MiniHTMLTextBox();
-            this.panel9 = new System.Windows.Forms.Panel();
+            this.ultraPanel1 = new Infragistics.Win.Misc.UltraPanel();
+            this.PnlAttr3 = new Infragistics.Win.Misc.UltraPanel();
+            this.cmbOzellik20 = new System.Windows.Forms.ComboBox();
+            this.cmbOzellik34 = new System.Windows.Forms.ComboBox();
+            this.cmbOzellik33 = new System.Windows.Forms.ComboBox();
+            this.lblOzellik33 = new System.Windows.Forms.Label();
+            this.chk34 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.chk32 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.chk35 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.lblOzellik34 = new System.Windows.Forms.Label();
+            this.chk25 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.lblOzellik20 = new System.Windows.Forms.Label();
+            this.chk26 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.chk22 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.chk24 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.lblOzellik26 = new System.Windows.Forms.Label();
+            this.chk23 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.lblOzellik31 = new System.Windows.Forms.Label();
+            this.cmbOzellik21 = new System.Windows.Forms.ComboBox();
+            this.lblOzellik27 = new System.Windows.Forms.Label();
+            this.chk33 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.chk31 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.cmbOzellik25 = new System.Windows.Forms.ComboBox();
+            this.lblOzellik22 = new System.Windows.Forms.Label();
+            this.chk27 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.lblOzellik29 = new System.Windows.Forms.Label();
+            this.cmbOzellik30 = new System.Windows.Forms.ComboBox();
             this.chk21 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.cmbOzellik24 = new System.Windows.Forms.ComboBox();
+            this.lblOzellik24 = new System.Windows.Forms.Label();
+            this.cmbOzellik29 = new System.Windows.Forms.ComboBox();
+            this.cmbOzellik32 = new System.Windows.Forms.ComboBox();
+            this.cmbOzellik28 = new System.Windows.Forms.ComboBox();
+            this.lblOzellik30 = new System.Windows.Forms.Label();
+            this.cmbOzellik22 = new System.Windows.Forms.ComboBox();
+            this.chk30 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.cmbOzellik31 = new System.Windows.Forms.ComboBox();
+            this.lblOzellik23 = new System.Windows.Forms.Label();
+            this.cmbOzellik27 = new System.Windows.Forms.ComboBox();
+            this.lblOzellik25 = new System.Windows.Forms.Label();
+            this.cmbOzellik26 = new System.Windows.Forms.ComboBox();
+            this.chk28 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.lblOzellik28 = new System.Windows.Forms.Label();
+            this.chk29 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.lblOzellik32 = new System.Windows.Forms.Label();
+            this.lblOzellik21 = new System.Windows.Forms.Label();
+            this.cmbOzellik23 = new System.Windows.Forms.ComboBox();
+            this.PnlAttr2 = new Infragistics.Win.Misc.UltraPanel();
             this.chk20 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.lblOzellik13 = new System.Windows.Forms.Label();
             this.chk19 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.chk18 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.chk17 = new Bunifu.Framework.UI.BunifuCheckbox();
@@ -101,59 +148,57 @@ namespace Entegref
             this.chk13 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.chk12 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.chk11 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.chk10 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.chk9 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.chk8 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.chk7 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.chk6 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.chk5 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.chk4 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.bunifuCheckbox4 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.chk3 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.chk2 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.chk1 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.txtRenk = new System.Windows.Forms.TextBox();
+            this.lblOzellik18 = new System.Windows.Forms.Label();
+            this.cmbOzellik13 = new System.Windows.Forms.ComboBox();
+            this.cmbOzellik18 = new System.Windows.Forms.ComboBox();
+            this.lblOzellik11 = new System.Windows.Forms.Label();
+            this.lblOzellik15 = new System.Windows.Forms.Label();
+            this.lblOzellik10 = new System.Windows.Forms.Label();
+            this.lblOzellik14 = new System.Windows.Forms.Label();
+            this.lblOzellik19 = new System.Windows.Forms.Label();
             this.cmbOzellik16 = new System.Windows.Forms.ComboBox();
+            this.cmbOzellik11 = new System.Windows.Forms.ComboBox();
             this.cmbOzellik17 = new System.Windows.Forms.ComboBox();
             this.cmbOzellik12 = new System.Windows.Forms.ComboBox();
-            this.cmbOzellik8 = new System.Windows.Forms.ComboBox();
+            this.cmbOzellik15 = new System.Windows.Forms.ComboBox();
             this.lblOzellik16 = new System.Windows.Forms.Label();
+            this.cmbOzellik10 = new System.Windows.Forms.ComboBox();
             this.lblOzellik17 = new System.Windows.Forms.Label();
-            this.cmbOzellik4 = new System.Windows.Forms.ComboBox();
+            this.cmbOzellik14 = new System.Windows.Forms.ComboBox();
             this.lblOzellik12 = new System.Windows.Forms.Label();
             this.cmbOzellik19 = new System.Windows.Forms.ComboBox();
-            this.lblOzellik8 = new System.Windows.Forms.Label();
-            this.cmbOzellik14 = new System.Windows.Forms.ComboBox();
-            this.lblOzellik4 = new System.Windows.Forms.Label();
-            this.cmbOzellik10 = new System.Windows.Forms.ComboBox();
-            this.cmbOzellik20 = new System.Windows.Forms.ComboBox();
-            this.cmbOzellik6 = new System.Windows.Forms.ComboBox();
-            this.cmbOzellik15 = new System.Windows.Forms.ComboBox();
-            this.cmbOzellik2 = new System.Windows.Forms.ComboBox();
-            this.cmbOzellik11 = new System.Windows.Forms.ComboBox();
-            this.lblOzellik19 = new System.Windows.Forms.Label();
-            this.cmbOzellik7 = new System.Windows.Forms.ComboBox();
-            this.lblOzellik14 = new System.Windows.Forms.Label();
-            this.cmbOzellik3 = new System.Windows.Forms.ComboBox();
-            this.lblOzellik10 = new System.Windows.Forms.Label();
-            this.lblOzellik20 = new System.Windows.Forms.Label();
-            this.lblOzellik6 = new System.Windows.Forms.Label();
-            this.lblOzellik15 = new System.Windows.Forms.Label();
-            this.lblOzellik2 = new System.Windows.Forms.Label();
-            this.lblOzellik11 = new System.Windows.Forms.Label();
-            this.cmbOzellik18 = new System.Windows.Forms.ComboBox();
-            this.lblOzellik7 = new System.Windows.Forms.Label();
-            this.cmbOzellik13 = new System.Windows.Forms.ComboBox();
-            this.lblOzellik18 = new System.Windows.Forms.Label();
-            this.lblOzellik3 = new System.Windows.Forms.Label();
-            this.lblOzellik13 = new System.Windows.Forms.Label();
-            this.cmbOzellik5 = new System.Windows.Forms.ComboBox();
-            this.cmbOzellik9 = new System.Windows.Forms.ComboBox();
-            this.lblOzellik5 = new System.Windows.Forms.Label();
-            this.lblOzellik9 = new System.Windows.Forms.Label();
-            this.cmbOzellik1 = new System.Windows.Forms.ComboBox();
+            this.PnlAttr1 = new System.Windows.Forms.Panel();
             this.lblRenk = new System.Windows.Forms.Label();
+            this.lblOzellik8 = new System.Windows.Forms.Label();
+            this.cmbOzellik4 = new System.Windows.Forms.ComboBox();
             this.lblOzellik1 = new System.Windows.Forms.Label();
+            this.lblOzellik4 = new System.Windows.Forms.Label();
+            this.cmbOzellik6 = new System.Windows.Forms.ComboBox();
+            this.cmbOzellik8 = new System.Windows.Forms.ComboBox();
+            this.cmbOzellik2 = new System.Windows.Forms.ComboBox();
+            this.cmbOzellik1 = new System.Windows.Forms.ComboBox();
+            this.txtRenk = new System.Windows.Forms.TextBox();
+            this.cmbOzellik7 = new System.Windows.Forms.ComboBox();
+            this.lblOzellik9 = new System.Windows.Forms.Label();
+            this.chk1 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.chk2 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.lblOzellik5 = new System.Windows.Forms.Label();
+            this.cmbOzellik3 = new System.Windows.Forms.ComboBox();
+            this.chk3 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.cmbOzellik9 = new System.Windows.Forms.ComboBox();
+            this.bunifuCheckbox4 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.lblOzellik6 = new System.Windows.Forms.Label();
+            this.cmbOzellik5 = new System.Windows.Forms.ComboBox();
+            this.chk4 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.chk5 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.lblOzellik3 = new System.Windows.Forms.Label();
+            this.lblOzellik2 = new System.Windows.Forms.Label();
+            this.chk6 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.chk7 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.chk10 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.chk8 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.lblOzellik7 = new System.Windows.Forms.Label();
+            this.chk9 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.ultraTabPageControl7 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.gridBarkod = new DevExpress.XtraGrid.GridControl();
             this.ViewBarkod = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -182,18 +227,19 @@ namespace Entegref
             this.comboBox19 = new System.Windows.Forms.ComboBox();
             this.comboBox18 = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.comboBox17 = new System.Windows.Forms.ComboBox();
+            this.comboBox13 = new System.Windows.Forms.ComboBox();
+            this.comboBox14 = new System.Windows.Forms.ComboBox();
             this.comboBox16 = new System.Windows.Forms.ComboBox();
             this.comboBox15 = new System.Windows.Forms.ComboBox();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.cmbSinif12 = new System.Windows.Forms.ComboBox();
+            this.cmbSinif7 = new System.Windows.Forms.ComboBox();
+            this.cmbSinif11 = new System.Windows.Forms.ComboBox();
+            this.cmbSinif10 = new System.Windows.Forms.ComboBox();
+            this.cmbSinif9 = new System.Windows.Forms.ComboBox();
+            this.cmbSinif8 = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cmbSinif6 = new System.Windows.Forms.ComboBox();
             this.cmbSinif5 = new System.Windows.Forms.ComboBox();
@@ -243,12 +289,9 @@ namespace Entegref
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.btnResimSec = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btnSil = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
             this.btnKaydet = new DevExpress.XtraEditors.SimpleButton();
-            this.panelControl6 = new DevExpress.XtraEditors.PanelControl();
-            this.btnYeni = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.ultraTabControl1 = new Infragistics.Win.UltraWinTabControl.UltraTabControl();
             this.ultraTabSharedControlsPage1 = new Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage();
@@ -259,9 +302,9 @@ namespace Entegref
             this.ultraButton1 = new Infragistics.Win.Misc.UltraButton();
             this.txtStokKodu = new System.Windows.Forms.TextBox();
             this.btnStokBul = new System.Windows.Forms.Button();
+            this.btnYeni = new DevExpress.XtraEditors.SimpleButton();
             this.label20 = new System.Windows.Forms.Label();
-            this.bunifuCustomTextbox4 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.ultraTabPageControl8 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
+            this.btnGuncelle = new DevExpress.XtraEditors.SimpleButton();
             this.ultraTabPageControl1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -271,7 +314,13 @@ namespace Entegref
             ((System.ComponentModel.ISupportInitialize)(this.viewTrendyol_marka)).BeginInit();
             this.panel8.SuspendLayout();
             this.ultraTabPageControl5.SuspendLayout();
-            this.panel9.SuspendLayout();
+            this.ultraPanel1.ClientArea.SuspendLayout();
+            this.ultraPanel1.SuspendLayout();
+            this.PnlAttr3.ClientArea.SuspendLayout();
+            this.PnlAttr3.SuspendLayout();
+            this.PnlAttr2.ClientArea.SuspendLayout();
+            this.PnlAttr2.SuspendLayout();
+            this.PnlAttr1.SuspendLayout();
             this.ultraTabPageControl7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridBarkod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ViewBarkod)).BeginInit();
@@ -305,12 +354,8 @@ namespace Entegref
             this.pnlUrunResimbtn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
-            this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).BeginInit();
             this.panelControl5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).BeginInit();
-            this.panelControl6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl1)).BeginInit();
@@ -323,7 +368,7 @@ namespace Entegref
             this.ultraTabPageControl1.Controls.Add(this.panel2);
             this.ultraTabPageControl1.Location = new System.Drawing.Point(1, 23);
             this.ultraTabPageControl1.Name = "ultraTabPageControl1";
-            this.ultraTabPageControl1.Size = new System.Drawing.Size(1132, 530);
+            this.ultraTabPageControl1.Size = new System.Drawing.Size(1132, 531);
             // 
             // panel2
             // 
@@ -355,9 +400,9 @@ namespace Entegref
             this.panel2.Controls.Add(this.bunifuCustomTextbox6);
             this.panel2.Controls.Add(this.bunifuCustomTextbox4);
             this.panel2.Controls.Add(this.bunifuCustomTextbox5);
-            this.panel2.Controls.Add(this.bunifuCustomTextbox3);
+            this.panel2.Controls.Add(this.txtMarka);
             this.panel2.Controls.Add(this.bunifuCustomTextbox2);
-            this.panel2.Controls.Add(this.bunifuCustomTextbox1);
+            this.panel2.Controls.Add(this.txtsAciklama);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -751,6 +796,16 @@ namespace Entegref
             this.bunifuCustomTextbox6.Text = "0";
             this.bunifuCustomTextbox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // bunifuCustomTextbox4
+            // 
+            this.bunifuCustomTextbox4.BorderColor = System.Drawing.Color.SeaGreen;
+            this.bunifuCustomTextbox4.Location = new System.Drawing.Point(663, 17);
+            this.bunifuCustomTextbox4.Name = "bunifuCustomTextbox4";
+            this.bunifuCustomTextbox4.Size = new System.Drawing.Size(294, 22);
+            this.bunifuCustomTextbox4.TabIndex = 1;
+            this.bunifuCustomTextbox4.Text = "0";
+            this.bunifuCustomTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // bunifuCustomTextbox5
             // 
             this.bunifuCustomTextbox5.BorderColor = System.Drawing.Color.SeaGreen;
@@ -761,13 +816,13 @@ namespace Entegref
             this.bunifuCustomTextbox5.Text = "0";
             this.bunifuCustomTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // bunifuCustomTextbox3
+            // txtMarka
             // 
-            this.bunifuCustomTextbox3.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox3.Location = new System.Drawing.Point(101, 72);
-            this.bunifuCustomTextbox3.Name = "bunifuCustomTextbox3";
-            this.bunifuCustomTextbox3.Size = new System.Drawing.Size(411, 22);
-            this.bunifuCustomTextbox3.TabIndex = 1;
+            this.txtMarka.BorderColor = System.Drawing.Color.SeaGreen;
+            this.txtMarka.Location = new System.Drawing.Point(101, 72);
+            this.txtMarka.Name = "txtMarka";
+            this.txtMarka.Size = new System.Drawing.Size(411, 22);
+            this.txtMarka.TabIndex = 1;
             // 
             // bunifuCustomTextbox2
             // 
@@ -777,21 +832,21 @@ namespace Entegref
             this.bunifuCustomTextbox2.Size = new System.Drawing.Size(411, 22);
             this.bunifuCustomTextbox2.TabIndex = 1;
             // 
-            // bunifuCustomTextbox1
+            // txtsAciklama
             // 
-            this.bunifuCustomTextbox1.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox1.Location = new System.Drawing.Point(101, 18);
-            this.bunifuCustomTextbox1.Name = "bunifuCustomTextbox1";
-            this.bunifuCustomTextbox1.Size = new System.Drawing.Size(411, 22);
-            this.bunifuCustomTextbox1.TabIndex = 1;
+            this.txtsAciklama.BorderColor = System.Drawing.Color.SeaGreen;
+            this.txtsAciklama.Location = new System.Drawing.Point(101, 18);
+            this.txtsAciklama.Name = "txtsAciklama";
+            this.txtsAciklama.Size = new System.Drawing.Size(411, 22);
+            this.txtsAciklama.TabIndex = 1;
             // 
             // ultraTabPageControl5
             // 
             this.ultraTabPageControl5.Controls.Add(this.miniHTMLTextBox1);
-            this.ultraTabPageControl5.Controls.Add(this.panel9);
+            this.ultraTabPageControl5.Controls.Add(this.ultraPanel1);
             this.ultraTabPageControl5.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl5.Name = "ultraTabPageControl5";
-            this.ultraTabPageControl5.Size = new System.Drawing.Size(1132, 530);
+            this.ultraTabPageControl5.Size = new System.Drawing.Size(1132, 531);
             // 
             // miniHTMLTextBox1
             // 
@@ -801,85 +856,361 @@ namespace Entegref
         "<\\w+\\s+.*?(j|java|vb|ecma)script:.*?>",
         "<\\w+(\\s+|\\s+.*?\\s+)on\\w+\\s*=.+?>",
         "</?input.*?>"};
-            this.miniHTMLTextBox1.Location = new System.Drawing.Point(474, 0);
+            this.miniHTMLTextBox1.Location = new System.Drawing.Point(481, 0);
             this.miniHTMLTextBox1.Name = "miniHTMLTextBox1";
             this.miniHTMLTextBox1.Padding = new System.Windows.Forms.Padding(1);
-            this.miniHTMLTextBox1.Size = new System.Drawing.Size(658, 530);
+            this.miniHTMLTextBox1.Size = new System.Drawing.Size(651, 531);
             this.miniHTMLTextBox1.TabIndex = 0;
             this.miniHTMLTextBox1.Text = null;
             // 
-            // panel9
+            // ultraPanel1
             // 
-            this.panel9.AutoScroll = true;
-            this.panel9.Controls.Add(this.chk21);
-            this.panel9.Controls.Add(this.chk20);
-            this.panel9.Controls.Add(this.chk19);
-            this.panel9.Controls.Add(this.chk18);
-            this.panel9.Controls.Add(this.chk17);
-            this.panel9.Controls.Add(this.chk16);
-            this.panel9.Controls.Add(this.chk15);
-            this.panel9.Controls.Add(this.chk14);
-            this.panel9.Controls.Add(this.chk13);
-            this.panel9.Controls.Add(this.chk12);
-            this.panel9.Controls.Add(this.chk11);
-            this.panel9.Controls.Add(this.chk10);
-            this.panel9.Controls.Add(this.chk9);
-            this.panel9.Controls.Add(this.chk8);
-            this.panel9.Controls.Add(this.chk7);
-            this.panel9.Controls.Add(this.chk6);
-            this.panel9.Controls.Add(this.chk5);
-            this.panel9.Controls.Add(this.chk4);
-            this.panel9.Controls.Add(this.bunifuCheckbox4);
-            this.panel9.Controls.Add(this.chk3);
-            this.panel9.Controls.Add(this.chk2);
-            this.panel9.Controls.Add(this.chk1);
-            this.panel9.Controls.Add(this.txtRenk);
-            this.panel9.Controls.Add(this.cmbOzellik16);
-            this.panel9.Controls.Add(this.cmbOzellik17);
-            this.panel9.Controls.Add(this.cmbOzellik12);
-            this.panel9.Controls.Add(this.cmbOzellik8);
-            this.panel9.Controls.Add(this.lblOzellik16);
-            this.panel9.Controls.Add(this.lblOzellik17);
-            this.panel9.Controls.Add(this.cmbOzellik4);
-            this.panel9.Controls.Add(this.lblOzellik12);
-            this.panel9.Controls.Add(this.cmbOzellik19);
-            this.panel9.Controls.Add(this.lblOzellik8);
-            this.panel9.Controls.Add(this.cmbOzellik14);
-            this.panel9.Controls.Add(this.lblOzellik4);
-            this.panel9.Controls.Add(this.cmbOzellik10);
-            this.panel9.Controls.Add(this.cmbOzellik20);
-            this.panel9.Controls.Add(this.cmbOzellik6);
-            this.panel9.Controls.Add(this.cmbOzellik15);
-            this.panel9.Controls.Add(this.cmbOzellik2);
-            this.panel9.Controls.Add(this.cmbOzellik11);
-            this.panel9.Controls.Add(this.lblOzellik19);
-            this.panel9.Controls.Add(this.cmbOzellik7);
-            this.panel9.Controls.Add(this.lblOzellik14);
-            this.panel9.Controls.Add(this.cmbOzellik3);
-            this.panel9.Controls.Add(this.lblOzellik10);
-            this.panel9.Controls.Add(this.lblOzellik20);
-            this.panel9.Controls.Add(this.lblOzellik6);
-            this.panel9.Controls.Add(this.lblOzellik15);
-            this.panel9.Controls.Add(this.lblOzellik2);
-            this.panel9.Controls.Add(this.lblOzellik11);
-            this.panel9.Controls.Add(this.cmbOzellik18);
-            this.panel9.Controls.Add(this.lblOzellik7);
-            this.panel9.Controls.Add(this.cmbOzellik13);
-            this.panel9.Controls.Add(this.lblOzellik18);
-            this.panel9.Controls.Add(this.lblOzellik3);
-            this.panel9.Controls.Add(this.lblOzellik13);
-            this.panel9.Controls.Add(this.cmbOzellik5);
-            this.panel9.Controls.Add(this.cmbOzellik9);
-            this.panel9.Controls.Add(this.lblOzellik5);
-            this.panel9.Controls.Add(this.lblOzellik9);
-            this.panel9.Controls.Add(this.cmbOzellik1);
-            this.panel9.Controls.Add(this.lblRenk);
-            this.panel9.Controls.Add(this.lblOzellik1);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel9.Location = new System.Drawing.Point(0, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(474, 530);
-            this.panel9.TabIndex = 1;
+            this.ultraPanel1.AutoScroll = true;
+            // 
+            // ultraPanel1.ClientArea
+            // 
+            this.ultraPanel1.ClientArea.Controls.Add(this.PnlAttr3);
+            this.ultraPanel1.ClientArea.Controls.Add(this.PnlAttr2);
+            this.ultraPanel1.ClientArea.Controls.Add(this.PnlAttr1);
+            this.ultraPanel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ultraPanel1.Location = new System.Drawing.Point(0, 0);
+            this.ultraPanel1.Name = "ultraPanel1";
+            this.ultraPanel1.Size = new System.Drawing.Size(481, 531);
+            this.ultraPanel1.TabIndex = 2;
+            // 
+            // PnlAttr3
+            // 
+            this.PnlAttr3.AutoScroll = true;
+            // 
+            // PnlAttr3.ClientArea
+            // 
+            this.PnlAttr3.ClientArea.Controls.Add(this.cmbOzellik20);
+            this.PnlAttr3.ClientArea.Controls.Add(this.cmbOzellik34);
+            this.PnlAttr3.ClientArea.Controls.Add(this.cmbOzellik33);
+            this.PnlAttr3.ClientArea.Controls.Add(this.lblOzellik33);
+            this.PnlAttr3.ClientArea.Controls.Add(this.chk34);
+            this.PnlAttr3.ClientArea.Controls.Add(this.chk32);
+            this.PnlAttr3.ClientArea.Controls.Add(this.chk35);
+            this.PnlAttr3.ClientArea.Controls.Add(this.lblOzellik34);
+            this.PnlAttr3.ClientArea.Controls.Add(this.chk25);
+            this.PnlAttr3.ClientArea.Controls.Add(this.lblOzellik20);
+            this.PnlAttr3.ClientArea.Controls.Add(this.chk26);
+            this.PnlAttr3.ClientArea.Controls.Add(this.chk22);
+            this.PnlAttr3.ClientArea.Controls.Add(this.chk24);
+            this.PnlAttr3.ClientArea.Controls.Add(this.lblOzellik26);
+            this.PnlAttr3.ClientArea.Controls.Add(this.chk23);
+            this.PnlAttr3.ClientArea.Controls.Add(this.lblOzellik31);
+            this.PnlAttr3.ClientArea.Controls.Add(this.cmbOzellik21);
+            this.PnlAttr3.ClientArea.Controls.Add(this.lblOzellik27);
+            this.PnlAttr3.ClientArea.Controls.Add(this.chk33);
+            this.PnlAttr3.ClientArea.Controls.Add(this.chk31);
+            this.PnlAttr3.ClientArea.Controls.Add(this.cmbOzellik25);
+            this.PnlAttr3.ClientArea.Controls.Add(this.lblOzellik22);
+            this.PnlAttr3.ClientArea.Controls.Add(this.chk27);
+            this.PnlAttr3.ClientArea.Controls.Add(this.lblOzellik29);
+            this.PnlAttr3.ClientArea.Controls.Add(this.cmbOzellik30);
+            this.PnlAttr3.ClientArea.Controls.Add(this.chk21);
+            this.PnlAttr3.ClientArea.Controls.Add(this.cmbOzellik24);
+            this.PnlAttr3.ClientArea.Controls.Add(this.lblOzellik24);
+            this.PnlAttr3.ClientArea.Controls.Add(this.cmbOzellik29);
+            this.PnlAttr3.ClientArea.Controls.Add(this.cmbOzellik32);
+            this.PnlAttr3.ClientArea.Controls.Add(this.cmbOzellik28);
+            this.PnlAttr3.ClientArea.Controls.Add(this.lblOzellik30);
+            this.PnlAttr3.ClientArea.Controls.Add(this.cmbOzellik22);
+            this.PnlAttr3.ClientArea.Controls.Add(this.chk30);
+            this.PnlAttr3.ClientArea.Controls.Add(this.cmbOzellik31);
+            this.PnlAttr3.ClientArea.Controls.Add(this.lblOzellik23);
+            this.PnlAttr3.ClientArea.Controls.Add(this.cmbOzellik27);
+            this.PnlAttr3.ClientArea.Controls.Add(this.lblOzellik25);
+            this.PnlAttr3.ClientArea.Controls.Add(this.cmbOzellik26);
+            this.PnlAttr3.ClientArea.Controls.Add(this.chk28);
+            this.PnlAttr3.ClientArea.Controls.Add(this.lblOzellik28);
+            this.PnlAttr3.ClientArea.Controls.Add(this.chk29);
+            this.PnlAttr3.ClientArea.Controls.Add(this.lblOzellik32);
+            this.PnlAttr3.ClientArea.Controls.Add(this.lblOzellik21);
+            this.PnlAttr3.ClientArea.Controls.Add(this.cmbOzellik23);
+            this.PnlAttr3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PnlAttr3.Location = new System.Drawing.Point(0, 610);
+            this.PnlAttr3.Name = "PnlAttr3";
+            this.PnlAttr3.Size = new System.Drawing.Size(481, 319);
+            this.PnlAttr3.TabIndex = 26;
+            // 
+            // cmbOzellik20
+            // 
+            this.cmbOzellik20.FormattingEnabled = true;
+            this.cmbOzellik20.Location = new System.Drawing.Point(201, 3);
+            this.cmbOzellik20.Name = "cmbOzellik20";
+            this.cmbOzellik20.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik20.TabIndex = 2;
+            this.cmbOzellik20.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik20_SelectedIndexChanged);
+            // 
+            // cmbOzellik34
+            // 
+            this.cmbOzellik34.FormattingEnabled = true;
+            this.cmbOzellik34.Location = new System.Drawing.Point(201, 421);
+            this.cmbOzellik34.Name = "cmbOzellik34";
+            this.cmbOzellik34.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik34.TabIndex = 2;
+            this.cmbOzellik34.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik14_SelectedIndexChanged);
+            // 
+            // cmbOzellik33
+            // 
+            this.cmbOzellik33.FormattingEnabled = true;
+            this.cmbOzellik33.Location = new System.Drawing.Point(201, 391);
+            this.cmbOzellik33.Name = "cmbOzellik33";
+            this.cmbOzellik33.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik33.TabIndex = 2;
+            this.cmbOzellik33.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik13_SelectedIndexChanged);
+            // 
+            // lblOzellik33
+            // 
+            this.lblOzellik33.AutoSize = true;
+            this.lblOzellik33.Location = new System.Drawing.Point(3, 391);
+            this.lblOzellik33.Name = "lblOzellik33";
+            this.lblOzellik33.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik33.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik33.TabIndex = 0;
+            this.lblOzellik33.Text = "Ozellik";
+            // 
+            // chk34
+            // 
+            this.chk34.BackColor = System.Drawing.Color.Black;
+            this.chk34.ChechedOffColor = System.Drawing.Color.Black;
+            this.chk34.Checked = false;
+            this.chk34.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chk34.Enabled = false;
+            this.chk34.ForeColor = System.Drawing.Color.White;
+            this.chk34.Location = new System.Drawing.Point(181, 392);
+            this.chk34.Name = "chk34";
+            this.chk34.Size = new System.Drawing.Size(20, 20);
+            this.chk34.TabIndex = 18;
+            // 
+            // chk32
+            // 
+            this.chk32.BackColor = System.Drawing.Color.Black;
+            this.chk32.ChechedOffColor = System.Drawing.Color.Black;
+            this.chk32.Checked = false;
+            this.chk32.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chk32.Enabled = false;
+            this.chk32.ForeColor = System.Drawing.Color.White;
+            this.chk32.Location = new System.Drawing.Point(181, 334);
+            this.chk32.Name = "chk32";
+            this.chk32.Size = new System.Drawing.Size(20, 20);
+            this.chk32.TabIndex = 16;
+            // 
+            // chk35
+            // 
+            this.chk35.BackColor = System.Drawing.Color.Black;
+            this.chk35.ChechedOffColor = System.Drawing.Color.Black;
+            this.chk35.Checked = false;
+            this.chk35.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chk35.Enabled = false;
+            this.chk35.ForeColor = System.Drawing.Color.White;
+            this.chk35.Location = new System.Drawing.Point(181, 422);
+            this.chk35.Name = "chk35";
+            this.chk35.Size = new System.Drawing.Size(20, 20);
+            this.chk35.TabIndex = 19;
+            // 
+            // lblOzellik34
+            // 
+            this.lblOzellik34.AutoSize = true;
+            this.lblOzellik34.Location = new System.Drawing.Point(3, 421);
+            this.lblOzellik34.Name = "lblOzellik34";
+            this.lblOzellik34.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik34.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik34.TabIndex = 0;
+            this.lblOzellik34.Text = "Ozellik";
+            // 
+            // chk25
+            // 
+            this.chk25.BackColor = System.Drawing.Color.Black;
+            this.chk25.ChechedOffColor = System.Drawing.Color.Black;
+            this.chk25.Checked = false;
+            this.chk25.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chk25.Enabled = false;
+            this.chk25.ForeColor = System.Drawing.Color.White;
+            this.chk25.Location = new System.Drawing.Point(181, 125);
+            this.chk25.Name = "chk25";
+            this.chk25.Size = new System.Drawing.Size(20, 20);
+            this.chk25.TabIndex = 19;
+            // 
+            // lblOzellik20
+            // 
+            this.lblOzellik20.AutoSize = true;
+            this.lblOzellik20.Location = new System.Drawing.Point(3, 3);
+            this.lblOzellik20.Name = "lblOzellik20";
+            this.lblOzellik20.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik20.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik20.TabIndex = 0;
+            this.lblOzellik20.Text = "Ozellik";
+            // 
+            // chk26
+            // 
+            this.chk26.BackColor = System.Drawing.Color.Black;
+            this.chk26.ChechedOffColor = System.Drawing.Color.Black;
+            this.chk26.Checked = false;
+            this.chk26.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chk26.Enabled = false;
+            this.chk26.ForeColor = System.Drawing.Color.White;
+            this.chk26.Location = new System.Drawing.Point(181, 155);
+            this.chk26.Name = "chk26";
+            this.chk26.Size = new System.Drawing.Size(20, 20);
+            this.chk26.TabIndex = 20;
+            // 
+            // chk22
+            // 
+            this.chk22.BackColor = System.Drawing.Color.Black;
+            this.chk22.ChechedOffColor = System.Drawing.Color.Black;
+            this.chk22.Checked = false;
+            this.chk22.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chk22.Enabled = false;
+            this.chk22.ForeColor = System.Drawing.Color.White;
+            this.chk22.Location = new System.Drawing.Point(181, 35);
+            this.chk22.Name = "chk22";
+            this.chk22.Size = new System.Drawing.Size(20, 20);
+            this.chk22.TabIndex = 16;
+            // 
+            // chk24
+            // 
+            this.chk24.BackColor = System.Drawing.Color.Black;
+            this.chk24.ChechedOffColor = System.Drawing.Color.Black;
+            this.chk24.Checked = false;
+            this.chk24.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chk24.Enabled = false;
+            this.chk24.ForeColor = System.Drawing.Color.White;
+            this.chk24.Location = new System.Drawing.Point(181, 95);
+            this.chk24.Name = "chk24";
+            this.chk24.Size = new System.Drawing.Size(20, 20);
+            this.chk24.TabIndex = 18;
+            // 
+            // lblOzellik26
+            // 
+            this.lblOzellik26.AutoSize = true;
+            this.lblOzellik26.Location = new System.Drawing.Point(3, 184);
+            this.lblOzellik26.Name = "lblOzellik26";
+            this.lblOzellik26.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik26.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik26.TabIndex = 0;
+            this.lblOzellik26.Text = "Ozellik";
+            // 
+            // chk23
+            // 
+            this.chk23.BackColor = System.Drawing.Color.Black;
+            this.chk23.ChechedOffColor = System.Drawing.Color.Black;
+            this.chk23.Checked = false;
+            this.chk23.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chk23.Enabled = false;
+            this.chk23.ForeColor = System.Drawing.Color.White;
+            this.chk23.Location = new System.Drawing.Point(181, 65);
+            this.chk23.Name = "chk23";
+            this.chk23.Size = new System.Drawing.Size(20, 20);
+            this.chk23.TabIndex = 17;
+            // 
+            // lblOzellik31
+            // 
+            this.lblOzellik31.AutoSize = true;
+            this.lblOzellik31.Location = new System.Drawing.Point(3, 333);
+            this.lblOzellik31.Name = "lblOzellik31";
+            this.lblOzellik31.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik31.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik31.TabIndex = 0;
+            this.lblOzellik31.Text = "Ozellik";
+            // 
+            // cmbOzellik21
+            // 
+            this.cmbOzellik21.FormattingEnabled = true;
+            this.cmbOzellik21.Location = new System.Drawing.Point(201, 34);
+            this.cmbOzellik21.Name = "cmbOzellik21";
+            this.cmbOzellik21.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik21.TabIndex = 2;
+            this.cmbOzellik21.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik11_SelectedIndexChanged);
+            // 
+            // lblOzellik27
+            // 
+            this.lblOzellik27.AutoSize = true;
+            this.lblOzellik27.Location = new System.Drawing.Point(3, 214);
+            this.lblOzellik27.Name = "lblOzellik27";
+            this.lblOzellik27.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik27.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik27.TabIndex = 0;
+            this.lblOzellik27.Text = "Ozellik";
+            // 
+            // chk33
+            // 
+            this.chk33.BackColor = System.Drawing.Color.Black;
+            this.chk33.ChechedOffColor = System.Drawing.Color.Black;
+            this.chk33.Checked = false;
+            this.chk33.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chk33.Enabled = false;
+            this.chk33.ForeColor = System.Drawing.Color.White;
+            this.chk33.Location = new System.Drawing.Point(181, 364);
+            this.chk33.Name = "chk33";
+            this.chk33.Size = new System.Drawing.Size(20, 20);
+            this.chk33.TabIndex = 17;
+            // 
+            // chk31
+            // 
+            this.chk31.BackColor = System.Drawing.Color.Black;
+            this.chk31.ChechedOffColor = System.Drawing.Color.Black;
+            this.chk31.Checked = false;
+            this.chk31.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chk31.Enabled = false;
+            this.chk31.ForeColor = System.Drawing.Color.White;
+            this.chk31.Location = new System.Drawing.Point(181, 305);
+            this.chk31.Name = "chk31";
+            this.chk31.Size = new System.Drawing.Size(20, 20);
+            this.chk31.TabIndex = 25;
+            // 
+            // cmbOzellik25
+            // 
+            this.cmbOzellik25.FormattingEnabled = true;
+            this.cmbOzellik25.Location = new System.Drawing.Point(201, 154);
+            this.cmbOzellik25.Name = "cmbOzellik25";
+            this.cmbOzellik25.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik25.TabIndex = 2;
+            this.cmbOzellik25.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik15_SelectedIndexChanged);
+            // 
+            // lblOzellik22
+            // 
+            this.lblOzellik22.AutoSize = true;
+            this.lblOzellik22.Location = new System.Drawing.Point(3, 64);
+            this.lblOzellik22.Name = "lblOzellik22";
+            this.lblOzellik22.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik22.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik22.TabIndex = 0;
+            this.lblOzellik22.Text = "Ozellik";
+            // 
+            // chk27
+            // 
+            this.chk27.BackColor = System.Drawing.Color.Black;
+            this.chk27.ChechedOffColor = System.Drawing.Color.Black;
+            this.chk27.Checked = false;
+            this.chk27.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chk27.Enabled = false;
+            this.chk27.ForeColor = System.Drawing.Color.White;
+            this.chk27.Location = new System.Drawing.Point(181, 185);
+            this.chk27.Name = "chk27";
+            this.chk27.Size = new System.Drawing.Size(20, 20);
+            this.chk27.TabIndex = 21;
+            // 
+            // lblOzellik29
+            // 
+            this.lblOzellik29.AutoSize = true;
+            this.lblOzellik29.Location = new System.Drawing.Point(3, 274);
+            this.lblOzellik29.Name = "lblOzellik29";
+            this.lblOzellik29.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik29.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik29.TabIndex = 0;
+            this.lblOzellik29.Text = "Ozellik";
+            // 
+            // cmbOzellik30
+            // 
+            this.cmbOzellik30.FormattingEnabled = true;
+            this.cmbOzellik30.Location = new System.Drawing.Point(201, 304);
+            this.cmbOzellik30.Name = "cmbOzellik30";
+            this.cmbOzellik30.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik30.TabIndex = 2;
+            this.cmbOzellik30.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik20_SelectedIndexChanged);
             // 
             // chk21
             // 
@@ -889,10 +1220,242 @@ namespace Entegref
             this.chk21.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.chk21.Enabled = false;
             this.chk21.ForeColor = System.Drawing.Color.White;
-            this.chk21.Location = new System.Drawing.Point(184, 611);
+            this.chk21.Location = new System.Drawing.Point(181, 4);
             this.chk21.Name = "chk21";
             this.chk21.Size = new System.Drawing.Size(20, 20);
             this.chk21.TabIndex = 25;
+            // 
+            // cmbOzellik24
+            // 
+            this.cmbOzellik24.FormattingEnabled = true;
+            this.cmbOzellik24.Location = new System.Drawing.Point(201, 124);
+            this.cmbOzellik24.Name = "cmbOzellik24";
+            this.cmbOzellik24.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik24.TabIndex = 2;
+            this.cmbOzellik24.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik14_SelectedIndexChanged);
+            // 
+            // lblOzellik24
+            // 
+            this.lblOzellik24.AutoSize = true;
+            this.lblOzellik24.Location = new System.Drawing.Point(3, 124);
+            this.lblOzellik24.Name = "lblOzellik24";
+            this.lblOzellik24.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik24.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik24.TabIndex = 0;
+            this.lblOzellik24.Text = "Ozellik";
+            // 
+            // cmbOzellik29
+            // 
+            this.cmbOzellik29.FormattingEnabled = true;
+            this.cmbOzellik29.Location = new System.Drawing.Point(201, 274);
+            this.cmbOzellik29.Name = "cmbOzellik29";
+            this.cmbOzellik29.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik29.TabIndex = 2;
+            this.cmbOzellik29.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik19_SelectedIndexChanged);
+            // 
+            // cmbOzellik32
+            // 
+            this.cmbOzellik32.FormattingEnabled = true;
+            this.cmbOzellik32.Location = new System.Drawing.Point(201, 363);
+            this.cmbOzellik32.Name = "cmbOzellik32";
+            this.cmbOzellik32.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik32.TabIndex = 2;
+            this.cmbOzellik32.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik12_SelectedIndexChanged);
+            // 
+            // cmbOzellik28
+            // 
+            this.cmbOzellik28.FormattingEnabled = true;
+            this.cmbOzellik28.Location = new System.Drawing.Point(201, 244);
+            this.cmbOzellik28.Name = "cmbOzellik28";
+            this.cmbOzellik28.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik28.TabIndex = 2;
+            this.cmbOzellik28.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik18_SelectedIndexChanged);
+            // 
+            // lblOzellik30
+            // 
+            this.lblOzellik30.AutoSize = true;
+            this.lblOzellik30.Location = new System.Drawing.Point(3, 304);
+            this.lblOzellik30.Name = "lblOzellik30";
+            this.lblOzellik30.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik30.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik30.TabIndex = 0;
+            this.lblOzellik30.Text = "Ozellik";
+            // 
+            // cmbOzellik22
+            // 
+            this.cmbOzellik22.FormattingEnabled = true;
+            this.cmbOzellik22.Location = new System.Drawing.Point(201, 64);
+            this.cmbOzellik22.Name = "cmbOzellik22";
+            this.cmbOzellik22.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik22.TabIndex = 2;
+            this.cmbOzellik22.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik12_SelectedIndexChanged);
+            // 
+            // chk30
+            // 
+            this.chk30.BackColor = System.Drawing.Color.Black;
+            this.chk30.ChechedOffColor = System.Drawing.Color.Black;
+            this.chk30.Checked = false;
+            this.chk30.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chk30.Enabled = false;
+            this.chk30.ForeColor = System.Drawing.Color.White;
+            this.chk30.Location = new System.Drawing.Point(181, 275);
+            this.chk30.Name = "chk30";
+            this.chk30.Size = new System.Drawing.Size(20, 20);
+            this.chk30.TabIndex = 24;
+            // 
+            // cmbOzellik31
+            // 
+            this.cmbOzellik31.FormattingEnabled = true;
+            this.cmbOzellik31.Location = new System.Drawing.Point(201, 333);
+            this.cmbOzellik31.Name = "cmbOzellik31";
+            this.cmbOzellik31.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik31.TabIndex = 2;
+            this.cmbOzellik31.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik11_SelectedIndexChanged);
+            // 
+            // lblOzellik23
+            // 
+            this.lblOzellik23.AutoSize = true;
+            this.lblOzellik23.Location = new System.Drawing.Point(3, 94);
+            this.lblOzellik23.Name = "lblOzellik23";
+            this.lblOzellik23.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik23.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik23.TabIndex = 0;
+            this.lblOzellik23.Text = "Ozellik";
+            // 
+            // cmbOzellik27
+            // 
+            this.cmbOzellik27.FormattingEnabled = true;
+            this.cmbOzellik27.Location = new System.Drawing.Point(201, 214);
+            this.cmbOzellik27.Name = "cmbOzellik27";
+            this.cmbOzellik27.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik27.TabIndex = 2;
+            this.cmbOzellik27.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik17_SelectedIndexChanged);
+            // 
+            // lblOzellik25
+            // 
+            this.lblOzellik25.AutoSize = true;
+            this.lblOzellik25.Location = new System.Drawing.Point(3, 154);
+            this.lblOzellik25.Name = "lblOzellik25";
+            this.lblOzellik25.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik25.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik25.TabIndex = 0;
+            this.lblOzellik25.Text = "Ozellik";
+            // 
+            // cmbOzellik26
+            // 
+            this.cmbOzellik26.FormattingEnabled = true;
+            this.cmbOzellik26.Location = new System.Drawing.Point(201, 184);
+            this.cmbOzellik26.Name = "cmbOzellik26";
+            this.cmbOzellik26.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik26.TabIndex = 2;
+            this.cmbOzellik26.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik16_SelectedIndexChanged);
+            // 
+            // chk28
+            // 
+            this.chk28.BackColor = System.Drawing.Color.Black;
+            this.chk28.ChechedOffColor = System.Drawing.Color.Black;
+            this.chk28.Checked = false;
+            this.chk28.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chk28.Enabled = false;
+            this.chk28.ForeColor = System.Drawing.Color.White;
+            this.chk28.Location = new System.Drawing.Point(181, 215);
+            this.chk28.Name = "chk28";
+            this.chk28.Size = new System.Drawing.Size(20, 20);
+            this.chk28.TabIndex = 22;
+            // 
+            // lblOzellik28
+            // 
+            this.lblOzellik28.AutoSize = true;
+            this.lblOzellik28.Location = new System.Drawing.Point(3, 244);
+            this.lblOzellik28.Name = "lblOzellik28";
+            this.lblOzellik28.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik28.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik28.TabIndex = 0;
+            this.lblOzellik28.Text = "Ozellik";
+            // 
+            // chk29
+            // 
+            this.chk29.BackColor = System.Drawing.Color.Black;
+            this.chk29.ChechedOffColor = System.Drawing.Color.Black;
+            this.chk29.Checked = false;
+            this.chk29.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chk29.Enabled = false;
+            this.chk29.ForeColor = System.Drawing.Color.White;
+            this.chk29.Location = new System.Drawing.Point(181, 245);
+            this.chk29.Name = "chk29";
+            this.chk29.Size = new System.Drawing.Size(20, 20);
+            this.chk29.TabIndex = 23;
+            // 
+            // lblOzellik32
+            // 
+            this.lblOzellik32.AutoSize = true;
+            this.lblOzellik32.Location = new System.Drawing.Point(3, 363);
+            this.lblOzellik32.Name = "lblOzellik32";
+            this.lblOzellik32.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik32.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik32.TabIndex = 0;
+            this.lblOzellik32.Text = "Ozellik";
+            // 
+            // lblOzellik21
+            // 
+            this.lblOzellik21.AutoSize = true;
+            this.lblOzellik21.Location = new System.Drawing.Point(3, 34);
+            this.lblOzellik21.Name = "lblOzellik21";
+            this.lblOzellik21.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik21.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik21.TabIndex = 0;
+            this.lblOzellik21.Text = "Ozellik";
+            // 
+            // cmbOzellik23
+            // 
+            this.cmbOzellik23.FormattingEnabled = true;
+            this.cmbOzellik23.Location = new System.Drawing.Point(201, 94);
+            this.cmbOzellik23.Name = "cmbOzellik23";
+            this.cmbOzellik23.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik23.TabIndex = 2;
+            this.cmbOzellik23.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik13_SelectedIndexChanged);
+            // 
+            // PnlAttr2
+            // 
+            this.PnlAttr2.AutoScroll = true;
+            // 
+            // PnlAttr2.ClientArea
+            // 
+            this.PnlAttr2.ClientArea.Controls.Add(this.chk20);
+            this.PnlAttr2.ClientArea.Controls.Add(this.lblOzellik13);
+            this.PnlAttr2.ClientArea.Controls.Add(this.chk19);
+            this.PnlAttr2.ClientArea.Controls.Add(this.chk18);
+            this.PnlAttr2.ClientArea.Controls.Add(this.chk17);
+            this.PnlAttr2.ClientArea.Controls.Add(this.chk16);
+            this.PnlAttr2.ClientArea.Controls.Add(this.chk15);
+            this.PnlAttr2.ClientArea.Controls.Add(this.chk14);
+            this.PnlAttr2.ClientArea.Controls.Add(this.chk13);
+            this.PnlAttr2.ClientArea.Controls.Add(this.chk12);
+            this.PnlAttr2.ClientArea.Controls.Add(this.chk11);
+            this.PnlAttr2.ClientArea.Controls.Add(this.lblOzellik18);
+            this.PnlAttr2.ClientArea.Controls.Add(this.cmbOzellik13);
+            this.PnlAttr2.ClientArea.Controls.Add(this.cmbOzellik18);
+            this.PnlAttr2.ClientArea.Controls.Add(this.lblOzellik11);
+            this.PnlAttr2.ClientArea.Controls.Add(this.lblOzellik15);
+            this.PnlAttr2.ClientArea.Controls.Add(this.lblOzellik10);
+            this.PnlAttr2.ClientArea.Controls.Add(this.lblOzellik14);
+            this.PnlAttr2.ClientArea.Controls.Add(this.lblOzellik19);
+            this.PnlAttr2.ClientArea.Controls.Add(this.cmbOzellik16);
+            this.PnlAttr2.ClientArea.Controls.Add(this.cmbOzellik11);
+            this.PnlAttr2.ClientArea.Controls.Add(this.cmbOzellik17);
+            this.PnlAttr2.ClientArea.Controls.Add(this.cmbOzellik12);
+            this.PnlAttr2.ClientArea.Controls.Add(this.cmbOzellik15);
+            this.PnlAttr2.ClientArea.Controls.Add(this.lblOzellik16);
+            this.PnlAttr2.ClientArea.Controls.Add(this.cmbOzellik10);
+            this.PnlAttr2.ClientArea.Controls.Add(this.lblOzellik17);
+            this.PnlAttr2.ClientArea.Controls.Add(this.cmbOzellik14);
+            this.PnlAttr2.ClientArea.Controls.Add(this.lblOzellik12);
+            this.PnlAttr2.ClientArea.Controls.Add(this.cmbOzellik19);
+            this.PnlAttr2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PnlAttr2.Location = new System.Drawing.Point(0, 309);
+            this.PnlAttr2.Name = "PnlAttr2";
+            this.PnlAttr2.Size = new System.Drawing.Size(481, 301);
+            this.PnlAttr2.TabIndex = 27;
             // 
             // chk20
             // 
@@ -902,10 +1465,20 @@ namespace Entegref
             this.chk20.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.chk20.Enabled = false;
             this.chk20.ForeColor = System.Drawing.Color.White;
-            this.chk20.Location = new System.Drawing.Point(184, 581);
+            this.chk20.Location = new System.Drawing.Point(181, 277);
             this.chk20.Name = "chk20";
             this.chk20.Size = new System.Drawing.Size(20, 20);
             this.chk20.TabIndex = 24;
+            // 
+            // lblOzellik13
+            // 
+            this.lblOzellik13.AutoSize = true;
+            this.lblOzellik13.Location = new System.Drawing.Point(3, 96);
+            this.lblOzellik13.Name = "lblOzellik13";
+            this.lblOzellik13.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik13.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik13.TabIndex = 0;
+            this.lblOzellik13.Text = "Ozellik";
             // 
             // chk19
             // 
@@ -915,7 +1488,7 @@ namespace Entegref
             this.chk19.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.chk19.Enabled = false;
             this.chk19.ForeColor = System.Drawing.Color.White;
-            this.chk19.Location = new System.Drawing.Point(184, 551);
+            this.chk19.Location = new System.Drawing.Point(181, 247);
             this.chk19.Name = "chk19";
             this.chk19.Size = new System.Drawing.Size(20, 20);
             this.chk19.TabIndex = 23;
@@ -928,7 +1501,7 @@ namespace Entegref
             this.chk18.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.chk18.Enabled = false;
             this.chk18.ForeColor = System.Drawing.Color.White;
-            this.chk18.Location = new System.Drawing.Point(184, 521);
+            this.chk18.Location = new System.Drawing.Point(181, 217);
             this.chk18.Name = "chk18";
             this.chk18.Size = new System.Drawing.Size(20, 20);
             this.chk18.TabIndex = 22;
@@ -941,7 +1514,7 @@ namespace Entegref
             this.chk17.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.chk17.Enabled = false;
             this.chk17.ForeColor = System.Drawing.Color.White;
-            this.chk17.Location = new System.Drawing.Point(184, 491);
+            this.chk17.Location = new System.Drawing.Point(181, 187);
             this.chk17.Name = "chk17";
             this.chk17.Size = new System.Drawing.Size(20, 20);
             this.chk17.TabIndex = 21;
@@ -954,7 +1527,7 @@ namespace Entegref
             this.chk16.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.chk16.Enabled = false;
             this.chk16.ForeColor = System.Drawing.Color.White;
-            this.chk16.Location = new System.Drawing.Point(184, 461);
+            this.chk16.Location = new System.Drawing.Point(181, 157);
             this.chk16.Name = "chk16";
             this.chk16.Size = new System.Drawing.Size(20, 20);
             this.chk16.TabIndex = 20;
@@ -967,7 +1540,7 @@ namespace Entegref
             this.chk15.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.chk15.Enabled = false;
             this.chk15.ForeColor = System.Drawing.Color.White;
-            this.chk15.Location = new System.Drawing.Point(184, 431);
+            this.chk15.Location = new System.Drawing.Point(181, 127);
             this.chk15.Name = "chk15";
             this.chk15.Size = new System.Drawing.Size(20, 20);
             this.chk15.TabIndex = 19;
@@ -980,7 +1553,7 @@ namespace Entegref
             this.chk14.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.chk14.Enabled = false;
             this.chk14.ForeColor = System.Drawing.Color.White;
-            this.chk14.Location = new System.Drawing.Point(184, 401);
+            this.chk14.Location = new System.Drawing.Point(181, 97);
             this.chk14.Name = "chk14";
             this.chk14.Size = new System.Drawing.Size(20, 20);
             this.chk14.TabIndex = 18;
@@ -993,7 +1566,7 @@ namespace Entegref
             this.chk13.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.chk13.Enabled = false;
             this.chk13.ForeColor = System.Drawing.Color.White;
-            this.chk13.Location = new System.Drawing.Point(184, 371);
+            this.chk13.Location = new System.Drawing.Point(181, 67);
             this.chk13.Name = "chk13";
             this.chk13.Size = new System.Drawing.Size(20, 20);
             this.chk13.TabIndex = 17;
@@ -1006,7 +1579,7 @@ namespace Entegref
             this.chk12.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.chk12.Enabled = false;
             this.chk12.ForeColor = System.Drawing.Color.White;
-            this.chk12.Location = new System.Drawing.Point(184, 341);
+            this.chk12.Location = new System.Drawing.Point(181, 37);
             this.chk12.Name = "chk12";
             this.chk12.Size = new System.Drawing.Size(20, 20);
             this.chk12.TabIndex = 16;
@@ -1019,225 +1592,176 @@ namespace Entegref
             this.chk11.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.chk11.Enabled = false;
             this.chk11.ForeColor = System.Drawing.Color.White;
-            this.chk11.Location = new System.Drawing.Point(184, 311);
+            this.chk11.Location = new System.Drawing.Point(181, 7);
             this.chk11.Name = "chk11";
             this.chk11.Size = new System.Drawing.Size(20, 20);
             this.chk11.TabIndex = 15;
             // 
-            // chk10
+            // lblOzellik18
             // 
-            this.chk10.BackColor = System.Drawing.Color.Black;
-            this.chk10.ChechedOffColor = System.Drawing.Color.Black;
-            this.chk10.Checked = false;
-            this.chk10.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.chk10.Enabled = false;
-            this.chk10.ForeColor = System.Drawing.Color.White;
-            this.chk10.Location = new System.Drawing.Point(184, 281);
-            this.chk10.Name = "chk10";
-            this.chk10.Size = new System.Drawing.Size(20, 20);
-            this.chk10.TabIndex = 14;
+            this.lblOzellik18.AutoSize = true;
+            this.lblOzellik18.Location = new System.Drawing.Point(3, 246);
+            this.lblOzellik18.Name = "lblOzellik18";
+            this.lblOzellik18.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik18.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik18.TabIndex = 0;
+            this.lblOzellik18.Text = "Ozellik";
             // 
-            // chk9
+            // cmbOzellik13
             // 
-            this.chk9.BackColor = System.Drawing.Color.Black;
-            this.chk9.ChechedOffColor = System.Drawing.Color.Black;
-            this.chk9.Checked = false;
-            this.chk9.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.chk9.Enabled = false;
-            this.chk9.ForeColor = System.Drawing.Color.White;
-            this.chk9.Location = new System.Drawing.Point(184, 251);
-            this.chk9.Name = "chk9";
-            this.chk9.Size = new System.Drawing.Size(20, 20);
-            this.chk9.TabIndex = 13;
+            this.cmbOzellik13.FormattingEnabled = true;
+            this.cmbOzellik13.Location = new System.Drawing.Point(201, 96);
+            this.cmbOzellik13.Name = "cmbOzellik13";
+            this.cmbOzellik13.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik13.TabIndex = 2;
+            this.cmbOzellik13.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik13_SelectedIndexChanged);
             // 
-            // chk8
+            // cmbOzellik18
             // 
-            this.chk8.BackColor = System.Drawing.Color.Black;
-            this.chk8.ChechedOffColor = System.Drawing.Color.Black;
-            this.chk8.Checked = false;
-            this.chk8.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.chk8.Enabled = false;
-            this.chk8.ForeColor = System.Drawing.Color.White;
-            this.chk8.Location = new System.Drawing.Point(184, 221);
-            this.chk8.Name = "chk8";
-            this.chk8.Size = new System.Drawing.Size(20, 20);
-            this.chk8.TabIndex = 12;
+            this.cmbOzellik18.FormattingEnabled = true;
+            this.cmbOzellik18.Location = new System.Drawing.Point(201, 246);
+            this.cmbOzellik18.Name = "cmbOzellik18";
+            this.cmbOzellik18.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik18.TabIndex = 2;
+            this.cmbOzellik18.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik18_SelectedIndexChanged);
             // 
-            // chk7
+            // lblOzellik11
             // 
-            this.chk7.BackColor = System.Drawing.Color.Black;
-            this.chk7.ChechedOffColor = System.Drawing.Color.Black;
-            this.chk7.Checked = false;
-            this.chk7.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.chk7.Enabled = false;
-            this.chk7.ForeColor = System.Drawing.Color.White;
-            this.chk7.Location = new System.Drawing.Point(184, 191);
-            this.chk7.Name = "chk7";
-            this.chk7.Size = new System.Drawing.Size(20, 20);
-            this.chk7.TabIndex = 11;
+            this.lblOzellik11.AutoSize = true;
+            this.lblOzellik11.Location = new System.Drawing.Point(3, 36);
+            this.lblOzellik11.Name = "lblOzellik11";
+            this.lblOzellik11.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik11.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik11.TabIndex = 0;
+            this.lblOzellik11.Text = "Ozellik";
             // 
-            // chk6
+            // lblOzellik15
             // 
-            this.chk6.BackColor = System.Drawing.Color.Black;
-            this.chk6.ChechedOffColor = System.Drawing.Color.Black;
-            this.chk6.Checked = false;
-            this.chk6.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.chk6.Enabled = false;
-            this.chk6.ForeColor = System.Drawing.Color.White;
-            this.chk6.Location = new System.Drawing.Point(184, 161);
-            this.chk6.Name = "chk6";
-            this.chk6.Size = new System.Drawing.Size(20, 20);
-            this.chk6.TabIndex = 10;
+            this.lblOzellik15.AutoSize = true;
+            this.lblOzellik15.Location = new System.Drawing.Point(3, 156);
+            this.lblOzellik15.Name = "lblOzellik15";
+            this.lblOzellik15.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik15.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik15.TabIndex = 0;
+            this.lblOzellik15.Text = "Ozellik";
             // 
-            // chk5
+            // lblOzellik10
             // 
-            this.chk5.BackColor = System.Drawing.Color.Black;
-            this.chk5.ChechedOffColor = System.Drawing.Color.Black;
-            this.chk5.Checked = false;
-            this.chk5.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.chk5.Enabled = false;
-            this.chk5.ForeColor = System.Drawing.Color.White;
-            this.chk5.Location = new System.Drawing.Point(184, 131);
-            this.chk5.Name = "chk5";
-            this.chk5.Size = new System.Drawing.Size(20, 20);
-            this.chk5.TabIndex = 9;
+            this.lblOzellik10.AutoSize = true;
+            this.lblOzellik10.Location = new System.Drawing.Point(3, 6);
+            this.lblOzellik10.Name = "lblOzellik10";
+            this.lblOzellik10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik10.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik10.TabIndex = 0;
+            this.lblOzellik10.Text = "Ozellik";
             // 
-            // chk4
+            // lblOzellik14
             // 
-            this.chk4.BackColor = System.Drawing.Color.Black;
-            this.chk4.ChechedOffColor = System.Drawing.Color.Black;
-            this.chk4.Checked = false;
-            this.chk4.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.chk4.Enabled = false;
-            this.chk4.ForeColor = System.Drawing.Color.White;
-            this.chk4.Location = new System.Drawing.Point(184, 101);
-            this.chk4.Name = "chk4";
-            this.chk4.Size = new System.Drawing.Size(20, 20);
-            this.chk4.TabIndex = 8;
+            this.lblOzellik14.AutoSize = true;
+            this.lblOzellik14.Location = new System.Drawing.Point(3, 126);
+            this.lblOzellik14.Name = "lblOzellik14";
+            this.lblOzellik14.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik14.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik14.TabIndex = 0;
+            this.lblOzellik14.Text = "Ozellik";
             // 
-            // bunifuCheckbox4
+            // lblOzellik19
             // 
-            this.bunifuCheckbox4.BackColor = System.Drawing.Color.Black;
-            this.bunifuCheckbox4.ChechedOffColor = System.Drawing.Color.Black;
-            this.bunifuCheckbox4.Checked = false;
-            this.bunifuCheckbox4.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox4.Enabled = false;
-            this.bunifuCheckbox4.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox4.Location = new System.Drawing.Point(184, 101);
-            this.bunifuCheckbox4.Name = "bunifuCheckbox4";
-            this.bunifuCheckbox4.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox4.TabIndex = 7;
-            // 
-            // chk3
-            // 
-            this.chk3.BackColor = System.Drawing.Color.Black;
-            this.chk3.ChechedOffColor = System.Drawing.Color.Black;
-            this.chk3.Checked = false;
-            this.chk3.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.chk3.Enabled = false;
-            this.chk3.ForeColor = System.Drawing.Color.White;
-            this.chk3.Location = new System.Drawing.Point(184, 71);
-            this.chk3.Name = "chk3";
-            this.chk3.Size = new System.Drawing.Size(20, 20);
-            this.chk3.TabIndex = 6;
-            // 
-            // chk2
-            // 
-            this.chk2.BackColor = System.Drawing.Color.Black;
-            this.chk2.ChechedOffColor = System.Drawing.Color.Black;
-            this.chk2.Checked = false;
-            this.chk2.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.chk2.Enabled = false;
-            this.chk2.ForeColor = System.Drawing.Color.White;
-            this.chk2.Location = new System.Drawing.Point(184, 41);
-            this.chk2.Name = "chk2";
-            this.chk2.Size = new System.Drawing.Size(20, 20);
-            this.chk2.TabIndex = 5;
-            // 
-            // chk1
-            // 
-            this.chk1.BackColor = System.Drawing.Color.Black;
-            this.chk1.ChechedOffColor = System.Drawing.Color.Black;
-            this.chk1.Checked = false;
-            this.chk1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.chk1.Enabled = false;
-            this.chk1.ForeColor = System.Drawing.Color.White;
-            this.chk1.Location = new System.Drawing.Point(184, 11);
-            this.chk1.Name = "chk1";
-            this.chk1.Size = new System.Drawing.Size(20, 20);
-            this.chk1.TabIndex = 4;
-            // 
-            // txtRenk
-            // 
-            this.txtRenk.Location = new System.Drawing.Point(205, 10);
-            this.txtRenk.Name = "txtRenk";
-            this.txtRenk.Size = new System.Drawing.Size(250, 22);
-            this.txtRenk.TabIndex = 3;
+            this.lblOzellik19.AutoSize = true;
+            this.lblOzellik19.Location = new System.Drawing.Point(3, 276);
+            this.lblOzellik19.Name = "lblOzellik19";
+            this.lblOzellik19.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik19.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik19.TabIndex = 0;
+            this.lblOzellik19.Text = "Ozellik";
             // 
             // cmbOzellik16
             // 
             this.cmbOzellik16.FormattingEnabled = true;
-            this.cmbOzellik16.Location = new System.Drawing.Point(204, 490);
+            this.cmbOzellik16.Location = new System.Drawing.Point(201, 186);
             this.cmbOzellik16.Name = "cmbOzellik16";
             this.cmbOzellik16.Size = new System.Drawing.Size(250, 21);
             this.cmbOzellik16.TabIndex = 2;
+            this.cmbOzellik16.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik16_SelectedIndexChanged);
+            // 
+            // cmbOzellik11
+            // 
+            this.cmbOzellik11.FormattingEnabled = true;
+            this.cmbOzellik11.Location = new System.Drawing.Point(201, 36);
+            this.cmbOzellik11.Name = "cmbOzellik11";
+            this.cmbOzellik11.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik11.TabIndex = 2;
+            this.cmbOzellik11.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik11_SelectedIndexChanged);
             // 
             // cmbOzellik17
             // 
             this.cmbOzellik17.FormattingEnabled = true;
-            this.cmbOzellik17.Location = new System.Drawing.Point(204, 520);
+            this.cmbOzellik17.Location = new System.Drawing.Point(201, 216);
             this.cmbOzellik17.Name = "cmbOzellik17";
             this.cmbOzellik17.Size = new System.Drawing.Size(250, 21);
             this.cmbOzellik17.TabIndex = 2;
+            this.cmbOzellik17.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik17_SelectedIndexChanged);
             // 
             // cmbOzellik12
             // 
             this.cmbOzellik12.FormattingEnabled = true;
-            this.cmbOzellik12.Location = new System.Drawing.Point(204, 370);
+            this.cmbOzellik12.Location = new System.Drawing.Point(201, 66);
             this.cmbOzellik12.Name = "cmbOzellik12";
             this.cmbOzellik12.Size = new System.Drawing.Size(250, 21);
             this.cmbOzellik12.TabIndex = 2;
+            this.cmbOzellik12.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik12_SelectedIndexChanged);
             // 
-            // cmbOzellik8
+            // cmbOzellik15
             // 
-            this.cmbOzellik8.FormattingEnabled = true;
-            this.cmbOzellik8.Location = new System.Drawing.Point(204, 250);
-            this.cmbOzellik8.Name = "cmbOzellik8";
-            this.cmbOzellik8.Size = new System.Drawing.Size(250, 21);
-            this.cmbOzellik8.TabIndex = 2;
+            this.cmbOzellik15.FormattingEnabled = true;
+            this.cmbOzellik15.Location = new System.Drawing.Point(201, 156);
+            this.cmbOzellik15.Name = "cmbOzellik15";
+            this.cmbOzellik15.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik15.TabIndex = 2;
+            this.cmbOzellik15.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik15_SelectedIndexChanged);
             // 
             // lblOzellik16
             // 
             this.lblOzellik16.AutoSize = true;
-            this.lblOzellik16.Location = new System.Drawing.Point(5, 490);
+            this.lblOzellik16.Location = new System.Drawing.Point(3, 186);
             this.lblOzellik16.Name = "lblOzellik16";
             this.lblOzellik16.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblOzellik16.Size = new System.Drawing.Size(42, 13);
             this.lblOzellik16.TabIndex = 0;
             this.lblOzellik16.Text = "Ozellik";
             // 
+            // cmbOzellik10
+            // 
+            this.cmbOzellik10.FormattingEnabled = true;
+            this.cmbOzellik10.Location = new System.Drawing.Point(201, 6);
+            this.cmbOzellik10.Name = "cmbOzellik10";
+            this.cmbOzellik10.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik10.TabIndex = 2;
+            this.cmbOzellik10.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik10_SelectedIndexChanged);
+            // 
             // lblOzellik17
             // 
             this.lblOzellik17.AutoSize = true;
-            this.lblOzellik17.Location = new System.Drawing.Point(5, 520);
+            this.lblOzellik17.Location = new System.Drawing.Point(3, 216);
             this.lblOzellik17.Name = "lblOzellik17";
             this.lblOzellik17.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblOzellik17.Size = new System.Drawing.Size(42, 13);
             this.lblOzellik17.TabIndex = 0;
             this.lblOzellik17.Text = "Ozellik";
             // 
-            // cmbOzellik4
+            // cmbOzellik14
             // 
-            this.cmbOzellik4.FormattingEnabled = true;
-            this.cmbOzellik4.Location = new System.Drawing.Point(204, 130);
-            this.cmbOzellik4.Name = "cmbOzellik4";
-            this.cmbOzellik4.Size = new System.Drawing.Size(250, 21);
-            this.cmbOzellik4.TabIndex = 2;
+            this.cmbOzellik14.FormattingEnabled = true;
+            this.cmbOzellik14.Location = new System.Drawing.Point(201, 126);
+            this.cmbOzellik14.Name = "cmbOzellik14";
+            this.cmbOzellik14.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik14.TabIndex = 2;
+            this.cmbOzellik14.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik14_SelectedIndexChanged);
             // 
             // lblOzellik12
             // 
             this.lblOzellik12.AutoSize = true;
-            this.lblOzellik12.Location = new System.Drawing.Point(5, 370);
+            this.lblOzellik12.Location = new System.Drawing.Point(3, 66);
             this.lblOzellik12.Name = "lblOzellik12";
             this.lblOzellik12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblOzellik12.Size = new System.Drawing.Size(42, 13);
@@ -1247,302 +1771,382 @@ namespace Entegref
             // cmbOzellik19
             // 
             this.cmbOzellik19.FormattingEnabled = true;
-            this.cmbOzellik19.Location = new System.Drawing.Point(204, 580);
+            this.cmbOzellik19.Location = new System.Drawing.Point(201, 276);
             this.cmbOzellik19.Name = "cmbOzellik19";
             this.cmbOzellik19.Size = new System.Drawing.Size(250, 21);
             this.cmbOzellik19.TabIndex = 2;
+            this.cmbOzellik19.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik19_SelectedIndexChanged);
             // 
-            // lblOzellik8
+            // PnlAttr1
             // 
-            this.lblOzellik8.AutoSize = true;
-            this.lblOzellik8.Location = new System.Drawing.Point(5, 250);
-            this.lblOzellik8.Name = "lblOzellik8";
-            this.lblOzellik8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblOzellik8.Size = new System.Drawing.Size(42, 13);
-            this.lblOzellik8.TabIndex = 0;
-            this.lblOzellik8.Text = "Ozellik";
-            // 
-            // cmbOzellik14
-            // 
-            this.cmbOzellik14.FormattingEnabled = true;
-            this.cmbOzellik14.Location = new System.Drawing.Point(204, 430);
-            this.cmbOzellik14.Name = "cmbOzellik14";
-            this.cmbOzellik14.Size = new System.Drawing.Size(250, 21);
-            this.cmbOzellik14.TabIndex = 2;
-            // 
-            // lblOzellik4
-            // 
-            this.lblOzellik4.AutoSize = true;
-            this.lblOzellik4.Location = new System.Drawing.Point(5, 130);
-            this.lblOzellik4.Name = "lblOzellik4";
-            this.lblOzellik4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblOzellik4.Size = new System.Drawing.Size(42, 13);
-            this.lblOzellik4.TabIndex = 0;
-            this.lblOzellik4.Text = "Ozellik";
-            // 
-            // cmbOzellik10
-            // 
-            this.cmbOzellik10.FormattingEnabled = true;
-            this.cmbOzellik10.Location = new System.Drawing.Point(204, 310);
-            this.cmbOzellik10.Name = "cmbOzellik10";
-            this.cmbOzellik10.Size = new System.Drawing.Size(250, 21);
-            this.cmbOzellik10.TabIndex = 2;
-            // 
-            // cmbOzellik20
-            // 
-            this.cmbOzellik20.FormattingEnabled = true;
-            this.cmbOzellik20.Location = new System.Drawing.Point(204, 610);
-            this.cmbOzellik20.Name = "cmbOzellik20";
-            this.cmbOzellik20.Size = new System.Drawing.Size(250, 21);
-            this.cmbOzellik20.TabIndex = 2;
-            // 
-            // cmbOzellik6
-            // 
-            this.cmbOzellik6.FormattingEnabled = true;
-            this.cmbOzellik6.Location = new System.Drawing.Point(204, 190);
-            this.cmbOzellik6.Name = "cmbOzellik6";
-            this.cmbOzellik6.Size = new System.Drawing.Size(250, 21);
-            this.cmbOzellik6.TabIndex = 2;
-            // 
-            // cmbOzellik15
-            // 
-            this.cmbOzellik15.FormattingEnabled = true;
-            this.cmbOzellik15.Location = new System.Drawing.Point(204, 460);
-            this.cmbOzellik15.Name = "cmbOzellik15";
-            this.cmbOzellik15.Size = new System.Drawing.Size(250, 21);
-            this.cmbOzellik15.TabIndex = 2;
-            // 
-            // cmbOzellik2
-            // 
-            this.cmbOzellik2.FormattingEnabled = true;
-            this.cmbOzellik2.Location = new System.Drawing.Point(204, 70);
-            this.cmbOzellik2.Name = "cmbOzellik2";
-            this.cmbOzellik2.Size = new System.Drawing.Size(250, 21);
-            this.cmbOzellik2.TabIndex = 2;
-            // 
-            // cmbOzellik11
-            // 
-            this.cmbOzellik11.FormattingEnabled = true;
-            this.cmbOzellik11.Location = new System.Drawing.Point(204, 340);
-            this.cmbOzellik11.Name = "cmbOzellik11";
-            this.cmbOzellik11.Size = new System.Drawing.Size(250, 21);
-            this.cmbOzellik11.TabIndex = 2;
-            // 
-            // lblOzellik19
-            // 
-            this.lblOzellik19.AutoSize = true;
-            this.lblOzellik19.Location = new System.Drawing.Point(6, 580);
-            this.lblOzellik19.Name = "lblOzellik19";
-            this.lblOzellik19.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblOzellik19.Size = new System.Drawing.Size(42, 13);
-            this.lblOzellik19.TabIndex = 0;
-            this.lblOzellik19.Text = "Ozellik";
-            // 
-            // cmbOzellik7
-            // 
-            this.cmbOzellik7.FormattingEnabled = true;
-            this.cmbOzellik7.Location = new System.Drawing.Point(204, 220);
-            this.cmbOzellik7.Name = "cmbOzellik7";
-            this.cmbOzellik7.Size = new System.Drawing.Size(250, 21);
-            this.cmbOzellik7.TabIndex = 2;
-            // 
-            // lblOzellik14
-            // 
-            this.lblOzellik14.AutoSize = true;
-            this.lblOzellik14.Location = new System.Drawing.Point(6, 430);
-            this.lblOzellik14.Name = "lblOzellik14";
-            this.lblOzellik14.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblOzellik14.Size = new System.Drawing.Size(42, 13);
-            this.lblOzellik14.TabIndex = 0;
-            this.lblOzellik14.Text = "Ozellik";
-            // 
-            // cmbOzellik3
-            // 
-            this.cmbOzellik3.FormattingEnabled = true;
-            this.cmbOzellik3.Location = new System.Drawing.Point(204, 100);
-            this.cmbOzellik3.Name = "cmbOzellik3";
-            this.cmbOzellik3.Size = new System.Drawing.Size(250, 21);
-            this.cmbOzellik3.TabIndex = 2;
-            // 
-            // lblOzellik10
-            // 
-            this.lblOzellik10.AutoSize = true;
-            this.lblOzellik10.Location = new System.Drawing.Point(6, 310);
-            this.lblOzellik10.Name = "lblOzellik10";
-            this.lblOzellik10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblOzellik10.Size = new System.Drawing.Size(42, 13);
-            this.lblOzellik10.TabIndex = 0;
-            this.lblOzellik10.Text = "Ozellik";
-            // 
-            // lblOzellik20
-            // 
-            this.lblOzellik20.AutoSize = true;
-            this.lblOzellik20.Location = new System.Drawing.Point(6, 610);
-            this.lblOzellik20.Name = "lblOzellik20";
-            this.lblOzellik20.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblOzellik20.Size = new System.Drawing.Size(42, 13);
-            this.lblOzellik20.TabIndex = 0;
-            this.lblOzellik20.Text = "Ozellik";
-            // 
-            // lblOzellik6
-            // 
-            this.lblOzellik6.AutoSize = true;
-            this.lblOzellik6.Location = new System.Drawing.Point(6, 190);
-            this.lblOzellik6.Name = "lblOzellik6";
-            this.lblOzellik6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblOzellik6.Size = new System.Drawing.Size(42, 13);
-            this.lblOzellik6.TabIndex = 0;
-            this.lblOzellik6.Text = "Ozellik";
-            // 
-            // lblOzellik15
-            // 
-            this.lblOzellik15.AutoSize = true;
-            this.lblOzellik15.Location = new System.Drawing.Point(5, 460);
-            this.lblOzellik15.Name = "lblOzellik15";
-            this.lblOzellik15.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblOzellik15.Size = new System.Drawing.Size(42, 13);
-            this.lblOzellik15.TabIndex = 0;
-            this.lblOzellik15.Text = "Ozellik";
-            // 
-            // lblOzellik2
-            // 
-            this.lblOzellik2.AutoSize = true;
-            this.lblOzellik2.Location = new System.Drawing.Point(6, 70);
-            this.lblOzellik2.Name = "lblOzellik2";
-            this.lblOzellik2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblOzellik2.Size = new System.Drawing.Size(42, 13);
-            this.lblOzellik2.TabIndex = 0;
-            this.lblOzellik2.Text = "Ozellik";
-            // 
-            // lblOzellik11
-            // 
-            this.lblOzellik11.AutoSize = true;
-            this.lblOzellik11.Location = new System.Drawing.Point(5, 340);
-            this.lblOzellik11.Name = "lblOzellik11";
-            this.lblOzellik11.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblOzellik11.Size = new System.Drawing.Size(42, 13);
-            this.lblOzellik11.TabIndex = 0;
-            this.lblOzellik11.Text = "Ozellik";
-            // 
-            // cmbOzellik18
-            // 
-            this.cmbOzellik18.FormattingEnabled = true;
-            this.cmbOzellik18.Location = new System.Drawing.Point(204, 550);
-            this.cmbOzellik18.Name = "cmbOzellik18";
-            this.cmbOzellik18.Size = new System.Drawing.Size(250, 21);
-            this.cmbOzellik18.TabIndex = 2;
-            // 
-            // lblOzellik7
-            // 
-            this.lblOzellik7.AutoSize = true;
-            this.lblOzellik7.Location = new System.Drawing.Point(5, 220);
-            this.lblOzellik7.Name = "lblOzellik7";
-            this.lblOzellik7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblOzellik7.Size = new System.Drawing.Size(42, 13);
-            this.lblOzellik7.TabIndex = 0;
-            this.lblOzellik7.Text = "Ozellik";
-            // 
-            // cmbOzellik13
-            // 
-            this.cmbOzellik13.FormattingEnabled = true;
-            this.cmbOzellik13.Location = new System.Drawing.Point(204, 400);
-            this.cmbOzellik13.Name = "cmbOzellik13";
-            this.cmbOzellik13.Size = new System.Drawing.Size(250, 21);
-            this.cmbOzellik13.TabIndex = 2;
-            // 
-            // lblOzellik18
-            // 
-            this.lblOzellik18.AutoSize = true;
-            this.lblOzellik18.Location = new System.Drawing.Point(6, 550);
-            this.lblOzellik18.Name = "lblOzellik18";
-            this.lblOzellik18.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblOzellik18.Size = new System.Drawing.Size(42, 13);
-            this.lblOzellik18.TabIndex = 0;
-            this.lblOzellik18.Text = "Ozellik";
-            // 
-            // lblOzellik3
-            // 
-            this.lblOzellik3.AutoSize = true;
-            this.lblOzellik3.Location = new System.Drawing.Point(5, 100);
-            this.lblOzellik3.Name = "lblOzellik3";
-            this.lblOzellik3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblOzellik3.Size = new System.Drawing.Size(42, 13);
-            this.lblOzellik3.TabIndex = 0;
-            this.lblOzellik3.Text = "Ozellik";
-            // 
-            // lblOzellik13
-            // 
-            this.lblOzellik13.AutoSize = true;
-            this.lblOzellik13.Location = new System.Drawing.Point(6, 400);
-            this.lblOzellik13.Name = "lblOzellik13";
-            this.lblOzellik13.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblOzellik13.Size = new System.Drawing.Size(42, 13);
-            this.lblOzellik13.TabIndex = 0;
-            this.lblOzellik13.Text = "Ozellik";
-            // 
-            // cmbOzellik5
-            // 
-            this.cmbOzellik5.FormattingEnabled = true;
-            this.cmbOzellik5.Location = new System.Drawing.Point(204, 160);
-            this.cmbOzellik5.Name = "cmbOzellik5";
-            this.cmbOzellik5.Size = new System.Drawing.Size(250, 21);
-            this.cmbOzellik5.TabIndex = 2;
-            // 
-            // cmbOzellik9
-            // 
-            this.cmbOzellik9.FormattingEnabled = true;
-            this.cmbOzellik9.Location = new System.Drawing.Point(204, 280);
-            this.cmbOzellik9.Name = "cmbOzellik9";
-            this.cmbOzellik9.Size = new System.Drawing.Size(250, 21);
-            this.cmbOzellik9.TabIndex = 2;
-            // 
-            // lblOzellik5
-            // 
-            this.lblOzellik5.AutoSize = true;
-            this.lblOzellik5.Location = new System.Drawing.Point(6, 160);
-            this.lblOzellik5.Name = "lblOzellik5";
-            this.lblOzellik5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblOzellik5.Size = new System.Drawing.Size(42, 13);
-            this.lblOzellik5.TabIndex = 0;
-            this.lblOzellik5.Text = "Ozellik";
-            // 
-            // lblOzellik9
-            // 
-            this.lblOzellik9.AutoSize = true;
-            this.lblOzellik9.Location = new System.Drawing.Point(6, 280);
-            this.lblOzellik9.Name = "lblOzellik9";
-            this.lblOzellik9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblOzellik9.Size = new System.Drawing.Size(42, 13);
-            this.lblOzellik9.TabIndex = 0;
-            this.lblOzellik9.Text = "Ozellik";
-            // 
-            // cmbOzellik1
-            // 
-            this.cmbOzellik1.FormattingEnabled = true;
-            this.cmbOzellik1.Location = new System.Drawing.Point(204, 40);
-            this.cmbOzellik1.Name = "cmbOzellik1";
-            this.cmbOzellik1.Size = new System.Drawing.Size(250, 21);
-            this.cmbOzellik1.TabIndex = 2;
+            this.PnlAttr1.AutoScroll = true;
+            this.PnlAttr1.Controls.Add(this.lblRenk);
+            this.PnlAttr1.Controls.Add(this.lblOzellik8);
+            this.PnlAttr1.Controls.Add(this.cmbOzellik4);
+            this.PnlAttr1.Controls.Add(this.lblOzellik1);
+            this.PnlAttr1.Controls.Add(this.lblOzellik4);
+            this.PnlAttr1.Controls.Add(this.cmbOzellik6);
+            this.PnlAttr1.Controls.Add(this.cmbOzellik8);
+            this.PnlAttr1.Controls.Add(this.cmbOzellik2);
+            this.PnlAttr1.Controls.Add(this.cmbOzellik1);
+            this.PnlAttr1.Controls.Add(this.txtRenk);
+            this.PnlAttr1.Controls.Add(this.cmbOzellik7);
+            this.PnlAttr1.Controls.Add(this.lblOzellik9);
+            this.PnlAttr1.Controls.Add(this.chk1);
+            this.PnlAttr1.Controls.Add(this.chk2);
+            this.PnlAttr1.Controls.Add(this.lblOzellik5);
+            this.PnlAttr1.Controls.Add(this.cmbOzellik3);
+            this.PnlAttr1.Controls.Add(this.chk3);
+            this.PnlAttr1.Controls.Add(this.cmbOzellik9);
+            this.PnlAttr1.Controls.Add(this.bunifuCheckbox4);
+            this.PnlAttr1.Controls.Add(this.lblOzellik6);
+            this.PnlAttr1.Controls.Add(this.cmbOzellik5);
+            this.PnlAttr1.Controls.Add(this.chk4);
+            this.PnlAttr1.Controls.Add(this.chk5);
+            this.PnlAttr1.Controls.Add(this.lblOzellik3);
+            this.PnlAttr1.Controls.Add(this.lblOzellik2);
+            this.PnlAttr1.Controls.Add(this.chk6);
+            this.PnlAttr1.Controls.Add(this.chk7);
+            this.PnlAttr1.Controls.Add(this.chk10);
+            this.PnlAttr1.Controls.Add(this.chk8);
+            this.PnlAttr1.Controls.Add(this.lblOzellik7);
+            this.PnlAttr1.Controls.Add(this.chk9);
+            this.PnlAttr1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PnlAttr1.Location = new System.Drawing.Point(0, 0);
+            this.PnlAttr1.Name = "PnlAttr1";
+            this.PnlAttr1.Size = new System.Drawing.Size(481, 309);
+            this.PnlAttr1.TabIndex = 1;
             // 
             // lblRenk
             // 
             this.lblRenk.AutoSize = true;
-            this.lblRenk.Location = new System.Drawing.Point(6, 10);
+            this.lblRenk.Location = new System.Drawing.Point(3, 15);
             this.lblRenk.Name = "lblRenk";
             this.lblRenk.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblRenk.Size = new System.Drawing.Size(33, 13);
             this.lblRenk.TabIndex = 0;
             this.lblRenk.Text = "Renk";
             // 
+            // lblOzellik8
+            // 
+            this.lblOzellik8.AutoSize = true;
+            this.lblOzellik8.Location = new System.Drawing.Point(3, 255);
+            this.lblOzellik8.Name = "lblOzellik8";
+            this.lblOzellik8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik8.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik8.TabIndex = 0;
+            this.lblOzellik8.Text = "Ozellik";
+            // 
+            // cmbOzellik4
+            // 
+            this.cmbOzellik4.FormattingEnabled = true;
+            this.cmbOzellik4.Location = new System.Drawing.Point(201, 135);
+            this.cmbOzellik4.Name = "cmbOzellik4";
+            this.cmbOzellik4.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik4.TabIndex = 2;
+            this.cmbOzellik4.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik4_SelectedIndexChanged);
+            // 
             // lblOzellik1
             // 
             this.lblOzellik1.AutoSize = true;
-            this.lblOzellik1.Location = new System.Drawing.Point(6, 40);
+            this.lblOzellik1.Location = new System.Drawing.Point(3, 45);
             this.lblOzellik1.Name = "lblOzellik1";
             this.lblOzellik1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblOzellik1.Size = new System.Drawing.Size(42, 13);
             this.lblOzellik1.TabIndex = 0;
             this.lblOzellik1.Text = "Ozellik";
+            // 
+            // lblOzellik4
+            // 
+            this.lblOzellik4.AutoSize = true;
+            this.lblOzellik4.Location = new System.Drawing.Point(3, 135);
+            this.lblOzellik4.Name = "lblOzellik4";
+            this.lblOzellik4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik4.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik4.TabIndex = 0;
+            this.lblOzellik4.Text = "Ozellik";
+            // 
+            // cmbOzellik6
+            // 
+            this.cmbOzellik6.FormattingEnabled = true;
+            this.cmbOzellik6.Location = new System.Drawing.Point(201, 195);
+            this.cmbOzellik6.Name = "cmbOzellik6";
+            this.cmbOzellik6.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik6.TabIndex = 2;
+            this.cmbOzellik6.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik6_SelectedIndexChanged);
+            // 
+            // cmbOzellik8
+            // 
+            this.cmbOzellik8.FormattingEnabled = true;
+            this.cmbOzellik8.Location = new System.Drawing.Point(201, 255);
+            this.cmbOzellik8.Name = "cmbOzellik8";
+            this.cmbOzellik8.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik8.TabIndex = 2;
+            this.cmbOzellik8.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik8_SelectedIndexChanged);
+            // 
+            // cmbOzellik2
+            // 
+            this.cmbOzellik2.FormattingEnabled = true;
+            this.cmbOzellik2.Location = new System.Drawing.Point(201, 75);
+            this.cmbOzellik2.Name = "cmbOzellik2";
+            this.cmbOzellik2.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik2.TabIndex = 2;
+            this.cmbOzellik2.SelectedValueChanged += new System.EventHandler(this.cmbOzellik2_SelectedValueChanged);
+            // 
+            // cmbOzellik1
+            // 
+            this.cmbOzellik1.FormattingEnabled = true;
+            this.cmbOzellik1.Location = new System.Drawing.Point(201, 45);
+            this.cmbOzellik1.Name = "cmbOzellik1";
+            this.cmbOzellik1.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik1.TabIndex = 2;
+            this.cmbOzellik1.SelectedValueChanged += new System.EventHandler(this.cmbOzellik1_SelectedValueChanged);
+            // 
+            // txtRenk
+            // 
+            this.txtRenk.Location = new System.Drawing.Point(202, 15);
+            this.txtRenk.Name = "txtRenk";
+            this.txtRenk.Size = new System.Drawing.Size(250, 22);
+            this.txtRenk.TabIndex = 3;
+            // 
+            // cmbOzellik7
+            // 
+            this.cmbOzellik7.FormattingEnabled = true;
+            this.cmbOzellik7.Location = new System.Drawing.Point(201, 225);
+            this.cmbOzellik7.Name = "cmbOzellik7";
+            this.cmbOzellik7.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik7.TabIndex = 2;
+            this.cmbOzellik7.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik7_SelectedIndexChanged);
+            // 
+            // lblOzellik9
+            // 
+            this.lblOzellik9.AutoSize = true;
+            this.lblOzellik9.Location = new System.Drawing.Point(3, 285);
+            this.lblOzellik9.Name = "lblOzellik9";
+            this.lblOzellik9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik9.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik9.TabIndex = 0;
+            this.lblOzellik9.Text = "Ozellik";
+            // 
+            // chk1
+            // 
+            this.chk1.BackColor = System.Drawing.Color.Black;
+            this.chk1.ChechedOffColor = System.Drawing.Color.Black;
+            this.chk1.Checked = false;
+            this.chk1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chk1.Enabled = false;
+            this.chk1.ForeColor = System.Drawing.Color.White;
+            this.chk1.Location = new System.Drawing.Point(181, 16);
+            this.chk1.Name = "chk1";
+            this.chk1.Size = new System.Drawing.Size(20, 20);
+            this.chk1.TabIndex = 4;
+            // 
+            // chk2
+            // 
+            this.chk2.BackColor = System.Drawing.Color.Black;
+            this.chk2.ChechedOffColor = System.Drawing.Color.Black;
+            this.chk2.Checked = false;
+            this.chk2.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chk2.Enabled = false;
+            this.chk2.ForeColor = System.Drawing.Color.White;
+            this.chk2.Location = new System.Drawing.Point(181, 46);
+            this.chk2.Name = "chk2";
+            this.chk2.Size = new System.Drawing.Size(20, 20);
+            this.chk2.TabIndex = 5;
+            // 
+            // lblOzellik5
+            // 
+            this.lblOzellik5.AutoSize = true;
+            this.lblOzellik5.Location = new System.Drawing.Point(3, 165);
+            this.lblOzellik5.Name = "lblOzellik5";
+            this.lblOzellik5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik5.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik5.TabIndex = 0;
+            this.lblOzellik5.Text = "Ozellik";
+            // 
+            // cmbOzellik3
+            // 
+            this.cmbOzellik3.FormattingEnabled = true;
+            this.cmbOzellik3.Location = new System.Drawing.Point(201, 105);
+            this.cmbOzellik3.Name = "cmbOzellik3";
+            this.cmbOzellik3.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik3.TabIndex = 2;
+            this.cmbOzellik3.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik3_SelectedIndexChanged);
+            // 
+            // chk3
+            // 
+            this.chk3.BackColor = System.Drawing.Color.Black;
+            this.chk3.ChechedOffColor = System.Drawing.Color.Black;
+            this.chk3.Checked = false;
+            this.chk3.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chk3.Enabled = false;
+            this.chk3.ForeColor = System.Drawing.Color.White;
+            this.chk3.Location = new System.Drawing.Point(181, 76);
+            this.chk3.Name = "chk3";
+            this.chk3.Size = new System.Drawing.Size(20, 20);
+            this.chk3.TabIndex = 6;
+            // 
+            // cmbOzellik9
+            // 
+            this.cmbOzellik9.FormattingEnabled = true;
+            this.cmbOzellik9.Location = new System.Drawing.Point(201, 285);
+            this.cmbOzellik9.Name = "cmbOzellik9";
+            this.cmbOzellik9.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik9.TabIndex = 2;
+            this.cmbOzellik9.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik9_SelectedIndexChanged);
+            // 
+            // bunifuCheckbox4
+            // 
+            this.bunifuCheckbox4.BackColor = System.Drawing.Color.Black;
+            this.bunifuCheckbox4.ChechedOffColor = System.Drawing.Color.Black;
+            this.bunifuCheckbox4.Checked = false;
+            this.bunifuCheckbox4.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.bunifuCheckbox4.Enabled = false;
+            this.bunifuCheckbox4.ForeColor = System.Drawing.Color.White;
+            this.bunifuCheckbox4.Location = new System.Drawing.Point(181, 106);
+            this.bunifuCheckbox4.Name = "bunifuCheckbox4";
+            this.bunifuCheckbox4.Size = new System.Drawing.Size(20, 20);
+            this.bunifuCheckbox4.TabIndex = 7;
+            // 
+            // lblOzellik6
+            // 
+            this.lblOzellik6.AutoSize = true;
+            this.lblOzellik6.Location = new System.Drawing.Point(3, 195);
+            this.lblOzellik6.Name = "lblOzellik6";
+            this.lblOzellik6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik6.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik6.TabIndex = 0;
+            this.lblOzellik6.Text = "Ozellik";
+            // 
+            // cmbOzellik5
+            // 
+            this.cmbOzellik5.FormattingEnabled = true;
+            this.cmbOzellik5.Location = new System.Drawing.Point(201, 165);
+            this.cmbOzellik5.Name = "cmbOzellik5";
+            this.cmbOzellik5.Size = new System.Drawing.Size(250, 21);
+            this.cmbOzellik5.TabIndex = 2;
+            this.cmbOzellik5.SelectedIndexChanged += new System.EventHandler(this.cmbOzellik5_SelectedIndexChanged);
+            // 
+            // chk4
+            // 
+            this.chk4.BackColor = System.Drawing.Color.Black;
+            this.chk4.ChechedOffColor = System.Drawing.Color.Black;
+            this.chk4.Checked = false;
+            this.chk4.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chk4.Enabled = false;
+            this.chk4.ForeColor = System.Drawing.Color.White;
+            this.chk4.Location = new System.Drawing.Point(181, 106);
+            this.chk4.Name = "chk4";
+            this.chk4.Size = new System.Drawing.Size(20, 20);
+            this.chk4.TabIndex = 8;
+            // 
+            // chk5
+            // 
+            this.chk5.BackColor = System.Drawing.Color.Black;
+            this.chk5.ChechedOffColor = System.Drawing.Color.Black;
+            this.chk5.Checked = false;
+            this.chk5.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chk5.Enabled = false;
+            this.chk5.ForeColor = System.Drawing.Color.White;
+            this.chk5.Location = new System.Drawing.Point(181, 136);
+            this.chk5.Name = "chk5";
+            this.chk5.Size = new System.Drawing.Size(20, 20);
+            this.chk5.TabIndex = 9;
+            // 
+            // lblOzellik3
+            // 
+            this.lblOzellik3.AutoSize = true;
+            this.lblOzellik3.Location = new System.Drawing.Point(3, 105);
+            this.lblOzellik3.Name = "lblOzellik3";
+            this.lblOzellik3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik3.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik3.TabIndex = 0;
+            this.lblOzellik3.Text = "Ozellik";
+            // 
+            // lblOzellik2
+            // 
+            this.lblOzellik2.AutoSize = true;
+            this.lblOzellik2.Location = new System.Drawing.Point(3, 75);
+            this.lblOzellik2.Name = "lblOzellik2";
+            this.lblOzellik2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik2.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik2.TabIndex = 0;
+            this.lblOzellik2.Text = "Ozellik";
+            // 
+            // chk6
+            // 
+            this.chk6.BackColor = System.Drawing.Color.Black;
+            this.chk6.ChechedOffColor = System.Drawing.Color.Black;
+            this.chk6.Checked = false;
+            this.chk6.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chk6.Enabled = false;
+            this.chk6.ForeColor = System.Drawing.Color.White;
+            this.chk6.Location = new System.Drawing.Point(181, 166);
+            this.chk6.Name = "chk6";
+            this.chk6.Size = new System.Drawing.Size(20, 20);
+            this.chk6.TabIndex = 10;
+            // 
+            // chk7
+            // 
+            this.chk7.BackColor = System.Drawing.Color.Black;
+            this.chk7.ChechedOffColor = System.Drawing.Color.Black;
+            this.chk7.Checked = false;
+            this.chk7.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chk7.Enabled = false;
+            this.chk7.ForeColor = System.Drawing.Color.White;
+            this.chk7.Location = new System.Drawing.Point(181, 196);
+            this.chk7.Name = "chk7";
+            this.chk7.Size = new System.Drawing.Size(20, 20);
+            this.chk7.TabIndex = 11;
+            // 
+            // chk10
+            // 
+            this.chk10.BackColor = System.Drawing.Color.Black;
+            this.chk10.ChechedOffColor = System.Drawing.Color.Black;
+            this.chk10.Checked = false;
+            this.chk10.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chk10.Enabled = false;
+            this.chk10.ForeColor = System.Drawing.Color.White;
+            this.chk10.Location = new System.Drawing.Point(181, 286);
+            this.chk10.Name = "chk10";
+            this.chk10.Size = new System.Drawing.Size(20, 20);
+            this.chk10.TabIndex = 14;
+            // 
+            // chk8
+            // 
+            this.chk8.BackColor = System.Drawing.Color.Black;
+            this.chk8.ChechedOffColor = System.Drawing.Color.Black;
+            this.chk8.Checked = false;
+            this.chk8.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chk8.Enabled = false;
+            this.chk8.ForeColor = System.Drawing.Color.White;
+            this.chk8.Location = new System.Drawing.Point(181, 226);
+            this.chk8.Name = "chk8";
+            this.chk8.Size = new System.Drawing.Size(20, 20);
+            this.chk8.TabIndex = 12;
+            // 
+            // lblOzellik7
+            // 
+            this.lblOzellik7.AutoSize = true;
+            this.lblOzellik7.Location = new System.Drawing.Point(3, 225);
+            this.lblOzellik7.Name = "lblOzellik7";
+            this.lblOzellik7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOzellik7.Size = new System.Drawing.Size(42, 13);
+            this.lblOzellik7.TabIndex = 0;
+            this.lblOzellik7.Text = "Ozellik";
+            // 
+            // chk9
+            // 
+            this.chk9.BackColor = System.Drawing.Color.Black;
+            this.chk9.ChechedOffColor = System.Drawing.Color.Black;
+            this.chk9.Checked = false;
+            this.chk9.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chk9.Enabled = false;
+            this.chk9.ForeColor = System.Drawing.Color.White;
+            this.chk9.Location = new System.Drawing.Point(181, 256);
+            this.chk9.Name = "chk9";
+            this.chk9.Size = new System.Drawing.Size(20, 20);
+            this.chk9.TabIndex = 13;
             // 
             // ultraTabPageControl7
             // 
@@ -1550,7 +2154,7 @@ namespace Entegref
             this.ultraTabPageControl7.Controls.Add(this.panel10);
             this.ultraTabPageControl7.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl7.Name = "ultraTabPageControl7";
-            this.ultraTabPageControl7.Size = new System.Drawing.Size(1132, 530);
+            this.ultraTabPageControl7.Size = new System.Drawing.Size(1132, 531);
             // 
             // gridBarkod
             // 
@@ -1558,7 +2162,7 @@ namespace Entegref
             this.gridBarkod.Location = new System.Drawing.Point(0, 85);
             this.gridBarkod.MainView = this.ViewBarkod;
             this.gridBarkod.Name = "gridBarkod";
-            this.gridBarkod.Size = new System.Drawing.Size(1132, 445);
+            this.gridBarkod.Size = new System.Drawing.Size(1132, 446);
             this.gridBarkod.TabIndex = 2;
             this.gridBarkod.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.ViewBarkod});
@@ -1744,7 +2348,7 @@ namespace Entegref
             this.ultraTabPageControl2.Controls.Add(this.panel6);
             this.ultraTabPageControl2.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl2.Name = "ultraTabPageControl2";
-            this.ultraTabPageControl2.Size = new System.Drawing.Size(1132, 530);
+            this.ultraTabPageControl2.Size = new System.Drawing.Size(1132, 531);
             // 
             // panel7
             // 
@@ -1753,7 +2357,7 @@ namespace Entegref
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(0, 279);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1132, 251);
+            this.panel7.Size = new System.Drawing.Size(1132, 252);
             this.panel7.TabIndex = 7;
             // 
             // groupBox4
@@ -1763,9 +2367,9 @@ namespace Entegref
             this.groupBox4.Controls.Add(this.comboBox19);
             this.groupBox4.Controls.Add(this.comboBox18);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox4.Location = new System.Drawing.Point(484, 0);
+            this.groupBox4.Location = new System.Drawing.Point(573, 0);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(648, 251);
+            this.groupBox4.Size = new System.Drawing.Size(559, 252);
             this.groupBox4.TabIndex = 4;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "N11";
@@ -1773,7 +2377,7 @@ namespace Entegref
             // comboBox21
             // 
             this.comboBox21.FormattingEnabled = true;
-            this.comboBox21.Location = new System.Drawing.Point(20, 179);
+            this.comboBox21.Location = new System.Drawing.Point(65, 180);
             this.comboBox21.Name = "comboBox21";
             this.comboBox21.Size = new System.Drawing.Size(445, 21);
             this.comboBox21.TabIndex = 0;
@@ -1781,7 +2385,7 @@ namespace Entegref
             // comboBox20
             // 
             this.comboBox20.FormattingEnabled = true;
-            this.comboBox20.Location = new System.Drawing.Point(20, 126);
+            this.comboBox20.Location = new System.Drawing.Point(65, 127);
             this.comboBox20.Name = "comboBox20";
             this.comboBox20.Size = new System.Drawing.Size(445, 21);
             this.comboBox20.TabIndex = 0;
@@ -1789,7 +2393,7 @@ namespace Entegref
             // comboBox19
             // 
             this.comboBox19.FormattingEnabled = true;
-            this.comboBox19.Location = new System.Drawing.Point(20, 73);
+            this.comboBox19.Location = new System.Drawing.Point(65, 74);
             this.comboBox19.Name = "comboBox19";
             this.comboBox19.Size = new System.Drawing.Size(445, 21);
             this.comboBox19.TabIndex = 0;
@@ -1797,65 +2401,65 @@ namespace Entegref
             // comboBox18
             // 
             this.comboBox18.FormattingEnabled = true;
-            this.comboBox18.Location = new System.Drawing.Point(20, 20);
+            this.comboBox18.Location = new System.Drawing.Point(65, 21);
             this.comboBox18.Name = "comboBox18";
             this.comboBox18.Size = new System.Drawing.Size(445, 21);
             this.comboBox18.TabIndex = 0;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.comboBox12);
-            this.groupBox2.Controls.Add(this.comboBox11);
-            this.groupBox2.Controls.Add(this.comboBox10);
-            this.groupBox2.Controls.Add(this.comboBox9);
-            this.groupBox2.Controls.Add(this.comboBox8);
+            this.groupBox2.Controls.Add(this.comboBox17);
+            this.groupBox2.Controls.Add(this.comboBox13);
+            this.groupBox2.Controls.Add(this.comboBox14);
+            this.groupBox2.Controls.Add(this.comboBox16);
+            this.groupBox2.Controls.Add(this.comboBox15);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(484, 251);
+            this.groupBox2.Size = new System.Drawing.Size(573, 252);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "HepsiBurada";
             // 
-            // comboBox12
+            // comboBox17
             // 
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Location = new System.Drawing.Point(20, 232);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(445, 21);
-            this.comboBox12.TabIndex = 0;
+            this.comboBox17.FormattingEnabled = true;
+            this.comboBox17.Location = new System.Drawing.Point(20, 185);
+            this.comboBox17.Name = "comboBox17";
+            this.comboBox17.Size = new System.Drawing.Size(445, 21);
+            this.comboBox17.TabIndex = 0;
             // 
-            // comboBox11
+            // comboBox13
             // 
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Location = new System.Drawing.Point(20, 179);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(445, 21);
-            this.comboBox11.TabIndex = 0;
+            this.comboBox13.FormattingEnabled = true;
+            this.comboBox13.Location = new System.Drawing.Point(20, 21);
+            this.comboBox13.Name = "comboBox13";
+            this.comboBox13.Size = new System.Drawing.Size(445, 21);
+            this.comboBox13.TabIndex = 0;
             // 
-            // comboBox10
+            // comboBox14
             // 
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(20, 126);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(445, 21);
-            this.comboBox10.TabIndex = 0;
+            this.comboBox14.FormattingEnabled = true;
+            this.comboBox14.Location = new System.Drawing.Point(20, 62);
+            this.comboBox14.Name = "comboBox14";
+            this.comboBox14.Size = new System.Drawing.Size(445, 21);
+            this.comboBox14.TabIndex = 0;
             // 
-            // comboBox9
+            // comboBox16
             // 
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(20, 73);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(445, 21);
-            this.comboBox9.TabIndex = 0;
+            this.comboBox16.FormattingEnabled = true;
+            this.comboBox16.Location = new System.Drawing.Point(20, 144);
+            this.comboBox16.Name = "comboBox16";
+            this.comboBox16.Size = new System.Drawing.Size(445, 21);
+            this.comboBox16.TabIndex = 0;
             // 
-            // comboBox8
+            // comboBox15
             // 
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(20, 20);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(445, 21);
-            this.comboBox8.TabIndex = 0;
+            this.comboBox15.FormattingEnabled = true;
+            this.comboBox15.Location = new System.Drawing.Point(20, 103);
+            this.comboBox15.Name = "comboBox15";
+            this.comboBox15.Size = new System.Drawing.Size(445, 21);
+            this.comboBox15.TabIndex = 0;
             // 
             // panel6
             // 
@@ -1869,58 +2473,72 @@ namespace Entegref
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.comboBox17);
-            this.groupBox3.Controls.Add(this.comboBox16);
-            this.groupBox3.Controls.Add(this.comboBox15);
-            this.groupBox3.Controls.Add(this.comboBox14);
-            this.groupBox3.Controls.Add(this.comboBox13);
+            this.groupBox3.Controls.Add(this.cmbSinif12);
+            this.groupBox3.Controls.Add(this.cmbSinif7);
+            this.groupBox3.Controls.Add(this.cmbSinif11);
+            this.groupBox3.Controls.Add(this.cmbSinif10);
+            this.groupBox3.Controls.Add(this.cmbSinif9);
+            this.groupBox3.Controls.Add(this.cmbSinif8);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox3.Location = new System.Drawing.Point(484, 0);
+            this.groupBox3.Location = new System.Drawing.Point(573, 0);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(648, 279);
+            this.groupBox3.Size = new System.Drawing.Size(559, 279);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "ÇiçekSepeti";
             // 
-            // comboBox17
+            // cmbSinif12
             // 
-            this.comboBox17.FormattingEnabled = true;
-            this.comboBox17.Location = new System.Drawing.Point(20, 195);
-            this.comboBox17.Name = "comboBox17";
-            this.comboBox17.Size = new System.Drawing.Size(445, 21);
-            this.comboBox17.TabIndex = 0;
+            this.cmbSinif12.FormattingEnabled = true;
+            this.cmbSinif12.Location = new System.Drawing.Point(60, 236);
+            this.cmbSinif12.Name = "cmbSinif12";
+            this.cmbSinif12.Size = new System.Drawing.Size(445, 21);
+            this.cmbSinif12.TabIndex = 0;
             // 
-            // comboBox16
+            // cmbSinif7
             // 
-            this.comboBox16.FormattingEnabled = true;
-            this.comboBox16.Location = new System.Drawing.Point(20, 154);
-            this.comboBox16.Name = "comboBox16";
-            this.comboBox16.Size = new System.Drawing.Size(445, 21);
-            this.comboBox16.TabIndex = 0;
+            this.cmbSinif7.FormattingEnabled = true;
+            this.cmbSinif7.Location = new System.Drawing.Point(60, 31);
+            this.cmbSinif7.Name = "cmbSinif7";
+            this.cmbSinif7.Size = new System.Drawing.Size(445, 21);
+            this.cmbSinif7.TabIndex = 1;
+            this.cmbSinif7.SelectedIndexChanged += new System.EventHandler(this.cmbSinif7_SelectedIndexChanged);
             // 
-            // comboBox15
+            // cmbSinif11
             // 
-            this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.Location = new System.Drawing.Point(20, 113);
-            this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(445, 21);
-            this.comboBox15.TabIndex = 0;
+            this.cmbSinif11.FormattingEnabled = true;
+            this.cmbSinif11.Location = new System.Drawing.Point(60, 195);
+            this.cmbSinif11.Name = "cmbSinif11";
+            this.cmbSinif11.Size = new System.Drawing.Size(445, 21);
+            this.cmbSinif11.TabIndex = 0;
+            this.cmbSinif11.SelectedIndexChanged += new System.EventHandler(this.cmbSinif11_SelectedIndexChanged);
             // 
-            // comboBox14
+            // cmbSinif10
             // 
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Location = new System.Drawing.Point(20, 72);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(445, 21);
-            this.comboBox14.TabIndex = 0;
+            this.cmbSinif10.FormattingEnabled = true;
+            this.cmbSinif10.Location = new System.Drawing.Point(60, 154);
+            this.cmbSinif10.Name = "cmbSinif10";
+            this.cmbSinif10.Size = new System.Drawing.Size(445, 21);
+            this.cmbSinif10.TabIndex = 0;
+            this.cmbSinif10.SelectedIndexChanged += new System.EventHandler(this.cmbSinif10_SelectedIndexChanged);
             // 
-            // comboBox13
+            // cmbSinif9
             // 
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Location = new System.Drawing.Point(20, 31);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(445, 21);
-            this.comboBox13.TabIndex = 0;
+            this.cmbSinif9.FormattingEnabled = true;
+            this.cmbSinif9.Location = new System.Drawing.Point(60, 113);
+            this.cmbSinif9.Name = "cmbSinif9";
+            this.cmbSinif9.Size = new System.Drawing.Size(445, 21);
+            this.cmbSinif9.TabIndex = 0;
+            this.cmbSinif9.SelectedIndexChanged += new System.EventHandler(this.cmbSinif9_SelectedIndexChanged);
+            // 
+            // cmbSinif8
+            // 
+            this.cmbSinif8.FormattingEnabled = true;
+            this.cmbSinif8.Location = new System.Drawing.Point(60, 72);
+            this.cmbSinif8.Name = "cmbSinif8";
+            this.cmbSinif8.Size = new System.Drawing.Size(445, 21);
+            this.cmbSinif8.TabIndex = 0;
+            this.cmbSinif8.SelectedIndexChanged += new System.EventHandler(this.cmbSinif8_SelectedIndexChanged);
             // 
             // groupBox1
             // 
@@ -1933,7 +2551,7 @@ namespace Entegref
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(484, 279);
+            this.groupBox1.Size = new System.Drawing.Size(573, 279);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Trendyol";
@@ -2002,7 +2620,7 @@ namespace Entegref
             this.ultraTabPageControl3.Controls.Add(this.panel4);
             this.ultraTabPageControl3.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl3.Name = "ultraTabPageControl3";
-            this.ultraTabPageControl3.Size = new System.Drawing.Size(1132, 530);
+            this.ultraTabPageControl3.Size = new System.Drawing.Size(1132, 531);
             // 
             // gridFiyatlar
             // 
@@ -2010,7 +2628,7 @@ namespace Entegref
             this.gridFiyatlar.Location = new System.Drawing.Point(0, 252);
             this.gridFiyatlar.MainView = this.ViewFiyatlar;
             this.gridFiyatlar.Name = "gridFiyatlar";
-            this.gridFiyatlar.Size = new System.Drawing.Size(1132, 278);
+            this.gridFiyatlar.Size = new System.Drawing.Size(1132, 279);
             this.gridFiyatlar.TabIndex = 0;
             this.gridFiyatlar.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.ViewFiyatlar});
@@ -2271,7 +2889,7 @@ namespace Entegref
             this.ultraTabPageControl6.Controls.Add(this.pnlRenkBedenOlan);
             this.ultraTabPageControl6.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl6.Name = "ultraTabPageControl6";
-            this.ultraTabPageControl6.Size = new System.Drawing.Size(1132, 530);
+            this.ultraTabPageControl6.Size = new System.Drawing.Size(1132, 531);
             // 
             // pnlRenkBedenOlan
             // 
@@ -2281,13 +2899,13 @@ namespace Entegref
             this.pnlRenkBedenOlan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlRenkBedenOlan.Location = new System.Drawing.Point(0, 0);
             this.pnlRenkBedenOlan.Name = "pnlRenkBedenOlan";
-            this.pnlRenkBedenOlan.Size = new System.Drawing.Size(1132, 530);
+            this.pnlRenkBedenOlan.Size = new System.Drawing.Size(1132, 531);
             this.pnlRenkBedenOlan.TabIndex = 1;
             // 
             // pnlRenkBeden
             // 
             this.pnlRenkBeden.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlRenkBeden.Location = new System.Drawing.Point(0, 3);
+            this.pnlRenkBeden.Location = new System.Drawing.Point(0, 4);
             this.pnlRenkBeden.Name = "pnlRenkBeden";
             this.pnlRenkBeden.Size = new System.Drawing.Size(1132, 474);
             this.pnlRenkBeden.TabIndex = 0;
@@ -2300,7 +2918,7 @@ namespace Entegref
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1132, 477);
+            this.dataGridView1.Size = new System.Drawing.Size(1132, 478);
             this.dataGridView1.TabIndex = 1;
             // 
             // panelControl7
@@ -2308,7 +2926,7 @@ namespace Entegref
             this.panelControl7.Controls.Add(this.simpleButton6);
             this.panelControl7.Controls.Add(this.simpleButton5);
             this.panelControl7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl7.Location = new System.Drawing.Point(0, 477);
+            this.panelControl7.Location = new System.Drawing.Point(0, 478);
             this.panelControl7.Name = "panelControl7";
             this.panelControl7.Size = new System.Drawing.Size(1132, 53);
             this.panelControl7.TabIndex = 2;
@@ -2337,7 +2955,7 @@ namespace Entegref
             this.ultraTabPageControl4.Controls.Add(this.pnlUrunResimbtn);
             this.ultraTabPageControl4.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl4.Name = "ultraTabPageControl4";
-            this.ultraTabPageControl4.Size = new System.Drawing.Size(1132, 530);
+            this.ultraTabPageControl4.Size = new System.Drawing.Size(1132, 531);
             // 
             // panel5
             // 
@@ -2346,7 +2964,7 @@ namespace Entegref
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(241, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(891, 495);
+            this.panel5.Size = new System.Drawing.Size(891, 496);
             this.panel5.TabIndex = 3;
             // 
             // pictureBox1
@@ -2354,7 +2972,7 @@ namespace Entegref
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(891, 495);
+            this.pictureBox1.Size = new System.Drawing.Size(891, 496);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -2365,17 +2983,18 @@ namespace Entegref
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(0, 0);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(241, 495);
+            this.listBox1.Size = new System.Drawing.Size(241, 496);
             this.listBox1.TabIndex = 0;
             this.listBox1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBox1_MouseDoubleClick);
             // 
             // pnlUrunResimbtn
             // 
             this.pnlUrunResimbtn.Controls.Add(this.txtFileAdress);
+            this.pnlUrunResimbtn.Controls.Add(this.label20);
             this.pnlUrunResimbtn.Controls.Add(this.simpleButton2);
             this.pnlUrunResimbtn.Controls.Add(this.btnResimSec);
             this.pnlUrunResimbtn.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlUrunResimbtn.Location = new System.Drawing.Point(0, 495);
+            this.pnlUrunResimbtn.Location = new System.Drawing.Point(0, 496);
             this.pnlUrunResimbtn.Name = "pnlUrunResimbtn";
             this.pnlUrunResimbtn.Size = new System.Drawing.Size(1132, 35);
             this.pnlUrunResimbtn.TabIndex = 2;
@@ -2407,77 +3026,48 @@ namespace Entegref
             // 
             // panelControl2
             // 
-            this.panelControl2.Controls.Add(this.panelControl1);
             this.panelControl2.Controls.Add(this.panelControl5);
-            this.panelControl2.Controls.Add(this.panelControl6);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl2.Location = new System.Drawing.Point(0, 599);
+            this.panelControl2.Location = new System.Drawing.Point(0, 600);
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(1138, 39);
             this.panelControl2.TabIndex = 1;
-            // 
-            // panelControl1
-            // 
-            this.panelControl1.Controls.Add(this.btnSil);
-            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelControl1.Location = new System.Drawing.Point(735, 2);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(401, 35);
-            this.panelControl1.TabIndex = 2;
             // 
             // btnSil
             // 
             this.btnSil.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
             this.btnSil.Appearance.Options.UseBackColor = true;
-            this.btnSil.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnSil.Location = new System.Drawing.Point(2, 2);
+            this.btnSil.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnSil.Location = new System.Drawing.Point(849, 2);
             this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(124, 31);
+            this.btnSil.Size = new System.Drawing.Size(283, 31);
             this.btnSil.TabIndex = 0;
             this.btnSil.Text = "Sil";
             this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // panelControl5
             // 
+            this.panelControl5.Controls.Add(this.btnYeni);
             this.panelControl5.Controls.Add(this.btnKaydet);
+            this.panelControl5.Controls.Add(this.btnGuncelle);
+            this.panelControl5.Controls.Add(this.btnSil);
             this.panelControl5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl5.Location = new System.Drawing.Point(462, 2);
+            this.panelControl5.Location = new System.Drawing.Point(2, 2);
             this.panelControl5.Name = "panelControl5";
-            this.panelControl5.Size = new System.Drawing.Size(674, 35);
+            this.panelControl5.Size = new System.Drawing.Size(1134, 35);
             this.panelControl5.TabIndex = 3;
             // 
             // btnKaydet
             // 
             this.btnKaydet.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
             this.btnKaydet.Appearance.Options.UseBackColor = true;
-            this.btnKaydet.Location = new System.Drawing.Point(73, 0);
+            this.btnKaydet.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnKaydet.Location = new System.Drawing.Point(283, 2);
             this.btnKaydet.Name = "btnKaydet";
-            this.btnKaydet.Size = new System.Drawing.Size(124, 35);
+            this.btnKaydet.Size = new System.Drawing.Size(283, 31);
             this.btnKaydet.TabIndex = 0;
             this.btnKaydet.Text = "Kaydet";
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
-            // 
-            // panelControl6
-            // 
-            this.panelControl6.Controls.Add(this.label20);
-            this.panelControl6.Controls.Add(this.btnYeni);
-            this.panelControl6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelControl6.Location = new System.Drawing.Point(2, 2);
-            this.panelControl6.Name = "panelControl6";
-            this.panelControl6.Size = new System.Drawing.Size(460, 35);
-            this.panelControl6.TabIndex = 4;
-            // 
-            // btnYeni
-            // 
-            this.btnYeni.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Primary;
-            this.btnYeni.Appearance.Options.UseBackColor = true;
-            this.btnYeni.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnYeni.Location = new System.Drawing.Point(334, 2);
-            this.btnYeni.Name = "btnYeni";
-            this.btnYeni.Size = new System.Drawing.Size(124, 31);
-            this.btnYeni.TabIndex = 0;
-            this.btnYeni.Text = "Yeni";
-            this.btnYeni.Click += new System.EventHandler(this.btnYeni_Click);
             // 
             // panelControl3
             // 
@@ -2486,7 +3076,7 @@ namespace Entegref
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl3.Location = new System.Drawing.Point(0, 0);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(1138, 599);
+            this.panelControl3.Size = new System.Drawing.Size(1138, 600);
             this.panelControl3.TabIndex = 2;
             // 
             // ultraTabControl1
@@ -2500,12 +3090,11 @@ namespace Entegref
             this.ultraTabControl1.Controls.Add(this.ultraTabPageControl5);
             this.ultraTabControl1.Controls.Add(this.ultraTabPageControl6);
             this.ultraTabControl1.Controls.Add(this.ultraTabPageControl7);
-            this.ultraTabControl1.Controls.Add(this.ultraTabPageControl8);
             this.ultraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ultraTabControl1.Location = new System.Drawing.Point(2, 43);
             this.ultraTabControl1.Name = "ultraTabControl1";
             this.ultraTabControl1.SharedControlsPage = this.ultraTabSharedControlsPage1;
-            this.ultraTabControl1.Size = new System.Drawing.Size(1134, 554);
+            this.ultraTabControl1.Size = new System.Drawing.Size(1134, 555);
             this.ultraTabControl1.Style = Infragistics.Win.UltraWinTabControl.UltraTabControlStyle.Office2007Ribbon;
             this.ultraTabControl1.TabButtonStyle = Infragistics.Win.UIElementButtonStyle.Windows8Button;
             this.ultraTabControl1.TabCloseButtonVisibility = Infragistics.Win.UltraWinTabs.TabCloseButtonVisibility.Never;
@@ -2525,8 +3114,6 @@ namespace Entegref
             ultraTab6.Text = "Renk Beden Kavala";
             ultraTab4.TabPage = this.ultraTabPageControl4;
             ultraTab4.Text = "Resimler";
-            ultraTab8.TabPage = this.ultraTabPageControl8;
-            ultraTab8.Text = "tab1";
             this.ultraTabControl1.Tabs.AddRange(new Infragistics.Win.UltraWinTabControl.UltraTab[] {
             ultraTab1,
             ultraTab5,
@@ -2534,8 +3121,7 @@ namespace Entegref
             ultraTab2,
             ultraTab3,
             ultraTab6,
-            ultraTab4,
-            ultraTab8});
+            ultraTab4});
             this.ultraTabControl1.ViewStyle = Infragistics.Win.UltraWinTabControl.ViewStyle.Office2007;
             this.ultraTabControl1.SelectedTabChanged += new Infragistics.Win.UltraWinTabControl.SelectedTabChangedEventHandler(this.ultraTabControl1_SelectedTabChanged);
             // 
@@ -2543,7 +3129,7 @@ namespace Entegref
             // 
             this.ultraTabSharedControlsPage1.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabSharedControlsPage1.Name = "ultraTabSharedControlsPage1";
-            this.ultraTabSharedControlsPage1.Size = new System.Drawing.Size(1132, 530);
+            this.ultraTabSharedControlsPage1.Size = new System.Drawing.Size(1132, 531);
             // 
             // panel1
             // 
@@ -2622,39 +3208,46 @@ namespace Entegref
             this.btnStokBul.UseVisualStyleBackColor = true;
             this.btnStokBul.Click += new System.EventHandler(this.btnStokBul_Click);
             // 
+            // btnYeni
+            // 
+            this.btnYeni.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Primary;
+            this.btnYeni.Appearance.Options.UseBackColor = true;
+            this.btnYeni.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnYeni.Location = new System.Drawing.Point(0, 2);
+            this.btnYeni.Name = "btnYeni";
+            this.btnYeni.Size = new System.Drawing.Size(283, 31);
+            this.btnYeni.TabIndex = 0;
+            this.btnYeni.Text = "Yeni";
+            this.btnYeni.Click += new System.EventHandler(this.btnYeni_Click);
+            // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(10, 11);
+            this.label20.Location = new System.Drawing.Point(680, 10);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(83, 13);
             this.label20.TabIndex = 0;
             this.label20.Text = "Toplam Resim :";
             // 
-            // bunifuCustomTextbox4
+            // btnGuncelle
             // 
-            this.bunifuCustomTextbox4.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox4.Location = new System.Drawing.Point(663, 17);
-            this.bunifuCustomTextbox4.Name = "bunifuCustomTextbox4";
-            this.bunifuCustomTextbox4.Size = new System.Drawing.Size(294, 22);
-            this.bunifuCustomTextbox4.TabIndex = 1;
-            this.bunifuCustomTextbox4.Text = "0";
-            this.bunifuCustomTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // ultraTabPageControl8
-            // 
-            this.ultraTabPageControl8.Location = new System.Drawing.Point(-10000, -10000);
-            this.ultraTabPageControl8.Name = "ultraTabPageControl8";
-            this.ultraTabPageControl8.Size = new System.Drawing.Size(1132, 530);
+            this.btnGuncelle.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Warning;
+            this.btnGuncelle.Appearance.Options.UseBackColor = true;
+            this.btnGuncelle.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnGuncelle.Location = new System.Drawing.Point(566, 2);
+            this.btnGuncelle.Name = "btnGuncelle";
+            this.btnGuncelle.Size = new System.Drawing.Size(283, 31);
+            this.btnGuncelle.TabIndex = 1;
+            this.btnGuncelle.Text = "Güncelle";
             // 
             // frmStokAc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1138, 638);
+            this.ClientSize = new System.Drawing.Size(1138, 639);
             this.Controls.Add(this.panelControl3);
             this.Controls.Add(this.panelControl2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmStokAc";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -2672,8 +3265,16 @@ namespace Entegref
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.ultraTabPageControl5.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
+            this.ultraPanel1.ClientArea.ResumeLayout(false);
+            this.ultraPanel1.ResumeLayout(false);
+            this.PnlAttr3.ClientArea.ResumeLayout(false);
+            this.PnlAttr3.ClientArea.PerformLayout();
+            this.PnlAttr3.ResumeLayout(false);
+            this.PnlAttr2.ClientArea.ResumeLayout(false);
+            this.PnlAttr2.ClientArea.PerformLayout();
+            this.PnlAttr2.ResumeLayout(false);
+            this.PnlAttr1.ResumeLayout(false);
+            this.PnlAttr1.PerformLayout();
             this.ultraTabPageControl7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridBarkod)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ViewBarkod)).EndInit();
@@ -2710,13 +3311,8 @@ namespace Entegref
             this.pnlUrunResimbtn.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
-            this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).EndInit();
             this.panelControl5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).EndInit();
-            this.panelControl6.ResumeLayout(false);
-            this.panelControl6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl1)).EndInit();
@@ -2747,9 +3343,9 @@ namespace Entegref
         private System.Windows.Forms.ComboBox cmbBirim1;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox6;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox5;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox3;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtMarka;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox2;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox1;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox txtsAciklama;
         private System.Windows.Forms.Label lblKavala;
         private System.Windows.Forms.Label lblBeden;
         private System.Windows.Forms.Label lblFiyattipi;
@@ -2818,11 +3414,11 @@ namespace Entegref
         private System.Windows.Forms.ComboBox comboBox19;
         private System.Windows.Forms.ComboBox comboBox18;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox comboBox12;
-        private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox cmbSinif12;
+        private System.Windows.Forms.ComboBox cmbSinif11;
+        private System.Windows.Forms.ComboBox cmbSinif10;
+        private System.Windows.Forms.ComboBox cmbSinif9;
+        private System.Windows.Forms.ComboBox cmbSinif8;
         private DevExpress.XtraEditors.SimpleButton simpleButton4;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
@@ -2831,12 +3427,9 @@ namespace Entegref
         private DevExpress.XtraEditors.SimpleButton simpleButton5;
         private DevExpress.XtraEditors.SimpleButton simpleButton6;
         private System.Windows.Forms.CheckBox checkBox2;
-        private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.SimpleButton btnSil;
         private DevExpress.XtraEditors.PanelControl panelControl5;
         private DevExpress.XtraEditors.SimpleButton btnKaydet;
-        private DevExpress.XtraEditors.PanelControl panelControl6;
-        private DevExpress.XtraEditors.SimpleButton btnYeni;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
@@ -2855,7 +3448,7 @@ namespace Entegref
         private System.Windows.Forms.TextBox txtislem2;
         private System.Windows.Forms.TextBox txtislem1;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel PnlAttr1;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraGrid.GridControl gridTrendyol_marka;
         private DevExpress.XtraGrid.Views.Grid.GridView viewTrendyol_marka;
@@ -2948,9 +3541,56 @@ namespace Entegref
         private BunifuCheckbox chk3;
         private BunifuCheckbox chk2;
         private BunifuCheckbox chk1;
-        private System.Windows.Forms.Label label20;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox4;
-        private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl8;
+        private System.Windows.Forms.ComboBox cmbSinif7;
+        private BunifuCheckbox chk32;
+        private BunifuCheckbox chk22;
+        private System.Windows.Forms.Label lblOzellik31;
+        private BunifuCheckbox chk31;
+        private System.Windows.Forms.ComboBox cmbOzellik32;
+        private System.Windows.Forms.Label lblOzellik23;
+        private System.Windows.Forms.Label lblOzellik33;
+        private BunifuCheckbox chk30;
+        private System.Windows.Forms.Label lblOzellik28;
+        private System.Windows.Forms.Label lblOzellik32;
+        private BunifuCheckbox chk29;
+        private System.Windows.Forms.ComboBox cmbOzellik34;
+        private System.Windows.Forms.ComboBox cmbOzellik23;
+        private BunifuCheckbox chk28;
+        private System.Windows.Forms.ComboBox cmbOzellik31;
+        private System.Windows.Forms.ComboBox cmbOzellik28;
+        private System.Windows.Forms.ComboBox cmbOzellik33;
+        private BunifuCheckbox chk27;
+        private BunifuCheckbox chk33;
+        private System.Windows.Forms.Label lblOzellik21;
+        private System.Windows.Forms.Label lblOzellik34;
+        private BunifuCheckbox chk26;
+        private BunifuCheckbox chk34;
+        private System.Windows.Forms.Label lblOzellik25;
+        private BunifuCheckbox chk35;
+        private BunifuCheckbox chk25;
+        private System.Windows.Forms.Label lblOzellik30;
+        private BunifuCheckbox chk24;
+        private System.Windows.Forms.Label lblOzellik24;
+        private BunifuCheckbox chk23;
+        private System.Windows.Forms.Label lblOzellik29;
+        private System.Windows.Forms.ComboBox cmbOzellik21;
+        private System.Windows.Forms.ComboBox cmbOzellik25;
+        private System.Windows.Forms.ComboBox cmbOzellik30;
+        private System.Windows.Forms.ComboBox cmbOzellik24;
+        private System.Windows.Forms.ComboBox cmbOzellik29;
+        private System.Windows.Forms.Label lblOzellik22;
+        private System.Windows.Forms.Label lblOzellik27;
+        private System.Windows.Forms.Label lblOzellik26;
+        private System.Windows.Forms.ComboBox cmbOzellik22;
+        private System.Windows.Forms.ComboBox cmbOzellik27;
+        private System.Windows.Forms.ComboBox cmbOzellik26;
+        private Infragistics.Win.Misc.UltraPanel ultraPanel1;
+        private Infragistics.Win.Misc.UltraPanel PnlAttr2;
+        private Infragistics.Win.Misc.UltraPanel PnlAttr3;
+        private System.Windows.Forms.Label label20;
+        private DevExpress.XtraEditors.SimpleButton btnYeni;
+        private DevExpress.XtraEditors.SimpleButton btnGuncelle;
         //private GridControl gridStokFiyat;
         //private GridView ViewStokFiyat;
         //private GridColumn gridColumn1;

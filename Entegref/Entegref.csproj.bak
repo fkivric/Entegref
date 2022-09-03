@@ -32,9 +32,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bunifu_UI_v1.52">
-      <HintPath>..\..\Netbil_Connector\Netbil_Connector\Bunifu_UI_v1.52.dll</HintPath>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.BonusSkins.v20.1" />
     <Reference Include="DevExpress.CodeParser.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -49,14 +54,16 @@
     <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.RichEdit.v20.1.Export, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v20.1" />
     <Reference Include="DevExpress.Sparkline.v20.1.Core" />
     <Reference Include="DevExpress.Utils.v20.1.UI, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Xpo.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v20.1" />
     <Reference Include="DevExpress.Printing.v20.1.Core" />
@@ -72,8 +79,20 @@
     <Reference Include="DevExpress.XtraTreeList.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraWizard.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="Infragistics4.Documents.IO.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Olap.Core.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Olap.DataProvider.Adomd.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Olap.DataSource.Flat.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Olap.DataSource.Mdx.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Olap.DataSource.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Olap.DataSource.Xmla.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Infragistics4.Shared.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.AppStylistSupport.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.DataVisualization.Shared.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.DataVisualization.UltraDataChart.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
     <Reference Include="Infragistics4.Win.Misc.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.Portable.Core.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.SupportDialogs.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinCalcManager.v19.2.FormulaBuilder, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Infragistics4.Win.UltraWinDock.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
     <Reference Include="Infragistics4.Win.UltraWinEditors.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Infragistics4.Win.UltraWinExplorerBar.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
@@ -83,23 +102,32 @@
     <Reference Include="Infragistics4.Win.UltraWinListView.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Infragistics4.Win.UltraWinMaskedEdit.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
     <Reference Include="Infragistics4.Win.UltraWinOfficeNavBar.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinPivotGrid.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
     <Reference Include="Infragistics4.Win.UltraWinRadialMenu.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
     <Reference Include="Infragistics4.Win.UltraWinSpellChecker.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
     <Reference Include="Infragistics4.Win.UltraWinStatusBar.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Infragistics4.Win.UltraWinTabbedMdi.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
     <Reference Include="Infragistics4.Win.UltraWinTabControl.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Infragistics4.Win.UltraWinToolbars.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTree.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Infragistics4.Win.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -112,8 +140,24 @@
     <Reference Include="UIAutomationProvider" />
     <Reference Include="UIAutomationTypes" />
     <Reference Include="WindowsBase" />
+    <Reference Include="WinFormHtmlEditor, Version=7.4.32.0, Culture=neutral, PublicKeyToken=8cd3285c24067f7f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\WinFormHtmlEditor.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnaSayfa.Designer.cs">
+      <DependentUpon>frmAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAyarlarGenel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAyarlarGenel.Designer.cs">
+      <DependentUpon>frmAyarlarGenel.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAyarlarUrunGenel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +182,18 @@
     <Compile Include="frmAyarlarMain.Designer.cs">
       <DependentUpon>frmAyarlarMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCristalReportView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCristalReportView.Designer.cs">
+      <DependentUpon>frmCristalReportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoviz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoviz.Designer.cs">
+      <DependentUpon>frmDoviz.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmFirma.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,11 +206,35 @@
     <Compile Include="frmFiyat.Designer.cs">
       <DependentUpon>frmFiyat.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmFiyatArttırAzalt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiyatArttırAzalt.Designer.cs">
+      <DependentUpon>frmFiyatArttırAzalt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFiyatOtomatik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiyatOtomatik.Designer.cs">
+      <DependentUpon>frmFiyatOtomatik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFiyatTek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiyatTek.Designer.cs">
+      <DependentUpon>frmFiyatTek.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmFiyatTipi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmFiyatTipi.Designer.cs">
       <DependentUpon>frmFiyatTipi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFiyatToplu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiyatToplu.Designer.cs">
+      <DependentUpon>frmFiyatToplu.cs</DependentUpon>
     </Compile>
     <Compile Include="frmKargo.cs">
       <SubType>Form</SubType>
@@ -174,6 +254,12 @@
     <Compile Include="frmAyarlaPerakende.Designer.cs">
       <DependentUpon>frmAyarlaPerakende.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmProgresBr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProgresBr.Designer.cs">
+      <DependentUpon>frmProgresBr.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRenk.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +271,12 @@
     </Compile>
     <Compile Include="frmReportView.Designer.cs">
       <DependentUpon>frmReportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmResim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResim.Designer.cs">
+      <DependentUpon>frmResim.cs</DependentUpon>
     </Compile>
     <Compile Include="frmStokBul.cs">
       <SubType>Form</SubType>
@@ -216,6 +308,12 @@
     <Compile Include="frmStokAc.Designer.cs">
       <DependentUpon>frmStokAc.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmStokMuhasebeHesaplari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStokMuhasebeHesaplari.Designer.cs">
+      <DependentUpon>frmStokMuhasebeHesaplari.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmStokSinifi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -228,6 +326,54 @@
     <Compile Include="frmAyarlarUrun.Designer.cs">
       <DependentUpon>frmAyarlarUrun.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmStokToplu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStokToplu.Designer.cs">
+      <DependentUpon>frmStokToplu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTopluFiyat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTopluFiyat.Designer.cs">
+      <DependentUpon>frmTopluFiyat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrendyol_Attributes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrendyol_Attributes.Designer.cs">
+      <DependentUpon>frmTrendyol_Attributes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrendyol_catogory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrendyol_catogory.Designer.cs">
+      <DependentUpon>frmTrendyol_catogory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrendyol_FirmaAdresBilgisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrendyol_FirmaAdresBilgisi.Designer.cs">
+      <DependentUpon>frmTrendyol_FirmaAdresBilgisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrendyol_MusteriSorları.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrendyol_MusteriSorları.Designer.cs">
+      <DependentUpon>frmTrendyol_MusteriSorları.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrendyol_Siparis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrendyol_Siparis.Designer.cs">
+      <DependentUpon>frmTrendyol_Siparis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrendyol_Ürün_Aktif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrendyol_Ürün_Aktif.Designer.cs">
+      <DependentUpon>frmTrendyol_Ürün_Aktif.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmYapılandırma.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,6 +383,12 @@
     <Compile Include="ID\SystemGuid.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="renkbeden.cs" />
     <Compile Include="Report.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -244,12 +396,19 @@
       <DependentUpon>Report.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlConnectionObject.cs" />
+    <Compile Include="trendyol_siparis.cs" />
     <Compile Include="XtraReport1.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="XtraReport1.Designer.cs">
       <DependentUpon>XtraReport1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmAnaSayfa.resx">
+      <DependentUpon>frmAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAyarlarGenel.resx">
+      <DependentUpon>frmAyarlarGenel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAyarlarUrunGenel.resx">
       <DependentUpon>frmAyarlarUrunGenel.cs</DependentUpon>
     </EmbeddedResource>
@@ -262,14 +421,26 @@
     <EmbeddedResource Include="frmAyarlarMain.resx">
       <DependentUpon>frmAyarlarMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCristalReportView.resx">
+      <DependentUpon>frmCristalReportView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoviz.resx">
+      <DependentUpon>frmDoviz.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmFirma.resx">
       <DependentUpon>frmFirma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFiyat.resx">
       <DependentUpon>frmFiyat.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmFiyatTek.resx">
+      <DependentUpon>frmFiyatTek.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmFiyatTipi.resx">
       <DependentUpon>frmFiyatTipi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFiyatToplu.resx">
+      <DependentUpon>frmFiyatToplu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmKargo.resx">
       <DependentUpon>frmKargo.cs</DependentUpon>
@@ -280,11 +451,17 @@
     <EmbeddedResource Include="frmAyarlaPerakende.resx">
       <DependentUpon>frmAyarlaPerakende.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmProgresBr.resx">
+      <DependentUpon>frmProgresBr.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRenk.resx">
       <DependentUpon>frmRenk.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmReportView.resx">
       <DependentUpon>frmReportView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResim.resx">
+      <DependentUpon>frmResim.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmStokBul.resx">
       <DependentUpon>frmStokBul.cs</DependentUpon>
@@ -307,20 +484,36 @@
     <EmbeddedResource Include="frmAyarlarUrun.resx">
       <DependentUpon>frmAyarlarUrun.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmStokToplu.resx">
+      <DependentUpon>frmStokToplu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrendyol_Attributes.resx">
+      <DependentUpon>frmTrendyol_Attributes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrendyol_catogory.resx">
+      <DependentUpon>frmTrendyol_catogory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrendyol_FirmaAdresBilgisi.resx">
+      <DependentUpon>frmTrendyol_FirmaAdresBilgisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrendyol_MusteriSorları.resx">
+      <DependentUpon>frmTrendyol_MusteriSorları.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrendyol_Siparis.resx">
+      <DependentUpon>frmTrendyol_Siparis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrendyol_Ürün_Aktif.resx">
+      <DependentUpon>frmTrendyol_Ürün_Aktif.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmYapılandırma.resx">
       <DependentUpon>frmYapılandırma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Report.resx">
       <DependentUpon>Report.cs</DependentUpon>
     </EmbeddedResource>
@@ -328,6 +521,7 @@
       <DependentUpon>XtraReport1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
+    <None Include="DownloadDefauldFile\UrunAc.xls" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -348,6 +542,15 @@
     <PackageReference Include="CircularProgressBar">
       <Version>2.8.0.16</Version>
     </PackageReference>
+    <PackageReference Include="DG.MiniHTMLTextBox">
+      <Version>1.0.25907.4</Version>
+    </PackageReference>
+    <PackageReference Include="ExcelDataReader">
+      <Version>3.6.0</Version>
+    </PackageReference>
+    <PackageReference Include="ExcelDataReader.DataSet">
+      <Version>3.6.0</Version>
+    </PackageReference>
     <PackageReference Include="MetroModernUI">
       <Version>1.4.0</Version>
     </PackageReference>
@@ -362,114 +565,72 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\picturebox_32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\image_32x32.png" />
-  </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <None Include="Resources\bosale_32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\definednamecreatefromselection_32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\loadpagesetup_32x32.png" />
+    <Folder Include="Crs_Formlar\" />
+    <Folder Include="Crs_Raporlar\" />
+    <Folder Include="Dev_raporlar\" />
+    <Folder Include="Pictures\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ID\RegistryKey.txt" />
     <Content Include="ID\RegistryPath.txt" />
-    <Content Include="Pictures\logo 150 tüm.png" />
-    <Content Include="Pictures\logo bütün.png" />
-    <Content Include="Pictures\logo yon transparan.png" />
-    <Content Include="Pictures\logo.jpg" />
-    <Content Include="Pictures\logo.png" />
-    <Content Include="Pictures\logo2.jpg" />
-    <Content Include="Pictures\logo2.png" />
-    <Content Include="Pictures\logo_tiny.png" />
-    <Content Include="Pictures\logo_yon.png" />
-    <Content Include="Pictures\logo_yon_new.png" />
-    <Content Include="Pictures\logo_yon_new2.png" />
-    <None Include="Resources\cancel_32x322.png" />
-    <None Include="Resources\redo_32x32.png" />
-    <None Include="Resources\cancel_32x321.png" />
-    <None Include="Resources\find_32x32.png" />
-    <None Include="Resources\Entegref %281%29.gif" />
-    <None Include="Resources\perakende settings.png" />
-    <None Include="Resources\online-shop-setting-icon-vector.jpg" />
+    <Content Include="CrsPictures\logo 150 tüm.png" />
+    <Content Include="CrsPictures\logo bütün.png" />
+    <Content Include="CrsPictures\logo yon transparan.png" />
+    <Content Include="CrsPictures\logo.jpg" />
+    <Content Include="CrsPictures\logo.png" />
+    <Content Include="CrsPictures\logo2.jpg" />
+    <Content Include="CrsPictures\logo2.png" />
+    <Content Include="CrsPictures\logo_tiny.png" />
+    <Content Include="CrsPictures\logo_yon.png" />
+    <Content Include="CrsPictures\logo_yon_new.png" />
+    <Content Include="CrsPictures\logo_yon_new2.png" />
+    <None Include="Resources\boproductgroup_16x16.png" />
+    <None Include="Resources\boproductgroup_32x32.png" />
+    <None Include="Resources\knowledgebasearticle_16x161.png" />
+    <None Include="Resources\knowledgebasearticle_32x321.png" />
+    <None Include="Resources\knowledgebasearticle_16x16.png" />
+    <None Include="Resources\knowledgebasearticle_32x32.png" />
+    <None Include="Resources\bocustomer_16x16.png" />
+    <None Include="Resources\bocustomer_32x32.png" />
+    <None Include="Resources\barcode2_32x32.png" />
+    <None Include="Resources\show_16x16.png" />
+    <None Include="Resources\show_32x32.png" />
+    <None Include="Resources\hideproduct_32x321.png" />
+    <None Include="Resources\hideproduct_16x16.png" />
+    <None Include="Resources\hideproduct_32x32.png" />
+    <None Include="Resources\reading_16x16.png" />
+    <None Include="Resources\reading_32x32.png" />
+    <None Include="Resources\currency_16x162.png" />
+    <None Include="Resources\currency_32x322.png" />
+    <None Include="Resources\material_ui_32.png" />
+    <None Include="Resources\bosaleitem_16x16.png" />
+    <None Include="Resources\bosaleitem_32x32.png" />
+    <None Include="Resources\salesperiodlifetime_16x162.png" />
+    <None Include="Resources\salesperiodlifetime_32x322.png" />
+    <None Include="Resources\sales_16x161.png" />
+    <None Include="Resources\sales_32x321.png" />
+    <None Include="Resources\sales_16x16.png" />
+    <None Include="Resources\sales_32x32.png" />
+    <None Include="Resources\salesperiodlifetime_16x161.png" />
+    <None Include="Resources\salesperiodlifetime_32x321.png" />
+    <None Include="Resources\salesperiodlifetime_16x16.png" />
+    <None Include="Resources\salesperiodlifetime_32x32.png" />
+    <None Include="Resources\version_16x161.png" />
+    <None Include="Resources\version_32x321.png" />
+    <None Include="Resources\pagesetup_16x16.png" />
+    <None Include="Resources\pagesetup_32x32.png" />
+    <None Include="Resources\technology_32x321.png" />
+    <None Include="Resources\usergroup_16x16.png" />
+    <None Include="Resources\usergroup_32x32.png" />
+    <None Include="Resources\product_16x16.png" />
+    <None Include="Resources\product_32x323.png" />
+    <None Include="Resources\addfile_16x16.png" />
+    <None Include="Resources\addfile_32x32.png" />
+    <None Include="Resources\product_32x322.png" />
+    <None Include="Resources\product_32x321.png" />
+    <None Include="Resources\product_32x32.png" />
+    <None Include="Resources\properties_32x32.png" />
     <None Include="Resources\Catalog-Integration.txt" />
-    <None Include="Resources\Entegref %282%29.gif" />
-    <None Include="Resources\Entegref.gif" />
-    <None Include="Resources\prev_32x32.png" />
-    <None Include="Resources\next_32x32.png" />
-    <None Include="Resources\apply_32x321.png" />
-    <None Include="Resources\Box Settings_48px.png" />
-    <None Include="Resources\Entegref.jpg" />
-    <None Include="Resources\Entegref.png" />
-    <None Include="Resources\clear_16x162.png" />
-    <None Include="Resources\clear_32x322.png" />
-    <None Include="Resources\save_16x163.png" />
-    <None Include="Resources\save_32x323.png" />
-    <None Include="Resources\new_16x165.png" />
-    <None Include="Resources\new_32x325.png" />
-    <None Include="Resources\new_16x164.png" />
-    <None Include="Resources\new_32x324.png" />
-    <None Include="Resources\clear_16x161.png" />
-    <None Include="Resources\clear_32x321.png" />
-    <None Include="Resources\new_16x163.png" />
-    <None Include="Resources\new_32x323.png" />
-    <None Include="Resources\save_16x162.png" />
-    <None Include="Resources\save_32x322.png" />
-    <None Include="Resources\clear_16x16.png" />
-    <None Include="Resources\clear_32x32.png" />
-    <None Include="Resources\image_32x321.png" />
-    <None Include="Resources\add_32x32.png" />
-    <None Include="Resources\save_16x161.png" />
-    <None Include="Resources\save_32x321.png" />
-    <None Include="Resources\new_16x162.png" />
-    <None Include="Resources\new_32x322.png" />
-    <None Include="Resources\previewchart_32x32.png" />
-    <None Include="Resources\new_16x16.png" />
-    <None Include="Resources\new_32x32.png" />
-    <None Include="Resources\Settings_64px.png" />
-    <None Include="Resources\Store Setting_48px.png" />
-    <None Include="Resources\box2.png" />
-    <None Include="Resources\box_50px.png" />
-    <None Include="Resources\about_32x32.png" />
-    <None Include="Resources\cancel_16x16.png" />
-    <None Include="Resources\cancel_32x32.png" />
-    <None Include="Resources\saveas_16x16.png" />
-    <None Include="Resources\saveas_32x32.png" />
-    <None Include="Resources\sell_48px.png" />
-    <None Include="Resources\supplier_40px.png" />
-    <None Include="Resources\user_group_48px.png" />
-    <None Include="Resources\original_size_40px.png" />
-    <None Include="Resources\Color Wheel_48px.png" />
-    <None Include="Resources\kdv1.png" />
-    <None Include="Resources\kdv.png" />
-    <None Include="Resources\module_2.png" />
-    <None Include="Resources\module_64px1.png" />
-    <None Include="Resources\module_64px.png" />
-    <None Include="Resources\stack_of_money_48px1.png" />
-    <None Include="Resources\shop_64px1.png" />
-    <None Include="Resources\stack_of_money_48px.png" />
-    <None Include="Resources\shop_64px.png" />
-    <None Include="Resources\trendyol 32x32.png" />
-    <None Include="Resources\clearvalidationcircles_32x32.png" />
-    <None Include="Resources\version_16x16.png" />
-    <None Include="Resources\version_32x32.png" />
-    <None Include="Resources\technology_16x16.png" />
-    <None Include="Resources\technology_32x32.png" />
-    <None Include="Resources\find_16x16.png" />
-    <None Include="Resources\financial_32x32.png" />
-    <None Include="Resources\financial_16x16.png" />
-    <None Include="Resources\currency_32x321.png" />
-    <None Include="Resources\currency_16x161.png" />
-    <None Include="Resources\currency_16x16.png" />
-    <None Include="Resources\currency_32x32.png" />
-    <None Include="Resources\apply_32x32.png" />
-    <None Include="Resources\barcode_32x32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

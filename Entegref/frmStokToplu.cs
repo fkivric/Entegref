@@ -26,6 +26,7 @@ namespace Entegref
         DataTable sf4 = new DataTable();
         DataTable sf5 = new DataTable();
         DataTable sf6 = new DataTable();
+
         string newidson;
         string newid1 = "00";
         string newid2 = "00";

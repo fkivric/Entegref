@@ -69,8 +69,8 @@ namespace Entegref
                     if (acikmi)
                     {
                         Application.EnableVisualStyles();
-                        Application.SetCompatibleTextRenderingDefault(false);
-                        //Application.Run(new frmYapılandırma());
+                        //Application.SetCompatibleTextRenderingDefault(false);
+                        //Application.Run(new frmCicekSepeti_Category());
                         Application.Run(new frmLogin(Properties.Settings.Default.VKN));
                     }
                     else

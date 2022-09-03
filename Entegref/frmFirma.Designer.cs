@@ -29,14 +29,8 @@
         private void InitializeComponent()
         {
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab1 = new Infragistics.Win.UltraWinTabControl.UltraTab();
-            Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab2 = new Infragistics.Win.UltraWinTabControl.UltraTab();
-            Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab3 = new Infragistics.Win.UltraWinTabControl.UltraTab();
-            Infragistics.Win.Appearance appearance5 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance6 = new Infragistics.Win.Appearance();
             this.ultraTabPageControl1 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
@@ -85,7 +79,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtStokKodu = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.ultraTabPageControl1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -101,7 +94,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl1)).BeginInit();
             this.ultraTabControl1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
             this.SuspendLayout();
             // 
             // ultraTabPageControl1
@@ -110,7 +102,7 @@
             this.ultraTabPageControl1.Controls.Add(this.panel2);
             this.ultraTabPageControl1.Location = new System.Drawing.Point(1, 23);
             this.ultraTabPageControl1.Name = "ultraTabPageControl1";
-            this.ultraTabPageControl1.Size = new System.Drawing.Size(965, 540);
+            this.ultraTabPageControl1.Size = new System.Drawing.Size(1132, 540);
             // 
             // panel3
             // 
@@ -125,7 +117,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 487);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(965, 53);
+            this.panel3.Size = new System.Drawing.Size(1132, 53);
             this.panel3.TabIndex = 1;
             // 
             // label11
@@ -174,7 +166,7 @@
             this.textBox4.Location = new System.Drawing.Point(734, 23);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(221, 22);
+            this.textBox4.Size = new System.Drawing.Size(388, 22);
             this.textBox4.TabIndex = 0;
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -188,7 +180,7 @@
             this.textBox3.Location = new System.Drawing.Point(494, 23);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(221, 22);
+            this.textBox3.Size = new System.Drawing.Size(388, 22);
             this.textBox3.TabIndex = 0;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -202,7 +194,7 @@
             this.textBox2.Location = new System.Drawing.Point(254, 23);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(221, 22);
+            this.textBox2.Size = new System.Drawing.Size(388, 22);
             this.textBox2.TabIndex = 0;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -216,7 +208,7 @@
             this.textBox1.Location = new System.Drawing.Point(14, 23);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(221, 22);
+            this.textBox1.Size = new System.Drawing.Size(388, 22);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -251,7 +243,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(965, 487);
+            this.panel2.Size = new System.Drawing.Size(1132, 487);
             this.panel2.TabIndex = 0;
             // 
             // maskedTextBox1
@@ -479,13 +471,13 @@
             // 
             this.ultraTabPageControl2.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl2.Name = "ultraTabPageControl2";
-            this.ultraTabPageControl2.Size = new System.Drawing.Size(965, 540);
+            this.ultraTabPageControl2.Size = new System.Drawing.Size(1132, 540);
             // 
             // ultraTabPageControl3
             // 
             this.ultraTabPageControl3.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl3.Name = "ultraTabPageControl3";
-            this.ultraTabPageControl3.Size = new System.Drawing.Size(965, 540);
+            this.ultraTabPageControl3.Size = new System.Drawing.Size(1132, 540);
             // 
             // panelControl2
             // 
@@ -499,10 +491,10 @@
             // 
             this.panelControl3.Controls.Add(this.ultraTabControl1);
             this.panelControl3.Controls.Add(this.panel1);
-            this.panelControl3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl3.Location = new System.Drawing.Point(0, 0);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(971, 609);
+            this.panelControl3.Size = new System.Drawing.Size(1138, 609);
             this.panelControl3.TabIndex = 3;
             // 
             // ultraTabControl1
@@ -516,22 +508,16 @@
             this.ultraTabControl1.Location = new System.Drawing.Point(2, 43);
             this.ultraTabControl1.Name = "ultraTabControl1";
             this.ultraTabControl1.SharedControlsPage = this.ultraTabSharedControlsPage1;
-            this.ultraTabControl1.Size = new System.Drawing.Size(967, 564);
+            this.ultraTabControl1.Size = new System.Drawing.Size(1134, 564);
             this.ultraTabControl1.Style = Infragistics.Win.UltraWinTabControl.UltraTabControlStyle.Office2007Ribbon;
             this.ultraTabControl1.TabButtonStyle = Infragistics.Win.UIElementButtonStyle.Windows8Button;
             this.ultraTabControl1.TabCloseButtonVisibility = Infragistics.Win.UltraWinTabs.TabCloseButtonVisibility.Never;
             this.ultraTabControl1.TabIndex = 0;
             this.ultraTabControl1.TabOrientation = Infragistics.Win.UltraWinTabs.TabOrientation.TopLeft;
-            ultraTab1.Appearance = appearance1;
-            ultraTab1.SelectedAppearance = appearance2;
             ultraTab1.TabPage = this.ultraTabPageControl1;
             ultraTab1.Text = "Genel Bilgiler";
-            ultraTab2.Appearance = appearance3;
-            ultraTab2.SelectedAppearance = appearance4;
             ultraTab2.TabPage = this.ultraTabPageControl2;
             ultraTab2.Text = "Sınıflar";
-            ultraTab3.Appearance = appearance5;
-            ultraTab3.SelectedAppearance = appearance6;
             ultraTab3.TabPage = this.ultraTabPageControl3;
             ultraTab3.Text = "Ekstre";
             this.ultraTabControl1.Tabs.AddRange(new Infragistics.Win.UltraWinTabControl.UltraTab[] {
@@ -544,7 +530,7 @@
             // 
             this.ultraTabSharedControlsPage1.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabSharedControlsPage1.Name = "ultraTabSharedControlsPage1";
-            this.ultraTabSharedControlsPage1.Size = new System.Drawing.Size(965, 540);
+            this.ultraTabSharedControlsPage1.Size = new System.Drawing.Size(1132, 540);
             // 
             // panel1
             // 
@@ -556,7 +542,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(967, 41);
+            this.panel1.Size = new System.Drawing.Size(1134, 41);
             this.panel1.TabIndex = 1;
             // 
             // ultraButton3
@@ -604,20 +590,11 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // panelControl4
-            // 
-            this.panelControl4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl4.Location = new System.Drawing.Point(971, 0);
-            this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(167, 609);
-            this.panelControl4.TabIndex = 4;
-            // 
             // frmFirma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1138, 638);
-            this.Controls.Add(this.panelControl4);
             this.Controls.Add(this.panelControl3);
             this.Controls.Add(this.panelControl2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -642,7 +619,6 @@
             this.ultraTabControl1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -668,7 +644,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtStokKodu;
         private System.Windows.Forms.Button button1;
-        private DevExpress.XtraEditors.PanelControl panelControl4;
         private System.Windows.Forms.ComboBox combosemt;
         private System.Windows.Forms.ComboBox comboIl;
         private System.Windows.Forms.Label label15;

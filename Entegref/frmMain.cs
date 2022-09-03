@@ -93,7 +93,6 @@ namespace Entegref
             }
 
         }
-
         private void completeProgress()
         {
             try
@@ -127,9 +126,11 @@ namespace Entegref
                     OpenForm(new frmStokToplu());
                     break;
                 case "21":
-                    OpenForm(new frmMusteri());
+                    OpenForm(new frmDepo());
                     break;
-
+                case "23":
+                    OpenForm(new frmFis_Transfer());
+                    break;
                 case "31":
                     OpenForm(new frmFirma());
                     break;
@@ -236,6 +237,38 @@ namespace Entegref
         private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             OpenForm(new frmTrendyol_Ürün_Aktif());
+        }
+
+        private void barButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        private void barButtonItem15_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            OpenForm(new frmTrendyol_Siparis());
+        }
+
+        private void barButtonItem12_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            bool sonuc = true;
+            OpenForm(new frmTrendyol_Finans(sonuc));
+        }
+
+        private void barButtonItem13_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            bool sonuc = false;
+            OpenForm(new frmTrendyol_Finans(sonuc));
+        }
+
+        private void barButtonItem14_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            OpenForm(new frmTrendyol_FirmaAdresBilgisi());
+        }
+
+        private void barButtonItem11_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
         }
     }
 }

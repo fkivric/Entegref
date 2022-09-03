@@ -98,6 +98,8 @@ namespace Entegref
         public frmStokSinifi()
         {
             InitializeComponent();
+            panel1.Size = new Size(panel1.Width, 25);
+            this.Size = new Size(701, 287);
         }
         private void frmStokSinifi_Load(object sender, EventArgs e)
         {
@@ -708,5 +710,22 @@ namespace Entegref
             this.Dispose();
         }
 
+        private void txtSinif_TextChanged(object sender, EventArgs e)
+        {
+            datagridYol.DataSource = null;
+            Dictionary<string, string> PRM = new Dictionary<string, string>();
+            PRM.Add("@Text", txtSinif.Text);
+            var dt = conn.DfQuery("Entegref_Category_Select_Text", PRM);
+            datagridYol.DataSource = dt;
+        }
+        private void btnBulAc_Click(object sender, EventArgs e)
+        {
+            datagridYol.Visible = true;
+            label4.Visible = true;
+            txtSinif.Visible = true;
+            panel1.Size = new Size(693,194);
+            this.Size = new Size(701, 458);
+            btnBulAc.Visible = false;
+        }
     }
 }

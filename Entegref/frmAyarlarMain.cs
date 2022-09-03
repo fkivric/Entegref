@@ -108,5 +108,15 @@ namespace Entegref
             ////f1.Dock = DockStyle.Fill;
             //f1.BringToFront();
         }
+
+        private void depoTipiAçToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenForm(new frmDepoAc());
+        }
+
+        private void trendyolApiAyarlarıToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

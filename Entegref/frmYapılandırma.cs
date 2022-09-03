@@ -315,15 +315,23 @@ namespace Entegref
             {
                 Pazaryeri = item.ToString();
             }
-            if (Pazaryeri != "TRENDYOL")
+            if (Pazaryeri == "TRENDYOL" || Pazaryeri == "ÇİÇEKSEPETİ")
             {
-                checkedListBoxControl1.UnCheckAll();
-                pnlTrendyol.Visible = false;
+                if (Pazaryeri == "TRENDYOL")
+                {
+                    navigationFrame2.SelectedPage = navigationPage11;
+                    pnlTrendyol.Dock = DockStyle.Fill;
+                }
+                else if (Pazaryeri == "ÇİÇEKSEPETİ")
+                {
+                    navigationFrame2.SelectedPage = navigationPage14;
+                    pnlCicekSepet.Dock = DockStyle.Fill;
+                }
             }
             else
             {
-                pnlTrendyol.Visible = true;
-                pnlTrendyol.Dock = DockStyle.Fill;
+                checkedListBoxControl1.UnCheckAll();
+                navigationFrame2.SelectedPage = navigationPage10;
             }
         }
 
@@ -333,15 +341,23 @@ namespace Entegref
             {
                 Pazaryeri = item.ToString();
             }
-            if (Pazaryeri != "TRENDYOL" )
+            if (Pazaryeri == "TRENDYOL" || Pazaryeri == "ÇİÇEKSEPETİ")
             {
-                checkedListBoxControl1.UnCheckAll();
-                pnlTrendyol.Visible = false;
+                if (Pazaryeri == "TRENDYOL")
+                {
+                    navigationFrame2.SelectedPage = navigationPage11;
+                    pnlTrendyol.Dock = DockStyle.Fill;
+                }
+                else if (Pazaryeri == "ÇİÇEKSEPETİ")
+                {
+                    navigationFrame2.SelectedPage = navigationPage14;
+                    pnlCicekSepet.Dock = DockStyle.Fill;
+                }
             }
             else
             {
-                pnlTrendyol.Visible = true;
-                pnlTrendyol.Dock = DockStyle.Fill;
+                checkedListBoxControl1.UnCheckAll();
+                navigationFrame2.SelectedPage = navigationPage10;
             }
         }
 
@@ -402,6 +418,11 @@ namespace Entegref
             cmd.Parameters.AddWithValue("@sEMail", txtsKullaniciKodu.Text);
             cmd.ExecuteScalar();
 
+        }
+
+        private void simpleButton6_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.CicekSepetiApi_key = txtcicekApi.Text;
         }
     }
 }

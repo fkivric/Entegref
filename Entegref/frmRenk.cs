@@ -283,28 +283,100 @@ namespace Entegref
                     {
                         var bedenvar = dataGridView1.Rows[r].Cells[c].Value.ToString();
                         Dictionary<string, string> Renkler = new Dictionary<string, string>();
+                        Renkler.Add("@sModel", frmStokAc.sModel.ToString());
+                        Renkler.Add("@BedenTipi", frmStokAc.BedenTipi);
+                        Renkler.Add("@KavalaTipi", frmStokAc.Kavala);
+                        Renkler.Add("@sRenkKodu", srenk);
                         if (bedenvar.ToString() == "True")
                         {
                             bedensira = dataGridView1.Columns[c].HeaderText.ToString();
-                            Renkler.Add("@sBeden" + (c - 3).ToString(), bedensira);
+                            Renkler.Add("@sBeden", bedensira);
                             stoksayi++;
                         }
                         else
                         {
-                            Renkler.Add("@sBeden" + (c - 3).ToString(), "");
+                            Renkler.Add("@sBeden", "");
                         }
-                        Renkler.Add("@sKodu", frmStokAc.sModel.ToString());
-                        Renkler.Add("@bedenTipi", frmStokAc.BedenTipi);
-                        Renkler.Add("@sRenkKodu", srenk);
-                        Renkler.Add("@KavalaTipi", frmStokAc.Kavala);
                         Renkler.Add("@Kavala", skavala);
-                        Renkler.Add("@sinif1", frmStokAc.sinifsira1.ToString().Substring(0, frmStokAc.sinifsira1.IndexOf("-")).Replace("00", ""));
-                        Renkler.Add("@sinif2", frmStokAc.sinifsira2.ToString().Substring(0, frmStokAc.sinifsira1.IndexOf("-")).Replace("00", ""));
-                        Renkler.Add("@sinif3", frmStokAc.sinifsira3.ToString().Substring(0, frmStokAc.sinifsira1.IndexOf("-")).Replace("00", ""));
-                        Renkler.Add("@sinif4", frmStokAc.sinifsira4.ToString().Substring(0, frmStokAc.sinifsira1.IndexOf("-")).Replace("00", ""));
-                        Renkler.Add("@sinif5", frmStokAc.sinifsira5.ToString().Substring(0, frmStokAc.sinifsira1.IndexOf("-")).Replace("00", ""));
-                        Renkler.Add("@sinif6", frmStokAc.sinifsira6.ToString().Substring(0, frmStokAc.sinifsira1.IndexOf("-")).Replace("00", ""));
-                        conn.DfInsert("", Renkler);
+                        Renkler.Add("@sinif1", frmStokAc.sinifsira1.ToString().Substring(frmStokAc.sinifsira1.IndexOf("-")+1).Replace("00", ""));
+                        Renkler.Add("@sinif2", frmStokAc.sinifsira2.ToString().Substring(frmStokAc.sinifsira2.IndexOf("-")+1).Replace("00", ""));
+                        Renkler.Add("@sinif3", frmStokAc.sinifsira3.ToString().Substring(frmStokAc.sinifsira3.IndexOf("-")+1).Replace("00", ""));
+                        if (frmStokAc.sinifsira4.ToString() != "")
+                        {
+                            Renkler.Add("@sinif4", frmStokAc.sinifsira4.ToString().Substring(frmStokAc.sinifsira4.IndexOf("-")+1).Replace("00", ""));
+                        }
+                        else
+                        {
+                            Renkler.Add("@sinif4", "");
+                        }
+                        if (frmStokAc.sinifsira5.ToString() != "")
+                        {
+                            Renkler.Add("@sinif5", frmStokAc.sinifsira5.ToString().Substring(frmStokAc.sinifsira5.IndexOf("-")+1).Replace("00", ""));
+                        }
+                        else
+                        {
+                            Renkler.Add("@sinif5", "");
+                        }
+                        if (frmStokAc.sinifsira6.ToString() != "")
+                        {
+                            Renkler.Add("@sinif6", frmStokAc.sinifsira6.ToString().Substring(frmStokAc.sinifsira6.IndexOf("-")+1).Replace("00", ""));
+                        }
+                        else
+                        {
+                            Renkler.Add("@sinif6", "");
+                        }
+                        if (frmStokAc.sinifsira7.ToString() != "")
+                        {
+                            Renkler.Add("@sinif7", frmStokAc.sinifsira7.ToString().Substring(frmStokAc.sinifsira7.IndexOf("-") + 1).Replace("00", ""));
+                        }
+                        else
+                        {
+                            Renkler.Add("@sinif7", "");
+                        }
+                        if (frmStokAc.sinifsira8.ToString() != "")
+                        {
+                            Renkler.Add("@sinif8", frmStokAc.sinifsira8.ToString().Substring(frmStokAc.sinifsira8.IndexOf("-") + 1).Replace("00", ""));
+
+                        }
+                        else
+                        {
+                            Renkler.Add("@sinif8", "");
+                        }
+                        if (frmStokAc.sinifsira9.ToString() != "")
+                        {
+                            Renkler.Add("@sinif9", frmStokAc.sinifsira3.ToString().Substring(frmStokAc.sinifsira9.IndexOf("-") + 1).Replace("00", ""));
+                        }
+                        else
+                        {
+
+                            Renkler.Add("@sinif8", "");
+
+                        }
+                        if (frmStokAc.sinifsira10.ToString() != "")
+                        {
+                            Renkler.Add("@sinif10", frmStokAc.sinifsira10.ToString().Substring(frmStokAc.sinifsira10.IndexOf("-") + 1).Replace("00", ""));
+                        }
+                        else
+                        {
+                            Renkler.Add("@sinif10", "");
+                        }
+                        if (frmStokAc.sinifsira11.ToString() != "")
+                        {
+                            Renkler.Add("@sinif11", frmStokAc.sinifsira11.ToString().Substring(frmStokAc.sinifsira11.IndexOf("-") + 1).Replace("00", ""));
+                        }
+                        else
+                        {
+                            Renkler.Add("@sinif11", "");
+                        }
+                        if (frmStokAc.sinifsira12.ToString() != "")
+                        {
+                            Renkler.Add("@sinif12", frmStokAc.sinifsira12.ToString().Substring(frmStokAc.sinifsira12.IndexOf("-") + 1).Replace("00", ""));
+                        }
+                        else
+                        {
+                            Renkler.Add("@sinif12", "");
+                        }
+                        conn.DfInsert("Entegref_Add_Item_Property", Renkler);
                     }
                 }
             }

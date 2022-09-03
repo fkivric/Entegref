@@ -30,35 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab1 = new Infragistics.Win.UltraWinTabControl.UltraTab();
-            Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab2 = new Infragistics.Win.UltraWinTabControl.UltraTab();
-            Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab3 = new Infragistics.Win.UltraWinTabControl.UltraTab();
-            Infragistics.Win.Appearance appearance5 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance6 = new Infragistics.Win.Appearance();
             Infragistics.Win.UltraWinTabControl.UltraTab ultraTab4 = new Infragistics.Win.UltraWinTabControl.UltraTab();
-            Infragistics.Win.Appearance appearance7 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance8 = new Infragistics.Win.Appearance();
             this.ultraTabPageControl1 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.dropDownButton2 = new DevExpress.XtraEditors.DropDownButton();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.bunifuCustomTextbox4 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomTextbox3 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomTextbox6 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomTextbox2 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomTextbox5 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomTextbox1 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.ultraTabPageControl2 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.ultraTabPageControl3 = new Infragistics.Win.UltraWinTabControl.UltraTabPageControl();
             this.pnlTopluFiyat = new System.Windows.Forms.Panel();
@@ -102,8 +80,6 @@
             this.ultraButton1 = new Infragistics.Win.Misc.UltraButton();
             this.txtStokKodu = new System.Windows.Forms.TextBox();
             this.btnStokBul = new System.Windows.Forms.Button();
-            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
-            this.dropDownButton1 = new DevExpress.XtraEditors.DropDownButton();
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
@@ -112,9 +88,22 @@
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this.bunifuCustomTextbox1 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.bunifuCustomTextbox5 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.bunifuCustomTextbox2 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.bunifuCustomTextbox6 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.bunifuCustomTextbox3 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.bunifuCustomTextbox4 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dropDownButton2 = new DevExpress.XtraEditors.DropDownButton();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.ultraTabPageControl1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.ultraTabPageControl3.SuspendLayout();
             this.pnlTopluFiyat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridTopluFiyat)).BeginInit();
@@ -136,19 +125,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.ultraTabControl1)).BeginInit();
             this.ultraTabControl1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
-            this.panelControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // ultraTabPageControl1
             // 
             this.ultraTabPageControl1.Controls.Add(this.panel3);
             this.ultraTabPageControl1.Controls.Add(this.panel2);
-            this.ultraTabPageControl1.Location = new System.Drawing.Point(1, 22);
+            this.ultraTabPageControl1.Location = new System.Drawing.Point(1, 23);
             this.ultraTabPageControl1.Name = "ultraTabPageControl1";
-            this.ultraTabPageControl1.Size = new System.Drawing.Size(965, 531);
+            this.ultraTabPageControl1.Size = new System.Drawing.Size(1132, 571);
             // 
             // panel3
             // 
@@ -157,7 +145,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 216);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(965, 315);
+            this.panel3.Size = new System.Drawing.Size(1132, 355);
             this.panel3.TabIndex = 2;
             // 
             // label17
@@ -165,158 +153,24 @@
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(6, 7);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(75, 13);
+            this.label17.Size = new System.Drawing.Size(84, 13);
             this.label17.TabIndex = 2;
             this.label17.Text = "Ürün Özellikeri";
             // 
             // textBox2
             // 
             this.textBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.textBox2.Location = new System.Drawing.Point(0, 50);
+            this.textBox2.Location = new System.Drawing.Point(0, 90);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(965, 265);
+            this.textBox2.Size = new System.Drawing.Size(1132, 265);
             this.textBox2.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.dropDownButton2);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.bunifuCustomTextbox4);
-            this.panel2.Controls.Add(this.bunifuCustomTextbox3);
-            this.panel2.Controls.Add(this.bunifuCustomTextbox6);
-            this.panel2.Controls.Add(this.bunifuCustomTextbox2);
-            this.panel2.Controls.Add(this.bunifuCustomTextbox5);
-            this.panel2.Controls.Add(this.bunifuCustomTextbox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(965, 216);
-            this.panel2.TabIndex = 0;
-            // 
-            // dropDownButton2
-            // 
-            this.dropDownButton2.Location = new System.Drawing.Point(824, 182);
-            this.dropDownButton2.Name = "dropDownButton2";
-            this.barManager1.SetPopupContextMenu(this.dropDownButton2, this.popupMenu1);
-            this.dropDownButton2.Size = new System.Drawing.Size(135, 23);
-            this.dropDownButton2.TabIndex = 5;
-            this.dropDownButton2.Text = "İşlemler";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 103);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Adres";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 76);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "E-Mail";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 22);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 13);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Müşteri Soyadı";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 49);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Müşteri Soyadı";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(581, 49);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(60, 13);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "GSM No 2 :";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(581, 22);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Gsm No 1 :";
-            // 
-            // bunifuCustomTextbox4
-            // 
-            this.bunifuCustomTextbox4.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox4.Location = new System.Drawing.Point(101, 99);
-            this.bunifuCustomTextbox4.Multiline = true;
-            this.bunifuCustomTextbox4.Name = "bunifuCustomTextbox4";
-            this.bunifuCustomTextbox4.Size = new System.Drawing.Size(411, 109);
-            this.bunifuCustomTextbox4.TabIndex = 1;
-            // 
-            // bunifuCustomTextbox3
-            // 
-            this.bunifuCustomTextbox3.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox3.Location = new System.Drawing.Point(101, 72);
-            this.bunifuCustomTextbox3.Name = "bunifuCustomTextbox3";
-            this.bunifuCustomTextbox3.Size = new System.Drawing.Size(411, 21);
-            this.bunifuCustomTextbox3.TabIndex = 1;
-            // 
-            // bunifuCustomTextbox6
-            // 
-            this.bunifuCustomTextbox6.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox6.Location = new System.Drawing.Point(101, 18);
-            this.bunifuCustomTextbox6.Name = "bunifuCustomTextbox6";
-            this.bunifuCustomTextbox6.Size = new System.Drawing.Size(283, 21);
-            this.bunifuCustomTextbox6.TabIndex = 1;
-            // 
-            // bunifuCustomTextbox2
-            // 
-            this.bunifuCustomTextbox2.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox2.Location = new System.Drawing.Point(101, 45);
-            this.bunifuCustomTextbox2.Name = "bunifuCustomTextbox2";
-            this.bunifuCustomTextbox2.Size = new System.Drawing.Size(283, 21);
-            this.bunifuCustomTextbox2.TabIndex = 1;
-            // 
-            // bunifuCustomTextbox5
-            // 
-            this.bunifuCustomTextbox5.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox5.Location = new System.Drawing.Point(675, 45);
-            this.bunifuCustomTextbox5.Name = "bunifuCustomTextbox5";
-            this.bunifuCustomTextbox5.Size = new System.Drawing.Size(283, 21);
-            this.bunifuCustomTextbox5.TabIndex = 1;
-            // 
-            // bunifuCustomTextbox1
-            // 
-            this.bunifuCustomTextbox1.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox1.Location = new System.Drawing.Point(675, 18);
-            this.bunifuCustomTextbox1.Name = "bunifuCustomTextbox1";
-            this.bunifuCustomTextbox1.Size = new System.Drawing.Size(283, 21);
-            this.bunifuCustomTextbox1.TabIndex = 1;
             // 
             // ultraTabPageControl2
             // 
             this.ultraTabPageControl2.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl2.Name = "ultraTabPageControl2";
-            this.ultraTabPageControl2.Size = new System.Drawing.Size(965, 531);
+            this.ultraTabPageControl2.Size = new System.Drawing.Size(1132, 571);
             // 
             // ultraTabPageControl3
             // 
@@ -325,7 +179,7 @@
             this.ultraTabPageControl3.Controls.Add(this.panel4);
             this.ultraTabPageControl3.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl3.Name = "ultraTabPageControl3";
-            this.ultraTabPageControl3.Size = new System.Drawing.Size(965, 531);
+            this.ultraTabPageControl3.Size = new System.Drawing.Size(1132, 571);
             // 
             // pnlTopluFiyat
             // 
@@ -333,7 +187,7 @@
             this.pnlTopluFiyat.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTopluFiyat.Location = new System.Drawing.Point(0, 100);
             this.pnlTopluFiyat.Name = "pnlTopluFiyat";
-            this.pnlTopluFiyat.Size = new System.Drawing.Size(965, 152);
+            this.pnlTopluFiyat.Size = new System.Drawing.Size(1132, 152);
             this.pnlTopluFiyat.TabIndex = 2;
             this.pnlTopluFiyat.Visible = false;
             // 
@@ -343,7 +197,7 @@
             this.gridTopluFiyat.Location = new System.Drawing.Point(0, 0);
             this.gridTopluFiyat.MainView = this.ViewTopluFiyat;
             this.gridTopluFiyat.Name = "gridTopluFiyat";
-            this.gridTopluFiyat.Size = new System.Drawing.Size(965, 152);
+            this.gridTopluFiyat.Size = new System.Drawing.Size(1132, 152);
             this.gridTopluFiyat.TabIndex = 0;
             this.gridTopluFiyat.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.ViewTopluFiyat});
@@ -418,7 +272,7 @@
             this.gridFiyatlar.Location = new System.Drawing.Point(0, 100);
             this.gridFiyatlar.MainView = this.ViewFiyatlar;
             this.gridFiyatlar.Name = "gridFiyatlar";
-            this.gridFiyatlar.Size = new System.Drawing.Size(965, 431);
+            this.gridFiyatlar.Size = new System.Drawing.Size(1132, 471);
             this.gridFiyatlar.TabIndex = 0;
             this.gridFiyatlar.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.ViewFiyatlar});
@@ -436,7 +290,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(965, 100);
+            this.panel4.Size = new System.Drawing.Size(1132, 100);
             this.panel4.TabIndex = 1;
             // 
             // pnlTekfiyat
@@ -451,7 +305,7 @@
             this.pnlTekfiyat.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlTekfiyat.Location = new System.Drawing.Point(437, 0);
             this.pnlTekfiyat.Name = "pnlTekfiyat";
-            this.pnlTekfiyat.Size = new System.Drawing.Size(528, 100);
+            this.pnlTekfiyat.Size = new System.Drawing.Size(695, 100);
             this.pnlTekfiyat.TabIndex = 1;
             // 
             // label19
@@ -459,7 +313,7 @@
             this.label19.AutoSize = true;
             this.label19.Location = new System.Drawing.Point(37, 73);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(77, 13);
+            this.label19.Size = new System.Drawing.Size(85, 13);
             this.label19.TabIndex = 3;
             this.label19.Text = "Geçerlilik Tarihi";
             // 
@@ -477,7 +331,7 @@
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(38, 18);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(50, 13);
+            this.label15.Size = new System.Drawing.Size(53, 13);
             this.label15.TabIndex = 3;
             this.label15.Text = "Fiyat Tipi";
             // 
@@ -509,7 +363,7 @@
             this.txtYeniFiyat.Enabled = false;
             this.txtYeniFiyat.Location = new System.Drawing.Point(136, 38);
             this.txtYeniFiyat.Name = "txtYeniFiyat";
-            this.txtYeniFiyat.Size = new System.Drawing.Size(177, 21);
+            this.txtYeniFiyat.Size = new System.Drawing.Size(177, 22);
             this.txtYeniFiyat.TabIndex = 0;
             // 
             // txtTipi
@@ -518,7 +372,7 @@
             this.txtTipi.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.txtTipi.Location = new System.Drawing.Point(136, 11);
             this.txtTipi.Name = "txtTipi";
-            this.txtTipi.Size = new System.Drawing.Size(147, 21);
+            this.txtTipi.Size = new System.Drawing.Size(147, 22);
             this.txtTipi.TabIndex = 0;
             // 
             // grpFTipiSec
@@ -543,14 +397,14 @@
             this.ultraTabPageControl4.Controls.Add(this.pnlUrunResimbtn);
             this.ultraTabPageControl4.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabPageControl4.Name = "ultraTabPageControl4";
-            this.ultraTabPageControl4.Size = new System.Drawing.Size(965, 531);
+            this.ultraTabPageControl4.Size = new System.Drawing.Size(1132, 571);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(241, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(724, 466);
+            this.pictureBox1.Size = new System.Drawing.Size(891, 506);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -561,16 +415,16 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(0, 0);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(241, 466);
+            this.listBox1.Size = new System.Drawing.Size(241, 506);
             this.listBox1.TabIndex = 0;
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.label20);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 466);
+            this.panel5.Location = new System.Drawing.Point(0, 506);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(965, 18);
+            this.panel5.Size = new System.Drawing.Size(1132, 18);
             this.panel5.TabIndex = 3;
             // 
             // label20
@@ -578,7 +432,7 @@
             this.label20.AutoSize = true;
             this.label20.Location = new System.Drawing.Point(4, 4);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(79, 13);
+            this.label20.Size = new System.Drawing.Size(83, 13);
             this.label20.TabIndex = 0;
             this.label20.Text = "Toplam Resim :";
             // 
@@ -588,16 +442,16 @@
             this.pnlUrunResimbtn.Controls.Add(this.simpleButton2);
             this.pnlUrunResimbtn.Controls.Add(this.simpleButton1);
             this.pnlUrunResimbtn.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlUrunResimbtn.Location = new System.Drawing.Point(0, 484);
+            this.pnlUrunResimbtn.Location = new System.Drawing.Point(0, 524);
             this.pnlUrunResimbtn.Name = "pnlUrunResimbtn";
-            this.pnlUrunResimbtn.Size = new System.Drawing.Size(965, 47);
+            this.pnlUrunResimbtn.Size = new System.Drawing.Size(1132, 47);
             this.pnlUrunResimbtn.TabIndex = 2;
             // 
             // txtFileAdress
             // 
             this.txtFileAdress.Location = new System.Drawing.Point(10, 17);
             this.txtFileAdress.Name = "txtFileAdress";
-            this.txtFileAdress.Size = new System.Drawing.Size(500, 21);
+            this.txtFileAdress.Size = new System.Drawing.Size(500, 22);
             this.txtFileAdress.TabIndex = 1;
             // 
             // simpleButton2
@@ -628,10 +482,10 @@
             // 
             this.panelControl3.Controls.Add(this.ultraTabControl1);
             this.panelControl3.Controls.Add(this.panel1);
-            this.panelControl3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl3.Location = new System.Drawing.Point(0, 0);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(971, 599);
+            this.panelControl3.Size = new System.Drawing.Size(1138, 599);
             this.panelControl3.TabIndex = 3;
             // 
             // ultraTabControl1
@@ -643,29 +497,21 @@
             this.ultraTabControl1.Controls.Add(this.ultraTabPageControl1);
             this.ultraTabControl1.Controls.Add(this.ultraTabPageControl4);
             this.ultraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ultraTabControl1.Location = new System.Drawing.Point(2, 43);
+            this.ultraTabControl1.Location = new System.Drawing.Point(2, 2);
             this.ultraTabControl1.Name = "ultraTabControl1";
             this.ultraTabControl1.SharedControlsPage = this.ultraTabSharedControlsPage1;
-            this.ultraTabControl1.Size = new System.Drawing.Size(967, 554);
+            this.ultraTabControl1.Size = new System.Drawing.Size(1134, 595);
             this.ultraTabControl1.Style = Infragistics.Win.UltraWinTabControl.UltraTabControlStyle.Office2007Ribbon;
             this.ultraTabControl1.TabButtonStyle = Infragistics.Win.UIElementButtonStyle.Windows8Button;
             this.ultraTabControl1.TabCloseButtonVisibility = Infragistics.Win.UltraWinTabs.TabCloseButtonVisibility.Never;
             this.ultraTabControl1.TabIndex = 0;
             this.ultraTabControl1.TabOrientation = Infragistics.Win.UltraWinTabs.TabOrientation.TopLeft;
-            ultraTab1.Appearance = appearance1;
-            ultraTab1.SelectedAppearance = appearance2;
             ultraTab1.TabPage = this.ultraTabPageControl1;
             ultraTab1.Text = "Genel Bilgiler";
-            ultraTab2.Appearance = appearance3;
-            ultraTab2.SelectedAppearance = appearance4;
             ultraTab2.TabPage = this.ultraTabPageControl2;
             ultraTab2.Text = "Sınıflar";
-            ultraTab3.Appearance = appearance5;
-            ultraTab3.SelectedAppearance = appearance6;
             ultraTab3.TabPage = this.ultraTabPageControl3;
             ultraTab3.Text = "Fiyatlandırma";
-            ultraTab4.Appearance = appearance7;
-            ultraTab4.SelectedAppearance = appearance8;
             ultraTab4.TabPage = this.ultraTabPageControl4;
             ultraTab4.Text = "Resimler";
             this.ultraTabControl1.Tabs.AddRange(new Infragistics.Win.UltraWinTabControl.UltraTab[] {
@@ -679,7 +525,7 @@
             // 
             this.ultraTabSharedControlsPage1.Location = new System.Drawing.Point(-10000, -10000);
             this.ultraTabSharedControlsPage1.Name = "ultraTabSharedControlsPage1";
-            this.ultraTabSharedControlsPage1.Size = new System.Drawing.Size(965, 531);
+            this.ultraTabSharedControlsPage1.Size = new System.Drawing.Size(1132, 571);
             // 
             // panel1
             // 
@@ -689,10 +535,10 @@
             this.panel1.Controls.Add(this.ultraButton1);
             this.panel1.Controls.Add(this.txtStokKodu);
             this.panel1.Controls.Add(this.btnStokBul);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(967, 41);
+            this.panel1.Size = new System.Drawing.Size(1134, 595);
             this.panel1.TabIndex = 1;
             // 
             // simpleButton3
@@ -717,7 +563,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(4, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 13);
+            this.label1.Size = new System.Drawing.Size(76, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Müşteri Kodu";
             // 
@@ -735,7 +581,7 @@
             this.txtStokKodu.Location = new System.Drawing.Point(65, 11);
             this.txtStokKodu.MaxLength = 13;
             this.txtStokKodu.Name = "txtStokKodu";
-            this.txtStokKodu.Size = new System.Drawing.Size(261, 21);
+            this.txtStokKodu.Size = new System.Drawing.Size(261, 22);
             this.txtStokKodu.TabIndex = 1;
             // 
             // btnStokBul
@@ -746,23 +592,6 @@
             this.btnStokBul.TabIndex = 2;
             this.btnStokBul.Text = "...";
             this.btnStokBul.UseVisualStyleBackColor = true;
-            // 
-            // panelControl4
-            // 
-            this.panelControl4.Controls.Add(this.dropDownButton1);
-            this.panelControl4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl4.Location = new System.Drawing.Point(971, 0);
-            this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(167, 599);
-            this.panelControl4.TabIndex = 4;
-            // 
-            // dropDownButton1
-            // 
-            this.dropDownButton1.Location = new System.Drawing.Point(977, 13);
-            this.dropDownButton1.Name = "dropDownButton1";
-            this.dropDownButton1.Size = new System.Drawing.Size(156, 39);
-            this.dropDownButton1.TabIndex = 0;
-            this.dropDownButton1.Text = "Fiyatlandırma";
             // 
             // popupMenu1
             // 
@@ -828,12 +657,145 @@
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 638);
             // 
+            // bunifuCustomTextbox1
+            // 
+            this.bunifuCustomTextbox1.BorderColor = System.Drawing.Color.SeaGreen;
+            this.bunifuCustomTextbox1.Location = new System.Drawing.Point(675, 18);
+            this.bunifuCustomTextbox1.Name = "bunifuCustomTextbox1";
+            this.bunifuCustomTextbox1.Size = new System.Drawing.Size(283, 22);
+            this.bunifuCustomTextbox1.TabIndex = 1;
+            // 
+            // bunifuCustomTextbox5
+            // 
+            this.bunifuCustomTextbox5.BorderColor = System.Drawing.Color.SeaGreen;
+            this.bunifuCustomTextbox5.Location = new System.Drawing.Point(675, 45);
+            this.bunifuCustomTextbox5.Name = "bunifuCustomTextbox5";
+            this.bunifuCustomTextbox5.Size = new System.Drawing.Size(283, 22);
+            this.bunifuCustomTextbox5.TabIndex = 1;
+            // 
+            // bunifuCustomTextbox2
+            // 
+            this.bunifuCustomTextbox2.BorderColor = System.Drawing.Color.SeaGreen;
+            this.bunifuCustomTextbox2.Location = new System.Drawing.Point(101, 45);
+            this.bunifuCustomTextbox2.Name = "bunifuCustomTextbox2";
+            this.bunifuCustomTextbox2.Size = new System.Drawing.Size(283, 22);
+            this.bunifuCustomTextbox2.TabIndex = 1;
+            // 
+            // bunifuCustomTextbox6
+            // 
+            this.bunifuCustomTextbox6.BorderColor = System.Drawing.Color.SeaGreen;
+            this.bunifuCustomTextbox6.Location = new System.Drawing.Point(101, 18);
+            this.bunifuCustomTextbox6.Name = "bunifuCustomTextbox6";
+            this.bunifuCustomTextbox6.Size = new System.Drawing.Size(283, 22);
+            this.bunifuCustomTextbox6.TabIndex = 1;
+            // 
+            // bunifuCustomTextbox3
+            // 
+            this.bunifuCustomTextbox3.BorderColor = System.Drawing.Color.SeaGreen;
+            this.bunifuCustomTextbox3.Location = new System.Drawing.Point(101, 72);
+            this.bunifuCustomTextbox3.Name = "bunifuCustomTextbox3";
+            this.bunifuCustomTextbox3.Size = new System.Drawing.Size(411, 22);
+            this.bunifuCustomTextbox3.TabIndex = 1;
+            // 
+            // bunifuCustomTextbox4
+            // 
+            this.bunifuCustomTextbox4.BorderColor = System.Drawing.Color.SeaGreen;
+            this.bunifuCustomTextbox4.Location = new System.Drawing.Point(101, 99);
+            this.bunifuCustomTextbox4.Multiline = true;
+            this.bunifuCustomTextbox4.Name = "bunifuCustomTextbox4";
+            this.bunifuCustomTextbox4.Size = new System.Drawing.Size(411, 109);
+            this.bunifuCustomTextbox4.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(581, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(62, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Gsm No 1 :";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(581, 49);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(64, 13);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "GSM No 2 :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(7, 49);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(83, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Müşteri Soyadı";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(7, 22);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(83, 13);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Müşteri Soyadı";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(7, 76);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(39, 13);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "E-Mail";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 103);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(36, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Adres";
+            // 
+            // dropDownButton2
+            // 
+            this.dropDownButton2.Location = new System.Drawing.Point(824, 182);
+            this.dropDownButton2.Name = "dropDownButton2";
+            this.barManager1.SetPopupContextMenu(this.dropDownButton2, this.popupMenu1);
+            this.dropDownButton2.Size = new System.Drawing.Size(135, 23);
+            this.dropDownButton2.TabIndex = 5;
+            this.dropDownButton2.Text = "İşlemler";
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.dropDownButton2);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.bunifuCustomTextbox4);
+            this.panel2.Controls.Add(this.bunifuCustomTextbox3);
+            this.panel2.Controls.Add(this.bunifuCustomTextbox6);
+            this.panel2.Controls.Add(this.bunifuCustomTextbox2);
+            this.panel2.Controls.Add(this.bunifuCustomTextbox5);
+            this.panel2.Controls.Add(this.bunifuCustomTextbox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1132, 216);
+            this.panel2.TabIndex = 0;
+            // 
             // frmMusteri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1138, 638);
-            this.Controls.Add(this.panelControl4);
             this.Controls.Add(this.panelControl3);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.barDockControlLeft);
@@ -848,8 +810,6 @@
             this.ultraTabPageControl1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ultraTabPageControl3.ResumeLayout(false);
             this.pnlTopluFiyat.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridTopluFiyat)).EndInit();
@@ -875,10 +835,10 @@
             this.ultraTabControl1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
-            this.panelControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -917,13 +877,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox3;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox2;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox1;
         private Infragistics.Win.UltraWinTabControl.UltraTabPageControl ultraTabPageControl4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ListBox listBox1;
@@ -940,9 +893,6 @@
         private Infragistics.Win.Misc.UltraButton ultraButton1;
         private System.Windows.Forms.TextBox txtStokKodu;
         private System.Windows.Forms.Button btnStokBul;
-        private DevExpress.XtraEditors.PanelControl panelControl4;
-        private DevExpress.XtraEditors.DropDownButton dropDownButton1;
-        private DevExpress.XtraEditors.DropDownButton dropDownButton2;
         private DevExpress.XtraBars.BarManager barManager1;
         private DevExpress.XtraBars.BarDockControl barDockControlTop;
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;
@@ -951,11 +901,19 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.PopupMenu popupMenu1;
+        private System.Windows.Forms.Panel panel2;
+        private DevExpress.XtraEditors.DropDownButton dropDownButton2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox4;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox5;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label2;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox4;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox3;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox6;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox2;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox5;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox1;
     }
 }

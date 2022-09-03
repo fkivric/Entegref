@@ -121,6 +121,7 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
     <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
@@ -141,6 +142,55 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cogalt\frmFis_Bos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cogalt\frmFis_Bos.Designer.cs">
+      <DependentUpon>frmFis_Bos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cogalt\frmBul_Bos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cogalt\frmBul_Bos.Designer.cs">
+      <DependentUpon>frmBul_Bos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\parkServis\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepo.Designer.cs">
+      <DependentUpon>frmDepo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepoAc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepoAc.Designer.cs">
+      <DependentUpon>frmDepoAc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmdepoBul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdepoBul.Designer.cs">
+      <DependentUpon>frmdepoBul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFis_GC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFis_GC.Designer.cs">
+      <DependentUpon>frmFis_GC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFis_Transfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFis_Transfer.Designer.cs">
+      <DependentUpon>frmFis_Transfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trednyol_Siparisler.cs" />
+    <Compile Include="Trendyol_adress.cs" />
     <Compile Include="frmAnaSayfa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +214,12 @@
     </Compile>
     <Compile Include="frmBarkod.Designer.cs">
       <DependentUpon>frmBarkod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCicekSepeti_Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCicekSepeti_Category.Designer.cs">
+      <DependentUpon>frmCicekSepeti_Category.cs</DependentUpon>
     </Compile>
     <Compile Include="frmConfig.cs">
       <SubType>Form</SubType>
@@ -345,6 +401,12 @@
     <Compile Include="frmTrendyol_catogory.Designer.cs">
       <DependentUpon>frmTrendyol_catogory.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTrendyol_Finans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrendyol_Finans.Designer.cs">
+      <DependentUpon>frmTrendyol_Finans.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTrendyol_FirmaAdresBilgisi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -356,6 +418,12 @@
     </Compile>
     <Compile Include="frmTrendyol_MusteriSorları.Designer.cs">
       <DependentUpon>frmTrendyol_MusteriSorları.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrendyol_Siparis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrendyol_Siparis.Designer.cs">
+      <DependentUpon>frmTrendyol_Siparis.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTrendyol_Ürün_Aktif.cs">
       <SubType>Form</SubType>
@@ -385,12 +453,20 @@
       <DependentUpon>Report.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlConnectionObject.cs" />
+    <Compile Include="Trendyol_finans.cs" />
+    <Compile Include="trendyol_siparis.cs" />
     <Compile Include="XtraReport1.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="XtraReport1.Designer.cs">
       <DependentUpon>XtraReport1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="cogalt\frmFis_Bos.resx">
+      <DependentUpon>frmFis_Bos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cogalt\frmBul_Bos.resx">
+      <DependentUpon>frmBul_Bos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAnaSayfa.resx">
       <DependentUpon>frmAnaSayfa.cs</DependentUpon>
     </EmbeddedResource>
@@ -403,6 +479,9 @@
     <EmbeddedResource Include="frmBarkod.resx">
       <DependentUpon>frmBarkod.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCicekSepeti_Category.resx">
+      <DependentUpon>frmCicekSepeti_Category.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmConfig.resx">
       <DependentUpon>frmConfig.cs</DependentUpon>
     </EmbeddedResource>
@@ -412,11 +491,26 @@
     <EmbeddedResource Include="frmCristalReportView.resx">
       <DependentUpon>frmCristalReportView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDepo.ar.resx">
+      <DependentUpon>frmDepo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDepo.resx">
+      <DependentUpon>frmDepo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDepoAc.resx">
+      <DependentUpon>frmDepoAc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdepoBul.resx">
+      <DependentUpon>frmdepoBul.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDoviz.resx">
       <DependentUpon>frmDoviz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFirma.resx">
       <DependentUpon>frmFirma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFis_GC.resx">
+      <DependentUpon>frmFis_GC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFiyat.resx">
       <DependentUpon>frmFiyat.cs</DependentUpon>
@@ -475,17 +569,26 @@
     <EmbeddedResource Include="frmStokToplu.resx">
       <DependentUpon>frmStokToplu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmFis_Transfer.resx">
+      <DependentUpon>frmFis_Transfer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmTrendyol_Attributes.resx">
       <DependentUpon>frmTrendyol_Attributes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTrendyol_catogory.resx">
       <DependentUpon>frmTrendyol_catogory.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmTrendyol_Finans.resx">
+      <DependentUpon>frmTrendyol_Finans.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmTrendyol_FirmaAdresBilgisi.resx">
       <DependentUpon>frmTrendyol_FirmaAdresBilgisi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTrendyol_MusteriSorları.resx">
       <DependentUpon>frmTrendyol_MusteriSorları.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrendyol_Siparis.resx">
+      <DependentUpon>frmTrendyol_Siparis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTrendyol_Ürün_Aktif.resx">
       <DependentUpon>frmTrendyol_Ürün_Aktif.cs</DependentUpon>
@@ -506,6 +609,79 @@
       <DependentUpon>XtraReport1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
+    <None Include="Connected Services\parkServis\EFaturaIntegration.wsdl" />
+    <None Include="Connected Services\parkServis\Entegref.parkServis.CancelDraftInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.CreditNoteSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.DespatchSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.EArsivFaturaPdfAlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.ESmmPdfAlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.GelenFaturaPdfAlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.GIBUSER.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.GidenFaturaPdfAlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.GidenIrsaliyePdfAlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.GidenMustahsilPDFAlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.GidenTaslakFaturaPdfAlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.GtbResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.InvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.InvoiceSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.IrsaliyeKayitliMukellefListeleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.KayitliMukellefListeleByDateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.KayitliMukellefListeleDetayliTxtResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.KayitliMukellefListeleTxtResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.LoginRes.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.ParkInvoiceStatusRes.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.PARKInvoiceType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.ParkObjUblCevirResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.SendInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.Stylefiles.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="DownloadDefauldFile\UrunAc.xls" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -556,6 +732,14 @@
     <Folder Include="Pictures\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Çiçek Sepeti.png" />
+    <None Include="Connected Services\parkServis\EFaturaIntegration.disco" />
+    <None Include="Connected Services\parkServis\configuration91.svcinfo" />
+    <None Include="Connected Services\parkServis\configuration.svcinfo" />
+    <None Include="Connected Services\parkServis\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="ID\RegistryKey.txt" />
     <Content Include="ID\RegistryPath.txt" />
     <Content Include="CrsPictures\logo 150 tüm.png" />
@@ -569,6 +753,11 @@
     <Content Include="CrsPictures\logo_yon.png" />
     <Content Include="CrsPictures\logo_yon_new.png" />
     <Content Include="CrsPictures\logo_yon_new2.png" />
+    <None Include="Resources\geopointmap_16x16.png" />
+    <None Include="Resources\geopointmap_32x32.png" />
+    <None Include="Resources\accounting_32px.png" />
+    <None Include="Resources\currency_16x163.png" />
+    <None Include="Resources\currency_32x323.png" />
     <None Include="Resources\boproductgroup_16x16.png" />
     <None Include="Resources\boproductgroup_32x32.png" />
     <None Include="Resources\knowledgebasearticle_16x161.png" />
@@ -616,6 +805,9 @@
     <None Include="Resources\product_32x32.png" />
     <None Include="Resources\properties_32x32.png" />
     <None Include="Resources\Catalog-Integration.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\parkServis\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

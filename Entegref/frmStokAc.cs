@@ -76,12 +76,23 @@ namespace Entegref
         DataTable Urun = new DataTable();
         DataTable Fiyat = new DataTable();
 
+        //Trendyol Siniflar
         DataTable sinif1 = new DataTable();
         DataTable sinif2 = new DataTable();
         DataTable sinif3 = new DataTable();
         DataTable sinif4 = new DataTable();
         DataTable sinif5 = new DataTable();
         DataTable sinif6 = new DataTable();
+        //Ciceksepeti Siniflar
+        DataTable sinif7 = new DataTable();
+        DataTable sinif8 = new DataTable();
+        DataTable sinif9 = new DataTable();
+        DataTable sinif10 = new DataTable();
+        DataTable sinif11 = new DataTable();
+        DataTable sinif12 = new DataTable();
+
+
+        DataTable attribute_avp = new DataTable();
 
 
 
@@ -95,6 +106,12 @@ namespace Entegref
         public static string sinifsira4;
         public static string sinifsira5;
         public static string sinifsira6;
+        public static string sinifsira7;
+        public static string sinifsira8;
+        public static string sinifsira9;
+        public static string sinifsira10;
+        public static string sinifsira11;
+        public static string sinifsira12;
 
 
         public static string Fiyatlandirma;
@@ -105,6 +122,7 @@ namespace Entegref
         public static string BedenTipi;
         public static string KavalaTipi;
         public static bool Renk = false;
+        public static int Atturubite;
         public frmStokAc()
         {
             InitializeComponent();
@@ -148,11 +166,11 @@ namespace Entegref
 
             if (nStokID == null)
             {
-                //ultraTabControl1.VisibleTabs[1].Visible = false;
-                //ultraTabControl1.VisibleTabs[2].Visible = false;
-                //ultraTabControl1.VisibleTabs[3].Visible = false;
+                ultraTabControl1.VisibleTabs[1].Visible = false;
+                ultraTabControl1.VisibleTabs[2].Visible = false;
+                ultraTabControl1.VisibleTabs[3].Visible = false;
                 ultraTabControl1.VisibleTabs[4].Visible = false;
-                //ultraTabControl1.VisibleTabs[5].Visible = false;
+                ultraTabControl1.VisibleTabs[5].Visible = false;
                 ultraTabControl1.VisibleTabs[6].Visible = false;
             }
         }
@@ -202,6 +220,7 @@ namespace Entegref
         //Stok Aç
         private void ultraButton3_Click(object sender, EventArgs e)
         {
+            attribute_avp.Rows.Clear();
             if (txtStokKodu != null && txtStokKodu.Text != "")
             {
                 Markalar();
@@ -238,17 +257,27 @@ namespace Entegref
 
                     KavalaTipi = Urun.Rows[0]["sKavalaTipi"].ToString();
                     BedenTipi = Urun.Rows[0]["sBedenTipi"].ToString();
-                    bunifuCustomTextbox1.Text = Urun.Rows[0]["sAciklama"].ToString();
+                    txtsAciklama.Text = Urun.Rows[0]["sAciklama"].ToString();
                     cmbBirim1.Text = Urun.Rows[0]["sBirimCinsi1"].ToString();
                     cmbBirim2.Text = Urun.Rows[0]["sBirimCinsi2"].ToString();
                     cmbKDV.Text = Urun.Rows[0]["sKdvTipi"].ToString();
-                    bunifuCustomTextbox1.Text = Urun.Rows[0]["sAciklama"].ToString();
-                    sinifsira1 = Urun.Rows[0]["sSinifKodu20"].ToString().Replace(" ","");
-                    sinifsira2 = Urun.Rows[0]["sSinifKodu21"].ToString().Replace(" ","");
-                    sinifsira3 = Urun.Rows[0]["sSinifKodu22"].ToString().Replace(" ","");
-                    sinifsira4 = Urun.Rows[0]["sSinifKodu23"].ToString().Replace(" ","");
-                    sinifsira5 = Urun.Rows[0]["sSinifKodu24"].ToString().Replace(" ","");
-                    sinifsira6 = Urun.Rows[0]["sSinifKodu25"].ToString().Replace(" ","");
+                    txtMarka.Text = Urun.Rows[0]["sKisaAdi"].ToString().Substring(Urun.Rows[0]["sKisaAdi"].ToString().IndexOf("-") + 1);
+                    txtMarkaAra.Text = Urun.Rows[0]["sKisaAdi"].ToString().Substring(Urun.Rows[0]["sKisaAdi"].ToString().IndexOf("-") + 1);
+                    txtsAciklama.Text = Urun.Rows[0]["sAciklama"].ToString();
+                    miniHTMLTextBox1.Text = Urun.Rows[0]["sUzunNot"].ToString();
+                    sinifsira1 = Urun.Rows[0]["sSinifKodu1"].ToString().Replace(" ", "");
+                    sinifsira2 = Urun.Rows[0]["sSinifKodu2"].ToString().Replace(" ", "");
+                    sinifsira3 = Urun.Rows[0]["sSinifKodu3"].ToString().Replace(" ", "");
+                    sinifsira4 = Urun.Rows[0]["sSinifKodu4"].ToString().Replace(" ", "");
+                    sinifsira5 = Urun.Rows[0]["sSinifKodu5"].ToString().Replace(" ", "");
+                    sinifsira6 = Urun.Rows[0]["sSinifKodu6"].ToString().Replace(" ", "");
+                    sinifsira7 = Urun.Rows[0]["sSinifKodu7"].ToString().Replace(" ", "");
+                    sinifsira8 = Urun.Rows[0]["sSinifKodu8"].ToString().Replace(" ", "");
+                    sinifsira9 = Urun.Rows[0]["sSinifKodu9"].ToString().Replace(" ", "");
+                    sinifsira10 = Urun.Rows[0]["sSinifKodu10"].ToString().Replace(" ", "");
+                    sinifsira11 = Urun.Rows[0]["sSinifKodu11"].ToString().Replace(" ", "");
+                    sinifsira12 = Urun.Rows[0]["sSinifKodu12"].ToString().Replace(" ", "");
+
                     if (sinifsira1 != null)
                     {
                         if (cmbSinif1.SelectedValue == null)
@@ -266,21 +295,77 @@ namespace Entegref
                 }
                 else if (Urun.Rows.Count == 1)
                 {
+                    var st = Urun.Rows[0]["sKisaAdi"].ToString().Substring(Urun.Rows[0]["sKisaAdi"].ToString().IndexOf("-") + 1);
                     nStokID = Urun.Rows[0]["nStokID"].ToString();
+                    KavalaTipi = Urun.Rows[0]["sKavalaTipi"].ToString();
+                    BedenTipi = Urun.Rows[0]["sBedenTipi"].ToString();
+                    txtsAciklama.Text = Urun.Rows[0]["sAciklama"].ToString();
+                    cmbBirim1.Text = Urun.Rows[0]["sBirimCinsi1"].ToString();
+                    cmbBirim2.Text = Urun.Rows[0]["sBirimCinsi2"].ToString();
+                    cmbKDV.Text = Urun.Rows[0]["sKdvTipi"].ToString();
+                    txtMarka.Text = Urun.Rows[0]["sKisaAdi"].ToString().Substring(Urun.Rows[0]["sKisaAdi"].ToString().IndexOf("-") + 1);
+                    txtMarkaAra.Text = Urun.Rows[0]["sKisaAdi"].ToString().Substring(Urun.Rows[0]["sKisaAdi"].ToString().IndexOf("-") + 1);
+                    miniHTMLTextBox1.Text = Urun.Rows[0]["sUzunNot"].ToString();
+                    sinifsira1 = Urun.Rows[0]["sSinifKodu1"].ToString().Replace(" ", "");
+                    sinifsira2 = Urun.Rows[0]["sSinifKodu2"].ToString().Replace(" ", "");
+                    sinifsira3 = Urun.Rows[0]["sSinifKodu3"].ToString().Replace(" ", "");
+                    sinifsira4 = Urun.Rows[0]["sSinifKodu4"].ToString().Replace(" ", "");
+                    sinifsira5 = Urun.Rows[0]["sSinifKodu5"].ToString().Replace(" ", "");
+                    sinifsira6 = Urun.Rows[0]["sSinifKodu6"].ToString().Replace(" ", "");
+                    sinifsira7 = Urun.Rows[0]["sSinifKodu7"].ToString().Replace(" ", "");
+                    sinifsira8 = Urun.Rows[0]["sSinifKodu8"].ToString().Replace(" ", "");
+                    sinifsira9 = Urun.Rows[0]["sSinifKodu9"].ToString().Replace(" ", "");
+                    sinifsira10 = Urun.Rows[0]["sSinifKodu10"].ToString().Replace(" ", "");
+                    sinifsira11 = Urun.Rows[0]["sSinifKodu11"].ToString().Replace(" ", "");
+                    sinifsira12 = Urun.Rows[0]["sSinifKodu12"].ToString().Replace(" ", "");
+                    if (sinifsira1 != null)
+                    {
+                        if (cmbSinif1.SelectedValue == null)
+                        {
+                            cmbSinif1.DisplayMember = "sAciklama";
+                            cmbSinif1.ValueMember = "sSinifKodu";
+                            Dictionary<string, string> Prm = new Dictionary<string, string>();
+                            Prm.Add("@sira", "1");
+                            Prm.Add("@parentid", "0");
+                            sinif1 = conn.DfQuery("Sinif", Prm);
+                            cmbSinif1.DataSource = sinif1;
+                            cmbSinif1.SelectedValue = sinifsira1;
+                        }
+                    }
+                    if (sinifsira7 != null)
+                    {
+                        if (cmbSinif7.SelectedValue == null)
+                        {
+                            cmbSinif7.DisplayMember = "sAciklama";
+                            cmbSinif7.ValueMember = "sSinifKodu";
+                            Dictionary<string, string> Prm = new Dictionary<string, string>();
+                            Prm.Add("@sira", "7");
+                            Prm.Add("@parentid", "0");
+                            sinif1 = conn.DfQuery("Sinif2", Prm);
+                            cmbSinif7.DataSource = sinif1;
+                            cmbSinif7.SelectedValue = sinifsira7;
+                        }
+
+                    }
+
+
                 }
                 else
                 {
-                    int sira = 0;
-                    for (int i = 0; i < sRenkKodu.Length/3; i++)
+                    if (frmStokAc.sRenkKodu != null)
                     {
-                        if (i!=0)
+                        int sira = 0;
+                        for (int i = 0; i < sRenkKodu.Length / 3; i++)
                         {
-                            sira += 4;
+                            if (i != 0)
+                            {
+                                sira += 4;
+                            }
+                            renkolanlar.Rows.Add(new object[] { "", "", sRenkKodu.Substring(sira, 3), "", "" });
                         }
-                        renkolanlar.Rows.Add(new object[] { "","",sRenkKodu.Substring(sira, 3),"","" });
+                        //renkolanlar.Clear();
+                        //renkolanlar.Rows.Add(new object[] { sRenkKodu.Substring(0, 3), sRenkKodu.Substring(4, 3), sRenkKodu.Substring(8, 3) });
                     }
-                    //renkolanlar.Clear();
-                    //renkolanlar.Rows.Add(new object[] { sRenkKodu.Substring(0, 3), sRenkKodu.Substring(4, 3), sRenkKodu.Substring(8, 3) });
                 }
                 btnStokBul.Enabled = false;
                 ultraButton1.Enabled = false;
@@ -291,6 +376,7 @@ namespace Entegref
                 ultraTabControl1.VisibleTabs[3].Visible = true;
                 ultraTabControl1.VisibleTabs[4].Visible = true;
                 ultraTabControl1.VisibleTabs[5].Visible = true;
+                ultraTabControl1.VisibleTabs[6].Visible = true;
 
                 if (nStokID != null && nStokID != "")
                 {
@@ -348,61 +434,72 @@ namespace Entegref
                     sinif1 = conn.DfQuery("Sinif", Prm);
                     cmbSinif1.DataSource = sinif1;
                 }
+                if (cmbSinif7.SelectedValue == null)
+                {
+                    cmbSinif7.DisplayMember = "sAciklama";
+                    cmbSinif7.ValueMember = "sSinifKodu";
+                    Dictionary<string, string> Prm = new Dictionary<string, string>();
+                    Prm.Add("@sira", "7");
+                    Prm.Add("@parentid", "0");
+                    sinif7 = conn.DfQuery("Sinif2", Prm);
+                    cmbSinif7.DataSource = sinif7;
+                }
             }
             else if (e.Tab.Text == "Renk Beden Kavala")
             {
                 if (nStokID != null)
                 {
-                    dataGridView1.DataSource = null;
-                    pnlRenkBedenOlan.Dock = DockStyle.Fill;
-                    pnlRenkBeden.Visible = false;
-                    string renk = "";
-                    for (int i = 0; i < renkolanlar.Rows.Count; i++)
-                    {
-                        if (renk == "")
-                        {
-                            renk = renkolanlar.Rows[i][2].ToString();
-                        }
-                        else if (renk != renkolanlar.Rows[i][2].ToString())
-                        {
-                            renk = renk.ToString() + "," + renkolanlar.Rows[i][2].ToString();
-                        }
-                    }
-                    Dictionary<string, string> MM = new Dictionary<string, string>();
-                    MM.Add("@smodel", txtStokKodu.Text.Substring(0, 12));
-                    if (string.IsNullOrEmpty(KavalaTipi) == true)
-                    {
-                        MM.Add("@sKavalaTipi", "");
-                    }
-                    else
-                    {
-                        MM.Add("@sKavalaTipi", KavalaTipi.ToString());
-                    }
-                    if (string.IsNullOrEmpty(KavalaTipi) == true)
-                    {
-                        MM.Add("@sBedenTipi", "");
-                    }
-                    else
-                    {
-                        MM.Add("@sBedenTipi", BedenTipi);
-                    }
-                    MM.Add("@sRenkKodu", renk);
-                    var dt = conn.DfQuery("Entegref_Urun_Renk_Beden_Kavala_Sec", MM);
-                    dataGridView1.DataSource = dt;
-                    dataGridView1.AutoResizeColumns();
+                    RenkBedenTablo();
+                    //dataGridView1.DataSource = null;
+                    //pnlRenkBedenOlan.Dock = DockStyle.Fill;
+                    //pnlRenkBeden.Visible = false;
+                    //string renk = "";
+                    //for (int i = 0; i < renkolanlar.Rows.Count; i++)
+                    //{
+                    //    if (renk == "")
+                    //    {
+                    //        renk = renkolanlar.Rows[i][2].ToString();
+                    //    }
+                    //    else if (renk != renkolanlar.Rows[i][2].ToString())
+                    //    {
+                    //        renk = renk.ToString() + "," + renkolanlar.Rows[i][2].ToString();
+                    //    }
+                    //}
+                    //Dictionary<string, string> MM = new Dictionary<string, string>();
+                    //MM.Add("@smodel", txtStokKodu.Text.Substring(0, 12));
+                    //if (string.IsNullOrEmpty(KavalaTipi) == true)
+                    //{
+                    //    MM.Add("@sKavalaTipi", "");
+                    //}
+                    //else
+                    //{
+                    //    MM.Add("@sKavalaTipi", KavalaTipi.ToString());
+                    //}
+                    //if (string.IsNullOrEmpty(KavalaTipi) == true)
+                    //{
+                    //    MM.Add("@sBedenTipi", "");
+                    //}
+                    //else
+                    //{
+                    //    MM.Add("@sBedenTipi", BedenTipi);
+                    //}
+                    //MM.Add("@sRenkKodu", renk);
+                    //var dt = conn.DfQuery("Entegref_Urun_Renk_Beden_Kavala_Sec", MM);
+                    //dataGridView1.DataSource = dt;
+                    //dataGridView1.AutoResizeColumns();
 
                 }
                 else
                 {
-                    //dataGridView1.DataSource = null;
-                    //dataGridView1.Visible = false;
-                    //pnlRenkBedenOlan.Visible = false;
-                    //pnlRenkBeden.Controls.Clear();
-                    //pnlRenkBeden.Dock = DockStyle.Fill;
-                    //frmRenk frmRenk = new frmRenk(Kavala, BedenTipi);
-                    //frmRenk.TopLevel = false;
-                    //pnlRenkBeden.Controls.Add(frmRenk);
-                    //frmRenk.Show();
+                    dataGridView1.DataSource = null;
+                    dataGridView1.Visible = false;
+                    pnlRenkBedenOlan.Visible = false;
+                    pnlRenkBeden.Controls.Clear();
+                    pnlRenkBeden.Dock = DockStyle.Fill;
+                    frmRenk frmRenk = new frmRenk(Kavala, BedenTipi);
+                    frmRenk.TopLevel = false;
+                    pnlRenkBeden.Controls.Add(frmRenk);
+                    frmRenk.Show();
                 }
             }
             else if (e.Tab.Text == "Barkod")
@@ -416,9 +513,10 @@ namespace Entegref
         }
         private void btnbarkod()
         {
+            Barkod.Clear();
             string query = "select sBarkod,(select sKodu from tbfirma f where f.nFirmaID = b.nFirmaID) as sFirmaKodu,sKarsiStokKodu,sKarsiStokAciklama from [39391097764].dbo.tbStokBarkodu b ";
             query = query + " inner join [39391097764].dbo.tbStok s on s.nStokID = b.nStokID";
-            query = query + " where s.sKodu = '" + txtStokKodu.Text.ToString() + "'";
+            query = query + " where s.sModel = '" + txtStokKodu.Text.ToString() + "'";
             System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand(query, connection);
             connection.Open();
             System.Data.SqlClient.SqlDataAdapter ad = new System.Data.SqlClient.SqlDataAdapter(cmd);
@@ -599,6 +697,46 @@ namespace Entegref
                 cmbMarka.DataSource = MRK;
             }
         }
+        public void RenkBedenTablo()
+        {
+            dataGridView1.DataSource = null;
+            pnlRenkBedenOlan.Dock = DockStyle.Fill;
+            pnlRenkBeden.Visible = false;
+            string renk = "";
+            for (int i = 0; i < renkolanlar.Rows.Count; i++)
+            {
+                if (renk == "")
+                {
+                    renk = renkolanlar.Rows[i][2].ToString();
+                }
+                else if (renk != renkolanlar.Rows[i][2].ToString())
+                {
+                    renk = renk.ToString() + "," + renkolanlar.Rows[i][2].ToString();
+                }
+            }
+            Dictionary<string, string> MM = new Dictionary<string, string>();
+            MM.Add("@smodel", txtStokKodu.Text.Substring(0, 12));
+            if (string.IsNullOrEmpty(KavalaTipi) == true)
+            {
+                MM.Add("@sKavalaTipi", "");
+            }
+            else
+            {
+                MM.Add("@sKavalaTipi", KavalaTipi.ToString());
+            }
+            if (string.IsNullOrEmpty(KavalaTipi) == true)
+            {
+                MM.Add("@sBedenTipi", "");
+            }
+            else
+            {
+                MM.Add("@sBedenTipi", BedenTipi);
+            }
+            MM.Add("@sRenkKodu", renk);
+            var dt = conn.DfQuery("Entegref_Urun_Renk_Beden_Kavala_Sec", MM);
+            dataGridView1.DataSource = dt;
+            dataGridView1.AutoResizeColumns();
+        }
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
             var url = "https://api.trendyol.com/sapigw/brands/by-name?name=" + txtMarkaAra.Text;
@@ -618,7 +756,7 @@ namespace Entegref
                 cmbMarka.DataSource = items;
             }
         }
-        DataTable attribute = new DataTable();
+        //Attribute
         public void UrunOzellikAc(string CatagoryID)
         {
             string url = "https://api.trendyol.com/sapigw/product-categories/" + CatagoryID.Substring(CatagoryID.IndexOf("-") + 1).Replace(" ", "") + "/attributes";
@@ -634,8 +772,31 @@ namespace Entegref
                 var CategoryAttributes = new List<CategoryAttribute>();
                 var AttributeValues = new List<AttributeValue>();
                 var CategoryAttribute = new CategoryAttribute();
+                if (attribute_avp.Columns.Count > 1)
+                {
+                    attribute_avp.Columns.Clear();
+                    attribute_avp.Rows.Clear();
+                }
+                //attribute_avp.Columns.Add("nAttributeID");
+                //attribute_avp.Columns.Add("sName");
+                //attribute_avp.Columns.Add("bRequired");
+                //attribute_avp.Columns.Add("bVarianter");
+                //attribute_avp.Columns.Add("nValueID");
+                //attribute_avp.Columns.Add("sValueName");
+
+                string q = "select nAttributeID,sName,bRequired,bVarianter,nValueID,sValueName from tbAttribute where sModel = '" + txtStokKodu.Text + "' order by 1,5";
+                SqlCommand cmd = new SqlCommand(q, connection);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                if (connection.State == ConnectionState.Closed)
+                {
+                    connection.Open();
+                }
+                da.Fill(attribute_avp);
+                connection.Close();
+
                 foreach (var item in myDeserializedClass.categoryAttributes)
                 {
+                    Dictionary<string, string> Attval = new Dictionary<string, string>();
                     if (item.allowCustom == false)
                     {
                         if (lblOzellik1.Tag == null)
@@ -643,7 +804,7 @@ namespace Entegref
                             if (item.required == true)
                             {
                                 lblOzellik1.Tag = item.attribute.id;
-                                lblOzellik1.Text = item.attribute.name + " ZORUNLU ALAN";
+                                lblOzellik1.Text = item.attribute.name + " *";
                                 chk2.Checked = true;
                             }
                             else
@@ -667,14 +828,20 @@ namespace Entegref
                                 persons.Add(d);
                             }
                             cmbOzellik1.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik1.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
                         }
-                        else
-                        if (lblOzellik2.Tag == null)
+                        else if (lblOzellik2.Tag == null)
                         {
                             if (item.required == true)
                             {
                                 lblOzellik2.Tag = item.attribute.id;
-                                lblOzellik2.Text = item.attribute.name + " ZORUNLU ALAN";
+                                lblOzellik2.Text = item.attribute.name;
                                 chk3.Checked = true;
                             }
                             else
@@ -698,14 +865,20 @@ namespace Entegref
                                 persons.Add(d);
                             }
                             cmbOzellik2.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik2.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
                         }
-                        else
-                        if (lblOzellik3.Tag == null)
+                        else if (lblOzellik3.Tag == null)
                         {
                             if (item.required == true)
                             {
                                 lblOzellik3.Tag = item.attribute.id;
-                                lblOzellik3.Text = item.attribute.name + " ZORUNLU ALAN";
+                                lblOzellik3.Text = item.attribute.name + "  *";
                                 chk4.Checked = true;
                             }
                             else
@@ -729,14 +902,20 @@ namespace Entegref
                                 persons.Add(d);
                             }
                             cmbOzellik3.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik3.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
                         }
-                        else
-                        if (lblOzellik4.Tag == null)
+                        else if (lblOzellik4.Tag == null)
                         {
                             if (item.required == true)
                             {
                                 lblOzellik4.Tag = item.attribute.id;
-                                lblOzellik4.Text = item.attribute.name + " ZORUNLU ALAN";
+                                lblOzellik4.Text = item.attribute.name + "  *";
                                 chk5.Checked = true;
                             }
                             else
@@ -760,14 +939,20 @@ namespace Entegref
                                 persons.Add(d);
                             }
                             cmbOzellik4.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik4.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
                         }
-                        else
-                        if (lblOzellik5.Tag == null)
+                        else if (lblOzellik5.Tag == null)
                         {
                             if (item.required == true)
                             {
                                 lblOzellik5.Tag = item.attribute.id;
-                                lblOzellik5.Text = item.attribute.name + " ZORUNLU ALAN";
+                                lblOzellik5.Text = item.attribute.name + "  *";
                                 chk6.Checked = true;
                             }
                             else
@@ -791,14 +976,20 @@ namespace Entegref
                                 persons.Add(d);
                             }
                             cmbOzellik5.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik5.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
                         }
-                        else
-                        if (lblOzellik6.Tag == null)
+                        else if (lblOzellik6.Tag == null)
                         {
                             if (item.required == true)
                             {
                                 lblOzellik6.Tag = item.attribute.id;
-                                lblOzellik6.Text = item.attribute.name + " ZORUNLU ALAN";
+                                lblOzellik6.Text = item.attribute.name + "  *";
                                 chk7.Checked = true;
                             }
                             else
@@ -822,14 +1013,20 @@ namespace Entegref
                                 persons.Add(d);
                             }
                             cmbOzellik6.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik6.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
                         }
-                        else
-                        if (lblOzellik7.Tag == null)
+                        else if (lblOzellik7.Tag == null)
                         {
                             if (item.required == true)
                             {
                                 lblOzellik7.Tag = item.attribute.id;
-                                lblOzellik7.Text = item.attribute.name + " ZORUNLU ALAN";
+                                lblOzellik7.Text = item.attribute.name + "  *";
                                 chk8.Checked = true;
                             }
                             else
@@ -853,14 +1050,20 @@ namespace Entegref
                                 persons.Add(d);
                             }
                             cmbOzellik7.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik7.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
                         }
-                        else
-                        if (lblOzellik8.Tag == null)
+                        else if (lblOzellik8.Tag == null)
                         {
                             if (item.required == true)
                             {
                                 lblOzellik8.Tag = item.attribute.id;
-                                lblOzellik8.Text = item.attribute.name + " ZORUNLU ALAN";
+                                lblOzellik8.Text = item.attribute.name + "  *";
                                 chk9.Checked = true;
                             }
                             else
@@ -884,14 +1087,20 @@ namespace Entegref
                                 persons.Add(d);
                             }
                             cmbOzellik8.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik8.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
                         }
-                        else
-                        if (lblOzellik9.Tag == null)
+                        else if (lblOzellik9.Tag == null)
                         {
                             if (item.required == true)
                             {
                                 lblOzellik9.Tag = item.attribute.id;
-                                lblOzellik9.Text = item.attribute.name + " ZORUNLU ALAN";
+                                lblOzellik9.Text = item.attribute.name + "  *";
                                 chk10.Checked = true;
                             }
                             else
@@ -915,14 +1124,20 @@ namespace Entegref
                                 persons.Add(d);
                             }
                             cmbOzellik9.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik9.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
                         }
-                        else
-                        if (lblOzellik10.Tag == null)
+                        else if (lblOzellik10.Tag == null)
                         {
                             if (item.required == true)
                             {
                                 lblOzellik10.Tag = item.attribute.id;
-                                lblOzellik10.Text = item.attribute.name + " ZORUNLU ALAN";
+                                lblOzellik10.Text = item.attribute.name + "  *";
                                 chk11.Checked = true;
                             }
                             else
@@ -946,14 +1161,20 @@ namespace Entegref
                                 persons.Add(d);
                             }
                             cmbOzellik10.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik10.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
                         }
-                        else
-                        if (lblOzellik11.Tag == null)
+                        else if (lblOzellik11.Tag == null)
                         {
                             if (item.required == true)
                             {
                                 lblOzellik11.Tag = item.attribute.id;
-                                lblOzellik11.Text = item.attribute.name + " ZORUNLU ALAN";
+                                lblOzellik11.Text = item.attribute.name + "  *";
                                 chk12.Checked = true;
                             }
                             else
@@ -977,14 +1198,20 @@ namespace Entegref
                                 persons.Add(d);
                             }
                             cmbOzellik11.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik11.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
                         }
-                        else
-                        if (lblOzellik12.Tag == null)
+                        else if (lblOzellik12.Tag == null)
                         {
                             if (item.required == true)
                             {
                                 lblOzellik12.Tag = item.attribute.id;
-                                lblOzellik12.Text = item.attribute.name + " ZORUNLU ALAN";
+                                lblOzellik12.Text = item.attribute.name + "  *";
                                 chk13.Checked = true;
                             }
                             else
@@ -1008,14 +1235,20 @@ namespace Entegref
                                 persons.Add(d);
                             }
                             cmbOzellik12.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik12.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
                         }
-                        else
-                        if (lblOzellik13.Tag == null)
+                        else if (lblOzellik13.Tag == null)
                         {
                             if (item.required == true)
                             {
                                 lblOzellik13.Tag = item.attribute.id;
-                                lblOzellik13.Text = item.attribute.name + " ZORUNLU ALAN";
+                                lblOzellik13.Text = item.attribute.name + "  *";
                                 chk14.Checked = true;
                             }
                             else
@@ -1039,14 +1272,20 @@ namespace Entegref
                                 persons.Add(d);
                             }
                             cmbOzellik13.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik13.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
                         }
-                        else
-                        if (lblOzellik14.Tag == null)
+                        else if (lblOzellik14.Tag == null)
                         {
                             if (item.required == true)
                             {
                                 lblOzellik14.Tag = item.attribute.id;
-                                lblOzellik14.Text = item.attribute.name + " ZORUNLU ALAN";
+                                lblOzellik14.Text = item.attribute.name + "  *";
                                 chk15.Checked = true;
                             }
                             else
@@ -1070,14 +1309,20 @@ namespace Entegref
                                 persons.Add(d);
                             }
                             cmbOzellik14.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik14.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
                         }
-                        else
-                        if (lblOzellik15.Tag == null)
+                        else if (lblOzellik15.Tag == null)
                         {
                             if (item.required == true)
                             {
                                 lblOzellik15.Tag = item.attribute.id;
-                                lblOzellik15.Text = item.attribute.name + " ZORUNLU ALAN";
+                                lblOzellik15.Text = item.attribute.name + "  *";
                                 chk16.Checked = true;
                             }
                             else
@@ -1101,14 +1346,20 @@ namespace Entegref
                                 persons.Add(d);
                             }
                             cmbOzellik15.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik15.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
                         }
-                        else
-                        if (lblOzellik16.Tag == null)
+                        else if (lblOzellik16.Tag == null)
                         {
                             if (item.required == true)
                             {
                                 lblOzellik16.Tag = item.attribute.id;
-                                lblOzellik16.Text = item.attribute.name + " ZORUNLU ALAN";
+                                lblOzellik16.Text = item.attribute.name + "  *";
                                 chk17.Checked = true;
                             }
                             else
@@ -1132,14 +1383,20 @@ namespace Entegref
                                 persons.Add(d);
                             }
                             cmbOzellik16.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik16.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
                         }
-                        else
-                        if (lblOzellik17.Tag == null)
+                        else if (lblOzellik17.Tag == null)
                         {
                             if (item.required == true)
                             {
                                 lblOzellik17.Tag = item.attribute.id;
-                                lblOzellik17.Text = item.attribute.name + " ZORUNLU ALAN";
+                                lblOzellik17.Text = item.attribute.name + "  *";
                                 chk18.Checked = true;
                             }
                             else
@@ -1163,14 +1420,20 @@ namespace Entegref
                                 persons.Add(d);
                             }
                             cmbOzellik17.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik17.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
                         }
-                        else
-                        if (lblOzellik18.Tag == null)
+                        else if (lblOzellik18.Tag == null)
                         {
                             if (item.required == true)
                             {
                                 lblOzellik18.Tag = item.attribute.id;
-                                lblOzellik18.Text = item.attribute.name + " ZORUNLU ALAN";
+                                lblOzellik18.Text = item.attribute.name + "  *";
                                 chk19.Checked = true;
                             }
                             else
@@ -1194,14 +1457,20 @@ namespace Entegref
                                 persons.Add(d);
                             }
                             cmbOzellik18.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik18.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
                         }
-                        else
-                        if (lblOzellik19.Tag == null)
+                        else if (lblOzellik19.Tag == null)
                         {
                             if (item.required == true)
                             {
                                 lblOzellik19.Tag = item.attribute.id;
-                                lblOzellik19.Text = item.attribute.name + " ZORUNLU ALAN";
+                                lblOzellik19.Text = item.attribute.name + "  *";
                                 chk20.Checked = true;
                             }
                             else
@@ -1225,14 +1494,20 @@ namespace Entegref
                                 persons.Add(d);
                             }
                             cmbOzellik19.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik19.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
                         }
-                        else
-                        if (lblOzellik20.Tag == null)
+                        else if (lblOzellik20.Tag == null)
                         {
                             if (item.required == true)
                             {
                                 lblOzellik20.Tag = item.attribute.id;
-                                lblOzellik20.Text = item.attribute.name + " ZORUNLU ALAN";
+                                lblOzellik20.Text = item.attribute.name + "  *";
                                 chk20.Checked = true;
                             }
                             else
@@ -1256,13 +1531,569 @@ namespace Entegref
                                 persons.Add(d);
                             }
                             cmbOzellik20.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik20.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
                         }
+                        else if (lblOzellik21.Tag == null)
+                        {
+                            if (item.required == true)
+                            {
+                                lblOzellik21.Tag = item.attribute.id;
+                                lblOzellik21.Text = item.attribute.name + "  *";
+                                chk22.Checked = true;
+                            }
+                            else
+                            {
+                                lblOzellik21.Tag = item.attribute.id;
+                                lblOzellik21.Text = item.attribute.name;
+                                chk22.Checked = false;
+                            }
+                            cmbOzellik21.DisplayMember = "name";
+                            cmbOzellik21.ValueMember = "id";
+                            var persons = new List<Attribute>();
+                            var dd = new Attribute();
+                            dd.id = 0;
+                            dd.name = "Seçiniz....!";
+                            persons.Add(dd);
+                            foreach (var attributeValues in item.attributeValues)
+                            {
+                                var d = new Attribute();
+                                d.id = attributeValues.id;
+                                d.name = attributeValues.name;
+                                persons.Add(d);
+                            }
+                            cmbOzellik21.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik21.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
+                        }
+                        else if (lblOzellik22.Tag == null)
+                        {
+                            if (item.required == true)
+                            {
+                                lblOzellik22.Tag = item.attribute.id;
+                                lblOzellik22.Text = item.attribute.name + "  *";
+                                chk23.Checked = true;
+                            }
+                            else
+                            {
+                                lblOzellik22.Tag = item.attribute.id;
+                                lblOzellik22.Text = item.attribute.name;
+                                chk23.Checked = false;
+                            }
+                            cmbOzellik22.DisplayMember = "name";
+                            cmbOzellik22.ValueMember = "id";
+                            var persons = new List<Attribute>();
+                            var dd = new Attribute();
+                            dd.id = 0;
+                            dd.name = "Seçiniz....!";
+                            persons.Add(dd);
+                            foreach (var attributeValues in item.attributeValues)
+                            {
+                                var d = new Attribute();
+                                d.id = attributeValues.id;
+                                d.name = attributeValues.name;
+                                persons.Add(d);
+                            }
+                            cmbOzellik22.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik22.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
+
+                        }
+                        else if (lblOzellik23.Tag == null)
+                        {
+                            if (item.required == true)
+                            {
+                                lblOzellik23.Tag = item.attribute.id;
+                                lblOzellik23.Text = item.attribute.name + "  *";
+                                chk24.Checked = true;
+                            }
+                            else
+                            {
+                                lblOzellik23.Tag = item.attribute.id;
+                                lblOzellik23.Text = item.attribute.name;
+                                chk24.Checked = false;
+                            }
+                            cmbOzellik23.DisplayMember = "name";
+                            cmbOzellik23.ValueMember = "id";
+                            var persons = new List<Attribute>();
+                            var dd = new Attribute();
+                            dd.id = 0;
+                            dd.name = "Seçiniz....!";
+                            persons.Add(dd);
+                            foreach (var attributeValues in item.attributeValues)
+                            {
+                                var d = new Attribute();
+                                d.id = attributeValues.id;
+                                d.name = attributeValues.name;
+                                persons.Add(d);
+                            }
+                            cmbOzellik23.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik23.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
+                        }
+                        else if (lblOzellik24.Tag == null)
+                        {
+                            if (item.required == true)
+                            {
+                                lblOzellik24.Tag = item.attribute.id;
+                                lblOzellik24.Text = item.attribute.name + "  *";
+                                chk25.Checked = true;
+                            }
+                            else
+                            {
+                                lblOzellik24.Tag = item.attribute.id;
+                                lblOzellik24.Text = item.attribute.name;
+                                chk25.Checked = false;
+                            }
+                            cmbOzellik24.DisplayMember = "name";
+                            cmbOzellik24.ValueMember = "id";
+                            var persons = new List<Attribute>();
+                            var dd = new Attribute();
+                            dd.id = 0;
+                            dd.name = "Seçiniz....!";
+                            persons.Add(dd);
+                            foreach (var attributeValues in item.attributeValues)
+                            {
+                                var d = new Attribute();
+                                d.id = attributeValues.id;
+                                d.name = attributeValues.name;
+                                persons.Add(d);
+                            }
+                            cmbOzellik24.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik24.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
+
+                        }
+                        else if (lblOzellik25.Tag == null)
+                        {
+                            if (item.required == true)
+                            {
+                                lblOzellik25.Tag = item.attribute.id;
+                                lblOzellik25.Text = item.attribute.name + "  *";
+                                chk26.Checked = true;
+                            }
+                            else
+                            {
+                                lblOzellik25.Tag = item.attribute.id;
+                                lblOzellik25.Text = item.attribute.name;
+                                chk26.Checked = false;
+                            }
+                            cmbOzellik25.DisplayMember = "name";
+                            cmbOzellik25.ValueMember = "id";
+                            var persons = new List<Attribute>();
+                            var dd = new Attribute();
+                            dd.id = 0;
+                            dd.name = "Seçiniz....!";
+                            persons.Add(dd);
+                            foreach (var attributeValues in item.attributeValues)
+                            {
+                                var d = new Attribute();
+                                d.id = attributeValues.id;
+                                d.name = attributeValues.name;
+                                persons.Add(d);
+                            }
+                            cmbOzellik25.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik25.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
+
+                        }
+                        else if (lblOzellik26.Tag == null)
+                        {
+                            if (item.required == true)
+                            {
+                                lblOzellik26.Tag = item.attribute.id;
+                                lblOzellik26.Text = item.attribute.name + "  *";
+                                chk27.Checked = true;
+                            }
+                            else
+                            {
+                                lblOzellik26.Tag = item.attribute.id;
+                                lblOzellik26.Text = item.attribute.name;
+                                chk27.Checked = false;
+                            }
+                            cmbOzellik26.DisplayMember = "name";
+                            cmbOzellik26.ValueMember = "id";
+                            var persons = new List<Attribute>();
+                            var dd = new Attribute();
+                            dd.id = 0;
+                            dd.name = "Seçiniz....!";
+                            persons.Add(dd);
+                            foreach (var attributeValues in item.attributeValues)
+                            {
+                                var d = new Attribute();
+                                d.id = attributeValues.id;
+                                d.name = attributeValues.name;
+                                persons.Add(d);
+                            }
+                            cmbOzellik26.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik26.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
+
+                        }
+                        else if (lblOzellik27.Tag == null)
+                        {
+                            if (item.required == true)
+                            {
+                                lblOzellik27.Tag = item.attribute.id;
+                                lblOzellik27.Text = item.attribute.name + "  *";
+                                chk28.Checked = true;
+                            }
+                            else
+                            {
+                                lblOzellik27.Tag = item.attribute.id;
+                                lblOzellik27.Text = item.attribute.name;
+                                chk28.Checked = false;
+                            }
+                            cmbOzellik27.DisplayMember = "name";
+                            cmbOzellik27.ValueMember = "id";
+                            var persons = new List<Attribute>();
+                            var dd = new Attribute();
+                            dd.id = 0;
+                            dd.name = "Seçiniz....!";
+                            persons.Add(dd);
+                            foreach (var attributeValues in item.attributeValues)
+                            {
+                                var d = new Attribute();
+                                d.id = attributeValues.id;
+                                d.name = attributeValues.name;
+                                persons.Add(d);
+                            }
+                            cmbOzellik27.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik27.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
+
+                        }
+                        else if (lblOzellik28.Tag == null)
+                        {
+                            if (item.required == true)
+                            {
+                                lblOzellik28.Tag = item.attribute.id;
+                                lblOzellik28.Text = item.attribute.name + "  *";
+                                chk29.Checked = true;
+                            }
+                            else
+                            {
+                                lblOzellik28.Tag = item.attribute.id;
+                                lblOzellik28.Text = item.attribute.name;
+                                chk29.Checked = false;
+                            }
+                            cmbOzellik28.DisplayMember = "name";
+                            cmbOzellik28.ValueMember = "id";
+                            var persons = new List<Attribute>();
+                            var dd = new Attribute();
+                            dd.id = 0;
+                            dd.name = "Seçiniz....!";
+                            persons.Add(dd);
+                            foreach (var attributeValues in item.attributeValues)
+                            {
+                                var d = new Attribute();
+                                d.id = attributeValues.id;
+                                d.name = attributeValues.name;
+                                persons.Add(d);
+                            }
+                            cmbOzellik28.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik28.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
+
+                        }
+                        else if (lblOzellik29.Tag == null)
+                        {
+                            if (item.required == true)
+                            {
+                                lblOzellik29.Tag = item.attribute.id;
+                                lblOzellik29.Text = item.attribute.name + "  *";
+                                chk30.Checked = true;
+                            }
+                            else
+                            {
+                                lblOzellik29.Tag = item.attribute.id;
+                                lblOzellik29.Text = item.attribute.name;
+                                chk30.Checked = false;
+                            }
+                            cmbOzellik29.DisplayMember = "name";
+                            cmbOzellik29.ValueMember = "id";
+                            var persons = new List<Attribute>();
+                            var dd = new Attribute();
+                            dd.id = 0;
+                            dd.name = "Seçiniz....!";
+                            persons.Add(dd);
+                            foreach (var attributeValues in item.attributeValues)
+                            {
+                                var d = new Attribute();
+                                d.id = attributeValues.id;
+                                d.name = attributeValues.name;
+                                persons.Add(d);
+                            }
+                            cmbOzellik29.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik29.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
+
+                        }
+                        else if (lblOzellik30.Tag == null)
+                        {
+                            if (item.required == true)
+                            {
+                                lblOzellik30.Tag = item.attribute.id;
+                                lblOzellik30.Text = item.attribute.name + "  *";
+                                chk31.Checked = true;
+                            }
+                            else
+                            {
+                                lblOzellik30.Tag = item.attribute.id;
+                                lblOzellik30.Text = item.attribute.name;
+                                chk31.Checked = false;
+                            }
+                            cmbOzellik30.DisplayMember = "name";
+                            cmbOzellik30.ValueMember = "id";
+                            var persons = new List<Attribute>();
+                            var dd = new Attribute();
+                            dd.id = 0;
+                            dd.name = "Seçiniz....!";
+                            persons.Add(dd);
+                            foreach (var attributeValues in item.attributeValues)
+                            {
+                                var d = new Attribute();
+                                d.id = attributeValues.id;
+                                d.name = attributeValues.name;
+                                persons.Add(d);
+                            }
+                            cmbOzellik30.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik30.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
+
+                        }
+                        else if (lblOzellik31.Tag == null)
+                        {
+                            if (item.required == true)
+                            {
+                                lblOzellik31.Tag = item.attribute.id;
+                                lblOzellik31.Text = item.attribute.name + "  *";
+                                chk32.Checked = true;
+                            }
+                            else
+                            {
+                                lblOzellik31.Tag = item.attribute.id;
+                                lblOzellik31.Text = item.attribute.name;
+                                chk32.Checked = false;
+                            }
+                            cmbOzellik31.DisplayMember = "name";
+                            cmbOzellik31.ValueMember = "id";
+                            var persons = new List<Attribute>();
+                            var dd = new Attribute();
+                            dd.id = 0;
+                            dd.name = "Seçiniz....!";
+                            persons.Add(dd);
+                            foreach (var attributeValues in item.attributeValues)
+                            {
+                                var d = new Attribute();
+                                d.id = attributeValues.id;
+                                d.name = attributeValues.name;
+                                persons.Add(d);
+                            }
+                            cmbOzellik31.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik31.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
+
+                        }
+                        else if (lblOzellik32.Tag == null)
+                        {
+                            if (item.required == true)
+                            {
+                                lblOzellik32.Tag = item.attribute.id;
+                                lblOzellik32.Text = item.attribute.name + "  *";
+                                chk33.Checked = true;
+                            }
+                            else
+                            {
+                                lblOzellik32.Tag = item.attribute.id;
+                                lblOzellik32.Text = item.attribute.name;
+                                chk33.Checked = false;
+                            }
+                            cmbOzellik32.DisplayMember = "name";
+                            cmbOzellik32.ValueMember = "id";
+                            var persons = new List<Attribute>();
+                            var dd = new Attribute();
+                            dd.id = 0;
+                            dd.name = "Seçiniz....!";
+                            persons.Add(dd);
+                            foreach (var attributeValues in item.attributeValues)
+                            {
+                                var d = new Attribute();
+                                d.id = attributeValues.id;
+                                d.name = attributeValues.name;
+                                persons.Add(d);
+                            }
+                            cmbOzellik32.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik32.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
+
+                        }
+                        else if (lblOzellik33.Tag == null)
+                        {
+                            if (item.required == true)
+                            {
+                                lblOzellik33.Tag = item.attribute.id;
+                                lblOzellik33.Text = item.attribute.name + "  *";
+                                chk34.Checked = true;
+                            }
+                            else
+                            {
+                                lblOzellik33.Tag = item.attribute.id;
+                                lblOzellik33.Text = item.attribute.name;
+                                chk34.Checked = false;
+                            }
+                            cmbOzellik33.DisplayMember = "name";
+                            cmbOzellik33.ValueMember = "id";
+                            var persons = new List<Attribute>();
+                            var dd = new Attribute();
+                            dd.id = 0;
+                            dd.name = "Seçiniz....!";
+                            persons.Add(dd);
+                            foreach (var attributeValues in item.attributeValues)
+                            {
+                                var d = new Attribute();
+                                d.id = attributeValues.id;
+                                d.name = attributeValues.name;
+                                persons.Add(d);
+                            }
+                            cmbOzellik33.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik33.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
+
+                        }
+                        else if (lblOzellik34.Tag == null)
+                        {
+                            if (item.required == true)
+                            {
+                                lblOzellik34.Tag = item.attribute.id;
+                                lblOzellik34.Text = item.attribute.name + "  *";
+                                chk35.Checked = true;
+                            }
+                            else
+                            {
+                                lblOzellik34.Tag = item.attribute.id;
+                                lblOzellik34.Text = item.attribute.name;
+                                chk35.Checked = false;
+                            }
+                            cmbOzellik34.DisplayMember = "name";
+                            cmbOzellik34.ValueMember = "id";
+                            var persons = new List<Attribute>();
+                            var dd = new Attribute();
+                            dd.id = 0;
+                            dd.name = "Seçiniz....!";
+                            persons.Add(dd);
+                            foreach (var attributeValues in item.attributeValues)
+                            {
+                                var d = new Attribute();
+                                d.id = attributeValues.id;
+                                d.name = attributeValues.name;
+                                persons.Add(d);
+                            }
+                            cmbOzellik34.DataSource = persons;
+                            for (int i = 0; i < attribute_avp.Rows.Count; i++)
+                            {
+                                if (attribute_avp.Rows[i]["nAttributeID"].ToString() == item.attribute.id.ToString())
+                                {
+                                    cmbOzellik34.SelectedValue = attribute_avp.Rows[i]["nValueID"];
+                                }
+                            }
+
+                        }
+
+                        int required = 0;
+                        if (item.required == true)
+                        {
+                            required = 1;
+                        }
+                        else
+                        {
+                            required = 0;
+                        }
+                        Attval.Add("@Model", txtStokKodu.Text.ToString());
+                        Attval.Add("@CategoryID", CatagoryID.ToString());
+                        Attval.Add("@Required", required.ToString());
+                        Attval.Add("@Varianter", "0");
+                        Attval.Add("@AttributeID", item.attribute.id.ToString());
+                        Attval.Add("@Name", item.attribute.name.ToString());
+                        Attval.Add("@ValueID", "0");
+                        Attval.Add("@ValueName", "");
+                        conn.DfInsert("Entegref_Create_Item_Attribute", Attval);
                     }
                     else
                     {
                         if (item.required == true)
                         {
-                            lblRenk.Text = item.attribute.name + " ZORUNLU ALAN";
+                            lblRenk.Text = item.attribute.name;
                             lblRenk.Tag = item.attribute.id;
                             chk1.Checked = true;
                         }
@@ -1283,112 +2114,249 @@ namespace Entegref
                                 txtRenk.Text = txtRenk.Text + "," + renkolanlar.Rows[i][5].ToString();
                             }
                         }
+                        foreach (var Value in item.attributeValues)
+                        {
+                            var val = new AttributeValue();
+                            val.id = Value.id;
+                            val.name = Value.name;
+                        }
+
+                        int required = 0;
+                        if (item.required == true)
+                        {
+                            required = 1;
+                        }
+                        else
+                        {
+                            required = 0;
+                        }
+
+                        Attval.Add("@Model", txtStokKodu.Text.ToString());
+                        Attval.Add("@CategoryID", CatagoryID.ToString());
+                        Attval.Add("@Required", required.ToString());
+                        Attval.Add("@Varianter", "0");
+                        Attval.Add("@AttributeID", item.attribute.id.ToString());
+                        Attval.Add("@Name", item.attribute.name.ToString());
+                        Attval.Add("@ValueID", "0");
+                        Attval.Add("@ValueName", txtRenk.Text);
+                        conn.DfInsert("Entegref_Create_Item_Attribute", Attval);
+
+
+                        //attribute_avp.Rows.Add(new object[] { item.attribute.id, item.attribute.name, required ,0,0, txtRenk.Text });
                     }
-                    var deger = myDeserializedClass.categoryAttributes.Count;
-                    if (deger < 20)
+                    if (myDeserializedClass.categoryAttributes[0].attribute.name == "Renk")
                     {
-                        lblOzellik20.Visible = false;
-                        cmbOzellik20.Visible = false;
-                        chk21.Visible = false;
+                        Atturubite = myDeserializedClass.categoryAttributes.Count - 1;
                     }
-                    if (deger < 19)
+                    else
                     {
-                        lblOzellik19.Visible = false;
-                        cmbOzellik19.Visible = false;
-                        chk20.Visible = false;
+
+                        Atturubite = myDeserializedClass.categoryAttributes.Count;
                     }
-                    if (deger < 18)
-                    {
-                        lblOzellik18.Visible = false;
-                        cmbOzellik18.Visible = false;
-                        chk19.Visible = false;
-                    }
-                    if (deger < 17)
-                    {
-                        lblOzellik17.Visible = false;
-                        cmbOzellik17.Visible = false;
-                        chk18.Visible = false;
-                    }
-                    if (deger < 16)
-                    {
-                        lblOzellik16.Visible = false;
-                        cmbOzellik16.Visible = false;
-                        chk17.Visible = false;
-                    }
-                    if (deger < 15)
-                    {
-                        lblOzellik15.Visible = false;
-                        cmbOzellik15.Visible = false;
-                        chk16.Visible = false;
-                    }
-                    if (deger < 14)
-                    {
-                        lblOzellik14.Visible = false;
-                        cmbOzellik14.Visible = false;
-                        chk15.Visible = false;
-                    }
-                    if (deger < 13)
-                    {
-                        lblOzellik13.Visible = false;
-                        cmbOzellik13.Visible = false;
-                        chk14.Visible = false;
-                    }
-                    if (deger < 12)
-                    {
-                        lblOzellik12.Visible = false;
-                        cmbOzellik12.Visible = false;
-                        chk13.Visible = false;
-                    }
-                    if (deger < 11)
-                    {
-                        lblOzellik11.Visible = false;
-                        cmbOzellik11.Visible = false;
-                        chk12.Visible = false;
-                    }
-                    if (deger < 10)
-                    {
-                        lblOzellik10.Visible = false;
-                        cmbOzellik10.Visible = false;
-                        chk11.Visible = false;
-                    }
-                    if (deger < 9)
-                    {
-                        lblOzellik9.Visible = false;
-                        cmbOzellik9.Visible = false;
-                        chk10.Visible = false;
-                    }
-                    if (deger < 8)
-                    {
-                        lblOzellik8.Visible = false;
-                        cmbOzellik8.Visible = false;
-                        chk9.Visible = false;
-                    }
-                    if (deger < 7)
-                    {
-                        lblOzellik7.Visible = false;
-                        cmbOzellik7.Visible = false;
-                        chk8.Visible = false;
-                    }
-                    if (deger < 6)
-                    {
-                        lblOzellik6.Visible = false;
-                        cmbOzellik6.Visible = false;
-                        chk7.Visible = false;
-                    }
-                    if (deger < 5)
-                    {
-                        lblOzellik5.Visible = false;
-                        cmbOzellik5.Visible = false;
-                        chk6.Visible = false;
-                    }
-                    
-                    
+
+                }
+                if (Atturubite < 33)
+                {
+                    lblOzellik33.Visible = false;
+                    cmbOzellik33.Visible = false;
+                    chk34.Visible = false;
+                }
+                if (Atturubite < 32)
+                {
+                    lblOzellik32.Visible = false;
+                    cmbOzellik32.Visible = false;
+                    chk33.Visible = false;
+                }
+                if (Atturubite < 31)
+                {
+                    lblOzellik31.Visible = false;
+                    cmbOzellik31.Visible = false;
+                    chk32.Visible = false;
+                }
+                if (Atturubite < 30)
+                {
+                    lblOzellik30.Visible = false;
+                    cmbOzellik30.Visible = false;
+                    chk31.Visible = false;
+                }
+                if (Atturubite < 29)
+                {
+                    lblOzellik29.Visible = false;
+                    cmbOzellik29.Visible = false;
+                    chk30.Visible = false;
+                }
+                if (Atturubite < 28)
+                {
+                    lblOzellik28.Visible = false;
+                    cmbOzellik28.Visible = false;
+                    chk29.Visible = false;
+                }
+                if (Atturubite < 27)
+                {
+                    lblOzellik27.Visible = false;
+                    cmbOzellik27.Visible = false;
+                    chk28.Visible = false;
+                }
+                if (Atturubite < 26)
+                {
+                    lblOzellik26.Visible = false;
+                    cmbOzellik26.Visible = false;
+                    chk27.Visible = false;
+                }
+                if (Atturubite < 25)
+                {
+                    lblOzellik25.Visible = false;
+                    cmbOzellik25.Visible = false;
+                    chk26.Visible = false;
+                }
+                if (Atturubite < 24)
+                {
+                    lblOzellik24.Visible = false;
+                    cmbOzellik24.Visible = false;
+                    chk25.Visible = false;
+                }
+                if (Atturubite < 23)
+                {
+                    lblOzellik23.Visible = false;
+                    cmbOzellik23.Visible = false;
+                    chk24.Visible = false;
+                }
+                if (Atturubite < 22)
+                {
+                    lblOzellik22.Visible = false;
+                    cmbOzellik22.Visible = false;
+                    chk23.Visible = false;
+                }
+                if (Atturubite < 21)
+                {
+                    lblOzellik21.Visible = false;
+                    cmbOzellik21.Visible = false;
+                    chk22.Visible = false;
+                }
+                if (Atturubite < 20)
+                {
+                    PnlAttr3.Visible = false;
+                    lblOzellik20.Visible = false;
+                    cmbOzellik20.Visible = false;
+                    chk21.Visible = false;
+                }
+                if (Atturubite < 19)
+                {
+                    lblOzellik19.Visible = false;
+                    cmbOzellik19.Visible = false;
+                    chk20.Visible = false;
+                }
+                if (Atturubite < 18)
+                {
+                    lblOzellik18.Visible = false;
+                    cmbOzellik18.Visible = false;
+                    chk19.Visible = false;
+                }
+                if (Atturubite < 17)
+                {
+                    lblOzellik17.Visible = false;
+                    cmbOzellik17.Visible = false;
+                    chk18.Visible = false;
+                }
+                if (Atturubite < 16)
+                {
+                    lblOzellik16.Visible = false;
+                    cmbOzellik16.Visible = false;
+                    chk17.Visible = false;
+                }
+                if (Atturubite < 15)
+                {
+                    lblOzellik15.Visible = false;
+                    cmbOzellik15.Visible = false;
+                    chk16.Visible = false;
+                }
+                if (Atturubite < 14)
+                {
+                    lblOzellik14.Visible = false;
+                    cmbOzellik14.Visible = false;
+                    chk15.Visible = false;
+                }
+                if (Atturubite < 13)
+                {
+                    lblOzellik13.Visible = false;
+                    cmbOzellik13.Visible = false;
+                    chk14.Visible = false;
+                }
+                if (Atturubite < 12)
+                {
+                    lblOzellik12.Visible = false;
+                    cmbOzellik12.Visible = false;
+                    chk13.Visible = false;
+                }
+                if (Atturubite < 11)
+                {
+                    lblOzellik11.Visible = false;
+                    cmbOzellik11.Visible = false;
+                    chk12.Visible = false;
+                }
+                if (Atturubite < 10)
+                {
+                    PnlAttr2.Visible = false;
+                    PnlAttr3.Visible = false;
+                    lblOzellik10.Visible = false;
+                    cmbOzellik10.Visible = false;
+                    chk11.Visible = false;
+                }
+                if (Atturubite < 9)
+                {
+                    lblOzellik9.Visible = false;
+                    cmbOzellik9.Visible = false;
+                    chk10.Visible = false;
+                }
+                if (Atturubite < 8)
+                {
+                    lblOzellik8.Visible = false;
+                    cmbOzellik8.Visible = false;
+                    chk9.Visible = false;
+                }
+                if (Atturubite < 7)
+                {
+                    lblOzellik7.Visible = false;
+                    cmbOzellik7.Visible = false;
+                    chk8.Visible = false;
+                }
+                if (Atturubite < 6)
+                {
+                    lblOzellik6.Visible = false;
+                    cmbOzellik6.Visible = false;
+                    chk7.Visible = false;
+                }
+                if (Atturubite < 5)
+                {
+                    lblOzellik5.Visible = false;
+                    cmbOzellik5.Visible = false;
+                    chk6.Visible = false;
+                }
+                if (Atturubite < 4)
+                {
+                    lblOzellik4.Visible = false;
+                    cmbOzellik4.Visible = false;
+                    chk5.Visible = false;
+                }
+                if (Atturubite < 3)
+                {
+                    lblOzellik3.Visible = false;
+                    cmbOzellik3.Visible = false;
+                    chk3.Visible = false;
+                }
+                if (Atturubite < 2)
+                {
+                    lblOzellik2.Visible = false;
+                    cmbOzellik2.Visible = false;
+                    chk3.Visible = false;
+                }
+                if (Atturubite < 1)
+                {
+                    lblOzellik1.Visible = false;
+                    cmbOzellik1.Visible = false;
+                    chk1.Visible = false;
                 }
             }
-        }
-        private void vewAttribute_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
-        {
-
         }
         public void UrunOzellikAc3(string CatagoryID)
         {
@@ -1410,11 +2378,6 @@ namespace Entegref
                 string name1 = "lblbaslik";
                 string name2 = "txt";
                 string name3 = "cmb";
-                if (attribute.Columns.Count <2)
-                {
-                    attribute.Columns.Add("Name");
-                    attribute.Columns.Add("Tur");
-                }
                 foreach (var item in myDeserializedClass.categoryAttributes)
                 {
                     sira += 1;
@@ -1439,10 +2402,10 @@ namespace Entegref
                         };
                         if (item.required == true)
                         {
-                            lbl.Text = lbl.Text + "* Zorunlu Alan";
+                            lbl.Text = lbl.Text + "*  *";
                         }
-                        panel9.Controls.Add(lbl);
-                        panel9.Controls.Add(cmb1);
+                        PnlAttr1.Controls.Add(lbl);
+                        PnlAttr1.Controls.Add(cmb1);
                         cmb1.DisplayMember = "name";
                         cmb1.ValueMember = "id";
 
@@ -1459,10 +2422,6 @@ namespace Entegref
                             persons.Add(d);
                         }
                         cmb1.DataSource = persons;
-                        if (item.required == true)
-                        {
-                            attribute.Rows.Add(new object[] { cmb1.Name, "ComboBox" });
-                        }
 
                     }
                     else
@@ -1483,10 +2442,10 @@ namespace Entegref
                         };
                         if (item.required == true)
                         {
-                            label1.Text = label1.Text + "* Zorunlu Alan";
+                            label1.Text = label1.Text + "*  *";
                         }
-                        panel9.Controls.Add(label1);
-                        panel9.Controls.Add(Renk);
+                        PnlAttr1.Controls.Add(label1);
+                        PnlAttr1.Controls.Add(Renk);
                         for (int i = 0; i < renkolanlar.Rows.Count; i++)
                         {
                             if (Renk.Text == "")
@@ -1497,11 +2456,6 @@ namespace Entegref
                             {
                                 Renk.Text = Renk.Text + "," + renkolanlar.Rows[i][5].ToString();
                             }
-                        }
-
-                        if (item.required == true)
-                        {
-                            attribute.Rows.Add(new object[] { Renk.Name, "TextBox" });
                         }
                     }
                 }
@@ -1547,39 +2501,63 @@ namespace Entegref
             resim.Columns.Add("Resim Yolu");
             DataRow _ravi = resim.NewRow();
 
+            bool dosyadan = false;
 
-            if (txtStokKodu.Text != "" || txtStokKodu.Text == null)
+            Dictionary<string, string> Rsm = new Dictionary<string, string>();
+            Rsm.Add("@sModel", txtStokKodu.Text);
+            var resimler = conn.DfQuery("Entegref_Resim", Rsm);
+
+            for (int i = 0; i < resimler.Rows.Count; i++)
             {
+                if (resimler.Rows[i]["sLocation"].ToString() != "WEB")
+                {
+                    dosyadan = true;
+                }
+                else
+                {
+                    resim.Rows.Add(new object[] { resimler.Rows[i]["sResimAdi"].ToString(), resimler.Rows[i]["sLocation"].ToString() });
+                }
 
-                DirectoryInfo d = new DirectoryInfo(@"..\..\Pictures\");
-
-                FileInfo[] Files = d.GetFiles(txtStokKodu.Text.Replace(" ", "") + "*.png");
-                FileInfo[] Files2 = d.GetFiles(txtStokKodu.Text.Replace(" ", "") + "*.jpg");
-                FileInfo[] Files3 = d.GetFiles(txtStokKodu.Text.Replace(" ", "") + "*.gif");
-                FileInfo[] Files4 = d.GetFiles(txtStokKodu.Text.Replace(" ", "") + "*.jpeg");
-
-                foreach (FileInfo file in Files)
-                {
-                    resim.Rows.Add(new object[] { file.Name, file.FullName });
-                }
-                foreach (FileInfo file2 in Files2)
-                {
-                    resim.Rows.Add(new object[] { file2.Name, file2.FullName });
-                }
-                foreach (FileInfo file3 in Files3)
-                {
-                    resim.Rows.Add(new object[] { file3.Name, file3.FullName });
-                }
-                foreach (FileInfo file4 in Files4)
-                {
-                    resim.Rows.Add(new object[] { file4.Name, file4.FullName });
-                }
                 listBox1.DataSource = resim;
                 label20.Text = "Toplam Resim : " + listBox1.Items.Count.ToString();
             }
-            else
+            if (dosyadan == true)
             {
-                label20.Text = "Toplam Resim : 0";
+
+
+                if (txtStokKodu.Text != "" || txtStokKodu.Text == null)
+                {
+
+                    DirectoryInfo d = new DirectoryInfo(@"..\..\Pictures\");
+
+                    FileInfo[] Files = d.GetFiles(txtStokKodu.Text.Replace(" ", "") + "*.png");
+                    FileInfo[] Files2 = d.GetFiles(txtStokKodu.Text.Replace(" ", "") + "*.jpg");
+                    FileInfo[] Files3 = d.GetFiles(txtStokKodu.Text.Replace(" ", "") + "*.gif");
+                    FileInfo[] Files4 = d.GetFiles(txtStokKodu.Text.Replace(" ", "") + "*.jpeg");
+
+                    foreach (FileInfo file in Files)
+                    {
+                        resim.Rows.Add(new object[] { file.Name, file.FullName });
+                    }
+                    foreach (FileInfo file2 in Files2)
+                    {
+                        resim.Rows.Add(new object[] { file2.Name, file2.FullName });
+                    }
+                    foreach (FileInfo file3 in Files3)
+                    {
+                        resim.Rows.Add(new object[] { file3.Name, file3.FullName });
+                    }
+                    foreach (FileInfo file4 in Files4)
+                    {
+                        resim.Rows.Add(new object[] { file4.Name, file4.FullName });
+                    }
+                    listBox1.DataSource = resim;
+                    label20.Text = "Toplam Resim : " + listBox1.Items.Count.ToString();
+                }
+                else
+                {
+                    label20.Text = "Toplam Resim : 0";
+                }
             }
         }
 
@@ -1612,13 +2590,18 @@ namespace Entegref
             int index = this.listBox1.IndexFromPoint(e.Location);
             if (index >= 0)
             {
-
-                var lst = listBox1.Items[index].ToString();
-
-                string file = @"..\..\Pictures\" + txtStokKodu.Text.ToString();
-                string dosya = listBox1.SelectedValue.ToString();
-                int satirno = listBox1.SelectedIndex;
-                pictureBox1.Image = Image.FromFile(dosya);
+                if (listBox1.SelectedValue.ToString() != "WEB")
+                {
+                    var lst = listBox1.Items[index].ToString();
+                    string file = @"..\..\Pictures\" + txtStokKodu.Text.ToString();
+                    string dosya = listBox1.SelectedValue.ToString();
+                    int satirno = listBox1.SelectedIndex;
+                    pictureBox1.Image = Image.FromFile(dosya);
+                }
+                else
+                {
+                    pictureBox1.Load(listBox1.GetItemText(listBox1.SelectedItem));
+                }
             }
         }
         private void simpleButton2_Click(object sender, EventArgs e)
@@ -1700,7 +2683,7 @@ namespace Entegref
 
         private void btnStokBul_Click(object sender, EventArgs e)
         {
-            frmStokBul stokBul = new frmStokBul();
+            frmStokBul stokBul = new frmStokBul(1);
             stokBul.ShowDialog();
             txtStokKodu.Text = sModel;
         }
@@ -2089,20 +3072,211 @@ namespace Entegref
 
         }
 
+
+        private void cmbSinif7_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbSinif7.SelectedValue != null)
+            {
+                cmbSinif8.DisplayMember = "sAciklama";
+                cmbSinif8.ValueMember = "sSinifKodu";
+                Dictionary<string, string> Prm = new Dictionary<string, string>();
+                Prm.Add("@sira", "8");
+                Prm.Add("@parentid", cmbSinif7.SelectedValue.ToString().Substring(cmbSinif7.SelectedValue.ToString().IndexOf("-") + 1).Replace(" ", ""));
+                sinif8 = conn.DfQuery("Sinif2", Prm);
+                if (sinif8.Rows.Count > 1)
+                {
+                    cmbSinif8.DataSource = sinif8;
+                    cmbSinif8.Enabled = true;
+                }
+                else
+                {
+                    sinif8.Clear();
+                    cmbSinif8.Enabled = false;
+                    cmbSinif8.DataSource = null;
+                }
+
+            }
+            else
+            {
+                sinif8.Clear();
+                cmbSinif8.Enabled = false;
+                cmbSinif8.DataSource = null;
+                sinif9.Clear();
+                cmbSinif9.Enabled = false;
+                cmbSinif9.DataSource = null;
+                sinif10.Clear();
+                cmbSinif10.Enabled = false;
+                cmbSinif10.DataSource = null;
+                sinif11.Clear();
+                cmbSinif11.Enabled = false;
+                cmbSinif11.DataSource = null;
+                sinif12.Clear();
+                cmbSinif12.Enabled = false;
+                cmbSinif12.DataSource = null;
+            }
+
+        }
+
+        private void cmbSinif8_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbSinif8.SelectedValue != null)
+            {
+                cmbSinif9.DisplayMember = "sAciklama";
+                cmbSinif9.ValueMember = "sSinifKodu";
+                Dictionary<string, string> Prm = new Dictionary<string, string>();
+                Prm.Add("@sira", "9");
+                Prm.Add("@parentid", cmbSinif8.SelectedValue.ToString().Substring(cmbSinif8.SelectedValue.ToString().IndexOf("-") + 1).Replace(" ", ""));
+                sinif9 = conn.DfQuery("Sinif2", Prm);
+                if (sinif9.Rows.Count > 1)
+                {
+                    cmbSinif9.DataSource = sinif9;
+                    cmbSinif9.Enabled = true;
+                }
+                else
+                {
+                    sinif9.Clear();
+                    cmbSinif9.Enabled = false;
+                    cmbSinif9.DataSource = null;
+                }
+
+            }
+            else
+            {
+                sinif9.Clear();
+                cmbSinif9.Enabled = false;
+                cmbSinif9.DataSource = null;
+                sinif10.Clear();
+                cmbSinif10.Enabled = false;
+                cmbSinif10.DataSource = null;
+                sinif11.Clear();
+                cmbSinif11.Enabled = false;
+                cmbSinif11.DataSource = null;
+                sinif12.Clear();
+                cmbSinif12.Enabled = false;
+                cmbSinif12.DataSource = null;
+            }
+        }
+
+        private void cmbSinif9_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbSinif9.SelectedValue != null)
+            {
+                cmbSinif10.DisplayMember = "sAciklama";
+                cmbSinif10.ValueMember = "sSinifKodu";
+                Dictionary<string, string> Prm = new Dictionary<string, string>();
+                Prm.Add("@sira", "10");
+                Prm.Add("@parentid", cmbSinif9.SelectedValue.ToString().Substring(cmbSinif9.SelectedValue.ToString().IndexOf("-") + 1).Replace(" ", ""));
+                sinif10 = conn.DfQuery("Sinif2", Prm);
+                if (sinif10.Rows.Count > 1)
+                {
+                    cmbSinif10.DataSource = sinif10;
+                    cmbSinif10.Enabled = true;
+                }
+                else
+                {
+                    sinif10.Clear();
+                    cmbSinif10.Enabled = false;
+                    cmbSinif10.DataSource = null;
+                }
+
+            }
+            else
+            {
+                sinif10.Clear();
+                cmbSinif10.Enabled = false;
+                cmbSinif10.DataSource = null;
+                sinif11.Clear();
+                cmbSinif11.Enabled = false;
+                cmbSinif11.DataSource = null;
+                sinif12.Clear();
+                cmbSinif12.Enabled = false;
+                cmbSinif12.DataSource = null;
+            }
+
+        }
+
+        private void cmbSinif10_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbSinif11.SelectedValue != null)
+            {
+                cmbSinif11.DisplayMember = "sAciklama";
+                cmbSinif11.ValueMember = "sSinifKodu";
+                Dictionary<string, string> Prm = new Dictionary<string, string>();
+                Prm.Add("@sira", "11");
+                Prm.Add("@parentid", cmbSinif10.SelectedValue.ToString().Substring(cmbSinif10.SelectedValue.ToString().IndexOf("-") + 1).Replace(" ", ""));
+                sinif11 = conn.DfQuery("Sinif2", Prm);
+                if (sinif11.Rows.Count > 1)
+                {
+                    cmbSinif11.DataSource = sinif11;
+                    cmbSinif11.Enabled = true;
+                }
+                else
+                {
+                    sinif11.Clear();
+                    cmbSinif11.Enabled = false;
+                    cmbSinif11.DataSource = null;
+                }
+
+            }
+            else
+            {
+                sinif11.Clear();
+                cmbSinif11.Enabled = false;
+                cmbSinif11.DataSource = null;
+                sinif12.Clear();
+                cmbSinif12.Enabled = false;
+                cmbSinif12.DataSource = null;
+            }
+
+        }
+
+        private void cmbSinif11_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbSinif11.SelectedValue != null)
+            {
+                cmbSinif12.DisplayMember = "sAciklama";
+                cmbSinif12.ValueMember = "sSinifKodu";
+                Dictionary<string, string> Prm = new Dictionary<string, string>();
+                Prm.Add("@sira", "12");
+                Prm.Add("@parentid", cmbSinif11.SelectedValue.ToString().Substring(cmbSinif11.SelectedValue.ToString().IndexOf("-") + 1).Replace(" ", ""));
+                sinif12 = conn.DfQuery("Sinif2", Prm);
+                if (sinif12.Rows.Count > 1)
+                {
+                    cmbSinif12.DataSource = sinif8;
+                    cmbSinif12.Enabled = true;
+                }
+                else
+                {
+                    sinif12.Clear();
+                    cmbSinif12.Enabled = false;
+                    cmbSinif12.DataSource = null;
+                }
+
+            }
+            else
+            {
+                sinif12.Clear();
+                cmbSinif12.Enabled = false;
+                cmbSinif12.DataSource = null;
+            }
+
+        }
         renkbeden rnb;
         private void simpleButton5_Click(object sender, EventArgs e)
         {
             frmRenk frm = new frmRenk(KavalaTipi, BedenTipi);
             frm.ShowDialog();
+            RenkBedenTablo();
 
         }
 
         private void btnYeni_Click(object sender, EventArgs e)
         {
             new Root();
+            label20.Text = "Toplam Resim :";
             txtRenk.Text = null;
             lblRenk.Text = "Renk";
-
+            dataGridView1.DataSource = null;
             chk1.Checked = false;
             chk2.Checked = false;
             chk3.Checked = false;
@@ -2251,14 +3425,17 @@ namespace Entegref
             renkolanlar.Columns.Clear();
             txtStokKodu.Text = null;
             sRenkKodu = null;
-            bunifuCustomTextbox1.Text = null;
+            txtsAciklama.Text = null;
             bunifuCustomTextbox2.Text = null;
-            bunifuCustomTextbox3.Text = null;
+            txtMarka.Text = null;
             lblFiyattipi.Visible = false;
             nStokID = null;
-            //ultraTabControl1.VisibleTabs[1].Visible = false;
-            //ultraTabControl1.VisibleTabs[2].Visible = false;
-            //ultraTabControl1.VisibleTabs[3].Visible = false;
+            ultraTabControl1.VisibleTabs[1].Visible = false;
+            ultraTabControl1.VisibleTabs[2].Visible = false;
+            ultraTabControl1.VisibleTabs[3].Visible = false;
+            ultraTabControl1.VisibleTabs[4].Visible = false;
+            ultraTabControl1.VisibleTabs[5].Visible = false;
+            ultraTabControl1.VisibleTabs[6].Visible = false;
             btnStokBul.Enabled = true;
             ultraButton1.Enabled = true;
             ultraButton2.Enabled = true;
@@ -2292,124 +3469,356 @@ namespace Entegref
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            DataTable attribute_avp = new DataTable();
-            attribute_avp.Columns.Add("Selected");
-            attribute_avp.Columns.Add("Values");
-            for (int i = 0; i < attribute.Rows.Count; i++)
+            string CatogryID = "";
+            if (nStokID == null)
             {
-                var dt = attribute.Rows[i][0].ToString();
-                for (int ii = 0; ii < panel9.Controls.Count; ii++)
+                if (renkolanlar.Rows.Count > 0)
                 {
-                    if (panel9.Controls[ii].Name == dt)
+                    for (int i = 0; i < renkolanlar.Rows.Count; i++)
                     {
-                        if (attribute.Rows[i][1].ToString()=="TextBox")
+                        Dictionary<string, string> Stok = new Dictionary<string, string>();
+                        Stok.Add("@sKodu", txtStokKodu.Text);
+                        Stok.Add("@sAciklama", txtsAciklama.Text);
+                        Stok.Add("@sKisaAdi", cmbMarka.SelectedValue.ToString());
+                        Stok.Add("@nStokTipi", nStokTipi);
+                        Stok.Add("@sBedenTipi", renkolanlar.Rows[i]["sBedenTipi"].ToString());
+                        Stok.Add("@sKavalaTipi", renkolanlar.Rows[i]["sKavalaTipi"].ToString());
+                        Stok.Add("@sRenk", renkolanlar.Rows[i]["sRenk"].ToString());
+                        Stok.Add("@sBeden", renkolanlar.Rows[i]["sBeden"].ToString());
+                        Stok.Add("@sKavala", renkolanlar.Rows[i]["sKavala"].ToString());
+                        Stok.Add("@sBirimCinsi1", cmbBirim1.SelectedValue.ToString());
+                        Stok.Add("@sBirimCinsi2", cmbBirim2.SelectedValue.ToString());
+                        if (bunifuCustomTextbox5.Text == "")
                         {
-                            attribute_avp.Rows.Add(new object[] { panel9.Controls[ii - 1].Text.Replace("* Zorunlu Alan",""), panel9.Controls[ii].Text });
+                            Stok.Add("@nIskontoYuzdesi", "0");
                         }
                         else
                         {
-                            attribute_avp.Rows.Add(new object[] { panel9.Controls[ii - 1].Text.Replace("* Zorunlu Alan", ""), panel9.Controls[ii].Text });
+                            Stok.Add("@nIskontoYuzdesi", bunifuCustomTextbox5.Text);
                         }
+                        Stok.Add("@sKdvTipi", cmbKDV.SelectedValue.ToString());
+
+                        Stok.Add("@nTeminSuresi", "0");
+                        Stok.Add("@lAsgariMiktar", "0");
+                        Stok.Add("@lAzamiMiktar", "0");
+                        Stok.Add("@sOzelNot", bunifuCustomTextbox2.Text);
+                        Stok.Add("@nFiyatlandirma", nFiyatlandirma);
+                        Stok.Add("@sModel", txtStokKodu.Text);
+                        Stok.Add("@sKullaniciAdi", frmLogin.username);
+                        if (checkBox2.Checked == true)
+                        {
+                            Stok.Add("@bEksiyeDusulebilirmi", "1");
+                            Stok.Add("@bEksideUyarsinmi", "1");
+                        }
+                        else
+                        {
+                            Stok.Add("@bEksiyeDusulebilirmi", "0");
+                            Stok.Add("@bEksideUyarsinmi", "0");
+                        }
+                        if (checkBox1.Checked == true)
+                        {
+                            Stok.Add("@bOTVVar", "1");
+                            Stok.Add("@sOTVTipi", cmbOTV.SelectedValue.ToString());
+                        }
+                        else
+                        {
+                            Stok.Add("@bOTVVar", "0");
+                            Stok.Add("@sOTVTipi", "");
+                        }
+                        Stok.Add("@sUzunNote", miniHTMLTextBox1.Text);
+                        Stok.Add("@sSinifKodu20", cmbSinif1.SelectedValue.ToString().Substring(cmbSinif1.SelectedValue.ToString().IndexOf("-") + 1));
+                        Stok.Add("@sSinifKodu21", cmbSinif2.SelectedValue.ToString().Substring(cmbSinif2.SelectedValue.ToString().IndexOf("-") + 1));
+                        if (cmbSinif3.SelectedValue.ToString() == "00-0")
+                        {
+                            Stok.Add("@sSinifKodu22", "");
+                        }
+                        else
+                        {
+                            Stok.Add("@sSinifKodu22", cmbSinif3.SelectedValue.ToString().Substring(cmbSinif3.SelectedValue.ToString().IndexOf("-") + 1));
+                            CatogryID = cmbSinif3.SelectedValue.ToString().Substring(cmbSinif3.SelectedValue.ToString().IndexOf("-") + 1);
+                        }
+                        if (cmbSinif4.SelectedValue == null)
+                        {
+                            Stok.Add("@sSinifKodu23", "");
+                        }
+                        else
+                        {
+                            Stok.Add("@sSinifKodu23", cmbSinif4.SelectedValue.ToString().Substring(cmbSinif4.SelectedValue.ToString().IndexOf("-") + 1));
+                            CatogryID = cmbSinif4.SelectedValue.ToString().Substring(cmbSinif4.SelectedValue.ToString().IndexOf("-") + 1);
+                        }
+                        if (cmbSinif5.SelectedValue == null)
+                        {
+                            Stok.Add("@sSinifKodu24", "");
+                        }
+                        else
+                        {
+                            Stok.Add("@sSinifKodu24", cmbSinif5.SelectedValue.ToString().Substring(cmbSinif5.SelectedValue.ToString().IndexOf("-") + 1));
+                            CatogryID = cmbSinif5.SelectedValue.ToString().Substring(cmbSinif5.SelectedValue.ToString().IndexOf("-") + 1);
+                        }
+                        if (cmbSinif6.SelectedValue == null)
+                        {
+                            Stok.Add("@sSinifKodu25", "");
+                        }
+                        else
+                        {
+                            Stok.Add("@sSinifKodu25", cmbSinif6.SelectedValue.ToString().Substring(cmbSinif6.SelectedValue.ToString().IndexOf("-") + 1));
+                            CatogryID = cmbSinif6.SelectedValue.ToString().Substring(cmbSinif6.SelectedValue.ToString().IndexOf("-") + 1);
+                        }
+
+                        Stok.Add("@ReturnDesc", "");
+                        var newstk = conn.DfInsertBack("Entegref_Create_Item", Stok);
+                        if (nStokID != null)
+                        {
+                            nStokID = newstk.ToString();
+                        }
+                        else
+                        {
+                            nStokID = newstk.ToString();
+                        }
+
+                        for (int ii = 0; ii < attribute_avp.Rows.Count; ii++)
+                        {
+                            Dictionary<string, string> Attr = new Dictionary<string, string>();
+                            Attr.Add("@Model", txtStokKodu.Text.ToString());
+                            Attr.Add("@CategoryID", CatogryID.ToString());
+                            Attr.Add("@Required", attribute_avp.Rows[ii]["bRequired"].ToString());
+                            Attr.Add("@Varianter", attribute_avp.Rows[ii]["bVarianter"].ToString());
+                            Attr.Add("@AttributeID", attribute_avp.Rows[ii]["nAttributeID"].ToString());
+                            Attr.Add("@Name", attribute_avp.Rows[ii]["sName"].ToString());
+                            Attr.Add("@ValueID", attribute_avp.Rows[ii]["nValueID"].ToString());
+                            Attr.Add("@ValueName", attribute_avp.Rows[ii]["sValueName"].ToString());
+                            conn.DfInsert("Entegref_Create_Item_Attribute", Attr);
+                        }
+
                     }
-                    
+                }
+                else
+                {
+                    Dictionary<string, string> Stok1 = new Dictionary<string, string>();
+                    Stok1.Add("@sKodu", txtStokKodu.Text);
+                    Stok1.Add("@sAciklama", txtsAciklama.Text);
+                    Stok1.Add("@sKisaAdi", cmbMarka.SelectedValue.ToString());
+                    Stok1.Add("@nStokTipi", nStokTipi);
+                    Stok1.Add("@sBedenTipi", "");
+                    Stok1.Add("@sKavalaTipi", "");
+                    Stok1.Add("@sRenk", "");
+                    Stok1.Add("@sBeden", "");
+                    Stok1.Add("@sKavala", "");
+                    Stok1.Add("@sBirimCinsi1", cmbBirim1.SelectedValue.ToString());
+                    Stok1.Add("@sBirimCinsi2", cmbBirim2.SelectedValue.ToString());
+                    if (bunifuCustomTextbox5.Text == "")
+                    {
+                        Stok1.Add("@nIskontoYuzdesi", "0");
+                    }
+                    else
+                    {
+                        Stok1.Add("@nIskontoYuzdesi", bunifuCustomTextbox5.Text);
+                    }
+                    Stok1.Add("@sKdvTipi", cmbKDV.SelectedValue.ToString());
+
+                    Stok1.Add("@nTeminSuresi", "0");
+                    Stok1.Add("@lAsgariMiktar", "0");
+                    Stok1.Add("@lAzamiMiktar", "0");
+                    Stok1.Add("@sOzelNot", bunifuCustomTextbox2.Text);
+                    Stok1.Add("@nFiyatlandirma", nFiyatlandirma);
+                    Stok1.Add("@sModel", txtStokKodu.Text);
+                    Stok1.Add("@sKullaniciAdi", frmLogin.username);
+                    if (checkBox2.Checked == true)
+                    {
+                        Stok1.Add("@bEksiyeDusulebilirmi", "1");
+                        Stok1.Add("@bEksideUyarsinmi", "1");
+                    }
+                    else
+                    {
+                        Stok1.Add("@bEksiyeDusulebilirmi", "0");
+                        Stok1.Add("@bEksideUyarsinmi", "0");
+                    }
+                    if (checkBox1.Checked == true)
+                    {
+                        Stok1.Add("@bOTVVar", "1");
+                        Stok1.Add("@sOTVTipi", cmbOTV.SelectedValue.ToString());
+                    }
+                    else
+                    {
+                        Stok1.Add("@bOTVVar", "0");
+                        Stok1.Add("@sOTVTipi", "");
+                    }
+                    Stok1.Add("@sUzunNote", miniHTMLTextBox1.Text);
+                    Stok1.Add("@sSinifKodu20", cmbSinif1.SelectedValue.ToString().Substring(cmbSinif1.SelectedValue.ToString().IndexOf("-") + 1));
+                    Stok1.Add("@sSinifKodu21", cmbSinif2.SelectedValue.ToString().Substring(cmbSinif2.SelectedValue.ToString().IndexOf("-") + 1));
+                    if (cmbSinif3.SelectedValue.ToString() == "00-0")
+                    {
+                        Stok1.Add("@sSinifKodu22", "");
+                    }
+                    else
+                    {
+                        Stok1.Add("@sSinifKodu22", cmbSinif3.SelectedValue.ToString().Substring(cmbSinif3.SelectedValue.ToString().IndexOf("-") + 1));
+                        CatogryID = cmbSinif3.SelectedValue.ToString().Substring(cmbSinif3.SelectedValue.ToString().IndexOf("-") + 1);
+                    }
+                    if (cmbSinif4.SelectedValue == null)
+                    {
+                        Stok1.Add("@sSinifKodu23", "");
+                    }
+                    else
+                    {
+                        Stok1.Add("@sSinifKodu23", cmbSinif4.SelectedValue.ToString().Substring(cmbSinif4.SelectedValue.ToString().IndexOf("-") + 1));
+                        CatogryID = cmbSinif4.SelectedValue.ToString().Substring(cmbSinif4.SelectedValue.ToString().IndexOf("-") + 1);
+                    }
+                    if (cmbSinif5.SelectedValue == null)
+                    {
+                        Stok1.Add("@sSinifKodu24", "");
+                    }
+                    else
+                    {
+                        Stok1.Add("@sSinifKodu24", cmbSinif5.SelectedValue.ToString().Substring(cmbSinif5.SelectedValue.ToString().IndexOf("-") + 1));
+                        CatogryID = cmbSinif5.SelectedValue.ToString().Substring(cmbSinif5.SelectedValue.ToString().IndexOf("-") + 1);
+                    }
+                    if (cmbSinif6.SelectedValue == null)
+                    {
+                        Stok1.Add("@sSinifKodu25", "");
+                    }
+                    else
+                    {
+                        Stok1.Add("@sSinifKodu25", cmbSinif6.SelectedValue.ToString().Substring(cmbSinif6.SelectedValue.ToString().IndexOf("-") + 1));
+                        CatogryID = cmbSinif6.SelectedValue.ToString().Substring(cmbSinif6.SelectedValue.ToString().IndexOf("-") + 1);
+                    }
+                    Stok1.Add("@ReturnDesc", "");
+                    var newstk = conn.DfInsertBack("Entegref_Create_Item", Stok1);
+                    if (nStokID != null)
+                    {
+                        nStokID = newstk.ToString();
+                    }
+                    else
+                    {
+                        nStokID = newstk.ToString();
+                    }
+                    for (int ii = 0; ii < attribute_avp.Rows.Count; ii++)
+                    {
+                        Dictionary<string, string> Attr = new Dictionary<string, string>();
+                        Attr.Add("@Model", txtStokKodu.Text.ToString());
+                        Attr.Add("@CategoryID", CatogryID.ToString());
+                        Attr.Add("@Required", attribute_avp.Rows[ii]["bRequired"].ToString());
+                        Attr.Add("@Varianter", attribute_avp.Rows[ii]["bVarianter"].ToString());
+                        Attr.Add("@AttributeID", attribute_avp.Rows[ii]["nAttributeID"].ToString());
+                        Attr.Add("@Name", attribute_avp.Rows[ii]["sName"].ToString());
+                        Attr.Add("@ValueID", attribute_avp.Rows[ii]["nValueID"].ToString());
+                        Attr.Add("@ValueName", attribute_avp.Rows[ii]["sValueName"].ToString());
+                        conn.DfInsert("Entegref_Create_Item_Attribute", Attr);
+                    }
                 }
             }
-            for (int i = 0; i < renkolanlar.Rows.Count; i++)
+            else
             {
-                Dictionary<string, string> Stok = new Dictionary<string, string>();
-                Stok.Add("@sKodu", txtStokKodu.Text);
-                Stok.Add("@sAciklama", bunifuCustomTextbox1.Text);
-                Stok.Add("@sKisaAdi", cmbMarka.SelectedValue.ToString());
-                Stok.Add("@nStokTipi", nStokTipi);
-                Stok.Add("@sBedenTipi", renkolanlar.Rows[i]["sBedenTipi"].ToString());
-                Stok.Add("@sKavalaTipi", renkolanlar.Rows[i]["sKavalaTipi"].ToString());
-                Stok.Add("@sRenk", renkolanlar.Rows[i]["sRenk"].ToString());
-                Stok.Add("@sBeden", renkolanlar.Rows[i]["sBeden"].ToString());
-                Stok.Add("@sKavala", renkolanlar.Rows[i]["sKavala"].ToString());
-                Stok.Add("@sBirimCinsi1", cmbBirim1.SelectedValue.ToString());
-                Stok.Add("@sBirimCinsi2", cmbBirim2.SelectedValue.ToString());
-                if (bunifuCustomTextbox5.Text == "")
+                if (renkolanlar.Rows.Count > 0)
                 {
-                    Stok.Add("@nIskontoYuzdesi", "0");
-                }
-                else
-                {
-                Stok.Add("@nIskontoYuzdesi", bunifuCustomTextbox5.Text);
-                }
-                Stok.Add("@sKdvTipi", cmbKDV.SelectedValue.ToString());
+                    for (int i = 0; i < renkolanlar.Rows.Count; i++)
+                    {
+                        Dictionary<string, string> Stok1 = new Dictionary<string, string>();
+                        Stok1.Add("@sKodu", txtStokKodu.Text.Replace(" ", ""));
+                        Stok1.Add("@sAciklama", txtsAciklama.Text);
+                        Stok1.Add("@sKisaAdi", cmbMarka.SelectedValue.ToString() + "-" + txtMarkaAra.Text);
+                        Stok1.Add("@nStokTipi", nStokTipi);
+                        Stok1.Add("@sBedenTipi", renkolanlar.Rows[i]["sBedenTipi"].ToString());
+                        Stok1.Add("@sKavalaTipi", renkolanlar.Rows[i]["sKavalaTipi"].ToString());
+                        Stok1.Add("@sRenk", renkolanlar.Rows[i]["sRenk"].ToString());
+                        Stok1.Add("@sBeden", renkolanlar.Rows[i]["sBeden"].ToString());
+                        Stok1.Add("@sKavala", renkolanlar.Rows[i]["sKavala"].ToString());
+                        Stok1.Add("@sBirimCinsi1", cmbBirim1.SelectedValue.ToString());
+                        Stok1.Add("@sBirimCinsi2", cmbBirim2.SelectedValue.ToString());
+                        if (bunifuCustomTextbox5.Text == "")
+                        {
+                            Stok1.Add("@nIskontoYuzdesi", "0");
+                        }
+                        else
+                        {
+                            Stok1.Add("@nIskontoYuzdesi", bunifuCustomTextbox5.Text);
+                        }
+                        Stok1.Add("@sKdvTipi", cmbKDV.SelectedValue.ToString());
 
-                Stok.Add("@nTeminSuresi", "0");
-                Stok.Add("@lAsgariMiktar", "0");
-                Stok.Add("@lAzamiMiktar", "0");
-                Stok.Add("@sOzelNot", bunifuCustomTextbox2.Text);
-                Stok.Add("@nFiyatlandirma", nFiyatlandirma);
-                Stok.Add("@sModel", txtStokKodu.Text);
-                Stok.Add("@sKullaniciAdi", frmLogin.username);
-                if (checkBox2.Checked == true)
-                {
-                    Stok.Add("@bEksiyeDusulebilirmi", "1");
-                    Stok.Add("@bEksideUyarsinmi", "1");
+                        Stok1.Add("@nTeminSuresi", bunifuCustomTextbox4.Text);
+                        Stok1.Add("@lAsgariMiktar", bunifuCustomTextbox5.Text);
+                        Stok1.Add("@lAzamiMiktar", bunifuCustomTextbox6.Text);
+                        Stok1.Add("@sOzelNot", bunifuCustomTextbox2.Text);
+                        Stok1.Add("@nFiyatlandirma", nFiyatlandirma);
+                        Stok1.Add("@sModel", txtStokKodu.Text.Replace(" ", ""));
+                        Stok1.Add("@sKullaniciAdi", frmLogin.username);
+                        if (checkBox2.Checked == true)
+                        {
+                            Stok1.Add("@bEksiyeDusulebilirmi", "1");
+                            Stok1.Add("@bEksideUyarsinmi", "1");
+                        }
+                        else
+                        {
+                            Stok1.Add("@bEksiyeDusulebilirmi", "0");
+                            Stok1.Add("@bEksideUyarsinmi", "0");
+                        }
+                        if (checkBox1.Checked == true)
+                        {
+                            Stok1.Add("@bOTVVar", "1");
+                            Stok1.Add("@sOTVTipi", cmbOTV.SelectedValue.ToString());
+                        }
+                        else
+                        {
+                            Stok1.Add("@bOTVVar", "0");
+                            Stok1.Add("@sOTVTipi", "");
+                        }
+                        Stok1.Add("@sUzunNote", miniHTMLTextBox1.Text);
+                        Stok1.Add("@sSinifKodu20", cmbSinif1.SelectedValue.ToString().Substring(cmbSinif1.SelectedValue.ToString().IndexOf("-") + 1));
+                        Stok1.Add("@sSinifKodu21", cmbSinif2.SelectedValue.ToString().Substring(cmbSinif2.SelectedValue.ToString().IndexOf("-") + 1));
+                        if (cmbSinif3.SelectedValue.ToString() == "00-0")
+                        {
+                            Stok1.Add("@sSinifKodu22", "");
+                        }
+                        else
+                        {
+                            Stok1.Add("@sSinifKodu22", cmbSinif3.SelectedValue.ToString().Substring(cmbSinif3.SelectedValue.ToString().IndexOf("-") + 1));
+                            CatogryID = cmbSinif3.SelectedValue.ToString().Substring(cmbSinif3.SelectedValue.ToString().IndexOf("-") + 1);
+                        }
+                        if (cmbSinif4.SelectedValue == null)
+                        {
+                            Stok1.Add("@sSinifKodu23", "");
+                        }
+                        else
+                        {
+                            Stok1.Add("@sSinifKodu23", cmbSinif4.SelectedValue.ToString().Substring(cmbSinif4.SelectedValue.ToString().IndexOf("-") + 1));
+                            CatogryID = cmbSinif4.SelectedValue.ToString().Substring(cmbSinif4.SelectedValue.ToString().IndexOf("-") + 1);
+                        }
+                        if (cmbSinif5.SelectedValue == null)
+                        {
+                            Stok1.Add("@sSinifKodu24", "");
+                        }
+                        else
+                        {
+                            Stok1.Add("@sSinifKodu24", cmbSinif5.SelectedValue.ToString().Substring(cmbSinif5.SelectedValue.ToString().IndexOf("-") + 1));
+                            CatogryID = cmbSinif5.SelectedValue.ToString().Substring(cmbSinif5.SelectedValue.ToString().IndexOf("-") + 1);
+                        }
+                        if (cmbSinif6.SelectedValue == null)
+                        {
+                            Stok1.Add("@sSinifKodu25", "");
+                        }
+                        else
+                        {
+                            Stok1.Add("@sSinifKodu25", cmbSinif6.SelectedValue.ToString().Substring(cmbSinif6.SelectedValue.ToString().IndexOf("-") + 1));
+                            CatogryID = cmbSinif6.SelectedValue.ToString().Substring(cmbSinif6.SelectedValue.ToString().IndexOf("-") + 1);
+                        }
+                        conn.DfQuery("Entegref_Create_Item_Update", Stok1);
+                    }
                 }
-                else
-                {
-                    Stok.Add("@bEksiyeDusulebilirmi", "0");
-                    Stok.Add("@bEksideUyarsinmi", "0");
-                }
-                if (checkBox1.Checked == true)
-                {
-                    Stok.Add("@bOTVVar", "1");
-                    Stok.Add("@sOTVTipi", cmbOTV.SelectedValue.ToString());
-                }
-                else
-                {
-                    Stok.Add("@bOTVVar", "0");
-                    Stok.Add("@sOTVTipi", "");
-                }
-                Stok.Add("@sUzunNote", miniHTMLTextBox1.Text);
-                Stok.Add("@sSinifKodu20", cmbSinif1.SelectedValue.ToString().Substring(cmbSinif1.SelectedValue.ToString().IndexOf("-") + 1));
-                Stok.Add("@sSinifKodu21", cmbSinif2.SelectedValue.ToString().Substring(cmbSinif2.SelectedValue.ToString().IndexOf("-") + 1));
-                if (cmbSinif3.SelectedValue.ToString() == "00-0")
-                {
-                    Stok.Add("@sSinifKodu22", "");
-                }
-                else
-                {
-                    Stok.Add("@sSinifKodu22", cmbSinif3.SelectedValue.ToString().Substring(cmbSinif3.SelectedValue.ToString().IndexOf("-") + 1));
-                }
-                if (cmbSinif4.SelectedValue==null)
-                {
-                    Stok.Add("@sSinifKodu23", "");
-                }
-                else
-                {
-                    Stok.Add("@sSinifKodu23", cmbSinif4.SelectedValue.ToString().Substring(cmbSinif4.SelectedValue.ToString().IndexOf("-") + 1));
-                }
-                if (cmbSinif5.SelectedValue == null)
-                {
-                    Stok.Add("@sSinifKodu24", "");
-                }
-                else
-                {
-                    Stok.Add("@sSinifKodu24", cmbSinif5.SelectedValue.ToString().Substring(cmbSinif5.SelectedValue.ToString().IndexOf("-") + 1));
-                }
-                if (cmbSinif6.SelectedValue == null)
-                {
-                    Stok.Add("@sSinifKodu25", "");
-                }
-                else
-                {
-                    Stok.Add("@sSinifKodu25", cmbSinif6.SelectedValue.ToString().Substring(cmbSinif6.SelectedValue.ToString().IndexOf("-") + 1));
-                }
-                //Stok.Add("@attribute1",panel9.Controls.Count);
-                conn.DfInsert("Entegref_Create_Item", Stok);
 
-
+                for (int ii = 0; ii < attribute_avp.Rows.Count; ii++)
+                {
+                    Dictionary<string, string> Attr = new Dictionary<string, string>();
+                    Attr.Add("@Model", txtStokKodu.Text.ToString());
+                    Attr.Add("@CategoryID", CatogryID.ToString());
+                    Attr.Add("@Required", attribute_avp.Rows[ii]["bRequired"].ToString());
+                    Attr.Add("@Varianter", attribute_avp.Rows[ii]["bVarianter"].ToString());
+                    Attr.Add("@AttributeID", attribute_avp.Rows[ii]["nAttributeID"].ToString());
+                    Attr.Add("@Name", attribute_avp.Rows[ii]["sName"].ToString());
+                    Attr.Add("@ValueID", attribute_avp.Rows[ii]["nValueID"].ToString());
+                    Attr.Add("@ValueName", attribute_avp.Rows[ii]["sValueName"].ToString());
+                    conn.DfInsert("Entegref_Create_Item_Attribute", Attr);
+                }
             }
-
-            //if (nStokID != null)
-            //{  var dd = miniHTMLTextBox1.Text;
-            //    Dictionary<string, string> guncelle = new Dictionary<string, string>();
-            //}
         }
 
         private void btnSil_Click(object sender, EventArgs e)
@@ -2462,5 +3871,515 @@ namespace Entegref
                 btnBarkodIslem.Text = "SİL";
             }
         }
+
+        private void cmbOzellik1_SelectedValueChanged(object sender, EventArgs e)
+        {
+
+            //int bRequired = 0;
+            //if (chk1.Checked == true)
+            //{
+            //    bRequired = 1;
+            //}
+            //else
+            //{
+            //    bRequired = 0;
+            //}
+            //if (cmbOzellik1.SelectedValue == null || cmbOzellik1.SelectedValue.ToString() == "0")
+            //{
+            //    attribute_avp.Rows.Add(new object[] { lblOzellik1.Tag, lblOzellik1.Text, bRequired, 0, cmbOzellik1.SelectedValue, cmbOzellik1.SelectedText });
+            //}
+            //else
+            //{
+            //attribute_avp.Rows[1][0] = lblOzellik1.Tag;
+            //attribute_avp.Rows[1][1] = lblOzellik1.Text;
+            if (cmbOzellik1.SelectedValue != null)
+            {
+                attribute_avp.Rows[1][4] = cmbOzellik1.SelectedValue.ToString();
+                attribute_avp.Rows[1][5] = cmbOzellik1.Text;
+            }
+            //}
+        }
+        private void cmbOzellik2_SelectedValueChanged(object sender, EventArgs e)
+        {
+            //int bRequired = 0;
+            //if (chk2.Checked == true)
+            //{
+            //    bRequired = 1;
+            //}
+            //else
+            //{
+            //    bRequired = 0;
+            //}
+            //if (cmbOzellik2.SelectedValue == null || cmbOzellik2.SelectedValue.ToString() == "0")
+            //{
+            //    attribute_avp.Rows.Add(new object[] { lblOzellik2.Tag, lblOzellik2.Text, bRequired, 0, cmbOzellik2.SelectedValue, cmbOzellik2.SelectedText });
+            //}
+            //else
+            //{
+                if (cmbOzellik2.SelectedValue != null)
+                {
+                    //attribute_avp.Rows[2][0] = lblOzellik2.Tag;
+                    //attribute_avp.Rows[2][2] = lblOzellik2.Text;
+                    attribute_avp.Rows[2][4] = cmbOzellik2.SelectedValue;
+                    attribute_avp.Rows[2][5] = cmbOzellik2.Text;
+                }
+            //}
+        }
+        private void cmbOzellik3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //int bRequired = 0;
+            //if (chk3.Checked == true)
+            //{
+            //    bRequired = 1;
+            //}
+            //else
+            //{
+            //    bRequired = 0;
+            //}
+            //if (cmbOzellik3.SelectedValue == null || cmbOzellik3.SelectedValue.ToString() == "0")
+            //{
+            //    attribute_avp.Rows.Add(new object[] { lblOzellik3.Tag, lblOzellik3.Text, bRequired, 0, cmbOzellik3.SelectedValue, cmbOzellik3.SelectedText });
+            //}
+            //else
+            //{
+            //    attribute_avp.Rows[3][0] = lblOzellik3.Tag;
+            //    attribute_avp.Rows[3][1] = lblOzellik3.Text;
+            if (cmbOzellik3.SelectedValue != null)
+            {
+                attribute_avp.Rows[3][4] = cmbOzellik3.SelectedValue;
+                attribute_avp.Rows[3][5] = cmbOzellik3.Text;
+            }
+            //}
+        }
+        private void cmbOzellik4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //int bRequired = 0;
+            //if (chk4.Checked == true)
+            //{
+            //    bRequired = 1;
+            //}
+            //else
+            //{
+            //    bRequired = 0;
+            //}
+            //if (cmbOzellik4.SelectedValue == null || cmbOzellik4.SelectedValue.ToString() == "0")
+            //{
+            //    attribute_avp.Rows.Add(new object[] { lblOzellik4.Tag, lblOzellik4.Text, bRequired, 0, cmbOzellik4.SelectedValue, cmbOzellik4.SelectedText });
+            //}
+            //else
+            //{
+
+            //    attribute_avp.Rows[4][0] = lblOzellik4.Tag;
+            //    attribute_avp.Rows[4][1] = lblOzellik4.Text;
+            if (cmbOzellik4.SelectedValue != null)
+            {
+                attribute_avp.Rows[4][4] = cmbOzellik4.SelectedValue;
+                attribute_avp.Rows[4][5] = cmbOzellik4.Text;
+            }
+        }
+        private void cmbOzellik5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //int bRequired = 0;
+            //if (chk5.Checked == true)
+            //{
+            //    bRequired = 1;
+            //}
+            //else
+            //{
+            //    bRequired = 0;
+            //}
+            //if (cmbOzellik5.SelectedValue == null || cmbOzellik5.SelectedValue.ToString() == "0")
+            //{
+            //    attribute_avp.Rows.Add(new object[] { lblOzellik5.Tag, lblOzellik5.Text, bRequired, 0, cmbOzellik5.SelectedValue, cmbOzellik5.SelectedText });
+            //}
+            //else
+            //{
+            //    attribute_avp.Rows[5][0] = lblOzellik5.Tag;
+            //    attribute_avp.Rows[5][1] = lblOzellik5.Text;
+            if (cmbOzellik5.SelectedValue != null)
+            {
+                attribute_avp.Rows[5][5] = cmbOzellik5.SelectedValue;
+                attribute_avp.Rows[5][5] = cmbOzellik5.Text;
+            }
+        }
+        private void cmbOzellik6_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //int bRequired = 0;
+            //if (chk6.Checked == true)
+            //{
+            //    bRequired = 1;
+            //}
+            //else
+            //{
+            //    bRequired = 0;
+            //}
+            //if (cmbOzellik6.SelectedValue == null || cmbOzellik6.SelectedValue.ToString() == "0")
+            //{
+            //    attribute_avp.Rows.Add(new object[] { lblOzellik6.Tag, lblOzellik6.Text, bRequired, 0, cmbOzellik6.SelectedValue, cmbOzellik6.SelectedText });
+            //}
+            //else
+            //{
+            //    attribute_avp.Rows[6][0] = lblOzellik6.Tag;
+            //    attribute_avp.Rows[6][1] = lblOzellik6.Text;
+            if (cmbOzellik6.SelectedValue != null)
+            {
+                if (attribute_avp.Columns.Count>6)
+                {
+                    attribute_avp.Rows[6][4] = cmbOzellik6.SelectedValue;
+                    attribute_avp.Rows[6][6] = cmbOzellik6.Text;
+                }
+            }
+        }
+        private void cmbOzellik7_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //int bRequired = 0;
+            //if (chk7.Checked == true)
+            //{
+            //    bRequired = 1;
+            //}
+            //else
+            //{
+            //    bRequired = 0;
+            //}
+            //if (cmbOzellik7.SelectedValue == null || cmbOzellik7.SelectedValue.ToString() == "0")
+            //{
+            //    attribute_avp.Rows.Add(new object[] { lblOzellik7.Tag, lblOzellik7.Text, bRequired, 0, cmbOzellik7.SelectedValue, cmbOzellik7.SelectedText });
+            //}
+            //else
+            //{
+            //    attribute_avp.Rows[7][0] = lblOzellik7.Tag;
+            //    attribute_avp.Rows[7][1] = lblOzellik7.Text;
+            if (cmbOzellik7.SelectedValue != null)
+            {
+                attribute_avp.Rows[7][4] = cmbOzellik7.SelectedValue;
+                attribute_avp.Rows[7][5] = cmbOzellik7.Text;
+            }
+        }
+        private void cmbOzellik8_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //int bRequired = 0;
+            //if (chk8.Checked == true)
+            //{
+            //    bRequired = 1;
+            //}
+            //else
+            //{
+            //    bRequired = 0;
+            //}
+            //if (cmbOzellik8.SelectedValue == null || cmbOzellik8.SelectedValue.ToString() == "0")
+            //{
+            //    attribute_avp.Rows.Add(new object[] { lblOzellik8.Tag, lblOzellik8.Text, bRequired, 0, cmbOzellik8.SelectedValue, cmbOzellik8.SelectedText });
+            //}
+            //else
+            //{
+            //    attribute_avp.Rows[8][0] = lblOzellik8.Tag;
+            //    attribute_avp.Rows[8][1] = lblOzellik8.Text;
+            if (cmbOzellik8.SelectedValue != null)
+            {
+                attribute_avp.Rows[8][4] = cmbOzellik8.SelectedValue;
+                attribute_avp.Rows[8][5] = cmbOzellik8.Text;
+            }
+        }
+        private void cmbOzellik9_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //int bRequired = 0;
+            //if (chk9.Checked == true)
+            //{
+            //    bRequired = 1;
+            //}
+            //else
+            //{
+            //    bRequired = 0;
+            //}
+            //if (cmbOzellik9.SelectedValue == null || cmbOzellik9.SelectedValue.ToString() == "0")
+            //{
+            //    attribute_avp.Rows.Add(new object[] { lblOzellik9.Tag, lblOzellik9.Text, bRequired, 0, cmbOzellik9.SelectedValue, cmbOzellik9.SelectedText });
+            //}
+            //else
+            //{
+            //    attribute_avp.Rows[9][0] = lblOzellik9.Tag;
+            //    attribute_avp.Rows[9][1] = lblOzellik9.Text;
+            if (cmbOzellik9.SelectedValue != null)
+            {
+                attribute_avp.Rows[9][4] = cmbOzellik9.SelectedValue;
+                attribute_avp.Rows[9][5] = cmbOzellik9.Text;
+            }
+        }
+        private void cmbOzellik10_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //int bRequired = 0;
+            //if (chk10.Checked == true)
+            //{
+            //    bRequired = 1;
+            //}
+            //else
+            //{
+            //    bRequired = 0;
+            //}
+            //if (cmbOzellik10.SelectedValue == null || cmbOzellik10.SelectedValue.ToString() == "0")
+            //{
+            //    attribute_avp.Rows.Add(new object[] { lblOzellik10.Tag, lblOzellik10.Text, bRequired, 0, cmbOzellik10.SelectedValue, cmbOzellik10.SelectedText });
+            //}
+            //else
+            //{
+            //    attribute_avp.Rows[10][0] = lblOzellik10.Tag;
+            //    attribute_avp.Rows[10][1] = lblOzellik10.Text;
+            if (cmbOzellik10.SelectedValue != null)
+            {
+                attribute_avp.Rows[10][4] = cmbOzellik10.SelectedValue;
+                attribute_avp.Rows[10][5] = cmbOzellik10.Text;
+            }
+        }
+        private void cmbOzellik11_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //int bRequired = 0;
+            //if (chk11.Checked == true)
+            //{
+            //    bRequired = 1;
+            //}
+            //else
+            //{
+            //    bRequired = 0;
+            //}
+            //if (cmbOzellik11.SelectedValue == null || cmbOzellik11.SelectedValue.ToString() == "0")
+            //{
+            //    attribute_avp.Rows.Add(new object[] { lblOzellik11.Tag, lblOzellik11.Text, bRequired, 0, cmbOzellik11.SelectedValue, cmbOzellik11.SelectedText });
+            //}
+            //else
+            //{
+            //    attribute_avp.Rows[11][0] = lblOzellik11.Tag;
+            //    attribute_avp.Rows[11][1] = lblOzellik11.Text;
+            if (cmbOzellik11.SelectedValue != null)
+            {
+                attribute_avp.Rows[11][4] = cmbOzellik11.SelectedValue;
+                attribute_avp.Rows[11][5] = cmbOzellik11.Text;
+            }
+        }
+        private void cmbOzellik12_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //int bRequired = 0;
+            //if (chk12.Checked == true)
+            //{
+            //    bRequired = 1;
+            //}
+            //else
+            //{
+            //    bRequired = 0;
+            //}
+            //if (cmbOzellik12.SelectedValue == null || cmbOzellik12.SelectedValue.ToString() == "0")
+            //{
+            //    attribute_avp.Rows.Add(new object[] { lblOzellik12.Tag, lblOzellik12.Text, bRequired, 0, cmbOzellik12.SelectedValue, cmbOzellik12.SelectedText });
+            //}
+            //else
+            //{
+            //    attribute_avp.Rows[12][0] = lblOzellik12.Tag;
+            //    attribute_avp.Rows[12][1] = lblOzellik12.Text;
+            if (cmbOzellik12.SelectedValue != null)
+            {
+                attribute_avp.Rows[12][4] = cmbOzellik12.SelectedValue;
+                attribute_avp.Rows[12][5] = cmbOzellik12.Text;
+            }
+        }
+        private void cmbOzellik13_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //int bRequired = 0;
+            //if (chk13.Checked == true)
+            //{
+            //    bRequired = 1;
+            //}
+            //else
+            //{
+            //    bRequired = 0;
+            //}
+            //if (cmbOzellik13.SelectedValue == null || cmbOzellik13.SelectedValue.ToString() == "0")
+            //{
+            //    attribute_avp.Rows.Add(new object[] { lblOzellik13.Tag, lblOzellik13.Text, bRequired, 0, cmbOzellik13.SelectedValue, cmbOzellik13.SelectedText });
+            //}
+            //else
+            //{
+            //    attribute_avp.Rows[11][0] = lblOzellik13.Tag;
+            //    attribute_avp.Rows[11][1] = lblOzellik13.Text;
+            if (cmbOzellik13.SelectedValue != null)
+            {
+                attribute_avp.Rows[13][4] = cmbOzellik13.SelectedValue;
+                attribute_avp.Rows[13][5] = cmbOzellik13.Text;
+            }
+        }
+        private void cmbOzellik14_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //int bRequired = 0;
+            //if (chk14.Checked == true)
+            //{
+            //    bRequired = 1;
+            //}
+            //else
+            //{
+            //    bRequired = 0;
+            //}
+            //if (cmbOzellik14.SelectedValue == null || cmbOzellik14.SelectedValue.ToString() == "0")
+            //{
+            //    attribute_avp.Rows.Add(new object[] { lblOzellik14.Tag, lblOzellik14.Text, bRequired, 0, cmbOzellik14.SelectedValue, cmbOzellik14.SelectedText });
+            //}
+            //else
+            //{
+            //    attribute_avp.Rows[14][0] = lblOzellik14.Tag;
+            //    attribute_avp.Rows[14][1] = lblOzellik14.Text;
+            if (cmbOzellik14.SelectedValue != null)
+            {
+                attribute_avp.Rows[14][4] = cmbOzellik14.SelectedValue;
+                attribute_avp.Rows[14][5] = cmbOzellik14.Text;
+            }
+        }
+        private void cmbOzellik15_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //int bRequired = 0;
+            //if (chk15.Checked == true)
+            //{
+            //    bRequired = 1;
+            //}
+            //else
+            //{
+            //    bRequired = 0;
+            //}
+            //if (cmbOzellik15.SelectedValue == null || cmbOzellik15.SelectedValue.ToString() == "0")
+            //{
+            //    attribute_avp.Rows.Add(new object[] { lblOzellik15.Tag, lblOzellik15.Text, bRequired, 0, cmbOzellik15.SelectedValue, cmbOzellik15.SelectedText });
+            //}
+            //else
+            //{
+            //attribute_avp.Rows[15][0] = lblOzellik15.Tag;
+            //attribute_avp.Rows[15][1] = lblOzellik15.Text;
+            if (cmbOzellik15.SelectedValue != null)
+            {
+                attribute_avp.Rows[15][4] = cmbOzellik15.SelectedValue;
+                attribute_avp.Rows[15][5] = cmbOzellik15.Text;
+            }
+        }
+        private void cmbOzellik16_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //int bRequired = 0;
+            //if (chk16.Checked == true)
+            //{
+            //    bRequired = 1;
+            //}
+            //else
+            //{
+            //    bRequired = 0;
+            //}
+            //if (cmbOzellik16.SelectedValue == null || cmbOzellik16.SelectedValue.ToString() == "0")
+            //{
+            //    attribute_avp.Rows.Add(new object[] { lblOzellik16.Tag, lblOzellik16.Text, bRequired, 0, cmbOzellik16.SelectedValue, cmbOzellik16.SelectedText });
+            //}
+            //else
+            //{
+            //    attribute_avp.Rows[16][0] = lblOzellik16.Tag;
+            //    attribute_avp.Rows[16][1] = lblOzellik16.Text;
+            if (cmbOzellik16.SelectedValue != null)
+            {
+                attribute_avp.Rows[16][4] = cmbOzellik16.SelectedValue;
+                attribute_avp.Rows[16][5] = cmbOzellik16.Text;
+            }
+        }
+        private void cmbOzellik17_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //int bRequired = 0;
+            //if (chk17.Checked == true)
+            //{
+            //    bRequired = 1;
+            //}
+            //else
+            //{
+            //    bRequired = 0;
+            //}
+            //if (cmbOzellik17.SelectedValue == null || cmbOzellik17.SelectedValue.ToString() == "0")
+            //{
+            //    attribute_avp.Rows.Add(new object[] { lblOzellik17.Tag, lblOzellik17.Text, bRequired, 0, cmbOzellik17.SelectedValue, cmbOzellik17.SelectedText });
+            //}
+            //else
+            //{
+            //    attribute_avp.Rows[17][0] = lblOzellik17.Tag;
+            //    attribute_avp.Rows[17][1] = lblOzellik17.Text;
+            if (cmbOzellik17.SelectedValue != null)
+            {
+                attribute_avp.Rows[17][4] = cmbOzellik17.SelectedValue;
+                attribute_avp.Rows[17][5] = cmbOzellik17.Text;
+            }
+        }
+        private void cmbOzellik18_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //int bRequired = 0;
+            //if (chk18.Checked == true)
+            //{
+            //    bRequired = 1;
+            //}
+            //else
+            //{
+            //    bRequired = 0;
+            //}
+            //if (cmbOzellik18.SelectedValue == null || cmbOzellik18.SelectedValue.ToString() == "0")
+            //{
+            //    attribute_avp.Rows.Add(new object[] { lblOzellik18.Tag, lblOzellik18.Text, bRequired, 0, cmbOzellik18.SelectedValue, cmbOzellik18.SelectedText });
+            //}
+            //else
+            //{
+            //    attribute_avp.Rows[18][0] = lblOzellik18.Tag;
+            //    attribute_avp.Rows[18][1] = lblOzellik18.Text;
+            if (cmbOzellik18.SelectedValue != null)
+            {
+                attribute_avp.Rows[18][4] = cmbOzellik18.SelectedValue;
+                attribute_avp.Rows[18][5] = cmbOzellik18.Text;
+            }
+        }
+        private void cmbOzellik19_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //int bRequired = 0;
+            //if (chk19.Checked == true)
+            //{
+            //    bRequired = 1;
+            //}
+            //else
+            //{
+            //    bRequired = 0;
+            //}
+            //if (cmbOzellik19.SelectedValue == null || cmbOzellik19.SelectedValue.ToString() == "0")
+            //{
+            //    attribute_avp.Rows.Add(new object[] { lblOzellik19.Tag, lblOzellik19.Text, bRequired, 0, cmbOzellik19.SelectedValue, cmbOzellik19.SelectedText });
+            //}
+            //else
+            //{
+            //    attribute_avp.Rows[19][0] = lblOzellik19.Tag;
+            //    attribute_avp.Rows[19][1] = lblOzellik19.Text;
+            if (cmbOzellik19.SelectedValue != null)
+            {
+                attribute_avp.Rows[19][4] = cmbOzellik19.SelectedValue;
+                attribute_avp.Rows[19][5] = cmbOzellik19.Text;
+            }
+        }
+        private void cmbOzellik20_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //int bRequired = 0;
+            //if (chk20.Checked == true)
+            //{
+            //    bRequired = 1;
+            //}
+            //else
+            //{
+            //    bRequired = 0;
+            //}
+            //if (cmbOzellik20.SelectedValue == null || cmbOzellik20.SelectedValue.ToString() == "0")
+            //{
+            //    attribute_avp.Rows.Add(new object[] { lblOzellik20.Tag, lblOzellik20.Text, bRequired, 0, cmbOzellik20.SelectedValue, cmbOzellik20.SelectedText });
+            //}
+            //else
+            //{
+            //    attribute_avp.Rows[20][0] = lblOzellik20.Tag;
+            //    attribute_avp.Rows[20][1] = lblOzellik20.Text;
+            if (cmbOzellik20.SelectedValue != null)
+            {
+                attribute_avp.Rows[20][4] = cmbOzellik20.SelectedValue;
+                attribute_avp.Rows[20][5] = cmbOzellik20.Text;
+            }
+        }
+
     }
 }

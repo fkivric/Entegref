@@ -86,6 +86,8 @@
             this.navigationPage5 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.label13 = new System.Windows.Forms.Label();
             this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
+            this.txtParola = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.label15 = new System.Windows.Forms.Label();
             this.txtsEmail = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
             this.label14 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
@@ -95,6 +97,9 @@
             this.txtsAdi = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
             this.txtsKullaniciKodu = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
             this.navigationPage6 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.navigationFrame2 = new DevExpress.XtraBars.Navigation.NavigationFrame();
+            this.navigationPage10 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.navigationPage11 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.pnlTrendyol = new System.Windows.Forms.Panel();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.txttrendyolSecret = new System.Windows.Forms.TextBox();
@@ -137,8 +142,16 @@
             this.bunifuCheckbox2 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.bunifuCheckbox1 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtParola = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.navigationPage12 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.navigationPage13 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.navigationPage14 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.navigationPage15 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.pnlCicekSepet = new System.Windows.Forms.Panel();
+            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
+            this.txtcicekApi = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame1)).BeginInit();
             this.navigationFrame1.SuspendLayout();
             this.navigationPage1.SuspendLayout();
@@ -167,11 +180,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor14)).BeginInit();
             this.navigationPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtParola)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsEmail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsSoyadi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsAdi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsKullaniciKodu)).BeginInit();
             this.navigationPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.navigationFrame2)).BeginInit();
+            this.navigationFrame2.SuspendLayout();
+            this.navigationPage11.SuspendLayout();
             this.pnlTrendyol.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.checkedListBoxControl1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -179,7 +196,8 @@
             this.panel3.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtParola)).BeginInit();
+            this.navigationPage14.SuspendLayout();
+            this.pnlCicekSepet.SuspendLayout();
             this.SuspendLayout();
             // 
             // navigationFrame1
@@ -753,6 +771,23 @@
             this.simpleButton5.Text = "Kullanıcı Aç";
             this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
             // 
+            // txtParola
+            // 
+            this.txtParola.Location = new System.Drawing.Point(175, 150);
+            this.txtParola.MaxLength = 60;
+            this.txtParola.Name = "txtParola";
+            this.txtParola.Size = new System.Drawing.Size(329, 24);
+            this.txtParola.TabIndex = 27;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(65, 156);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(105, 13);
+            this.label15.TabIndex = 35;
+            this.label15.Text = "Parola                     :";
+            // 
             // txtsEmail
             // 
             this.txtsEmail.Location = new System.Drawing.Point(175, 282);
@@ -823,10 +858,44 @@
             // 
             // navigationPage6
             // 
-            this.navigationPage6.Controls.Add(this.pnlTrendyol);
+            this.navigationPage6.Controls.Add(this.navigationFrame2);
             this.navigationPage6.Controls.Add(this.checkedListBoxControl1);
             this.navigationPage6.Name = "navigationPage6";
             this.navigationPage6.Size = new System.Drawing.Size(597, 415);
+            // 
+            // navigationFrame2
+            // 
+            this.navigationFrame2.Controls.Add(this.navigationPage10);
+            this.navigationFrame2.Controls.Add(this.navigationPage11);
+            this.navigationFrame2.Controls.Add(this.navigationPage12);
+            this.navigationFrame2.Controls.Add(this.navigationPage13);
+            this.navigationFrame2.Controls.Add(this.navigationPage14);
+            this.navigationFrame2.Controls.Add(this.navigationPage15);
+            this.navigationFrame2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.navigationFrame2.Location = new System.Drawing.Point(0, 99);
+            this.navigationFrame2.Name = "navigationFrame2";
+            this.navigationFrame2.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
+            this.navigationPage10,
+            this.navigationPage11,
+            this.navigationPage12,
+            this.navigationPage13,
+            this.navigationPage14,
+            this.navigationPage15});
+            this.navigationFrame2.SelectedPage = this.navigationPage10;
+            this.navigationFrame2.Size = new System.Drawing.Size(597, 316);
+            this.navigationFrame2.TabIndex = 3;
+            this.navigationFrame2.Text = "navigationFrame2";
+            // 
+            // navigationPage10
+            // 
+            this.navigationPage10.Name = "navigationPage10";
+            this.navigationPage10.Size = new System.Drawing.Size(597, 316);
+            // 
+            // navigationPage11
+            // 
+            this.navigationPage11.Controls.Add(this.pnlTrendyol);
+            this.navigationPage11.Name = "navigationPage11";
+            this.navigationPage11.Size = new System.Drawing.Size(597, 316);
             // 
             // pnlTrendyol
             // 
@@ -837,10 +906,10 @@
             this.pnlTrendyol.Controls.Add(this.label17);
             this.pnlTrendyol.Controls.Add(this.txttrendyolID);
             this.pnlTrendyol.Controls.Add(this.label16);
-            this.pnlTrendyol.Location = new System.Drawing.Point(42, 128);
+            this.pnlTrendyol.Location = new System.Drawing.Point(37, 35);
             this.pnlTrendyol.Name = "pnlTrendyol";
             this.pnlTrendyol.Size = new System.Drawing.Size(523, 247);
-            this.pnlTrendyol.TabIndex = 2;
+            this.pnlTrendyol.TabIndex = 3;
             this.pnlTrendyol.Visible = false;
             // 
             // simpleButton4
@@ -850,7 +919,6 @@
             this.simpleButton4.Size = new System.Drawing.Size(104, 41);
             this.simpleButton4.TabIndex = 2;
             this.simpleButton4.Text = "Baglantı Ayarlarını \r\nKaydet";
-            this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
             // 
             // txttrendyolSecret
             // 
@@ -1264,22 +1332,82 @@
             this.bunifuCheckbox1.Size = new System.Drawing.Size(20, 20);
             this.bunifuCheckbox1.TabIndex = 0;
             // 
-            // label15
+            // navigationPage12
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(65, 156);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(105, 13);
-            this.label15.TabIndex = 35;
-            this.label15.Text = "Parola                     :";
+            this.navigationPage12.Name = "navigationPage12";
+            this.navigationPage12.Size = new System.Drawing.Size(597, 316);
             // 
-            // txtParola
+            // navigationPage13
             // 
-            this.txtParola.Location = new System.Drawing.Point(175, 150);
-            this.txtParola.MaxLength = 60;
-            this.txtParola.Name = "txtParola";
-            this.txtParola.Size = new System.Drawing.Size(329, 24);
-            this.txtParola.TabIndex = 27;
+            this.navigationPage13.Name = "navigationPage13";
+            this.navigationPage13.Size = new System.Drawing.Size(597, 316);
+            // 
+            // navigationPage14
+            // 
+            this.navigationPage14.Controls.Add(this.pnlCicekSepet);
+            this.navigationPage14.Name = "navigationPage14";
+            this.navigationPage14.Size = new System.Drawing.Size(597, 316);
+            // 
+            // navigationPage15
+            // 
+            this.navigationPage15.Name = "navigationPage15";
+            this.navigationPage15.Size = new System.Drawing.Size(597, 316);
+            // 
+            // pnlCicekSepet
+            // 
+            this.pnlCicekSepet.Controls.Add(this.simpleButton6);
+            this.pnlCicekSepet.Controls.Add(this.txtcicekApi);
+            this.pnlCicekSepet.Controls.Add(this.label19);
+            this.pnlCicekSepet.Controls.Add(this.textBox2);
+            this.pnlCicekSepet.Controls.Add(this.label20);
+            this.pnlCicekSepet.Location = new System.Drawing.Point(37, 35);
+            this.pnlCicekSepet.Name = "pnlCicekSepet";
+            this.pnlCicekSepet.Size = new System.Drawing.Size(523, 247);
+            this.pnlCicekSepet.TabIndex = 4;
+            this.pnlCicekSepet.Visible = false;
+            // 
+            // simpleButton6
+            // 
+            this.simpleButton6.Location = new System.Drawing.Point(416, 199);
+            this.simpleButton6.Name = "simpleButton6";
+            this.simpleButton6.Size = new System.Drawing.Size(104, 41);
+            this.simpleButton6.TabIndex = 2;
+            this.simpleButton6.Text = "Baglantı Ayarlarını \r\nKaydet";
+            this.simpleButton6.Click += new System.EventHandler(this.simpleButton6_Click);
+            // 
+            // txtcicekApi
+            // 
+            this.txtcicekApi.Location = new System.Drawing.Point(270, 143);
+            this.txtcicekApi.Name = "txtcicekApi";
+            this.txtcicekApi.Size = new System.Drawing.Size(196, 22);
+            this.txtcicekApi.TabIndex = 1;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(15, 147);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(58, 13);
+            this.label19.TabIndex = 0;
+            this.label19.Text = "Secret Key";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(270, 71);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(196, 22);
+            this.textBox2.TabIndex = 1;
+            this.textBox2.Text = "x-api-key";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(15, 75);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(44, 13);
+            this.label20.TabIndex = 0;
+            this.label20.Text = "Api Key";
             // 
             // frmYapılandırma
             // 
@@ -1328,11 +1456,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor14)).EndInit();
             this.navigationPage5.ResumeLayout(false);
             this.navigationPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtParola)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsEmail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsSoyadi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsAdi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsKullaniciKodu)).EndInit();
             this.navigationPage6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.navigationFrame2)).EndInit();
+            this.navigationFrame2.ResumeLayout(false);
+            this.navigationPage11.ResumeLayout(false);
             this.pnlTrendyol.ResumeLayout(false);
             this.pnlTrendyol.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.checkedListBoxControl1)).EndInit();
@@ -1344,7 +1476,9 @@
             this.groupBox3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtParola)).EndInit();
+            this.navigationPage14.ResumeLayout(false);
+            this.pnlCicekSepet.ResumeLayout(false);
+            this.pnlCicekSepet.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1442,14 +1576,6 @@
         private Infragistics.Win.UltraWinEditors.UltraTextEditor txtsSoyadi;
         private Infragistics.Win.UltraWinEditors.UltraTextEditor txtsAdi;
         private Infragistics.Win.UltraWinEditors.UltraTextEditor txtsKullaniciKodu;
-        private System.Windows.Forms.Panel pnlTrendyol;
-        private DevExpress.XtraEditors.SimpleButton simpleButton4;
-        private System.Windows.Forms.TextBox txttrendyolSecret;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox txttrendyolApi;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox txttrendyolID;
-        private System.Windows.Forms.Label label16;
         private DevExpress.XtraEditors.CheckedListBoxControl checkedListBoxControl1;
         private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox10;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel10;
@@ -1460,5 +1586,26 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton5;
         private Infragistics.Win.UltraWinEditors.UltraTextEditor txtParola;
         private System.Windows.Forms.Label label15;
+        private DevExpress.XtraBars.Navigation.NavigationFrame navigationFrame2;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage10;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage11;
+        private System.Windows.Forms.Panel pnlTrendyol;
+        private DevExpress.XtraEditors.SimpleButton simpleButton4;
+        private System.Windows.Forms.TextBox txttrendyolSecret;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox txttrendyolApi;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox txttrendyolID;
+        private System.Windows.Forms.Label label16;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage12;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage13;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage14;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage15;
+        private System.Windows.Forms.Panel pnlCicekSepet;
+        private DevExpress.XtraEditors.SimpleButton simpleButton6;
+        private System.Windows.Forms.TextBox txtcicekApi;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label20;
     }
 }

@@ -27,6 +27,7 @@ namespace Entegref
         string VKN = null;
         public static string username;
         public static string usergroup;
+        public static string sdepo;
         public frmLogin(string _VKN)
         {
             InitializeComponent();
@@ -230,7 +231,7 @@ namespace Entegref
             else
             {
                 username = dt.Rows[0][0].ToString();
-
+                sdepo = dt.Rows[0]["sdepo"].ToString();
                 loginok = true;
 
                 if (loginok == true)

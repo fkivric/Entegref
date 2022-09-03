@@ -156,5 +156,41 @@ namespace Entegref.Properties {
                 this["SecretPhase"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("XTsrN5elDpbvRhnjacYmRoFRG5FFBsu4IYPacw8u")]
+        public string CicekSepetiApi_key {
+            get {
+                return ((string)(this["CicekSepetiApi_key"]));
+            }
+            set {
+                this["CicekSepetiApi_key"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("park-entegrasyon")]
+        public string ParkKullaniciAdi {
+            get {
+                return ((string)(this["ParkKullaniciAdi"]));
+            }
+            set {
+                this["ParkKullaniciAdi"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("cmc2017*!Park")]
+        public string ParkParola {
+            get {
+                return ((string)(this["ParkParola"]));
+            }
+            set {
+                this["ParkParola"] = value;
+            }
+        }
     }
 }
