@@ -20,7 +20,7 @@ namespace Entegref
         [STAThread]
         static void Main()
         {
-            //selam yunus naber
+            //selam yunus naber notebook üzerinden eklendi
             DevExpress.Skins.SkinManager.EnableFormSkins();
             DevExpress.XtraEditors.WindowsFormsSettings.AllowDefaultSvgImages = DevExpress.Utils.DefaultBoolean.False;
             Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture("tr");
