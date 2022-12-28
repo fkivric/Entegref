@@ -1,5 +1,4 @@
 ﻿using DevExpress.XtraEditors;
-using DevExpress.XtraSplashScreen;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,30 +21,7 @@ namespace Entegref
     {
         public frmMain()
         {
-
-            try
-            {
-                FluentSplashScreenOptions splashScreen = new FluentSplashScreenOptions();
-                splashScreen.Title = "ENTEGREF";
-                splashScreen.Subtitle = "Entegref ERP & Pazaryeri";
-                splashScreen.RightFooter = "Başlıyor...";
-                splashScreen.LeftFooter = $"CopyRight ® 2022 {Environment.NewLine} Tüm Hahkları Saklıdır.";
-                splashScreen.LoadingIndicatorType = FluentLoadingIndicatorType.Dots;
-                splashScreen.OpacityColor = System.Drawing.Color.FromArgb(16, 110, 190);
-                splashScreen.Opacity = 90;
-                splashScreen.AppearanceLeftFooter.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-                DevExpress.XtraSplashScreen.SplashScreenManager.ShowFluentSplashScreen(splashScreen, parentForm: this, useFadeIn: true, useFadeOut: true);
-                InitializeComponent();
-            }
-            catch (Exception e)
-            {
-                XtraMessageBox.Show(e.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-            }
-            finally
-            {
-                DevExpress.XtraSplashScreen.SplashScreenManager.CloseForm(false, 300, this);
-            }
-
+            InitializeComponent();
         }
 
         SqlConnectionObject conn = new SqlConnectionObject();
@@ -220,7 +196,7 @@ namespace Entegref
                 show = 1;
             }
         }
-        public static int cicektimer = 0;
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             string Kurzamanı;
@@ -265,7 +241,7 @@ namespace Entegref
 
         private void barButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            OpenForm(new frmTrendyol_Create_Item());
+
         }
 
         private void barButtonItem15_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -293,35 +269,6 @@ namespace Entegref
         private void barButtonItem11_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
 
-        }
-
-        private void barButtonItem25_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            //frmCicekSepeti_Category cicekSepeti_Category = new frmCicekSepeti_Category();
-            //cicekSepeti_Category.ShowDialog();
-            OpenForm(new frmCicekSepeti_Category());
-        }
-
-        private void barButtonItem26_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            OpenForm(new FrmTicimax_Ayarlar());
-        }
-
-        private void barButtonItem28_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            timer2.Start();
-            OpenForm(new frmCicekSepeti_Ürün_Aktif());
-        }
-
-        private void timer2_Tick(object sender, EventArgs e)
-        {
-            frmMain.cicektimer = frmMain.cicektimer + 1;
-            frmCicekSepeti_Ürün_Aktif.sure = (600 - frmMain.cicektimer).ToString() + " Yeni Sorgu için kalan süre";
-            if (frmMain.cicektimer == 600)
-            {
-                frmMain.cicektimer = 0;
-                timer1.Stop();
-            }
         }
     }
 }

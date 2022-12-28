@@ -49,7 +49,6 @@
     <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Pdf.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.PivotGrid.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.RichEdit.v20.1.Export, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -111,23 +110,12 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
-    <Reference Include="PARK.Common.Extensions">
-      <HintPath>E:\YonAvm_IrsaliyeUI\YonAvm_IrsaliyeUI\Reference\PARK.Common.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="PARK.Common.Globals">
-      <HintPath>E:\YonAvm_IrsaliyeUI\YonAvm_IrsaliyeUI\Reference\PARK.Common.Globals.dll</HintPath>
-    </Reference>
-    <Reference Include="PARK.Core">
-      <HintPath>E:\YonAvm_IrsaliyeUI\YonAvm_IrsaliyeUI\Reference\PARK.Core.dll</HintPath>
-    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Design" />
-    <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Management" />
     <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Runtime.Serialization" />
@@ -154,7 +142,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\Urunler.cs" />
     <Compile Include="cogalt\frmFis_Bos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,44 +158,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="frmCicekSepeti_Sinif.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCicekSepeti_Sinif.Designer.cs">
-      <DependentUpon>frmCicekSepeti_Sinif.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Connected Services\CustomServis\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Connected Services\SiparisServis\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Connected Services\UrunServis\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Connected Services\UyeServis\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="FrmCicekSepeti_Urunler.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmCicekSepeti_Urunler.Designer.cs">
-      <DependentUpon>FrmCicekSepeti_Urunler.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmCicekSepeti_Ürün_Aktif.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCicekSepeti_Ürün_Aktif.Designer.cs">
-      <DependentUpon>frmCicekSepeti_Ürün_Aktif.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDepo.cs">
       <SubType>Form</SubType>
@@ -228,12 +177,6 @@
     <Compile Include="frmdepoBul.Designer.cs">
       <DependentUpon>frmdepoBul.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmE-Irsalihye.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmE-Irsalihye.Designer.cs">
-      <DependentUpon>frmE-Irsalihye.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmFis_GC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -245,44 +188,6 @@
     </Compile>
     <Compile Include="frmFis_Transfer.Designer.cs">
       <DependentUpon>frmFis_Transfer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmSplashScreen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmSplashScreen.Designer.cs">
-      <DependentUpon>frmSplashScreen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmTicimax_Ayarlar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmTicimax_Ayarlar.Designer.cs">
-      <DependentUpon>FrmTicimax_Ayarlar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmTrendyol_Create_Item.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmTrendyol_Create_Item.Designer.cs">
-      <DependentUpon>frmTrendyol_Create_Item.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ProgressBarFrm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ProgressBarFrm.Designer.cs">
-      <DependentUpon>ProgressBarFrm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Ticimax\frmListe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ticimax\frmListe.Designer.cs">
-      <DependentUpon>frmListe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Ticimax\StaticFunctions.cs" />
-    <Compile Include="Ticimax\StaticVariables.cs" />
-    <Compile Include="Ticimax\frmTicimax.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ticimax\frmTicimax.Designer.cs">
-      <DependentUpon>frmTicimax.cs</DependentUpon>
     </Compile>
     <Compile Include="Trednyol_Siparisler.cs" />
     <Compile Include="Trendyol_adress.cs" />
@@ -460,11 +365,11 @@
     <Compile Include="frmStokMuhasebeHesaplari.Designer.cs">
       <DependentUpon>frmStokMuhasebeHesaplari.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmTrendyol_Sinif.cs">
+    <Compile Include="frmStokSinifi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmTrendyol_Sinif.Designer.cs">
-      <DependentUpon>frmTrendyol_Sinif.cs</DependentUpon>
+    <Compile Include="frmStokSinifi.Designer.cs">
+      <DependentUpon>frmStokSinifi.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAyarlarUrun.cs">
       <SubType>Form</SubType>
@@ -550,21 +455,6 @@
     <Compile Include="SqlConnectionObject.cs" />
     <Compile Include="Trendyol_finans.cs" />
     <Compile Include="trendyol_siparis.cs" />
-    <Compile Include="Web References\tr.com.parkentegrasyon.EFatura_test\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.map</DependentUpon>
-    </Compile>
-    <Compile Include="Web References\tr.com.parkentegrasyon.Goruntu\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.map</DependentUpon>
-    </Compile>
-    <Compile Include="Web References\tr.com.parkentegrasyon.Irsaliye_test\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.map</DependentUpon>
-    </Compile>
     <Compile Include="XtraReport1.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -576,9 +466,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="cogalt\frmBul_Bos.resx">
       <DependentUpon>frmBul_Bos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCicekSepeti_Sinif.resx">
-      <DependentUpon>frmCicekSepeti_Sinif.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAnaSayfa.resx">
       <DependentUpon>frmAnaSayfa.cs</DependentUpon>
@@ -594,12 +481,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCicekSepeti_Category.resx">
       <DependentUpon>frmCicekSepeti_Category.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmCicekSepeti_Urunler.resx">
-      <DependentUpon>FrmCicekSepeti_Urunler.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCicekSepeti_Ürün_Aktif.resx">
-      <DependentUpon>frmCicekSepeti_Ürün_Aktif.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmConfig.resx">
       <DependentUpon>frmConfig.cs</DependentUpon>
@@ -625,9 +506,6 @@
     <EmbeddedResource Include="frmDoviz.resx">
       <DependentUpon>frmDoviz.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmE-Irsalihye.resx">
-      <DependentUpon>frmE-Irsalihye.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmFirma.resx">
       <DependentUpon>frmFirma.cs</DependentUpon>
     </EmbeddedResource>
@@ -649,9 +527,6 @@
     <EmbeddedResource Include="frmKargo.resx">
       <DependentUpon>frmKargo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.ar-IQ.resx">
-      <DependentUpon>frmLogin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmMusteri.resx">
       <DependentUpon>frmMusteri.cs</DependentUpon>
     </EmbeddedResource>
@@ -670,9 +545,6 @@
     <EmbeddedResource Include="frmResim.resx">
       <DependentUpon>frmResim.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSplashScreen.resx">
-      <DependentUpon>frmSplashScreen.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmStokBul.resx">
       <DependentUpon>frmStokBul.cs</DependentUpon>
     </EmbeddedResource>
@@ -688,8 +560,8 @@
     <EmbeddedResource Include="frmStokAc.resx">
       <DependentUpon>frmStokAc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmTrendyol_Sinif.resx">
-      <DependentUpon>frmTrendyol_Sinif.cs</DependentUpon>
+    <EmbeddedResource Include="frmStokSinifi.resx">
+      <DependentUpon>frmStokSinifi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAyarlarUrun.resx">
       <DependentUpon>frmAyarlarUrun.cs</DependentUpon>
@@ -700,17 +572,11 @@
     <EmbeddedResource Include="frmFis_Transfer.resx">
       <DependentUpon>frmFis_Transfer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmTicimax_Ayarlar.resx">
-      <DependentUpon>FrmTicimax_Ayarlar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmTrendyol_Attributes.resx">
       <DependentUpon>frmTrendyol_Attributes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTrendyol_catogory.resx">
       <DependentUpon>frmTrendyol_catogory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmTrendyol_Create_Item.resx">
-      <DependentUpon>frmTrendyol_Create_Item.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTrendyol_Finans.resx">
       <DependentUpon>frmTrendyol_Finans.cs</DependentUpon>
@@ -730,9 +596,6 @@
     <EmbeddedResource Include="frmYapılandırma.resx">
       <DependentUpon>frmYapılandırma.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProgressBarFrm.resx">
-      <DependentUpon>ProgressBarFrm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -742,559 +605,82 @@
     <EmbeddedResource Include="Report.resx">
       <DependentUpon>Report.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ticimax\frmListe.resx">
-      <DependentUpon>frmListe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ticimax\frmTicimax.resx">
-      <DependentUpon>frmTicimax.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="XtraReport1.resx">
       <DependentUpon>XtraReport1.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="App.config">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\CustomServis\CustomServis.wsdl" />
-    <None Include="Connected Services\CustomServis\CustomServis.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\CustomServis\CustomServis1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\CustomServis\CustomServis2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\CustomServis\CustomServis3.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.AddFavoriUrunResponse.datasource">
+    <None Include="App.config" />
+    <None Include="Connected Services\parkServis\EFaturaIntegration.wsdl" />
+    <None Include="Connected Services\parkServis\Entegref.parkServis.CancelDraftInvoiceResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.AddFiyatAlarmUrunResponse.datasource">
+    <None Include="Connected Services\parkServis\Entegref.parkServis.CreditNoteSummary.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.AddStokAlarmUrunResponse.datasource">
+    <None Include="Connected Services\parkServis\Entegref.parkServis.DespatchSummary.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.DeleteMailListResponse.datasource">
+    <None Include="Connected Services\parkServis\Entegref.parkServis.EArsivFaturaPdfAlResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.DeleteMenuResponse.datasource">
+    <None Include="Connected Services\parkServis\Entegref.parkServis.ESmmPdfAlResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.DeleteWebhookResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.Entegrasyon.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.GetCampaingBannersResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.GetFavoriUrunlerResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.GetFiyatAlarmUrunlerResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.GetMailListResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.GetMenuResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.GetStokAlarmUrunlerResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.KargoDesiFiyatSelectResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.KargoFirma.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.KargoIl.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.KargoIlce.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.KargoUlke.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.MailList.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.RemoveFavoriUrunResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.RemoveFiyatAlarmUrunResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.RemoveStokAlarmUrunResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.SaveMailListResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.SaveMenuResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.SaveWebhookResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.SelectBankaResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.SelectIadeOdemeListesiResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.SelectOdemeBildirimiResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.SelectSilinenUyelerResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.SelectWebhookResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.ServisGetSupportTicketMessagesResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.ServisGetSupportTicketsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.ServisGetSupportTicketSubjectsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.ServisSaveSupportTicketAnswerResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.ServisSaveSupportTicketResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.WebDegisimTalepResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.WebDegisimTalepUpdateResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.WebDegisimTalepUrunResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.WebIadeTalepResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.WebIadeTalepUpdateResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.WebIadeTalepUrunResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.WebKampanya.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.WebKampanyaTicimax.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\CustomServis\Entegref.CustomServis.WebTaksitSecenekResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\parkServis\EIrsaliyeService.wsdl" />
-    <None Include="Connected Services\parkServis\Entegref.parkServis.GetDespatchAdviceResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\parkServis\Entegref.parkServis.GetDespatchAdviceStatusResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\parkServis\Entegref.parkServis.GetDespatchPdfResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\parkServis\Entegref.parkServis.GetPreviewDespatchPdfResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\parkServis\Entegref.parkServis.GetReceiptAdviceResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\parkServis\Entegref.parkServis.GetReceiptAdviceStatusResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\parkServis\Entegref.parkServis.GibDespatchUserListTxtResponse.datasource">
+    <None Include="Connected Services\parkServis\Entegref.parkServis.GelenFaturaPdfAlResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\parkServis\Entegref.parkServis.GIBUSER.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.GidenFaturaPdfAlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.GidenIrsaliyePdfAlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.GidenMustahsilPDFAlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.GidenTaslakFaturaPdfAlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.GtbResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\parkServis\Entegref.parkServis.InvoiceResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\parkServis\Entegref.parkServis.IrsaliyeQRCodeCreateResponse.datasource">
+    <None Include="Connected Services\parkServis\Entegref.parkServis.InvoiceSummary.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\parkServis\Entegref.parkServis.LoadDespatchAdviceResponse.datasource">
+    <None Include="Connected Services\parkServis\Entegref.parkServis.IrsaliyeKayitliMukellefListeleResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\parkServis\Entegref.parkServis.LoadReceiptAdviceResponse.datasource">
+    <None Include="Connected Services\parkServis\Entegref.parkServis.KayitliMukellefListeleByDateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.KayitliMukellefListeleDetayliTxtResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\parkServis\Entegref.parkServis.KayitliMukellefListeleTxtResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\parkServis\Entegref.parkServis.LoginRes.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\parkServis\Entegref.parkServis.MarkDespatchAdviceResponse.datasource">
+    <None Include="Connected Services\parkServis\Entegref.parkServis.ParkInvoiceStatusRes.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\parkServis\Entegref.parkServis.MarkReceiptAdviceResponse.datasource">
+    <None Include="Connected Services\parkServis\Entegref.parkServis.PARKInvoiceType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\parkServis\Entegref.parkServis.ParkDespatchModelUblTextResponse.datasource">
+    <None Include="Connected Services\parkServis\Entegref.parkServis.ParkObjUblCevirResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\parkServis\Entegref.parkServis.SendDespatchAdviceResponse.datasource">
+    <None Include="Connected Services\parkServis\Entegref.parkServis.SendInvoiceResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\parkServis\Entegref.parkServis.SendReceiptAdviceResponse.datasource">
+    <None Include="Connected Services\parkServis\Entegref.parkServis.Stylefiles.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.BLPaketlemeDurum.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.EFaturaIptalResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.IadeOdemeResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.SaveBekleyenAramaResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.SaveEFaturaResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.SaveSiparisKargoPaketKargoTakipNoResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.SelectEFaturaResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.SelectIadeOdemeResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.SelectOdemeTipleriResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.SelectSiparisDurumlariResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.SelectSiparisDurumLogListResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.SelectSiparisDurumResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.ServisSepet.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.SetReferansNoResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.SetSepetKampanyaResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.SetSiparisDurumListeResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.SetSiparisDurumResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.SetSiparisOdemeDurumResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.SetSiparisUrunDurumResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.SiparisAnonimlestirResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.SiparisiKargoyaGonderResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.SiparisOdemeTipleri.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.SiparisUrunDurumlari.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.UpdateEfaturaResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.UrunIdaneNedenleriResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.WebHediyeCekiUygulaResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.WebKargoFirma.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.WebKargoPaket.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.WebMagaza.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.WebSaveMagazaResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.WebSepet.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.WebSiparis.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.WebSiparisKampanya.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.WebSiparisOdeme.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.WebSiparisSaveResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.WebSiparisUrun.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\Entegref.SiparisServis.WebUpdateSepetResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\SiparisServis\SiparisServis.wsdl" />
-    <None Include="Connected Services\SiparisServis\SiparisServis.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\SiparisServis\SiparisServis1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\SiparisServis\SiparisServis2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\SiparisServis\SiparisServis3.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\SiparisServis\SiparisServis4.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.AsortiGrup.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.AsortiMiktar.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.DeleteKombinUrunResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.DeleteKonsinyeUrunResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.DeleteTakimUrunResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.DeleteTamamlayiciUrunResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.DeleteUrunDetayTabResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.EkSecenekDeger.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.EkSecenekGrup.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.Etiket.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.IlgiliUrun.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.Kategori.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.Marka.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.ParaBirimi.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.SaveAksesuarGrupResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.SaveAksesuarUrunResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.SaveKombinUrunResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.SaveKonsinyeUrunResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.SaveMagazaStokResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.SaveResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.SaveTakimUrunResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.SaveTamamlayiciUrunResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.SaveUrunDetayTabResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.SaveUrunResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.SelectAksesuarGrupResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.SelectAksesuarUrunResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.SelectKombinurunResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.SelectKonsinyeUrunResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.SelectMagazaStokResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.SelectTakimUrunResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.SelectTamamlayiciUrunResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.SelectUrunDetayTabResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.SiparisUrunDurumlari.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.Tedarikci.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.TeknikDetayDeger.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.TeknikDetayGrup.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.TeknikDetayOzellik.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.UpdateAnaUrunResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.UpdateKonsinyeUrunResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.UpdateUrlResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.UpdateUrunDetayTabResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.Urun360ResimYukleResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.UrunBarkodGuncelleResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.UrunEtiket.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.UrunKarti.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.UrunKategori.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.UrunKategoriGuncelleByStokKoduResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.UrunOdemeSecenek.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.UrunOdemeSecenekBanka.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.UrunResimListeleResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.UrunResimYukleResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.UrunYorum.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.Varyasyon.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\Entegref.UrunServis.WebServisResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UrunServis\UrunServis.wsdl" />
-    <None Include="Connected Services\UrunServis\UrunServis.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\UrunServis\UrunServis1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\UrunServis\UrunServis2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\UrunServis\UrunServis3.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\UrunServis\UrunServis4.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\UyeServis\Entegref.UyeServis.ParaPuanGuncelleResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UyeServis\Entegref.UyeServis.UpdateUyeIzinResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UyeServis\Entegref.UyeServis.Uye.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UyeServis\Entegref.UyeServis.UyeAdres.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UyeServis\Entegref.UyeServis.UyeGirisiSonuc.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UyeServis\Entegref.UyeServis.UyeIzinGecmisiResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UyeServis\Entegref.UyeServis.UyeSilResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UyeServis\Entegref.UyeServis.UyeTuru.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\UyeServis\UyeServis.wsdl" />
-    <None Include="Connected Services\UyeServis\UyeServis.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\UyeServis\UyeServis1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\UyeServis\UyeServis2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\UyeServis\UyeServis3.xsd">
-      <SubType>Designer</SubType>
     </None>
     <None Include="DownloadDefauldFile\UrunAc.xls" />
     <None Include="Properties\Settings.settings">
@@ -1306,189 +692,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\base64Binary.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\City.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\Customer.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\District.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\EFaturaService.wsdl" />
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\ENVELOPE.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\getAppRespResponseType.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\GetInvoiceStatusResponse.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\GetUserListBinaryResponse.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\GIBUSER.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\inside.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\INVOICE.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\InvoiceResponse.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\LoadInvoiceResponse.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\LoginRes.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\Manuelcurrent.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\Manuelinvoice.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\MarkEnvelopeResponse.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\MarkInvoiceResponse.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\ParkInvoiceStatusRes.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\PARKInvoiceType.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\Query.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\QueryParameter.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\Reference.map">
-      <Generator>MSDiscoCodeGenerator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\REQUEST_RETURNType.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\SendInvoiceRef.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\SendInvoiceResponse.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\SendInvoiceResponseResponse.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\SendInvoiceResponseWithServerSignResponse.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\Serial.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\Stylefiles.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\User.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Goruntu\CancelDraftInvoiceResponse.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Goruntu\CreditNoteSummary.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Goruntu\DespatchSummary.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Goruntu\EFaturaIntegration.wsdl" />
-    <None Include="Web References\tr.com.parkentegrasyon.Goruntu\GIBUSER.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Goruntu\GtbResponse.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Goruntu\InvoiceResponse.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Goruntu\InvoiceSummary.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Goruntu\KontorSorgulamaResponse.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Goruntu\LoginRes.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Goruntu\ParkInvoiceStatusRes.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Goruntu\PARKInvoiceType.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Goruntu\Reference.map">
-      <Generator>MSDiscoCodeGenerator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Goruntu\SendInvoiceResponse.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Goruntu\Stylefiles.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Irsaliye_test\EIrsaliyeService.wsdl" />
-    <None Include="Web References\tr.com.parkentegrasyon.Irsaliye_test\GetDespatchAdviceResponse.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Irsaliye_test\GetDespatchAdviceStatusResponse.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Irsaliye_test\GetReceiptAdviceResponse.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Irsaliye_test\GetReceiptAdviceStatusResponse.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Irsaliye_test\GIBUSER.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Irsaliye_test\InvoiceResponse.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Irsaliye_test\LoadDespatchAdviceResponse.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Irsaliye_test\LoadReceiptAdviceResponse.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Irsaliye_test\LoginRes.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Irsaliye_test\MarkDespatchAdviceResponse.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Irsaliye_test\MarkReceiptAdviceResponse.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Irsaliye_test\Reference.map">
-      <Generator>MSDiscoCodeGenerator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Irsaliye_test\SendDespatchAdviceResponse.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\tr.com.parkentegrasyon.Irsaliye_test\SendReceiptAdviceResponse.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -1509,12 +712,6 @@
     <PackageReference Include="ExcelDataReader.DataSet">
       <Version>3.6.0</Version>
     </PackageReference>
-    <PackageReference Include="iTextSharp">
-      <Version>5.5.13.3</Version>
-    </PackageReference>
-    <PackageReference Include="itextsharp.xmlworker">
-      <Version>5.5.13.3</Version>
-    </PackageReference>
     <PackageReference Include="MetroModernUI">
       <Version>1.4.0</Version>
     </PackageReference>
@@ -1532,63 +729,11 @@
     <Folder Include="Crs_Formlar\" />
     <Folder Include="Crs_Raporlar\" />
     <Folder Include="Dev_raporlar\" />
-    <Folder Include="Phone\" />
     <Folder Include="Pictures\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Web References\tr.com.parkentegrasyon.Goruntu\EFaturaIntegration.disco" />
-    <None Include="Web References\tr.com.parkentegrasyon.EFatura_test\EFaturaService.disco" />
-    <None Include="Web References\tr.com.parkentegrasyon.Irsaliye_test\EIrsaliyeService.disco" />
-    <None Include="Resources\VoiP.jpg" />
-    <None Include="Resources\convert_16x16.png" />
-    <None Include="Resources\convert_32x32.png" />
-    <None Include="Resources\currency_16x164.png" />
-    <None Include="Resources\currency_32x324.png" />
-    <None Include="Resources\boorderitem_16x16.png" />
-    <None Include="Resources\boorderitem_32x32.png" />
-    <None Include="Resources\bonote_16x16.png" />
-    <None Include="Resources\bonote_32x32.png" />
-    <None Include="Resources\customization_16x16.png" />
-    <None Include="Resources\customization_32x32.png" />
-    <None Include="Resources\buy_16x16.png" />
-    <None Include="Resources\buy_32x32.png" />
-    <None Include="Resources\bodetails_16x16.png" />
-    <None Include="Resources\bodetails_32x32.png" />
-    <None Include="Resources\sortbyinvoice_16x16.png" />
-    <None Include="Resources\sortbyinvoice_32x32.png" />
-    <None Include="Resources\showproduct_16x16.png" />
-    <None Include="Resources\showproduct_32x32.png" />
-    <None Include="Resources\indir %281%29.png" />
     <None Include="Resources\Çiçek Sepeti.png" />
-    <None Include="Connected Services\UrunServis\UrunServis.disco" />
-    <None Include="Connected Services\UrunServis\configuration91.svcinfo" />
-    <None Include="Connected Services\UrunServis\configuration.svcinfo" />
-    <None Include="Connected Services\UrunServis\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Connected Services\SiparisServis\SiparisServis.disco" />
-    <None Include="Connected Services\SiparisServis\configuration91.svcinfo" />
-    <None Include="Connected Services\SiparisServis\configuration.svcinfo" />
-    <None Include="Connected Services\SiparisServis\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Connected Services\UyeServis\UyeServis.disco" />
-    <None Include="Connected Services\UyeServis\configuration91.svcinfo" />
-    <None Include="Connected Services\UyeServis\configuration.svcinfo" />
-    <None Include="Connected Services\UyeServis\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Connected Services\CustomServis\CustomServis.disco" />
-    <None Include="Connected Services\CustomServis\configuration91.svcinfo" />
-    <None Include="Connected Services\CustomServis\configuration.svcinfo" />
-    <None Include="Connected Services\CustomServis\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Connected Services\parkServis\EIrsaliyeService.disco" />
+    <None Include="Connected Services\parkServis\EFaturaIntegration.disco" />
     <None Include="Connected Services\parkServis\configuration91.svcinfo" />
     <None Include="Connected Services\parkServis\configuration.svcinfo" />
     <None Include="Connected Services\parkServis\Reference.svcmap">
@@ -1662,60 +807,7 @@
     <None Include="Resources\Catalog-Integration.txt" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\CustomServis\" />
     <WCFMetadataStorage Include="Connected Services\parkServis\" />
-    <WCFMetadataStorage Include="Connected Services\SiparisServis\" />
-    <WCFMetadataStorage Include="Connected Services\UrunServis\" />
-    <WCFMetadataStorage Include="Connected Services\UyeServis\" />
-  </ItemGroup>
-  <ItemGroup>
-    <COMReference Include="SIPVoipSDK">
-      <Guid>{51E1C96F-F16B-4D5A-A790-4C72E219F9AE}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>tlbimp</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
-  </ItemGroup>
-  <ItemGroup>
-    <WebReferences Include="Web References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <WebReferenceUrl Include="https://ws.parkentegrasyon.com.tr/EFaturaIntegration.asmx">
-      <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\tr.com.parkentegrasyon.Goruntu\</RelPath>
-      <UpdateFromURL>https://ws.parkentegrasyon.com.tr/EFaturaIntegration.asmx</UpdateFromURL>
-      <ServiceLocationURL>
-      </ServiceLocationURL>
-      <CachedDynamicPropName>
-      </CachedDynamicPropName>
-      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>Entegref_tr_com_parkentegrasyon_Goruntu_EFaturaIntegration</CachedSettingsPropName>
-    </WebReferenceUrl>
-    <WebReferenceUrl Include="https://wstest.parkentegrasyon.com.tr/EFaturaService.asmx">
-      <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\tr.com.parkentegrasyon.EFatura_test\</RelPath>
-      <UpdateFromURL>https://wstest.parkentegrasyon.com.tr/EFaturaService.asmx</UpdateFromURL>
-      <ServiceLocationURL>
-      </ServiceLocationURL>
-      <CachedDynamicPropName>
-      </CachedDynamicPropName>
-      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>Entegref_tr_com_parkentegrasyon_EFatura_test_EFaturaService</CachedSettingsPropName>
-    </WebReferenceUrl>
-    <WebReferenceUrl Include="https://wstest.parkentegrasyon.com.tr/EIrsaliyeService.asmx">
-      <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\tr.com.parkentegrasyon.Irsaliye_test\</RelPath>
-      <UpdateFromURL>https://wstest.parkentegrasyon.com.tr/EIrsaliyeService.asmx</UpdateFromURL>
-      <ServiceLocationURL>
-      </ServiceLocationURL>
-      <CachedDynamicPropName>
-      </CachedDynamicPropName>
-      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>Entegref_tr_com_parkentegrasyon_Irsaliye_test_EIrsaliyeService</CachedSettingsPropName>
-    </WebReferenceUrl>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

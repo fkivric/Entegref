@@ -19,11 +19,6 @@ using System.Net.NetworkInformation;
 using System.Text.RegularExpressions;
 using System.Reflection;
 using System.Data.Sql;
-using DevExpress.XtraSplashScreen;
-using System.Threading;
-using System.Data.SqlClient;
-using System.Xml;
-using System.Configuration;
 
 namespace Entegref
 {
@@ -37,7 +32,6 @@ namespace Entegref
         {
             InitializeComponent();
             Init_Data();
-            VKN = _VKN;
             if (VKN == null)
             {
                 VKN = "39391097764";
@@ -45,21 +39,15 @@ namespace Entegref
                 SKGL.Generate generate = new SKGL.Generate();
                 generate.secretPhase = VKN;
                 Properties.Settings.Default.SecretPhase = generate.doKey(Convert.ToInt32("365"));
-                Properties.Settings.Default.Save();
             }
             else
             {
-                SKGL.Generate generate = new SKGL.Generate();
-                generate.secretPhase = VKN;
-                Properties.Settings.Default.SecretPhase = generate.doKey(Convert.ToInt32("365"));
-                Properties.Settings.Default.Save();
+                VKN = _VKN;
             }
         }
 
         SqlConnectionObject conn = new SqlConnectionObject();
-        SqlConnection sql = new SqlConnection(Properties.Settings.Default.connectionstring);
         SystemGuid SystemGuid= new SystemGuid();
-        DataTable dil = new DataTable();
         public string id;
         public string MachineName;
         public string UserName;
@@ -75,7 +63,7 @@ namespace Entegref
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-            timer1.Start();
+            //timer1.Start();
             SKGL.Validate validate = new SKGL.Validate();
             validate.secretPhase = VKN;
             validate.Key = Properties.Settings.Default.SecretPhase;
@@ -159,17 +147,8 @@ namespace Entegref
             //webClient.Dispose();
             bunifupassword.ForeColor = SystemColors.GrayText;
             bunifupassword.Text = "Parola";
-
             this.bunifupassword.Leave += new System.EventHandler(this.ultraTextEditor1_Leave);
             this.bunifupassword.Enter += new System.EventHandler(this.ultraTextEditor1_Enter);
-
-            cmbDil.DisplayMember = "sAciklama";
-            cmbDil.ValueMember = "sDil";
-            string q = "select * from tbDil";
-            SqlCommand cmd = new SqlCommand(q, sql);
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            da.Fill(dil);
-            cmbDil.DataSource = dil;
         }
         private static string GetMachineNameFromIPAddress(string ipAdress)
         {
@@ -371,21 +350,6 @@ namespace Entegref
         {
             saniye++;
             lblSaniye.Text = DateTime.Now.ToLongTimeString();
-        }
-
-        private void frmLogin_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                simpleButton1_Click(null, null);
-            }
-
-            if (e.KeyCode == Keys.Escape)
-            {
-                Application.Exit();
-                this.Close();
-                this.Dispose();
-            }
         }
     }
 }

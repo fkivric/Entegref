@@ -20,7 +20,7 @@ namespace Entegref
         [STAThread]
         static void Main()
         {
-            //selam yunus naber
+            //selam yunus naber bu kayıt ofisteki bilgisayardan yapıldı
             DevExpress.Skins.SkinManager.EnableFormSkins();
             DevExpress.XtraEditors.WindowsFormsSettings.AllowDefaultSvgImages = DevExpress.Utils.DefaultBoolean.False;
             Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture("tr");
@@ -63,17 +63,14 @@ namespace Entegref
                 }
                 else
                 {
+
                     bool acikmi = false;
                     Mutex mtex = new Mutex(true, "Program", out acikmi);
                     if (acikmi)
                     {
-                        var db1 = Properties.Settings.Default.connectionstring;
-                        db1 = "Server=185.184.26.245;Database="+ Properties.Settings.Default.VKN+"; User Id=fatih; Password=05101981;";
-                        Properties.Settings.Default.connectionstring = db1;
-                        Properties.Settings.Default.Save();
                         Application.EnableVisualStyles();
                         //Application.SetCompatibleTextRenderingDefault(false);
-                        //Application.Run(new frmYapılandırma());
+                        //Application.Run(new frmCicekSepeti_Category());
                         Application.Run(new frmLogin(Properties.Settings.Default.VKN));
                     }
                     else
