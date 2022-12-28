@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="https://wstest.parkentegrasyon.com.tr/EFaturaService.asmx?wsdl" docRef="https://wstest.parkentegrasyon.com.tr/EFaturaService.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="https://wstest.parkentegrasyon.com.tr/EFaturaService.asmx" xmlns:q1="http://parkentegrasyon.com.tr/" binding="q1:EFaturaServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="https://wstest.parkentegrasyon.com.tr/EFaturaService.asmx" xmlns:q2="http://parkentegrasyon.com.tr/" binding="q2:EFaturaServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

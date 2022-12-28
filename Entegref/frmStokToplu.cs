@@ -61,40 +61,11 @@ namespace Entegref
             sf1 = conn.DfQuery("Sinif", Prm);
             cmbsinif1.DataSource = sf1;
         }
-        private void btnExcelAc_Click(object sender, EventArgs e)
-        {
-            using (OpenFileDialog openFileDialog = new OpenFileDialog() { Filter = "Excel 97-2003 Workbook|*.xls|Excel Workbook|*.xlsx" })
-            {
-                if (openFileDialog.ShowDialog() == DialogResult.OK)
-                {
-                    txtExcelYolu.Text = openFileDialog.FileName;
-                    using (var stream = File.Open(openFileDialog.FileName, FileMode.Open, FileAccess.Read))
-                    {
-                        using (IExcelDataReader reader = ExcelReaderFactory.CreateReader(stream))
-                        {
-                            DataSet result = reader.AsDataSet(new ExcelDataSetConfiguration()
-                            {
-                                ConfigureDataTable = (_) => new ExcelDataTableConfiguration() { UseHeaderRow = true }
-                            });
-                            tableCollection = result.Tables;
-                            cmbExcelSekme.Items.Clear();
-                            foreach (DataTable table in tableCollection)
-                                cmbExcelSekme.Items.Add(table.TableName);//add sheet to combobox
-                        }
-                    }
-                }
-            }
-        }
-
-        private void cmbExcelSekme_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            DataTable dt = tableCollection[cmbExcelSekme.SelectedItem.ToString()];
-            gridExcelVeriAktar.DataSource = dt;
-        }
 
         private void btnSiniftanAc_Click(object sender, EventArgs e)
         {
-
+            panel1.Enabled = false;
+            panel2.Enabled = true;
         }
         private void cmbsinif1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -275,23 +246,57 @@ namespace Entegref
         {
 
         }
-
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
+        private void btnExcelAc_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog() { Filter = "Excel 97-2003 Workbook|*.xls|Excel Workbook|*.xlsx" })
+            {
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    txtExcelYolu.Text = openFileDialog.FileName;
+                    using (var stream = File.Open(openFileDialog.FileName, FileMode.Open, FileAccess.Read))
+                    {
+                        using (IExcelDataReader reader = ExcelReaderFactory.CreateReader(stream))
+                        {
+                            DataSet result = reader.AsDataSet(new ExcelDataSetConfiguration()
+                            {
+                                ConfigureDataTable = (_) => new ExcelDataTableConfiguration() { UseHeaderRow = true }
+                            });
+                            tableCollection = result.Tables;
+                            cmbExcelSekme.Items.Clear();
+                            foreach (DataTable table in tableCollection)
+                                cmbExcelSekme.Items.Add(table.TableName);//add sheet to combobox
+                        }
+                    }
+                }
+            }
+        }
+        private void cmbExcelSekme_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataTable dt = tableCollection[cmbExcelSekme.SelectedItem.ToString()];
+            gridExcelVeriAktar.DataSource = dt;
+        }
         private void simpleButton1_Click(object sender, EventArgs e)
         {
-            SaveFileDialog save = new SaveFileDialog();
-            save.DefaultExt = "xls";
-            save.Filter = "Excel files (*.xls)|*.xlsx";
-            save.CheckFileExists = true;
-            if (save.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                string sourcePath = Application.StartupPath;
-                File.Copy(sourcePath + "\\DownloadDefauldFile\\UrunAc.xls", save.FileName);
-            }
+            string sourcePath = Application.StartupPath;
+            StreamWriter tw = new StreamWriter(sourcePath + "\\DownloadDefauldFile\\UrunAc.xls");
+            tw.Write(textBox1.Text);
+            label1.Text = "File Save Successfully";
+            Random r = new Random();
+            label1.ForeColor = Color.FromArgb(r.Next(0, 256), r.Next(0, 256), 0);
+            tw.Close();
+            //SaveFileDialog save = new SaveFileDialog();
+            //save.DefaultExt = "xls";
+            //save.Filter = "Excel files (*.xls)|*.xlsx";
+            //save.CheckFileExists = true;
+            //if (save.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            //{
+            //    string sourcePath = Application.StartupPath;
+            //    File.Copy(sourcePath + "\\DownloadDefauldFile\\UrunAc.xls", save.FileName);
+            //}
         }
     }
 }

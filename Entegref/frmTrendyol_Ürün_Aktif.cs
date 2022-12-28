@@ -160,6 +160,7 @@ namespace Entegref
         }
         private void simpleButton1_Click(object sender, EventArgs e)
         {
+
             var username = Properties.Settings.Default.TrendyolApi;
             var password = Properties.Settings.Default.TrendyolSecretkey;
             string encoded = System.Convert.ToBase64String(Encoding.GetEncoding("ISO-8859-1")

@@ -28,6 +28,7 @@ namespace Entegref
             PRM.Add("@VKN", "39391097764");
             var connection = conn.NTBQuery("ConnectionString", PRM);
             Properties.Settings.Default.CoudServerLocal = connection.Rows[0][0].ToString();
+            Properties.Settings.Default.Save();
             uncheck1.Visible = false;
             uncheck2.Visible = false;
             simpleButton2.Enabled = false;
@@ -176,16 +177,17 @@ namespace Entegref
                 RegistryKey key = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\Entegref");
                 key.SetValue("ApplicationSetupComplate", "true");
                 key.SetValue("ApplicationGUID", id);
+                key.SetValue("ApplicationGUID", Properties.Settings.Default.SecretPhase);
                 key.Close();
 
                 RegistryKey odbc = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\ODBC\ODBC.INI\Entegref");
-                key.SetValue("Driver", "C:\\WINDOWS\\system32\\SQLSRV32.dll");
-                key.SetValue("Description", "Entegref");
-                key.SetValue("Server", "185.184.26.206");
-                key.SetValue("Database", txtVKN.Text);
-                key.SetValue("Language" , "Türkçe");
-                key.SetValue("LastUser", "fatih");
-
+                odbc.SetValue("Driver", "C:\\WINDOWS\\system32\\SQLSRV32.dll");
+                odbc.SetValue("Description", "Entegref");
+                odbc.SetValue("Server", "185.184.26.245");
+                odbc.SetValue("Database", txtVKN.Text);
+                odbc.SetValue("Language" , "Türkçe");
+                odbc.SetValue("LastUser", "fatih");
+                odbc.Close();
             }
             else
             {
@@ -230,6 +232,7 @@ namespace Entegref
             var database = conn.NTBQuery("DbList", keys);
 
             Properties.Settings.Default.VKN = txtVKN.Text;
+            Properties.Settings.Default.Save();
 
             if (database.Rows[0][1].ToString() == "0")
             {
@@ -297,6 +300,7 @@ namespace Entegref
             SKGL.Generate generate = new SKGL.Generate();
             generate.secretPhase = txtVKN.Text;
             Properties.Settings.Default.SecretPhase = generate.doKey(Convert.ToInt32("365"));
+            Properties.Settings.Default.Save();
 
 
 
@@ -307,6 +311,7 @@ namespace Entegref
             bunifuCheckbox4.Visible = false;
             bunifuCheckbox3.Checked = true;
             simpleButton3.Enabled = false;
+
         }
         public static string Pazaryeri;
         private void checkedListBoxControl1_SelectedIndexChanged(object sender, EventArgs e)
@@ -366,6 +371,7 @@ namespace Entegref
             Properties.Settings.Default.TrendyolApi = txttrendyolApi.Text;
             Properties.Settings.Default.TrendyolId = txttrendyolID.Text;
             Properties.Settings.Default.TrendyolSecretkey = txttrendyolSecret.Text;
+            Properties.Settings.Default.Save();
             simpleButton4.Enabled = false;
             simpleButton1.Enabled = false;
             simpleButton2.Enabled = true;
@@ -408,21 +414,21 @@ namespace Entegref
 
         private void simpleButton5_Click(object sender, EventArgs e)
         {
-            SqlConnection sql = new System.Data.SqlClient.SqlConnection("Server=185.184.26.206;Database=Netbil_Connector; User ID=fatih;Password=05101981;");
+            SqlConnection sql = new System.Data.SqlClient.SqlConnection(Properties.Settings.Default.connectionstring2);
             sql.Open();
-            SqlCommand cmd = new SqlCommand("insert into "+txtVKN.Text+ ".dbo.tbWinnerKullanici(sKullaniciKodu, sAdi, sSoyadi, sEMail,parola) values(@sKullaniciKodu, @sAdi, @sSoyadi, @sEMail,@parola)");
+            SqlCommand cmd = new SqlCommand("insert into ["+txtVKN.Text+ "].[dbo].tbWinnerKullanici(sKullaniciKodu, sAdi, sSoyadi, sEMail,parola) values(@sKullaniciKodu, @sAdi, @sSoyadi, @sEMail,@parola)",sql);
             cmd.Parameters.AddWithValue("@sKullaniciKodu", txtsKullaniciKodu.Text);
             cmd.Parameters.AddWithValue("@parola", txtParola.Text);
             cmd.Parameters.AddWithValue("@sAdi", txtsKullaniciKodu.Text);
             cmd.Parameters.AddWithValue("@sSoyadi", txtsKullaniciKodu.Text);
             cmd.Parameters.AddWithValue("@sEMail", txtsKullaniciKodu.Text);
             cmd.ExecuteScalar();
-
         }
 
         private void simpleButton6_Click(object sender, EventArgs e)
         {
             Properties.Settings.Default.CicekSepetiApi_key = txtcicekApi.Text;
+            Properties.Settings.Default.Save();
         }
     }
 }

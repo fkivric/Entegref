@@ -17,6 +17,7 @@ namespace Entegref
 {
     public partial class frmTrendyol_FirmaAdresBilgisi : DevExpress.XtraEditors.XtraForm
     {
+        SqlConnectionObject conn = new SqlConnectionObject();
         public frmTrendyol_FirmaAdresBilgisi()
         {
             InitializeComponent();
@@ -182,6 +183,25 @@ namespace Entegref
                 ListtoDataTableConverter converter = new ListtoDataTableConverter();
                 var dt = converter.ToDataTable(suppliers);
                 gridAddress.DataSource = suppliers;
+                foreach (var item in suppliers)
+                {
+                    Dictionary<string, string> depolar = new Dictionary<string, string>();
+                    depolar.Add("@id", item.id.ToString());
+                    depolar.Add("@addressType", item.addressType);
+                    depolar.Add("@country", item.country);
+                    depolar.Add("@city", item.city);
+                    depolar.Add("@cityCode", item.cityCode.ToString());
+                    depolar.Add("@district", item.district);
+                    depolar.Add("@districtId", item.districtId.ToString());
+                    depolar.Add("@postCode", item.postCode);
+                    depolar.Add("@address", item.address);
+                    depolar.Add("@returningAddress", item.returningAddress.ToString());
+                    depolar.Add("@fullAddress", item.fullAddress);
+                    depolar.Add("@shipmentAddress", item.shipmentAddress.ToString());
+                    depolar.Add("@invoiceAddress", item.invoiceAddress.ToString());
+                    depolar.Add("@default", item.@default.ToString());
+                    conn.DfInsert("Entegref_Adress", depolar);
+                }
             }
         }
 

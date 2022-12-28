@@ -117,134 +117,708 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="ımageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="ımageList1.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADU
-        GQAAAk1TRnQBSQFMAgEBAgEAAegBAAHoAQABIAEAASABAAT/AREBAAj/AUIBTQE2BwABNgMAASgDAAGA
-        AwABIAMAAQEBAAEQBgABIFIAAd4BewGcAXMBnAFzAd4BewHeAXsB3gF7Ad4BewHeAXsB3gF7Ad4BewHe
-        AXsB3gF7Ad4BewHeAXsB3gF7Ad4BewHeAXsB3gF7Ad4BewHeAXsB3gF7Ad4BewHeAXsB3gF7Ad4BewHe
-        AXsB3gF7Ad4BewHeAXsB3gF7Ad4BewHeAXvAAAG+AXcB2AFaAbcBVgF8AW8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwG+AXcB3wF7Ab4BdwH/AX8B3gF7AXwBcwGdAXMB/wF/Af8BfwG+AXcB/wF/Af8BfwHeAXsBfAFz
-        AZ0BcwH/AX8B/wF/Ab4BdwH/AX8BvgF3AXwBcwG9AXcB/wF/wAABfAJvATEBLgEpAVUBSgG+AXcB/wF/
-        Af8BfwH/AX8B/wF/AfkBYgF8AW8BuAFaAf8BfwE6AWcBVQFKAZcBUgG+AXcB/wF/ARkBYwGdAXMB/wF/
-        AVsBawFVAUoBdgFSAZwBcwHeAXsB+QFeAf8BfwEZAWMBVQFKAfgBXgH/AX/AAAFbAWsBqwEYAYoBFAHS
-        ATkBnAFzAf8BfwH/AX8B/wF/Af8BfwGWAVIB2AFeAfMBQQH/AX8B+QFeAbEBNQFVAUoBvQF3Af8BfwGX
-        AVYBOgFnAf8BfwEZAWMBkQE1AdIBPQEaAWMBvgF3AVUBSgH/AX8BlwFWAdIBOQHYAVoB/wF/wAABOwFr
-        AYoBFAHtASABNAFKAVsBawH/AX8B/wF/Ad4BfwHeAX8BVQFOAVUBSgFvAS0B3gF7AfkBXgHSATkB2AFa
-        Ab4BdwH/AX8BlgFSAfkBXgH/AX8BGQFjAbEBOQHyAT0BlwFWAd4BewETAUIB3gF7AbcBVgFVAUoBnAFz
-        Af8Bf8AAATsBawGKARQBbwEtAfkBYgGdAXMB/wF/Ad4BfwFYAXsBvAF/AXYBTgHSATkBbwEtAb0BdwEa
-        AWMBsQE1AbcBVgG+AXcB/wF/AbcBVgG3AVYB/wF/AToBZwGQATUB0gE9AZYBUgH/AX8B8wFBAb0BdwHY
-        AVoBdQFOAd8BewH/AX/AAAE7AWsBigEUAdIBOQH/AX8B/wF/Af8BfwGbAXsBjgF2AXkBewG3AVYBbwEt
-        AdEBOQF8AW8BWwFrAU4BKQE0AUYBnQFzAf8BfwH5AV4BdgFOAf8BfwF8AW8BTwEtAbEBNQGXAVYB/wF/
-        ARMBQgF8AXMBGgFjAVUBSgH/AX8B/wF/gAAB3gF7Ad4BewHeAXsB3gF7Ad4BewHeAXsB3gF7Ad4BewHe
-        AXsB3gF7Ad4BewHeAXsB3gF7Ad4BewHeAXsB3gF7Ad4BewHeAXsB3gF7Ad4BewHeAXsB3gF7Ad4BewHe
-        AXsB3gF7Ad4BewHeAXsB3gF7Ad4BewHeAXsB3gF7Ad4BewE7AWsBigEUAdIBPQH/AX8B/wF/AZsBewHR
-        AXoBCQF2AVgBewHYAVoBkAExATQBRgE7AWcBnQFzAW8BLQETAUYBWwFrAf8BfwGWAVIB0gE9AZwBcwGd
-        AXMBkAExAbEBOQGWAVIB/wF/ATQBSgFbAWsBWwFrATQBSgH/AX8B/wF/gAABnQFzAYoBFAFpARABNAFK
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8BlwFSAd4BewF2AVIB/wF/ARoBYwHSATkB0gE9Ad4BewH/AX8B2AFa
-        Ab0BdwH/AX8BOgFnAdIBOQHzAUEBvgF3Ad8BewGXAVIB/wF/AdgBWgHSATkBVQFOAf8BfwE7AWsBigEU
-        AdIBPQH/AX8B/gF/ARUBewEIAXYBxAF1AVgBewEaAWMB0gE9AZcBVgEaAWMBvgF7AbEBOQE0AUYBOgFn
-        Af8BfwE0AUoBbwEtARkBYwHeAXsB0gE5AdIBOQGWAVIB/wF/AXYBTgE6AWcBnAFzATQBSgH/AX8B/wF/
-        gAABnQFzAUkBDAHMARwBsQE5ARoBYwH/AX8B/wF/Af8BfwH/AX8B0gE5AdgBXgHMARwB/wF/AfkBXgE0
-        AUYBnAFzAf8BfwH/AX8BdgFOARoBYwH/AX8BOgFnAfMBQQGWAVIBVQFKAf8BfwGQATEB/wF/AZcBUgGX
-        AVIBnQFzAf8BfwE7AWsBigEUAdIBPQH/AX8BNwF7AUwBdgHFAXkBxAF5AVgBewGdAXMB+AFeAVsBawF8
-        AW8B/wF/AbcBVgG3AVYBfAFvAf8BfwHYAV4BdgFOAVsBawH/AX8B2AFaAbcBVgFbAWsB/wF/AdgBWgEa
-        AWMB3gF7ARkBYwH/AX8B/wF/gAABnQFzAUkBDAHSATkB/wF/Af8BfwH/AX8B3gF/AY8BdgF5AXcBdgFO
-        AW8BLQGQATEB3gF7AZ0BdwGrARgBTwEtAZ0BcwH/AX8BGgFjAVUBTgH/AX8B3gF7AaoBFAEtASUB2AFa
-        Af8BfwGQATEB/wF/AVsBawE0AUYB/wF/Af8BfwE7AWsBigEUAdIBPQH+AX8BsAF2AeUBdQHEAXkBxAF5
-        AVgBewH/AXsBvQF3Ad4BewHeAXsB/wF/AXwBbwFbAWsBvQF3Af8BfwF8AW8BWwFrAZ0BcwH/AX8BnAFz
-        AVsBawHeAXsB/wF/AToBZwE6AWcB/wF/Ab0BdwH/AX8B/wF/gAABnQFzAUkBDAHSATkB/wF/Af8BfwF6
-        AXsBCQF2AcQBeQFZAXcBGgFjAS4BKQF1AU4BOwFnAd8BewFPASkBdgFSAVsBawH/AX8BdQFOAS4BKQE6
-        AWcB/wF/AU4BKQE0AUYBEwFCAf8BfwETAUIBfAFvAd4BewGxATkB/wF/Af8BfwE7AWsBigEUAdIBPQG9
-        AX8BKQF2AeYBdQHmAXkBxAF5AVgBewH/AX8B/wF/Af8BfwH/AX8B/wF/Ad4BewHeAXsB/wF/Af8BfwHe
-        AXsB3gF7Ad8BewH/AX8B3gF7Ad4BewH/AX8B/wF/AZwBcwF8AW8B/wF/Af8BfwH/AX8B/wF/gAABnQFz
-        AUkBDAHSATkB/wF/AfQBdgHFAXUBwwF5AcMBeQFZAXsB3wF7AXwBbwG9AXcBvQF3Af8BfwE6AWcB+QFe
-        AXwBbwH/AX8BGgFjAfkBXgF8AW8B/wF/ATsBZwEZAWMB3gF7Af8BfwEZAWMBOgFnAf8BfwFbAWsB/wF/
-        Af8BfwE7AWsBigEUAdIBPQG8AX8BCAF2AUsBegEqAXYBxAF5AVgBewH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Ad4BewG+AXcB/wF/
-        Af8BfwH/AX8B/wF/gAABnQFzAUkBDAHSATkB3gF/AcUBdQHEAXkB5wF1AcMCeQF7Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8BvQF3
-        AZ0BcwH/AX8B/wF/Af8BfwH/AX8BOwFrAYoBFAHSAT0BvAF/AUwBdgE2AXsBjgF2AcQBeQFYAXsB/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8Bf4AAAZ0BcwFJAQwB0gE5Ad4BfwEIAXYBWAF7AY8BdgHD
-        AnkBewH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/ATsBawGKARQB0gE9Ad0BfwH0AXoBmwF7
-        AY8BdgHEAXkBWAF7Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX+AAAGdAXMBSQEMAdIBOQH/
-        AX8B3gF/Af8BfwGPAXYBwwJ5AXsB/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwE7AWsBigEU
-        AdIBPQH/AX8B3QF/Af8BfwGvAXoBxAF5AVgBewH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        gAABnQFzAUkBDAHSATkB/wF/Af8BfwH/AX8BjwF2AcMCeQF7Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8BOwFrAYoBFAHSAT0B/wF/Ad4BfwH/AX8BrwF6AcQBeQFYAXsB/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8Bf4AAAZ0BcwFJAQwB0gE5AZ0BcwFOASkB/wF/AY8BdgHDAnkBewH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/ATsBawGKARQB0gE9Af8BfwG9AXcB/wF/Aa8BegHEAXkBWAF7
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX+AAAGdAXMBSQEMAewBIAGKARQBKAEIAf8BfwGP
-        AXYBwwJ5AXsB/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwE7AWsBigEUAdIBPQG9AXcBlgFS
-        Ab4BdwGvAXoBxAF5AVgBewH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/gAABnQFzAUkBDAFI
-        AQwBSAEMAdEBOQH/AX8BjwF2AcMCeQF7Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8BOwFr
-        AYoBFAGxATUB2AFeAbEBNQGdAXMBrwF6AcQBeQFYAXsB/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8Bf4AAAZ0BcwFJAQwBigEUAbcBWgH/AX8B/wF/AY8BdgHDAnkBewH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/ATsBawGKARQBLgEpAW8BLQHMARwBnQFzAa8BegHEAXkBWAF7Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX+AAAGcAXMBLgEpAZ0BcwH/AX8B/wF/Af8BfwGPAXYBwwJ5AXsB/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwE7AWsBigEUAasBGAGrARgBDQEhAb0BcwGvAXoBxAF5
-        AVgBewH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/gAAB/wF/Af8BfwH/AX8B/wF/ATcBdwGx
-        AXYBCQF2AcMCeQF7Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8BOwFrAYoBFAFIAQwBSQEM
-        AZEBNQHeAXsBrwF6AcQBeQFYAXsB/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8Bf4AAAf8BfwH/
-        AX8B/wF/Af8BfwHeAX8BjgF2AcQBeQHDAnkBewH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        ATsBawGKARQBaQEMAU4BKQG4AVoB/wF/Aa8BegHEAXkBWAF7Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX+AAAHeAXsB3gF7Ad4BewHeAXsB3gF7Ad4BewGbAXcBewF3Ad4BewHeAXsB3gF7Ad4BewHe
-        AXsB3gF7Ad4BewHeAXsB3gF7Ad4BewHeAXsB3gF7Ad4BewHeAXsB3gF7Ad4BewHeAXsB3gF7Ad4BewHe
-        AXsB3gF7Ad4BewHeAXsB3gF7ATsBawGKARQBqwEYAVUBTgHeAXsB/wF/Aa8BegHEAXkBWAF7Af8BfwH/
-        AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/
-        AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX/AAAE7AWcB7QEgARMBQgFbAWsB/wF/Af8BfwGvAXoBxAF5
-        AVgBewH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/wAABWwFrAbEBOQE6AWcB/wF/Af4BfwHd
-        AX8BjgF2AcQBeQFYAXsB/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/
-        AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8Bf8AAAZ0BcwH5AWIBvgF3
-        Af8BfwGbAXsBWAF7AUwBdgHEAXkBWAF7Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX/AAAHe
-        AXsBvgF3Af8BfwH/AX8BegF7AdIBdgEJAXYBxAF5AVgBewH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/
-        AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/
-        AX8B/wF/wAAB/wF/Af8BfwH/AX8B/wF/AZsBewFMAXYBxAF5AcQBdQFYAXsB/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8Bf8AAAf8BfwH/AX8B/wF/Af8BfwG9AX8B8gF6AUoBdgFLAXYBegF7Af8BfwH/
-        AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/
-        AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX/AAAH/AX8B/wF/Af8BfwH/AX8B/wF/AbwBfwHzAXYB0wF2
-        AbwBewH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/
-        Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/Af8BfwH/AX8B/wF/gAABQgFNAT4HAAE+AwABKAMAAYADAAEg
-        AwABAQEAAQEGAAECFgAD/wEABP8MAAT/DAAE/wwABP8MAAT/DAAE/wwABP//AC0ABP8MAAT/DAAE/wwA
-        BP8MAAT/DAAE/wwABP8MAAs=
-</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
   </data>
-  <metadata name="ımageList2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>127, 17</value>
-  </metadata>
+  <data name="button2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold, Italic</value>
+  </data>
+  <data name="button2.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>858, 0</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 49</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>Giriş Ekranı</value>
+  </data>
+  <data name="button2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="button2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>921, 6</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 13</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Dil Ayarları</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cmbDil.Location" type="System.Drawing.Point, System.Drawing">
+    <value>921, 25</value>
+  </data>
+  <data name="cmbDil.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 21</value>
+  </data>
+  <data name="cmbDil.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;cmbDil.Name" xml:space="preserve">
+    <value>cmbDil</value>
+  </data>
+  <data name="&gt;&gt;cmbDil.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbDil.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;cmbDil.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="button1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold, Italic</value>
+  </data>
+  <data name="button1.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 49</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Giriş Sunucu Bağlantı Parametleri</value>
+  </data>
+  <data name="button1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 482</value>
+  </data>
+  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>983, 49</value>
+  </data>
+  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="navigationPage1.Caption" xml:space="preserve">
+    <value>navigationPage1</value>
+  </data>
+  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>614, 25</value>
+  </data>
+  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 23</value>
+  </data>
+  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="button3.Text" xml:space="preserve">
+    <value>Database Değiştir</value>
+  </data>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>navigationPage1</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ultraLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 232</value>
+  </data>
+  <data name="ultraLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 23</value>
+  </data>
+  <data name="ultraLabel4.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="ultraLabel4.Text" xml:space="preserve">
+    <value>GUID Key</value>
+  </data>
+  <data name="&gt;&gt;ultraLabel4.Name" xml:space="preserve">
+    <value>ultraLabel4</value>
+  </data>
+  <data name="&gt;&gt;ultraLabel4.Type" xml:space="preserve">
+    <value>Infragistics.Win.Misc.UltraLabel, Infragistics4.Win.Misc.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb</value>
+  </data>
+  <data name="&gt;&gt;ultraLabel4.Parent" xml:space="preserve">
+    <value>navigationPage1</value>
+  </data>
+  <data name="&gt;&gt;ultraLabel4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ultraLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 163</value>
+  </data>
+  <data name="ultraLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 23</value>
+  </data>
+  <data name="ultraLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="ultraLabel3.Text" xml:space="preserve">
+    <value>Lisans Key</value>
+  </data>
+  <data name="&gt;&gt;ultraLabel3.Name" xml:space="preserve">
+    <value>ultraLabel3</value>
+  </data>
+  <data name="&gt;&gt;ultraLabel3.Type" xml:space="preserve">
+    <value>Infragistics.Win.Misc.UltraLabel, Infragistics4.Win.Misc.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb</value>
+  </data>
+  <data name="&gt;&gt;ultraLabel3.Parent" xml:space="preserve">
+    <value>navigationPage1</value>
+  </data>
+  <data name="&gt;&gt;ultraLabel3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ultraLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 94</value>
+  </data>
+  <data name="ultraLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 23</value>
+  </data>
+  <data name="ultraLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="ultraLabel2.Text" xml:space="preserve">
+    <value>Vergi No</value>
+  </data>
+  <data name="&gt;&gt;ultraLabel2.Name" xml:space="preserve">
+    <value>ultraLabel2</value>
+  </data>
+  <data name="&gt;&gt;ultraLabel2.Type" xml:space="preserve">
+    <value>Infragistics.Win.Misc.UltraLabel, Infragistics4.Win.Misc.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb</value>
+  </data>
+  <data name="&gt;&gt;ultraLabel2.Parent" xml:space="preserve">
+    <value>navigationPage1</value>
+  </data>
+  <data name="&gt;&gt;ultraLabel2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ultraLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 25</value>
+  </data>
+  <data name="ultraLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 23</value>
+  </data>
+  <data name="ultraLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="ultraLabel1.Text" xml:space="preserve">
+    <value>Server Name</value>
+  </data>
+  <data name="&gt;&gt;ultraLabel1.Name" xml:space="preserve">
+    <value>ultraLabel1</value>
+  </data>
+  <data name="&gt;&gt;ultraLabel1.Type" xml:space="preserve">
+    <value>Infragistics.Win.Misc.UltraLabel, Infragistics4.Win.Misc.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb</value>
+  </data>
+  <data name="&gt;&gt;ultraLabel1.Parent" xml:space="preserve">
+    <value>navigationPage1</value>
+  </data>
+  <data name="&gt;&gt;ultraLabel1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txtGUID.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtGUID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 231</value>
+  </data>
+  <data name="txtGUID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>362, 21</value>
+  </data>
+  <data name="txtGUID.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtGUID.Name" xml:space="preserve">
+    <value>txtGUID</value>
+  </data>
+  <data name="&gt;&gt;txtGUID.Type" xml:space="preserve">
+    <value>Infragistics.Win.UltraWinEditors.UltraTextEditor, Infragistics4.Win.UltraWinEditors.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb</value>
+  </data>
+  <data name="&gt;&gt;txtGUID.Parent" xml:space="preserve">
+    <value>navigationPage1</value>
+  </data>
+  <data name="&gt;&gt;txtGUID.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtSecretPhease.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtSecretPhease.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 162</value>
+  </data>
+  <data name="txtSecretPhease.Size" type="System.Drawing.Size, System.Drawing">
+    <value>362, 21</value>
+  </data>
+  <data name="txtSecretPhease.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtSecretPhease.Name" xml:space="preserve">
+    <value>txtSecretPhease</value>
+  </data>
+  <data name="&gt;&gt;txtSecretPhease.Type" xml:space="preserve">
+    <value>Infragistics.Win.UltraWinEditors.UltraTextEditor, Infragistics4.Win.UltraWinEditors.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb</value>
+  </data>
+  <data name="&gt;&gt;txtSecretPhease.Parent" xml:space="preserve">
+    <value>navigationPage1</value>
+  </data>
+  <data name="&gt;&gt;txtSecretPhease.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txtDatabase.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 93</value>
+  </data>
+  <data name="txtDatabase.Size" type="System.Drawing.Size, System.Drawing">
+    <value>362, 21</value>
+  </data>
+  <data name="txtDatabase.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtDatabase.Name" xml:space="preserve">
+    <value>txtDatabase</value>
+  </data>
+  <data name="&gt;&gt;txtDatabase.Type" xml:space="preserve">
+    <value>Infragistics.Win.UltraWinEditors.UltraTextEditor, Infragistics4.Win.UltraWinEditors.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb</value>
+  </data>
+  <data name="&gt;&gt;txtDatabase.Parent" xml:space="preserve">
+    <value>navigationPage1</value>
+  </data>
+  <data name="&gt;&gt;txtDatabase.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="SQLComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 26</value>
+  </data>
+  <data name="SQLComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>362, 21</value>
+  </data>
+  <data name="SQLComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;SQLComboBox.Name" xml:space="preserve">
+    <value>SQLComboBox</value>
+  </data>
+  <data name="&gt;&gt;SQLComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SQLComboBox.Parent" xml:space="preserve">
+    <value>navigationPage1</value>
+  </data>
+  <data name="&gt;&gt;SQLComboBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="navigationPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>983, 422</value>
+  </data>
+  <data name="&gt;&gt;navigationPage1.Name" xml:space="preserve">
+    <value>navigationPage1</value>
+  </data>
+  <data name="&gt;&gt;navigationPage1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Navigation.NavigationPage, DevExpress.XtraBars.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;navigationPage1.Parent" xml:space="preserve">
+    <value>navigationFrame1</value>
+  </data>
+  <data name="&gt;&gt;navigationPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="navigationPage2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="navigationPage2.Caption" xml:space="preserve">
+    <value>navigationPage2</value>
+  </data>
   <metadata name="tabControl1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="txtLisansing.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="txtLisansing.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="txtLisansing.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtLisansing.Size" type="System.Drawing.Size, System.Drawing">
+    <value>481, 80</value>
+  </data>
+  <data name="txtLisansing.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="txtLisansing.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;txtLisansing.Name" xml:space="preserve">
+    <value>txtLisansing</value>
+  </data>
+  <data name="&gt;&gt;txtLisansing.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtLisansing.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;txtLisansing.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="bunifuCheckbox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>285, 152</value>
+  </data>
+  <data name="bunifuCheckbox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="bunifuCheckbox1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;bunifuCheckbox1.Name" xml:space="preserve">
+    <value>bunifuCheckbox1</value>
+  </data>
+  <data name="&gt;&gt;bunifuCheckbox1.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuCheckbox, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuCheckbox1.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;bunifuCheckbox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="bunifuUserName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt, style=Bold</value>
+  </data>
+  <data name="bunifuUserName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 54</value>
+  </data>
+  <data name="bunifuUserName.NullText" xml:space="preserve">
+    <value>Kullanıcı</value>
+  </data>
+  <data name="bunifuUserName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>316, 31</value>
+  </data>
+  <data name="bunifuUserName.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;bunifuUserName.Name" xml:space="preserve">
+    <value>bunifuUserName</value>
+  </data>
+  <data name="&gt;&gt;bunifuUserName.Type" xml:space="preserve">
+    <value>Infragistics.Win.UltraWinEditors.UltraTextEditor, Infragistics4.Win.UltraWinEditors.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb</value>
+  </data>
+  <data name="&gt;&gt;bunifuUserName.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;bunifuUserName.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe Script, 12pt, style=Bold</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 27</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 27</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Kullanıcı Adı</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="simpleButton1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 16pt, style=Bold</value>
+  </data>
+  <data name="simpleButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 191</value>
+  </data>
+  <data name="simpleButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>316, 54</value>
+  </data>
+  <data name="simpleButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="simpleButton1.Text" xml:space="preserve">
+    <value>Giriş Yap</value>
+  </data>
+  <data name="&gt;&gt;simpleButton1.Name" xml:space="preserve">
+    <value>simpleButton1</value>
+  </data>
+  <data name="&gt;&gt;simpleButton1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;simpleButton1.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;simpleButton1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>306, 151</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 21</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Beni Hatırla</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="bunifupassword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt, style=Bold</value>
+  </data>
+  <data name="bunifupassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 117</value>
+  </data>
+  <data name="bunifupassword.NullText" xml:space="preserve">
+    <value>Parola</value>
+  </data>
+  <data name="bunifupassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>316, 31</value>
+  </data>
+  <data name="bunifupassword.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;bunifupassword.Name" xml:space="preserve">
+    <value>bunifupassword</value>
+  </data>
+  <data name="&gt;&gt;bunifupassword.Type" xml:space="preserve">
+    <value>Infragistics.Win.UltraWinEditors.UltraTextEditor, Infragistics4.Win.UltraWinEditors.v19.2, Version=19.2.20192.134, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb</value>
+  </data>
+  <data name="&gt;&gt;bunifupassword.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;bunifupassword.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe Script, 12pt, style=Bold</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>213, 93</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 27</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Parola</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="groupControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="groupControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 83</value>
+  </data>
+  <data name="groupControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>481, 303</value>
+  </data>
+  <data name="groupControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupControl1.Text" xml:space="preserve">
+    <value>Giriş</value>
+  </data>
+  <data name="&gt;&gt;groupControl1.Name" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;groupControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;groupControl1.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;groupControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabPage1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 29</value>
+  </data>
+  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>487, 389</value>
+  </data>
+  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Giriş</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tabControl1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>488, 0</value>
+  </data>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>495, 422</value>
+  </data>
+  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
+    <value>navigationPage2</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pictureBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         R0lGODlh9AH0AfcGAFwW518Y62AY710W6l0U6V4X61wY6F0W6V0X6V4Z6l4Y62Me61c77lsn7Fwc6mEa
@@ -1036,10 +1610,214 @@
         XOmoL+j25wEBADs=
 </value>
   </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>488, 422</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>AutoSize</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>metroPanel2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="metroPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="metroPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="metroPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>488, 422</value>
+  </data>
+  <data name="metroPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;metroPanel2.Name" xml:space="preserve">
+    <value>metroPanel2</value>
+  </data>
+  <data name="&gt;&gt;metroPanel2.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroPanel2.Parent" xml:space="preserve">
+    <value>navigationPage2</value>
+  </data>
+  <data name="&gt;&gt;metroPanel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="navigationPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>983, 422</value>
+  </data>
+  <data name="&gt;&gt;navigationPage2.Name" xml:space="preserve">
+    <value>navigationPage2</value>
+  </data>
+  <data name="&gt;&gt;navigationPage2.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Navigation.NavigationPage, DevExpress.XtraBars.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;navigationPage2.Parent" xml:space="preserve">
+    <value>navigationFrame1</value>
+  </data>
+  <data name="&gt;&gt;navigationPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="navigationFrame1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="navigationFrame1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 60</value>
+  </data>
+  <data name="navigationFrame1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>983, 422</value>
+  </data>
+  <data name="navigationFrame1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="navigationFrame1.Text" xml:space="preserve">
+    <value>navigationFrame1</value>
+  </data>
+  <data name="&gt;&gt;navigationFrame1.Name" xml:space="preserve">
+    <value>navigationFrame1</value>
+  </data>
+  <data name="&gt;&gt;navigationFrame1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Navigation.NavigationFrame, DevExpress.XtraBars.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;navigationFrame1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;navigationFrame1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>971, 20</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 20</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <metadata name="metroStyleManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>237, 17</value>
+    <value>5, 9</value>
   </metadata>
+  <data name="lblversion.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblversion.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="lblversion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 41</value>
+  </data>
+  <data name="lblversion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
+  </data>
+  <data name="lblversion.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblversion.Text" xml:space="preserve">
+    <value>Sürüm</value>
+  </data>
+  <data name="&gt;&gt;lblversion.Name" xml:space="preserve">
+    <value>lblversion</value>
+  </data>
+  <data name="&gt;&gt;lblversion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblversion.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblversion.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>403, 17</value>
+    <value>159, 7</value>
   </metadata>
+  <data name="lblSaniye.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblSaniye.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 41</value>
+  </data>
+  <data name="lblSaniye.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 13</value>
+  </data>
+  <data name="lblSaniye.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblSaniye.Text" xml:space="preserve">
+    <value>Zaman</value>
+  </data>
+  <data name="&gt;&gt;lblSaniye.Name" xml:space="preserve">
+    <value>lblSaniye</value>
+  </data>
+  <data name="&gt;&gt;lblSaniye.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSaniye.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblSaniye.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1023, 551</value>
+  </data>
+  <data name="&gt;&gt;metroStyleManager1.Name" xml:space="preserve">
+    <value>metroStyleManager1</value>
+  </data>
+  <data name="&gt;&gt;metroStyleManager1.Type" xml:space="preserve">
+    <value>MetroFramework.Components.MetroStyleManager, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
+    <value>timer1</value>
+  </data>
+  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmLogin</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>MetroFramework.Forms.MetroForm, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
 </root>

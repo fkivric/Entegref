@@ -25,7 +25,7 @@ namespace Entegref.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Server=185.184.26.206;Database=39391097764; User Id=fatih; Password=05101981;")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Server=185.184.26.245;Database=39391097764; User Id=fatih; Password=05101981;")]
         public string connectionstring {
             get {
                 return ((string)(this["connectionstring"]));
@@ -37,7 +37,7 @@ namespace Entegref.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Server=185.184.26.206;Database=Netbil_Connector; User ID=fatih;Password=05101981;" +
+        [global::System.Configuration.DefaultSettingValueAttribute("Server=185.184.26.245;Database=Netbil_Connector; User ID=fatih;Password=05101981;" +
             "")]
         public string connectionstring2 {
             get {
@@ -190,6 +190,60 @@ namespace Entegref.Properties {
             }
             set {
                 this["ParkParola"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string TicimaxAlanAdi {
+            get {
+                return ((string)(this["TicimaxAlanAdi"]));
+            }
+            set {
+                this["TicimaxAlanAdi"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string TicimaxYetkiKodu {
+            get {
+                return ((string)(this["TicimaxYetkiKodu"]));
+            }
+            set {
+                this["TicimaxYetkiKodu"] = value;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://wstest.parkentegrasyon.com.tr/EIrsaliyeService.asmx")]
+        public string Entegref_tr_com_parkentegrasyon_Irsaliye_test_EIrsaliyeService {
+            get {
+                return ((string)(this["Entegref_tr_com_parkentegrasyon_Irsaliye_test_EIrsaliyeService"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://wstest.parkentegrasyon.com.tr/EFaturaService.asmx")]
+        public string Entegref_tr_com_parkentegrasyon_EFatura_test_EFaturaService {
+            get {
+                return ((string)(this["Entegref_tr_com_parkentegrasyon_EFatura_test_EFaturaService"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://ws.parkentegrasyon.com.tr/EFaturaIntegration.asmx")]
+        public string Entegref_tr_com_parkentegrasyon_Goruntu_EFaturaIntegration {
+            get {
+                return ((string)(this["Entegref_tr_com_parkentegrasyon_Goruntu_EFaturaIntegration"]));
             }
         }
     }

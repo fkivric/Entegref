@@ -30,7 +30,8 @@ namespace Entegref
             public string code { get; set; }
             public string taxNumber { get; set; }
         }
-        DataTable kargo = new DataTable();
+        DataTable kargolar = new DataTable();
+        SqlConnectionObject conn = new SqlConnectionObject();
         private void frmKargo_Load(object sender, EventArgs e)
         {
             Kargo();
@@ -79,9 +80,19 @@ namespace Entegref
             {
                 var result = streamReader.ReadToEnd();
                 var items = JsonConvert.DeserializeObject<List<Root>>(result);
-                gridKargo.DataSource = items;
                 //Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(result);
-
+                ListtoDataTableConverter converter = new ListtoDataTableConverter();
+                kargolar = converter.ToDataTable(items);
+                foreach (var item in items)
+                {
+                    Dictionary<string, string> kargo = new Dictionary<string, string>();
+                    kargo.Add("@id", item.id.ToString());
+                    kargo.Add("@name",item.name.ToString());
+                    kargo.Add("@code",item.code);
+                    kargo.Add("@taxNumber", item.taxNumber);
+                    conn.DfInsert("Entegref_Check_Kargo", kargo);
+                }
+                gridKargo.DataSource = items;
             }
         }
     }

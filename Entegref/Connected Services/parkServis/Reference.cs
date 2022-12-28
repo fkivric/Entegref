@@ -12,908 +12,211 @@ namespace Entegref.parkServis {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="parkServis.EFaturaIntegrationSoap")]
-    public interface EFaturaIntegrationSoap {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="parkServis.EIrsaliyeServiceSoap")]
+    public interface EIrsaliyeServiceSoap {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ESmmOlustur", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Login", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(REQUEST))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceResponse ESmmOlustur(Entegref.parkServis.PARKInvoiceType invoiceObj, string SmmOnEk, string ErpRef, string sessionId);
+        Entegref.parkServis.LoginRes Login(string userName, string password);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ESmmOlustur", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> ESmmOlusturAsync(Entegref.parkServis.PARKInvoiceType invoiceObj, string SmmOnEk, string ErpRef, string sessionId);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Login", ReplyAction="*")]
+        System.Threading.Tasks.Task<Entegref.parkServis.LoginRes> LoginAsync(string userName, string password);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ESmmOlusturXmlContent", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Logout", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(REQUEST))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceResponse ESmmOlusturXmlContent(string SmmIcerigiTxt, bool taslaklaraGonderilsinMi, string sessionId);
+        long Logout(string sessionId);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ESmmOlusturXmlContent", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> ESmmOlusturXmlContentAsync(string SmmIcerigiTxt, bool taslaklaraGonderilsinMi, string sessionId);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Logout", ReplyAction="*")]
+        System.Threading.Tasks.Task<long> LogoutAsync(string sessionId);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ESmmUBLGonder", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetDespatchAdvice", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(REQUEST))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceResponse ESmmUBLGonder(string xmlIcerik, string faturaNo, string uuid, bool taslaklaraGonderilsinMi, string GonderilecekEmail, string sessionId);
+        Entegref.parkServis.GetDespatchAdviceResponse GetDespatchAdvice(Entegref.parkServis.GetDespatchAdviceRequest getDespatchRequest);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ESmmUBLGonder", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> ESmmUBLGonderAsync(string xmlIcerik, string faturaNo, string uuid, bool taslaklaraGonderilsinMi, string GonderilecekEmail, string sessionId);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetDespatchAdvice", ReplyAction="*")]
+        System.Threading.Tasks.Task<Entegref.parkServis.GetDespatchAdviceResponse> GetDespatchAdviceAsync(Entegref.parkServis.GetDespatchAdviceRequest getDespatchRequest);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ESmmListele", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetReceiptAdvice", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(REQUEST))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceSummary[] ESmmListele(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int SmmSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId);
+        Entegref.parkServis.GetReceiptAdviceResponse GetReceiptAdvice(Entegref.parkServis.GetReceiptAdviceRequest getReceiptRequest);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ESmmListele", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> ESmmListeleAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int SmmSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetReceiptAdvice", ReplyAction="*")]
+        System.Threading.Tasks.Task<Entegref.parkServis.GetReceiptAdviceResponse> GetReceiptAdviceAsync(Entegref.parkServis.GetReceiptAdviceRequest getReceiptRequest);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ESmmStatuSorgula", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetReceiptAdviceStatus", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(REQUEST))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.ParkInvoiceStatusRes ESmmStatuSorgula(string uuid, string sessionId);
+        Entegref.parkServis.GetReceiptAdviceStatusResponse GetReceiptAdviceStatus(Entegref.parkServis.GetReceiptAdviceStatusRequest getReceiptAdviceStatusRequest);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ESmmStatuSorgula", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.ParkInvoiceStatusRes> ESmmStatuSorgulaAsync(string uuid, string sessionId);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetReceiptAdviceStatus", ReplyAction="*")]
+        System.Threading.Tasks.Task<Entegref.parkServis.GetReceiptAdviceStatusResponse> GetReceiptAdviceStatusAsync(Entegref.parkServis.GetReceiptAdviceStatusRequest getReceiptAdviceStatusRequest);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ESmmIptalEt", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetDespatchAdviceStatus", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(REQUEST))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceResponse ESmmIptalEt(string uuid, string sessionId);
+        Entegref.parkServis.GetDespatchAdviceStatusResponse GetDespatchAdviceStatus(Entegref.parkServis.GetDespatchAdviceStatusRequest getAdviceStatusRequest);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ESmmIptalEt", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> ESmmIptalEtAsync(string uuid, string sessionId);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetDespatchAdviceStatus", ReplyAction="*")]
+        System.Threading.Tasks.Task<Entegref.parkServis.GetDespatchAdviceStatusResponse> GetDespatchAdviceStatusAsync(Entegref.parkServis.GetDespatchAdviceStatusRequest getAdviceStatusRequest);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ESmmHtmlAl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SendDespatchAdvice", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(REQUEST))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string ESmmHtmlAl(string uuid, string sessionId);
+        Entegref.parkServis.SendDespatchAdviceResponse SendDespatchAdvice(Entegref.parkServis.SendDespatchAdviceRequest SendDespatchAdviceRequest);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ESmmHtmlAl", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> ESmmHtmlAlAsync(string uuid, string sessionId);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SendDespatchAdvice", ReplyAction="*")]
+        System.Threading.Tasks.Task<Entegref.parkServis.SendDespatchAdviceResponse> SendDespatchAdviceAsync(Entegref.parkServis.SendDespatchAdviceRequest SendDespatchAdviceRequest);
         
-        // CODEGEN: 'ESmmPdfAlResult' parametresi, parametre modunu kullanmadan yakalanamayan ek şema bilgilerini gerektiriyor. Özel öznitelik: 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ESmmPdfAl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SendDespatchAdviceGetResponse", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(REQUEST))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.ESmmPdfAlResponse ESmmPdfAl(Entegref.parkServis.ESmmPdfAlRequest request);
+        Entegref.parkServis.InvoiceResponse SendDespatchAdviceGetResponse(Entegref.parkServis.SendDespatchAdviceRequest SendDespatchAdviceRequest);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ESmmPdfAl", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.ESmmPdfAlResponse> ESmmPdfAlAsync(Entegref.parkServis.ESmmPdfAlRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SendDespatchAdviceGetResponse", ReplyAction="*")]
+        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> SendDespatchAdviceGetResponseAsync(Entegref.parkServis.SendDespatchAdviceRequest SendDespatchAdviceRequest);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ESmmXmlAl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/LoadDespatchAdvice", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(REQUEST))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string ESmmXmlAl(string uuid, string sessionId);
+        Entegref.parkServis.LoadDespatchAdviceResponse LoadDespatchAdvice(Entegref.parkServis.LoadDespatchAdviceRequest LoadDespatchAdviceRequest);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ESmmXmlAl", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> ESmmXmlAlAsync(string uuid, string sessionId);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/LoadDespatchAdvice", ReplyAction="*")]
+        System.Threading.Tasks.Task<Entegref.parkServis.LoadDespatchAdviceResponse> LoadDespatchAdviceAsync(Entegref.parkServis.LoadDespatchAdviceRequest LoadDespatchAdviceRequest);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ESmmUBLOnizleme", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SendReceiptAdvice", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(REQUEST))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string ESmmUBLOnizleme(string xmlIcerik, string sessionId);
+        Entegref.parkServis.SendReceiptAdviceResponse SendReceiptAdvice(Entegref.parkServis.SendReceiptAdviceRequest SendReceiptAdviceRequest);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ESmmUBLOnizleme", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> ESmmUBLOnizlemeAsync(string xmlIcerik, string sessionId);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SendReceiptAdvice", ReplyAction="*")]
+        System.Threading.Tasks.Task<Entegref.parkServis.SendReceiptAdviceResponse> SendReceiptAdviceAsync(Entegref.parkServis.SendReceiptAdviceRequest SendReceiptAdviceRequest);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IrsaliyeGonder", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SendReceiptAdviceGetResponse", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(REQUEST))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceResponse IrsaliyeGonder(Entegref.parkServis.PARKDespatchType irsaliyeObj, string IrsaliyeOnEk, string ErpRef, string sessionId);
+        Entegref.parkServis.InvoiceResponse SendReceiptAdviceGetResponse(Entegref.parkServis.SendReceiptAdviceRequest SendReceiptAdviceRequest);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IrsaliyeGonder", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> IrsaliyeGonderAsync(Entegref.parkServis.PARKDespatchType irsaliyeObj, string IrsaliyeOnEk, string ErpRef, string sessionId);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SendReceiptAdviceGetResponse", ReplyAction="*")]
+        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> SendReceiptAdviceGetResponseAsync(Entegref.parkServis.SendReceiptAdviceRequest SendReceiptAdviceRequest);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/UBLIrsaliyeGonder", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/LoadReceiptAdvice", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(REQUEST))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceResponse UBLIrsaliyeGonder(string xmlIcerik, string irsaliyeNo, string uuid, bool taslaklaraGonderilsinMi, string aliciEtiketi, string aliciVergiNo, string GonderilecekEmail, string sessionId);
+        Entegref.parkServis.LoadReceiptAdviceResponse LoadReceiptAdvice(Entegref.parkServis.LoadReceiptAdviceRequest LoadReceiptAdviceRequest);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/UBLIrsaliyeGonder", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> UBLIrsaliyeGonderAsync(string xmlIcerik, string irsaliyeNo, string uuid, bool taslaklaraGonderilsinMi, string aliciEtiketi, string aliciVergiNo, string GonderilecekEmail, string sessionId);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/LoadReceiptAdvice", ReplyAction="*")]
+        System.Threading.Tasks.Task<Entegref.parkServis.LoadReceiptAdviceResponse> LoadReceiptAdviceAsync(Entegref.parkServis.LoadReceiptAdviceRequest LoadReceiptAdviceRequest);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/UBLIrsaliyeYanitiGonder", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/MarkDespatchAdvice", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(REQUEST))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceResponse UBLIrsaliyeYanitiGonder(string xmlIcerik, string irsaliyeYanitiNo, string uuid, bool taslaklaraGonderilsinMi, string aliciEtiketi, string aliciVergiNo, string sessionId);
+        Entegref.parkServis.MarkDespatchAdviceResponse MarkDespatchAdvice(Entegref.parkServis.MarkDespatchAdviceRequest markDespatchAdviceRequest);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/UBLIrsaliyeYanitiGonder", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> UBLIrsaliyeYanitiGonderAsync(string xmlIcerik, string irsaliyeYanitiNo, string uuid, bool taslaklaraGonderilsinMi, string aliciEtiketi, string aliciVergiNo, string sessionId);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/MarkDespatchAdvice", ReplyAction="*")]
+        System.Threading.Tasks.Task<Entegref.parkServis.MarkDespatchAdviceResponse> MarkDespatchAdviceAsync(Entegref.parkServis.MarkDespatchAdviceRequest markDespatchAdviceRequest);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IrsaliyeHtmlAl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/MarkReceiptAdvice", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(REQUEST))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string IrsaliyeHtmlAl(string uuid, string sessionId);
+        Entegref.parkServis.MarkReceiptAdviceResponse MarkReceiptAdvice(Entegref.parkServis.MarkReceiptAdviceRequest markReceiptAdviceRequest);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IrsaliyeHtmlAl", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> IrsaliyeHtmlAlAsync(string uuid, string sessionId);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/MarkReceiptAdvice", ReplyAction="*")]
+        System.Threading.Tasks.Task<Entegref.parkServis.MarkReceiptAdviceResponse> MarkReceiptAdviceAsync(Entegref.parkServis.MarkReceiptAdviceRequest markReceiptAdviceRequest);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenIrsaliyeHtmlAl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DespatchCheckUser", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(REQUEST))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string GelenIrsaliyeHtmlAl(string uuid, string sessionId);
+        Entegref.parkServis.GIBUSER[] DespatchCheckUser(string vknTckn, string sessionId);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenIrsaliyeHtmlAl", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> GelenIrsaliyeHtmlAlAsync(string uuid, string sessionId);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DespatchCheckUser", ReplyAction="*")]
+        System.Threading.Tasks.Task<Entegref.parkServis.GIBUSER[]> DespatchCheckUserAsync(string vknTckn, string sessionId);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenIrsaliyeXmlAl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DespatchUserList", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(REQUEST))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string GelenIrsaliyeXmlAl(string uuid, string sessionId);
+        Entegref.parkServis.GIBUSER[] DespatchUserList(string sessionId);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenIrsaliyeXmlAl", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> GelenIrsaliyeXmlAlAsync(string uuid, string sessionId);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DespatchUserList", ReplyAction="*")]
+        System.Threading.Tasks.Task<Entegref.parkServis.GIBUSER[]> DespatchUserListAsync(string sessionId);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenIrsaliyeXmlAl", ReplyAction="*")]
+        // CODEGEN: 'GibDespatchUserListTxtResult' parametresi, parametre modunu kullanmadan yakalanamayan ek şema bilgilerini gerektiriyor. Özel öznitelik: 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GibDespatchUserListTxt", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(REQUEST))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string GidenIrsaliyeXmlAl(string uuid, string sessionId);
+        Entegref.parkServis.GibDespatchUserListTxtResponse GibDespatchUserListTxt(Entegref.parkServis.GibDespatchUserListTxtRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenIrsaliyeXmlAl", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> GidenIrsaliyeXmlAlAsync(string uuid, string sessionId);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GibDespatchUserListTxt", ReplyAction="*")]
+        System.Threading.Tasks.Task<Entegref.parkServis.GibDespatchUserListTxtResponse> GibDespatchUserListTxtAsync(Entegref.parkServis.GibDespatchUserListTxtRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IrsaliyeObjHtmlAl", ReplyAction="*")]
+        // CODEGEN: 'ParkDespatchModelUblTextResult' parametresi, parametre modunu kullanmadan yakalanamayan ek şema bilgilerini gerektiriyor. Özel öznitelik: 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ParkDespatchModelUblText", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(REQUEST))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string IrsaliyeObjHtmlAl(Entegref.parkServis.PARKDespatchType irsaliyeObj, string sessionId);
+        Entegref.parkServis.ParkDespatchModelUblTextResponse ParkDespatchModelUblText(Entegref.parkServis.ParkDespatchModelUblTextRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IrsaliyeObjHtmlAl", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> IrsaliyeObjHtmlAlAsync(Entegref.parkServis.PARKDespatchType irsaliyeObj, string sessionId);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ParkDespatchModelUblText", ReplyAction="*")]
+        System.Threading.Tasks.Task<Entegref.parkServis.ParkDespatchModelUblTextResponse> ParkDespatchModelUblTextAsync(Entegref.parkServis.ParkDespatchModelUblTextRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IrsaliyeUblOnizleme", ReplyAction="*")]
+        // CODEGEN: 'IrsaliyeQRCodeCreateResult' parametresi, parametre modunu kullanmadan yakalanamayan ek şema bilgilerini gerektiriyor. Özel öznitelik: 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IrsaliyeQRCodeCreate", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(REQUEST))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string IrsaliyeUblOnizleme(string xmlContent, string sessionId);
+        Entegref.parkServis.IrsaliyeQRCodeCreateResponse IrsaliyeQRCodeCreate(Entegref.parkServis.IrsaliyeQRCodeCreateRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IrsaliyeUblOnizleme", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> IrsaliyeUblOnizlemeAsync(string xmlContent, string sessionId);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IrsaliyeQRCodeCreate", ReplyAction="*")]
+        System.Threading.Tasks.Task<Entegref.parkServis.IrsaliyeQRCodeCreateResponse> IrsaliyeQRCodeCreateAsync(Entegref.parkServis.IrsaliyeQRCodeCreateRequest request);
         
-        // CODEGEN: 'GidenIrsaliyePdfAlResult' parametresi, parametre modunu kullanmadan yakalanamayan ek şema bilgilerini gerektiriyor. Özel öznitelik: 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenIrsaliyePdfAl", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ParkObjectSendIrsaliye", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(REQUEST))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.GidenIrsaliyePdfAlResponse GidenIrsaliyePdfAl(Entegref.parkServis.GidenIrsaliyePdfAlRequest request);
+        Entegref.parkServis.InvoiceResponse ParkObjectSendIrsaliye(Entegref.parkServis.PARKDespatchType irsaliyeObj, string IrsaliyeOnEk, string ErpRef, string sessionId);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenIrsaliyePdfAl", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.GidenIrsaliyePdfAlResponse> GidenIrsaliyePdfAlAsync(Entegref.parkServis.GidenIrsaliyePdfAlRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ParkObjectSendIrsaliye", ReplyAction="*")]
+        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> ParkObjectSendIrsaliyeAsync(Entegref.parkServis.PARKDespatchType irsaliyeObj, string IrsaliyeOnEk, string ErpRef, string sessionId);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenIrsaliyePdfAlByUrl", ReplyAction="*")]
+        // CODEGEN: 'GetDespatchPdfResult' parametresi, parametre modunu kullanmadan yakalanamayan ek şema bilgilerini gerektiriyor. Özel öznitelik: 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetDespatchPdf", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(REQUEST))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string GidenIrsaliyePdfAlByUrl(string uuid, string sessionId);
+        Entegref.parkServis.GetDespatchPdfResponse GetDespatchPdf(Entegref.parkServis.GetDespatchPdfRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenIrsaliyePdfAlByUrl", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> GidenIrsaliyePdfAlByUrlAsync(string uuid, string sessionId);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetDespatchPdf", ReplyAction="*")]
+        System.Threading.Tasks.Task<Entegref.parkServis.GetDespatchPdfResponse> GetDespatchPdfAsync(Entegref.parkServis.GetDespatchPdfRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenIrsaliyePdfAlByUrl", ReplyAction="*")]
+        // CODEGEN: 'GetPreviewDespatchPdfResult' parametresi, parametre modunu kullanmadan yakalanamayan ek şema bilgilerini gerektiriyor. Özel öznitelik: 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetPreviewDespatchPdf", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(REQUEST))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string GelenIrsaliyePdfAlByUrl(string uuid, string sessionId);
+        Entegref.parkServis.GetPreviewDespatchPdfResponse GetPreviewDespatchPdf(Entegref.parkServis.GetPreviewDespatchPdfRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenIrsaliyePdfAlByUrl", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> GelenIrsaliyePdfAlByUrlAsync(string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IrsaliyeEtiketGetir", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string[] IrsaliyeEtiketGetir(string vknTckn, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IrsaliyeEtiketGetir", ReplyAction="*")]
-        System.Threading.Tasks.Task<string[]> IrsaliyeEtiketGetirAsync(string vknTckn, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenIrsaliyeListele", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.DespatchSummary[] GidenIrsaliyeListele(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int irsaliyeSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenIrsaliyeListele", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.DespatchSummary[]> GidenIrsaliyeListeleAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int irsaliyeSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenIrsaliyeListele", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.DespatchSummary[] GelenIrsaliyeListele(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int irsaliyeSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenIrsaliyeListele", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.DespatchSummary[]> GelenIrsaliyeListeleAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int irsaliyeSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenIrsaliyeDurumSorgula", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.ParkInvoiceStatusRes GelenIrsaliyeDurumSorgula(string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenIrsaliyeDurumSorgula", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.ParkInvoiceStatusRes> GelenIrsaliyeDurumSorgulaAsync(string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenIrsaliyeDurumSorgula", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.ParkInvoiceStatusRes GidenIrsaliyeDurumSorgula(string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenIrsaliyeDurumSorgula", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.ParkInvoiceStatusRes> GidenIrsaliyeDurumSorgulaAsync(string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenIrsaliyeYanitiDurumSorgula", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.ParkInvoiceStatusRes GidenIrsaliyeYanitiDurumSorgula(string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenIrsaliyeYanitiDurumSorgula", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.ParkInvoiceStatusRes> GidenIrsaliyeYanitiDurumSorgulaAsync(string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenIrsaliyeYanitiDurumSorgula", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.ParkInvoiceStatusRes GelenIrsaliyeYanitiDurumSorgula(string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenIrsaliyeYanitiDurumSorgula", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.ParkInvoiceStatusRes> GelenIrsaliyeYanitiDurumSorgulaAsync(string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EIrsaliyeUBLOnizleme", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string EIrsaliyeUBLOnizleme(string xmlIcerik, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EIrsaliyeUBLOnizleme", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> EIrsaliyeUBLOnizlemeAsync(string xmlIcerik, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/MuhtahsilGonder", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceResponse MuhtahsilGonder(Entegref.parkServis.ParkCreditNoteObj mustahsil, string mustahsilOnEk, string ErpRef, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/MuhtahsilGonder", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> MuhtahsilGonderAsync(Entegref.parkServis.ParkCreditNoteObj mustahsil, string mustahsilOnEk, string ErpRef, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/UBLMustahsilGonder", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceResponse UBLMustahsilGonder(string xmlIcerik, string mustahsilNo, string uuid, bool taslaklaraGonderilsinMi, string GonderilecekEmail, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/UBLMustahsilGonder", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> UBLMustahsilGonderAsync(string xmlIcerik, string mustahsilNo, string uuid, bool taslaklaraGonderilsinMi, string GonderilecekEmail, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenMustahsilListele", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.CreditNoteSummary[] GidenMustahsilListele(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, bool OkunanlaridaGetir, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenMustahsilListele", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.CreditNoteSummary[]> GidenMustahsilListeleAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, bool OkunanlaridaGetir, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenMustahsilXMLAl", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string GidenMustahsilXMLAl(string mustahsilNo, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenMustahsilXMLAl", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> GidenMustahsilXMLAlAsync(string mustahsilNo, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenMustahsilHTMLAl", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string GidenMustahsilHTMLAl(string mustahsilNo, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenMustahsilHTMLAl", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> GidenMustahsilHTMLAlAsync(string mustahsilNo, string uuid, string sessionId);
-        
-        // CODEGEN: 'GidenMustahsilPDFAlResult' parametresi, parametre modunu kullanmadan yakalanamayan ek şema bilgilerini gerektiriyor. Özel öznitelik: 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenMustahsilPDFAl", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.GidenMustahsilPDFAlResponse GidenMustahsilPDFAl(Entegref.parkServis.GidenMustahsilPDFAlRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenMustahsilPDFAl", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.GidenMustahsilPDFAlResponse> GidenMustahsilPDFAlAsync(Entegref.parkServis.GidenMustahsilPDFAlRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EMustahsilUBLOnizleme", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string EMustahsilUBLOnizleme(string xmlIcerik, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EMustahsilUBLOnizleme", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> EMustahsilUBLOnizlemeAsync(string xmlIcerik, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/OturumAc", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.LoginRes OturumAc(string userName, string password);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/OturumAc", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.LoginRes> OturumAcAsync(string userName, string password);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/OturumKapat", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        long OturumKapat(string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/OturumKapat", ReplyAction="*")]
-        System.Threading.Tasks.Task<long> OturumKapatAsync(string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/FaturaGonder", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceResponse FaturaGonder(Entegref.parkServis.PARKInvoiceType invoiceObj, string FaturaOnEk, string ErpRef, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/FaturaGonder", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> FaturaGonderAsync(Entegref.parkServis.PARKInvoiceType invoiceObj, string FaturaOnEk, string ErpRef, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/FaturaSematronKontrolEt", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceResponse FaturaSematronKontrolEt(Entegref.parkServis.PARKInvoiceType invoiceObj, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/FaturaSematronKontrolEt", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> FaturaSematronKontrolEtAsync(Entegref.parkServis.PARKInvoiceType invoiceObj, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/FaturaGonderByXmlContent", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceResponse FaturaGonderByXmlContent(string faturaIcerigi, string xsltName, bool eArsivMi, bool taslaklaraGonderilsinMi, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/FaturaGonderByXmlContent", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> FaturaGonderByXmlContentAsync(string faturaIcerigi, string xsltName, bool eArsivMi, bool taslaklaraGonderilsinMi, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/UBLFaturaGonder", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceResponse UBLFaturaGonder(string xmlIcerik, string faturaNo, string uuid, bool taslaklaraGonderilsinMi, string aliciEtiketi, string aliciVergiNo, string GonderilecekEmail, bool earsivMi, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/UBLFaturaGonder", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> UBLFaturaGonderAsync(string xmlIcerik, string faturaNo, string uuid, bool taslaklaraGonderilsinMi, string aliciEtiketi, string aliciVergiNo, string GonderilecekEmail, bool earsivMi, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/UBLFaturaGonder2", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceResponse UBLFaturaGonder2(string xmlIcerik, string faturaNo, string uuid, bool taslaklaraGonderilsinMi, string aliciEtiketi, string aliciVergiNo, string GonderilecekEmail, bool earsivMi, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/UBLFaturaGonder2", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> UBLFaturaGonder2Async(string xmlIcerik, string faturaNo, string uuid, bool taslaklaraGonderilsinMi, string aliciEtiketi, string aliciVergiNo, string GonderilecekEmail, bool earsivMi, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/UBLFaturaGonderByBase64", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceResponse UBLFaturaGonderByBase64(string xmlIcerikBase64, string faturaNo, string uuid, bool taslaklaraGonderilsinMi, string aliciEtiketi, string aliciVergiNo, string GonderilecekEmail, bool earsivMi, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/UBLFaturaGonderByBase64", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> UBLFaturaGonderByBase64Async(string xmlIcerikBase64, string faturaNo, string uuid, bool taslaklaraGonderilsinMi, string aliciEtiketi, string aliciVergiNo, string GonderilecekEmail, bool earsivMi, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/UBLOnizleme", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string UBLOnizleme(string xmlIcerik, bool eArsivMi, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/UBLOnizleme", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> UBLOnizlemeAsync(string xmlIcerik, bool eArsivMi, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/UBLOnizleme2", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string UBLOnizleme2(string xmlIcerik, string xsltContent, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/UBLOnizleme2", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> UBLOnizleme2Async(string xmlIcerik, string xsltContent, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EArsivSmsLinkUret", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string EArsivSmsLinkUret(string Uuid, string invoiceRef, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EArsivSmsLinkUret", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> EArsivSmsLinkUretAsync(string Uuid, string invoiceRef, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenFaturaListeleByPaging", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceSummary[] GelenFaturaListeleByPaging(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int sayfaNumarasi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenFaturaListeleByPaging", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> GelenFaturaListeleByPagingAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int sayfaNumarasi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenFaturaListele", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceSummary[] GelenFaturaListele(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenFaturaListele", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> GelenFaturaListeleAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenFaturaListeleGonderimTarihi", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceSummary[] GelenFaturaListeleGonderimTarihi(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenFaturaListeleGonderimTarihi", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> GelenFaturaListeleGonderimTarihiAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenFaturaDurumSorgula", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.ParkInvoiceStatusRes GelenFaturaDurumSorgula(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenFaturaDurumSorgula", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.ParkInvoiceStatusRes> GelenFaturaDurumSorgulaAsync(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenFaturaXmlAl", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string GelenFaturaXmlAl(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenFaturaXmlAl", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> GelenFaturaXmlAlAsync(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenFaturaOkunduOlarakIsaretle", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        void GelenFaturaOkunduOlarakIsaretle(string FaturaNumarasi, string uuid, bool OkunduMu, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenFaturaOkunduOlarakIsaretle", ReplyAction="*")]
-        System.Threading.Tasks.Task GelenFaturaOkunduOlarakIsaretleAsync(string FaturaNumarasi, string uuid, bool OkunduMu, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenFaturaOku", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.PARKInvoiceType GelenFaturaOku(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenFaturaOku", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.PARKInvoiceType> GelenFaturaOkuAsync(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenFaturaHtmlAl", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string GelenFaturaHtmlAl(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenFaturaHtmlAl", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> GelenFaturaHtmlAlAsync(string FaturaNumarasi, string uuid, string sessionId);
-        
-        // CODEGEN: 'GelenFaturaPdfAlResult' parametresi, parametre modunu kullanmadan yakalanamayan ek şema bilgilerini gerektiriyor. Özel öznitelik: 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenFaturaPdfAl", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.GelenFaturaPdfAlResponse GelenFaturaPdfAl(Entegref.parkServis.GelenFaturaPdfAlRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenFaturaPdfAl", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.GelenFaturaPdfAlResponse> GelenFaturaPdfAlAsync(Entegref.parkServis.GelenFaturaPdfAlRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/OnayBekleyenFaturaYanitlaByAciklama", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        void OnayBekleyenFaturaYanitlaByAciklama(string FaturaNumarasi, string uuid, string cevap, string cevapAciklamasi, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/OnayBekleyenFaturaYanitlaByAciklama", ReplyAction="*")]
-        System.Threading.Tasks.Task OnayBekleyenFaturaYanitlaByAciklamaAsync(string FaturaNumarasi, string uuid, string cevap, string cevapAciklamasi, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/OnayBekleyenFaturaYanitla", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        void OnayBekleyenFaturaYanitla(string FaturaNumarasi, string uuid, string cevap, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/OnayBekleyenFaturaYanitla", ReplyAction="*")]
-        System.Threading.Tasks.Task OnayBekleyenFaturaYanitlaAsync(string FaturaNumarasi, string uuid, string cevap, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/OnayBekleyenFaturalariListele", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceSummary[] OnayBekleyenFaturalariListele(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/OnayBekleyenFaturalariListele", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> OnayBekleyenFaturalariListeleAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/OnayBekleyenFaturalariListeleByPaging", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceSummary[] OnayBekleyenFaturalariListeleByPaging(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int sayfaNumarasi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/OnayBekleyenFaturalariListeleByPaging", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> OnayBekleyenFaturalariListeleByPagingAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int sayfaNumarasi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/OnaylanmisFaturalariListele", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceSummary[] OnaylanmisFaturalariListele(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/OnaylanmisFaturalariListele", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> OnaylanmisFaturalariListeleAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ReddedilmisFaturalariListele", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceSummary[] ReddedilmisFaturalariListele(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ReddedilmisFaturalariListele", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> ReddedilmisFaturalariListeleAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenReddedilmisEFaturalariListele", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceSummary[] GidenReddedilmisEFaturalariListele(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenReddedilmisEFaturalariListele", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> GidenReddedilmisEFaturalariListeleAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenFaturaListele", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceSummary[] GidenFaturaListele(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenFaturaListele", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> GidenFaturaListeleAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/HataliGidenFaturaListele", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceSummary[] HataliGidenFaturaListele(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/HataliGidenFaturaListele", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> HataliGidenFaturaListeleAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenFaturaListeleGonderimTarihi", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceSummary[] GidenFaturaListeleGonderimTarihi(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenFaturaListeleGonderimTarihi", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> GidenFaturaListeleGonderimTarihiAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenFaturaOku", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.PARKInvoiceType GidenFaturaOku(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenFaturaOku", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.PARKInvoiceType> GidenFaturaOkuAsync(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TaslakFaturaAra", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceSummary[] TaslakFaturaAra(string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TaslakFaturaAra", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> TaslakFaturaAraAsync(string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TaslakFaturaIptalEt", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.CancelDraftInvoiceResponse TaslakFaturaIptalEt(string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TaslakFaturaIptalEt", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.CancelDraftInvoiceResponse> TaslakFaturaIptalEtAsync(string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EArsivTaslakFaturaIptalEt", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        void EArsivTaslakFaturaIptalEt(string uuid, string faturaNo, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EArsivTaslakFaturaIptalEt", ReplyAction="*")]
-        System.Threading.Tasks.Task EArsivTaslakFaturaIptalEtAsync(string uuid, string faturaNo, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TaslakFaturaOnayla", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.SendInvoiceResponse TaslakFaturaOnayla(string faturaNo, string uuid, string aliciVergiNo, string aliciPostaetiketi, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TaslakFaturaOnayla", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.SendInvoiceResponse> TaslakFaturaOnaylaAsync(string faturaNo, string uuid, string aliciVergiNo, string aliciPostaetiketi, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TaslakFaturaOnaylaGetResponse", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceResponse TaslakFaturaOnaylaGetResponse(string faturaNo, string uuid, string aliciVergiNo, string aliciPostaetiketi, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TaslakFaturaOnaylaGetResponse", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> TaslakFaturaOnaylaGetResponseAsync(string faturaNo, string uuid, string aliciVergiNo, string aliciPostaetiketi, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EArsivFaturaTaslakOnayla", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceResponse EArsivFaturaTaslakOnayla(string faturaNo, string uuid, string GonderilecekEPostaAdresi, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EArsivFaturaTaslakOnayla", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> EArsivFaturaTaslakOnaylaAsync(string faturaNo, string uuid, string GonderilecekEPostaAdresi, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenTaslakFaturaXmlAl", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string GidenTaslakFaturaXmlAl(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenTaslakFaturaXmlAl", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> GidenTaslakFaturaXmlAlAsync(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenTaslakFaturaHtmlAl", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string GidenTaslakFaturaHtmlAl(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenTaslakFaturaHtmlAl", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> GidenTaslakFaturaHtmlAlAsync(string FaturaNumarasi, string uuid, string sessionId);
-        
-        // CODEGEN: 'GidenTaslakFaturaPdfAlResult' parametresi, parametre modunu kullanmadan yakalanamayan ek şema bilgilerini gerektiriyor. Özel öznitelik: 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenTaslakFaturaPdfAl", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.GidenTaslakFaturaPdfAlResponse GidenTaslakFaturaPdfAl(Entegref.parkServis.GidenTaslakFaturaPdfAlRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenTaslakFaturaPdfAl", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.GidenTaslakFaturaPdfAlResponse> GidenTaslakFaturaPdfAlAsync(Entegref.parkServis.GidenTaslakFaturaPdfAlRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenFaturaDurumSorgula", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.ParkInvoiceStatusRes GidenFaturaDurumSorgula(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenFaturaDurumSorgula", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.ParkInvoiceStatusRes> GidenFaturaDurumSorgulaAsync(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenArsivFaturaDurumSorgula", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.ParkInvoiceStatusRes GidenArsivFaturaDurumSorgula(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenArsivFaturaDurumSorgula", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.ParkInvoiceStatusRes> GidenArsivFaturaDurumSorgulaAsync(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IhracatFaturaGTBReferansSorgula", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.GtbResponse IhracatFaturaGTBReferansSorgula(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IhracatFaturaGTBReferansSorgula", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.GtbResponse> IhracatFaturaGTBReferansSorgulaAsync(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenFaturaHtmlAl", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string GidenFaturaHtmlAl(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenFaturaHtmlAl", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> GidenFaturaHtmlAlAsync(string FaturaNumarasi, string uuid, string sessionId);
-        
-        // CODEGEN: 'GidenFaturaPdfAlResult' parametresi, parametre modunu kullanmadan yakalanamayan ek şema bilgilerini gerektiriyor. Özel öznitelik: 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenFaturaPdfAl", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.GidenFaturaPdfAlResponse GidenFaturaPdfAl(Entegref.parkServis.GidenFaturaPdfAlRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenFaturaPdfAl", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.GidenFaturaPdfAlResponse> GidenFaturaPdfAlAsync(Entegref.parkServis.GidenFaturaPdfAlRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenFaturaPdfAlByUrl", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string GidenFaturaPdfAlByUrl(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenFaturaPdfAlByUrl", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> GidenFaturaPdfAlByUrlAsync(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenFaturaPdfAlByUrl", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string GelenFaturaPdfAlByUrl(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GelenFaturaPdfAlByUrl", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> GelenFaturaPdfAlByUrlAsync(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenFaturaXmlAl", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string GidenFaturaXmlAl(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenFaturaXmlAl", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> GidenFaturaXmlAlAsync(string FaturaNumarasi, string uuid, string sessionId);
-        
-        // CODEGEN: 'ParkObjUblCevirResult' parametresi, parametre modunu kullanmadan yakalanamayan ek şema bilgilerini gerektiriyor. Özel öznitelik: 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ParkObjUblCevir", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.ParkObjUblCevirResponse ParkObjUblCevir(Entegref.parkServis.ParkObjUblCevirRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ParkObjUblCevir", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.ParkObjUblCevirResponse> ParkObjUblCevirAsync(Entegref.parkServis.ParkObjUblCevirRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GeneratorUBL", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string GeneratorUBL(Entegref.parkServis.PARKInvoiceType invoiceObj, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GeneratorUBL", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> GeneratorUBLAsync(Entegref.parkServis.PARKInvoiceType invoiceObj, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EArsivFaturaListele", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.InvoiceSummary[] EArsivFaturaListele(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EArsivFaturaListele", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> EArsivFaturaListeleAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EArsivFaturaHtmlAl", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string EArsivFaturaHtmlAl(string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EArsivFaturaHtmlAl", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> EArsivFaturaHtmlAlAsync(string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EArsivFaturaHtmlAlByFaturaNumarasi", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string EArsivFaturaHtmlAlByFaturaNumarasi(string faturaNumarasi, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EArsivFaturaHtmlAlByFaturaNumarasi", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> EArsivFaturaHtmlAlByFaturaNumarasiAsync(string faturaNumarasi, string sessionId);
-        
-        // CODEGEN: 'EArsivFaturaPdfAlResult' parametresi, parametre modunu kullanmadan yakalanamayan ek şema bilgilerini gerektiriyor. Özel öznitelik: 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EArsivFaturaPdfAl", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.EArsivFaturaPdfAlResponse EArsivFaturaPdfAl(Entegref.parkServis.EArsivFaturaPdfAlRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EArsivFaturaPdfAl", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.EArsivFaturaPdfAlResponse> EArsivFaturaPdfAlAsync(Entegref.parkServis.EArsivFaturaPdfAlRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EArsivFaturaPdfAlByUrl", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string EArsivFaturaPdfAlByUrl(string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EArsivFaturaPdfAlByUrl", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> EArsivFaturaPdfAlByUrlAsync(string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EArsivFaturaXmlAl", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string EArsivFaturaXmlAl(string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EArsivFaturaXmlAl", ReplyAction="*")]
-        System.Threading.Tasks.Task<string> EArsivFaturaXmlAlAsync(string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EArsivFaturaIptalEt", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        bool EArsivFaturaIptalEt(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EArsivFaturaIptalEt", ReplyAction="*")]
-        System.Threading.Tasks.Task<bool> EArsivFaturaIptalEtAsync(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EArsivFaturaTekrarMailIlet", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        bool EArsivFaturaTekrarMailIlet(string email, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EArsivFaturaTekrarMailIlet", ReplyAction="*")]
-        System.Threading.Tasks.Task<bool> EArsivFaturaTekrarMailIletAsync(string email, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenEArsivFaturaOku", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.PARKInvoiceType GidenEArsivFaturaOku(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GidenEArsivFaturaOku", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.PARKInvoiceType> GidenEArsivFaturaOkuAsync(string FaturaNumarasi, string uuid, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EtiketGetir", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        string[] EtiketGetir(string vknTckn, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EtiketGetir", ReplyAction="*")]
-        System.Threading.Tasks.Task<string[]> EtiketGetirAsync(string vknTckn, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EFaturaMukellefKontrolEt", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        bool EFaturaMukellefKontrolEt(string vknTckn, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EFaturaMukellefKontrolEt", ReplyAction="*")]
-        System.Threading.Tasks.Task<bool> EFaturaMukellefKontrolEtAsync(string vknTckn, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EIrsaliyeMukellefKontrolEt", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        bool EIrsaliyeMukellefKontrolEt(string vknTckn, string sessionId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EIrsaliyeMukellefKontrolEt", ReplyAction="*")]
-        System.Threading.Tasks.Task<bool> EIrsaliyeMukellefKontrolEtAsync(string vknTckn, string sessionId);
-        
-        // CODEGEN: 'IrsaliyeKayitliMukellefListeleResult' parametresi, parametre modunu kullanmadan yakalanamayan ek şema bilgilerini gerektiriyor. Özel öznitelik: 'System.Xml.Serialization.XmlArrayItemAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IrsaliyeKayitliMukellefListele", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.IrsaliyeKayitliMukellefListeleResponse IrsaliyeKayitliMukellefListele(Entegref.parkServis.IrsaliyeKayitliMukellefListeleRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IrsaliyeKayitliMukellefListele", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.IrsaliyeKayitliMukellefListeleResponse> IrsaliyeKayitliMukellefListeleAsync(Entegref.parkServis.IrsaliyeKayitliMukellefListeleRequest request);
-        
-        // CODEGEN: 'KayitliMukellefListeleByDateResult' parametresi, parametre modunu kullanmadan yakalanamayan ek şema bilgilerini gerektiriyor. Özel öznitelik: 'System.Xml.Serialization.XmlArrayItemAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/KayitliMukellefListeleByDate", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.KayitliMukellefListeleByDateResponse KayitliMukellefListeleByDate(Entegref.parkServis.KayitliMukellefListeleByDateRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/KayitliMukellefListeleByDate", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.KayitliMukellefListeleByDateResponse> KayitliMukellefListeleByDateAsync(Entegref.parkServis.KayitliMukellefListeleByDateRequest request);
-        
-        // CODEGEN: 'KayitliMukellefListeleTxtResult' parametresi, parametre modunu kullanmadan yakalanamayan ek şema bilgilerini gerektiriyor. Özel öznitelik: 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/KayitliMukellefListeleTxt", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.KayitliMukellefListeleTxtResponse KayitliMukellefListeleTxt(Entegref.parkServis.KayitliMukellefListeleTxtRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/KayitliMukellefListeleTxt", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.KayitliMukellefListeleTxtResponse> KayitliMukellefListeleTxtAsync(Entegref.parkServis.KayitliMukellefListeleTxtRequest request);
-        
-        // CODEGEN: 'KayitliMukellefListeleDetayliTxtResult' parametresi, parametre modunu kullanmadan yakalanamayan ek şema bilgilerini gerektiriyor. Özel öznitelik: 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/KayitliMukellefListeleDetayliTxt", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.KayitliMukellefListeleDetayliTxtResponse KayitliMukellefListeleDetayliTxt(Entegref.parkServis.KayitliMukellefListeleDetayliTxtRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/KayitliMukellefListeleDetayliTxt", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.KayitliMukellefListeleDetayliTxtResponse> KayitliMukellefListeleDetayliTxtAsync(Entegref.parkServis.KayitliMukellefListeleDetayliTxtRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/FaturaGorseliYukle", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        void FaturaGorseliYukle(Entegref.parkServis.Stylefiles styleFiles, string token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/FaturaGorseliYukle", ReplyAction="*")]
-        System.Threading.Tasks.Task FaturaGorseliYukleAsync(Entegref.parkServis.Stylefiles styleFiles, string token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/FaturaGorseliIndir", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.Stylefiles FaturaGorseliIndir(int xsltFilesId, string token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/FaturaGorseliIndir", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.Stylefiles> FaturaGorseliIndirAsync(int xsltFilesId, string token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/FaturaGorseliGetirByName", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.Stylefiles FaturaGorseliGetirByName(string xsltFilesName, string token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/FaturaGorseliGetirByName", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.Stylefiles> FaturaGorseliGetirByNameAsync(string xsltFilesName, string token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/FaturaGorseliGuncelle", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        void FaturaGorseliGuncelle(Entegref.parkServis.Stylefiles xsltFiles, string token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/FaturaGorseliGuncelle", ReplyAction="*")]
-        System.Threading.Tasks.Task FaturaGorseliGuncelleAsync(Entegref.parkServis.Stylefiles xsltFiles, string token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/FaturaGorseliSil", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        void FaturaGorseliSil(int XsltFilesID, string token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/FaturaGorseliSil", ReplyAction="*")]
-        System.Threading.Tasks.Task FaturaGorseliSilAsync(int XsltFilesID, string token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/FaturaGorseliListesi", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.Stylefiles[] FaturaGorseliListesi(string token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/FaturaGorseliListesi", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.Stylefiles[]> FaturaGorseliListesiAsync(string token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/FaturaGorseliOku", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        Entegref.parkServis.Stylefiles FaturaGorseliOku(int XsltFilesID, string token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/FaturaGorseliOku", ReplyAction="*")]
-        System.Threading.Tasks.Task<Entegref.parkServis.Stylefiles> FaturaGorseliOkuAsync(int XsltFilesID, string token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/FaturaGorseliDefaultOlarakIsaretle", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DataObject))]
-        void FaturaGorseliDefaultOlarakIsaretle(int XsltFilesID, string token);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/FaturaGorseliDefaultOlarakIsaretle", ReplyAction="*")]
-        System.Threading.Tasks.Task FaturaGorseliDefaultOlarakIsaretleAsync(int XsltFilesID, string token);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetPreviewDespatchPdf", ReplyAction="*")]
+        System.Threading.Tasks.Task<Entegref.parkServis.GetPreviewDespatchPdfResponse> GetPreviewDespatchPdfAsync(Entegref.parkServis.GetPreviewDespatchPdfRequest request);
     }
     
     /// <remarks/>
@@ -922,551 +225,61 @@ namespace Entegref.parkServis {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class PARKInvoiceType : object, System.ComponentModel.INotifyPropertyChanged {
+    public partial class LoginRes : object, System.ComponentModel.INotifyPropertyChanged {
         
-        private int customerRefField;
+        private bool isSuccessLoginField;
         
-        private decimal pricingExchangeRateField;
+        private string sessionIdField;
         
-        private int invoiceDBRefField;
+        private string messageField;
         
-        private string gIBAliasField;
-        
-        private bool isEArchiveField;
-        
-        private bool sendToCustomerField;
-        
-        private string uUIDField;
-        
-        private string typeCodeField;
-        
-        private string profileIdField;
-        
-        private string idField;
-        
-        private bool copyIndicatorField;
-        
-        private System.DateTime issueDateField;
-        
-        private System.DateTime issueTimeField;
-        
-        private string currencyCodeField;
-        
-        private bool allowanceChargeIndicatorField;
-        
-        private decimal allowanceChargeAmountField;
-        
-        private decimal lineExtensionAmountField;
-        
-        private decimal allowanceTotalAmountField;
-        
-        private decimal chargeAmountField;
-        
-        private decimal taxExclusiveAmountField;
-        
-        private decimal taxInclusiveAmountField;
-        
-        private decimal payableAmountField;
-        
-        private PartyDetails customerPartyField;
-        
-        private PartyDetails supplierPartyField;
-        
-        private InvoiceTax[] invoiceTaxesField;
-        
-        private InvoiceLine[] invoiceLinesField;
-        
-        private string[] notesField;
-        
-        private WithholdingTax[] withholdingTaxesField;
-        
-        private BillingReference[] billingReferencesField;
-        
-        private AdditionalDocumentReference[] additionalDocumentReferencesField;
-        
-        private Period invoicePeriodField;
-        
-        private DespatchDocumentModel[] despatchDocumentField;
-        
-        private string xsltNameField;
-        
-        private PaymentMeansObj paymentMeansField;
-        
-        private decimal insuranceTotalAmountField;
-        
-        private decimal declaredCustomsTotalAmountField;
-        
-        private string orderNoField;
-        
-        private System.DateTime orderDateField;
-        
-        private string accountingCostField;
+        private CustomerExtended[] customerListField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public int CustomerRef {
+        public bool IsSuccessLogin {
             get {
-                return this.customerRefField;
+                return this.isSuccessLoginField;
             }
             set {
-                this.customerRefField = value;
-                this.RaisePropertyChanged("CustomerRef");
+                this.isSuccessLoginField = value;
+                this.RaisePropertyChanged("IsSuccessLogin");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public decimal PricingExchangeRate {
+        public string SessionId {
             get {
-                return this.pricingExchangeRateField;
+                return this.sessionIdField;
             }
             set {
-                this.pricingExchangeRateField = value;
-                this.RaisePropertyChanged("PricingExchangeRate");
+                this.sessionIdField = value;
+                this.RaisePropertyChanged("SessionId");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public int InvoiceDBRef {
+        public string Message {
             get {
-                return this.invoiceDBRefField;
+                return this.messageField;
             }
             set {
-                this.invoiceDBRefField = value;
-                this.RaisePropertyChanged("InvoiceDBRef");
+                this.messageField = value;
+                this.RaisePropertyChanged("Message");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-        public string GIBAlias {
+        [System.Xml.Serialization.XmlArrayAttribute(Order=3)]
+        public CustomerExtended[] CustomerList {
             get {
-                return this.gIBAliasField;
+                return this.customerListField;
             }
             set {
-                this.gIBAliasField = value;
-                this.RaisePropertyChanged("GIBAlias");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
-        public bool IsEArchive {
-            get {
-                return this.isEArchiveField;
-            }
-            set {
-                this.isEArchiveField = value;
-                this.RaisePropertyChanged("IsEArchive");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
-        public bool SendToCustomer {
-            get {
-                return this.sendToCustomerField;
-            }
-            set {
-                this.sendToCustomerField = value;
-                this.RaisePropertyChanged("SendToCustomer");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
-        public string UUID {
-            get {
-                return this.uUIDField;
-            }
-            set {
-                this.uUIDField = value;
-                this.RaisePropertyChanged("UUID");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
-        public string TypeCode {
-            get {
-                return this.typeCodeField;
-            }
-            set {
-                this.typeCodeField = value;
-                this.RaisePropertyChanged("TypeCode");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
-        public string ProfileId {
-            get {
-                return this.profileIdField;
-            }
-            set {
-                this.profileIdField = value;
-                this.RaisePropertyChanged("ProfileId");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=9)]
-        public string ID {
-            get {
-                return this.idField;
-            }
-            set {
-                this.idField = value;
-                this.RaisePropertyChanged("ID");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=10)]
-        public bool CopyIndicator {
-            get {
-                return this.copyIndicatorField;
-            }
-            set {
-                this.copyIndicatorField = value;
-                this.RaisePropertyChanged("CopyIndicator");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=11)]
-        public System.DateTime IssueDate {
-            get {
-                return this.issueDateField;
-            }
-            set {
-                this.issueDateField = value;
-                this.RaisePropertyChanged("IssueDate");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=12)]
-        public System.DateTime IssueTime {
-            get {
-                return this.issueTimeField;
-            }
-            set {
-                this.issueTimeField = value;
-                this.RaisePropertyChanged("IssueTime");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=13)]
-        public string CurrencyCode {
-            get {
-                return this.currencyCodeField;
-            }
-            set {
-                this.currencyCodeField = value;
-                this.RaisePropertyChanged("CurrencyCode");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=14)]
-        public bool AllowanceChargeIndicator {
-            get {
-                return this.allowanceChargeIndicatorField;
-            }
-            set {
-                this.allowanceChargeIndicatorField = value;
-                this.RaisePropertyChanged("AllowanceChargeIndicator");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=15)]
-        public decimal AllowanceChargeAmount {
-            get {
-                return this.allowanceChargeAmountField;
-            }
-            set {
-                this.allowanceChargeAmountField = value;
-                this.RaisePropertyChanged("AllowanceChargeAmount");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=16)]
-        public decimal LineExtensionAmount {
-            get {
-                return this.lineExtensionAmountField;
-            }
-            set {
-                this.lineExtensionAmountField = value;
-                this.RaisePropertyChanged("LineExtensionAmount");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=17)]
-        public decimal AllowanceTotalAmount {
-            get {
-                return this.allowanceTotalAmountField;
-            }
-            set {
-                this.allowanceTotalAmountField = value;
-                this.RaisePropertyChanged("AllowanceTotalAmount");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=18)]
-        public decimal ChargeAmount {
-            get {
-                return this.chargeAmountField;
-            }
-            set {
-                this.chargeAmountField = value;
-                this.RaisePropertyChanged("ChargeAmount");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=19)]
-        public decimal TaxExclusiveAmount {
-            get {
-                return this.taxExclusiveAmountField;
-            }
-            set {
-                this.taxExclusiveAmountField = value;
-                this.RaisePropertyChanged("TaxExclusiveAmount");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=20)]
-        public decimal TaxInclusiveAmount {
-            get {
-                return this.taxInclusiveAmountField;
-            }
-            set {
-                this.taxInclusiveAmountField = value;
-                this.RaisePropertyChanged("TaxInclusiveAmount");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=21)]
-        public decimal PayableAmount {
-            get {
-                return this.payableAmountField;
-            }
-            set {
-                this.payableAmountField = value;
-                this.RaisePropertyChanged("PayableAmount");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=22)]
-        public PartyDetails CustomerParty {
-            get {
-                return this.customerPartyField;
-            }
-            set {
-                this.customerPartyField = value;
-                this.RaisePropertyChanged("CustomerParty");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=23)]
-        public PartyDetails SupplierParty {
-            get {
-                return this.supplierPartyField;
-            }
-            set {
-                this.supplierPartyField = value;
-                this.RaisePropertyChanged("SupplierParty");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Order=24)]
-        public InvoiceTax[] InvoiceTaxes {
-            get {
-                return this.invoiceTaxesField;
-            }
-            set {
-                this.invoiceTaxesField = value;
-                this.RaisePropertyChanged("InvoiceTaxes");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Order=25)]
-        public InvoiceLine[] InvoiceLines {
-            get {
-                return this.invoiceLinesField;
-            }
-            set {
-                this.invoiceLinesField = value;
-                this.RaisePropertyChanged("InvoiceLines");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Order=26)]
-        public string[] Notes {
-            get {
-                return this.notesField;
-            }
-            set {
-                this.notesField = value;
-                this.RaisePropertyChanged("Notes");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Order=27)]
-        public WithholdingTax[] WithholdingTaxes {
-            get {
-                return this.withholdingTaxesField;
-            }
-            set {
-                this.withholdingTaxesField = value;
-                this.RaisePropertyChanged("WithholdingTaxes");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Order=28)]
-        public BillingReference[] BillingReferences {
-            get {
-                return this.billingReferencesField;
-            }
-            set {
-                this.billingReferencesField = value;
-                this.RaisePropertyChanged("BillingReferences");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Order=29)]
-        public AdditionalDocumentReference[] AdditionalDocumentReferences {
-            get {
-                return this.additionalDocumentReferencesField;
-            }
-            set {
-                this.additionalDocumentReferencesField = value;
-                this.RaisePropertyChanged("AdditionalDocumentReferences");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=30)]
-        public Period InvoicePeriod {
-            get {
-                return this.invoicePeriodField;
-            }
-            set {
-                this.invoicePeriodField = value;
-                this.RaisePropertyChanged("InvoicePeriod");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Order=31)]
-        public DespatchDocumentModel[] DespatchDocument {
-            get {
-                return this.despatchDocumentField;
-            }
-            set {
-                this.despatchDocumentField = value;
-                this.RaisePropertyChanged("DespatchDocument");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=32)]
-        public string XsltName {
-            get {
-                return this.xsltNameField;
-            }
-            set {
-                this.xsltNameField = value;
-                this.RaisePropertyChanged("XsltName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=33)]
-        public PaymentMeansObj PaymentMeans {
-            get {
-                return this.paymentMeansField;
-            }
-            set {
-                this.paymentMeansField = value;
-                this.RaisePropertyChanged("PaymentMeans");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=34)]
-        public decimal InsuranceTotalAmount {
-            get {
-                return this.insuranceTotalAmountField;
-            }
-            set {
-                this.insuranceTotalAmountField = value;
-                this.RaisePropertyChanged("InsuranceTotalAmount");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=35)]
-        public decimal DeclaredCustomsTotalAmount {
-            get {
-                return this.declaredCustomsTotalAmountField;
-            }
-            set {
-                this.declaredCustomsTotalAmountField = value;
-                this.RaisePropertyChanged("DeclaredCustomsTotalAmount");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=36)]
-        public string OrderNo {
-            get {
-                return this.orderNoField;
-            }
-            set {
-                this.orderNoField = value;
-                this.RaisePropertyChanged("OrderNo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=37)]
-        public System.DateTime OrderDate {
-            get {
-                return this.orderDateField;
-            }
-            set {
-                this.orderDateField = value;
-                this.RaisePropertyChanged("OrderDate");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=38)]
-        public string AccountingCost {
-            get {
-                return this.accountingCostField;
-            }
-            set {
-                this.accountingCostField = value;
-                this.RaisePropertyChanged("AccountingCost");
+                this.customerListField = value;
+                this.RaisePropertyChanged("CustomerList");
             }
         }
         
@@ -1486,959 +299,19 @@ namespace Entegref.parkServis {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class PartyDetails : object, System.ComponentModel.INotifyPropertyChanged {
+    public partial class CustomerExtended : Customer {
         
-        private string taxOrIdNoField;
-        
-        private string gibAliasField;
-        
-        private string partyNameField;
-        
-        private string taxSchemeNameField;
-        
-        private string webSiteURIField;
-        
-        private string telephoneField;
-        
-        private string telefaxField;
-        
-        private string electronicMailField;
-        
-        private string countryField;
-        
-        private string cityNameField;
-        
-        private string citySubDivisionNameField;
-        
-        private string postalZoneField;
-        
-        private string idField;
-        
-        private string roomField;
-        
-        private string streetNameField;
-        
-        private string buildingNameField;
-        
-        private string buildingNumberField;
-        
-        private string firstNameField;
-        
-        private string familyNameField;
-        
-        private string mersisNoField;
-        
-        private string ticaretSicilNoField;
+        private string fullNameField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string TaxOrIdNo {
+        public string FullName {
             get {
-                return this.taxOrIdNoField;
+                return this.fullNameField;
             }
             set {
-                this.taxOrIdNoField = value;
-                this.RaisePropertyChanged("TaxOrIdNo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public string GibAlias {
-            get {
-                return this.gibAliasField;
-            }
-            set {
-                this.gibAliasField = value;
-                this.RaisePropertyChanged("GibAlias");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public string PartyName {
-            get {
-                return this.partyNameField;
-            }
-            set {
-                this.partyNameField = value;
-                this.RaisePropertyChanged("PartyName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-        public string TaxSchemeName {
-            get {
-                return this.taxSchemeNameField;
-            }
-            set {
-                this.taxSchemeNameField = value;
-                this.RaisePropertyChanged("TaxSchemeName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
-        public string WebSiteURI {
-            get {
-                return this.webSiteURIField;
-            }
-            set {
-                this.webSiteURIField = value;
-                this.RaisePropertyChanged("WebSiteURI");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
-        public string Telephone {
-            get {
-                return this.telephoneField;
-            }
-            set {
-                this.telephoneField = value;
-                this.RaisePropertyChanged("Telephone");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
-        public string Telefax {
-            get {
-                return this.telefaxField;
-            }
-            set {
-                this.telefaxField = value;
-                this.RaisePropertyChanged("Telefax");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
-        public string ElectronicMail {
-            get {
-                return this.electronicMailField;
-            }
-            set {
-                this.electronicMailField = value;
-                this.RaisePropertyChanged("ElectronicMail");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
-        public string Country {
-            get {
-                return this.countryField;
-            }
-            set {
-                this.countryField = value;
-                this.RaisePropertyChanged("Country");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=9)]
-        public string CityName {
-            get {
-                return this.cityNameField;
-            }
-            set {
-                this.cityNameField = value;
-                this.RaisePropertyChanged("CityName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=10)]
-        public string CitySubDivisionName {
-            get {
-                return this.citySubDivisionNameField;
-            }
-            set {
-                this.citySubDivisionNameField = value;
-                this.RaisePropertyChanged("CitySubDivisionName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=11)]
-        public string PostalZone {
-            get {
-                return this.postalZoneField;
-            }
-            set {
-                this.postalZoneField = value;
-                this.RaisePropertyChanged("PostalZone");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=12)]
-        public string ID {
-            get {
-                return this.idField;
-            }
-            set {
-                this.idField = value;
-                this.RaisePropertyChanged("ID");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=13)]
-        public string Room {
-            get {
-                return this.roomField;
-            }
-            set {
-                this.roomField = value;
-                this.RaisePropertyChanged("Room");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=14)]
-        public string StreetName {
-            get {
-                return this.streetNameField;
-            }
-            set {
-                this.streetNameField = value;
-                this.RaisePropertyChanged("StreetName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=15)]
-        public string BuildingName {
-            get {
-                return this.buildingNameField;
-            }
-            set {
-                this.buildingNameField = value;
-                this.RaisePropertyChanged("BuildingName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=16)]
-        public string BuildingNumber {
-            get {
-                return this.buildingNumberField;
-            }
-            set {
-                this.buildingNumberField = value;
-                this.RaisePropertyChanged("BuildingNumber");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=17)]
-        public string FirstName {
-            get {
-                return this.firstNameField;
-            }
-            set {
-                this.firstNameField = value;
-                this.RaisePropertyChanged("FirstName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=18)]
-        public string FamilyName {
-            get {
-                return this.familyNameField;
-            }
-            set {
-                this.familyNameField = value;
-                this.RaisePropertyChanged("FamilyName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=19)]
-        public string MersisNo {
-            get {
-                return this.mersisNoField;
-            }
-            set {
-                this.mersisNoField = value;
-                this.RaisePropertyChanged("MersisNo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=20)]
-        public string TicaretSicilNo {
-            get {
-                return this.ticaretSicilNoField;
-            }
-            set {
-                this.ticaretSicilNoField = value;
-                this.RaisePropertyChanged("TicaretSicilNo");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
-    public partial class GIBUSER : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string iDENTIFIERField;
-        
-        private string aLIASField;
-        
-        private string tITLEField;
-        
-        private string tYPEField;
-        
-        private string rEGISTER_TIMEField;
-        
-        private string uNITField;
-        
-        private string aLIAS_CREATION_TIMEField;
-        
-        private string dOCUMENT_TYPEField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string IDENTIFIER {
-            get {
-                return this.iDENTIFIERField;
-            }
-            set {
-                this.iDENTIFIERField = value;
-                this.RaisePropertyChanged("IDENTIFIER");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string ALIAS {
-            get {
-                return this.aLIASField;
-            }
-            set {
-                this.aLIASField = value;
-                this.RaisePropertyChanged("ALIAS");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string TITLE {
-            get {
-                return this.tITLEField;
-            }
-            set {
-                this.tITLEField = value;
-                this.RaisePropertyChanged("TITLE");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public string TYPE {
-            get {
-                return this.tYPEField;
-            }
-            set {
-                this.tYPEField = value;
-                this.RaisePropertyChanged("TYPE");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public string REGISTER_TIME {
-            get {
-                return this.rEGISTER_TIMEField;
-            }
-            set {
-                this.rEGISTER_TIMEField = value;
-                this.RaisePropertyChanged("REGISTER_TIME");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=5)]
-        public string UNIT {
-            get {
-                return this.uNITField;
-            }
-            set {
-                this.uNITField = value;
-                this.RaisePropertyChanged("UNIT");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
-        public string ALIAS_CREATION_TIME {
-            get {
-                return this.aLIAS_CREATION_TIMEField;
-            }
-            set {
-                this.aLIAS_CREATION_TIMEField = value;
-                this.RaisePropertyChanged("ALIAS_CREATION_TIME");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
-        public string DOCUMENT_TYPE {
-            get {
-                return this.dOCUMENT_TYPEField;
-            }
-            set {
-                this.dOCUMENT_TYPEField = value;
-                this.RaisePropertyChanged("DOCUMENT_TYPE");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class GtbResponse : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string gtbRefNumarasiField;
-        
-        private string gcbTescilNoField;
-        
-        private string tescilTarihiField;
-        
-        private bool isSuccessField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string GtbRefNumarasi {
-            get {
-                return this.gtbRefNumarasiField;
-            }
-            set {
-                this.gtbRefNumarasiField = value;
-                this.RaisePropertyChanged("GtbRefNumarasi");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public string GcbTescilNo {
-            get {
-                return this.gcbTescilNoField;
-            }
-            set {
-                this.gcbTescilNoField = value;
-                this.RaisePropertyChanged("GcbTescilNo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public string TescilTarihi {
-            get {
-                return this.tescilTarihiField;
-            }
-            set {
-                this.tescilTarihiField = value;
-                this.RaisePropertyChanged("TescilTarihi");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-        public bool isSuccess {
-            get {
-                return this.isSuccessField;
-            }
-            set {
-                this.isSuccessField = value;
-                this.RaisePropertyChanged("isSuccess");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
-    public partial class SendInvoiceResponse : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private REQUEST_RETURNType rEQUEST_RETURNField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public REQUEST_RETURNType REQUEST_RETURN {
-            get {
-                return this.rEQUEST_RETURNField;
-            }
-            set {
-                this.rEQUEST_RETURNField = value;
-                this.RaisePropertyChanged("REQUEST_RETURN");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/entity")]
-    public partial class REQUEST_RETURNType : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private long iNTL_TXN_IDField;
-        
-        private string cLIENT_TXN_IDField;
-        
-        private int rETURN_CODEField;
-        
-        private string[] wARNINGSField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public long INTL_TXN_ID {
-            get {
-                return this.iNTL_TXN_IDField;
-            }
-            set {
-                this.iNTL_TXN_IDField = value;
-                this.RaisePropertyChanged("INTL_TXN_ID");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=1)]
-        public string CLIENT_TXN_ID {
-            get {
-                return this.cLIENT_TXN_IDField;
-            }
-            set {
-                this.cLIENT_TXN_IDField = value;
-                this.RaisePropertyChanged("CLIENT_TXN_ID");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public int RETURN_CODE {
-            get {
-                return this.rETURN_CODEField;
-            }
-            set {
-                this.rETURN_CODEField = value;
-                this.RaisePropertyChanged("RETURN_CODE");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("WARNINGS", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public string[] WARNINGS {
-            get {
-                return this.wARNINGSField;
-            }
-            set {
-                this.wARNINGSField = value;
-                this.RaisePropertyChanged("WARNINGS");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
-    public partial class CancelDraftInvoiceResponse : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private REQUEST_RETURNType rEQUEST_RETURNField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public REQUEST_RETURNType REQUEST_RETURN {
-            get {
-                return this.rEQUEST_RETURNField;
-            }
-            set {
-                this.rEQUEST_RETURNField = value;
-                this.RaisePropertyChanged("REQUEST_RETURN");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DataModelObject))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Stylefiles))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Customer))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CustomerExtended))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public abstract partial class DataObject : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Stylefiles))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Customer))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CustomerExtended))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public abstract partial class DataModelObject : DataObject {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class Stylefiles : DataModelObject {
-        
-        private int stylefilesIdField;
-        
-        private bool deletedField;
-        
-        private System.DateTime createDateField;
-        
-        private System.Nullable<System.DateTime> updateDateField;
-        
-        private int createUserField;
-        
-        private System.Nullable<int> updateUserField;
-        
-        private int customerField;
-        
-        private string styleFilesNameField;
-        
-        private string earchiveFileNameField;
-        
-        private string eSmmFileNameField;
-        
-        private string irsaliyeFileNameField;
-        
-        private string mustahsilFileNameField;
-        
-        private string einvoiceFileNameField;
-        
-        private byte[] earchiveContentField;
-        
-        private byte[] einvoiceContentField;
-        
-        private byte[] eSmmFileContentField;
-        
-        private byte[] irsaliyeContentField;
-        
-        private byte[] mustahsilContentField;
-        
-        private bool activeField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public int StylefilesId {
-            get {
-                return this.stylefilesIdField;
-            }
-            set {
-                this.stylefilesIdField = value;
-                this.RaisePropertyChanged("StylefilesId");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public bool Deleted {
-            get {
-                return this.deletedField;
-            }
-            set {
-                this.deletedField = value;
-                this.RaisePropertyChanged("Deleted");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public System.DateTime CreateDate {
-            get {
-                return this.createDateField;
-            }
-            set {
-                this.createDateField = value;
-                this.RaisePropertyChanged("CreateDate");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=3)]
-        public System.Nullable<System.DateTime> UpdateDate {
-            get {
-                return this.updateDateField;
-            }
-            set {
-                this.updateDateField = value;
-                this.RaisePropertyChanged("UpdateDate");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
-        public int CreateUser {
-            get {
-                return this.createUserField;
-            }
-            set {
-                this.createUserField = value;
-                this.RaisePropertyChanged("CreateUser");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=5)]
-        public System.Nullable<int> UpdateUser {
-            get {
-                return this.updateUserField;
-            }
-            set {
-                this.updateUserField = value;
-                this.RaisePropertyChanged("UpdateUser");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
-        public int Customer {
-            get {
-                return this.customerField;
-            }
-            set {
-                this.customerField = value;
-                this.RaisePropertyChanged("Customer");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
-        public string StyleFilesName {
-            get {
-                return this.styleFilesNameField;
-            }
-            set {
-                this.styleFilesNameField = value;
-                this.RaisePropertyChanged("StyleFilesName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
-        public string EarchiveFileName {
-            get {
-                return this.earchiveFileNameField;
-            }
-            set {
-                this.earchiveFileNameField = value;
-                this.RaisePropertyChanged("EarchiveFileName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=9)]
-        public string ESmmFileName {
-            get {
-                return this.eSmmFileNameField;
-            }
-            set {
-                this.eSmmFileNameField = value;
-                this.RaisePropertyChanged("ESmmFileName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=10)]
-        public string IrsaliyeFileName {
-            get {
-                return this.irsaliyeFileNameField;
-            }
-            set {
-                this.irsaliyeFileNameField = value;
-                this.RaisePropertyChanged("IrsaliyeFileName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=11)]
-        public string MustahsilFileName {
-            get {
-                return this.mustahsilFileNameField;
-            }
-            set {
-                this.mustahsilFileNameField = value;
-                this.RaisePropertyChanged("MustahsilFileName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=12)]
-        public string EinvoiceFileName {
-            get {
-                return this.einvoiceFileNameField;
-            }
-            set {
-                this.einvoiceFileNameField = value;
-                this.RaisePropertyChanged("EinvoiceFileName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary", Order=13)]
-        public byte[] EarchiveContent {
-            get {
-                return this.earchiveContentField;
-            }
-            set {
-                this.earchiveContentField = value;
-                this.RaisePropertyChanged("EarchiveContent");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary", Order=14)]
-        public byte[] EinvoiceContent {
-            get {
-                return this.einvoiceContentField;
-            }
-            set {
-                this.einvoiceContentField = value;
-                this.RaisePropertyChanged("EinvoiceContent");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary", Order=15)]
-        public byte[] ESmmFileContent {
-            get {
-                return this.eSmmFileContentField;
-            }
-            set {
-                this.eSmmFileContentField = value;
-                this.RaisePropertyChanged("ESmmFileContent");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary", Order=16)]
-        public byte[] IrsaliyeContent {
-            get {
-                return this.irsaliyeContentField;
-            }
-            set {
-                this.irsaliyeContentField = value;
-                this.RaisePropertyChanged("IrsaliyeContent");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary", Order=17)]
-        public byte[] MustahsilContent {
-            get {
-                return this.mustahsilContentField;
-            }
-            set {
-                this.mustahsilContentField = value;
-                this.RaisePropertyChanged("MustahsilContent");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=18)]
-        public bool Active {
-            get {
-                return this.activeField;
-            }
-            set {
-                this.activeField = value;
-                this.RaisePropertyChanged("Active");
+                this.fullNameField = value;
+                this.RaisePropertyChanged("FullName");
             }
         }
     }
@@ -2944,383 +817,26 @@ namespace Entegref.parkServis {
     }
     
     /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Customer))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CustomerExtended))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class CustomerExtended : Customer {
-        
-        private string fullNameField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string FullName {
-            get {
-                return this.fullNameField;
-            }
-            set {
-                this.fullNameField = value;
-                this.RaisePropertyChanged("FullName");
-            }
-        }
+    public abstract partial class DataModelObject : DataObject {
     }
     
     /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DataModelObject))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Customer))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CustomerExtended))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class LoginRes : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private bool isSuccessLoginField;
-        
-        private string sessionIdField;
-        
-        private string messageField;
-        
-        private CustomerExtended[] customerListField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public bool IsSuccessLogin {
-            get {
-                return this.isSuccessLoginField;
-            }
-            set {
-                this.isSuccessLoginField = value;
-                this.RaisePropertyChanged("IsSuccessLogin");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public string SessionId {
-            get {
-                return this.sessionIdField;
-            }
-            set {
-                this.sessionIdField = value;
-                this.RaisePropertyChanged("SessionId");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public string Message {
-            get {
-                return this.messageField;
-            }
-            set {
-                this.messageField = value;
-                this.RaisePropertyChanged("Message");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Order=3)]
-        public CustomerExtended[] CustomerList {
-            get {
-                return this.customerListField;
-            }
-            set {
-                this.customerListField = value;
-                this.RaisePropertyChanged("CustomerList");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class CreditNoteSummary : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string creditNoteRefField;
-        
-        private string creditNoteTypeField;
-        
-        private string creditNoteProfileField;
-        
-        private string creditUUIDField;
-        
-        private string customerNameField;
-        
-        private string customerTaxIdField;
-        
-        private System.Nullable<System.DateTime> issueDateField;
-        
-        private System.Nullable<System.DateTime> senderDateField;
-        
-        private string statuField;
-        
-        private string statuDescField;
-        
-        private bool isReadField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string CreditNoteRef {
-            get {
-                return this.creditNoteRefField;
-            }
-            set {
-                this.creditNoteRefField = value;
-                this.RaisePropertyChanged("CreditNoteRef");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public string CreditNoteType {
-            get {
-                return this.creditNoteTypeField;
-            }
-            set {
-                this.creditNoteTypeField = value;
-                this.RaisePropertyChanged("CreditNoteType");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public string CreditNoteProfile {
-            get {
-                return this.creditNoteProfileField;
-            }
-            set {
-                this.creditNoteProfileField = value;
-                this.RaisePropertyChanged("CreditNoteProfile");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-        public string CreditUUID {
-            get {
-                return this.creditUUIDField;
-            }
-            set {
-                this.creditUUIDField = value;
-                this.RaisePropertyChanged("CreditUUID");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
-        public string CustomerName {
-            get {
-                return this.customerNameField;
-            }
-            set {
-                this.customerNameField = value;
-                this.RaisePropertyChanged("CustomerName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
-        public string CustomerTaxId {
-            get {
-                return this.customerTaxIdField;
-            }
-            set {
-                this.customerTaxIdField = value;
-                this.RaisePropertyChanged("CustomerTaxId");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=6)]
-        public System.Nullable<System.DateTime> IssueDate {
-            get {
-                return this.issueDateField;
-            }
-            set {
-                this.issueDateField = value;
-                this.RaisePropertyChanged("IssueDate");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=7)]
-        public System.Nullable<System.DateTime> SenderDate {
-            get {
-                return this.senderDateField;
-            }
-            set {
-                this.senderDateField = value;
-                this.RaisePropertyChanged("SenderDate");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
-        public string Statu {
-            get {
-                return this.statuField;
-            }
-            set {
-                this.statuField = value;
-                this.RaisePropertyChanged("Statu");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=9)]
-        public string StatuDesc {
-            get {
-                return this.statuDescField;
-            }
-            set {
-                this.statuDescField = value;
-                this.RaisePropertyChanged("StatuDesc");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=10)]
-        public bool isRead {
-            get {
-                return this.isReadField;
-            }
-            set {
-                this.isReadField = value;
-                this.RaisePropertyChanged("isRead");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class AdditionalDocumentReferenceCreditNoteObj : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string idField;
-        
-        private System.DateTime issueDateField;
-        
-        private string documentTypeCodeField;
-        
-        private string documentTypeField;
-        
-        private Attachment attachmentField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string ID {
-            get {
-                return this.idField;
-            }
-            set {
-                this.idField = value;
-                this.RaisePropertyChanged("ID");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public System.DateTime IssueDate {
-            get {
-                return this.issueDateField;
-            }
-            set {
-                this.issueDateField = value;
-                this.RaisePropertyChanged("IssueDate");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public string DocumentTypeCode {
-            get {
-                return this.documentTypeCodeField;
-            }
-            set {
-                this.documentTypeCodeField = value;
-                this.RaisePropertyChanged("DocumentTypeCode");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-        public string DocumentType {
-            get {
-                return this.documentTypeField;
-            }
-            set {
-                this.documentTypeField = value;
-                this.RaisePropertyChanged("DocumentType");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
-        public Attachment Attachment {
-            get {
-                return this.attachmentField;
-            }
-            set {
-                this.attachmentField = value;
-                this.RaisePropertyChanged("Attachment");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class Attachment : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private EmbeddedDocumentBinaryObject embeddedDocumentBinaryObjectField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public EmbeddedDocumentBinaryObject EmbeddedDocumentBinaryObject {
-            get {
-                return this.embeddedDocumentBinaryObjectField;
-            }
-            set {
-                this.embeddedDocumentBinaryObjectField = value;
-                this.RaisePropertyChanged("EmbeddedDocumentBinaryObject");
-            }
-        }
+    public abstract partial class DataObject : object, System.ComponentModel.INotifyPropertyChanged {
         
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
@@ -3426,1099 +942,19 @@ namespace Entegref.parkServis {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class Vergiler : object, System.ComponentModel.INotifyPropertyChanged {
+    public partial class Attachment : object, System.ComponentModel.INotifyPropertyChanged {
         
-        private decimal vergiSirasiField;
-        
-        private string vergiKoduField;
-        
-        private string vergiAdiField;
-        
-        private decimal vergiMatrahiField;
-        
-        private decimal vergiOraniField;
-        
-        private decimal vergiTutariField;
-        
-        private decimal toplamVergiTutariField;
-        
-        private string istisnaKoduField;
+        private EmbeddedDocumentBinaryObject embeddedDocumentBinaryObjectField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public decimal VergiSirasi {
+        public EmbeddedDocumentBinaryObject EmbeddedDocumentBinaryObject {
             get {
-                return this.vergiSirasiField;
+                return this.embeddedDocumentBinaryObjectField;
             }
             set {
-                this.vergiSirasiField = value;
-                this.RaisePropertyChanged("VergiSirasi");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public string VergiKodu {
-            get {
-                return this.vergiKoduField;
-            }
-            set {
-                this.vergiKoduField = value;
-                this.RaisePropertyChanged("VergiKodu");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public string VergiAdi {
-            get {
-                return this.vergiAdiField;
-            }
-            set {
-                this.vergiAdiField = value;
-                this.RaisePropertyChanged("VergiAdi");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-        public decimal VergiMatrahi {
-            get {
-                return this.vergiMatrahiField;
-            }
-            set {
-                this.vergiMatrahiField = value;
-                this.RaisePropertyChanged("VergiMatrahi");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
-        public decimal VergiOrani {
-            get {
-                return this.vergiOraniField;
-            }
-            set {
-                this.vergiOraniField = value;
-                this.RaisePropertyChanged("VergiOrani");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
-        public decimal VergiTutari {
-            get {
-                return this.vergiTutariField;
-            }
-            set {
-                this.vergiTutariField = value;
-                this.RaisePropertyChanged("VergiTutari");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
-        public decimal ToplamVergiTutari {
-            get {
-                return this.toplamVergiTutariField;
-            }
-            set {
-                this.toplamVergiTutariField = value;
-                this.RaisePropertyChanged("ToplamVergiTutari");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
-        public string IstisnaKodu {
-            get {
-                return this.istisnaKoduField;
-            }
-            set {
-                this.istisnaKoduField = value;
-                this.RaisePropertyChanged("IstisnaKodu");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class MustahsilSatirlari : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private int satirSirasiField;
-        
-        private string stokKoduField;
-        
-        private string urunAdiField;
-        
-        private string urunAciklamasiField;
-        
-        private decimal miktarField;
-        
-        private string birimField;
-        
-        private decimal birimFiyatField;
-        
-        private decimal malHizmetTutariField;
-        
-        private string paraBirimiField;
-        
-        private Vergiler[] kalemVergileriField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public int SatirSirasi {
-            get {
-                return this.satirSirasiField;
-            }
-            set {
-                this.satirSirasiField = value;
-                this.RaisePropertyChanged("SatirSirasi");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public string StokKodu {
-            get {
-                return this.stokKoduField;
-            }
-            set {
-                this.stokKoduField = value;
-                this.RaisePropertyChanged("StokKodu");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public string UrunAdi {
-            get {
-                return this.urunAdiField;
-            }
-            set {
-                this.urunAdiField = value;
-                this.RaisePropertyChanged("UrunAdi");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-        public string UrunAciklamasi {
-            get {
-                return this.urunAciklamasiField;
-            }
-            set {
-                this.urunAciklamasiField = value;
-                this.RaisePropertyChanged("UrunAciklamasi");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
-        public decimal Miktar {
-            get {
-                return this.miktarField;
-            }
-            set {
-                this.miktarField = value;
-                this.RaisePropertyChanged("Miktar");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
-        public string Birim {
-            get {
-                return this.birimField;
-            }
-            set {
-                this.birimField = value;
-                this.RaisePropertyChanged("Birim");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
-        public decimal BirimFiyat {
-            get {
-                return this.birimFiyatField;
-            }
-            set {
-                this.birimFiyatField = value;
-                this.RaisePropertyChanged("BirimFiyat");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
-        public decimal MalHizmetTutari {
-            get {
-                return this.malHizmetTutariField;
-            }
-            set {
-                this.malHizmetTutariField = value;
-                this.RaisePropertyChanged("MalHizmetTutari");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
-        public string ParaBirimi {
-            get {
-                return this.paraBirimiField;
-            }
-            set {
-                this.paraBirimiField = value;
-                this.RaisePropertyChanged("ParaBirimi");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Order=9)]
-        public Vergiler[] KalemVergileri {
-            get {
-                return this.kalemVergileriField;
-            }
-            set {
-                this.kalemVergileriField = value;
-                this.RaisePropertyChanged("KalemVergileri");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class MustahsilFirmaBilgisi : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string vergiNumarasiField;
-        
-        private string gibAliasField;
-        
-        private string firmaAdiField;
-        
-        private string vergiDairesiField;
-        
-        private string webSitesiField;
-        
-        private string telefonField;
-        
-        private string faxField;
-        
-        private string epostaField;
-        
-        private string ulkeField;
-        
-        private string ilField;
-        
-        private string ilceField;
-        
-        private string postaKoduField;
-        
-        private string sokakField;
-        
-        private string apartmanField;
-        
-        private string apartmanNoField;
-        
-        private string adiField;
-        
-        private string soyadiField;
-        
-        private string caddeField;
-        
-        private string mersisNoField;
-        
-        private string ticaretSicilNoField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string VergiNumarasi {
-            get {
-                return this.vergiNumarasiField;
-            }
-            set {
-                this.vergiNumarasiField = value;
-                this.RaisePropertyChanged("VergiNumarasi");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public string GibAlias {
-            get {
-                return this.gibAliasField;
-            }
-            set {
-                this.gibAliasField = value;
-                this.RaisePropertyChanged("GibAlias");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public string FirmaAdi {
-            get {
-                return this.firmaAdiField;
-            }
-            set {
-                this.firmaAdiField = value;
-                this.RaisePropertyChanged("FirmaAdi");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-        public string VergiDairesi {
-            get {
-                return this.vergiDairesiField;
-            }
-            set {
-                this.vergiDairesiField = value;
-                this.RaisePropertyChanged("VergiDairesi");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
-        public string WebSitesi {
-            get {
-                return this.webSitesiField;
-            }
-            set {
-                this.webSitesiField = value;
-                this.RaisePropertyChanged("WebSitesi");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
-        public string Telefon {
-            get {
-                return this.telefonField;
-            }
-            set {
-                this.telefonField = value;
-                this.RaisePropertyChanged("Telefon");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
-        public string Fax {
-            get {
-                return this.faxField;
-            }
-            set {
-                this.faxField = value;
-                this.RaisePropertyChanged("Fax");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
-        public string Eposta {
-            get {
-                return this.epostaField;
-            }
-            set {
-                this.epostaField = value;
-                this.RaisePropertyChanged("Eposta");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
-        public string Ulke {
-            get {
-                return this.ulkeField;
-            }
-            set {
-                this.ulkeField = value;
-                this.RaisePropertyChanged("Ulke");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=9)]
-        public string Il {
-            get {
-                return this.ilField;
-            }
-            set {
-                this.ilField = value;
-                this.RaisePropertyChanged("Il");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=10)]
-        public string Ilce {
-            get {
-                return this.ilceField;
-            }
-            set {
-                this.ilceField = value;
-                this.RaisePropertyChanged("Ilce");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=11)]
-        public string PostaKodu {
-            get {
-                return this.postaKoduField;
-            }
-            set {
-                this.postaKoduField = value;
-                this.RaisePropertyChanged("PostaKodu");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=12)]
-        public string Sokak {
-            get {
-                return this.sokakField;
-            }
-            set {
-                this.sokakField = value;
-                this.RaisePropertyChanged("Sokak");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=13)]
-        public string Apartman {
-            get {
-                return this.apartmanField;
-            }
-            set {
-                this.apartmanField = value;
-                this.RaisePropertyChanged("Apartman");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=14)]
-        public string ApartmanNo {
-            get {
-                return this.apartmanNoField;
-            }
-            set {
-                this.apartmanNoField = value;
-                this.RaisePropertyChanged("ApartmanNo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=15)]
-        public string Adi {
-            get {
-                return this.adiField;
-            }
-            set {
-                this.adiField = value;
-                this.RaisePropertyChanged("Adi");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=16)]
-        public string Soyadi {
-            get {
-                return this.soyadiField;
-            }
-            set {
-                this.soyadiField = value;
-                this.RaisePropertyChanged("Soyadi");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=17)]
-        public string Cadde {
-            get {
-                return this.caddeField;
-            }
-            set {
-                this.caddeField = value;
-                this.RaisePropertyChanged("Cadde");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=18)]
-        public string MersisNo {
-            get {
-                return this.mersisNoField;
-            }
-            set {
-                this.mersisNoField = value;
-                this.RaisePropertyChanged("MersisNo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=19)]
-        public string TicaretSicilNo {
-            get {
-                return this.ticaretSicilNoField;
-            }
-            set {
-                this.ticaretSicilNoField = value;
-                this.RaisePropertyChanged("TicaretSicilNo");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class ParkCreditNoteObj : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string mustahsilNumarasiField;
-        
-        private string uuidField;
-        
-        private bool taslaklaraGonderilsinMiField;
-        
-        private string senaryoField;
-        
-        private string mustahsilTipField;
-        
-        private string gonderimSekliField;
-        
-        private string paraBirimiField;
-        
-        private string[] notlarField;
-        
-        private decimal dovizKuruField;
-        
-        private MustahsilFirmaBilgisi gondericiFirmaField;
-        
-        private MustahsilFirmaBilgisi aliciFirmaField;
-        
-        private System.DateTime mustahsilTarihiField;
-        
-        private System.DateTime mustahsilZamaniField;
-        
-        private System.DateTime sevkZamaniField;
-        
-        private decimal malHizmetToplamTutariField;
-        
-        private decimal vergilerHaricToplamTutariField;
-        
-        private decimal vergilerDahilToplamTutariField;
-        
-        private decimal odenecekTutariField;
-        
-        private MustahsilSatirlari[] mustahsilSatirField;
-        
-        private Vergiler[] vergilerField;
-        
-        private string xsltNameField;
-        
-        private AdditionalDocumentReferenceCreditNoteObj[] additionalDocumentReferencesField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string MustahsilNumarasi {
-            get {
-                return this.mustahsilNumarasiField;
-            }
-            set {
-                this.mustahsilNumarasiField = value;
-                this.RaisePropertyChanged("MustahsilNumarasi");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public string Uuid {
-            get {
-                return this.uuidField;
-            }
-            set {
-                this.uuidField = value;
-                this.RaisePropertyChanged("Uuid");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public bool TaslaklaraGonderilsinMi {
-            get {
-                return this.taslaklaraGonderilsinMiField;
-            }
-            set {
-                this.taslaklaraGonderilsinMiField = value;
-                this.RaisePropertyChanged("TaslaklaraGonderilsinMi");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-        public string Senaryo {
-            get {
-                return this.senaryoField;
-            }
-            set {
-                this.senaryoField = value;
-                this.RaisePropertyChanged("Senaryo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
-        public string MustahsilTip {
-            get {
-                return this.mustahsilTipField;
-            }
-            set {
-                this.mustahsilTipField = value;
-                this.RaisePropertyChanged("MustahsilTip");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
-        public string GonderimSekli {
-            get {
-                return this.gonderimSekliField;
-            }
-            set {
-                this.gonderimSekliField = value;
-                this.RaisePropertyChanged("GonderimSekli");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
-        public string ParaBirimi {
-            get {
-                return this.paraBirimiField;
-            }
-            set {
-                this.paraBirimiField = value;
-                this.RaisePropertyChanged("ParaBirimi");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Order=7)]
-        public string[] Notlar {
-            get {
-                return this.notlarField;
-            }
-            set {
-                this.notlarField = value;
-                this.RaisePropertyChanged("Notlar");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
-        public decimal DovizKuru {
-            get {
-                return this.dovizKuruField;
-            }
-            set {
-                this.dovizKuruField = value;
-                this.RaisePropertyChanged("DovizKuru");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=9)]
-        public MustahsilFirmaBilgisi GondericiFirma {
-            get {
-                return this.gondericiFirmaField;
-            }
-            set {
-                this.gondericiFirmaField = value;
-                this.RaisePropertyChanged("GondericiFirma");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=10)]
-        public MustahsilFirmaBilgisi AliciFirma {
-            get {
-                return this.aliciFirmaField;
-            }
-            set {
-                this.aliciFirmaField = value;
-                this.RaisePropertyChanged("AliciFirma");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=11)]
-        public System.DateTime MustahsilTarihi {
-            get {
-                return this.mustahsilTarihiField;
-            }
-            set {
-                this.mustahsilTarihiField = value;
-                this.RaisePropertyChanged("MustahsilTarihi");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=12)]
-        public System.DateTime MustahsilZamani {
-            get {
-                return this.mustahsilZamaniField;
-            }
-            set {
-                this.mustahsilZamaniField = value;
-                this.RaisePropertyChanged("MustahsilZamani");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=13)]
-        public System.DateTime SevkZamani {
-            get {
-                return this.sevkZamaniField;
-            }
-            set {
-                this.sevkZamaniField = value;
-                this.RaisePropertyChanged("SevkZamani");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=14)]
-        public decimal MalHizmetToplamTutari {
-            get {
-                return this.malHizmetToplamTutariField;
-            }
-            set {
-                this.malHizmetToplamTutariField = value;
-                this.RaisePropertyChanged("MalHizmetToplamTutari");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=15)]
-        public decimal VergilerHaricToplamTutari {
-            get {
-                return this.vergilerHaricToplamTutariField;
-            }
-            set {
-                this.vergilerHaricToplamTutariField = value;
-                this.RaisePropertyChanged("VergilerHaricToplamTutari");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=16)]
-        public decimal VergilerDahilToplamTutari {
-            get {
-                return this.vergilerDahilToplamTutariField;
-            }
-            set {
-                this.vergilerDahilToplamTutariField = value;
-                this.RaisePropertyChanged("VergilerDahilToplamTutari");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=17)]
-        public decimal OdenecekTutari {
-            get {
-                return this.odenecekTutariField;
-            }
-            set {
-                this.odenecekTutariField = value;
-                this.RaisePropertyChanged("OdenecekTutari");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Order=18)]
-        public MustahsilSatirlari[] MustahsilSatir {
-            get {
-                return this.mustahsilSatirField;
-            }
-            set {
-                this.mustahsilSatirField = value;
-                this.RaisePropertyChanged("MustahsilSatir");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Order=19)]
-        public Vergiler[] Vergiler {
-            get {
-                return this.vergilerField;
-            }
-            set {
-                this.vergilerField = value;
-                this.RaisePropertyChanged("Vergiler");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=20)]
-        public string XsltName {
-            get {
-                return this.xsltNameField;
-            }
-            set {
-                this.xsltNameField = value;
-                this.RaisePropertyChanged("XsltName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Order=21)]
-        public AdditionalDocumentReferenceCreditNoteObj[] AdditionalDocumentReferences {
-            get {
-                return this.additionalDocumentReferencesField;
-            }
-            set {
-                this.additionalDocumentReferencesField = value;
-                this.RaisePropertyChanged("AdditionalDocumentReferences");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class DespatchSummary : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string despatchRefField;
-        
-        private string despatchTypeField;
-        
-        private string despatchProfileField;
-        
-        private string despatchUUIDField;
-        
-        private string supplierNameField;
-        
-        private string customerNameField;
-        
-        private string supplierTaxIdField;
-        
-        private string customerTaxIdField;
-        
-        private System.Nullable<System.DateTime> issueDateField;
-        
-        private System.Nullable<System.DateTime> senderDateField;
-        
-        private string statuField;
-        
-        private string statuDescField;
-        
-        private bool isReadField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string DespatchRef {
-            get {
-                return this.despatchRefField;
-            }
-            set {
-                this.despatchRefField = value;
-                this.RaisePropertyChanged("DespatchRef");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public string DespatchType {
-            get {
-                return this.despatchTypeField;
-            }
-            set {
-                this.despatchTypeField = value;
-                this.RaisePropertyChanged("DespatchType");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public string DespatchProfile {
-            get {
-                return this.despatchProfileField;
-            }
-            set {
-                this.despatchProfileField = value;
-                this.RaisePropertyChanged("DespatchProfile");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-        public string DespatchUUID {
-            get {
-                return this.despatchUUIDField;
-            }
-            set {
-                this.despatchUUIDField = value;
-                this.RaisePropertyChanged("DespatchUUID");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
-        public string SupplierName {
-            get {
-                return this.supplierNameField;
-            }
-            set {
-                this.supplierNameField = value;
-                this.RaisePropertyChanged("SupplierName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
-        public string CustomerName {
-            get {
-                return this.customerNameField;
-            }
-            set {
-                this.customerNameField = value;
-                this.RaisePropertyChanged("CustomerName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
-        public string SupplierTaxId {
-            get {
-                return this.supplierTaxIdField;
-            }
-            set {
-                this.supplierTaxIdField = value;
-                this.RaisePropertyChanged("SupplierTaxId");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
-        public string CustomerTaxId {
-            get {
-                return this.customerTaxIdField;
-            }
-            set {
-                this.customerTaxIdField = value;
-                this.RaisePropertyChanged("CustomerTaxId");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=8)]
-        public System.Nullable<System.DateTime> IssueDate {
-            get {
-                return this.issueDateField;
-            }
-            set {
-                this.issueDateField = value;
-                this.RaisePropertyChanged("IssueDate");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=9)]
-        public System.Nullable<System.DateTime> SenderDate {
-            get {
-                return this.senderDateField;
-            }
-            set {
-                this.senderDateField = value;
-                this.RaisePropertyChanged("SenderDate");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=10)]
-        public string Statu {
-            get {
-                return this.statuField;
-            }
-            set {
-                this.statuField = value;
-                this.RaisePropertyChanged("Statu");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=11)]
-        public string StatuDesc {
-            get {
-                return this.statuDescField;
-            }
-            set {
-                this.statuDescField = value;
-                this.RaisePropertyChanged("StatuDesc");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=12)]
-        public bool isRead {
-            get {
-                return this.isReadField;
-            }
-            set {
-                this.isReadField = value;
-                this.RaisePropertyChanged("isRead");
+                this.embeddedDocumentBinaryObjectField = value;
+                this.RaisePropertyChanged("EmbeddedDocumentBinaryObject");
             }
         }
         
@@ -5653,62 +2089,118 @@ namespace Entegref.parkServis {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class ParkInvoiceStatusRes : object, System.ComponentModel.INotifyPropertyChanged {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class GIBUSER : object, System.ComponentModel.INotifyPropertyChanged {
         
-        private int statusField;
+        private string iDENTIFIERField;
         
-        private string statusDescField;
+        private string aLIASField;
         
-        private string gibCodeField;
+        private string tITLEField;
         
-        private string gibDescField;
+        private string tYPEField;
+        
+        private string rEGISTER_TIMEField;
+        
+        private string uNITField;
+        
+        private string aLIAS_CREATION_TIMEField;
+        
+        private string dOCUMENT_TYPEField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public int Status {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string IDENTIFIER {
             get {
-                return this.statusField;
+                return this.iDENTIFIERField;
             }
             set {
-                this.statusField = value;
-                this.RaisePropertyChanged("Status");
+                this.iDENTIFIERField = value;
+                this.RaisePropertyChanged("IDENTIFIER");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public string StatusDesc {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string ALIAS {
             get {
-                return this.statusDescField;
+                return this.aLIASField;
             }
             set {
-                this.statusDescField = value;
-                this.RaisePropertyChanged("StatusDesc");
+                this.aLIASField = value;
+                this.RaisePropertyChanged("ALIAS");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public string GibCode {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string TITLE {
             get {
-                return this.gibCodeField;
+                return this.tITLEField;
             }
             set {
-                this.gibCodeField = value;
-                this.RaisePropertyChanged("GibCode");
+                this.tITLEField = value;
+                this.RaisePropertyChanged("TITLE");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-        public string GibDesc {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string TYPE {
             get {
-                return this.gibDescField;
+                return this.tYPEField;
             }
             set {
-                this.gibDescField = value;
-                this.RaisePropertyChanged("GibDesc");
+                this.tYPEField = value;
+                this.RaisePropertyChanged("TYPE");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string REGISTER_TIME {
+            get {
+                return this.rEGISTER_TIMEField;
+            }
+            set {
+                this.rEGISTER_TIMEField = value;
+                this.RaisePropertyChanged("REGISTER_TIME");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=5)]
+        public string UNIT {
+            get {
+                return this.uNITField;
+            }
+            set {
+                this.uNITField = value;
+                this.RaisePropertyChanged("UNIT");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public string ALIAS_CREATION_TIME {
+            get {
+                return this.aLIAS_CREATION_TIMEField;
+            }
+            set {
+                this.aLIAS_CREATION_TIMEField = value;
+                this.RaisePropertyChanged("ALIAS_CREATION_TIME");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public string DOCUMENT_TYPE {
+            get {
+                return this.dOCUMENT_TYPEField;
+            }
+            set {
+                this.dOCUMENT_TYPEField = value;
+                this.RaisePropertyChanged("DOCUMENT_TYPE");
             }
         }
         
@@ -5727,216 +2219,436 @@ namespace Entegref.parkServis {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class InvoiceSummary : object, System.ComponentModel.INotifyPropertyChanged {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class MarkReceiptAdviceResponse : object, System.ComponentModel.INotifyPropertyChanged {
         
-        private string invoiceRefField;
+        private REQUEST_RETURNType rEQUEST_RETURNField;
         
-        private string invoiceTypeField;
-        
-        private string invoiceProfileField;
-        
-        private string invoiceUUIDField;
-        
-        private string supplierNameField;
-        
-        private string customerNameField;
-        
-        private string supplierTaxIdField;
-        
-        private string customerTaxIdField;
-        
-        private string documentCurrencyField;
-        
-        private decimal payableAmountField;
-        
-        private int invoiceCountField;
-        
-        private System.Nullable<System.DateTime> issueDateField;
-        
-        private System.Nullable<System.DateTime> senderDateField;
-        
-        private ParkInvoiceStatusRes statuField;
-        
-        private bool isReadField;
+        private REQUEST_ERRORType eRROR_TYPEField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string InvoiceRef {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public REQUEST_RETURNType REQUEST_RETURN {
             get {
-                return this.invoiceRefField;
+                return this.rEQUEST_RETURNField;
             }
             set {
-                this.invoiceRefField = value;
-                this.RaisePropertyChanged("InvoiceRef");
+                this.rEQUEST_RETURNField = value;
+                this.RaisePropertyChanged("REQUEST_RETURN");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public string InvoiceType {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public REQUEST_ERRORType ERROR_TYPE {
             get {
-                return this.invoiceTypeField;
+                return this.eRROR_TYPEField;
             }
             set {
-                this.invoiceTypeField = value;
-                this.RaisePropertyChanged("InvoiceType");
+                this.eRROR_TYPEField = value;
+                this.RaisePropertyChanged("ERROR_TYPE");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/entity")]
+    public partial class REQUEST_RETURNType : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private long iNTL_TXN_IDField;
+        
+        private string cLIENT_TXN_IDField;
+        
+        private int rETURN_CODEField;
+        
+        private string[] wARNINGSField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public long INTL_TXN_ID {
+            get {
+                return this.iNTL_TXN_IDField;
+            }
+            set {
+                this.iNTL_TXN_IDField = value;
+                this.RaisePropertyChanged("INTL_TXN_ID");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public string InvoiceProfile {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=1)]
+        public string CLIENT_TXN_ID {
             get {
-                return this.invoiceProfileField;
+                return this.cLIENT_TXN_IDField;
             }
             set {
-                this.invoiceProfileField = value;
-                this.RaisePropertyChanged("InvoiceProfile");
+                this.cLIENT_TXN_IDField = value;
+                this.RaisePropertyChanged("CLIENT_TXN_ID");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-        public string InvoiceUUID {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public int RETURN_CODE {
             get {
-                return this.invoiceUUIDField;
+                return this.rETURN_CODEField;
             }
             set {
-                this.invoiceUUIDField = value;
-                this.RaisePropertyChanged("InvoiceUUID");
+                this.rETURN_CODEField = value;
+                this.RaisePropertyChanged("RETURN_CODE");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
-        public string SupplierName {
+        [System.Xml.Serialization.XmlElementAttribute("WARNINGS", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string[] WARNINGS {
             get {
-                return this.supplierNameField;
+                return this.wARNINGSField;
             }
             set {
-                this.supplierNameField = value;
-                this.RaisePropertyChanged("SupplierName");
+                this.wARNINGSField = value;
+                this.RaisePropertyChanged("WARNINGS");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/entity")]
+    public partial class REQUEST_ERRORType : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private long iNTL_TXN_IDField;
+        
+        private string cLIENT_TXN_IDField;
+        
+        private int eRROR_CODEField;
+        
+        private string eRROR_SHORT_DESField;
+        
+        private string eRROR_LONG_DESField;
+        
+        private string sTACKTRACEField;
+        
+        private int eRROR_ELEMENT_INDEXField;
+        
+        private bool eRROR_ELEMENT_INDEXFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public long INTL_TXN_ID {
+            get {
+                return this.iNTL_TXN_IDField;
+            }
+            set {
+                this.iNTL_TXN_IDField = value;
+                this.RaisePropertyChanged("INTL_TXN_ID");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
-        public string CustomerName {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=1)]
+        public string CLIENT_TXN_ID {
             get {
-                return this.customerNameField;
+                return this.cLIENT_TXN_IDField;
             }
             set {
-                this.customerNameField = value;
-                this.RaisePropertyChanged("CustomerName");
+                this.cLIENT_TXN_IDField = value;
+                this.RaisePropertyChanged("CLIENT_TXN_ID");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
-        public string SupplierTaxId {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public int ERROR_CODE {
             get {
-                return this.supplierTaxIdField;
+                return this.eRROR_CODEField;
             }
             set {
-                this.supplierTaxIdField = value;
-                this.RaisePropertyChanged("SupplierTaxId");
+                this.eRROR_CODEField = value;
+                this.RaisePropertyChanged("ERROR_CODE");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
-        public string CustomerTaxId {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string ERROR_SHORT_DES {
             get {
-                return this.customerTaxIdField;
+                return this.eRROR_SHORT_DESField;
             }
             set {
-                this.customerTaxIdField = value;
-                this.RaisePropertyChanged("CustomerTaxId");
+                this.eRROR_SHORT_DESField = value;
+                this.RaisePropertyChanged("ERROR_SHORT_DES");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
-        public string DocumentCurrency {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string ERROR_LONG_DES {
             get {
-                return this.documentCurrencyField;
+                return this.eRROR_LONG_DESField;
             }
             set {
-                this.documentCurrencyField = value;
-                this.RaisePropertyChanged("DocumentCurrency");
+                this.eRROR_LONG_DESField = value;
+                this.RaisePropertyChanged("ERROR_LONG_DES");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=9)]
-        public decimal PayableAmount {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public string STACKTRACE {
             get {
-                return this.payableAmountField;
+                return this.sTACKTRACEField;
             }
             set {
-                this.payableAmountField = value;
-                this.RaisePropertyChanged("PayableAmount");
+                this.sTACKTRACEField = value;
+                this.RaisePropertyChanged("STACKTRACE");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=10)]
-        public int InvoiceCount {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public int ERROR_ELEMENT_INDEX {
             get {
-                return this.invoiceCountField;
+                return this.eRROR_ELEMENT_INDEXField;
             }
             set {
-                this.invoiceCountField = value;
-                this.RaisePropertyChanged("InvoiceCount");
+                this.eRROR_ELEMENT_INDEXField = value;
+                this.RaisePropertyChanged("ERROR_ELEMENT_INDEX");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=11)]
-        public System.Nullable<System.DateTime> IssueDate {
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ERROR_ELEMENT_INDEXSpecified {
             get {
-                return this.issueDateField;
+                return this.eRROR_ELEMENT_INDEXFieldSpecified;
             }
             set {
-                this.issueDateField = value;
-                this.RaisePropertyChanged("IssueDate");
+                this.eRROR_ELEMENT_INDEXFieldSpecified = value;
+                this.RaisePropertyChanged("ERROR_ELEMENT_INDEXSpecified");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class MarkDespatchAdviceResponse : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private REQUEST_RETURNType rEQUEST_RETURNField;
+        
+        private REQUEST_ERRORType eRROR_TYPEField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public REQUEST_RETURNType REQUEST_RETURN {
+            get {
+                return this.rEQUEST_RETURNField;
+            }
+            set {
+                this.rEQUEST_RETURNField = value;
+                this.RaisePropertyChanged("REQUEST_RETURN");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=12)]
-        public System.Nullable<System.DateTime> SenderDate {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public REQUEST_ERRORType ERROR_TYPE {
             get {
-                return this.senderDateField;
+                return this.eRROR_TYPEField;
             }
             set {
-                this.senderDateField = value;
-                this.RaisePropertyChanged("SenderDate");
+                this.eRROR_TYPEField = value;
+                this.RaisePropertyChanged("ERROR_TYPE");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class LoadReceiptAdviceResponse : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private REQUEST_RETURNType rEQUEST_RETURNField;
+        
+        private REQUEST_ERRORType eRROR_TYPEField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public REQUEST_RETURNType REQUEST_RETURN {
+            get {
+                return this.rEQUEST_RETURNField;
+            }
+            set {
+                this.rEQUEST_RETURNField = value;
+                this.RaisePropertyChanged("REQUEST_RETURN");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=13)]
-        public ParkInvoiceStatusRes Statu {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public REQUEST_ERRORType ERROR_TYPE {
             get {
-                return this.statuField;
+                return this.eRROR_TYPEField;
             }
             set {
-                this.statuField = value;
-                this.RaisePropertyChanged("Statu");
+                this.eRROR_TYPEField = value;
+                this.RaisePropertyChanged("ERROR_TYPE");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class SendReceiptAdviceResponse : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string rECEIPT_IDField;
+        
+        private REQUEST_RETURNType rEQUEST_RETURNField;
+        
+        private REQUEST_ERRORType eRROR_TYPEField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="normalizedString", Order=0)]
+        public string RECEIPT_ID {
+            get {
+                return this.rECEIPT_IDField;
+            }
+            set {
+                this.rECEIPT_IDField = value;
+                this.RaisePropertyChanged("RECEIPT_ID");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=14)]
-        public bool isRead {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public REQUEST_RETURNType REQUEST_RETURN {
             get {
-                return this.isReadField;
+                return this.rEQUEST_RETURNField;
             }
             set {
-                this.isReadField = value;
-                this.RaisePropertyChanged("isRead");
+                this.rEQUEST_RETURNField = value;
+                this.RaisePropertyChanged("REQUEST_RETURN");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public REQUEST_ERRORType ERROR_TYPE {
+            get {
+                return this.eRROR_TYPEField;
+            }
+            set {
+                this.eRROR_TYPEField = value;
+                this.RaisePropertyChanged("ERROR_TYPE");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class LoadDespatchAdviceResponse : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private REQUEST_RETURNType rEQUEST_RETURNField;
+        
+        private REQUEST_ERRORType eRROR_TYPEField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public REQUEST_RETURNType REQUEST_RETURN {
+            get {
+                return this.rEQUEST_RETURNField;
+            }
+            set {
+                this.rEQUEST_RETURNField = value;
+                this.RaisePropertyChanged("REQUEST_RETURN");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public REQUEST_ERRORType ERROR_TYPE {
+            get {
+                return this.eRROR_TYPEField;
+            }
+            set {
+                this.eRROR_TYPEField = value;
+                this.RaisePropertyChanged("ERROR_TYPE");
             }
         }
         
@@ -6029,104 +2741,48 @@ namespace Entegref.parkServis {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class PaymentMeansObj : object, System.ComponentModel.INotifyPropertyChanged {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class SendDespatchAdviceResponse : object, System.ComponentModel.INotifyPropertyChanged {
         
-        private string paymentMeansCodeField;
+        private string dESPATCH_IDField;
         
-        private string paymentChannelCodeField;
+        private REQUEST_RETURNType rEQUEST_RETURNField;
         
-        private string instructionNoteField;
-        
-        private string paymentNoField;
-        
-        private string paymentCurrencyCodeField;
-        
-        private string paymentNoteField;
-        
-        private System.DateTime paymentDateField;
+        private REQUEST_ERRORType eRROR_TYPEField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string PaymentMeansCode {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="normalizedString", Order=0)]
+        public string DESPATCH_ID {
             get {
-                return this.paymentMeansCodeField;
+                return this.dESPATCH_IDField;
             }
             set {
-                this.paymentMeansCodeField = value;
-                this.RaisePropertyChanged("PaymentMeansCode");
+                this.dESPATCH_IDField = value;
+                this.RaisePropertyChanged("DESPATCH_ID");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public string PaymentChannelCode {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public REQUEST_RETURNType REQUEST_RETURN {
             get {
-                return this.paymentChannelCodeField;
+                return this.rEQUEST_RETURNField;
             }
             set {
-                this.paymentChannelCodeField = value;
-                this.RaisePropertyChanged("PaymentChannelCode");
+                this.rEQUEST_RETURNField = value;
+                this.RaisePropertyChanged("REQUEST_RETURN");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public string InstructionNote {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public REQUEST_ERRORType ERROR_TYPE {
             get {
-                return this.instructionNoteField;
+                return this.eRROR_TYPEField;
             }
             set {
-                this.instructionNoteField = value;
-                this.RaisePropertyChanged("InstructionNote");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-        public string PaymentNo {
-            get {
-                return this.paymentNoField;
-            }
-            set {
-                this.paymentNoField = value;
-                this.RaisePropertyChanged("PaymentNo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
-        public string PaymentCurrencyCode {
-            get {
-                return this.paymentCurrencyCodeField;
-            }
-            set {
-                this.paymentCurrencyCodeField = value;
-                this.RaisePropertyChanged("PaymentCurrencyCode");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
-        public string PaymentNote {
-            get {
-                return this.paymentNoteField;
-            }
-            set {
-                this.paymentNoteField = value;
-                this.RaisePropertyChanged("PaymentNote");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
-        public System.DateTime PaymentDate {
-            get {
-                return this.paymentDateField;
-            }
-            set {
-                this.paymentDateField = value;
-                this.RaisePropertyChanged("PaymentDate");
+                this.eRROR_TYPEField = value;
+                this.RaisePropertyChanged("ERROR_TYPE");
             }
         }
         
@@ -6145,34 +2801,34 @@ namespace Entegref.parkServis {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class DespatchDocumentModel : object, System.ComponentModel.INotifyPropertyChanged {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class GetDespatchAdviceStatusResponse : object, System.ComponentModel.INotifyPropertyChanged {
         
-        private string despatchNumberField;
+        private DESPATCHADVICEHEADER[] dESPATCHADVICE_STATUSField;
         
-        private System.DateTime despatchDateField;
+        private REQUEST_ERRORType eRROR_TYPEField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string DespatchNumber {
+        [System.Xml.Serialization.XmlElementAttribute("DESPATCHADVICE_STATUS", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public DESPATCHADVICEHEADER[] DESPATCHADVICE_STATUS {
             get {
-                return this.despatchNumberField;
+                return this.dESPATCHADVICE_STATUSField;
             }
             set {
-                this.despatchNumberField = value;
-                this.RaisePropertyChanged("DespatchNumber");
+                this.dESPATCHADVICE_STATUSField = value;
+                this.RaisePropertyChanged("DESPATCHADVICE_STATUS");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public System.DateTime DespatchDate {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public REQUEST_ERRORType ERROR_TYPE {
             get {
-                return this.despatchDateField;
+                return this.eRROR_TYPEField;
             }
             set {
-                this.despatchDateField = value;
-                this.RaisePropertyChanged("DespatchDate");
+                this.eRROR_TYPEField = value;
+                this.RaisePropertyChanged("ERROR_TYPE");
             }
         }
         
@@ -6191,108 +2847,65 @@ namespace Entegref.parkServis {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class Period : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private System.DateTime startDateField;
-        
-        private System.DateTime startTimeField;
-        
-        private System.DateTime endDateField;
-        
-        private System.DateTime endTimeField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public System.DateTime StartDate {
-            get {
-                return this.startDateField;
-            }
-            set {
-                this.startDateField = value;
-                this.RaisePropertyChanged("StartDate");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public System.DateTime StartTime {
-            get {
-                return this.startTimeField;
-            }
-            set {
-                this.startTimeField = value;
-                this.RaisePropertyChanged("StartTime");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public System.DateTime EndDate {
-            get {
-                return this.endDateField;
-            }
-            set {
-                this.endDateField = value;
-                this.RaisePropertyChanged("EndDate");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-        public System.DateTime EndTime {
-            get {
-                return this.endTimeField;
-            }
-            set {
-                this.endTimeField = value;
-                this.RaisePropertyChanged("EndTime");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(AdditionalDocumentReference))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class BillingReference : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private BillingReferenceTypes referenceTypeField;
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class DESPATCHADVICEHEADER : object, System.ComponentModel.INotifyPropertyChanged {
         
         private string idField;
         
-        private System.DateTime issueDateField;
+        private string uUIDField;
         
-        private string documentTypeCodeField;
+        private string pROFILEIDField;
         
-        private string documentTypeField;
+        private System.DateTime iSSUE_DATEField;
+        
+        private bool iSSUE_DATEFieldSpecified;
+        
+        private string iSSUE_TIMEField;
+        
+        private System.DateTime aCTUAL_SHIPMENT_DATEField;
+        
+        private bool aCTUAL_SHIPMENT_DATEFieldSpecified;
+        
+        private string aCTUAL_SHIPMENT_TIMEField;
+        
+        private string tYPE_CODEField;
+        
+        private string dIRECTIONField;
+        
+        private PARTINFO sENDERField;
+        
+        private PARTINFO rECEIVERField;
+        
+        private AmountType aMOUNTField;
+        
+        private string sTATUSField;
+        
+        private string sTATUS_CODEField;
+        
+        private string sTATUS_DESCRIPTIONField;
+        
+        private int gIB_STATUS_CODEField;
+        
+        private bool gIB_STATUS_CODEFieldSpecified;
+        
+        private string gIB_STATUS_DESCRIPTIONField;
+        
+        private string rESPONSE_CODEField;
+        
+        private string rESPONSE_DESCRIPTIONField;
+        
+        private string fILENAMEField;
+        
+        private string hASHField;
+        
+        private System.DateTime cDATEField;
+        
+        private bool cDATEFieldSpecified;
+        
+        private string eNVELOPE_IDENTIFIERField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public BillingReferenceTypes ReferenceType {
-            get {
-                return this.referenceTypeField;
-            }
-            set {
-                this.referenceTypeField = value;
-                this.RaisePropertyChanged("ReferenceType");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         public string ID {
             get {
                 return this.idField;
@@ -6304,430 +2917,314 @@ namespace Entegref.parkServis {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public System.DateTime IssueDate {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string UUID {
             get {
-                return this.issueDateField;
+                return this.uUIDField;
             }
             set {
-                this.issueDateField = value;
-                this.RaisePropertyChanged("IssueDate");
+                this.uUIDField = value;
+                this.RaisePropertyChanged("UUID");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-        public string DocumentTypeCode {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=2)]
+        public string PROFILEID {
             get {
-                return this.documentTypeCodeField;
+                return this.pROFILEIDField;
             }
             set {
-                this.documentTypeCodeField = value;
-                this.RaisePropertyChanged("DocumentTypeCode");
+                this.pROFILEIDField = value;
+                this.RaisePropertyChanged("PROFILEID");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
-        public string DocumentType {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=3)]
+        public System.DateTime ISSUE_DATE {
             get {
-                return this.documentTypeField;
+                return this.iSSUE_DATEField;
             }
             set {
-                this.documentTypeField = value;
-                this.RaisePropertyChanged("DocumentType");
+                this.iSSUE_DATEField = value;
+                this.RaisePropertyChanged("ISSUE_DATE");
             }
         }
         
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public enum BillingReferenceTypes {
-        
         /// <remarks/>
-        InvoiceDocumentReference,
-        
-        /// <remarks/>
-        SelfBilledInvoiceDocumentReference,
-        
-        /// <remarks/>
-        CreditNoteDocumentReference,
-        
-        /// <remarks/>
-        SelfBilledCreditNoteDocumentReference,
-        
-        /// <remarks/>
-        DebitNoteDocumentReference,
-        
-        /// <remarks/>
-        ReminderDocumentReference,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class AdditionalDocumentReference : BillingReference {
-        
-        private Attachment attachmentField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public Attachment Attachment {
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ISSUE_DATESpecified {
             get {
-                return this.attachmentField;
+                return this.iSSUE_DATEFieldSpecified;
             }
             set {
-                this.attachmentField = value;
-                this.RaisePropertyChanged("Attachment");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class AllowanceModel : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private decimal allowanceMultiplierAmountObjField;
-        
-        private decimal allowanceBaseAmountObjField;
-        
-        private decimal allowanceAmountObjField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public decimal AllowanceMultiplierAmountObj {
-            get {
-                return this.allowanceMultiplierAmountObjField;
-            }
-            set {
-                this.allowanceMultiplierAmountObjField = value;
-                this.RaisePropertyChanged("AllowanceMultiplierAmountObj");
+                this.iSSUE_DATEFieldSpecified = value;
+                this.RaisePropertyChanged("ISSUE_DATESpecified");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public decimal AllowanceBaseAmountObj {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string ISSUE_TIME {
             get {
-                return this.allowanceBaseAmountObjField;
+                return this.iSSUE_TIMEField;
             }
             set {
-                this.allowanceBaseAmountObjField = value;
-                this.RaisePropertyChanged("AllowanceBaseAmountObj");
+                this.iSSUE_TIMEField = value;
+                this.RaisePropertyChanged("ISSUE_TIME");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public decimal AllowanceAmountObj {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=5)]
+        public System.DateTime ACTUAL_SHIPMENT_DATE {
             get {
-                return this.allowanceAmountObjField;
+                return this.aCTUAL_SHIPMENT_DATEField;
             }
             set {
-                this.allowanceAmountObjField = value;
-                this.RaisePropertyChanged("AllowanceAmountObj");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class DeliveryType : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string streetnameField;
-        
-        private string buildingNameField;
-        
-        private string buildingNumberField;
-        
-        private string subDevisionField;
-        
-        private string cityNameField;
-        
-        private string postalZoneField;
-        
-        private string countryField;
-        
-        private string deliveryTermsField;
-        
-        private string gtipNoField;
-        
-        private string transportModeCodeField;
-        
-        private string packageNumberField;
-        
-        private decimal packageQuantityField;
-        
-        private string packageTypeCodeField;
-        
-        private decimal grossWeightMeasureField;
-        
-        private decimal netWeightMeasureField;
-        
-        private string grossWeightMeasureUnitCodeField;
-        
-        private string netWeightMeasureUnitCodeField;
-        
-        private decimal navlunBedeliField;
-        
-        private decimal sigortaBedeliField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string Streetname {
-            get {
-                return this.streetnameField;
-            }
-            set {
-                this.streetnameField = value;
-                this.RaisePropertyChanged("Streetname");
+                this.aCTUAL_SHIPMENT_DATEField = value;
+                this.RaisePropertyChanged("ACTUAL_SHIPMENT_DATE");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public string BuildingName {
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ACTUAL_SHIPMENT_DATESpecified {
             get {
-                return this.buildingNameField;
+                return this.aCTUAL_SHIPMENT_DATEFieldSpecified;
             }
             set {
-                this.buildingNameField = value;
-                this.RaisePropertyChanged("BuildingName");
+                this.aCTUAL_SHIPMENT_DATEFieldSpecified = value;
+                this.RaisePropertyChanged("ACTUAL_SHIPMENT_DATESpecified");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public string BuildingNumber {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public string ACTUAL_SHIPMENT_TIME {
             get {
-                return this.buildingNumberField;
+                return this.aCTUAL_SHIPMENT_TIMEField;
             }
             set {
-                this.buildingNumberField = value;
-                this.RaisePropertyChanged("BuildingNumber");
+                this.aCTUAL_SHIPMENT_TIMEField = value;
+                this.RaisePropertyChanged("ACTUAL_SHIPMENT_TIME");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-        public string SubDevision {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public string TYPE_CODE {
             get {
-                return this.subDevisionField;
+                return this.tYPE_CODEField;
             }
             set {
-                this.subDevisionField = value;
-                this.RaisePropertyChanged("SubDevision");
+                this.tYPE_CODEField = value;
+                this.RaisePropertyChanged("TYPE_CODE");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
-        public string CityName {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
+        public string DIRECTION {
             get {
-                return this.cityNameField;
+                return this.dIRECTIONField;
             }
             set {
-                this.cityNameField = value;
-                this.RaisePropertyChanged("CityName");
+                this.dIRECTIONField = value;
+                this.RaisePropertyChanged("DIRECTION");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
-        public string PostalZone {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
+        public PARTINFO SENDER {
             get {
-                return this.postalZoneField;
+                return this.sENDERField;
             }
             set {
-                this.postalZoneField = value;
-                this.RaisePropertyChanged("PostalZone");
+                this.sENDERField = value;
+                this.RaisePropertyChanged("SENDER");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
-        public string Country {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
+        public PARTINFO RECEIVER {
             get {
-                return this.countryField;
+                return this.rECEIVERField;
             }
             set {
-                this.countryField = value;
-                this.RaisePropertyChanged("Country");
+                this.rECEIVERField = value;
+                this.RaisePropertyChanged("RECEIVER");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
-        public string DeliveryTerms {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=11)]
+        public AmountType AMOUNT {
             get {
-                return this.deliveryTermsField;
+                return this.aMOUNTField;
             }
             set {
-                this.deliveryTermsField = value;
-                this.RaisePropertyChanged("DeliveryTerms");
+                this.aMOUNTField = value;
+                this.RaisePropertyChanged("AMOUNT");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
-        public string GtipNo {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=12)]
+        public string STATUS {
             get {
-                return this.gtipNoField;
+                return this.sTATUSField;
             }
             set {
-                this.gtipNoField = value;
-                this.RaisePropertyChanged("GtipNo");
+                this.sTATUSField = value;
+                this.RaisePropertyChanged("STATUS");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=9)]
-        public string TransportModeCode {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=13)]
+        public string STATUS_CODE {
             get {
-                return this.transportModeCodeField;
+                return this.sTATUS_CODEField;
             }
             set {
-                this.transportModeCodeField = value;
-                this.RaisePropertyChanged("TransportModeCode");
+                this.sTATUS_CODEField = value;
+                this.RaisePropertyChanged("STATUS_CODE");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=10)]
-        public string PackageNumber {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=14)]
+        public string STATUS_DESCRIPTION {
             get {
-                return this.packageNumberField;
+                return this.sTATUS_DESCRIPTIONField;
             }
             set {
-                this.packageNumberField = value;
-                this.RaisePropertyChanged("PackageNumber");
+                this.sTATUS_DESCRIPTIONField = value;
+                this.RaisePropertyChanged("STATUS_DESCRIPTION");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=11)]
-        public decimal PackageQuantity {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=15)]
+        public int GIB_STATUS_CODE {
             get {
-                return this.packageQuantityField;
+                return this.gIB_STATUS_CODEField;
             }
             set {
-                this.packageQuantityField = value;
-                this.RaisePropertyChanged("PackageQuantity");
+                this.gIB_STATUS_CODEField = value;
+                this.RaisePropertyChanged("GIB_STATUS_CODE");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=12)]
-        public string PackageTypeCode {
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool GIB_STATUS_CODESpecified {
             get {
-                return this.packageTypeCodeField;
+                return this.gIB_STATUS_CODEFieldSpecified;
             }
             set {
-                this.packageTypeCodeField = value;
-                this.RaisePropertyChanged("PackageTypeCode");
+                this.gIB_STATUS_CODEFieldSpecified = value;
+                this.RaisePropertyChanged("GIB_STATUS_CODESpecified");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=13)]
-        public decimal GrossWeightMeasure {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=16)]
+        public string GIB_STATUS_DESCRIPTION {
             get {
-                return this.grossWeightMeasureField;
+                return this.gIB_STATUS_DESCRIPTIONField;
             }
             set {
-                this.grossWeightMeasureField = value;
-                this.RaisePropertyChanged("GrossWeightMeasure");
+                this.gIB_STATUS_DESCRIPTIONField = value;
+                this.RaisePropertyChanged("GIB_STATUS_DESCRIPTION");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=14)]
-        public decimal NetWeightMeasure {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=17)]
+        public string RESPONSE_CODE {
             get {
-                return this.netWeightMeasureField;
+                return this.rESPONSE_CODEField;
             }
             set {
-                this.netWeightMeasureField = value;
-                this.RaisePropertyChanged("NetWeightMeasure");
+                this.rESPONSE_CODEField = value;
+                this.RaisePropertyChanged("RESPONSE_CODE");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=15)]
-        public string GrossWeightMeasureUnitCode {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=18)]
+        public string RESPONSE_DESCRIPTION {
             get {
-                return this.grossWeightMeasureUnitCodeField;
+                return this.rESPONSE_DESCRIPTIONField;
             }
             set {
-                this.grossWeightMeasureUnitCodeField = value;
-                this.RaisePropertyChanged("GrossWeightMeasureUnitCode");
+                this.rESPONSE_DESCRIPTIONField = value;
+                this.RaisePropertyChanged("RESPONSE_DESCRIPTION");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=16)]
-        public string NetWeightMeasureUnitCode {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=19)]
+        public string FILENAME {
             get {
-                return this.netWeightMeasureUnitCodeField;
+                return this.fILENAMEField;
             }
             set {
-                this.netWeightMeasureUnitCodeField = value;
-                this.RaisePropertyChanged("NetWeightMeasureUnitCode");
+                this.fILENAMEField = value;
+                this.RaisePropertyChanged("FILENAME");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=17)]
-        public decimal NavlunBedeli {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=20)]
+        public string HASH {
             get {
-                return this.navlunBedeliField;
+                return this.hASHField;
             }
             set {
-                this.navlunBedeliField = value;
-                this.RaisePropertyChanged("NavlunBedeli");
+                this.hASHField = value;
+                this.RaisePropertyChanged("HASH");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=18)]
-        public decimal SigortaBedeli {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=21)]
+        public System.DateTime CDATE {
             get {
-                return this.sigortaBedeliField;
+                return this.cDATEField;
             }
             set {
-                this.sigortaBedeliField = value;
-                this.RaisePropertyChanged("SigortaBedeli");
+                this.cDATEField = value;
+                this.RaisePropertyChanged("CDATE");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CDATESpecified {
+            get {
+                return this.cDATEFieldSpecified;
+            }
+            set {
+                this.cDATEFieldSpecified = value;
+                this.RaisePropertyChanged("CDATESpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=22)]
+        public string ENVELOPE_IDENTIFIER {
+            get {
+                return this.eNVELOPE_IDENTIFIERField;
+            }
+            set {
+                this.eNVELOPE_IDENTIFIERField = value;
+                this.RaisePropertyChanged("ENVELOPE_IDENTIFIER");
             }
         }
         
@@ -6746,76 +3243,48 @@ namespace Entegref.parkServis {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class WithholdingTax : object, System.ComponentModel.INotifyPropertyChanged {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/common")]
+    public partial class PARTINFO : object, System.ComponentModel.INotifyPropertyChanged {
         
-        private decimal taxAmountField;
+        private string vKNField;
         
-        private decimal taxableAmountField;
+        private string iDENTIFIERField;
         
-        private decimal subTaxAmountField;
-        
-        private decimal percentField;
-        
-        private string taxTypeCodeField;
+        private string aLIASField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public decimal TaxAmount {
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="normalizedString")]
+        public string VKN {
             get {
-                return this.taxAmountField;
+                return this.vKNField;
             }
             set {
-                this.taxAmountField = value;
-                this.RaisePropertyChanged("TaxAmount");
+                this.vKNField = value;
+                this.RaisePropertyChanged("VKN");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public decimal TaxableAmount {
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="normalizedString")]
+        public string IDENTIFIER {
             get {
-                return this.taxableAmountField;
+                return this.iDENTIFIERField;
             }
             set {
-                this.taxableAmountField = value;
-                this.RaisePropertyChanged("TaxableAmount");
+                this.iDENTIFIERField = value;
+                this.RaisePropertyChanged("IDENTIFIER");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public decimal SubTaxAmount {
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="normalizedString")]
+        public string ALIAS {
             get {
-                return this.subTaxAmountField;
+                return this.aLIASField;
             }
             set {
-                this.subTaxAmountField = value;
-                this.RaisePropertyChanged("SubTaxAmount");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-        public decimal Percent {
-            get {
-                return this.percentField;
-            }
-            set {
-                this.percentField = value;
-                this.RaisePropertyChanged("Percent");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
-        public string TaxTypeCode {
-            get {
-                return this.taxTypeCodeField;
-            }
-            set {
-                this.taxTypeCodeField = value;
-                this.RaisePropertyChanged("TaxTypeCode");
+                this.aLIASField = value;
+                this.RaisePropertyChanged("ALIAS");
             }
         }
         
@@ -6834,72 +3303,174 @@ namespace Entegref.parkServis {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class InvoiceLine : object, System.ComponentModel.INotifyPropertyChanged {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/common")]
+    public partial class AmountType : object, System.ComponentModel.INotifyPropertyChanged {
         
-        private decimal invLineDBRefField;
+        private string currencyIDField;
         
-        private int idField;
+        private string currencyCodeListVersionIDField;
         
-        private string sellersItemIDField;
-        
-        private string buyersItemIDField;
-        
-        private string manufacturersItemIDField;
-        
-        private string itemNameField;
-        
-        private string brandNameField;
-        
-        private string modelNameField;
-        
-        private string itemDescriptionField;
-        
-        private decimal invoicedQuantityField;
-        
-        private string unitCodeField;
-        
-        private decimal priceAmountField;
-        
-        private decimal lineExtensionAmountField;
-        
-        private string currencyField;
-        
-        private bool chargeIndicatorField;
-        
-        private string allowanceChargeReasonField;
-        
-        private decimal allowanceBaseAmountField;
-        
-        private decimal multiplierFactorNumericField;
-        
-        private decimal allowanceAmountField;
-        
-        private string[] notesField;
-        
-        private InvoiceTax[] lineTaxesField;
-        
-        private WithholdingTax[] withholdingTaxesField;
-        
-        private DeliveryType deliveryTypeObjField;
-        
-        private AllowanceModel[] allowanceListField;
+        private decimal valueField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public decimal InvLineDBRef {
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="normalizedString")]
+        public string currencyID {
             get {
-                return this.invLineDBRefField;
+                return this.currencyIDField;
             }
             set {
-                this.invLineDBRefField = value;
-                this.RaisePropertyChanged("InvLineDBRef");
+                this.currencyIDField = value;
+                this.RaisePropertyChanged("currencyID");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public int ID {
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="normalizedString")]
+        public string currencyCodeListVersionID {
+            get {
+                return this.currencyCodeListVersionIDField;
+            }
+            set {
+                this.currencyCodeListVersionIDField = value;
+                this.RaisePropertyChanged("currencyCodeListVersionID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlTextAttribute()]
+        public decimal Value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+                this.RaisePropertyChanged("Value");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class GetReceiptAdviceStatusResponse : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private RECEIPTADVICEHEADER[] rECEIPTADVICE_STATUSField;
+        
+        private REQUEST_ERRORType eRROR_TYPEField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("RECEIPTADVICE_STATUS", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public RECEIPTADVICEHEADER[] RECEIPTADVICE_STATUS {
+            get {
+                return this.rECEIPTADVICE_STATUSField;
+            }
+            set {
+                this.rECEIPTADVICE_STATUSField = value;
+                this.RaisePropertyChanged("RECEIPTADVICE_STATUS");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public REQUEST_ERRORType ERROR_TYPE {
+            get {
+                return this.eRROR_TYPEField;
+            }
+            set {
+                this.eRROR_TYPEField = value;
+                this.RaisePropertyChanged("ERROR_TYPE");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class RECEIPTADVICEHEADER : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string idField;
+        
+        private string uUIDField;
+        
+        private string pROFILEIDField;
+        
+        private System.DateTime iSSUE_DATEField;
+        
+        private bool iSSUE_DATEFieldSpecified;
+        
+        private string iSSUE_TIMEField;
+        
+        private System.DateTime aCTUAL_SHIPMENT_DATEField;
+        
+        private bool aCTUAL_SHIPMENT_DATEFieldSpecified;
+        
+        private string aCTUAL_SHIPMENT_TIMEField;
+        
+        private string tYPE_CODEField;
+        
+        private PARTINFO sENDERField;
+        
+        private PARTINFO rECEIVERField;
+        
+        private string dIRECTIONField;
+        
+        private string dESPATCH_ADVICE_UUIDField;
+        
+        private string dESPATCH_ADVICE_IDField;
+        
+        private string sTATUSField;
+        
+        private string sTATUS_DESCRIPTIONField;
+        
+        private string sTATUS_CODEField;
+        
+        private int gIB_STATUS_CODEField;
+        
+        private bool gIB_STATUS_CODEFieldSpecified;
+        
+        private string gIB_STATUS_DESCRIPTIONField;
+        
+        private string rESPONSE_CODEField;
+        
+        private string rESPONSE_DESCRIPTIONField;
+        
+        private string fILENAMEField;
+        
+        private string hASHField;
+        
+        private System.DateTime cDATEField;
+        
+        private bool cDATEFieldSpecified;
+        
+        private string eNVELOPE_IDENTIFIERField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="normalizedString", Order=0)]
+        public string ID {
             get {
                 return this.idField;
             }
@@ -6910,266 +3481,326 @@ namespace Entegref.parkServis {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public string SellersItemID {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="normalizedString", Order=1)]
+        public string UUID {
             get {
-                return this.sellersItemIDField;
+                return this.uUIDField;
             }
             set {
-                this.sellersItemIDField = value;
-                this.RaisePropertyChanged("SellersItemID");
+                this.uUIDField = value;
+                this.RaisePropertyChanged("UUID");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-        public string BuyersItemID {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=2)]
+        public string PROFILEID {
             get {
-                return this.buyersItemIDField;
+                return this.pROFILEIDField;
             }
             set {
-                this.buyersItemIDField = value;
-                this.RaisePropertyChanged("BuyersItemID");
+                this.pROFILEIDField = value;
+                this.RaisePropertyChanged("PROFILEID");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
-        public string ManufacturersItemID {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=3)]
+        public System.DateTime ISSUE_DATE {
             get {
-                return this.manufacturersItemIDField;
+                return this.iSSUE_DATEField;
             }
             set {
-                this.manufacturersItemIDField = value;
-                this.RaisePropertyChanged("ManufacturersItemID");
+                this.iSSUE_DATEField = value;
+                this.RaisePropertyChanged("ISSUE_DATE");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
-        public string ItemName {
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ISSUE_DATESpecified {
             get {
-                return this.itemNameField;
+                return this.iSSUE_DATEFieldSpecified;
             }
             set {
-                this.itemNameField = value;
-                this.RaisePropertyChanged("ItemName");
+                this.iSSUE_DATEFieldSpecified = value;
+                this.RaisePropertyChanged("ISSUE_DATESpecified");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
-        public string BrandName {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string ISSUE_TIME {
             get {
-                return this.brandNameField;
+                return this.iSSUE_TIMEField;
             }
             set {
-                this.brandNameField = value;
-                this.RaisePropertyChanged("BrandName");
+                this.iSSUE_TIMEField = value;
+                this.RaisePropertyChanged("ISSUE_TIME");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
-        public string ModelName {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=5)]
+        public System.DateTime ACTUAL_SHIPMENT_DATE {
             get {
-                return this.modelNameField;
+                return this.aCTUAL_SHIPMENT_DATEField;
             }
             set {
-                this.modelNameField = value;
-                this.RaisePropertyChanged("ModelName");
+                this.aCTUAL_SHIPMENT_DATEField = value;
+                this.RaisePropertyChanged("ACTUAL_SHIPMENT_DATE");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=8)]
-        public string ItemDescription {
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ACTUAL_SHIPMENT_DATESpecified {
             get {
-                return this.itemDescriptionField;
+                return this.aCTUAL_SHIPMENT_DATEFieldSpecified;
             }
             set {
-                this.itemDescriptionField = value;
-                this.RaisePropertyChanged("ItemDescription");
+                this.aCTUAL_SHIPMENT_DATEFieldSpecified = value;
+                this.RaisePropertyChanged("ACTUAL_SHIPMENT_DATESpecified");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=9)]
-        public decimal InvoicedQuantity {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public string ACTUAL_SHIPMENT_TIME {
             get {
-                return this.invoicedQuantityField;
+                return this.aCTUAL_SHIPMENT_TIMEField;
             }
             set {
-                this.invoicedQuantityField = value;
-                this.RaisePropertyChanged("InvoicedQuantity");
+                this.aCTUAL_SHIPMENT_TIMEField = value;
+                this.RaisePropertyChanged("ACTUAL_SHIPMENT_TIME");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=10)]
-        public string UnitCode {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public string TYPE_CODE {
             get {
-                return this.unitCodeField;
+                return this.tYPE_CODEField;
             }
             set {
-                this.unitCodeField = value;
-                this.RaisePropertyChanged("UnitCode");
+                this.tYPE_CODEField = value;
+                this.RaisePropertyChanged("TYPE_CODE");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=11)]
-        public decimal PriceAmount {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
+        public PARTINFO SENDER {
             get {
-                return this.priceAmountField;
+                return this.sENDERField;
             }
             set {
-                this.priceAmountField = value;
-                this.RaisePropertyChanged("PriceAmount");
+                this.sENDERField = value;
+                this.RaisePropertyChanged("SENDER");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=12)]
-        public decimal LineExtensionAmount {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
+        public PARTINFO RECEIVER {
             get {
-                return this.lineExtensionAmountField;
+                return this.rECEIVERField;
             }
             set {
-                this.lineExtensionAmountField = value;
-                this.RaisePropertyChanged("LineExtensionAmount");
+                this.rECEIVERField = value;
+                this.RaisePropertyChanged("RECEIVER");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=13)]
-        public string Currency {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
+        public string DIRECTION {
             get {
-                return this.currencyField;
+                return this.dIRECTIONField;
             }
             set {
-                this.currencyField = value;
-                this.RaisePropertyChanged("Currency");
+                this.dIRECTIONField = value;
+                this.RaisePropertyChanged("DIRECTION");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=14)]
-        public bool ChargeIndicator {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=11)]
+        public string DESPATCH_ADVICE_UUID {
             get {
-                return this.chargeIndicatorField;
+                return this.dESPATCH_ADVICE_UUIDField;
             }
             set {
-                this.chargeIndicatorField = value;
-                this.RaisePropertyChanged("ChargeIndicator");
+                this.dESPATCH_ADVICE_UUIDField = value;
+                this.RaisePropertyChanged("DESPATCH_ADVICE_UUID");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=15)]
-        public string AllowanceChargeReason {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=12)]
+        public string DESPATCH_ADVICE_ID {
             get {
-                return this.allowanceChargeReasonField;
+                return this.dESPATCH_ADVICE_IDField;
             }
             set {
-                this.allowanceChargeReasonField = value;
-                this.RaisePropertyChanged("AllowanceChargeReason");
+                this.dESPATCH_ADVICE_IDField = value;
+                this.RaisePropertyChanged("DESPATCH_ADVICE_ID");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=16)]
-        public decimal AllowanceBaseAmount {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=13)]
+        public string STATUS {
             get {
-                return this.allowanceBaseAmountField;
+                return this.sTATUSField;
             }
             set {
-                this.allowanceBaseAmountField = value;
-                this.RaisePropertyChanged("AllowanceBaseAmount");
+                this.sTATUSField = value;
+                this.RaisePropertyChanged("STATUS");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=17)]
-        public decimal MultiplierFactorNumeric {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=14)]
+        public string STATUS_DESCRIPTION {
             get {
-                return this.multiplierFactorNumericField;
+                return this.sTATUS_DESCRIPTIONField;
             }
             set {
-                this.multiplierFactorNumericField = value;
-                this.RaisePropertyChanged("MultiplierFactorNumeric");
+                this.sTATUS_DESCRIPTIONField = value;
+                this.RaisePropertyChanged("STATUS_DESCRIPTION");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=18)]
-        public decimal AllowanceAmount {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=15)]
+        public string STATUS_CODE {
             get {
-                return this.allowanceAmountField;
+                return this.sTATUS_CODEField;
             }
             set {
-                this.allowanceAmountField = value;
-                this.RaisePropertyChanged("AllowanceAmount");
+                this.sTATUS_CODEField = value;
+                this.RaisePropertyChanged("STATUS_CODE");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Order=19)]
-        public string[] Notes {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=16)]
+        public int GIB_STATUS_CODE {
             get {
-                return this.notesField;
+                return this.gIB_STATUS_CODEField;
             }
             set {
-                this.notesField = value;
-                this.RaisePropertyChanged("Notes");
+                this.gIB_STATUS_CODEField = value;
+                this.RaisePropertyChanged("GIB_STATUS_CODE");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Order=20)]
-        public InvoiceTax[] LineTaxes {
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool GIB_STATUS_CODESpecified {
             get {
-                return this.lineTaxesField;
+                return this.gIB_STATUS_CODEFieldSpecified;
             }
             set {
-                this.lineTaxesField = value;
-                this.RaisePropertyChanged("LineTaxes");
+                this.gIB_STATUS_CODEFieldSpecified = value;
+                this.RaisePropertyChanged("GIB_STATUS_CODESpecified");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Order=21)]
-        public WithholdingTax[] WithholdingTaxes {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=17)]
+        public string GIB_STATUS_DESCRIPTION {
             get {
-                return this.withholdingTaxesField;
+                return this.gIB_STATUS_DESCRIPTIONField;
             }
             set {
-                this.withholdingTaxesField = value;
-                this.RaisePropertyChanged("WithholdingTaxes");
+                this.gIB_STATUS_DESCRIPTIONField = value;
+                this.RaisePropertyChanged("GIB_STATUS_DESCRIPTION");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=22)]
-        public DeliveryType DeliveryTypeObj {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=18)]
+        public string RESPONSE_CODE {
             get {
-                return this.deliveryTypeObjField;
+                return this.rESPONSE_CODEField;
             }
             set {
-                this.deliveryTypeObjField = value;
-                this.RaisePropertyChanged("DeliveryTypeObj");
+                this.rESPONSE_CODEField = value;
+                this.RaisePropertyChanged("RESPONSE_CODE");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Order=23)]
-        public AllowanceModel[] AllowanceList {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=19)]
+        public string RESPONSE_DESCRIPTION {
             get {
-                return this.allowanceListField;
+                return this.rESPONSE_DESCRIPTIONField;
             }
             set {
-                this.allowanceListField = value;
-                this.RaisePropertyChanged("AllowanceList");
+                this.rESPONSE_DESCRIPTIONField = value;
+                this.RaisePropertyChanged("RESPONSE_DESCRIPTION");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=20)]
+        public string FILENAME {
+            get {
+                return this.fILENAMEField;
+            }
+            set {
+                this.fILENAMEField = value;
+                this.RaisePropertyChanged("FILENAME");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=21)]
+        public string HASH {
+            get {
+                return this.hASHField;
+            }
+            set {
+                this.hASHField = value;
+                this.RaisePropertyChanged("HASH");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=22)]
+        public System.DateTime CDATE {
+            get {
+                return this.cDATEField;
+            }
+            set {
+                this.cDATEField = value;
+                this.RaisePropertyChanged("CDATE");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CDATESpecified {
+            get {
+                return this.cDATEFieldSpecified;
+            }
+            set {
+                this.cDATEFieldSpecified = value;
+                this.RaisePropertyChanged("CDATESpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=23)]
+        public string ENVELOPE_IDENTIFIER {
+            get {
+                return this.eNVELOPE_IDENTIFIERField;
+            }
+            set {
+                this.eNVELOPE_IDENTIFIERField = value;
+                this.RaisePropertyChanged("ENVELOPE_IDENTIFIER");
             }
         }
         
@@ -7188,118 +3819,2295 @@ namespace Entegref.parkServis {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class InvoiceTax : object, System.ComponentModel.INotifyPropertyChanged {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class GetReceiptAdviceResponse : object, System.ComponentModel.INotifyPropertyChanged {
         
-        private decimal calculationSequenceNumericField;
+        private RECEIPTADVICE[] rECEIPTADVICEField;
         
-        private string taxTypeCodeField;
-        
-        private string nameField;
-        
-        private decimal taxableAmountField;
-        
-        private decimal taxPercentField;
-        
-        private decimal taxAmountField;
-        
-        private decimal subTaxAmountField;
-        
-        private string taxExemptionReasonCodeField;
+        private REQUEST_ERRORType eRROR_TYPEField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public decimal CalculationSequenceNumeric {
+        [System.Xml.Serialization.XmlElementAttribute("RECEIPTADVICE", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public RECEIPTADVICE[] RECEIPTADVICE {
             get {
-                return this.calculationSequenceNumericField;
+                return this.rECEIPTADVICEField;
             }
             set {
-                this.calculationSequenceNumericField = value;
-                this.RaisePropertyChanged("CalculationSequenceNumeric");
+                this.rECEIPTADVICEField = value;
+                this.RaisePropertyChanged("RECEIPTADVICE");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public string TaxTypeCode {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public REQUEST_ERRORType ERROR_TYPE {
             get {
-                return this.taxTypeCodeField;
+                return this.eRROR_TYPEField;
             }
             set {
-                this.taxTypeCodeField = value;
-                this.RaisePropertyChanged("TaxTypeCode");
+                this.eRROR_TYPEField = value;
+                this.RaisePropertyChanged("ERROR_TYPE");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class RECEIPTADVICE : RECEIPTADVICEINFO {
+        
+        private base64Binary cONTENTField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public base64Binary CONTENT {
+            get {
+                return this.cONTENTField;
+            }
+            set {
+                this.cONTENTField = value;
+                this.RaisePropertyChanged("CONTENT");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(USERCONTENT))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.w3.org/2005/05/xmlmime")]
+    public partial class base64Binary : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string contentTypeField;
+        
+        private byte[] valueField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form=System.Xml.Schema.XmlSchemaForm.Qualified)]
+        public string contentType {
+            get {
+                return this.contentTypeField;
+            }
+            set {
+                this.contentTypeField = value;
+                this.RaisePropertyChanged("contentType");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public string Name {
+        [System.Xml.Serialization.XmlTextAttribute(DataType="base64Binary")]
+        public byte[] Value {
             get {
-                return this.nameField;
+                return this.valueField;
             }
             set {
-                this.nameField = value;
-                this.RaisePropertyChanged("Name");
+                this.valueField = value;
+                this.RaisePropertyChanged("Value");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class USERCONTENT : base64Binary {
+        
+        private string uSERIDField;
+        
+        private USERTYPE uSERTYPEField;
+        
+        private bool uSERTYPEFieldSpecified;
+        
+        private SIGNTYPE sIGNTYPEField;
+        
+        private bool sIGNTYPEFieldSpecified;
+        
+        private USERCONTENTTYPE tYPEField;
+        
+        private bool tYPEFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string USERID {
+            get {
+                return this.uSERIDField;
+            }
+            set {
+                this.uSERIDField = value;
+                this.RaisePropertyChanged("USERID");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
-        public decimal TaxableAmount {
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public USERTYPE USERTYPE {
             get {
-                return this.taxableAmountField;
+                return this.uSERTYPEField;
             }
             set {
-                this.taxableAmountField = value;
-                this.RaisePropertyChanged("TaxableAmount");
+                this.uSERTYPEField = value;
+                this.RaisePropertyChanged("USERTYPE");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
-        public decimal TaxPercent {
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool USERTYPESpecified {
             get {
-                return this.taxPercentField;
+                return this.uSERTYPEFieldSpecified;
             }
             set {
-                this.taxPercentField = value;
-                this.RaisePropertyChanged("TaxPercent");
+                this.uSERTYPEFieldSpecified = value;
+                this.RaisePropertyChanged("USERTYPESpecified");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=5)]
-        public decimal TaxAmount {
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public SIGNTYPE SIGNTYPE {
             get {
-                return this.taxAmountField;
+                return this.sIGNTYPEField;
             }
             set {
-                this.taxAmountField = value;
-                this.RaisePropertyChanged("TaxAmount");
+                this.sIGNTYPEField = value;
+                this.RaisePropertyChanged("SIGNTYPE");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=6)]
-        public decimal SubTaxAmount {
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool SIGNTYPESpecified {
             get {
-                return this.subTaxAmountField;
+                return this.sIGNTYPEFieldSpecified;
             }
             set {
-                this.subTaxAmountField = value;
-                this.RaisePropertyChanged("SubTaxAmount");
+                this.sIGNTYPEFieldSpecified = value;
+                this.RaisePropertyChanged("SIGNTYPESpecified");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=7)]
-        public string TaxExemptionReasonCode {
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public USERCONTENTTYPE TYPE {
             get {
-                return this.taxExemptionReasonCodeField;
+                return this.tYPEField;
             }
             set {
-                this.taxExemptionReasonCodeField = value;
-                this.RaisePropertyChanged("TaxExemptionReasonCode");
+                this.tYPEField = value;
+                this.RaisePropertyChanged("TYPE");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool TYPESpecified {
+            get {
+                return this.tYPEFieldSpecified;
+            }
+            set {
+                this.tYPEFieldSpecified = value;
+                this.RaisePropertyChanged("TYPESpecified");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public enum USERTYPE {
+        
+        /// <remarks/>
+        USER,
+        
+        /// <remarks/>
+        ARCHIVE,
+        
+        /// <remarks/>
+        EARCHIVE,
+        
+        /// <remarks/>
+        EARCHIVE_ARCHIVE,
+        
+        /// <remarks/>
+        EDESPATCH,
+        
+        /// <remarks/>
+        EDESPATCH_ARCHIVE,
+        
+        /// <remarks/>
+        SERBEST_MESLEK,
+        
+        /// <remarks/>
+        MUSTAHSIL,
+        
+        /// <remarks/>
+        CHANGECUSTOMER,
+        
+        /// <remarks/>
+        ZREPORT,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public enum SIGNTYPE {
+        
+        /// <remarks/>
+        HSM_CUSTOMER,
+        
+        /// <remarks/>
+        HSM_ENTEGRATOR,
+        
+        /// <remarks/>
+        HSM_CLIENT_SIGNED,
+        
+        /// <remarks/>
+        TOKEN_CUSTOMER,
+        
+        /// <remarks/>
+        TOKEN_ENTEGRATOR,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public enum USERCONTENTTYPE {
+        
+        /// <remarks/>
+        PROCESSUSER,
+        
+        /// <remarks/>
+        CANCELUSER,
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(RECEIPTADVICE))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class RECEIPTADVICEINFO : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private RECEIPTADVICEHEADER rECEIPTADVICEHEADERField;
+        
+        private string idField;
+        
+        private string uUIDField;
+        
+        private string dIRECTIONField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public RECEIPTADVICEHEADER RECEIPTADVICEHEADER {
+            get {
+                return this.rECEIPTADVICEHEADERField;
+            }
+            set {
+                this.rECEIPTADVICEHEADERField = value;
+                this.RaisePropertyChanged("RECEIPTADVICEHEADER");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+                this.RaisePropertyChanged("ID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string UUID {
+            get {
+                return this.uUIDField;
+            }
+            set {
+                this.uUIDField = value;
+                this.RaisePropertyChanged("UUID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string DIRECTION {
+            get {
+                return this.dIRECTIONField;
+            }
+            set {
+                this.dIRECTIONField = value;
+                this.RaisePropertyChanged("DIRECTION");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class GetDespatchAdviceResponse : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private DESPATCHADVICE[] dESPATCHADVICEField;
+        
+        private REQUEST_ERRORType eRROR_TYPEField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("DESPATCHADVICE", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public DESPATCHADVICE[] DESPATCHADVICE {
+            get {
+                return this.dESPATCHADVICEField;
+            }
+            set {
+                this.dESPATCHADVICEField = value;
+                this.RaisePropertyChanged("DESPATCHADVICE");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public REQUEST_ERRORType ERROR_TYPE {
+            get {
+                return this.eRROR_TYPEField;
+            }
+            set {
+                this.eRROR_TYPEField = value;
+                this.RaisePropertyChanged("ERROR_TYPE");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class DESPATCHADVICE : DESPATCHADVICEINFO {
+        
+        private base64Binary cONTENTField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public base64Binary CONTENT {
+            get {
+                return this.cONTENTField;
+            }
+            set {
+                this.cONTENTField = value;
+                this.RaisePropertyChanged("CONTENT");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DESPATCHADVICE))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class DESPATCHADVICEINFO : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private DESPATCHADVICEHEADER dESPATCHADVICEHEADERField;
+        
+        private string idField;
+        
+        private string uUIDField;
+        
+        private string dIRECTIONField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public DESPATCHADVICEHEADER DESPATCHADVICEHEADER {
+            get {
+                return this.dESPATCHADVICEHEADERField;
+            }
+            set {
+                this.dESPATCHADVICEHEADERField = value;
+                this.RaisePropertyChanged("DESPATCHADVICEHEADER");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+                this.RaisePropertyChanged("ID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string UUID {
+            get {
+                return this.uUIDField;
+            }
+            set {
+                this.uUIDField = value;
+                this.RaisePropertyChanged("UUID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string DIRECTION {
+            get {
+                return this.dIRECTIONField;
+            }
+            set {
+                this.dIRECTIONField = value;
+                this.RaisePropertyChanged("DIRECTION");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/common")]
+    public partial class ATTRIBUTESTYPE : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private System.Xml.XmlElement[] anyField;
+        
+        private string nAMEField;
+        
+        private System.Xml.XmlAttribute[] anyAttrField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        public System.Xml.XmlElement[] Any {
+            get {
+                return this.anyField;
+            }
+            set {
+                this.anyField = value;
+                this.RaisePropertyChanged("Any");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string NAME {
+            get {
+                return this.nAMEField;
+            }
+            set {
+                this.nAMEField = value;
+                this.RaisePropertyChanged("NAME");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAnyAttributeAttribute()]
+        public System.Xml.XmlAttribute[] AnyAttr {
+            get {
+                return this.anyAttrField;
+            }
+            set {
+                this.anyAttrField = value;
+                this.RaisePropertyChanged("AnyAttr");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/common")]
+    public partial class CHANGE_INFOType : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private System.DateTime cDATEField;
+        
+        private long cPOSITION_IDField;
+        
+        private long cUSER_IDField;
+        
+        private System.DateTime uDATEField;
+        
+        private bool uDATEFieldSpecified;
+        
+        private long uPOSITION_IDField;
+        
+        private bool uPOSITION_IDFieldSpecified;
+        
+        private long uUSER_IDField;
+        
+        private bool uUSER_IDFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=0)]
+        public System.DateTime CDATE {
+            get {
+                return this.cDATEField;
+            }
+            set {
+                this.cDATEField = value;
+                this.RaisePropertyChanged("CDATE");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public long CPOSITION_ID {
+            get {
+                return this.cPOSITION_IDField;
+            }
+            set {
+                this.cPOSITION_IDField = value;
+                this.RaisePropertyChanged("CPOSITION_ID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public long CUSER_ID {
+            get {
+                return this.cUSER_IDField;
+            }
+            set {
+                this.cUSER_IDField = value;
+                this.RaisePropertyChanged("CUSER_ID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=3)]
+        public System.DateTime UDATE {
+            get {
+                return this.uDATEField;
+            }
+            set {
+                this.uDATEField = value;
+                this.RaisePropertyChanged("UDATE");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool UDATESpecified {
+            get {
+                return this.uDATEFieldSpecified;
+            }
+            set {
+                this.uDATEFieldSpecified = value;
+                this.RaisePropertyChanged("UDATESpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public long UPOSITION_ID {
+            get {
+                return this.uPOSITION_IDField;
+            }
+            set {
+                this.uPOSITION_IDField = value;
+                this.RaisePropertyChanged("UPOSITION_ID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool UPOSITION_IDSpecified {
+            get {
+                return this.uPOSITION_IDFieldSpecified;
+            }
+            set {
+                this.uPOSITION_IDFieldSpecified = value;
+                this.RaisePropertyChanged("UPOSITION_IDSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public long UUSER_ID {
+            get {
+                return this.uUSER_IDField;
+            }
+            set {
+                this.uUSER_IDField = value;
+                this.RaisePropertyChanged("UUSER_ID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool UUSER_IDSpecified {
+            get {
+                return this.uUSER_IDFieldSpecified;
+            }
+            set {
+                this.uUSER_IDFieldSpecified = value;
+                this.RaisePropertyChanged("UUSER_IDSpecified");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/entity")]
+    public partial class REQUEST_HEADERType : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string sESSION_IDField;
+        
+        private string cLIENT_TXN_IDField;
+        
+        private long iNTL_TXN_IDField;
+        
+        private bool iNTL_TXN_IDFieldSpecified;
+        
+        private long iNTL_PARENT_TXN_IDField;
+        
+        private bool iNTL_PARENT_TXN_IDFieldSpecified;
+        
+        private System.DateTime aCTION_DATEField;
+        
+        private bool aCTION_DATEFieldSpecified;
+        
+        private CHANGE_INFOType cHANGE_INFOField;
+        
+        private string rEASONField;
+        
+        private string aPPLICATION_NAMEField;
+        
+        private string hOSTNAMEField;
+        
+        private string cHANNEL_NAMEField;
+        
+        private string sIMULATION_FLAGField;
+        
+        private string cOMPRESSEDField;
+        
+        private ATTRIBUTESTYPE[] aTTRIBUTESField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=0)]
+        public string SESSION_ID {
+            get {
+                return this.sESSION_IDField;
+            }
+            set {
+                this.sESSION_IDField = value;
+                this.RaisePropertyChanged("SESSION_ID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=1)]
+        public string CLIENT_TXN_ID {
+            get {
+                return this.cLIENT_TXN_IDField;
+            }
+            set {
+                this.cLIENT_TXN_IDField = value;
+                this.RaisePropertyChanged("CLIENT_TXN_ID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public long INTL_TXN_ID {
+            get {
+                return this.iNTL_TXN_IDField;
+            }
+            set {
+                this.iNTL_TXN_IDField = value;
+                this.RaisePropertyChanged("INTL_TXN_ID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool INTL_TXN_IDSpecified {
+            get {
+                return this.iNTL_TXN_IDFieldSpecified;
+            }
+            set {
+                this.iNTL_TXN_IDFieldSpecified = value;
+                this.RaisePropertyChanged("INTL_TXN_IDSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public long INTL_PARENT_TXN_ID {
+            get {
+                return this.iNTL_PARENT_TXN_IDField;
+            }
+            set {
+                this.iNTL_PARENT_TXN_IDField = value;
+                this.RaisePropertyChanged("INTL_PARENT_TXN_ID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool INTL_PARENT_TXN_IDSpecified {
+            get {
+                return this.iNTL_PARENT_TXN_IDFieldSpecified;
+            }
+            set {
+                this.iNTL_PARENT_TXN_IDFieldSpecified = value;
+                this.RaisePropertyChanged("INTL_PARENT_TXN_IDSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public System.DateTime ACTION_DATE {
+            get {
+                return this.aCTION_DATEField;
+            }
+            set {
+                this.aCTION_DATEField = value;
+                this.RaisePropertyChanged("ACTION_DATE");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ACTION_DATESpecified {
+            get {
+                return this.aCTION_DATEFieldSpecified;
+            }
+            set {
+                this.aCTION_DATEFieldSpecified = value;
+                this.RaisePropertyChanged("ACTION_DATESpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public CHANGE_INFOType CHANGE_INFO {
+            get {
+                return this.cHANGE_INFOField;
+            }
+            set {
+                this.cHANGE_INFOField = value;
+                this.RaisePropertyChanged("CHANGE_INFO");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=6)]
+        public string REASON {
+            get {
+                return this.rEASONField;
+            }
+            set {
+                this.rEASONField = value;
+                this.RaisePropertyChanged("REASON");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=7)]
+        public string APPLICATION_NAME {
+            get {
+                return this.aPPLICATION_NAMEField;
+            }
+            set {
+                this.aPPLICATION_NAMEField = value;
+                this.RaisePropertyChanged("APPLICATION_NAME");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=8)]
+        public string HOSTNAME {
+            get {
+                return this.hOSTNAMEField;
+            }
+            set {
+                this.hOSTNAMEField = value;
+                this.RaisePropertyChanged("HOSTNAME");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=9)]
+        public string CHANNEL_NAME {
+            get {
+                return this.cHANNEL_NAMEField;
+            }
+            set {
+                this.cHANNEL_NAMEField = value;
+                this.RaisePropertyChanged("CHANNEL_NAME");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=10)]
+        public string SIMULATION_FLAG {
+            get {
+                return this.sIMULATION_FLAGField;
+            }
+            set {
+                this.sIMULATION_FLAGField = value;
+                this.RaisePropertyChanged("SIMULATION_FLAG");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=11)]
+        public string COMPRESSED {
+            get {
+                return this.cOMPRESSEDField;
+            }
+            set {
+                this.cOMPRESSEDField = value;
+                this.RaisePropertyChanged("COMPRESSED");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("ATTRIBUTES", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=12)]
+        public ATTRIBUTESTYPE[] ATTRIBUTES {
+            get {
+                return this.aTTRIBUTESField;
+            }
+            set {
+                this.aTTRIBUTESField = value;
+                this.RaisePropertyChanged("ATTRIBUTES");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(UserRequest))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(GetReceiptAdviceRequest))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(LoadReceiptAdviceRequest))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(MarkReceiptAdviceRequest))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(MarkDespatchAdviceRequest))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(GetDespatchAdviceStatusRequest))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(GetReceiptAdviceStatusRequest))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(SendReceiptAdviceRequest))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(SendDespatchAdviceRequest))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(LoadDespatchAdviceRequest))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(GetDespatchAdviceRequest))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/entity")]
+    public partial class REQUEST : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private REQUEST_HEADERType rEQUEST_HEADERField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public REQUEST_HEADERType REQUEST_HEADER {
+            get {
+                return this.rEQUEST_HEADERField;
+            }
+            set {
+                this.rEQUEST_HEADERField = value;
+                this.RaisePropertyChanged("REQUEST_HEADER");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class UserRequest : REQUEST {
+        
+        private USERCONTENT[] uSERCONTENTField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("USERCONTENT", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public USERCONTENT[] USERCONTENT {
+            get {
+                return this.uSERCONTENTField;
+            }
+            set {
+                this.uSERCONTENTField = value;
+                this.RaisePropertyChanged("USERCONTENT");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class GetReceiptAdviceRequest : REQUEST {
+        
+        private GetReceiptAdviceRequestSEARCH_KEY sEARCH_KEYField;
+        
+        private string hEADER_ONLYField;
+        
+        public GetReceiptAdviceRequest() {
+            this.hEADER_ONLYField = "N";
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public GetReceiptAdviceRequestSEARCH_KEY SEARCH_KEY {
+            get {
+                return this.sEARCH_KEYField;
+            }
+            set {
+                this.sEARCH_KEYField = value;
+                this.RaisePropertyChanged("SEARCH_KEY");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=1)]
+        [System.ComponentModel.DefaultValueAttribute("N")]
+        public string HEADER_ONLY {
+            get {
+                return this.hEADER_ONLYField;
+            }
+            set {
+                this.hEADER_ONLYField = value;
+                this.RaisePropertyChanged("HEADER_ONLY");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class GetReceiptAdviceRequestSEARCH_KEY : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private int lIMITField;
+        
+        private bool lIMITFieldSpecified;
+        
+        private string idField;
+        
+        private string uUIDField;
+        
+        private string fROMField;
+        
+        private string toField;
+        
+        private System.DateTime sTART_DATEField;
+        
+        private bool sTART_DATEFieldSpecified;
+        
+        private System.DateTime eND_DATEField;
+        
+        private bool eND_DATEFieldSpecified;
+        
+        private bool rEAD_INCLUDEDField;
+        
+        private bool rEAD_INCLUDEDFieldSpecified;
+        
+        private string dIRECTIONField;
+        
+        private string sENDERField;
+        
+        private string rECEIVERField;
+        
+        private CONTENT_TYPE cONTENT_TYPEField;
+        
+        private bool cONTENT_TYPEFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int LIMIT {
+            get {
+                return this.lIMITField;
+            }
+            set {
+                this.lIMITField = value;
+                this.RaisePropertyChanged("LIMIT");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool LIMITSpecified {
+            get {
+                return this.lIMITFieldSpecified;
+            }
+            set {
+                this.lIMITFieldSpecified = value;
+                this.RaisePropertyChanged("LIMITSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="normalizedString", Order=1)]
+        public string ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+                this.RaisePropertyChanged("ID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="normalizedString", Order=2)]
+        public string UUID {
+            get {
+                return this.uUIDField;
+            }
+            set {
+                this.uUIDField = value;
+                this.RaisePropertyChanged("UUID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=3)]
+        public string FROM {
+            get {
+                return this.fROMField;
+            }
+            set {
+                this.fROMField = value;
+                this.RaisePropertyChanged("FROM");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=4)]
+        public string TO {
+            get {
+                return this.toField;
+            }
+            set {
+                this.toField = value;
+                this.RaisePropertyChanged("TO");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=5)]
+        public System.DateTime START_DATE {
+            get {
+                return this.sTART_DATEField;
+            }
+            set {
+                this.sTART_DATEField = value;
+                this.RaisePropertyChanged("START_DATE");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool START_DATESpecified {
+            get {
+                return this.sTART_DATEFieldSpecified;
+            }
+            set {
+                this.sTART_DATEFieldSpecified = value;
+                this.RaisePropertyChanged("START_DATESpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=6)]
+        public System.DateTime END_DATE {
+            get {
+                return this.eND_DATEField;
+            }
+            set {
+                this.eND_DATEField = value;
+                this.RaisePropertyChanged("END_DATE");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool END_DATESpecified {
+            get {
+                return this.eND_DATEFieldSpecified;
+            }
+            set {
+                this.eND_DATEFieldSpecified = value;
+                this.RaisePropertyChanged("END_DATESpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public bool READ_INCLUDED {
+            get {
+                return this.rEAD_INCLUDEDField;
+            }
+            set {
+                this.rEAD_INCLUDEDField = value;
+                this.RaisePropertyChanged("READ_INCLUDED");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool READ_INCLUDEDSpecified {
+            get {
+                return this.rEAD_INCLUDEDFieldSpecified;
+            }
+            set {
+                this.rEAD_INCLUDEDFieldSpecified = value;
+                this.RaisePropertyChanged("READ_INCLUDEDSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=8)]
+        public string DIRECTION {
+            get {
+                return this.dIRECTIONField;
+            }
+            set {
+                this.dIRECTIONField = value;
+                this.RaisePropertyChanged("DIRECTION");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=9)]
+        public string SENDER {
+            get {
+                return this.sENDERField;
+            }
+            set {
+                this.sENDERField = value;
+                this.RaisePropertyChanged("SENDER");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=10)]
+        public string RECEIVER {
+            get {
+                return this.rECEIVERField;
+            }
+            set {
+                this.rECEIVERField = value;
+                this.RaisePropertyChanged("RECEIVER");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=11)]
+        public CONTENT_TYPE CONTENT_TYPE {
+            get {
+                return this.cONTENT_TYPEField;
+            }
+            set {
+                this.cONTENT_TYPEField = value;
+                this.RaisePropertyChanged("CONTENT_TYPE");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CONTENT_TYPESpecified {
+            get {
+                return this.cONTENT_TYPEFieldSpecified;
+            }
+            set {
+                this.cONTENT_TYPEFieldSpecified = value;
+                this.RaisePropertyChanged("CONTENT_TYPESpecified");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/common")]
+    public enum CONTENT_TYPE {
+        
+        /// <remarks/>
+        XML,
+        
+        /// <remarks/>
+        PDF,
+        
+        /// <remarks/>
+        HTML,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class LoadReceiptAdviceRequest : REQUEST {
+        
+        private RECEIPTADVICE[] rECEIPTADVICEField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("RECEIPTADVICE", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public RECEIPTADVICE[] RECEIPTADVICE {
+            get {
+                return this.rECEIPTADVICEField;
+            }
+            set {
+                this.rECEIPTADVICEField = value;
+                this.RaisePropertyChanged("RECEIPTADVICE");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class MarkReceiptAdviceRequest : REQUEST {
+        
+        private MarkReceiptAdviceRequestMARK mARKField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public MarkReceiptAdviceRequestMARK MARK {
+            get {
+                return this.mARKField;
+            }
+            set {
+                this.mARKField = value;
+                this.RaisePropertyChanged("MARK");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class MarkReceiptAdviceRequestMARK : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private RECEIPTADVICEINFO[] rECEIPTADVICEINFOField;
+        
+        private string valueField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("RECEIPTADVICEINFO", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public RECEIPTADVICEINFO[] RECEIPTADVICEINFO {
+            get {
+                return this.rECEIPTADVICEINFOField;
+            }
+            set {
+                this.rECEIPTADVICEINFOField = value;
+                this.RaisePropertyChanged("RECEIPTADVICEINFO");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+                this.RaisePropertyChanged("value");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class MarkDespatchAdviceRequest : REQUEST {
+        
+        private MarkDespatchAdviceRequestMARK mARKField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public MarkDespatchAdviceRequestMARK MARK {
+            get {
+                return this.mARKField;
+            }
+            set {
+                this.mARKField = value;
+                this.RaisePropertyChanged("MARK");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class MarkDespatchAdviceRequestMARK : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private DESPATCHADVICEINFO[] dESPATCHADVICEINFOField;
+        
+        private string valueField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("DESPATCHADVICEINFO", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public DESPATCHADVICEINFO[] DESPATCHADVICEINFO {
+            get {
+                return this.dESPATCHADVICEINFOField;
+            }
+            set {
+                this.dESPATCHADVICEINFOField = value;
+                this.RaisePropertyChanged("DESPATCHADVICEINFO");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+                this.RaisePropertyChanged("value");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class GetDespatchAdviceStatusRequest : REQUEST {
+        
+        private string[] uUIDField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("UUID", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=0)]
+        public string[] UUID {
+            get {
+                return this.uUIDField;
+            }
+            set {
+                this.uUIDField = value;
+                this.RaisePropertyChanged("UUID");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class GetReceiptAdviceStatusRequest : REQUEST {
+        
+        private string[] uUIDField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("UUID", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=0)]
+        public string[] UUID {
+            get {
+                return this.uUIDField;
+            }
+            set {
+                this.uUIDField = value;
+                this.RaisePropertyChanged("UUID");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class SendReceiptAdviceRequest : REQUEST {
+        
+        private SendReceiptAdviceRequestSENDER sENDERField;
+        
+        private SendReceiptAdviceRequestRECEIVER rECEIVERField;
+        
+        private bool iD_ASSIGN_FLAGField;
+        
+        private bool iD_ASSIGN_FLAGFieldSpecified;
+        
+        private string iD_ASSIGN_PREFIXField;
+        
+        private string xSLT_NAMEField;
+        
+        private RECEIPTADVICE[] rECEIPTADVICEField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public SendReceiptAdviceRequestSENDER SENDER {
+            get {
+                return this.sENDERField;
+            }
+            set {
+                this.sENDERField = value;
+                this.RaisePropertyChanged("SENDER");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public SendReceiptAdviceRequestRECEIVER RECEIVER {
+            get {
+                return this.rECEIVERField;
+            }
+            set {
+                this.rECEIVERField = value;
+                this.RaisePropertyChanged("RECEIVER");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public bool ID_ASSIGN_FLAG {
+            get {
+                return this.iD_ASSIGN_FLAGField;
+            }
+            set {
+                this.iD_ASSIGN_FLAGField = value;
+                this.RaisePropertyChanged("ID_ASSIGN_FLAG");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ID_ASSIGN_FLAGSpecified {
+            get {
+                return this.iD_ASSIGN_FLAGFieldSpecified;
+            }
+            set {
+                this.iD_ASSIGN_FLAGFieldSpecified = value;
+                this.RaisePropertyChanged("ID_ASSIGN_FLAGSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=3)]
+        public string ID_ASSIGN_PREFIX {
+            get {
+                return this.iD_ASSIGN_PREFIXField;
+            }
+            set {
+                this.iD_ASSIGN_PREFIXField = value;
+                this.RaisePropertyChanged("ID_ASSIGN_PREFIX");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string XSLT_NAME {
+            get {
+                return this.xSLT_NAMEField;
+            }
+            set {
+                this.xSLT_NAMEField = value;
+                this.RaisePropertyChanged("XSLT_NAME");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("RECEIPTADVICE", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public RECEIPTADVICE[] RECEIPTADVICE {
+            get {
+                return this.rECEIPTADVICEField;
+            }
+            set {
+                this.rECEIPTADVICEField = value;
+                this.RaisePropertyChanged("RECEIPTADVICE");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class SendReceiptAdviceRequestSENDER : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string vknField;
+        
+        private string aliasField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string vkn {
+            get {
+                return this.vknField;
+            }
+            set {
+                this.vknField = value;
+                this.RaisePropertyChanged("vkn");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string alias {
+            get {
+                return this.aliasField;
+            }
+            set {
+                this.aliasField = value;
+                this.RaisePropertyChanged("alias");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class SendReceiptAdviceRequestRECEIVER : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string vknField;
+        
+        private string aliasField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string vkn {
+            get {
+                return this.vknField;
+            }
+            set {
+                this.vknField = value;
+                this.RaisePropertyChanged("vkn");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string alias {
+            get {
+                return this.aliasField;
+            }
+            set {
+                this.aliasField = value;
+                this.RaisePropertyChanged("alias");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class SendDespatchAdviceRequest : REQUEST {
+        
+        private SendDespatchAdviceRequestSENDER sENDERField;
+        
+        private SendDespatchAdviceRequestRECEIVER rECEIVERField;
+        
+        private bool iD_ASSIGN_FLAGField;
+        
+        private bool iD_ASSIGN_FLAGFieldSpecified;
+        
+        private string iD_ASSIGN_PREFIXField;
+        
+        private string xSLT_NAMEField;
+        
+        private DESPATCHADVICE[] dESPATCHADVICEField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public SendDespatchAdviceRequestSENDER SENDER {
+            get {
+                return this.sENDERField;
+            }
+            set {
+                this.sENDERField = value;
+                this.RaisePropertyChanged("SENDER");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public SendDespatchAdviceRequestRECEIVER RECEIVER {
+            get {
+                return this.rECEIVERField;
+            }
+            set {
+                this.rECEIVERField = value;
+                this.RaisePropertyChanged("RECEIVER");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public bool ID_ASSIGN_FLAG {
+            get {
+                return this.iD_ASSIGN_FLAGField;
+            }
+            set {
+                this.iD_ASSIGN_FLAGField = value;
+                this.RaisePropertyChanged("ID_ASSIGN_FLAG");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ID_ASSIGN_FLAGSpecified {
+            get {
+                return this.iD_ASSIGN_FLAGFieldSpecified;
+            }
+            set {
+                this.iD_ASSIGN_FLAGFieldSpecified = value;
+                this.RaisePropertyChanged("ID_ASSIGN_FLAGSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=3)]
+        public string ID_ASSIGN_PREFIX {
+            get {
+                return this.iD_ASSIGN_PREFIXField;
+            }
+            set {
+                this.iD_ASSIGN_PREFIXField = value;
+                this.RaisePropertyChanged("ID_ASSIGN_PREFIX");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string XSLT_NAME {
+            get {
+                return this.xSLT_NAMEField;
+            }
+            set {
+                this.xSLT_NAMEField = value;
+                this.RaisePropertyChanged("XSLT_NAME");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("DESPATCHADVICE", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public DESPATCHADVICE[] DESPATCHADVICE {
+            get {
+                return this.dESPATCHADVICEField;
+            }
+            set {
+                this.dESPATCHADVICEField = value;
+                this.RaisePropertyChanged("DESPATCHADVICE");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class SendDespatchAdviceRequestSENDER : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string vknField;
+        
+        private string aliasField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string vkn {
+            get {
+                return this.vknField;
+            }
+            set {
+                this.vknField = value;
+                this.RaisePropertyChanged("vkn");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string alias {
+            get {
+                return this.aliasField;
+            }
+            set {
+                this.aliasField = value;
+                this.RaisePropertyChanged("alias");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class SendDespatchAdviceRequestRECEIVER : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string vknField;
+        
+        private string aliasField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string vkn {
+            get {
+                return this.vknField;
+            }
+            set {
+                this.vknField = value;
+                this.RaisePropertyChanged("vkn");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string alias {
+            get {
+                return this.aliasField;
+            }
+            set {
+                this.aliasField = value;
+                this.RaisePropertyChanged("alias");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class LoadDespatchAdviceRequest : REQUEST {
+        
+        private DESPATCHADVICE[] dESPATCHADVICEField;
+        
+        private PRINTED_FLAG pRINTED_FLAGField;
+        
+        private bool pRINTED_FLAGFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("DESPATCHADVICE", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public DESPATCHADVICE[] DESPATCHADVICE {
+            get {
+                return this.dESPATCHADVICEField;
+            }
+            set {
+                this.dESPATCHADVICEField = value;
+                this.RaisePropertyChanged("DESPATCHADVICE");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public PRINTED_FLAG PRINTED_FLAG {
+            get {
+                return this.pRINTED_FLAGField;
+            }
+            set {
+                this.pRINTED_FLAGField = value;
+                this.RaisePropertyChanged("PRINTED_FLAG");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool PRINTED_FLAGSpecified {
+            get {
+                return this.pRINTED_FLAGFieldSpecified;
+            }
+            set {
+                this.pRINTED_FLAGFieldSpecified = value;
+                this.RaisePropertyChanged("PRINTED_FLAGSpecified");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public enum PRINTED_FLAG {
+        
+        /// <remarks/>
+        Y,
+        
+        /// <remarks/>
+        N,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class GetDespatchAdviceRequest : REQUEST {
+        
+        private GetDespatchAdviceRequestSEARCH_KEY sEARCH_KEYField;
+        
+        private string hEADER_ONLYField;
+        
+        public GetDespatchAdviceRequest() {
+            this.hEADER_ONLYField = "N";
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public GetDespatchAdviceRequestSEARCH_KEY SEARCH_KEY {
+            get {
+                return this.sEARCH_KEYField;
+            }
+            set {
+                this.sEARCH_KEYField = value;
+                this.RaisePropertyChanged("SEARCH_KEY");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=1)]
+        [System.ComponentModel.DefaultValueAttribute("N")]
+        public string HEADER_ONLY {
+            get {
+                return this.hEADER_ONLYField;
+            }
+            set {
+                this.hEADER_ONLYField = value;
+                this.RaisePropertyChanged("HEADER_ONLY");
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://schemas.i2i.com/ei/wsdl")]
+    public partial class GetDespatchAdviceRequestSEARCH_KEY : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private int lIMITField;
+        
+        private bool lIMITFieldSpecified;
+        
+        private string idField;
+        
+        private string uUIDField;
+        
+        private string fROMField;
+        
+        private string toField;
+        
+        private System.DateTime sTART_DATEField;
+        
+        private bool sTART_DATEFieldSpecified;
+        
+        private System.DateTime eND_DATEField;
+        
+        private bool eND_DATEFieldSpecified;
+        
+        private bool rEAD_INCLUDEDField;
+        
+        private bool rEAD_INCLUDEDFieldSpecified;
+        
+        private string dIRECTIONField;
+        
+        private string sENDERField;
+        
+        private string rECEIVERField;
+        
+        private CONTENT_TYPE cONTENT_TYPEField;
+        
+        private bool cONTENT_TYPEFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int LIMIT {
+            get {
+                return this.lIMITField;
+            }
+            set {
+                this.lIMITField = value;
+                this.RaisePropertyChanged("LIMIT");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool LIMITSpecified {
+            get {
+                return this.lIMITFieldSpecified;
+            }
+            set {
+                this.lIMITFieldSpecified = value;
+                this.RaisePropertyChanged("LIMITSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="normalizedString", Order=1)]
+        public string ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+                this.RaisePropertyChanged("ID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="normalizedString", Order=2)]
+        public string UUID {
+            get {
+                return this.uUIDField;
+            }
+            set {
+                this.uUIDField = value;
+                this.RaisePropertyChanged("UUID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=3)]
+        public string FROM {
+            get {
+                return this.fROMField;
+            }
+            set {
+                this.fROMField = value;
+                this.RaisePropertyChanged("FROM");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=4)]
+        public string TO {
+            get {
+                return this.toField;
+            }
+            set {
+                this.toField = value;
+                this.RaisePropertyChanged("TO");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=5)]
+        public System.DateTime START_DATE {
+            get {
+                return this.sTART_DATEField;
+            }
+            set {
+                this.sTART_DATEField = value;
+                this.RaisePropertyChanged("START_DATE");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool START_DATESpecified {
+            get {
+                return this.sTART_DATEFieldSpecified;
+            }
+            set {
+                this.sTART_DATEFieldSpecified = value;
+                this.RaisePropertyChanged("START_DATESpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=6)]
+        public System.DateTime END_DATE {
+            get {
+                return this.eND_DATEField;
+            }
+            set {
+                this.eND_DATEField = value;
+                this.RaisePropertyChanged("END_DATE");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool END_DATESpecified {
+            get {
+                return this.eND_DATEFieldSpecified;
+            }
+            set {
+                this.eND_DATEFieldSpecified = value;
+                this.RaisePropertyChanged("END_DATESpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public bool READ_INCLUDED {
+            get {
+                return this.rEAD_INCLUDEDField;
+            }
+            set {
+                this.rEAD_INCLUDEDField = value;
+                this.RaisePropertyChanged("READ_INCLUDED");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool READ_INCLUDEDSpecified {
+            get {
+                return this.rEAD_INCLUDEDFieldSpecified;
+            }
+            set {
+                this.rEAD_INCLUDEDFieldSpecified = value;
+                this.RaisePropertyChanged("READ_INCLUDEDSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=8)]
+        public string DIRECTION {
+            get {
+                return this.dIRECTIONField;
+            }
+            set {
+                this.dIRECTIONField = value;
+                this.RaisePropertyChanged("DIRECTION");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=9)]
+        public string SENDER {
+            get {
+                return this.sENDERField;
+            }
+            set {
+                this.sENDERField = value;
+                this.RaisePropertyChanged("SENDER");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="token", Order=10)]
+        public string RECEIVER {
+            get {
+                return this.rECEIVERField;
+            }
+            set {
+                this.rECEIVERField = value;
+                this.RaisePropertyChanged("RECEIVER");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=11)]
+        public CONTENT_TYPE CONTENT_TYPE {
+            get {
+                return this.cONTENT_TYPEField;
+            }
+            set {
+                this.cONTENT_TYPEField = value;
+                this.RaisePropertyChanged("CONTENT_TYPE");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CONTENT_TYPESpecified {
+            get {
+                return this.cONTENT_TYPEFieldSpecified;
+            }
+            set {
+                this.cONTENT_TYPEFieldSpecified = value;
+                this.RaisePropertyChanged("CONTENT_TYPESpecified");
             }
         }
         
@@ -7316,8 +6124,82 @@ namespace Entegref.parkServis {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="ESmmPdfAl", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class ESmmPdfAlRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="GibDespatchUserListTxt", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class GibDespatchUserListTxtRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
+        public string sessionId;
+        
+        public GibDespatchUserListTxtRequest() {
+        }
+        
+        public GibDespatchUserListTxtRequest(string sessionId) {
+            this.sessionId = sessionId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="GibDespatchUserListTxtResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class GibDespatchUserListTxtResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
+        public byte[] GibDespatchUserListTxtResult;
+        
+        public GibDespatchUserListTxtResponse() {
+        }
+        
+        public GibDespatchUserListTxtResponse(byte[] GibDespatchUserListTxtResult) {
+            this.GibDespatchUserListTxtResult = GibDespatchUserListTxtResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="ParkDespatchModelUblText", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class ParkDespatchModelUblTextRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
+        public Entegref.parkServis.PARKDespatchType despatch;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=1)]
+        public string sessionId;
+        
+        public ParkDespatchModelUblTextRequest() {
+        }
+        
+        public ParkDespatchModelUblTextRequest(Entegref.parkServis.PARKDespatchType despatch, string sessionId) {
+            this.despatch = despatch;
+            this.sessionId = sessionId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="ParkDespatchModelUblTextResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class ParkDespatchModelUblTextResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
+        public byte[] ParkDespatchModelUblTextResult;
+        
+        public ParkDespatchModelUblTextResponse() {
+        }
+        
+        public ParkDespatchModelUblTextResponse(byte[] ParkDespatchModelUblTextResult) {
+            this.ParkDespatchModelUblTextResult = ParkDespatchModelUblTextResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="IrsaliyeQRCodeCreate", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class IrsaliyeQRCodeCreateRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
         public string uuid;
@@ -7325,10 +6207,10 @@ namespace Entegref.parkServis {
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=1)]
         public string sessionId;
         
-        public ESmmPdfAlRequest() {
+        public IrsaliyeQRCodeCreateRequest() {
         }
         
-        public ESmmPdfAlRequest(string uuid, string sessionId) {
+        public IrsaliyeQRCodeCreateRequest(string uuid, string sessionId) {
             this.uuid = uuid;
             this.sessionId = sessionId;
         }
@@ -7337,81 +6219,42 @@ namespace Entegref.parkServis {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="ESmmPdfAlResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class ESmmPdfAlResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="IrsaliyeQRCodeCreateResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class IrsaliyeQRCodeCreateResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
-        public byte[] ESmmPdfAlResult;
+        public byte[] IrsaliyeQRCodeCreateResult;
         
-        public ESmmPdfAlResponse() {
+        public IrsaliyeQRCodeCreateResponse() {
         }
         
-        public ESmmPdfAlResponse(byte[] ESmmPdfAlResult) {
-            this.ESmmPdfAlResult = ESmmPdfAlResult;
+        public IrsaliyeQRCodeCreateResponse(byte[] IrsaliyeQRCodeCreateResult) {
+            this.IrsaliyeQRCodeCreateResult = IrsaliyeQRCodeCreateResult;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GidenIrsaliyePdfAl", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class GidenIrsaliyePdfAlRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDespatchPdf", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class GetDespatchPdfRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
         public string uuid;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=1)]
-        public string sessionId;
-        
-        public GidenIrsaliyePdfAlRequest() {
-        }
-        
-        public GidenIrsaliyePdfAlRequest(string uuid, string sessionId) {
-            this.uuid = uuid;
-            this.sessionId = sessionId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GidenIrsaliyePdfAlResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class GidenIrsaliyePdfAlResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
-        public byte[] GidenIrsaliyePdfAlResult;
-        
-        public GidenIrsaliyePdfAlResponse() {
-        }
-        
-        public GidenIrsaliyePdfAlResponse(byte[] GidenIrsaliyePdfAlResult) {
-            this.GidenIrsaliyePdfAlResult = GidenIrsaliyePdfAlResult;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GidenMustahsilPDFAl", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class GidenMustahsilPDFAlRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        public string mustahsilNo;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=1)]
-        public string uuid;
+        public string inOut;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=2)]
         public string sessionId;
         
-        public GidenMustahsilPDFAlRequest() {
+        public GetDespatchPdfRequest() {
         }
         
-        public GidenMustahsilPDFAlRequest(string mustahsilNo, string uuid, string sessionId) {
-            this.mustahsilNo = mustahsilNo;
+        public GetDespatchPdfRequest(string uuid, string inOut, string sessionId) {
             this.uuid = uuid;
+            this.inOut = inOut;
             this.sessionId = sessionId;
         }
     }
@@ -7419,167 +6262,38 @@ namespace Entegref.parkServis {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GidenMustahsilPDFAlResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class GidenMustahsilPDFAlResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDespatchPdfResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class GetDespatchPdfResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
-        public byte[] GidenMustahsilPDFAlResult;
+        public byte[] GetDespatchPdfResult;
         
-        public GidenMustahsilPDFAlResponse() {
+        public GetDespatchPdfResponse() {
         }
         
-        public GidenMustahsilPDFAlResponse(byte[] GidenMustahsilPDFAlResult) {
-            this.GidenMustahsilPDFAlResult = GidenMustahsilPDFAlResult;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GelenFaturaPdfAl", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class GelenFaturaPdfAlRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        public string FaturaNumarasi;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=1)]
-        public string uuid;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=2)]
-        public string sessionId;
-        
-        public GelenFaturaPdfAlRequest() {
-        }
-        
-        public GelenFaturaPdfAlRequest(string FaturaNumarasi, string uuid, string sessionId) {
-            this.FaturaNumarasi = FaturaNumarasi;
-            this.uuid = uuid;
-            this.sessionId = sessionId;
+        public GetDespatchPdfResponse(byte[] GetDespatchPdfResult) {
+            this.GetDespatchPdfResult = GetDespatchPdfResult;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GelenFaturaPdfAlResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class GelenFaturaPdfAlResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="GetPreviewDespatchPdf", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class GetPreviewDespatchPdfRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
-        public byte[] GelenFaturaPdfAlResult;
-        
-        public GelenFaturaPdfAlResponse() {
-        }
-        
-        public GelenFaturaPdfAlResponse(byte[] GelenFaturaPdfAlResult) {
-            this.GelenFaturaPdfAlResult = GelenFaturaPdfAlResult;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GidenTaslakFaturaPdfAl", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class GidenTaslakFaturaPdfAlRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        public string FaturaNumarasi;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=1)]
-        public string uuid;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=2)]
-        public string sessionId;
-        
-        public GidenTaslakFaturaPdfAlRequest() {
-        }
-        
-        public GidenTaslakFaturaPdfAlRequest(string FaturaNumarasi, string uuid, string sessionId) {
-            this.FaturaNumarasi = FaturaNumarasi;
-            this.uuid = uuid;
-            this.sessionId = sessionId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GidenTaslakFaturaPdfAlResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class GidenTaslakFaturaPdfAlResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
-        public byte[] GidenTaslakFaturaPdfAlResult;
-        
-        public GidenTaslakFaturaPdfAlResponse() {
-        }
-        
-        public GidenTaslakFaturaPdfAlResponse(byte[] GidenTaslakFaturaPdfAlResult) {
-            this.GidenTaslakFaturaPdfAlResult = GidenTaslakFaturaPdfAlResult;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GidenFaturaPdfAl", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class GidenFaturaPdfAlRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        public string FaturaNumarasi;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=1)]
-        public string uuid;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=2)]
-        public string sessionId;
-        
-        public GidenFaturaPdfAlRequest() {
-        }
-        
-        public GidenFaturaPdfAlRequest(string FaturaNumarasi, string uuid, string sessionId) {
-            this.FaturaNumarasi = FaturaNumarasi;
-            this.uuid = uuid;
-            this.sessionId = sessionId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GidenFaturaPdfAlResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class GidenFaturaPdfAlResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
-        public byte[] GidenFaturaPdfAlResult;
-        
-        public GidenFaturaPdfAlResponse() {
-        }
-        
-        public GidenFaturaPdfAlResponse(byte[] GidenFaturaPdfAlResult) {
-            this.GidenFaturaPdfAlResult = GidenFaturaPdfAlResult;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="ParkObjUblCevir", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class ParkObjUblCevirRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        public Entegref.parkServis.PARKInvoiceType invoiceObj;
+        public string xmlContent;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=1)]
         public string sessionId;
         
-        public ParkObjUblCevirRequest() {
+        public GetPreviewDespatchPdfRequest() {
         }
         
-        public ParkObjUblCevirRequest(Entegref.parkServis.PARKInvoiceType invoiceObj, string sessionId) {
-            this.invoiceObj = invoiceObj;
+        public GetPreviewDespatchPdfRequest(string xmlContent, string sessionId) {
+            this.xmlContent = xmlContent;
             this.sessionId = sessionId;
         }
     }
@@ -7587,1323 +6301,307 @@ namespace Entegref.parkServis {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="ParkObjUblCevirResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class ParkObjUblCevirResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="GetPreviewDespatchPdfResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class GetPreviewDespatchPdfResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
-        public byte[] ParkObjUblCevirResult;
+        public byte[] GetPreviewDespatchPdfResult;
         
-        public ParkObjUblCevirResponse() {
+        public GetPreviewDespatchPdfResponse() {
         }
         
-        public ParkObjUblCevirResponse(byte[] ParkObjUblCevirResult) {
-            this.ParkObjUblCevirResult = ParkObjUblCevirResult;
+        public GetPreviewDespatchPdfResponse(byte[] GetPreviewDespatchPdfResult) {
+            this.GetPreviewDespatchPdfResult = GetPreviewDespatchPdfResult;
         }
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public interface EIrsaliyeServiceSoapChannel : Entegref.parkServis.EIrsaliyeServiceSoap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="EArsivFaturaPdfAl", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class EArsivFaturaPdfAlRequest {
+    public partial class EIrsaliyeServiceSoapClient : System.ServiceModel.ClientBase<Entegref.parkServis.EIrsaliyeServiceSoap>, Entegref.parkServis.EIrsaliyeServiceSoap {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        public string uuid;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=1)]
-        public string sessionId;
-        
-        public EArsivFaturaPdfAlRequest() {
+        public EIrsaliyeServiceSoapClient() {
         }
         
-        public EArsivFaturaPdfAlRequest(string uuid, string sessionId) {
-            this.uuid = uuid;
-            this.sessionId = sessionId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="EArsivFaturaPdfAlResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class EArsivFaturaPdfAlResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
-        public byte[] EArsivFaturaPdfAlResult;
-        
-        public EArsivFaturaPdfAlResponse() {
-        }
-        
-        public EArsivFaturaPdfAlResponse(byte[] EArsivFaturaPdfAlResult) {
-            this.EArsivFaturaPdfAlResult = EArsivFaturaPdfAlResult;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="IrsaliyeKayitliMukellefListele", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class IrsaliyeKayitliMukellefListeleRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        public string sessionId;
-        
-        public IrsaliyeKayitliMukellefListeleRequest() {
-        }
-        
-        public IrsaliyeKayitliMukellefListeleRequest(string sessionId) {
-            this.sessionId = sessionId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="IrsaliyeKayitliMukellefListeleResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class IrsaliyeKayitliMukellefListeleResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        [System.Xml.Serialization.XmlArrayItemAttribute("USER", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public Entegref.parkServis.GIBUSER[] IrsaliyeKayitliMukellefListeleResult;
-        
-        public IrsaliyeKayitliMukellefListeleResponse() {
-        }
-        
-        public IrsaliyeKayitliMukellefListeleResponse(Entegref.parkServis.GIBUSER[] IrsaliyeKayitliMukellefListeleResult) {
-            this.IrsaliyeKayitliMukellefListeleResult = IrsaliyeKayitliMukellefListeleResult;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="KayitliMukellefListeleByDate", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class KayitliMukellefListeleByDateRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        public System.DateTime tarih;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=1)]
-        public string sessionId;
-        
-        public KayitliMukellefListeleByDateRequest() {
-        }
-        
-        public KayitliMukellefListeleByDateRequest(System.DateTime tarih, string sessionId) {
-            this.tarih = tarih;
-            this.sessionId = sessionId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="KayitliMukellefListeleByDateResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class KayitliMukellefListeleByDateResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        [System.Xml.Serialization.XmlArrayItemAttribute("USER", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public Entegref.parkServis.GIBUSER[] KayitliMukellefListeleByDateResult;
-        
-        public KayitliMukellefListeleByDateResponse() {
-        }
-        
-        public KayitliMukellefListeleByDateResponse(Entegref.parkServis.GIBUSER[] KayitliMukellefListeleByDateResult) {
-            this.KayitliMukellefListeleByDateResult = KayitliMukellefListeleByDateResult;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="KayitliMukellefListeleTxt", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class KayitliMukellefListeleTxtRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        public string sessionId;
-        
-        public KayitliMukellefListeleTxtRequest() {
-        }
-        
-        public KayitliMukellefListeleTxtRequest(string sessionId) {
-            this.sessionId = sessionId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="KayitliMukellefListeleTxtResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class KayitliMukellefListeleTxtResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
-        public byte[] KayitliMukellefListeleTxtResult;
-        
-        public KayitliMukellefListeleTxtResponse() {
-        }
-        
-        public KayitliMukellefListeleTxtResponse(byte[] KayitliMukellefListeleTxtResult) {
-            this.KayitliMukellefListeleTxtResult = KayitliMukellefListeleTxtResult;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="KayitliMukellefListeleDetayliTxt", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class KayitliMukellefListeleDetayliTxtRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        public string sessionId;
-        
-        public KayitliMukellefListeleDetayliTxtRequest() {
-        }
-        
-        public KayitliMukellefListeleDetayliTxtRequest(string sessionId) {
-            this.sessionId = sessionId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="KayitliMukellefListeleDetayliTxtResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class KayitliMukellefListeleDetayliTxtResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(DataType="base64Binary")]
-        public byte[] KayitliMukellefListeleDetayliTxtResult;
-        
-        public KayitliMukellefListeleDetayliTxtResponse() {
-        }
-        
-        public KayitliMukellefListeleDetayliTxtResponse(byte[] KayitliMukellefListeleDetayliTxtResult) {
-            this.KayitliMukellefListeleDetayliTxtResult = KayitliMukellefListeleDetayliTxtResult;
-        }
-    }
-    
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface EFaturaIntegrationSoapChannel : Entegref.parkServis.EFaturaIntegrationSoap, System.ServiceModel.IClientChannel {
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class EFaturaIntegrationSoapClient : System.ServiceModel.ClientBase<Entegref.parkServis.EFaturaIntegrationSoap>, Entegref.parkServis.EFaturaIntegrationSoap {
-        
-        public EFaturaIntegrationSoapClient() {
-        }
-        
-        public EFaturaIntegrationSoapClient(string endpointConfigurationName) : 
+        public EIrsaliyeServiceSoapClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public EFaturaIntegrationSoapClient(string endpointConfigurationName, string remoteAddress) : 
+        public EIrsaliyeServiceSoapClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public EFaturaIntegrationSoapClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public EIrsaliyeServiceSoapClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public EFaturaIntegrationSoapClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public EIrsaliyeServiceSoapClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
-        public Entegref.parkServis.InvoiceResponse ESmmOlustur(Entegref.parkServis.PARKInvoiceType invoiceObj, string SmmOnEk, string ErpRef, string sessionId) {
-            return base.Channel.ESmmOlustur(invoiceObj, SmmOnEk, ErpRef, sessionId);
+        public Entegref.parkServis.LoginRes Login(string userName, string password) {
+            return base.Channel.Login(userName, password);
         }
         
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> ESmmOlusturAsync(Entegref.parkServis.PARKInvoiceType invoiceObj, string SmmOnEk, string ErpRef, string sessionId) {
-            return base.Channel.ESmmOlusturAsync(invoiceObj, SmmOnEk, ErpRef, sessionId);
+        public System.Threading.Tasks.Task<Entegref.parkServis.LoginRes> LoginAsync(string userName, string password) {
+            return base.Channel.LoginAsync(userName, password);
         }
         
-        public Entegref.parkServis.InvoiceResponse ESmmOlusturXmlContent(string SmmIcerigiTxt, bool taslaklaraGonderilsinMi, string sessionId) {
-            return base.Channel.ESmmOlusturXmlContent(SmmIcerigiTxt, taslaklaraGonderilsinMi, sessionId);
+        public long Logout(string sessionId) {
+            return base.Channel.Logout(sessionId);
         }
         
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> ESmmOlusturXmlContentAsync(string SmmIcerigiTxt, bool taslaklaraGonderilsinMi, string sessionId) {
-            return base.Channel.ESmmOlusturXmlContentAsync(SmmIcerigiTxt, taslaklaraGonderilsinMi, sessionId);
+        public System.Threading.Tasks.Task<long> LogoutAsync(string sessionId) {
+            return base.Channel.LogoutAsync(sessionId);
         }
         
-        public Entegref.parkServis.InvoiceResponse ESmmUBLGonder(string xmlIcerik, string faturaNo, string uuid, bool taslaklaraGonderilsinMi, string GonderilecekEmail, string sessionId) {
-            return base.Channel.ESmmUBLGonder(xmlIcerik, faturaNo, uuid, taslaklaraGonderilsinMi, GonderilecekEmail, sessionId);
+        public Entegref.parkServis.GetDespatchAdviceResponse GetDespatchAdvice(Entegref.parkServis.GetDespatchAdviceRequest getDespatchRequest) {
+            return base.Channel.GetDespatchAdvice(getDespatchRequest);
         }
         
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> ESmmUBLGonderAsync(string xmlIcerik, string faturaNo, string uuid, bool taslaklaraGonderilsinMi, string GonderilecekEmail, string sessionId) {
-            return base.Channel.ESmmUBLGonderAsync(xmlIcerik, faturaNo, uuid, taslaklaraGonderilsinMi, GonderilecekEmail, sessionId);
+        public System.Threading.Tasks.Task<Entegref.parkServis.GetDespatchAdviceResponse> GetDespatchAdviceAsync(Entegref.parkServis.GetDespatchAdviceRequest getDespatchRequest) {
+            return base.Channel.GetDespatchAdviceAsync(getDespatchRequest);
         }
         
-        public Entegref.parkServis.InvoiceSummary[] ESmmListele(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int SmmSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.ESmmListele(baslangicTarihi, bitisTarihi, SmmSayisi, vknTckn, OkunanlaridaGetir, sessionId);
+        public Entegref.parkServis.GetReceiptAdviceResponse GetReceiptAdvice(Entegref.parkServis.GetReceiptAdviceRequest getReceiptRequest) {
+            return base.Channel.GetReceiptAdvice(getReceiptRequest);
         }
         
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> ESmmListeleAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int SmmSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.ESmmListeleAsync(baslangicTarihi, bitisTarihi, SmmSayisi, vknTckn, OkunanlaridaGetir, sessionId);
+        public System.Threading.Tasks.Task<Entegref.parkServis.GetReceiptAdviceResponse> GetReceiptAdviceAsync(Entegref.parkServis.GetReceiptAdviceRequest getReceiptRequest) {
+            return base.Channel.GetReceiptAdviceAsync(getReceiptRequest);
         }
         
-        public Entegref.parkServis.ParkInvoiceStatusRes ESmmStatuSorgula(string uuid, string sessionId) {
-            return base.Channel.ESmmStatuSorgula(uuid, sessionId);
+        public Entegref.parkServis.GetReceiptAdviceStatusResponse GetReceiptAdviceStatus(Entegref.parkServis.GetReceiptAdviceStatusRequest getReceiptAdviceStatusRequest) {
+            return base.Channel.GetReceiptAdviceStatus(getReceiptAdviceStatusRequest);
         }
         
-        public System.Threading.Tasks.Task<Entegref.parkServis.ParkInvoiceStatusRes> ESmmStatuSorgulaAsync(string uuid, string sessionId) {
-            return base.Channel.ESmmStatuSorgulaAsync(uuid, sessionId);
+        public System.Threading.Tasks.Task<Entegref.parkServis.GetReceiptAdviceStatusResponse> GetReceiptAdviceStatusAsync(Entegref.parkServis.GetReceiptAdviceStatusRequest getReceiptAdviceStatusRequest) {
+            return base.Channel.GetReceiptAdviceStatusAsync(getReceiptAdviceStatusRequest);
         }
         
-        public Entegref.parkServis.InvoiceResponse ESmmIptalEt(string uuid, string sessionId) {
-            return base.Channel.ESmmIptalEt(uuid, sessionId);
+        public Entegref.parkServis.GetDespatchAdviceStatusResponse GetDespatchAdviceStatus(Entegref.parkServis.GetDespatchAdviceStatusRequest getAdviceStatusRequest) {
+            return base.Channel.GetDespatchAdviceStatus(getAdviceStatusRequest);
         }
         
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> ESmmIptalEtAsync(string uuid, string sessionId) {
-            return base.Channel.ESmmIptalEtAsync(uuid, sessionId);
+        public System.Threading.Tasks.Task<Entegref.parkServis.GetDespatchAdviceStatusResponse> GetDespatchAdviceStatusAsync(Entegref.parkServis.GetDespatchAdviceStatusRequest getAdviceStatusRequest) {
+            return base.Channel.GetDespatchAdviceStatusAsync(getAdviceStatusRequest);
         }
         
-        public string ESmmHtmlAl(string uuid, string sessionId) {
-            return base.Channel.ESmmHtmlAl(uuid, sessionId);
+        public Entegref.parkServis.SendDespatchAdviceResponse SendDespatchAdvice(Entegref.parkServis.SendDespatchAdviceRequest SendDespatchAdviceRequest) {
+            return base.Channel.SendDespatchAdvice(SendDespatchAdviceRequest);
         }
         
-        public System.Threading.Tasks.Task<string> ESmmHtmlAlAsync(string uuid, string sessionId) {
-            return base.Channel.ESmmHtmlAlAsync(uuid, sessionId);
+        public System.Threading.Tasks.Task<Entegref.parkServis.SendDespatchAdviceResponse> SendDespatchAdviceAsync(Entegref.parkServis.SendDespatchAdviceRequest SendDespatchAdviceRequest) {
+            return base.Channel.SendDespatchAdviceAsync(SendDespatchAdviceRequest);
+        }
+        
+        public Entegref.parkServis.InvoiceResponse SendDespatchAdviceGetResponse(Entegref.parkServis.SendDespatchAdviceRequest SendDespatchAdviceRequest) {
+            return base.Channel.SendDespatchAdviceGetResponse(SendDespatchAdviceRequest);
+        }
+        
+        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> SendDespatchAdviceGetResponseAsync(Entegref.parkServis.SendDespatchAdviceRequest SendDespatchAdviceRequest) {
+            return base.Channel.SendDespatchAdviceGetResponseAsync(SendDespatchAdviceRequest);
+        }
+        
+        public Entegref.parkServis.LoadDespatchAdviceResponse LoadDespatchAdvice(Entegref.parkServis.LoadDespatchAdviceRequest LoadDespatchAdviceRequest) {
+            return base.Channel.LoadDespatchAdvice(LoadDespatchAdviceRequest);
+        }
+        
+        public System.Threading.Tasks.Task<Entegref.parkServis.LoadDespatchAdviceResponse> LoadDespatchAdviceAsync(Entegref.parkServis.LoadDespatchAdviceRequest LoadDespatchAdviceRequest) {
+            return base.Channel.LoadDespatchAdviceAsync(LoadDespatchAdviceRequest);
+        }
+        
+        public Entegref.parkServis.SendReceiptAdviceResponse SendReceiptAdvice(Entegref.parkServis.SendReceiptAdviceRequest SendReceiptAdviceRequest) {
+            return base.Channel.SendReceiptAdvice(SendReceiptAdviceRequest);
+        }
+        
+        public System.Threading.Tasks.Task<Entegref.parkServis.SendReceiptAdviceResponse> SendReceiptAdviceAsync(Entegref.parkServis.SendReceiptAdviceRequest SendReceiptAdviceRequest) {
+            return base.Channel.SendReceiptAdviceAsync(SendReceiptAdviceRequest);
+        }
+        
+        public Entegref.parkServis.InvoiceResponse SendReceiptAdviceGetResponse(Entegref.parkServis.SendReceiptAdviceRequest SendReceiptAdviceRequest) {
+            return base.Channel.SendReceiptAdviceGetResponse(SendReceiptAdviceRequest);
+        }
+        
+        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> SendReceiptAdviceGetResponseAsync(Entegref.parkServis.SendReceiptAdviceRequest SendReceiptAdviceRequest) {
+            return base.Channel.SendReceiptAdviceGetResponseAsync(SendReceiptAdviceRequest);
+        }
+        
+        public Entegref.parkServis.LoadReceiptAdviceResponse LoadReceiptAdvice(Entegref.parkServis.LoadReceiptAdviceRequest LoadReceiptAdviceRequest) {
+            return base.Channel.LoadReceiptAdvice(LoadReceiptAdviceRequest);
+        }
+        
+        public System.Threading.Tasks.Task<Entegref.parkServis.LoadReceiptAdviceResponse> LoadReceiptAdviceAsync(Entegref.parkServis.LoadReceiptAdviceRequest LoadReceiptAdviceRequest) {
+            return base.Channel.LoadReceiptAdviceAsync(LoadReceiptAdviceRequest);
+        }
+        
+        public Entegref.parkServis.MarkDespatchAdviceResponse MarkDespatchAdvice(Entegref.parkServis.MarkDespatchAdviceRequest markDespatchAdviceRequest) {
+            return base.Channel.MarkDespatchAdvice(markDespatchAdviceRequest);
+        }
+        
+        public System.Threading.Tasks.Task<Entegref.parkServis.MarkDespatchAdviceResponse> MarkDespatchAdviceAsync(Entegref.parkServis.MarkDespatchAdviceRequest markDespatchAdviceRequest) {
+            return base.Channel.MarkDespatchAdviceAsync(markDespatchAdviceRequest);
+        }
+        
+        public Entegref.parkServis.MarkReceiptAdviceResponse MarkReceiptAdvice(Entegref.parkServis.MarkReceiptAdviceRequest markReceiptAdviceRequest) {
+            return base.Channel.MarkReceiptAdvice(markReceiptAdviceRequest);
+        }
+        
+        public System.Threading.Tasks.Task<Entegref.parkServis.MarkReceiptAdviceResponse> MarkReceiptAdviceAsync(Entegref.parkServis.MarkReceiptAdviceRequest markReceiptAdviceRequest) {
+            return base.Channel.MarkReceiptAdviceAsync(markReceiptAdviceRequest);
+        }
+        
+        public Entegref.parkServis.GIBUSER[] DespatchCheckUser(string vknTckn, string sessionId) {
+            return base.Channel.DespatchCheckUser(vknTckn, sessionId);
+        }
+        
+        public System.Threading.Tasks.Task<Entegref.parkServis.GIBUSER[]> DespatchCheckUserAsync(string vknTckn, string sessionId) {
+            return base.Channel.DespatchCheckUserAsync(vknTckn, sessionId);
+        }
+        
+        public Entegref.parkServis.GIBUSER[] DespatchUserList(string sessionId) {
+            return base.Channel.DespatchUserList(sessionId);
+        }
+        
+        public System.Threading.Tasks.Task<Entegref.parkServis.GIBUSER[]> DespatchUserListAsync(string sessionId) {
+            return base.Channel.DespatchUserListAsync(sessionId);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Entegref.parkServis.ESmmPdfAlResponse Entegref.parkServis.EFaturaIntegrationSoap.ESmmPdfAl(Entegref.parkServis.ESmmPdfAlRequest request) {
-            return base.Channel.ESmmPdfAl(request);
+        Entegref.parkServis.GibDespatchUserListTxtResponse Entegref.parkServis.EIrsaliyeServiceSoap.GibDespatchUserListTxt(Entegref.parkServis.GibDespatchUserListTxtRequest request) {
+            return base.Channel.GibDespatchUserListTxt(request);
         }
         
-        public byte[] ESmmPdfAl(string uuid, string sessionId) {
-            Entegref.parkServis.ESmmPdfAlRequest inValue = new Entegref.parkServis.ESmmPdfAlRequest();
+        public byte[] GibDespatchUserListTxt(string sessionId) {
+            Entegref.parkServis.GibDespatchUserListTxtRequest inValue = new Entegref.parkServis.GibDespatchUserListTxtRequest();
+            inValue.sessionId = sessionId;
+            Entegref.parkServis.GibDespatchUserListTxtResponse retVal = ((Entegref.parkServis.EIrsaliyeServiceSoap)(this)).GibDespatchUserListTxt(inValue);
+            return retVal.GibDespatchUserListTxtResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Entegref.parkServis.GibDespatchUserListTxtResponse> Entegref.parkServis.EIrsaliyeServiceSoap.GibDespatchUserListTxtAsync(Entegref.parkServis.GibDespatchUserListTxtRequest request) {
+            return base.Channel.GibDespatchUserListTxtAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Entegref.parkServis.GibDespatchUserListTxtResponse> GibDespatchUserListTxtAsync(string sessionId) {
+            Entegref.parkServis.GibDespatchUserListTxtRequest inValue = new Entegref.parkServis.GibDespatchUserListTxtRequest();
+            inValue.sessionId = sessionId;
+            return ((Entegref.parkServis.EIrsaliyeServiceSoap)(this)).GibDespatchUserListTxtAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Entegref.parkServis.ParkDespatchModelUblTextResponse Entegref.parkServis.EIrsaliyeServiceSoap.ParkDespatchModelUblText(Entegref.parkServis.ParkDespatchModelUblTextRequest request) {
+            return base.Channel.ParkDespatchModelUblText(request);
+        }
+        
+        public byte[] ParkDespatchModelUblText(Entegref.parkServis.PARKDespatchType despatch, string sessionId) {
+            Entegref.parkServis.ParkDespatchModelUblTextRequest inValue = new Entegref.parkServis.ParkDespatchModelUblTextRequest();
+            inValue.despatch = despatch;
+            inValue.sessionId = sessionId;
+            Entegref.parkServis.ParkDespatchModelUblTextResponse retVal = ((Entegref.parkServis.EIrsaliyeServiceSoap)(this)).ParkDespatchModelUblText(inValue);
+            return retVal.ParkDespatchModelUblTextResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Entegref.parkServis.ParkDespatchModelUblTextResponse> Entegref.parkServis.EIrsaliyeServiceSoap.ParkDespatchModelUblTextAsync(Entegref.parkServis.ParkDespatchModelUblTextRequest request) {
+            return base.Channel.ParkDespatchModelUblTextAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Entegref.parkServis.ParkDespatchModelUblTextResponse> ParkDespatchModelUblTextAsync(Entegref.parkServis.PARKDespatchType despatch, string sessionId) {
+            Entegref.parkServis.ParkDespatchModelUblTextRequest inValue = new Entegref.parkServis.ParkDespatchModelUblTextRequest();
+            inValue.despatch = despatch;
+            inValue.sessionId = sessionId;
+            return ((Entegref.parkServis.EIrsaliyeServiceSoap)(this)).ParkDespatchModelUblTextAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Entegref.parkServis.IrsaliyeQRCodeCreateResponse Entegref.parkServis.EIrsaliyeServiceSoap.IrsaliyeQRCodeCreate(Entegref.parkServis.IrsaliyeQRCodeCreateRequest request) {
+            return base.Channel.IrsaliyeQRCodeCreate(request);
+        }
+        
+        public byte[] IrsaliyeQRCodeCreate(string uuid, string sessionId) {
+            Entegref.parkServis.IrsaliyeQRCodeCreateRequest inValue = new Entegref.parkServis.IrsaliyeQRCodeCreateRequest();
             inValue.uuid = uuid;
             inValue.sessionId = sessionId;
-            Entegref.parkServis.ESmmPdfAlResponse retVal = ((Entegref.parkServis.EFaturaIntegrationSoap)(this)).ESmmPdfAl(inValue);
-            return retVal.ESmmPdfAlResult;
+            Entegref.parkServis.IrsaliyeQRCodeCreateResponse retVal = ((Entegref.parkServis.EIrsaliyeServiceSoap)(this)).IrsaliyeQRCodeCreate(inValue);
+            return retVal.IrsaliyeQRCodeCreateResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Entegref.parkServis.ESmmPdfAlResponse> Entegref.parkServis.EFaturaIntegrationSoap.ESmmPdfAlAsync(Entegref.parkServis.ESmmPdfAlRequest request) {
-            return base.Channel.ESmmPdfAlAsync(request);
+        System.Threading.Tasks.Task<Entegref.parkServis.IrsaliyeQRCodeCreateResponse> Entegref.parkServis.EIrsaliyeServiceSoap.IrsaliyeQRCodeCreateAsync(Entegref.parkServis.IrsaliyeQRCodeCreateRequest request) {
+            return base.Channel.IrsaliyeQRCodeCreateAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Entegref.parkServis.ESmmPdfAlResponse> ESmmPdfAlAsync(string uuid, string sessionId) {
-            Entegref.parkServis.ESmmPdfAlRequest inValue = new Entegref.parkServis.ESmmPdfAlRequest();
+        public System.Threading.Tasks.Task<Entegref.parkServis.IrsaliyeQRCodeCreateResponse> IrsaliyeQRCodeCreateAsync(string uuid, string sessionId) {
+            Entegref.parkServis.IrsaliyeQRCodeCreateRequest inValue = new Entegref.parkServis.IrsaliyeQRCodeCreateRequest();
             inValue.uuid = uuid;
             inValue.sessionId = sessionId;
-            return ((Entegref.parkServis.EFaturaIntegrationSoap)(this)).ESmmPdfAlAsync(inValue);
+            return ((Entegref.parkServis.EIrsaliyeServiceSoap)(this)).IrsaliyeQRCodeCreateAsync(inValue);
         }
         
-        public string ESmmXmlAl(string uuid, string sessionId) {
-            return base.Channel.ESmmXmlAl(uuid, sessionId);
+        public Entegref.parkServis.InvoiceResponse ParkObjectSendIrsaliye(Entegref.parkServis.PARKDespatchType irsaliyeObj, string IrsaliyeOnEk, string ErpRef, string sessionId) {
+            return base.Channel.ParkObjectSendIrsaliye(irsaliyeObj, IrsaliyeOnEk, ErpRef, sessionId);
         }
         
-        public System.Threading.Tasks.Task<string> ESmmXmlAlAsync(string uuid, string sessionId) {
-            return base.Channel.ESmmXmlAlAsync(uuid, sessionId);
-        }
-        
-        public string ESmmUBLOnizleme(string xmlIcerik, string sessionId) {
-            return base.Channel.ESmmUBLOnizleme(xmlIcerik, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> ESmmUBLOnizlemeAsync(string xmlIcerik, string sessionId) {
-            return base.Channel.ESmmUBLOnizlemeAsync(xmlIcerik, sessionId);
-        }
-        
-        public Entegref.parkServis.InvoiceResponse IrsaliyeGonder(Entegref.parkServis.PARKDespatchType irsaliyeObj, string IrsaliyeOnEk, string ErpRef, string sessionId) {
-            return base.Channel.IrsaliyeGonder(irsaliyeObj, IrsaliyeOnEk, ErpRef, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> IrsaliyeGonderAsync(Entegref.parkServis.PARKDespatchType irsaliyeObj, string IrsaliyeOnEk, string ErpRef, string sessionId) {
-            return base.Channel.IrsaliyeGonderAsync(irsaliyeObj, IrsaliyeOnEk, ErpRef, sessionId);
-        }
-        
-        public Entegref.parkServis.InvoiceResponse UBLIrsaliyeGonder(string xmlIcerik, string irsaliyeNo, string uuid, bool taslaklaraGonderilsinMi, string aliciEtiketi, string aliciVergiNo, string GonderilecekEmail, string sessionId) {
-            return base.Channel.UBLIrsaliyeGonder(xmlIcerik, irsaliyeNo, uuid, taslaklaraGonderilsinMi, aliciEtiketi, aliciVergiNo, GonderilecekEmail, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> UBLIrsaliyeGonderAsync(string xmlIcerik, string irsaliyeNo, string uuid, bool taslaklaraGonderilsinMi, string aliciEtiketi, string aliciVergiNo, string GonderilecekEmail, string sessionId) {
-            return base.Channel.UBLIrsaliyeGonderAsync(xmlIcerik, irsaliyeNo, uuid, taslaklaraGonderilsinMi, aliciEtiketi, aliciVergiNo, GonderilecekEmail, sessionId);
-        }
-        
-        public Entegref.parkServis.InvoiceResponse UBLIrsaliyeYanitiGonder(string xmlIcerik, string irsaliyeYanitiNo, string uuid, bool taslaklaraGonderilsinMi, string aliciEtiketi, string aliciVergiNo, string sessionId) {
-            return base.Channel.UBLIrsaliyeYanitiGonder(xmlIcerik, irsaliyeYanitiNo, uuid, taslaklaraGonderilsinMi, aliciEtiketi, aliciVergiNo, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> UBLIrsaliyeYanitiGonderAsync(string xmlIcerik, string irsaliyeYanitiNo, string uuid, bool taslaklaraGonderilsinMi, string aliciEtiketi, string aliciVergiNo, string sessionId) {
-            return base.Channel.UBLIrsaliyeYanitiGonderAsync(xmlIcerik, irsaliyeYanitiNo, uuid, taslaklaraGonderilsinMi, aliciEtiketi, aliciVergiNo, sessionId);
-        }
-        
-        public string IrsaliyeHtmlAl(string uuid, string sessionId) {
-            return base.Channel.IrsaliyeHtmlAl(uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> IrsaliyeHtmlAlAsync(string uuid, string sessionId) {
-            return base.Channel.IrsaliyeHtmlAlAsync(uuid, sessionId);
-        }
-        
-        public string GelenIrsaliyeHtmlAl(string uuid, string sessionId) {
-            return base.Channel.GelenIrsaliyeHtmlAl(uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> GelenIrsaliyeHtmlAlAsync(string uuid, string sessionId) {
-            return base.Channel.GelenIrsaliyeHtmlAlAsync(uuid, sessionId);
-        }
-        
-        public string GelenIrsaliyeXmlAl(string uuid, string sessionId) {
-            return base.Channel.GelenIrsaliyeXmlAl(uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> GelenIrsaliyeXmlAlAsync(string uuid, string sessionId) {
-            return base.Channel.GelenIrsaliyeXmlAlAsync(uuid, sessionId);
-        }
-        
-        public string GidenIrsaliyeXmlAl(string uuid, string sessionId) {
-            return base.Channel.GidenIrsaliyeXmlAl(uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> GidenIrsaliyeXmlAlAsync(string uuid, string sessionId) {
-            return base.Channel.GidenIrsaliyeXmlAlAsync(uuid, sessionId);
-        }
-        
-        public string IrsaliyeObjHtmlAl(Entegref.parkServis.PARKDespatchType irsaliyeObj, string sessionId) {
-            return base.Channel.IrsaliyeObjHtmlAl(irsaliyeObj, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> IrsaliyeObjHtmlAlAsync(Entegref.parkServis.PARKDespatchType irsaliyeObj, string sessionId) {
-            return base.Channel.IrsaliyeObjHtmlAlAsync(irsaliyeObj, sessionId);
-        }
-        
-        public string IrsaliyeUblOnizleme(string xmlContent, string sessionId) {
-            return base.Channel.IrsaliyeUblOnizleme(xmlContent, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> IrsaliyeUblOnizlemeAsync(string xmlContent, string sessionId) {
-            return base.Channel.IrsaliyeUblOnizlemeAsync(xmlContent, sessionId);
+        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> ParkObjectSendIrsaliyeAsync(Entegref.parkServis.PARKDespatchType irsaliyeObj, string IrsaliyeOnEk, string ErpRef, string sessionId) {
+            return base.Channel.ParkObjectSendIrsaliyeAsync(irsaliyeObj, IrsaliyeOnEk, ErpRef, sessionId);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Entegref.parkServis.GidenIrsaliyePdfAlResponse Entegref.parkServis.EFaturaIntegrationSoap.GidenIrsaliyePdfAl(Entegref.parkServis.GidenIrsaliyePdfAlRequest request) {
-            return base.Channel.GidenIrsaliyePdfAl(request);
+        Entegref.parkServis.GetDespatchPdfResponse Entegref.parkServis.EIrsaliyeServiceSoap.GetDespatchPdf(Entegref.parkServis.GetDespatchPdfRequest request) {
+            return base.Channel.GetDespatchPdf(request);
         }
         
-        public byte[] GidenIrsaliyePdfAl(string uuid, string sessionId) {
-            Entegref.parkServis.GidenIrsaliyePdfAlRequest inValue = new Entegref.parkServis.GidenIrsaliyePdfAlRequest();
+        public byte[] GetDespatchPdf(string uuid, string inOut, string sessionId) {
+            Entegref.parkServis.GetDespatchPdfRequest inValue = new Entegref.parkServis.GetDespatchPdfRequest();
             inValue.uuid = uuid;
+            inValue.inOut = inOut;
             inValue.sessionId = sessionId;
-            Entegref.parkServis.GidenIrsaliyePdfAlResponse retVal = ((Entegref.parkServis.EFaturaIntegrationSoap)(this)).GidenIrsaliyePdfAl(inValue);
-            return retVal.GidenIrsaliyePdfAlResult;
+            Entegref.parkServis.GetDespatchPdfResponse retVal = ((Entegref.parkServis.EIrsaliyeServiceSoap)(this)).GetDespatchPdf(inValue);
+            return retVal.GetDespatchPdfResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Entegref.parkServis.GidenIrsaliyePdfAlResponse> Entegref.parkServis.EFaturaIntegrationSoap.GidenIrsaliyePdfAlAsync(Entegref.parkServis.GidenIrsaliyePdfAlRequest request) {
-            return base.Channel.GidenIrsaliyePdfAlAsync(request);
+        System.Threading.Tasks.Task<Entegref.parkServis.GetDespatchPdfResponse> Entegref.parkServis.EIrsaliyeServiceSoap.GetDespatchPdfAsync(Entegref.parkServis.GetDespatchPdfRequest request) {
+            return base.Channel.GetDespatchPdfAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Entegref.parkServis.GidenIrsaliyePdfAlResponse> GidenIrsaliyePdfAlAsync(string uuid, string sessionId) {
-            Entegref.parkServis.GidenIrsaliyePdfAlRequest inValue = new Entegref.parkServis.GidenIrsaliyePdfAlRequest();
+        public System.Threading.Tasks.Task<Entegref.parkServis.GetDespatchPdfResponse> GetDespatchPdfAsync(string uuid, string inOut, string sessionId) {
+            Entegref.parkServis.GetDespatchPdfRequest inValue = new Entegref.parkServis.GetDespatchPdfRequest();
             inValue.uuid = uuid;
+            inValue.inOut = inOut;
             inValue.sessionId = sessionId;
-            return ((Entegref.parkServis.EFaturaIntegrationSoap)(this)).GidenIrsaliyePdfAlAsync(inValue);
-        }
-        
-        public string GidenIrsaliyePdfAlByUrl(string uuid, string sessionId) {
-            return base.Channel.GidenIrsaliyePdfAlByUrl(uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> GidenIrsaliyePdfAlByUrlAsync(string uuid, string sessionId) {
-            return base.Channel.GidenIrsaliyePdfAlByUrlAsync(uuid, sessionId);
-        }
-        
-        public string GelenIrsaliyePdfAlByUrl(string uuid, string sessionId) {
-            return base.Channel.GelenIrsaliyePdfAlByUrl(uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> GelenIrsaliyePdfAlByUrlAsync(string uuid, string sessionId) {
-            return base.Channel.GelenIrsaliyePdfAlByUrlAsync(uuid, sessionId);
-        }
-        
-        public string[] IrsaliyeEtiketGetir(string vknTckn, string sessionId) {
-            return base.Channel.IrsaliyeEtiketGetir(vknTckn, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string[]> IrsaliyeEtiketGetirAsync(string vknTckn, string sessionId) {
-            return base.Channel.IrsaliyeEtiketGetirAsync(vknTckn, sessionId);
-        }
-        
-        public Entegref.parkServis.DespatchSummary[] GidenIrsaliyeListele(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int irsaliyeSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.GidenIrsaliyeListele(baslangicTarihi, bitisTarihi, irsaliyeSayisi, vknTckn, OkunanlaridaGetir, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.DespatchSummary[]> GidenIrsaliyeListeleAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int irsaliyeSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.GidenIrsaliyeListeleAsync(baslangicTarihi, bitisTarihi, irsaliyeSayisi, vknTckn, OkunanlaridaGetir, sessionId);
-        }
-        
-        public Entegref.parkServis.DespatchSummary[] GelenIrsaliyeListele(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int irsaliyeSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.GelenIrsaliyeListele(baslangicTarihi, bitisTarihi, irsaliyeSayisi, vknTckn, OkunanlaridaGetir, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.DespatchSummary[]> GelenIrsaliyeListeleAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int irsaliyeSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.GelenIrsaliyeListeleAsync(baslangicTarihi, bitisTarihi, irsaliyeSayisi, vknTckn, OkunanlaridaGetir, sessionId);
-        }
-        
-        public Entegref.parkServis.ParkInvoiceStatusRes GelenIrsaliyeDurumSorgula(string uuid, string sessionId) {
-            return base.Channel.GelenIrsaliyeDurumSorgula(uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.ParkInvoiceStatusRes> GelenIrsaliyeDurumSorgulaAsync(string uuid, string sessionId) {
-            return base.Channel.GelenIrsaliyeDurumSorgulaAsync(uuid, sessionId);
-        }
-        
-        public Entegref.parkServis.ParkInvoiceStatusRes GidenIrsaliyeDurumSorgula(string uuid, string sessionId) {
-            return base.Channel.GidenIrsaliyeDurumSorgula(uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.ParkInvoiceStatusRes> GidenIrsaliyeDurumSorgulaAsync(string uuid, string sessionId) {
-            return base.Channel.GidenIrsaliyeDurumSorgulaAsync(uuid, sessionId);
-        }
-        
-        public Entegref.parkServis.ParkInvoiceStatusRes GidenIrsaliyeYanitiDurumSorgula(string uuid, string sessionId) {
-            return base.Channel.GidenIrsaliyeYanitiDurumSorgula(uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.ParkInvoiceStatusRes> GidenIrsaliyeYanitiDurumSorgulaAsync(string uuid, string sessionId) {
-            return base.Channel.GidenIrsaliyeYanitiDurumSorgulaAsync(uuid, sessionId);
-        }
-        
-        public Entegref.parkServis.ParkInvoiceStatusRes GelenIrsaliyeYanitiDurumSorgula(string uuid, string sessionId) {
-            return base.Channel.GelenIrsaliyeYanitiDurumSorgula(uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.ParkInvoiceStatusRes> GelenIrsaliyeYanitiDurumSorgulaAsync(string uuid, string sessionId) {
-            return base.Channel.GelenIrsaliyeYanitiDurumSorgulaAsync(uuid, sessionId);
-        }
-        
-        public string EIrsaliyeUBLOnizleme(string xmlIcerik, string sessionId) {
-            return base.Channel.EIrsaliyeUBLOnizleme(xmlIcerik, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> EIrsaliyeUBLOnizlemeAsync(string xmlIcerik, string sessionId) {
-            return base.Channel.EIrsaliyeUBLOnizlemeAsync(xmlIcerik, sessionId);
-        }
-        
-        public Entegref.parkServis.InvoiceResponse MuhtahsilGonder(Entegref.parkServis.ParkCreditNoteObj mustahsil, string mustahsilOnEk, string ErpRef, string sessionId) {
-            return base.Channel.MuhtahsilGonder(mustahsil, mustahsilOnEk, ErpRef, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> MuhtahsilGonderAsync(Entegref.parkServis.ParkCreditNoteObj mustahsil, string mustahsilOnEk, string ErpRef, string sessionId) {
-            return base.Channel.MuhtahsilGonderAsync(mustahsil, mustahsilOnEk, ErpRef, sessionId);
-        }
-        
-        public Entegref.parkServis.InvoiceResponse UBLMustahsilGonder(string xmlIcerik, string mustahsilNo, string uuid, bool taslaklaraGonderilsinMi, string GonderilecekEmail, string sessionId) {
-            return base.Channel.UBLMustahsilGonder(xmlIcerik, mustahsilNo, uuid, taslaklaraGonderilsinMi, GonderilecekEmail, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> UBLMustahsilGonderAsync(string xmlIcerik, string mustahsilNo, string uuid, bool taslaklaraGonderilsinMi, string GonderilecekEmail, string sessionId) {
-            return base.Channel.UBLMustahsilGonderAsync(xmlIcerik, mustahsilNo, uuid, taslaklaraGonderilsinMi, GonderilecekEmail, sessionId);
-        }
-        
-        public Entegref.parkServis.CreditNoteSummary[] GidenMustahsilListele(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.GidenMustahsilListele(baslangicTarihi, bitisTarihi, OkunanlaridaGetir, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.CreditNoteSummary[]> GidenMustahsilListeleAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.GidenMustahsilListeleAsync(baslangicTarihi, bitisTarihi, OkunanlaridaGetir, sessionId);
-        }
-        
-        public string GidenMustahsilXMLAl(string mustahsilNo, string uuid, string sessionId) {
-            return base.Channel.GidenMustahsilXMLAl(mustahsilNo, uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> GidenMustahsilXMLAlAsync(string mustahsilNo, string uuid, string sessionId) {
-            return base.Channel.GidenMustahsilXMLAlAsync(mustahsilNo, uuid, sessionId);
-        }
-        
-        public string GidenMustahsilHTMLAl(string mustahsilNo, string uuid, string sessionId) {
-            return base.Channel.GidenMustahsilHTMLAl(mustahsilNo, uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> GidenMustahsilHTMLAlAsync(string mustahsilNo, string uuid, string sessionId) {
-            return base.Channel.GidenMustahsilHTMLAlAsync(mustahsilNo, uuid, sessionId);
+            return ((Entegref.parkServis.EIrsaliyeServiceSoap)(this)).GetDespatchPdfAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Entegref.parkServis.GidenMustahsilPDFAlResponse Entegref.parkServis.EFaturaIntegrationSoap.GidenMustahsilPDFAl(Entegref.parkServis.GidenMustahsilPDFAlRequest request) {
-            return base.Channel.GidenMustahsilPDFAl(request);
+        Entegref.parkServis.GetPreviewDespatchPdfResponse Entegref.parkServis.EIrsaliyeServiceSoap.GetPreviewDespatchPdf(Entegref.parkServis.GetPreviewDespatchPdfRequest request) {
+            return base.Channel.GetPreviewDespatchPdf(request);
         }
         
-        public byte[] GidenMustahsilPDFAl(string mustahsilNo, string uuid, string sessionId) {
-            Entegref.parkServis.GidenMustahsilPDFAlRequest inValue = new Entegref.parkServis.GidenMustahsilPDFAlRequest();
-            inValue.mustahsilNo = mustahsilNo;
-            inValue.uuid = uuid;
+        public byte[] GetPreviewDespatchPdf(string xmlContent, string sessionId) {
+            Entegref.parkServis.GetPreviewDespatchPdfRequest inValue = new Entegref.parkServis.GetPreviewDespatchPdfRequest();
+            inValue.xmlContent = xmlContent;
             inValue.sessionId = sessionId;
-            Entegref.parkServis.GidenMustahsilPDFAlResponse retVal = ((Entegref.parkServis.EFaturaIntegrationSoap)(this)).GidenMustahsilPDFAl(inValue);
-            return retVal.GidenMustahsilPDFAlResult;
+            Entegref.parkServis.GetPreviewDespatchPdfResponse retVal = ((Entegref.parkServis.EIrsaliyeServiceSoap)(this)).GetPreviewDespatchPdf(inValue);
+            return retVal.GetPreviewDespatchPdfResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Entegref.parkServis.GidenMustahsilPDFAlResponse> Entegref.parkServis.EFaturaIntegrationSoap.GidenMustahsilPDFAlAsync(Entegref.parkServis.GidenMustahsilPDFAlRequest request) {
-            return base.Channel.GidenMustahsilPDFAlAsync(request);
+        System.Threading.Tasks.Task<Entegref.parkServis.GetPreviewDespatchPdfResponse> Entegref.parkServis.EIrsaliyeServiceSoap.GetPreviewDespatchPdfAsync(Entegref.parkServis.GetPreviewDespatchPdfRequest request) {
+            return base.Channel.GetPreviewDespatchPdfAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Entegref.parkServis.GidenMustahsilPDFAlResponse> GidenMustahsilPDFAlAsync(string mustahsilNo, string uuid, string sessionId) {
-            Entegref.parkServis.GidenMustahsilPDFAlRequest inValue = new Entegref.parkServis.GidenMustahsilPDFAlRequest();
-            inValue.mustahsilNo = mustahsilNo;
-            inValue.uuid = uuid;
+        public System.Threading.Tasks.Task<Entegref.parkServis.GetPreviewDespatchPdfResponse> GetPreviewDespatchPdfAsync(string xmlContent, string sessionId) {
+            Entegref.parkServis.GetPreviewDespatchPdfRequest inValue = new Entegref.parkServis.GetPreviewDespatchPdfRequest();
+            inValue.xmlContent = xmlContent;
             inValue.sessionId = sessionId;
-            return ((Entegref.parkServis.EFaturaIntegrationSoap)(this)).GidenMustahsilPDFAlAsync(inValue);
-        }
-        
-        public string EMustahsilUBLOnizleme(string xmlIcerik, string sessionId) {
-            return base.Channel.EMustahsilUBLOnizleme(xmlIcerik, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> EMustahsilUBLOnizlemeAsync(string xmlIcerik, string sessionId) {
-            return base.Channel.EMustahsilUBLOnizlemeAsync(xmlIcerik, sessionId);
-        }
-        
-        public Entegref.parkServis.LoginRes OturumAc(string userName, string password) {
-            return base.Channel.OturumAc(userName, password);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.LoginRes> OturumAcAsync(string userName, string password) {
-            return base.Channel.OturumAcAsync(userName, password);
-        }
-        
-        public long OturumKapat(string sessionId) {
-            return base.Channel.OturumKapat(sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<long> OturumKapatAsync(string sessionId) {
-            return base.Channel.OturumKapatAsync(sessionId);
-        }
-        
-        public Entegref.parkServis.InvoiceResponse FaturaGonder(Entegref.parkServis.PARKInvoiceType invoiceObj, string FaturaOnEk, string ErpRef, string sessionId) {
-            return base.Channel.FaturaGonder(invoiceObj, FaturaOnEk, ErpRef, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> FaturaGonderAsync(Entegref.parkServis.PARKInvoiceType invoiceObj, string FaturaOnEk, string ErpRef, string sessionId) {
-            return base.Channel.FaturaGonderAsync(invoiceObj, FaturaOnEk, ErpRef, sessionId);
-        }
-        
-        public Entegref.parkServis.InvoiceResponse FaturaSematronKontrolEt(Entegref.parkServis.PARKInvoiceType invoiceObj, string sessionId) {
-            return base.Channel.FaturaSematronKontrolEt(invoiceObj, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> FaturaSematronKontrolEtAsync(Entegref.parkServis.PARKInvoiceType invoiceObj, string sessionId) {
-            return base.Channel.FaturaSematronKontrolEtAsync(invoiceObj, sessionId);
-        }
-        
-        public Entegref.parkServis.InvoiceResponse FaturaGonderByXmlContent(string faturaIcerigi, string xsltName, bool eArsivMi, bool taslaklaraGonderilsinMi, string sessionId) {
-            return base.Channel.FaturaGonderByXmlContent(faturaIcerigi, xsltName, eArsivMi, taslaklaraGonderilsinMi, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> FaturaGonderByXmlContentAsync(string faturaIcerigi, string xsltName, bool eArsivMi, bool taslaklaraGonderilsinMi, string sessionId) {
-            return base.Channel.FaturaGonderByXmlContentAsync(faturaIcerigi, xsltName, eArsivMi, taslaklaraGonderilsinMi, sessionId);
-        }
-        
-        public Entegref.parkServis.InvoiceResponse UBLFaturaGonder(string xmlIcerik, string faturaNo, string uuid, bool taslaklaraGonderilsinMi, string aliciEtiketi, string aliciVergiNo, string GonderilecekEmail, bool earsivMi, string sessionId) {
-            return base.Channel.UBLFaturaGonder(xmlIcerik, faturaNo, uuid, taslaklaraGonderilsinMi, aliciEtiketi, aliciVergiNo, GonderilecekEmail, earsivMi, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> UBLFaturaGonderAsync(string xmlIcerik, string faturaNo, string uuid, bool taslaklaraGonderilsinMi, string aliciEtiketi, string aliciVergiNo, string GonderilecekEmail, bool earsivMi, string sessionId) {
-            return base.Channel.UBLFaturaGonderAsync(xmlIcerik, faturaNo, uuid, taslaklaraGonderilsinMi, aliciEtiketi, aliciVergiNo, GonderilecekEmail, earsivMi, sessionId);
-        }
-        
-        public Entegref.parkServis.InvoiceResponse UBLFaturaGonder2(string xmlIcerik, string faturaNo, string uuid, bool taslaklaraGonderilsinMi, string aliciEtiketi, string aliciVergiNo, string GonderilecekEmail, bool earsivMi, string sessionId) {
-            return base.Channel.UBLFaturaGonder2(xmlIcerik, faturaNo, uuid, taslaklaraGonderilsinMi, aliciEtiketi, aliciVergiNo, GonderilecekEmail, earsivMi, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> UBLFaturaGonder2Async(string xmlIcerik, string faturaNo, string uuid, bool taslaklaraGonderilsinMi, string aliciEtiketi, string aliciVergiNo, string GonderilecekEmail, bool earsivMi, string sessionId) {
-            return base.Channel.UBLFaturaGonder2Async(xmlIcerik, faturaNo, uuid, taslaklaraGonderilsinMi, aliciEtiketi, aliciVergiNo, GonderilecekEmail, earsivMi, sessionId);
-        }
-        
-        public Entegref.parkServis.InvoiceResponse UBLFaturaGonderByBase64(string xmlIcerikBase64, string faturaNo, string uuid, bool taslaklaraGonderilsinMi, string aliciEtiketi, string aliciVergiNo, string GonderilecekEmail, bool earsivMi, string sessionId) {
-            return base.Channel.UBLFaturaGonderByBase64(xmlIcerikBase64, faturaNo, uuid, taslaklaraGonderilsinMi, aliciEtiketi, aliciVergiNo, GonderilecekEmail, earsivMi, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> UBLFaturaGonderByBase64Async(string xmlIcerikBase64, string faturaNo, string uuid, bool taslaklaraGonderilsinMi, string aliciEtiketi, string aliciVergiNo, string GonderilecekEmail, bool earsivMi, string sessionId) {
-            return base.Channel.UBLFaturaGonderByBase64Async(xmlIcerikBase64, faturaNo, uuid, taslaklaraGonderilsinMi, aliciEtiketi, aliciVergiNo, GonderilecekEmail, earsivMi, sessionId);
-        }
-        
-        public string UBLOnizleme(string xmlIcerik, bool eArsivMi, string sessionId) {
-            return base.Channel.UBLOnizleme(xmlIcerik, eArsivMi, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> UBLOnizlemeAsync(string xmlIcerik, bool eArsivMi, string sessionId) {
-            return base.Channel.UBLOnizlemeAsync(xmlIcerik, eArsivMi, sessionId);
-        }
-        
-        public string UBLOnizleme2(string xmlIcerik, string xsltContent, string sessionId) {
-            return base.Channel.UBLOnizleme2(xmlIcerik, xsltContent, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> UBLOnizleme2Async(string xmlIcerik, string xsltContent, string sessionId) {
-            return base.Channel.UBLOnizleme2Async(xmlIcerik, xsltContent, sessionId);
-        }
-        
-        public string EArsivSmsLinkUret(string Uuid, string invoiceRef, string sessionId) {
-            return base.Channel.EArsivSmsLinkUret(Uuid, invoiceRef, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> EArsivSmsLinkUretAsync(string Uuid, string invoiceRef, string sessionId) {
-            return base.Channel.EArsivSmsLinkUretAsync(Uuid, invoiceRef, sessionId);
-        }
-        
-        public Entegref.parkServis.InvoiceSummary[] GelenFaturaListeleByPaging(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int sayfaNumarasi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.GelenFaturaListeleByPaging(baslangicTarihi, bitisTarihi, sayfaNumarasi, FaturaSayisi, vknTckn, OkunanlaridaGetir, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> GelenFaturaListeleByPagingAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int sayfaNumarasi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.GelenFaturaListeleByPagingAsync(baslangicTarihi, bitisTarihi, sayfaNumarasi, FaturaSayisi, vknTckn, OkunanlaridaGetir, sessionId);
-        }
-        
-        public Entegref.parkServis.InvoiceSummary[] GelenFaturaListele(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.GelenFaturaListele(baslangicTarihi, bitisTarihi, FaturaSayisi, vknTckn, OkunanlaridaGetir, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> GelenFaturaListeleAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.GelenFaturaListeleAsync(baslangicTarihi, bitisTarihi, FaturaSayisi, vknTckn, OkunanlaridaGetir, sessionId);
-        }
-        
-        public Entegref.parkServis.InvoiceSummary[] GelenFaturaListeleGonderimTarihi(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.GelenFaturaListeleGonderimTarihi(baslangicTarihi, bitisTarihi, FaturaSayisi, vknTckn, OkunanlaridaGetir, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> GelenFaturaListeleGonderimTarihiAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.GelenFaturaListeleGonderimTarihiAsync(baslangicTarihi, bitisTarihi, FaturaSayisi, vknTckn, OkunanlaridaGetir, sessionId);
-        }
-        
-        public Entegref.parkServis.ParkInvoiceStatusRes GelenFaturaDurumSorgula(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GelenFaturaDurumSorgula(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.ParkInvoiceStatusRes> GelenFaturaDurumSorgulaAsync(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GelenFaturaDurumSorgulaAsync(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public string GelenFaturaXmlAl(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GelenFaturaXmlAl(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> GelenFaturaXmlAlAsync(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GelenFaturaXmlAlAsync(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public void GelenFaturaOkunduOlarakIsaretle(string FaturaNumarasi, string uuid, bool OkunduMu, string sessionId) {
-            base.Channel.GelenFaturaOkunduOlarakIsaretle(FaturaNumarasi, uuid, OkunduMu, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task GelenFaturaOkunduOlarakIsaretleAsync(string FaturaNumarasi, string uuid, bool OkunduMu, string sessionId) {
-            return base.Channel.GelenFaturaOkunduOlarakIsaretleAsync(FaturaNumarasi, uuid, OkunduMu, sessionId);
-        }
-        
-        public Entegref.parkServis.PARKInvoiceType GelenFaturaOku(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GelenFaturaOku(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.PARKInvoiceType> GelenFaturaOkuAsync(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GelenFaturaOkuAsync(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public string GelenFaturaHtmlAl(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GelenFaturaHtmlAl(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> GelenFaturaHtmlAlAsync(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GelenFaturaHtmlAlAsync(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Entegref.parkServis.GelenFaturaPdfAlResponse Entegref.parkServis.EFaturaIntegrationSoap.GelenFaturaPdfAl(Entegref.parkServis.GelenFaturaPdfAlRequest request) {
-            return base.Channel.GelenFaturaPdfAl(request);
-        }
-        
-        public byte[] GelenFaturaPdfAl(string FaturaNumarasi, string uuid, string sessionId) {
-            Entegref.parkServis.GelenFaturaPdfAlRequest inValue = new Entegref.parkServis.GelenFaturaPdfAlRequest();
-            inValue.FaturaNumarasi = FaturaNumarasi;
-            inValue.uuid = uuid;
-            inValue.sessionId = sessionId;
-            Entegref.parkServis.GelenFaturaPdfAlResponse retVal = ((Entegref.parkServis.EFaturaIntegrationSoap)(this)).GelenFaturaPdfAl(inValue);
-            return retVal.GelenFaturaPdfAlResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Entegref.parkServis.GelenFaturaPdfAlResponse> Entegref.parkServis.EFaturaIntegrationSoap.GelenFaturaPdfAlAsync(Entegref.parkServis.GelenFaturaPdfAlRequest request) {
-            return base.Channel.GelenFaturaPdfAlAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.GelenFaturaPdfAlResponse> GelenFaturaPdfAlAsync(string FaturaNumarasi, string uuid, string sessionId) {
-            Entegref.parkServis.GelenFaturaPdfAlRequest inValue = new Entegref.parkServis.GelenFaturaPdfAlRequest();
-            inValue.FaturaNumarasi = FaturaNumarasi;
-            inValue.uuid = uuid;
-            inValue.sessionId = sessionId;
-            return ((Entegref.parkServis.EFaturaIntegrationSoap)(this)).GelenFaturaPdfAlAsync(inValue);
-        }
-        
-        public void OnayBekleyenFaturaYanitlaByAciklama(string FaturaNumarasi, string uuid, string cevap, string cevapAciklamasi, string sessionId) {
-            base.Channel.OnayBekleyenFaturaYanitlaByAciklama(FaturaNumarasi, uuid, cevap, cevapAciklamasi, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task OnayBekleyenFaturaYanitlaByAciklamaAsync(string FaturaNumarasi, string uuid, string cevap, string cevapAciklamasi, string sessionId) {
-            return base.Channel.OnayBekleyenFaturaYanitlaByAciklamaAsync(FaturaNumarasi, uuid, cevap, cevapAciklamasi, sessionId);
-        }
-        
-        public void OnayBekleyenFaturaYanitla(string FaturaNumarasi, string uuid, string cevap, string sessionId) {
-            base.Channel.OnayBekleyenFaturaYanitla(FaturaNumarasi, uuid, cevap, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task OnayBekleyenFaturaYanitlaAsync(string FaturaNumarasi, string uuid, string cevap, string sessionId) {
-            return base.Channel.OnayBekleyenFaturaYanitlaAsync(FaturaNumarasi, uuid, cevap, sessionId);
-        }
-        
-        public Entegref.parkServis.InvoiceSummary[] OnayBekleyenFaturalariListele(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.OnayBekleyenFaturalariListele(baslangicTarihi, bitisTarihi, FaturaSayisi, vknTckn, OkunanlaridaGetir, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> OnayBekleyenFaturalariListeleAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.OnayBekleyenFaturalariListeleAsync(baslangicTarihi, bitisTarihi, FaturaSayisi, vknTckn, OkunanlaridaGetir, sessionId);
-        }
-        
-        public Entegref.parkServis.InvoiceSummary[] OnayBekleyenFaturalariListeleByPaging(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int sayfaNumarasi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.OnayBekleyenFaturalariListeleByPaging(baslangicTarihi, bitisTarihi, sayfaNumarasi, FaturaSayisi, vknTckn, OkunanlaridaGetir, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> OnayBekleyenFaturalariListeleByPagingAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int sayfaNumarasi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.OnayBekleyenFaturalariListeleByPagingAsync(baslangicTarihi, bitisTarihi, sayfaNumarasi, FaturaSayisi, vknTckn, OkunanlaridaGetir, sessionId);
-        }
-        
-        public Entegref.parkServis.InvoiceSummary[] OnaylanmisFaturalariListele(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.OnaylanmisFaturalariListele(baslangicTarihi, bitisTarihi, FaturaSayisi, vknTckn, OkunanlaridaGetir, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> OnaylanmisFaturalariListeleAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.OnaylanmisFaturalariListeleAsync(baslangicTarihi, bitisTarihi, FaturaSayisi, vknTckn, OkunanlaridaGetir, sessionId);
-        }
-        
-        public Entegref.parkServis.InvoiceSummary[] ReddedilmisFaturalariListele(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.ReddedilmisFaturalariListele(baslangicTarihi, bitisTarihi, FaturaSayisi, vknTckn, OkunanlaridaGetir, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> ReddedilmisFaturalariListeleAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.ReddedilmisFaturalariListeleAsync(baslangicTarihi, bitisTarihi, FaturaSayisi, vknTckn, OkunanlaridaGetir, sessionId);
-        }
-        
-        public Entegref.parkServis.InvoiceSummary[] GidenReddedilmisEFaturalariListele(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.GidenReddedilmisEFaturalariListele(baslangicTarihi, bitisTarihi, FaturaSayisi, vknTckn, OkunanlaridaGetir, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> GidenReddedilmisEFaturalariListeleAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.GidenReddedilmisEFaturalariListeleAsync(baslangicTarihi, bitisTarihi, FaturaSayisi, vknTckn, OkunanlaridaGetir, sessionId);
-        }
-        
-        public Entegref.parkServis.InvoiceSummary[] GidenFaturaListele(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.GidenFaturaListele(baslangicTarihi, bitisTarihi, FaturaSayisi, vknTckn, OkunanlaridaGetir, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> GidenFaturaListeleAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.GidenFaturaListeleAsync(baslangicTarihi, bitisTarihi, FaturaSayisi, vknTckn, OkunanlaridaGetir, sessionId);
-        }
-        
-        public Entegref.parkServis.InvoiceSummary[] HataliGidenFaturaListele(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, string sessionId) {
-            return base.Channel.HataliGidenFaturaListele(baslangicTarihi, bitisTarihi, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> HataliGidenFaturaListeleAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, string sessionId) {
-            return base.Channel.HataliGidenFaturaListeleAsync(baslangicTarihi, bitisTarihi, sessionId);
-        }
-        
-        public Entegref.parkServis.InvoiceSummary[] GidenFaturaListeleGonderimTarihi(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.GidenFaturaListeleGonderimTarihi(baslangicTarihi, bitisTarihi, FaturaSayisi, vknTckn, OkunanlaridaGetir, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> GidenFaturaListeleGonderimTarihiAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string vknTckn, bool OkunanlaridaGetir, string sessionId) {
-            return base.Channel.GidenFaturaListeleGonderimTarihiAsync(baslangicTarihi, bitisTarihi, FaturaSayisi, vknTckn, OkunanlaridaGetir, sessionId);
-        }
-        
-        public Entegref.parkServis.PARKInvoiceType GidenFaturaOku(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GidenFaturaOku(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.PARKInvoiceType> GidenFaturaOkuAsync(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GidenFaturaOkuAsync(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public Entegref.parkServis.InvoiceSummary[] TaslakFaturaAra(string sessionId) {
-            return base.Channel.TaslakFaturaAra(sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> TaslakFaturaAraAsync(string sessionId) {
-            return base.Channel.TaslakFaturaAraAsync(sessionId);
-        }
-        
-        public Entegref.parkServis.CancelDraftInvoiceResponse TaslakFaturaIptalEt(string uuid, string sessionId) {
-            return base.Channel.TaslakFaturaIptalEt(uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.CancelDraftInvoiceResponse> TaslakFaturaIptalEtAsync(string uuid, string sessionId) {
-            return base.Channel.TaslakFaturaIptalEtAsync(uuid, sessionId);
-        }
-        
-        public void EArsivTaslakFaturaIptalEt(string uuid, string faturaNo, string sessionId) {
-            base.Channel.EArsivTaslakFaturaIptalEt(uuid, faturaNo, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task EArsivTaslakFaturaIptalEtAsync(string uuid, string faturaNo, string sessionId) {
-            return base.Channel.EArsivTaslakFaturaIptalEtAsync(uuid, faturaNo, sessionId);
-        }
-        
-        public Entegref.parkServis.SendInvoiceResponse TaslakFaturaOnayla(string faturaNo, string uuid, string aliciVergiNo, string aliciPostaetiketi, string sessionId) {
-            return base.Channel.TaslakFaturaOnayla(faturaNo, uuid, aliciVergiNo, aliciPostaetiketi, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.SendInvoiceResponse> TaslakFaturaOnaylaAsync(string faturaNo, string uuid, string aliciVergiNo, string aliciPostaetiketi, string sessionId) {
-            return base.Channel.TaslakFaturaOnaylaAsync(faturaNo, uuid, aliciVergiNo, aliciPostaetiketi, sessionId);
-        }
-        
-        public Entegref.parkServis.InvoiceResponse TaslakFaturaOnaylaGetResponse(string faturaNo, string uuid, string aliciVergiNo, string aliciPostaetiketi, string sessionId) {
-            return base.Channel.TaslakFaturaOnaylaGetResponse(faturaNo, uuid, aliciVergiNo, aliciPostaetiketi, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> TaslakFaturaOnaylaGetResponseAsync(string faturaNo, string uuid, string aliciVergiNo, string aliciPostaetiketi, string sessionId) {
-            return base.Channel.TaslakFaturaOnaylaGetResponseAsync(faturaNo, uuid, aliciVergiNo, aliciPostaetiketi, sessionId);
-        }
-        
-        public Entegref.parkServis.InvoiceResponse EArsivFaturaTaslakOnayla(string faturaNo, string uuid, string GonderilecekEPostaAdresi, string sessionId) {
-            return base.Channel.EArsivFaturaTaslakOnayla(faturaNo, uuid, GonderilecekEPostaAdresi, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceResponse> EArsivFaturaTaslakOnaylaAsync(string faturaNo, string uuid, string GonderilecekEPostaAdresi, string sessionId) {
-            return base.Channel.EArsivFaturaTaslakOnaylaAsync(faturaNo, uuid, GonderilecekEPostaAdresi, sessionId);
-        }
-        
-        public string GidenTaslakFaturaXmlAl(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GidenTaslakFaturaXmlAl(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> GidenTaslakFaturaXmlAlAsync(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GidenTaslakFaturaXmlAlAsync(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public string GidenTaslakFaturaHtmlAl(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GidenTaslakFaturaHtmlAl(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> GidenTaslakFaturaHtmlAlAsync(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GidenTaslakFaturaHtmlAlAsync(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Entegref.parkServis.GidenTaslakFaturaPdfAlResponse Entegref.parkServis.EFaturaIntegrationSoap.GidenTaslakFaturaPdfAl(Entegref.parkServis.GidenTaslakFaturaPdfAlRequest request) {
-            return base.Channel.GidenTaslakFaturaPdfAl(request);
-        }
-        
-        public byte[] GidenTaslakFaturaPdfAl(string FaturaNumarasi, string uuid, string sessionId) {
-            Entegref.parkServis.GidenTaslakFaturaPdfAlRequest inValue = new Entegref.parkServis.GidenTaslakFaturaPdfAlRequest();
-            inValue.FaturaNumarasi = FaturaNumarasi;
-            inValue.uuid = uuid;
-            inValue.sessionId = sessionId;
-            Entegref.parkServis.GidenTaslakFaturaPdfAlResponse retVal = ((Entegref.parkServis.EFaturaIntegrationSoap)(this)).GidenTaslakFaturaPdfAl(inValue);
-            return retVal.GidenTaslakFaturaPdfAlResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Entegref.parkServis.GidenTaslakFaturaPdfAlResponse> Entegref.parkServis.EFaturaIntegrationSoap.GidenTaslakFaturaPdfAlAsync(Entegref.parkServis.GidenTaslakFaturaPdfAlRequest request) {
-            return base.Channel.GidenTaslakFaturaPdfAlAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.GidenTaslakFaturaPdfAlResponse> GidenTaslakFaturaPdfAlAsync(string FaturaNumarasi, string uuid, string sessionId) {
-            Entegref.parkServis.GidenTaslakFaturaPdfAlRequest inValue = new Entegref.parkServis.GidenTaslakFaturaPdfAlRequest();
-            inValue.FaturaNumarasi = FaturaNumarasi;
-            inValue.uuid = uuid;
-            inValue.sessionId = sessionId;
-            return ((Entegref.parkServis.EFaturaIntegrationSoap)(this)).GidenTaslakFaturaPdfAlAsync(inValue);
-        }
-        
-        public Entegref.parkServis.ParkInvoiceStatusRes GidenFaturaDurumSorgula(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GidenFaturaDurumSorgula(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.ParkInvoiceStatusRes> GidenFaturaDurumSorgulaAsync(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GidenFaturaDurumSorgulaAsync(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public Entegref.parkServis.ParkInvoiceStatusRes GidenArsivFaturaDurumSorgula(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GidenArsivFaturaDurumSorgula(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.ParkInvoiceStatusRes> GidenArsivFaturaDurumSorgulaAsync(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GidenArsivFaturaDurumSorgulaAsync(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public Entegref.parkServis.GtbResponse IhracatFaturaGTBReferansSorgula(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.IhracatFaturaGTBReferansSorgula(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.GtbResponse> IhracatFaturaGTBReferansSorgulaAsync(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.IhracatFaturaGTBReferansSorgulaAsync(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public string GidenFaturaHtmlAl(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GidenFaturaHtmlAl(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> GidenFaturaHtmlAlAsync(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GidenFaturaHtmlAlAsync(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Entegref.parkServis.GidenFaturaPdfAlResponse Entegref.parkServis.EFaturaIntegrationSoap.GidenFaturaPdfAl(Entegref.parkServis.GidenFaturaPdfAlRequest request) {
-            return base.Channel.GidenFaturaPdfAl(request);
-        }
-        
-        public byte[] GidenFaturaPdfAl(string FaturaNumarasi, string uuid, string sessionId) {
-            Entegref.parkServis.GidenFaturaPdfAlRequest inValue = new Entegref.parkServis.GidenFaturaPdfAlRequest();
-            inValue.FaturaNumarasi = FaturaNumarasi;
-            inValue.uuid = uuid;
-            inValue.sessionId = sessionId;
-            Entegref.parkServis.GidenFaturaPdfAlResponse retVal = ((Entegref.parkServis.EFaturaIntegrationSoap)(this)).GidenFaturaPdfAl(inValue);
-            return retVal.GidenFaturaPdfAlResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Entegref.parkServis.GidenFaturaPdfAlResponse> Entegref.parkServis.EFaturaIntegrationSoap.GidenFaturaPdfAlAsync(Entegref.parkServis.GidenFaturaPdfAlRequest request) {
-            return base.Channel.GidenFaturaPdfAlAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.GidenFaturaPdfAlResponse> GidenFaturaPdfAlAsync(string FaturaNumarasi, string uuid, string sessionId) {
-            Entegref.parkServis.GidenFaturaPdfAlRequest inValue = new Entegref.parkServis.GidenFaturaPdfAlRequest();
-            inValue.FaturaNumarasi = FaturaNumarasi;
-            inValue.uuid = uuid;
-            inValue.sessionId = sessionId;
-            return ((Entegref.parkServis.EFaturaIntegrationSoap)(this)).GidenFaturaPdfAlAsync(inValue);
-        }
-        
-        public string GidenFaturaPdfAlByUrl(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GidenFaturaPdfAlByUrl(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> GidenFaturaPdfAlByUrlAsync(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GidenFaturaPdfAlByUrlAsync(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public string GelenFaturaPdfAlByUrl(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GelenFaturaPdfAlByUrl(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> GelenFaturaPdfAlByUrlAsync(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GelenFaturaPdfAlByUrlAsync(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public string GidenFaturaXmlAl(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GidenFaturaXmlAl(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> GidenFaturaXmlAlAsync(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GidenFaturaXmlAlAsync(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Entegref.parkServis.ParkObjUblCevirResponse Entegref.parkServis.EFaturaIntegrationSoap.ParkObjUblCevir(Entegref.parkServis.ParkObjUblCevirRequest request) {
-            return base.Channel.ParkObjUblCevir(request);
-        }
-        
-        public byte[] ParkObjUblCevir(Entegref.parkServis.PARKInvoiceType invoiceObj, string sessionId) {
-            Entegref.parkServis.ParkObjUblCevirRequest inValue = new Entegref.parkServis.ParkObjUblCevirRequest();
-            inValue.invoiceObj = invoiceObj;
-            inValue.sessionId = sessionId;
-            Entegref.parkServis.ParkObjUblCevirResponse retVal = ((Entegref.parkServis.EFaturaIntegrationSoap)(this)).ParkObjUblCevir(inValue);
-            return retVal.ParkObjUblCevirResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Entegref.parkServis.ParkObjUblCevirResponse> Entegref.parkServis.EFaturaIntegrationSoap.ParkObjUblCevirAsync(Entegref.parkServis.ParkObjUblCevirRequest request) {
-            return base.Channel.ParkObjUblCevirAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.ParkObjUblCevirResponse> ParkObjUblCevirAsync(Entegref.parkServis.PARKInvoiceType invoiceObj, string sessionId) {
-            Entegref.parkServis.ParkObjUblCevirRequest inValue = new Entegref.parkServis.ParkObjUblCevirRequest();
-            inValue.invoiceObj = invoiceObj;
-            inValue.sessionId = sessionId;
-            return ((Entegref.parkServis.EFaturaIntegrationSoap)(this)).ParkObjUblCevirAsync(inValue);
-        }
-        
-        public string GeneratorUBL(Entegref.parkServis.PARKInvoiceType invoiceObj, string sessionId) {
-            return base.Channel.GeneratorUBL(invoiceObj, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> GeneratorUBLAsync(Entegref.parkServis.PARKInvoiceType invoiceObj, string sessionId) {
-            return base.Channel.GeneratorUBLAsync(invoiceObj, sessionId);
-        }
-        
-        public Entegref.parkServis.InvoiceSummary[] EArsivFaturaListele(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string sessionId) {
-            return base.Channel.EArsivFaturaListele(baslangicTarihi, bitisTarihi, FaturaSayisi, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.InvoiceSummary[]> EArsivFaturaListeleAsync(System.DateTime baslangicTarihi, System.DateTime bitisTarihi, int FaturaSayisi, string sessionId) {
-            return base.Channel.EArsivFaturaListeleAsync(baslangicTarihi, bitisTarihi, FaturaSayisi, sessionId);
-        }
-        
-        public string EArsivFaturaHtmlAl(string uuid, string sessionId) {
-            return base.Channel.EArsivFaturaHtmlAl(uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> EArsivFaturaHtmlAlAsync(string uuid, string sessionId) {
-            return base.Channel.EArsivFaturaHtmlAlAsync(uuid, sessionId);
-        }
-        
-        public string EArsivFaturaHtmlAlByFaturaNumarasi(string faturaNumarasi, string sessionId) {
-            return base.Channel.EArsivFaturaHtmlAlByFaturaNumarasi(faturaNumarasi, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> EArsivFaturaHtmlAlByFaturaNumarasiAsync(string faturaNumarasi, string sessionId) {
-            return base.Channel.EArsivFaturaHtmlAlByFaturaNumarasiAsync(faturaNumarasi, sessionId);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Entegref.parkServis.EArsivFaturaPdfAlResponse Entegref.parkServis.EFaturaIntegrationSoap.EArsivFaturaPdfAl(Entegref.parkServis.EArsivFaturaPdfAlRequest request) {
-            return base.Channel.EArsivFaturaPdfAl(request);
-        }
-        
-        public byte[] EArsivFaturaPdfAl(string uuid, string sessionId) {
-            Entegref.parkServis.EArsivFaturaPdfAlRequest inValue = new Entegref.parkServis.EArsivFaturaPdfAlRequest();
-            inValue.uuid = uuid;
-            inValue.sessionId = sessionId;
-            Entegref.parkServis.EArsivFaturaPdfAlResponse retVal = ((Entegref.parkServis.EFaturaIntegrationSoap)(this)).EArsivFaturaPdfAl(inValue);
-            return retVal.EArsivFaturaPdfAlResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Entegref.parkServis.EArsivFaturaPdfAlResponse> Entegref.parkServis.EFaturaIntegrationSoap.EArsivFaturaPdfAlAsync(Entegref.parkServis.EArsivFaturaPdfAlRequest request) {
-            return base.Channel.EArsivFaturaPdfAlAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.EArsivFaturaPdfAlResponse> EArsivFaturaPdfAlAsync(string uuid, string sessionId) {
-            Entegref.parkServis.EArsivFaturaPdfAlRequest inValue = new Entegref.parkServis.EArsivFaturaPdfAlRequest();
-            inValue.uuid = uuid;
-            inValue.sessionId = sessionId;
-            return ((Entegref.parkServis.EFaturaIntegrationSoap)(this)).EArsivFaturaPdfAlAsync(inValue);
-        }
-        
-        public string EArsivFaturaPdfAlByUrl(string uuid, string sessionId) {
-            return base.Channel.EArsivFaturaPdfAlByUrl(uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> EArsivFaturaPdfAlByUrlAsync(string uuid, string sessionId) {
-            return base.Channel.EArsivFaturaPdfAlByUrlAsync(uuid, sessionId);
-        }
-        
-        public string EArsivFaturaXmlAl(string uuid, string sessionId) {
-            return base.Channel.EArsivFaturaXmlAl(uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string> EArsivFaturaXmlAlAsync(string uuid, string sessionId) {
-            return base.Channel.EArsivFaturaXmlAlAsync(uuid, sessionId);
-        }
-        
-        public bool EArsivFaturaIptalEt(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.EArsivFaturaIptalEt(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<bool> EArsivFaturaIptalEtAsync(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.EArsivFaturaIptalEtAsync(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public bool EArsivFaturaTekrarMailIlet(string email, string uuid, string sessionId) {
-            return base.Channel.EArsivFaturaTekrarMailIlet(email, uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<bool> EArsivFaturaTekrarMailIletAsync(string email, string uuid, string sessionId) {
-            return base.Channel.EArsivFaturaTekrarMailIletAsync(email, uuid, sessionId);
-        }
-        
-        public Entegref.parkServis.PARKInvoiceType GidenEArsivFaturaOku(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GidenEArsivFaturaOku(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.PARKInvoiceType> GidenEArsivFaturaOkuAsync(string FaturaNumarasi, string uuid, string sessionId) {
-            return base.Channel.GidenEArsivFaturaOkuAsync(FaturaNumarasi, uuid, sessionId);
-        }
-        
-        public string[] EtiketGetir(string vknTckn, string sessionId) {
-            return base.Channel.EtiketGetir(vknTckn, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<string[]> EtiketGetirAsync(string vknTckn, string sessionId) {
-            return base.Channel.EtiketGetirAsync(vknTckn, sessionId);
-        }
-        
-        public bool EFaturaMukellefKontrolEt(string vknTckn, string sessionId) {
-            return base.Channel.EFaturaMukellefKontrolEt(vknTckn, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<bool> EFaturaMukellefKontrolEtAsync(string vknTckn, string sessionId) {
-            return base.Channel.EFaturaMukellefKontrolEtAsync(vknTckn, sessionId);
-        }
-        
-        public bool EIrsaliyeMukellefKontrolEt(string vknTckn, string sessionId) {
-            return base.Channel.EIrsaliyeMukellefKontrolEt(vknTckn, sessionId);
-        }
-        
-        public System.Threading.Tasks.Task<bool> EIrsaliyeMukellefKontrolEtAsync(string vknTckn, string sessionId) {
-            return base.Channel.EIrsaliyeMukellefKontrolEtAsync(vknTckn, sessionId);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Entegref.parkServis.IrsaliyeKayitliMukellefListeleResponse Entegref.parkServis.EFaturaIntegrationSoap.IrsaliyeKayitliMukellefListele(Entegref.parkServis.IrsaliyeKayitliMukellefListeleRequest request) {
-            return base.Channel.IrsaliyeKayitliMukellefListele(request);
-        }
-        
-        public Entegref.parkServis.GIBUSER[] IrsaliyeKayitliMukellefListele(string sessionId) {
-            Entegref.parkServis.IrsaliyeKayitliMukellefListeleRequest inValue = new Entegref.parkServis.IrsaliyeKayitliMukellefListeleRequest();
-            inValue.sessionId = sessionId;
-            Entegref.parkServis.IrsaliyeKayitliMukellefListeleResponse retVal = ((Entegref.parkServis.EFaturaIntegrationSoap)(this)).IrsaliyeKayitliMukellefListele(inValue);
-            return retVal.IrsaliyeKayitliMukellefListeleResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Entegref.parkServis.IrsaliyeKayitliMukellefListeleResponse> Entegref.parkServis.EFaturaIntegrationSoap.IrsaliyeKayitliMukellefListeleAsync(Entegref.parkServis.IrsaliyeKayitliMukellefListeleRequest request) {
-            return base.Channel.IrsaliyeKayitliMukellefListeleAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.IrsaliyeKayitliMukellefListeleResponse> IrsaliyeKayitliMukellefListeleAsync(string sessionId) {
-            Entegref.parkServis.IrsaliyeKayitliMukellefListeleRequest inValue = new Entegref.parkServis.IrsaliyeKayitliMukellefListeleRequest();
-            inValue.sessionId = sessionId;
-            return ((Entegref.parkServis.EFaturaIntegrationSoap)(this)).IrsaliyeKayitliMukellefListeleAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Entegref.parkServis.KayitliMukellefListeleByDateResponse Entegref.parkServis.EFaturaIntegrationSoap.KayitliMukellefListeleByDate(Entegref.parkServis.KayitliMukellefListeleByDateRequest request) {
-            return base.Channel.KayitliMukellefListeleByDate(request);
-        }
-        
-        public Entegref.parkServis.GIBUSER[] KayitliMukellefListeleByDate(System.DateTime tarih, string sessionId) {
-            Entegref.parkServis.KayitliMukellefListeleByDateRequest inValue = new Entegref.parkServis.KayitliMukellefListeleByDateRequest();
-            inValue.tarih = tarih;
-            inValue.sessionId = sessionId;
-            Entegref.parkServis.KayitliMukellefListeleByDateResponse retVal = ((Entegref.parkServis.EFaturaIntegrationSoap)(this)).KayitliMukellefListeleByDate(inValue);
-            return retVal.KayitliMukellefListeleByDateResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Entegref.parkServis.KayitliMukellefListeleByDateResponse> Entegref.parkServis.EFaturaIntegrationSoap.KayitliMukellefListeleByDateAsync(Entegref.parkServis.KayitliMukellefListeleByDateRequest request) {
-            return base.Channel.KayitliMukellefListeleByDateAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.KayitliMukellefListeleByDateResponse> KayitliMukellefListeleByDateAsync(System.DateTime tarih, string sessionId) {
-            Entegref.parkServis.KayitliMukellefListeleByDateRequest inValue = new Entegref.parkServis.KayitliMukellefListeleByDateRequest();
-            inValue.tarih = tarih;
-            inValue.sessionId = sessionId;
-            return ((Entegref.parkServis.EFaturaIntegrationSoap)(this)).KayitliMukellefListeleByDateAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Entegref.parkServis.KayitliMukellefListeleTxtResponse Entegref.parkServis.EFaturaIntegrationSoap.KayitliMukellefListeleTxt(Entegref.parkServis.KayitliMukellefListeleTxtRequest request) {
-            return base.Channel.KayitliMukellefListeleTxt(request);
-        }
-        
-        public byte[] KayitliMukellefListeleTxt(string sessionId) {
-            Entegref.parkServis.KayitliMukellefListeleTxtRequest inValue = new Entegref.parkServis.KayitliMukellefListeleTxtRequest();
-            inValue.sessionId = sessionId;
-            Entegref.parkServis.KayitliMukellefListeleTxtResponse retVal = ((Entegref.parkServis.EFaturaIntegrationSoap)(this)).KayitliMukellefListeleTxt(inValue);
-            return retVal.KayitliMukellefListeleTxtResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Entegref.parkServis.KayitliMukellefListeleTxtResponse> Entegref.parkServis.EFaturaIntegrationSoap.KayitliMukellefListeleTxtAsync(Entegref.parkServis.KayitliMukellefListeleTxtRequest request) {
-            return base.Channel.KayitliMukellefListeleTxtAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.KayitliMukellefListeleTxtResponse> KayitliMukellefListeleTxtAsync(string sessionId) {
-            Entegref.parkServis.KayitliMukellefListeleTxtRequest inValue = new Entegref.parkServis.KayitliMukellefListeleTxtRequest();
-            inValue.sessionId = sessionId;
-            return ((Entegref.parkServis.EFaturaIntegrationSoap)(this)).KayitliMukellefListeleTxtAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Entegref.parkServis.KayitliMukellefListeleDetayliTxtResponse Entegref.parkServis.EFaturaIntegrationSoap.KayitliMukellefListeleDetayliTxt(Entegref.parkServis.KayitliMukellefListeleDetayliTxtRequest request) {
-            return base.Channel.KayitliMukellefListeleDetayliTxt(request);
-        }
-        
-        public byte[] KayitliMukellefListeleDetayliTxt(string sessionId) {
-            Entegref.parkServis.KayitliMukellefListeleDetayliTxtRequest inValue = new Entegref.parkServis.KayitliMukellefListeleDetayliTxtRequest();
-            inValue.sessionId = sessionId;
-            Entegref.parkServis.KayitliMukellefListeleDetayliTxtResponse retVal = ((Entegref.parkServis.EFaturaIntegrationSoap)(this)).KayitliMukellefListeleDetayliTxt(inValue);
-            return retVal.KayitliMukellefListeleDetayliTxtResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Entegref.parkServis.KayitliMukellefListeleDetayliTxtResponse> Entegref.parkServis.EFaturaIntegrationSoap.KayitliMukellefListeleDetayliTxtAsync(Entegref.parkServis.KayitliMukellefListeleDetayliTxtRequest request) {
-            return base.Channel.KayitliMukellefListeleDetayliTxtAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.KayitliMukellefListeleDetayliTxtResponse> KayitliMukellefListeleDetayliTxtAsync(string sessionId) {
-            Entegref.parkServis.KayitliMukellefListeleDetayliTxtRequest inValue = new Entegref.parkServis.KayitliMukellefListeleDetayliTxtRequest();
-            inValue.sessionId = sessionId;
-            return ((Entegref.parkServis.EFaturaIntegrationSoap)(this)).KayitliMukellefListeleDetayliTxtAsync(inValue);
-        }
-        
-        public void FaturaGorseliYukle(Entegref.parkServis.Stylefiles styleFiles, string token) {
-            base.Channel.FaturaGorseliYukle(styleFiles, token);
-        }
-        
-        public System.Threading.Tasks.Task FaturaGorseliYukleAsync(Entegref.parkServis.Stylefiles styleFiles, string token) {
-            return base.Channel.FaturaGorseliYukleAsync(styleFiles, token);
-        }
-        
-        public Entegref.parkServis.Stylefiles FaturaGorseliIndir(int xsltFilesId, string token) {
-            return base.Channel.FaturaGorseliIndir(xsltFilesId, token);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.Stylefiles> FaturaGorseliIndirAsync(int xsltFilesId, string token) {
-            return base.Channel.FaturaGorseliIndirAsync(xsltFilesId, token);
-        }
-        
-        public Entegref.parkServis.Stylefiles FaturaGorseliGetirByName(string xsltFilesName, string token) {
-            return base.Channel.FaturaGorseliGetirByName(xsltFilesName, token);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.Stylefiles> FaturaGorseliGetirByNameAsync(string xsltFilesName, string token) {
-            return base.Channel.FaturaGorseliGetirByNameAsync(xsltFilesName, token);
-        }
-        
-        public void FaturaGorseliGuncelle(Entegref.parkServis.Stylefiles xsltFiles, string token) {
-            base.Channel.FaturaGorseliGuncelle(xsltFiles, token);
-        }
-        
-        public System.Threading.Tasks.Task FaturaGorseliGuncelleAsync(Entegref.parkServis.Stylefiles xsltFiles, string token) {
-            return base.Channel.FaturaGorseliGuncelleAsync(xsltFiles, token);
-        }
-        
-        public void FaturaGorseliSil(int XsltFilesID, string token) {
-            base.Channel.FaturaGorseliSil(XsltFilesID, token);
-        }
-        
-        public System.Threading.Tasks.Task FaturaGorseliSilAsync(int XsltFilesID, string token) {
-            return base.Channel.FaturaGorseliSilAsync(XsltFilesID, token);
-        }
-        
-        public Entegref.parkServis.Stylefiles[] FaturaGorseliListesi(string token) {
-            return base.Channel.FaturaGorseliListesi(token);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.Stylefiles[]> FaturaGorseliListesiAsync(string token) {
-            return base.Channel.FaturaGorseliListesiAsync(token);
-        }
-        
-        public Entegref.parkServis.Stylefiles FaturaGorseliOku(int XsltFilesID, string token) {
-            return base.Channel.FaturaGorseliOku(XsltFilesID, token);
-        }
-        
-        public System.Threading.Tasks.Task<Entegref.parkServis.Stylefiles> FaturaGorseliOkuAsync(int XsltFilesID, string token) {
-            return base.Channel.FaturaGorseliOkuAsync(XsltFilesID, token);
-        }
-        
-        public void FaturaGorseliDefaultOlarakIsaretle(int XsltFilesID, string token) {
-            base.Channel.FaturaGorseliDefaultOlarakIsaretle(XsltFilesID, token);
-        }
-        
-        public System.Threading.Tasks.Task FaturaGorseliDefaultOlarakIsaretleAsync(int XsltFilesID, string token) {
-            return base.Channel.FaturaGorseliDefaultOlarakIsaretleAsync(XsltFilesID, token);
+            return ((Entegref.parkServis.EIrsaliyeServiceSoap)(this)).GetPreviewDespatchPdfAsync(inValue);
         }
     }
 }

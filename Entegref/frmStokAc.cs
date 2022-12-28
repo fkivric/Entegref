@@ -172,6 +172,8 @@ namespace Entegref
                 ultraTabControl1.VisibleTabs[4].Visible = false;
                 ultraTabControl1.VisibleTabs[5].Visible = false;
                 ultraTabControl1.VisibleTabs[6].Visible = false;
+                ultraTabControl1.VisibleTabs[7].Visible = false;
+                ultraTabControl1.VisibleTabs[8].Visible = false;
             }
         }
         public void sinif_1()
@@ -227,7 +229,7 @@ namespace Entegref
                 btnbarkod();
                 panel2.Enabled = true;
                 Dictionary<string, string> Stk = new Dictionary<string, string>();
-                Stk.Add("@smodel",txtStokKodu.Text);
+                Stk.Add("@smodel", txtStokKodu.Text);
                 Urun = conn.DfQuery("Entegref_Stok_Sec", Stk);
                 connection.Close();
                 renkolanlar.Clear();
@@ -371,16 +373,16 @@ namespace Entegref
                 ultraButton1.Enabled = false;
                 ultraButton2.Enabled = false;
                 simpleButton3.Enabled = false;
-                ultraTabControl1.VisibleTabs[1].Visible = true;
                 ultraTabControl1.VisibleTabs[2].Visible = true;
                 ultraTabControl1.VisibleTabs[3].Visible = true;
                 ultraTabControl1.VisibleTabs[4].Visible = true;
                 ultraTabControl1.VisibleTabs[5].Visible = true;
-                ultraTabControl1.VisibleTabs[6].Visible = true;
+                ultraTabControl1.VisibleTabs[7].Visible = true;
+                ultraTabControl1.VisibleTabs[8].Visible = true;
 
                 if (nStokID != null && nStokID != "")
                 {
-                    ultraTabControl1.VisibleTabs[6].Visible = true;
+                    //ultraTabControl1.VisibleTabs[6].Visible = true;
                     //btnKaydet.Text = "Güncelle";
                 }
                 txtStokKodu.Enabled = false;
@@ -514,8 +516,8 @@ namespace Entegref
         private void btnbarkod()
         {
             Barkod.Clear();
-            string query = "select sBarkod,(select sKodu from tbfirma f where f.nFirmaID = b.nFirmaID) as sFirmaKodu,sKarsiStokKodu,sKarsiStokAciklama from [39391097764].dbo.tbStokBarkodu b ";
-            query = query + " inner join [39391097764].dbo.tbStok s on s.nStokID = b.nStokID";
+            string query = "select sBarkod,(select sKodu from tbfirma f where f.nFirmaID = b.nFirmaID) as sFirmaKodu,sKarsiStokKodu,sKarsiStokAciklama from [" + Properties.Settings.Default.VKN + "].dbo.tbStokBarkodu b ";
+            query = query + " inner join ["+Properties.Settings.Default.VKN+"].dbo.tbStok s on s.nStokID = b.nStokID";
             query = query + " where s.sModel = '" + txtStokKodu.Text.ToString() + "'";
             System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand(query, connection);
             connection.Open();
@@ -542,7 +544,7 @@ namespace Entegref
             sinifsira5 = null;
             sinifsira6 = null;
             Renk = false;
-            frmStokSinifi sinifi = new frmStokSinifi();
+            frmTrendyol_Sinif sinifi = new frmTrendyol_Sinif();
             sinifi.TopLevel = true;
             sinifi.ShowDialog();
             NewStok();
@@ -555,6 +557,12 @@ namespace Entegref
             sinif4.Clear();
             sinif5.Clear();
             sinif6.Clear();
+            sinif7.Clear();
+            sinif8.Clear();
+            sinif9.Clear();
+            sinif10.Clear();
+            sinif11.Clear();
+            sinif12.Clear();
 
             if (sinifsira1 != null)
             {
@@ -629,6 +637,81 @@ namespace Entegref
             {
                 cmbSinif6.SelectedValue = sinifsira6.Replace("00-0", null);
             }
+
+            if (sinifsira7 != null)
+            {
+                if (cmbSinif1.SelectedValue == null)
+                {
+                    cmbSinif7.DisplayMember = "sAciklama";
+                    cmbSinif7.ValueMember = "sSinifKodu";
+                    Dictionary<string, string> Prm = new Dictionary<string, string>();
+                    Prm.Add("@sira", "7");
+                    Prm.Add("@parentid", "0");
+                    sinif1 = conn.DfQuery("Sinif2", Prm);
+                    cmbSinif7.DataSource = sinif1;
+                    cmbSinif7.SelectedValue = sinifsira1;
+                }
+            }
+            if (cmbSinif8.SelectedValue != null)
+            {
+                cmbSinif8.DisplayMember = "sAciklama";
+                cmbSinif8.ValueMember = "sSinifKodu";
+                Dictionary<string, string> Prm = new Dictionary<string, string>();
+                Prm.Add("@sira", "8");
+                Prm.Add("@parentid", cmbSinif7.SelectedValue.ToString().Substring(cmbSinif1.SelectedValue.ToString().IndexOf("-") + 1, 4));
+                sinif8 = conn.DfQuery("Sinif2", Prm);
+                cmbSinif8.DataSource = sinif8;
+                cmbSinif8.SelectedValue = sinifsira8;
+            }
+
+            if (sinifsira9 != null && sinifsira9 != "00-0")
+            {
+                if (cmbSinif8.SelectedValue != null)
+                {
+                    cmbSinif9.DisplayMember = "sAciklama";
+                    cmbSinif9.ValueMember = "sSinifKodu";
+                    Dictionary<string, string> Prm = new Dictionary<string, string>();
+                    Prm.Add("@sira", "9");
+                    Prm.Add("@parentid", cmbSinif8.SelectedValue.ToString().Substring(cmbSinif8.SelectedValue.ToString().IndexOf("-") + 1, 4));
+                    sinif9 = conn.DfQuery("Sinif2", Prm);
+                    cmbSinif9.DataSource = sinif9;
+                    cmbSinif9.SelectedValue = sinifsira9.Replace("00-0", null);
+                }
+
+            }
+            if (sinifsira10 != null && sinifsira10 != "00-0")
+            {
+                if (cmbSinif9.SelectedValue != null)
+                {
+                    cmbSinif10.DisplayMember = "sAciklama";
+                    cmbSinif10.ValueMember = "sSinifKodu";
+                    Dictionary<string, string> Prm = new Dictionary<string, string>();
+                    Prm.Add("@sira", "10");
+                    Prm.Add("@parentid", cmbSinif9.SelectedValue.ToString().Substring(cmbSinif9.SelectedValue.ToString().IndexOf("-") + 1, 4));
+                    sinif10 = conn.DfQuery("Sinif2", Prm);
+                    cmbSinif10.DataSource = sinif10;
+                    cmbSinif10.SelectedValue = sinifsira10.Replace("00-0", null);
+                }
+            }
+            if (sinifsira11 != null && sinifsira11 != "00-0")
+            {
+                if (cmbSinif10.SelectedValue != null)
+                {
+                    cmbSinif11.DisplayMember = "sAciklama";
+                    cmbSinif11.ValueMember = "sSinifKodu";
+                    Dictionary<string, string> Prm = new Dictionary<string, string>();
+                    Prm.Add("@sira", "11");
+                    Prm.Add("@parentid", cmbSinif10.SelectedValue.ToString().Substring(cmbSinif10.SelectedValue.ToString().IndexOf("-") + 1, 4));
+                    sinif11 = conn.DfQuery("Sinif2", Prm);
+                    cmbSinif11.DataSource = sinif11;
+                    cmbSinif11.SelectedValue = sinifsira11.Replace("00-0", null);
+                }
+            }
+            if (sinifsira12 != null && sinifsira12 != "00-0")
+            {
+                cmbSinif6.SelectedValue = sinifsira6.Replace("00-0", null);
+            }
+
             if (nFiyatlandirma != null )
             {
                 lblFiyattipi.Visible = true;
@@ -756,7 +839,7 @@ namespace Entegref
                 cmbMarka.DataSource = items;
             }
         }
-        //Attribute
+        //Attribute2
         public void UrunOzellikAc(string CatagoryID)
         {
             string url = "https://api.trendyol.com/sapigw/product-categories/" + CatagoryID.Substring(CatagoryID.IndexOf("-") + 1).Replace(" ", "") + "/attributes";
@@ -4381,5 +4464,18 @@ namespace Entegref
             }
         }
 
+        private void ultraButton3_Click_1(object sender, EventArgs e)
+        {
+            sinifsira1 = null;
+            sinifsira2 = null;
+            sinifsira3 = null;
+            sinifsira4 = null;
+            sinifsira5 = null;
+            sinifsira6 = null;
+            Renk = false;
+            frmCicekSepeti_Sinif sinifi = new frmCicekSepeti_Sinif();
+            sinifi.TopLevel = true;
+            sinifi.ShowDialog();
+        }
     }
 }

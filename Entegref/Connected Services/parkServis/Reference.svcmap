@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="58ea0eff-ea6b-4897-bd03-4e6cfdf17006" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="afade87e-e2d8-4faa-8e7e-a97cc38c9a4b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,11 +19,11 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="https://wstest.parkentegrasyon.com.tr/EFaturaIntegration.asmx" Protocol="http" SourceId="1" />
+    <MetadataSource Address="https://ws.parkentegrasyon.com.tr/EIrsaliyeService.asmx" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="EFaturaIntegration.disco" MetadataType="Disco" ID="37ec1106-6b6f-445f-8975-8b477cfcf5ba" SourceId="1" SourceUrl="https://wstest.parkentegrasyon.com.tr/EFaturaIntegration.asmx?disco" />
-    <MetadataFile FileName="EFaturaIntegration.wsdl" MetadataType="Wsdl" ID="77dda10f-9732-4254-a1a6-5c050c9e9650" SourceId="1" SourceUrl="https://wstest.parkentegrasyon.com.tr/EFaturaIntegration.asmx?wsdl" />
+    <MetadataFile FileName="EIrsaliyeService.disco" MetadataType="Disco" ID="7d732337-2031-4eb2-b5e1-b6cb12c5e737" SourceId="1" SourceUrl="https://ws.parkentegrasyon.com.tr/EIrsaliyeService.asmx?disco" />
+    <MetadataFile FileName="EIrsaliyeService.wsdl" MetadataType="Wsdl" ID="f139a358-53ef-4cfc-ba19-3e52a847e25a" SourceId="1" SourceUrl="https://ws.parkentegrasyon.com.tr/EIrsaliyeService.asmx?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

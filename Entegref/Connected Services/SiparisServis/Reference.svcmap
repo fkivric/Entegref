@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="bbb9ae6a-95bb-400b-b89a-16d6954cf512" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://www.yonavm.com.tr/Servis/SiparisServis.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SiparisServis.xsd" MetadataType="Schema" ID="bcb97903-23b1-4058-9e72-841a18cdaf5d" SourceId="1" SourceUrl="https://www.yonavm.com.tr/Servis/SiparisServis.svc?xsd=xsd0" />
+    <MetadataFile FileName="SiparisServis1.xsd" MetadataType="Schema" ID="629500af-d333-4d62-9622-e384325beed6" SourceId="1" SourceUrl="https://www.yonavm.com.tr/Servis/SiparisServis.svc?xsd=xsd2" />
+    <MetadataFile FileName="SiparisServis.wsdl" MetadataType="Wsdl" ID="7233a552-3cd2-4030-83ec-822bcb83601e" SourceId="1" SourceUrl="https://www.yonavm.com.tr/Servis/SiparisServis.svc?wsdl" />
+    <MetadataFile FileName="SiparisServis2.xsd" MetadataType="Schema" ID="6578e195-1eb0-44e7-91cf-076699857ea2" SourceId="1" SourceUrl="https://www.yonavm.com.tr/Servis/SiparisServis.svc?xsd=xsd3" />
+    <MetadataFile FileName="SiparisServis3.xsd" MetadataType="Schema" ID="6697f178-890f-45d3-8584-5052057f9746" SourceId="1" SourceUrl="https://www.yonavm.com.tr/Servis/SiparisServis.svc?xsd=xsd1" />
+    <MetadataFile FileName="SiparisServis4.xsd" MetadataType="Schema" ID="de25fd43-c07c-4aba-8305-4857d7cc2624" SourceId="1" SourceUrl="https://www.yonavm.com.tr/Servis/SiparisServis.svc?xsd=xsd4" />
+    <MetadataFile FileName="SiparisServis.disco" MetadataType="Disco" ID="d499556a-a683-476b-afe3-4e901f93f5b9" SourceId="1" SourceUrl="https://www.yonavm.com.tr/Servis/SiparisServis.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
